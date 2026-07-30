@@ -49,7 +49,9 @@
     "s10T": "10. Data security",
     "s10a": "We apply appropriate technical and organisational measures (including SSL/TLS encryption) to protect the processed data against unauthorised access or loss.",
     "s11T": "11. Contact",
-    "s11a": "In matters concerning the protection of personal data, please contact us:"
+    "s11a": "In matters concerning the protection of personal data, please contact us:",
+    "s12T": "12. Changes to this privacy policy",
+    "s12a": "The controller reserves the right to amend this privacy policy. Changes will be published on this page together with the date of the update. We recommend reviewing this document regularly."
   },
   "pl": {
     "pageTitle": "Prywatność i cookies",
@@ -101,7 +103,9 @@
     "s10T": "10. Bezpieczeństwo danych",
     "s10a": "Stosujemy odpowiednie środki techniczne i organizacyjne (m.in. szyfrowanie SSL/TLS) zapewniające bezpieczeństwo przetwarzanych danych przed nieuprawnionym dostępem czy utratą.",
     "s11T": "11. Kontakt",
-    "s11a": "W sprawach dotyczących ochrony danych osobowych prosimy o kontakt:"
+    "s11a": "W sprawach dotyczących ochrony danych osobowych prosimy o kontakt:",
+    "s12T": "12. Zmiany polityki prywatności",
+    "s12a": "Administrator zastrzega sobie prawo do wprowadzania zmian w niniejszej polityce prywatności. Zmiany będą publikowane na tej stronie wraz z datą aktualizacji. Zalecamy regularne zapoznawanie się z treścią dokumentu."
   },
   "cz": {
     "pageTitle": "Soukromí a cookies",
@@ -153,7 +157,9 @@
     "s10T": "10. Zabezpečení údajů",
     "s10a": "Uplatňujeme vhodná technická a organizační opatření (mj. šifrování SSL/TLS) zajišťující bezpečnost zpracovávaných údajů před neoprávněným přístupem či ztrátou.",
     "s11T": "11. Kontakt",
-    "s11a": "Ve věcech ochrany osobních údajů nás prosím kontaktujte:"
+    "s11a": "Ve věcech ochrany osobních údajů nás prosím kontaktujte:",
+    "s12T": "12. Změny zásad ochrany soukromí",
+    "s12a": "Správce si vyhrazuje právo provádět změny těchto zásad ochrany soukromí. Změny budou zveřejňovány na této stránce spolu s datem aktualizace. Doporučujeme obsah dokumentu pravidelně sledovat."
   },
   "it": {
     "pageTitle": "Privacy e cookie",
@@ -205,6 +211,8 @@
     "s10T": "10. Sicurezza dei dati",
     "s10a": "Applichiamo adeguate misure tecniche e organizzative (tra cui la crittografia SSL/TLS) per garantire la sicurezza dei dati trattati contro l’accesso non autorizzato o la perdita.",
     "s11T": "11. Contatto",
-    "s11a": "Per questioni relative alla protezione dei dati personali, contattaci:"
+    "s11a": "Per questioni relative alla protezione dei dati personali, contattaci:",
+    "s12T": "12. Modifiche alla presente informativa sulla privacy",
+    "s12a": "Il titolare si riserva il diritto di apportare modifiche alla presente informativa sulla privacy. Le modifiche saranno pubblicate su questa pagina insieme alla data di aggiornamento. Si consiglia di consultare regolarmente il contenuto del documento."
   }
 }
