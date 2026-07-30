@@ -173,6 +173,7 @@ function transform(src, page, lang, art) {
 
 /* generate assets/articles.js from content/articles/*.json */
 function writeArticlesJs() {
+  mkdirSync(join(SRC, 'assets'), { recursive: true });
   const out = '/* GENERATED from content/articles/*.json by build-langs.mjs — do not edit by hand. */\n' +
     'window.ARTICLES = ' + JSON.stringify(ARTICLES, null, 2).replace(/<\//g, '<\\/') + ';\n' +
     "window.ARTICLES.sort(function (a, b) { return (b.ts || '').localeCompare(a.ts || ''); });\n";

@@ -1,0 +1,7 @@
+# tylko katalogi z KORZENIA projektu (ukośnik = zakotwiczenie);
+# design-v2/assets musi się wysyłać!
+/wp-media
+/.git
+/assets
+/podglad-strony.cmd
+/extract-content.mjs
