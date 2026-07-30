@@ -38,3 +38,4 @@ Dzięki temu niczego nie da się „zepsuć": strona zawsze działa, a każda zm
 
 ---
 *Pomoc techniczna: Maciej (wykonawca strony).*
+
