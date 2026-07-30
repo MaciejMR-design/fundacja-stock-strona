@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "stock-design-preview",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": ["/c", "npx", "-y", "serve", "-l", "8734", "design-v2"],
+      "port": 8734
+    }
+  ]
+}

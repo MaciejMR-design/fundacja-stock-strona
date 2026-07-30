@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#163B65"/><stop offset="1" stop-color="#002957"/>
+    </linearGradient>
+    <radialGradient id="gc" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#D0A41B" stop-opacity="0.30"/>
+      <stop offset="0.6" stop-color="#D0A41B" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#D0A41B" stop-opacity="0"/>
+    </radialGradient>
+    
+  </defs>
+  <rect width="1600" height="600" fill="url(#bc)"/>
+  <circle cx="1270" cy="168" r="450" fill="url(#gc)">
+    <animate attributeName="opacity" values="1;0.65;1" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  
+  <g fill="none" stroke="#D0A41B" stroke-width="2.2" stroke-linejoin="round">
+    <rect x="960" y="200" width="230" height="150" rx="12" stroke-opacity="0.8" fill="rgba(244,234,205,0.05)">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    <path d="M968 212 L1075 292 L1182 212" stroke-opacity="0.8">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="7s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <path d="M1190 330 C 1260 380 1300 330 1360 300 C 1400 280 1430 260 1448 235" fill="none" stroke="#f4eacd" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="2 10" stroke-linecap="round">
+    <animate attributeName="stroke-dashoffset" values="0;-96" dur="6s" repeatCount="indefinite"/>
+  </path>
+  <g>
+    <path d="M1460 150 c-26 0 -46 20 -46 45 c0 33 46 75 46 75 s46 -42 46 -75 c0 -25 -20 -45 -46 -45 Z" fill="#D0A41B" opacity="0.95"/>
+    <circle cx="1460" cy="196" r="16" fill="#002957"/>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -10; 0 0" dur="5s" repeatCount="indefinite"/>
+  </g>
+  <g fill="none" stroke="#f4eacd" stroke-opacity="0.10" stroke-width="1.2">
+    <path d="M-40 470 C 300 400 620 520 950 440"/>
+  </g>
+  <g fill="#D0A41B">
+    <circle cx="220" cy="150" r="2" opacity="0.45"><animate attributeName="cy" values="150;126;150" dur="9s" repeatCount="indefinite"/></circle>
+    <circle cx="520" cy="360" r="1.6" opacity="0.32"><animate attributeName="cy" values="360;330;360" dur="11s" repeatCount="indefinite"/></circle>
+    <circle cx="880" cy="120" r="1.8" opacity="0.38"><animate attributeName="cy" values="120;96;120" dur="8s" repeatCount="indefinite"/></circle>
+    <circle cx="1420" cy="432" r="1.8" opacity="0.36"/>
+    <circle cx="120" cy="372" r="1.6" opacity="0.3"/>
+  </g>
+</svg>

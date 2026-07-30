@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bh" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#163B65"/><stop offset="1" stop-color="#002957"/>
+    </linearGradient>
+    <radialGradient id="gh" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#D0A41B" stop-opacity="0.30"/>
+      <stop offset="0.6" stop-color="#D0A41B" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#D0A41B" stop-opacity="0"/>
+    </radialGradient>
+    
+  </defs>
+  <rect width="1600" height="900" fill="url(#bh)"/>
+  <circle cx="1270" cy="252" r="675" fill="url(#gh)">
+    <animate attributeName="opacity" values="1;0.65;1" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  
+  <g fill="none">
+    <path d="M-50 620 C 300 480 620 720 950 580 C 1220 470 1420 520 1650 430" stroke="#D0A41B" stroke-opacity="0.45" stroke-width="2.2">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -16; 0 0" dur="10s" repeatCount="indefinite"/>
+    </path>
+    <path d="M-50 690 C 320 560 640 780 980 640 C 1250 530 1440 580 1650 500" stroke="#D0A41B" stroke-opacity="0.18" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 14; 0 0" dur="13s" repeatCount="indefinite"/>
+    </path>
+    <path d="M-50 540 C 350 430 700 640 1050 500 C 1300 400 1480 450 1650 380" stroke="#f4eacd" stroke-opacity="0.10" stroke-width="1.2">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -10; 0 0" dur="16s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g transform="translate(980,60) scale(6.2)" fill="none" stroke="#D0A41B" stroke-width="0.5" opacity="0.30">
+    <path d="M64.1 7.1 C64.1 7.1 55.4 4.9 38.6 4.9 C21.9 4.9 13.1 7.1 13.1 7.1 C13.1 11.9 9.2 15.7 4.4 15.7 L4.4 44 C4.4 58.1 13 70.3 25.3 75.5 C28.6 76.8 38.6 81 38.6 81 C38.6 81 48.7 76.8 51.9 75.5 C64.2 70.3 72.8 58.1 72.8 44 L72.8 15.7 C68 15.7 64.1 11.9 64.1 7.1 Z"/>
+  </g>
+  <g fill="none" stroke="#CD9E0C">
+    <circle cx="1240" cy="330" r="180" stroke-opacity="0.20" stroke-width="1.1">
+      <animate attributeName="r" values="180;192;180" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1240" cy="330" r="260" stroke-opacity="0.12" stroke-width="1">
+      <animate attributeName="r" values="260;274;260" dur="12s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <g fill="#D0A41B">
+    <circle cx="220" cy="225" r="2" opacity="0.45"><animate attributeName="cy" values="225;189;225" dur="9s" repeatCount="indefinite"/></circle>
+    <circle cx="520" cy="540" r="1.6" opacity="0.32"><animate attributeName="cy" values="540;495;540" dur="11s" repeatCount="indefinite"/></circle>
+    <circle cx="880" cy="180" r="1.8" opacity="0.38"><animate attributeName="cy" values="180;144;180" dur="8s" repeatCount="indefinite"/></circle>
+    <circle cx="1420" cy="648" r="1.8" opacity="0.36"/>
+    <circle cx="120" cy="558" r="1.6" opacity="0.3"/>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#163B65"/><stop offset="1" stop-color="#002957"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <g fill="none" stroke="#CD9E0C" stroke-width="2">
+    <path d="M-40 640 Q 300 540 640 640 T 1280 600" opacity="0.25"/>
+    <path d="M-40 700 Q 310 610 650 700 T 1280 660" opacity="0.14"/>
+    <circle cx="950" cy="600" r="140" opacity="0.16"/>
+    <circle cx="950" cy="600" r="215" opacity="0.09"/>
+  </g>
+  <!-- staff lines -->
+  <g stroke="#f4eacd" stroke-width="3" opacity="0.35">
+    <path d="M300 330 q300 -60 600 0"/>
+    <path d="M300 375 q300 -60 600 0"/>
+    <path d="M300 420 q300 -60 600 0"/>
+    <path d="M300 465 q300 -60 600 0"/>
+  </g>
+  <!-- notes -->
+  <g stroke="#CD9E0C" stroke-width="8" stroke-linecap="round" fill="none">
+    <ellipse cx="480" cy="404" rx="30" ry="22" fill="#CD9E0C" transform="rotate(-18 480 404)"/>
+    <path d="M508 396 v-130 q60 10 78 -26"/>
+    <ellipse cx="700" cy="356" rx="26" ry="19" fill="#D0A41B" transform="rotate(-18 700 356)"/>
+    <path d="M724 349 v-110"/>
+  </g>
+  <!-- graduation star -->
+  <g fill="#f4eacd">
+    <path d="M900 220 l10 26 26 4 -19 19 5 27 -22 -13 -22 13 5 -27 -19 -19 26 -4 Z" opacity="0.9"/>
+    <path d="M980 300 l6 16 16 2 -12 12 3 17 -13 -8 -13 8 3 -17 -12 -12 16 -2 Z" opacity="0.5"/>
+  </g>
+</svg>

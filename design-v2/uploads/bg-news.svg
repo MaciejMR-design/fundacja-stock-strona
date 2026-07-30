@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bn" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#163B65"/><stop offset="1" stop-color="#002957"/>
+    </linearGradient>
+    <radialGradient id="gn" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#D0A41B" stop-opacity="0.30"/>
+      <stop offset="0.6" stop-color="#D0A41B" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#D0A41B" stop-opacity="0"/>
+    </radialGradient>
+    
+  </defs>
+  <rect width="1600" height="600" fill="url(#bn)"/>
+  <circle cx="1270" cy="168" r="450" fill="url(#gn)">
+    <animate attributeName="opacity" values="1;0.65;1" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  
+  <g fill="none" stroke="#D0A41B" stroke-width="2" stroke-linejoin="round">
+    <path d="M1080 160 h300 a16 16 0 0 1 16 16 v110 a16 16 0 0 1 -16 16 h-210 l-40 40 v-40 h-50 a16 16 0 0 1 -16 -16 v-110 a16 16 0 0 1 16 -16 Z" stroke-opacity="0.6" fill="rgba(244,234,205,0.05)">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -9; 0 0" dur="7s" repeatCount="indefinite"/>
+    </path>
+    <path d="M950 300 h210 a14 14 0 0 1 14 14 v84 a14 14 0 0 1 -14 14 h-40 v34 l-34 -34 h-136 a14 14 0 0 1 -14 -14 v-84 a14 14 0 0 1 14 -14 Z" stroke-opacity="0.35" fill="rgba(208,164,27,0.05)">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 7; 0 0" dur="9s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g fill="#D0A41B">
+    <circle cx="1190" cy="232" r="6" opacity="0.9"><animate attributeName="opacity" values="0.9;0.25;0.9" dur="1.6s" repeatCount="indefinite"/></circle>
+    <circle cx="1222" cy="232" r="6" opacity="0.6"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="1.6s" begin="0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="1254" cy="232" r="6" opacity="0.35"><animate attributeName="opacity" values="0.5;0.2;0.9;0.5" dur="1.6s" begin="0.6s" repeatCount="indefinite"/></circle>
+  </g>
+  <g stroke="#f4eacd" stroke-opacity="0.35" stroke-width="2" stroke-linecap="round">
+    <path d="M990 336 h130 M990 360 h96"/>
+  </g>
+  <g fill="none" stroke="#f4eacd" stroke-opacity="0.12" stroke-width="1.4">
+    <path d="M-40 470 C 300 400 620 520 950 440 C 1200 380 1420 420 1650 350"/>
+  </g>
+  <g fill="#D0A41B">
+    <circle cx="220" cy="150" r="2" opacity="0.45"><animate attributeName="cy" values="150;126;150" dur="9s" repeatCount="indefinite"/></circle>
+    <circle cx="520" cy="360" r="1.6" opacity="0.32"><animate attributeName="cy" values="360;330;360" dur="11s" repeatCount="indefinite"/></circle>
+    <circle cx="880" cy="120" r="1.8" opacity="0.38"><animate attributeName="cy" values="120;96;120" dur="8s" repeatCount="indefinite"/></circle>
+    <circle cx="1420" cy="432" r="1.8" opacity="0.36"/>
+    <circle cx="120" cy="372" r="1.6" opacity="0.3"/>
+  </g>
+</svg>

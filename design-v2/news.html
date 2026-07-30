@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>News — Stock Foundation</title>
+<meta name="description" content="Latest news and recurring actions from the Stock Foundation — Art Encounters, scholarships, training and community initiatives, updated regularly.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Stock Foundation">
+<meta property="og:title" content="News — Stock Foundation">
+<meta property="og:description" content="Latest news and recurring actions from the Stock Foundation — Art Encounters, scholarships, training and community initiatives, updated regularly.">
+<meta property="og:image" content="https://fundacja-stock-design.vercel.app/uploads/about-festyn.jpg">
+<meta property="og:url" content="https://fundacjastock.pl/news.html">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<!-- lang-alternates -->
+<link rel="canonical" href="https://fundacjastock.pl/news.html">
+<link rel="alternate" hreflang="en" href="https://fundacjastock.pl/news.html">
+<link rel="alternate" hreflang="pl" href="https://fundacjastock.pl/pl/news.html">
+<link rel="alternate" hreflang="cs" href="https://fundacjastock.pl/cz/news.html">
+<link rel="alternate" hreflang="it" href="https://fundacjastock.pl/it/news.html">
+<link rel="alternate" hreflang="x-default" href="https://fundacjastock.pl/news.html">
+<!-- /lang-alternates -->
+<script data-fs-lang>window.FS_LANG='en';try{localStorage.setItem('fs-lang','en')}catch(e){}</script>
+<link rel="icon" href="/uploads/logo-footer.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Literata:opsz,wght@7..72,200;7..72,300;7..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+  <header class="site" id="site-header"></header>
+
+  <section class="page-hero">
+    <img class="hero-photo" src="/uploads/bg-news.svg" alt="" aria-hidden="true">
+    <svg class="hero-art" viewBox="0 0 1200 400" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
+      <g fill="none" stroke="#CD9E0C" stroke-width="1.2">
+        <path d="M980 20 C980 20 890 -6 760 -6 C630 -6 540 20 540 20 C537 72 500 112 448 112 L448 300 C448 420 540 520 760 580 C980 520 1072 420 1072 300 L1072 112 C1020 112 983 72 980 20 Z" opacity="0.4"></path>
+        <path d="M-40 320 Q 250 240 560 320 T 1240 290" opacity="0.35"></path>
+      </g>
+    </svg>
+    <div class="container page-hero-inner i18n-fade">
+      <span class="crumb"><a href="index.html" data-i18n="home"></a> / <span data-i18n="navNews"></span></span>
+      <h1 class="display" data-i18n="pageTitle"></h1>
+      <p class="lead" data-i18n="pageLead"></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <!-- FEATURED (newest) — rendered by JS -->
+      <a class="featured reveal" id="featured" href="#">
+        <div class="media"><img id="featImg" src="" alt=""><span class="cat" id="featCat"></span></div>
+        <div class="body">
+          <span class="kicker"><span id="featDate"></span><span class="dot"></span><span data-i18n="featuredTag"></span></span>
+          <h2 id="featTitle"></h2>
+          <p id="featLead"></p>
+          <span class="read-more"><span data-i18n="readMore"></span> <span class="arr">→</span></span>
+        </div>
+      </a>
+
+      <div class="news-toolbar i18n-fade reveal">
+        <div class="filters" style="margin-bottom:0;">
+          <button class="active" data-filter="all" data-i18n="fAll"></button>
+          <button data-filter="art" data-i18n="fArt"></button>
+          <button data-filter="community" data-i18n="fCommunity"></button>
+          <button data-filter="scholar" data-i18n="fScholar"></button>
+        </div>
+        <span class="news-count"><b id="newsCount">0</b> <span data-i18n="countLabel"></span></span>
+      </div>
+
+      <!-- GRID — rendered by JS -->
+      <div class="news-grid" id="newsGrid"></div>
+
+      <!-- NEWSLETTER — wyłączony na razie (być może wróci); odkomentuj, aby przywrócić
+      <div class="newsletter i18n-fade reveal">
+        <div class="nl-txt">
+          <h2 data-i18n="nlTitle"></h2>
+          <p data-i18n="nlText"></p>
+        </div>
+        <form class="nl-form" id="nlForm">
+          <input type="email" required id="nlEmail" placeholder="e-mail" aria-label="e-mail">
+          <button type="submit" class="btn btn-gold" data-i18n="nlBtn"></button>
+        </form>
+      </div>
+      -->
+
+    </div>
+  </section>
+
+  <footer class="site" id="site-footer"></footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script>
+const PAGE_I18N = {
+  en: { pageTitle: 'News', pageLead: 'What we are doing right now — art encounters, scholarships, training and community actions.',
+    fAll: 'All', fArt: 'Art Encounters', fCommunity: 'Community', fScholar: 'Scholarships',
+    featuredTag: 'Featured', countLabel: 'articles',
+    catart: 'Art Encounters', catcommunity: 'Community', catscholar: 'Scholarships',
+    nlTitle: 'Stay in the loop', nlText: 'Get our latest actions and Art Encounters straight to your inbox — a few emails a year, no spam.', nlBtn: 'Subscribe',
+    nlThanks: 'Thank you! We’ll keep you posted.' },
+  pl: { pageTitle: 'Aktualności', pageLead: 'Co robimy właśnie teraz — spotkania ze sztuką dla seniorów w Lublinie, stypendia, szkolenia i akcje społeczne.',
+    fAll: 'Wszystkie', fArt: 'Spotkania ze sztuką', fCommunity: 'Społeczność', fScholar: 'Stypendia',
+    featuredTag: 'Wyróżnione', countLabel: 'artykułów',
+    catart: 'Spotkania ze sztuką', catcommunity: 'Społeczność', catscholar: 'Stypendia',
+    nlTitle: 'Bądź na bieżąco', nlText: 'Otrzymuj nasze najnowsze akcje i Spotkania ze Sztuką prosto na e-mail — kilka wiadomości rocznie, bez spamu.', nlBtn: 'Zapisz się',
+    nlThanks: 'Dziękujemy! Będziemy informować na bieżąco.' },
+  cz: { pageTitle: 'Novinky', pageLead: 'Co právě děláme — setkání s uměním, stipendia, školení a komunitní akce.',
+    fAll: 'Vše', fArt: 'Setkání s uměním', fCommunity: 'Komunita', fScholar: 'Stipendia',
+    featuredTag: 'Vybráno', countLabel: 'článků',
+    catart: 'Setkání s uměním', catcommunity: 'Komunita', catscholar: 'Stipendia',
+    nlTitle: 'Zůstaňte v obraze', nlText: 'Dostávejte naše poslední akce a Setkání s uměním přímo do e-mailu — pár zpráv ročně, žádný spam.', nlBtn: 'Odebírat',
+    nlThanks: 'Děkujeme! Budeme vás informovat.' },
+  it: { pageTitle: 'Notizie', pageLead: 'Cosa stiamo facendo proprio ora — incontri con l’arte, borse di studio, formazione e azioni per la comunità.',
+    fAll: 'Tutte', fArt: 'Incontri con l’arte', fCommunity: 'Comunità', fScholar: 'Borse di studio',
+    featuredTag: 'In evidenza', countLabel: 'articoli',
+    catart: 'Incontri con l’arte', catcommunity: 'Comunità', catscholar: 'Borse di studio',
+    nlTitle: 'Resta aggiornato', nlText: 'Ricevi le nostre ultime azioni e gli Incontri con l’Arte direttamente via e-mail — poche email all’anno, niente spam.', nlBtn: 'Iscriviti',
+    nlThanks: 'Grazie! Ti terremo aggiornato.' }
+};
+
+function lang() { return localStorage.getItem('fs-lang') || 'en'; }
+
+function renderNews() {
+  const l = lang();
+  const t = Object.assign({}, PAGE_I18N.en, PAGE_I18N[l]);
+  const list = (window.ARTICLES || []).filter(x => !x.hidden);
+  const feat = list[0];
+
+  // featured
+  document.getElementById('featured').href = 'article-' + feat.id + '.html';
+  document.getElementById('featImg').src = feat.img;
+  document.getElementById('featCat').textContent = t['cat' + feat.cat];
+  document.getElementById('featDate').textContent = feat.date[l];
+  document.getElementById('featTitle').textContent = feat.title[l];
+  document.getElementById('featLead').textContent = feat.lead[l];
+
+  // grid (rest)
+  const grid = document.getElementById('newsGrid');
+  grid.innerHTML = '';
+  list.slice(1).forEach(a => {
+    const el = document.createElement('article');
+    el.className = 'card reveal';
+    el.dataset.cat = a.cat;
+    el.innerHTML =
+      '<a href="article-' + a.id + '.html" style="display:flex;flex-direction:column;flex:1;color:inherit;">' +
+        '<div class="card-media"><img src="' + a.img + '" alt="" loading="lazy" decoding="async"><span class="cat">' + t['cat' + a.cat] + '</span></div>' +
+        '<div class="card-body">' +
+          '<time>' + a.date[l] + '</time>' +
+          '<h3>' + a.title[l] + '</h3>' +
+          '<p>' + a.lead[l] + '</p>' +
+          '<span class="read-more" style="margin-top:4px;"><span>' + (l === 'pl' ? 'Czytaj więcej' : l === 'cz' ? 'Číst dále' : l === 'it' ? 'Leggi di più' : 'Read more') + '</span> <span class="arr">→</span></span>' +
+        '</div>' +
+      '</a>';
+    grid.appendChild(el);
+  });
+
+  // observe new reveal elements
+  if (window.observeReveals) window.observeReveals();
+  applyFilter(document.querySelector('.filters button.active')?.dataset.filter || 'all');
+}
+
+function applyFilter(cat) {
+  let visible = 0;
+  document.querySelectorAll('#newsGrid .card').forEach(card => {
+    const show = cat === 'all' || card.dataset.cat === cat;
+    card.classList.toggle('hidden-by-filter', !show);
+    if (show) visible++;
+  });
+  const countEl = document.getElementById('newsCount');
+  if (countEl) countEl.textContent = visible;
+}
+
+document.querySelectorAll('.filters button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filters button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    applyFilter(btn.dataset.filter);
+  });
+});
+
+// newsletter (demo — no backend; sekcja obecnie wyłączona w HTML)
+const nlForm = document.getElementById('nlForm');
+if (nlForm) nlForm.addEventListener('submit', e => {
+  e.preventDefault();
+  const t = Object.assign({}, PAGE_I18N.en, PAGE_I18N[lang()]);
+  const form = e.currentTarget;
+  form.innerHTML = '<p style="margin:0;color:#fff;font-weight:600;">✓ ' + t.nlThanks + '</p>';
+});
+
+// re-render on language change (called by main.js applyLang)
+window.onLangChange = renderNews;
+</script>
+<script src="/assets/articles.js"></script>
+<script src="/assets/main.js"></script>
+<script>renderNews();</script>
+</body>
+</html>

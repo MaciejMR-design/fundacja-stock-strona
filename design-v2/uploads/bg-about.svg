@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="ba" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#163B65"/><stop offset="1" stop-color="#002957"/>
+    </linearGradient>
+    <radialGradient id="ga" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#D0A41B" stop-opacity="0.30"/>
+      <stop offset="0.6" stop-color="#D0A41B" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#D0A41B" stop-opacity="0"/>
+    </radialGradient>
+    
+  </defs>
+  <rect width="1600" height="600" fill="url(#ba)"/>
+  <circle cx="1270" cy="168" r="450" fill="url(#ga)">
+    <animate attributeName="opacity" values="1;0.65;1" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  
+  <g fill="none" stroke-linecap="round">
+    <path id="road" d="M-40 520 C 260 470 380 330 640 350 C 900 370 980 240 1230 230 C 1380 224 1470 190 1560 150" stroke="#D0A41B" stroke-opacity="0.5" stroke-width="2.4" stroke-dasharray="1 14">
+      <animate attributeName="stroke-dashoffset" values="0;-150" dur="12s" repeatCount="indefinite"/>
+    </path>
+    <path d="M-40 540 C 260 490 380 350 640 370 C 900 390 980 260 1230 250 C 1380 244 1470 210 1560 170" stroke="#f4eacd" stroke-opacity="0.08" stroke-width="10"/>
+  </g>
+  <g fill="#D0A41B">
+    <circle cx="330" cy="424" r="7" opacity="0.85"/><circle cx="330" cy="424" r="13" fill="none" stroke="#D0A41B" stroke-opacity="0.4" stroke-width="1.4"/>
+    <circle cx="760" cy="352" r="7" opacity="0.85"/><circle cx="760" cy="352" r="13" fill="none" stroke="#D0A41B" stroke-opacity="0.4" stroke-width="1.4"/>
+    <circle cx="1130" cy="240" r="7" opacity="0.85"/><circle cx="1130" cy="240" r="13" fill="none" stroke="#D0A41B" stroke-opacity="0.4" stroke-width="1.4"/>
+  </g>
+  <path d="M1436 128 C1428 120 1414 121 1410 132 C1406 142 1413 151 1436 166 C1459 151 1466 142 1462 132 C1458 121 1444 120 1436 128 Z" fill="#D0A41B" opacity="0.95">
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="4.5s" repeatCount="indefinite"/>
+  </path>
+  <text x="316" y="466" font-family="Georgia, serif" font-size="15" fill="#f4eacd" fill-opacity="0.55">2022</text>
+  <text x="746" y="394" font-family="Georgia, serif" font-size="15" fill="#f4eacd" fill-opacity="0.55">2023</text>
+  <text x="1114" y="282" font-family="Georgia, serif" font-size="15" fill="#f4eacd" fill-opacity="0.55">2026</text>
+  <g fill="#D0A41B">
+    <circle cx="220" cy="150" r="2" opacity="0.45"><animate attributeName="cy" values="150;126;150" dur="9s" repeatCount="indefinite"/></circle>
+    <circle cx="520" cy="360" r="1.6" opacity="0.32"><animate attributeName="cy" values="360;330;360" dur="11s" repeatCount="indefinite"/></circle>
+    <circle cx="880" cy="120" r="1.8" opacity="0.38"><animate attributeName="cy" values="120;96;120" dur="8s" repeatCount="indefinite"/></circle>
+    <circle cx="1420" cy="432" r="1.8" opacity="0.36"/>
+    <circle cx="120" cy="372" r="1.6" opacity="0.3"/>
+  </g>
+</svg>

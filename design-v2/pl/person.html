@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rada i Zarząd — Fundacja Stock</title>
+<meta name="description" content="Rada i Zarząd Fundacji Stock.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Stock Foundation">
+<meta property="og:title" content="Rada i Zarząd — Fundacja Stock">
+<meta property="og:description" content="Rada i Zarząd Fundacji Stock.">
+<meta property="og:image" content="https://fundacja-stock-design.vercel.app/uploads/about-festyn.jpg">
+<meta property="og:url" content="https://fundacjastock.pl/pl/person.html">
+<meta property="og:locale" content="pl_PL">
+<meta name="twitter:card" content="summary_large_image">
+<!-- lang-alternates -->
+<link rel="canonical" href="https://fundacjastock.pl/pl/person.html">
+<link rel="alternate" hreflang="en" href="https://fundacjastock.pl/person.html">
+<link rel="alternate" hreflang="pl" href="https://fundacjastock.pl/pl/person.html">
+<link rel="alternate" hreflang="cs" href="https://fundacjastock.pl/cz/person.html">
+<link rel="alternate" hreflang="it" href="https://fundacjastock.pl/it/person.html">
+<link rel="alternate" hreflang="x-default" href="https://fundacjastock.pl/person.html">
+<!-- /lang-alternates -->
+<script data-fs-lang>window.FS_LANG='pl';try{localStorage.setItem('fs-lang','pl')}catch(e){}</script>
+<link rel="icon" href="/uploads/logo-footer.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Literata:opsz,wght@7..72,200;7..72,300;7..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+  <header class="site" id="site-header"></header>
+
+  <section class="page-hero">
+    <img class="hero-photo" src="/uploads/bg-team.svg" alt="" aria-hidden="true">
+    <svg class="hero-art" viewBox="0 0 1200 400" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
+      <g fill="none" stroke="#CD9E0C" stroke-width="1.2">
+        <path d="M980 20 C980 20 890 -6 760 -6 C630 -6 540 20 540 20 C537 72 500 112 448 112 L448 300 C448 420 540 520 760 580 C980 520 1072 420 1072 300 L1072 112 C1020 112 983 72 980 20 Z" opacity="0.4"></path>
+        <circle cx="900" cy="150" r="80" opacity="0.28"></circle>
+      </g>
+    </svg>
+    <div class="container page-hero-inner">
+      <span class="crumb"><a href="index.html" data-i18n="home"></a> / <a href="board-council.html" data-i18n="navCouncil"></a> / <span id="crumbName"></span></span>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="person-hero reveal">
+        <div class="portrait" id="portrait"></div>
+        <div class="pbody">
+          <span class="role-tag"><span class="line" style="display:inline-block;width:28px;height:1px;background:var(--gold);"></span> <span id="pRole"></span></span>
+          <h1 id="pName"></h1>
+          <div class="bio" id="pBio"></div>
+          <a href="board-council.html" class="back-link" style="margin-top:12px;"><span class="arr">←</span> <span data-i18n="backToTeam"></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OTHER MEMBERS -->
+  <section class="initiatives">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="overline"><span class="line"></span><span data-i18n="moreOverline"></span></div>
+        <h2 class="display" style="font-size:clamp(30px,4vw,48px);" data-i18n="moreTitle"></h2>
+      </div>
+      <div class="team-grid" id="otherGrid"></div>
+    </div>
+  </section>
+
+  <footer class="site" id="site-footer"></footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script>
+const PAGE_I18N = {
+  en: { backToTeam: 'Back to Council & Board', moreOverline: 'The team', moreTitle: 'Other members', viewProfile: 'View profile' },
+  pl: { backToTeam: 'Wróć do Rady i Zarządu', moreOverline: 'Zespół', moreTitle: 'Pozostali członkowie', viewProfile: 'Zobacz profil' },
+  cz: { backToTeam: 'Zpět na Radu a představenstvo', moreOverline: 'Tým', moreTitle: 'Další členové', viewProfile: 'Zobrazit profil' },
+  it: { backToTeam: 'Torna a Consiglio e direzione', moreOverline: 'Il team', moreTitle: 'Altri membri', viewProfile: 'Vedi profilo' }
+};
+function lang() { return localStorage.getItem('fs-lang') || 'en'; }
+function getId() { return location.hash.slice(1); }
+
+function renderPerson() {
+  const l = lang();
+  const t = Object.assign({}, PAGE_I18N.en, PAGE_I18N[l]);
+  const people = window.PEOPLE || [];
+  const p = people.find(x => x.id === getId()) || people[0];
+  if (!p) return;
+
+  document.title = p.name + ' — Stock Foundation';
+  document.getElementById('crumbName').textContent = p.name;
+  document.getElementById('pName').textContent = p.name;
+  document.getElementById('pRole').textContent = p.role[l];
+
+  const portrait = document.getElementById('portrait');
+  portrait.innerHTML = p.photo ? '<img src="' + p.photo + '" alt="' + p.name + '">'
+    : '<span class="initials">' + p.name.split(' ').map(w => w[0]).join('').slice(0, 2) + '</span>';
+
+  const bio = document.getElementById('pBio');
+  bio.innerHTML = '';
+  p.bio[l].forEach(par => { const el = document.createElement('p'); el.textContent = par; bio.appendChild(el); });
+
+  const grid = document.getElementById('otherGrid');
+  grid.innerHTML = '';
+  people.filter(x => x.id !== p.id).forEach(o => {
+    const el = document.createElement('a');
+    el.className = 'person reveal';
+    el.href = 'person.html#' + o.id;
+    el.innerHTML = '<div class="photo"><img src="' + o.photo + '" alt="' + o.name + '" loading="lazy" decoding="async"></div>' +
+      '<div class="meta"><h3>' + o.name + '</h3><span>' + o.role[l] + '</span><span class="view">' + t.viewProfile + ' →</span></div>';
+    grid.appendChild(el);
+  });
+  if (window.observeReveals) window.observeReveals();
+}
+window.onLangChange = renderPerson;
+window.addEventListener('hashchange', renderPerson);
+</script>
+<script src="/assets/people.js"></script>
+<script src="/assets/main.js"></script>
+<script>renderPerson();</script>
+</body>
+</html>
