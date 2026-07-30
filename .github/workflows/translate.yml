@@ -1,0 +1,30 @@
+# Automatyczne uzupełnianie tłumaczeń wpisów (EN/CZ/IT z polskiego przez DeepL).
+# Działa dopiero, gdy w ustawieniach repo (Settings -> Secrets -> Actions)
+# istnieje sekret DEEPL_API_KEY. Bez klucza job kończy się neutralnie.
+name: Tłumaczenia DeepL
+on:
+  push:
+    branches: [main]
+    paths: ['content/articles/**']
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    # nie reaguj na własne commity (pętla)
+    if: "!contains(github.event.head_commit.message, '[deepl]')"
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Uzupełnij brakujące tłumaczenia
+        env:
+          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
+        run: node translate-content.mjs
+      - name: Zapisz przetłumaczone pliki
+        run: |
+          git config user.name "Tłumacz DeepL"
+          git config user.email "actions@github.com"
+          git add content/articles
+          git diff --cached --quiet || git commit -m "Tłumaczenia DeepL — uzupełnienie EN/CZ/IT [deepl]"
+          git push

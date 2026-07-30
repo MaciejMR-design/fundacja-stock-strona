@@ -15,6 +15,24 @@ const ARTICLES = readdirSync(join(CONTENT, 'articles'))
   .filter(f => f.endsWith('.json'))
   .map(f => JSON.parse(stripBom(readFileSync(join(CONTENT, 'articles', f), 'utf8'))))
   .sort((a, b) => (b.ts || '').localeCompare(a.ts || ''));
+
+/* Safety net for entries added via the CMS: any missing/empty language falls
+   back to English (then Polish), so no page ever renders blank/undefined.
+   Proper CZ/IT translations can overwrite these fields at any time. */
+for (const a of ARTICLES) {
+  for (const key of ['date', 'title', 'lead']) {
+    a[key] = a[key] || {};
+    for (const l of ['en', 'pl', 'cz', 'it']) {
+      if (!a[key][l]) a[key][l] = a[key].en || a[key].pl || '';
+    }
+  }
+  a.body = a.body || {};
+  for (const l of ['en', 'pl', 'cz', 'it']) {
+    if (!Array.isArray(a.body[l]) || a.body[l].length === 0) {
+      a.body[l] = a.body.en || a.body.pl || [];
+    }
+  }
+}
 const PAGE_DICTS = {};
 for (const f of readdirSync(join(CONTENT, 'pages')).filter(f => f.endsWith('.json'))) {
   PAGE_DICTS[f.replace('.json', '.html')] = JSON.parse(stripBom(readFileSync(join(CONTENT, 'pages', f), 'utf8')));
