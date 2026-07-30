@@ -1,0 +1,50 @@
+{
+  "id": "sisan",
+  "ts": "2024-10-29",
+  "cat": "community",
+  "img": "/uploads/sisan-bridge.jpg",
+  "images": [
+    "/uploads/sisan-bridge.jpg",
+    "/uploads/sisan-work.jpg"
+  ],
+  "date": {
+    "en": "October 2024",
+    "pl": "Październik 2024",
+    "cz": "Říjen 2024",
+    "it": "Ottobre 2024"
+  },
+  "title": {
+    "en": "Flavours of Change grants: a community initiative in Šišan, Croatia",
+    "pl": "Granty Flavours of Change: inicjatywa społeczna w Šišan w Chorwacji",
+    "cz": "Granty Flavours of Change: komunitní iniciativa v Šišanu v Chorvatsku",
+    "it": "Borse Flavours of Change: un’iniziativa comunitaria a Šišan, in Croazia"
+  },
+  "lead": {
+    "en": "In Šišan, Croatia, the local kindergarten „Bubamara” was transformed into a vibrant space for education and play through a community-driven project.",
+    "pl": "W chorwackim Šišan lokalne przedszkole „Bubamara” zmieniło się w tętniącą życiem przestrzeń edukacji i zabawy dzięki projektowi społeczności.",
+    "cz": "V chorvatském Šišanu se místní školka „Bubamara” proměnila v živý prostor pro vzdělávání a hru díky komunitnímu projektu.",
+    "it": "A Šišan, in Croazia, l’asilo locale „Bubamara” è stato trasformato in un vivace spazio di educazione e gioco grazie a un progetto della comunità."
+  },
+  "body": {
+    "en": [
+      "In Šišan, Croatia, the local kindergarten „Bubamara” was transformed into a vibrant space for education and play through a community-driven project involving 24 volunteers, educators and residents. Funded partly by the Stock Foundation, the project focused on creating a wooden bridge, planting Mediterranean greenery, and adding colorful finishing touches.",
+      "The initiative brought together parents, staff and professionals to complete 159 hours of work — including 40 hours of preparation, 64 hours of construction and landscaping, and 76 hours for planting and final details.",
+      "The result is a play area that doubles as an educational space, fostering creativity, teamwork and environmental awareness."
+    ],
+    "pl": [
+      "W chorwackim Šišan lokalne przedszkole „Bubamara” zostało przekształcone w tętniącą życiem przestrzeń edukacji i zabawy dzięki projektowi społeczności, w który zaangażowało się 24 wolontariuszy, wychowawców i mieszkańców. Projekt, częściowo sfinansowany przez Fundację Stock, objął budowę drewnianego mostku, sadzenie śródziemnomorskiej zieleni i kolorowe wykończenia.",
+      "Inicjatywa połączyła rodziców, kadrę i specjalistów — łącznie 159 godzin pracy: 40 godzin przygotowań, 64 godziny budowy i prac ogrodowych oraz 76 godzin sadzenia i wykończeń.",
+      "Efektem jest plac zabaw pełniący jednocześnie funkcję przestrzeni edukacyjnej — rozwijającej kreatywność, pracę zespołową i świadomość ekologiczną."
+    ],
+    "cz": [
+      "V chorvatském Šišanu byla místní školka „Bubamara” proměněna v živý prostor pro vzdělávání a hru díky komunitnímu projektu, do něhož se zapojilo 24 dobrovolníků, pedagogů a obyvatel. Projekt, částečně financovaný Nadací Stock, zahrnoval stavbu dřevěného mostku, výsadbu středomořské zeleně a barevné dokončovací práce.",
+      "Iniciativa spojila rodiče, personál a odborníky — celkem 159 hodin práce: 40 hodin příprav, 64 hodin stavby a terénních úprav a 76 hodin výsadby a závěrečných detailů.",
+      "Výsledkem je hřiště, které slouží zároveň jako vzdělávací prostor — rozvíjí kreativitu, týmovou práci a ekologické povědomí."
+    ],
+    "it": [
+      "A Šišan, in Croazia, l’asilo locale „Bubamara” è stato trasformato in un vivace spazio di educazione e gioco grazie a un progetto guidato dalla comunità con 24 volontari, educatori e residenti. Finanziato in parte dalla Fondazione Stock, il progetto ha riguardato la costruzione di un ponte di legno, la piantumazione di verde mediterraneo e colorati tocchi finali.",
+      "L’iniziativa ha riunito genitori, personale e professionisti per completare 159 ore di lavoro — di cui 40 di preparazione, 64 di costruzione e sistemazione del verde e 76 di piantumazione e dettagli finali.",
+      "Il risultato è un’area giochi che è anche uno spazio educativo, che favorisce creatività, lavoro di squadra e consapevolezza ambientale."
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "floc2024",
+  "ts": "2024-01-10",
+  "cat": "community",
+  "img": "/uploads/cover-community.svg",
+  "date": {
+    "en": "January 2024",
+    "pl": "Styczeń 2024",
+    "cz": "Leden 2024",
+    "it": "Gennaio 2024"
+  },
+  "title": {
+    "en": "Flavours of Change Grants — let’s change the world together",
+    "pl": "Granty Flavours of Change — zmieniajmy świat razem",
+    "cz": "Granty Flavours of Change — měňme svět společně",
+    "it": "Flavours of Change Grants — cambiamo il mondo insieme"
+  },
+  "lead": {
+    "en": "We launched our international employee volunteering programme — grants of up to €2,200 for community projects submitted by Stock employees.",
+    "pl": "Wystartował nasz międzynarodowy program wolontariatu pracowniczego — granty do 2200 euro na projekty społeczne zgłaszane przez pracowników Stock.",
+    "cz": "Spustili jsme náš mezinárodní program zaměstnaneckého dobrovolnictví — granty až 2 200 eur na komunitní projekty podávané zaměstnanci Stock.",
+    "it": "Abbiamo lanciato il nostro programma internazionale di volontariato aziendale — sovvenzioni fino a 2.200 euro per progetti comunitari presentati dai dipendenti Stock."
+  },
+  "body": {
+    "en": [
+      "We ended the year with great excitement by announcing the launch of our international Stock Foundation employee volunteer programme — Flavours of Change Grants!",
+      "The main objectives of the programme are to encourage Stock Spirits Group staff to volunteer and participate in projects for the benefit of their communities, to support projects that respond to the diverse needs of the community, and to develop a sense of social responsibility among employees.",
+      "The Foundation encourages all SSG employees wishing to contribute to their community to submit projects that need financial support. Grants of up to €2,200 are available, depending on the scope and impact of the proposed project.",
+      "We are looking for projects that align with our mission of support, inclusivity, community engagement, education and environmental sustainability — across areas such as health, arts and culture, community services and improving the local environment. We want them to address immediate needs and make the greatest difference."
+    ],
+    "pl": [
+      "Rok zakończyliśmy wielką ekscytacją, ogłaszając start międzynarodowego programu wolontariatu pracowniczego Fundacji Stock — Flavours of Change Grants!",
+      "Główne cele programu to zachęcanie pracowników Stock Spirits Group do wolontariatu i udziału w projektach na rzecz ich społeczności, wspieranie projektów odpowiadających na różnorodne potrzeby wspólnot oraz rozwijanie poczucia odpowiedzialności społecznej wśród pracowników.",
+      "Fundacja zachęca wszystkich pracowników SSG, którzy chcą działać na rzecz swojej społeczności, do zgłaszania projektów potrzebujących wsparcia finansowego. Dostępne są granty do 2200 euro, w zależności od zakresu i oddziaływania proponowanego projektu.",
+      "Szukamy projektów zgodnych z naszą misją wsparcia, włączania, zaangażowania społecznego, edukacji i zrównoważonego rozwoju — w obszarach takich jak zdrowie, sztuka i kultura, usługi dla społeczności czy poprawa lokalnego środowiska. Chcemy, by odpowiadały na pilne potrzeby i robiły jak największą różnicę."
+    ],
+    "cz": [
+      "Rok jsme zakončili s velkým nadšením oznámením startu mezinárodního programu zaměstnaneckého dobrovolnictví Nadace Stock — Flavours of Change Grants!",
+      "Hlavními cíli programu je povzbuzovat zaměstnance Stock Spirits Group k dobrovolnictví a účasti na projektech ve prospěch jejich komunit, podporovat projekty reagující na rozmanité potřeby společenství a rozvíjet u zaměstnanců smysl pro společenskou odpovědnost.",
+      "Nadace vyzývá všechny zaměstnance SSG, kteří chtějí přispět své komunitě, aby podávali projekty potřebující finanční podporu. K dispozici jsou granty až do výše 2 200 eur, v závislosti na rozsahu a dopadu navrhovaného projektu.",
+      "Hledáme projekty v souladu s naší misí podpory, inkluzivity, komunitního zapojení, vzdělávání a environmentální udržitelnosti — v oblastech jako zdraví, umění a kultura, služby pro komunitu či zlepšování místního prostředí. Chceme, aby reagovaly na naléhavé potřeby a přinášely co největší změnu."
+    ],
+    "it": [
+      "Abbiamo concluso l’anno con grande entusiasmo annunciando il lancio del programma internazionale di volontariato dei dipendenti della Fondazione Stock — Flavours of Change Grants!",
+      "Gli obiettivi principali del programma sono incoraggiare il personale di Stock Spirits Group a fare volontariato e a partecipare a progetti a beneficio delle proprie comunità, sostenere progetti che rispondono ai diversi bisogni della comunità e sviluppare il senso di responsabilità sociale tra i dipendenti.",
+      "La Fondazione incoraggia tutti i dipendenti SSG che desiderano contribuire alla propria comunità a presentare progetti che necessitano di sostegno finanziario. Sono disponibili sovvenzioni fino a 2.200 euro, a seconda della portata e dell’impatto del progetto proposto.",
+      "Cerchiamo progetti in linea con la nostra missione di sostegno, inclusività, impegno comunitario, educazione e sostenibilità ambientale — in ambiti come la salute, l’arte e la cultura, i servizi alla comunità e il miglioramento dell’ambiente locale. Vogliamo che rispondano a bisogni immediati e facciano la differenza più grande possibile."
+    ]
+  }
+}

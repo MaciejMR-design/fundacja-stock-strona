@@ -1,0 +1,46 @@
+{
+  "id": "urbanlab",
+  "ts": "2026-04-24",
+  "cat": "art",
+  "img": "/uploads/news-urbanlab.jpg",
+  "date": {
+    "en": "24 April 2026",
+    "pl": "24 kwietnia 2026",
+    "cz": "24. dubna 2026",
+    "it": "24 aprile 2026"
+  },
+  "title": {
+    "en": "Across generations — meeting with art at UrbanLab",
+    "pl": "Międzypokoleniowo — spotkanie ze sztuką w UrbanLab",
+    "cz": "Napříč generacemi — setkání s uměním v UrbanLab",
+    "it": "Attraverso le generazioni — incontro con l’arte all’UrbanLab"
+  },
+  "lead": {
+    "en": "The City Hall’s main chamber hosted a unique cultural event organized by the Stock Foundation, dedicated to art and its multigenerational dimension.",
+    "pl": "W głównej sali ratusza odbyło się wyjątkowe wydarzenie kulturalne zorganizowane przez Fundację Stock, poświęcone sztuce i jej międzypokoleniowemu wymiarowi.",
+    "cz": "V hlavním sále radnice se konala jedinečná kulturní akce pořádaná Nadací Stock, věnovaná umění a jeho mezigeneračnímu rozměru.",
+    "it": "La sala principale del municipio ha ospitato un evento culturale unico organizzato dalla Fondazione Stock, dedicato all’arte e alla sua dimensione multigenerazionale."
+  },
+  "body": {
+    "en": [
+      "The meeting was led by an outstanding curator from the National Museum in Lublin, Danuta Szewczyk-Prokurat. The lecture focused on the fascinating phenomenon of artistic talent being passed down from one generation to another, revealing how creativity and craftsmanship can transcend time within families.",
+      "The presentation was enriched with remarkable examples from art history, including works by Pieter Bruegel, Peter Paul Rubens and the Kossak family, illustrating how artistic heritage evolves across generations. A particularly engaging part of the meeting was devoted to the Sagrada Família — Antoni Gaudí’s masterpiece in Barcelona, whose construction has involved multiple generations of artists and architects.",
+      "The event was addressed to seniors under the care of the City Hall. It offered an inspiring opportunity to reflect on continuity, legacy, and the enduring power of art to connect people across generations."
+    ],
+    "pl": [
+      "Spotkanie poprowadziła wybitna kustosz z Muzeum Narodowego w Lublinie, Danuta Szewczyk-Prokurat. Wykład skupił się na fascynującym zjawisku talentu artystycznego przekazywanego z pokolenia na pokolenie, ukazując, jak twórczość i kunszt potrafią przekraczać czas w obrębie rodzin.",
+      "Prezentację wzbogaciły niezwykłe przykłady z historii sztuki, w tym dzieła Pietera Bruegla, Petera Paula Rubensa i rodziny Kossaków, ilustrujące, jak dziedzictwo artystyczne ewoluuje przez pokolenia. Szczególnie wciągająca część spotkania poświęcona była Sagrada Família — arcydziełu Antoniego Gaudíego w Barcelonie, którego budowa angażowała wiele pokoleń artystów i architektów.",
+      "Wydarzenie skierowane było do seniorów pod opieką ratusza. Było inspirującą okazją do refleksji nad ciągłością, dziedzictwem i nieprzemijającą mocą sztuki, która łączy ludzi ponad pokoleniami."
+    ],
+    "cz": [
+      "Setkání vedla vynikající kurátorka z Národního muzea v Lublinu, Danuta Szewczyk-Prokurat. Přednáška se zaměřila na fascinující fenomén uměleckého talentu předávaného z generace na generaci a ukázala, jak tvořivost a řemeslo dokážou v rodinách překonávat čas.",
+      "Prezentaci obohatily pozoruhodné příklady z dějin umění, včetně děl Pietera Bruegela, Petera Paula Rubense a rodiny Kossaků, které ilustrují, jak se umělecké dědictví vyvíjí napříč generacemi. Obzvláště poutavá část setkání byla věnována Sagrada Família — mistrovskému dílu Antoniho Gaudího v Barceloně, na jehož stavbě se podílelo několik generací umělců a architektů.",
+      "Akce byla určena seniorům v péči radnice. Nabídla inspirativní příležitost k zamyšlení nad kontinuitou, odkazem a trvalou silou umění spojovat lidi napříč generacemi."
+    ],
+    "it": [
+      "L’incontro è stato guidato da un’eccezionale curatrice del Museo Nazionale di Lublino, Danuta Szewczyk-Prokurat. La conferenza si è concentrata sull’affascinante fenomeno del talento artistico tramandato di generazione in generazione, rivelando come creatività e maestria possano attraversare il tempo all’interno delle famiglie.",
+      "La presentazione è stata arricchita da esempi notevoli della storia dell’arte, tra cui opere di Pieter Bruegel, Peter Paul Rubens e della famiglia Kossak, che illustrano come il patrimonio artistico si evolva attraverso le generazioni. Una parte particolarmente coinvolgente è stata dedicata alla Sagrada Família — il capolavoro di Antoni Gaudí a Barcellona, la cui costruzione ha coinvolto più generazioni di artisti e architetti.",
+      "L’evento era rivolto agli anziani assistiti dal municipio. Ha offerto un’occasione stimolante per riflettere sulla continuità, sull’eredità e sul potere duraturo dell’arte di unire le persone attraverso le generazioni."
+    ]
+  }
+}

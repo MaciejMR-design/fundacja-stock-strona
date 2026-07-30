@@ -1,0 +1,46 @@
+{
+  "id": "psychsummary",
+  "ts": "2024-02-05",
+  "cat": "community",
+  "img": "/uploads/cover-community.svg",
+  "date": {
+    "en": "February 2024",
+    "pl": "Luty 2024",
+    "cz": "Únor 2024",
+    "it": "Febbraio 2024"
+  },
+  "title": {
+    "en": "Psychological support programme — summary",
+    "pl": "Program wsparcia psychologicznego — podsumowanie",
+    "cz": "Program psychologické podpory — shrnutí",
+    "it": "Programma di sostegno psicologico — bilancio"
+  },
+  "lead": {
+    "en": "A hundred people supported and 1,200 hours of face-to-face sessions with experienced psychologists educated in Ukraine.",
+    "pl": "Sto osób objętych wsparciem i 1200 godzin indywidualnych sesji z doświadczonymi psychologami wykształconymi w Ukrainie.",
+    "cz": "Sto podpořených osob a 1 200 hodin osobních sezení se zkušenými psychology vzdělanými na Ukrajině.",
+    "it": "Cento persone sostenute e 1.200 ore di sedute individuali con psicologi esperti formati in Ucraina."
+  },
+  "body": {
+    "en": [
+      "The Stock Foundation has been addressing the challenges of the influx of refugees to Lublin since the beginning of the humanitarian crisis related to the war in Ukraine, implementing projects that support them in many aspects of their lives. One of these is a psychological support programme for traumatised refugees and their children.",
+      "The programme provided psychological support to 100 people, with 1,200 hours of face-to-face sessions, in cooperation with 3 psychologists educated in Ukraine and fluent in Polish — therapists with many years of experience and high professional competence.",
+      "The programme creates a safe and non-judgmental environment where individuals can talk about their difficult emotions and problems, learn practical tools for dealing with stress and trauma — relaxation techniques, mindfulness and breathing exercises — and effectively cope with the challenges of adapting to a new life situation."
+    ],
+    "pl": [
+      "Fundacja Stock od początku kryzysu humanitarnego związanego z wojną w Ukrainie odpowiada na wyzwania napływu uchodźców do Lublina, realizując projekty wspierające ich w wielu aspektach życia. Jednym z nich jest program wsparcia psychologicznego dla straumatyzowanych uchodźców i ich dzieci.",
+      "Program objął wsparciem psychologicznym 100 osób w ramach 1200 godzin indywidualnych sesji, we współpracy z trójką psychologów wykształconych w Ukrainie i biegle mówiących po polsku — terapeutów z wieloletnim doświadczeniem i wysokimi kompetencjami zawodowymi.",
+      "Program tworzy bezpieczne, wolne od ocen środowisko, w którym można rozmawiać o trudnych emocjach i problemach, uczyć się praktycznych narzędzi radzenia sobie ze stresem i traumą — technik relaksacyjnych, ćwiczeń uważności i oddechowych — i skutecznie mierzyć się z wyzwaniami adaptacji do nowej sytuacji życiowej."
+    ],
+    "cz": [
+      "Nadace Stock od začátku humanitární krize spojené s válkou na Ukrajině reaguje na výzvy přílivu uprchlíků do Lublinu a realizuje projekty, které je podporují v mnoha oblastech života. Jedním z nich je program psychologické podpory pro traumatizované uprchlíky a jejich děti.",
+      "Program poskytl psychologickou podporu 100 osobám v rámci 1 200 hodin osobních sezení, ve spolupráci se třemi psychology vzdělanými na Ukrajině a plynně hovořícími polsky — terapeuty s mnohaletou praxí a vysokou odbornou kompetencí.",
+      "Program vytváří bezpečné a nehodnotící prostředí, kde lidé mohou mluvit o svých těžkých emocích a problémech, učit se praktické nástroje pro zvládání stresu a traumatu — relaxační techniky, cvičení všímavosti a dechová cvičení — a účinně zvládat výzvy adaptace na novou životní situaci."
+    ],
+    "it": [
+      "La Fondazione Stock affronta le sfide dell’afflusso di rifugiati a Lublino fin dall’inizio della crisi umanitaria legata alla guerra in Ucraina, realizzando progetti che li sostengono in molti aspetti della loro vita. Uno di questi è il programma di sostegno psicologico per i rifugiati traumatizzati e i loro figli.",
+      "Il programma ha fornito sostegno psicologico a 100 persone, con 1.200 ore di sedute individuali, in collaborazione con 3 psicologi formati in Ucraina e fluenti in polacco — terapeuti con molti anni di esperienza e alta competenza professionale.",
+      "Il programma crea un ambiente sicuro e privo di giudizio in cui le persone possono parlare delle proprie emozioni e difficoltà, apprendere strumenti pratici per affrontare stress e traumi — tecniche di rilassamento, esercizi di mindfulness e di respirazione — e affrontare efficacemente le sfide dell’adattamento a una nuova situazione di vita."
+    ]
+  }
+}

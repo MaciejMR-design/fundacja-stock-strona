@@ -1,0 +1,46 @@
+{
+  "id": "castlehill",
+  "ts": "2025-10-24",
+  "cat": "art",
+  "img": "/uploads/news-castlehill.jpg",
+  "date": {
+    "en": "24 October 2025",
+    "pl": "24 października 2025",
+    "cz": "24. října 2025",
+    "it": "24 ottobre 2025"
+  },
+  "title": {
+    "en": "Anna Czajczyk leads a history session for seniors at City Hall",
+    "pl": "Anna Czajczyk prowadzi spotkanie historyczne dla seniorów w ratuszu",
+    "cz": "Anna Czajczyk vede historické setkání pro seniory na radnici",
+    "it": "Anna Czajczyk guida una sessione di storia per anziani al municipio"
+  },
+  "lead": {
+    "en": "A talk about the history of Lublin’s Castle Hill — from the medieval stronghold to the Chapel of the Holy Trinity.",
+    "pl": "Opowieść o historii lubelskiego Wzgórza Zamkowego — od średniowiecznego grodu po Kaplicę Trójcy Świętej.",
+    "cz": "Vyprávění o historii lublinského Zámeckého vrchu — od středověkého hradiště po kapli Nejsvětější Trojice.",
+    "it": "Una conferenza sulla storia della Collina del Castello di Lublino — dalla fortezza medievale alla Cappella della Santissima Trinità."
+  },
+  "body": {
+    "en": [
+      "On October 24, an event for seniors was held at the City Hall, featuring Anna Czajczyk, an experienced art curator. She led a talk about the history of Lublin’s Castle Hill, focusing on how the site changed over the centuries.",
+      "She spoke about the origins of the medieval stronghold, the construction of the Gothic tower, and the later transformation of the castle into a prison in the 19th and 20th century. She also explained how the Chapel of the Holy Trinity became one of the most important monuments of Polish medieval art.",
+      "Participants appreciated the chance to learn about local history in a clear and accessible way."
+    ],
+    "pl": [
+      "24 października w ratuszu odbyło się wydarzenie dla seniorów z udziałem Anny Czajczyk, doświadczonej kustosz. Poprowadziła opowieść o historii lubelskiego Wzgórza Zamkowego, skupiając się na tym, jak to miejsce zmieniało się przez wieki.",
+      "Mówiła o początkach średniowiecznego grodu, budowie gotyckiej wieży i późniejszym przekształceniu zamku w więzienie w XIX i XX wieku. Wyjaśniła też, jak Kaplica Trójcy Świętej stała się jednym z najważniejszych zabytków polskiej sztuki średniowiecznej.",
+      "Uczestnicy docenili możliwość poznania lokalnej historii w przystępny i klarowny sposób."
+    ],
+    "cz": [
+      "24. října se na radnici konala akce pro seniory s Annou Czajczyk, zkušenou kurátorkou. Vedla vyprávění o historii lublinského Zámeckého vrchu se zaměřením na to, jak se toto místo měnilo v průběhu staletí.",
+      "Hovořila o počátcích středověkého hradiště, stavbě gotické věže a pozdější přeměně hradu ve vězení v 19. a 20. století. Vysvětlila také, jak se kaple Nejsvětější Trojice stala jednou z nejvýznamnějších památek polského středověkého umění.",
+      "Účastníci ocenili možnost poznat místní historii jasným a přístupným způsobem."
+    ],
+    "it": [
+      "Il 24 ottobre si è tenuto al municipio un evento per anziani con Anna Czajczyk, esperta curatrice d’arte. Ha guidato una conferenza sulla storia della Collina del Castello di Lublino, concentrandosi su come il luogo sia cambiato nei secoli.",
+      "Ha parlato delle origini della fortezza medievale, della costruzione della torre gotica e della successiva trasformazione del castello in prigione nel XIX e XX secolo. Ha anche spiegato come la Cappella della Santissima Trinità sia diventata uno dei più importanti monumenti dell’arte medievale polacca.",
+      "I partecipanti hanno apprezzato la possibilità di conoscere la storia locale in modo chiaro e accessibile."
+    ]
+  }
+}

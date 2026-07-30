@@ -1,0 +1,46 @@
+{
+  "id": "taekwondo",
+  "ts": "2026-05-07",
+  "cat": "scholar",
+  "img": "/uploads/news-taekwondo.jpg",
+  "date": {
+    "en": "7 May 2026",
+    "pl": "7 maja 2026",
+    "cz": "7. května 2026",
+    "it": "7 maggio 2026"
+  },
+  "title": {
+    "en": "Music and Sport Scholarship — another victory",
+    "pl": "Stypendium muzyczno-sportowe — kolejne zwycięstwo",
+    "cz": "Hudební a sportovní stipendium — další vítězství",
+    "it": "Borsa di studio musica e sport — un’altra vittoria"
+  },
+  "lead": {
+    "en": "Piotr Pawlik has joined our music and sports scholarship program, organized jointly by Stock Foundation and Homo Faber.",
+    "pl": "Piotr Pawlik dołączył do naszego programu stypendiów muzyczno-sportowych, organizowanego wspólnie przez Fundację Stock i Homo Faber.",
+    "cz": "Piotr Pawlik se připojil k našemu programu hudebních a sportovních stipendií, který společně pořádají Nadace Stock a Homo Faber.",
+    "it": "Piotr Pawlik è entrato nel nostro programma di borse di studio per musica e sport, organizzato insieme da Fondazione Stock e Homo Faber."
+  },
+  "body": {
+    "en": [
+      "Piotr Pawlik competes in a Korean martial art (Taekwon-Do), where athletes take part in several disciplines such as sparring, patterns and special techniques. He competes in the junior category and has achieved notable results both nationally and internationally.",
+      "In April 2026, Piotr, together with the national team, achieved another success by winning 3rd place in the junior team patterns event at the European Championships in Maribor. Earlier, he and his club teammates were also honored by the Mayor of Lublin for their sporting achievements.",
+      "In 2025, Piotr won the title of Polish Junior Champion in individual sparring, which led to his selection for the national team. As a representative of Poland, he participated in an international match held in Sweden in September 2025, where he placed 4th in the individual sparring category up to 65 kg. We are very happy to already see such remarkable success at the very beginning."
+    ],
+    "pl": [
+      "Piotr Pawlik uprawia koreańską sztukę walki (Taekwon-Do), w której zawodnicy startują w kilku konkurencjach, takich jak walki, układy i techniki specjalne. Rywalizuje w kategorii juniorów i osiąga znaczące wyniki zarówno w kraju, jak i za granicą.",
+      "W kwietniu 2026 roku Piotr wraz z reprezentacją odniósł kolejny sukces, zdobywając 3. miejsce w drużynowych układach juniorów na Mistrzostwach Europy w Mariborze. Wcześniej wraz z kolegami z klubu został również uhonorowany przez Prezydenta Miasta Lublin za osiągnięcia sportowe.",
+      "W 2025 roku Piotr zdobył tytuł Mistrza Polski Juniorów w walkach indywidualnych, co zaowocowało powołaniem do reprezentacji. Jako reprezentant Polski wziął udział w międzynarodowym meczu w Szwecji we wrześniu 2025 roku, gdzie zajął 4. miejsce w kategorii do 65 kg. Bardzo cieszymy się z tak wybitnych sukcesów już na samym początku."
+    ],
+    "cz": [
+      "Piotr Pawlik se věnuje korejskému bojovému umění (Taekwon-Do), kde sportovci soutěží v několika disciplínách, jako jsou zápas, sestavy a speciální techniky. Soutěží v juniorské kategorii a dosahuje pozoruhodných výsledků doma i v zahraničí.",
+      "V dubnu 2026 Piotr spolu s národním týmem dosáhl dalšího úspěchu, když získal 3. místo v týmových sestavách juniorů na mistrovství Evropy v Mariboru. Dříve byli on i jeho kluboví kolegové oceněni primátorem Lublinu za své sportovní úspěchy.",
+      "V roce 2025 Piotr získal titul mistra Polska juniorů v individuálním zápase, což vedlo k jeho nominaci do národního týmu. Jako reprezentant Polska se v září 2025 zúčastnil mezinárodního zápasu ve Švédsku, kde obsadil 4. místo v kategorii do 65 kg. Velmi nás těší tak pozoruhodné úspěchy hned na začátku."
+    ],
+    "it": [
+      "Piotr Pawlik pratica un’arte marziale coreana (Taekwon-Do), in cui gli atleti gareggiano in diverse discipline come combattimento, forme e tecniche speciali. Compete nella categoria junior e ha ottenuto risultati notevoli a livello nazionale e internazionale.",
+      "Nell’aprile 2026, Piotr, insieme alla nazionale, ha ottenuto un altro successo vincendo il 3° posto nelle forme a squadre junior ai Campionati Europei di Maribor. In precedenza, lui e i suoi compagni di club erano stati premiati dal Sindaco di Lublino per i loro risultati sportivi.",
+      "Nel 2025 Piotr ha conquistato il titolo di Campione Polacco Junior nel combattimento individuale, che gli è valso la convocazione in nazionale. Come rappresentante della Polonia, ha partecipato a un incontro internazionale in Svezia nel settembre 2025, dove si è classificato 4° nella categoria fino a 65 kg. Siamo molto felici di vedere già all’inizio successi così notevoli."
+    ]
+  }
+}

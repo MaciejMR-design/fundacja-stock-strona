@@ -1,0 +1,46 @@
+{
+  "id": "matejko",
+  "ts": "2025-02-13",
+  "cat": "art",
+  "img": "/uploads/news-matejko.jpg",
+  "date": {
+    "en": "13 February 2025",
+    "pl": "13 lutego 2025",
+    "cz": "13. února 2025",
+    "it": "13 febbraio 2025"
+  },
+  "title": {
+    "en": "Matejko — an Encounter with Art at the National Museum",
+    "pl": "Matejko — Spotkanie ze Sztuką w Muzeum Narodowym",
+    "cz": "Matejko — Setkání s uměním v Národním muzeu",
+    "it": "Matejko — un Incontro con l’Arte al Museo Nazionale"
+  },
+  "lead": {
+    "en": "A journey through history and patriotism in the work of one of Poland’s greatest painters, organized with the Department of Social Initiatives.",
+    "pl": "Podróż przez historię i patriotyzm w twórczości jednego z największych polskich malarzy, zorganizowana z Wydziałem Inicjatyw Społecznych.",
+    "cz": "Cesta historií a vlastenectvím v díle jednoho z největších polských malířů, uspořádaná s odborem sociálních iniciativ.",
+    "it": "Un viaggio nella storia e nel patriottismo nell’opera di uno dei più grandi pittori polacchi, organizzato con il Dipartimento delle Iniziative Sociali."
+  },
+  "body": {
+    "en": [
+      "The National Museum hosted another Encounter with Art event, organized in cooperation with the Department of Social Initiatives of the City Hall. It was a unique opportunity to explore the work of one of Poland’s greatest painters — Jan Matejko — both a patriot and a visionary of Poland’s past. The event was attended by individuals who require daily assistance and have limited access to art; by co-organizing it, the Stock Foundation is embracing a new direction in its activities and will be funding more such events throughout the year.",
+      "Jolanta Polańska, a curator from the National Museum, took the participants on a journey through history, patriotism and the remarkable vision of the artist. The meeting began with a screening in the museum’s cinema hall, featuring a presentation on Matejko — not only as a painter but also as a visionary shaping Poland’s historical narrative.",
+      "The second part was a visit to the Gallery of Polish Painting, where attendees stopped at two of Matejko’s masterpieces, including The Union of Lublin. These works served as an example of how the artist recreated and shaped the past — a unique opportunity to see history through the eyes of a great artist."
+    ],
+    "pl": [
+      "Muzeum Narodowe gościło kolejne Spotkanie ze Sztuką, zorganizowane we współpracy z Wydziałem Inicjatyw Społecznych ratusza. Była to wyjątkowa okazja, by poznać twórczość jednego z największych polskich malarzy — Jana Matejki — patrioty i wizjonera polskiej przeszłości. W wydarzeniu wzięły udział osoby wymagające codziennego wsparcia, mające ograniczony dostęp do sztuki; współorganizując je, Fundacja Stock otwiera nowy kierunek działań i będzie finansować kolejne takie wydarzenia przez cały rok.",
+      "Jolanta Polańska, kustosz Muzeum Narodowego, zabrała uczestników w podróż przez historię, patriotyzm i niezwykłą wizję artysty. Spotkanie rozpoczął pokaz w sali kinowej muzeum — prezentacja o Matejce nie tylko jako malarzu, ale i wizjonerze kształtującym narodową opowieść o przeszłości.",
+      "Drugą częścią była wizyta w Galerii Malarstwa Polskiego, gdzie uczestnicy zatrzymali się przy dwóch arcydziełach Matejki, w tym przy „Unii Lubelskiej”. Dzieła te pokazały, jak artysta odtwarzał i kształtował przeszłość — to była wyjątkowa okazja, by zobaczyć historię oczami wielkiego twórcy."
+    ],
+    "cz": [
+      "Národní muzeum hostilo další Setkání s uměním, uspořádané ve spolupráci s odborem sociálních iniciativ radnice. Byla to jedinečná příležitost poznat dílo jednoho z největších polských malířů — Jana Matejky — vlastence a vizionáře polské minulosti. Akce se zúčastnili lidé, kteří potřebují každodenní pomoc a mají omezený přístup k umění; spolupořádáním této akce Nadace Stock otevírá nový směr své činnosti a bude podobné akce financovat po celý rok.",
+      "Jolanta Polańska, kurátorka Národního muzea, vzala účastníky na cestu historií, vlastenectvím a pozoruhodnou vizí umělce. Setkání zahájila projekce v kinosále muzea — prezentace o Matejkovi nejen jako malíři, ale i vizionáři formujícím polské historické vyprávění.",
+      "Druhou částí byla návštěva Galerie polského malířství, kde se účastníci zastavili u dvou Matejkových mistrovských děl, včetně „Lublinské unie“. Tato díla ukázala, jak umělec znovu vytvářel a formoval minulost — jedinečná příležitost vidět dějiny očima velkého tvůrce."
+    ],
+    "it": [
+      "Il Museo Nazionale ha ospitato un altro Incontro con l’Arte, organizzato in collaborazione con il Dipartimento delle Iniziative Sociali del municipio. È stata un’occasione unica per esplorare l’opera di uno dei più grandi pittori polacchi — Jan Matejko — patriota e visionario del passato della Polonia. All’evento hanno partecipato persone che necessitano di assistenza quotidiana e hanno un accesso limitato all’arte; co-organizzandolo, la Fondazione Stock apre una nuova direzione delle sue attività e finanzierà altri eventi simili durante l’anno.",
+      "Jolanta Polańska, curatrice del Museo Nazionale, ha condotto i partecipanti in un viaggio attraverso la storia, il patriottismo e la straordinaria visione dell’artista. L’incontro è iniziato con una proiezione nella sala cinema del museo — una presentazione su Matejko non solo come pittore, ma anche come visionario che ha plasmato la narrazione storica polacca.",
+      "La seconda parte è stata la visita alla Galleria della Pittura Polacca, dove i partecipanti si sono fermati davanti a due capolavori di Matejko, tra cui “L’Unione di Lublino”. Queste opere hanno mostrato come l’artista ricreava e plasmava il passato — un’occasione unica per vedere la storia con gli occhi di un grande artista."
+    ]
+  }
+}

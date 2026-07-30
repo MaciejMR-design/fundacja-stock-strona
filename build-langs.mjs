@@ -3,15 +3,22 @@
    Run:  node build-langs.mjs
    Idempotent — safe to re-run after any content change.
    NOTE: SITE must match the production domain at launch. */
-import { readFileSync, writeFileSync, mkdirSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, readdirSync } from 'fs';
 import { join } from 'path';
-import { createRequire } from 'module';
 
-/* articles.js is a plain browser script — execute it against a window shim */
-const require = createRequire(import.meta.url);
-global.window = {};
-require('./design-v2/assets/articles.js');
-const ARTICLES = global.window.ARTICLES;
+/* Editable content lives in content/ (managed via the /admin CMS panel):
+   - content/articles/<id>.json  -> generates design-v2/assets/articles.js
+   - content/pages/<page>.json   -> injected as PAGE_I18N into each page */
+const CONTENT = join(import.meta.dirname, 'content');
+const stripBom = s => s.replace(/^﻿/, '');
+const ARTICLES = readdirSync(join(CONTENT, 'articles'))
+  .filter(f => f.endsWith('.json'))
+  .map(f => JSON.parse(stripBom(readFileSync(join(CONTENT, 'articles', f), 'utf8'))))
+  .sort((a, b) => (b.ts || '').localeCompare(a.ts || ''));
+const PAGE_DICTS = {};
+for (const f of readdirSync(join(CONTENT, 'pages')).filter(f => f.endsWith('.json'))) {
+  PAGE_DICTS[f.replace('.json', '.html')] = JSON.parse(stripBom(readFileSync(join(CONTENT, 'pages', f), 'utf8')));
+}
 
 const SITE = 'https://fundacjastock.pl';
 /* og:image must resolve TODAY (social-share preview), so it points at the live
@@ -116,6 +123,7 @@ const pageUrl = (lang, page) => SITE + '/' + DIR[lang] + (page === 'index.html' 
 
 /* art (optional): { id, title, desc, img } — per-article overrides */
 function transform(src, page, lang, art) {
+  const tplPage = page; // template name (content dict lookup) — `page` may become article-<id>.html
   let [title, desc] = META[page][lang];
   if (art) { title = `${art.title} — Stock Foundation`; desc = art.desc; page = `article-${art.id}.html`; }
   if (desc.length > 300) desc = desc.slice(0, 297).replace(/\s+\S*$/, '') + '…';
@@ -152,10 +160,27 @@ function transform(src, page, lang, art) {
 
   // root-absolute assets/uploads so subdirectory pages share one copy
   h = h.replace(/(src|href)="(assets|uploads)\//g, '$1="/$2/');
+
+  // inject the editable PAGE_I18N dictionary from content/pages/<page>.json
+  const dict = PAGE_DICTS[tplPage];
+  if (dict) {
+    const json = JSON.stringify(dict).replace(/<\//g, '<\\/');
+    h = h.replace(/\/\* CONTENT:PAGE_I18N \*\/[\s\S]*?\/\* \/CONTENT \*\//,
+      `/* CONTENT:PAGE_I18N */${json}/* /CONTENT */`);
+  }
   return h;
 }
 
+/* generate assets/articles.js from content/articles/*.json */
+function writeArticlesJs() {
+  const out = '/* GENERATED from content/articles/*.json by build-langs.mjs — do not edit by hand. */\n' +
+    'window.ARTICLES = ' + JSON.stringify(ARTICLES, null, 2).replace(/<\//g, '<\\/') + ';\n' +
+    "window.ARTICLES.sort(function (a, b) { return (b.ts || '').localeCompare(a.ts || ''); });\n";
+  writeFileSync(join(SRC, 'assets', 'articles.js'), out, 'utf8');
+}
+
 let written = 0;
+writeArticlesJs();
 const articleTemplate = readFileSync(join(SRC, 'article.html'), 'utf8');
 for (const lang of LANGS) {
   if (lang !== 'en') mkdirSync(join(SRC, DIR[lang]), { recursive: true });

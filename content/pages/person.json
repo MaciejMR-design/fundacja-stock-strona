@@ -1,0 +1,26 @@
+{
+  "en": {
+    "backToTeam": "Back to Council & Board",
+    "moreOverline": "The team",
+    "moreTitle": "Other members",
+    "viewProfile": "View profile"
+  },
+  "pl": {
+    "backToTeam": "Wróć do Rady i Zarządu",
+    "moreOverline": "Zespół",
+    "moreTitle": "Pozostali członkowie",
+    "viewProfile": "Zobacz profil"
+  },
+  "cz": {
+    "backToTeam": "Zpět na Radu a představenstvo",
+    "moreOverline": "Tým",
+    "moreTitle": "Další členové",
+    "viewProfile": "Zobrazit profil"
+  },
+  "it": {
+    "backToTeam": "Torna a Consiglio e direzione",
+    "moreOverline": "Il team",
+    "moreTitle": "Altri membri",
+    "viewProfile": "Vedi profilo"
+  }
+}

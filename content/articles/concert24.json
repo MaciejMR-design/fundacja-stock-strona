@@ -1,0 +1,46 @@
+{
+  "id": "concert24",
+  "ts": "2024-06-10",
+  "cat": "scholar",
+  "img": "/uploads/cover-scholar.svg",
+  "date": {
+    "en": "June 2024",
+    "pl": "Czerwiec 2024",
+    "cz": "Červen 2024",
+    "it": "Giugno 2024"
+  },
+  "title": {
+    "en": "Concert of scholarship recipients — a year of work and talent",
+    "pl": "Koncert stypendystów — rok pracy i talentu",
+    "cz": "Koncert stipendistů — rok práce a talentu",
+    "it": "Concerto dei borsisti — un anno di lavoro e talento"
+  },
+  "lead": {
+    "en": "At the Culture Workshops in Lublin, our scholarship recipients summed up a year of honing their talents — with a hall filled to the brim.",
+    "pl": "W Warsztatach Kultury w Lublinie nasi stypendyści podsumowali rok szlifowania talentów — przy sali wypełnionej po brzegi.",
+    "cz": "V Dílnách kultury v Lublinu naši stipendisté shrnuli rok pilování talentů — před sálem zaplněným do posledního místa.",
+    "it": "Ai Laboratori di Cultura di Lublino i nostri borsisti hanno riassunto un anno di perfezionamento dei loro talenti — con la sala piena fino all’orlo."
+  },
+  "body": {
+    "en": [
+      "A lovely concert of scholarship recipients was held at the Culture Workshops in Lublin, summing up a year of work and honing talents. The Stock Foundation continues its programme to support talented Ukrainian youth, enabling them to continue their musical education interrupted by the war.",
+      "At the concert, we had the pleasure of listening to the “Veselyki” choir under the direction of Halyna and Aleksandr Navrocki, as well as original lyrics by Mirek Sokołowski accompanied by the guitar ensemble he leads. The band played impressions in a rock and roll atmosphere, summarising the themes they had worked on over the past year.",
+      "The performance of a song with a bandura — under the coaching of Ola Maciupa — caused great enthusiasm. The audience was wonderful, and the hall was filled to the brim."
+    ],
+    "pl": [
+      "W Warsztatach Kultury w Lublinie odbył się piękny koncert stypendystów, podsumowujący rok pracy i szlifowania talentów. Fundacja Stock kontynuuje program wspierania utalentowanej młodzieży z Ukrainy, umożliwiając jej kontynuowanie edukacji muzycznej przerwanej przez wojnę.",
+      "Podczas koncertu mieliśmy przyjemność wysłuchać chóru „Veselyki” pod dyrekcją Halyny i Aleksandra Navrockich, a także autorskich tekstów Mirka Sokołowskiego z towarzyszeniem prowadzonego przez niego zespołu gitarowego. Zespół zagrał impresje w rockandrollowym klimacie, podsumowując tematy, nad którymi pracował przez ostatni rok.",
+      "Wykonanie piosenki z bandurą — pod opieką Oli Maciupy — wywołało wielki entuzjazm. Publiczność była wspaniała, a sala wypełniona po brzegi."
+    ],
+    "cz": [
+      "V Dílnách kultury v Lublinu se konal krásný koncert stipendistů, který shrnul rok práce a pilování talentů. Nadace Stock pokračuje v programu podpory talentované ukrajinské mládeže a umožňuje jí pokračovat v hudebním vzdělávání přerušeném válkou.",
+      "Na koncertě jsme si s potěšením poslechli sbor „Veselyki“ pod vedením Halyny a Aleksandra Navrockých a také autorské texty Mirka Sokołowského za doprovodu kytarového souboru, který vede. Kapela zahrála imprese v rokenrolové atmosféře a shrnula témata, na nichž v uplynulém roce pracovala.",
+      "Provedení písně s bandurou — pod vedením Oly Maciupy — vyvolalo velké nadšení. Publikum bylo skvělé a sál byl zaplněn do posledního místa."
+    ],
+    "it": [
+      "Ai Laboratori di Cultura di Lublino si è tenuto un bellissimo concerto dei borsisti, che ha riassunto un anno di lavoro e di perfezionamento dei talenti. La Fondazione Stock continua il suo programma di sostegno ai giovani talenti ucraini, permettendo loro di proseguire l’educazione musicale interrotta dalla guerra.",
+      "Al concerto abbiamo avuto il piacere di ascoltare il coro “Veselyki” diretto da Halyna e Aleksandr Navrocki, oltre ai testi originali di Mirek Sokołowski accompagnati dall’ensemble di chitarre da lui guidato. Il gruppo ha suonato impressioni in atmosfera rock and roll, riassumendo i temi su cui aveva lavorato nell’ultimo anno.",
+      "L’esecuzione di una canzone con la bandura — sotto la guida di Ola Maciupa — ha suscitato grande entusiasmo. Il pubblico è stato meraviglioso e la sala era piena fino all’orlo."
+    ]
+  }
+}

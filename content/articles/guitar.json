@@ -1,0 +1,46 @@
+{
+  "id": "guitar",
+  "ts": "2026-03-16",
+  "cat": "scholar",
+  "img": "/uploads/news-guitar.jpg",
+  "date": {
+    "en": "16 March 2026",
+    "pl": "16 marca 2026",
+    "cz": "16. března 2026",
+    "it": "16 marzo 2026"
+  },
+  "title": {
+    "en": "Meet our new volunteer — renowned luthier Łukasz Murawski",
+    "pl": "Poznajcie naszego wolontariusza — lutnika Łukasza Murawskiego",
+    "cz": "Poznejte našeho dobrovolníka — houslaře Łukasze Murawského",
+    "it": "Il nostro nuovo volontario — il liutaio Łukasz Murawski"
+  },
+  "lead": {
+    "en": "The Stock Foundation is proud to share that we have gained an extraordinary volunteer — a master luthier and creator of electric guitars.",
+    "pl": "Fundacja Stock z dumą informuje, że pozyskaliśmy niezwykłego wolontariusza — mistrza lutnictwa i twórcę gitar elektrycznych.",
+    "cz": "Nadace Stock s hrdostí oznamuje, že jsme získali výjimečného dobrovolníka — mistra houslaře a tvůrce elektrických kytar.",
+    "it": "La Fondazione Stock è orgogliosa di annunciare di aver acquisito un volontario straordinario — un maestro liutaio e creatore di chitarre elettriche."
+  },
+  "body": {
+    "en": [
+      "Łukasz Murawski, creator of electric guitars, after learning about our music scholarship program for talented young people forced to abandon their musical education due to the outbreak of war, decided to take action. He generously donated his handcrafted electric guitar for the participants of our program.",
+      "The instrument was received by our teachers, Olga and Mirek from Homo Faber, who will help ensure it is put to great use. The instrument is truly exceptional — beautifully made, lightweight, easy to play, and with a fantastic sound, making it perfect for learning and developing musical skills.",
+      "We are deeply grateful for this remarkable gesture and support."
+    ],
+    "pl": [
+      "Łukasz Murawski, twórca gitar elektrycznych, po tym jak dowiedział się o naszym programie stypendiów muzycznych dla utalentowanych młodych ludzi zmuszonych do porzucenia edukacji muzycznej z powodu wybuchu wojny, postanowił działać. Hojnie przekazał swoją ręcznie wykonaną gitarę elektryczną dla uczestników naszego programu.",
+      "Instrument odebrali nasi nauczyciele, Olga i Mirek z Homo Faber, którzy zadbają o to, by został dobrze wykorzystany. Instrument jest naprawdę wyjątkowy — pięknie wykonany, lekki, łatwy w grze i o fantastycznym brzmieniu, co czyni go idealnym do nauki i rozwijania umiejętności muzycznych.",
+      "Jesteśmy głęboko wdzięczni za ten niezwykły gest i wsparcie."
+    ],
+    "cz": [
+      "Łukasz Murawski, tvůrce elektrických kytar, se poté, co se dozvěděl o našem programu hudebních stipendií pro talentované mladé lidi, kteří museli kvůli vypuknutí války opustit hudební vzdělávání, rozhodl jednat. Velkoryse věnoval svou ručně vyrobenou elektrickou kytaru účastníkům našeho programu.",
+      "Nástroj převzali naši učitelé Olga a Mirek z Homo Faber, kteří pomohou zajistit jeho skvělé využití. Nástroj je opravdu výjimečný — krásně vyrobený, lehký, snadno hratelný a s fantastickým zvukem, což jej činí ideálním pro učení a rozvoj hudebních dovedností.",
+      "Jsme hluboce vděční za toto pozoruhodné gesto a podporu."
+    ],
+    "it": [
+      "Łukasz Murawski, creatore di chitarre elettriche, dopo aver appreso del nostro programma di borse di studio musicali per giovani talentuosi costretti ad abbandonare l’educazione musicale a causa dello scoppio della guerra, ha deciso di agire. Ha generosamente donato la sua chitarra elettrica artigianale ai partecipanti del nostro programma.",
+      "Lo strumento è stato ricevuto dai nostri insegnanti, Olga e Mirek di Homo Faber, che contribuiranno a farne buon uso. Lo strumento è davvero eccezionale — splendidamente realizzato, leggero, facile da suonare e con un suono fantastico, che lo rende perfetto per imparare e sviluppare le abilità musicali.",
+      "Siamo profondamente grati per questo straordinario gesto e sostegno."
+    ]
+  }
+}

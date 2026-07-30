@@ -1,0 +1,46 @@
+{
+  "id": "training25",
+  "ts": "2025-05-28",
+  "cat": "community",
+  "img": "/uploads/news-training25.jpg",
+  "date": {
+    "en": "28 May 2025",
+    "pl": "28 maja 2025",
+    "cz": "28. května 2025",
+    "it": "28 maggio 2025"
+  },
+  "title": {
+    "en": "Training day for social workers at the care home",
+    "pl": "Dzień szkoleniowy dla pracowników socjalnych DPS",
+    "cz": "Školicí den pro sociální pracovníky domova",
+    "it": "Giornata di formazione per gli operatori sociali della casa di cura"
+  },
+  "lead": {
+    "en": "A session for the social work staff of the Social Welfare Home focused on supporting individuals at risk of addiction.",
+    "pl": "Warsztaty dla kadry Domu Pomocy Społecznej poświęcone wspieraniu osób zagrożonych uzależnieniem.",
+    "cz": "Setkání pro personál domova sociální péče zaměřené na podporu osob ohrožených závislostí.",
+    "it": "Una sessione per il personale della casa di assistenza sociale dedicata al sostegno delle persone a rischio di dipendenza."
+  },
+  "body": {
+    "en": [
+      "On May 28, the Stock Foundation organized another session for the social work staff of the Social Welfare Home for people with disabilities, focused on supporting individuals at risk of addiction.",
+      "The workshop combined theoretical and practical elements: participants learned about the impact of addiction, analyzed case studies to identify warning signs, and engaged in a Q&A with our experienced therapists, Anna Kalbus and Jerzy Brożyna.",
+      "This training is crucial because social workers are often the first to notice when someone is struggling. By deepening their understanding and honing their practical skills, the team will be better equipped to assist people in crisis and strengthen efforts in addiction prevention. Thank you to all the social workers who took part — your dedication helps create a safer and more supportive community."
+    ],
+    "pl": [
+      "28 maja Fundacja Stock zorganizowała kolejne spotkanie dla kadry socjalnej Domu Pomocy Społecznej dla osób z niepełnosprawnościami, poświęcone wspieraniu osób zagrożonych uzależnieniem.",
+      "Warsztaty łączyły elementy teoretyczne i praktyczne: uczestnicy poznali mechanizmy uzależnienia, analizowali studia przypadków, ucząc się rozpoznawać sygnały ostrzegawcze, oraz wzięli udział w sesji pytań i odpowiedzi z naszymi doświadczonymi terapeutami — Anną Kalbus i Jerzym Brożyną.",
+      "To szkolenie jest kluczowe, bo pracownicy socjalni często jako pierwsi zauważają, że ktoś sobie nie radzi. Pogłębiając wiedzę i szlifując praktyczne umiejętności, zespół będzie lepiej przygotowany do pomocy osobom w kryzysie i wzmocni działania w zakresie profilaktyki uzależnień. Dziękujemy wszystkim pracownikom socjalnym za udział — wasze zaangażowanie pomaga tworzyć bezpieczniejszą i bardziej wspierającą społeczność."
+    ],
+    "cz": [
+      "28. května uspořádala Nadace Stock další setkání pro sociální personál domova sociální péče pro osoby s postižením, zaměřené na podporu lidí ohrožených závislostí.",
+      "Workshop kombinoval teoretické a praktické prvky: účastníci se seznámili s dopady závislosti, analyzovali případové studie, aby rozpoznali varovné signály, a zapojili se do diskuse s našimi zkušenými terapeuty Annou Kalbus a Jerzym Brożynou.",
+      "Toto školení je klíčové, protože sociální pracovníci si často jako první všimnou, že se někdo potýká s problémy. Prohloubením znalostí a praktických dovedností bude tým lépe připraven pomáhat lidem v krizi a posilovat prevenci závislostí. Děkujeme všem sociálním pracovníkům za účast — vaše nasazení pomáhá vytvářet bezpečnější a podporující komunitu."
+    ],
+    "it": [
+      "Il 28 maggio la Fondazione Stock ha organizzato un’altra sessione per il personale sociale della casa di assistenza per persone con disabilità, dedicata al sostegno delle persone a rischio di dipendenza.",
+      "Il laboratorio ha unito elementi teorici e pratici: i partecipanti hanno appreso l’impatto delle dipendenze, analizzato casi di studio per riconoscere i segnali d’allarme e partecipato a un confronto con i nostri esperti terapeuti, Anna Kalbus e Jerzy Brożyna.",
+      "Questa formazione è fondamentale perché gli operatori sociali sono spesso i primi ad accorgersi quando qualcuno è in difficoltà. Approfondendo la comprensione e affinando le competenze pratiche, il team sarà meglio preparato ad assistere le persone in crisi e a rafforzare la prevenzione delle dipendenze. Grazie a tutti gli operatori sociali che hanno partecipato — la vostra dedizione aiuta a creare una comunità più sicura e solidale."
+    ]
+  }
+}

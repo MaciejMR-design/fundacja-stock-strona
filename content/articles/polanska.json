@@ -1,0 +1,46 @@
+{
+  "id": "polanska",
+  "ts": "2024-05-10",
+  "cat": "art",
+  "img": "/uploads/cover-art.svg",
+  "date": {
+    "en": "May 2024",
+    "pl": "Maj 2024",
+    "cz": "Květen 2024",
+    "it": "Maggio 2024"
+  },
+  "title": {
+    "en": "Meetings with Art — curator Jolanta Polańska",
+    "pl": "Spotkania ze Sztuką — kustosz Jolanta Polańska",
+    "cz": "Setkání s uměním — kurátorka Jolanta Polańska",
+    "it": "Incontri con l’Arte — la curatrice Jolanta Polańska"
+  },
+  "lead": {
+    "en": "The first events of our new initiative were led by the Senior Curator of the National Museum in Lublin, with over 40 years of museum experience.",
+    "pl": "Pierwsze wydarzenia naszej nowej inicjatywy poprowadziła starsza kustosz Muzeum Narodowego w Lublinie, z ponad 40-letnim doświadczeniem muzealnym.",
+    "cz": "První akce naší nové iniciativy vedla starší kurátorka Národního muzea v Lublinu s více než 40 lety muzejní praxe.",
+    "it": "I primi eventi della nostra nuova iniziativa sono stati guidati dalla curatrice senior del Museo Nazionale di Lublino, con oltre 40 anni di esperienza museale."
+  },
+  "body": {
+    "en": [
+      "The first events of the new Stock Foundation initiative, Encounters with Art, were led by Ms Jolanta Polańska, Senior Curator at the National Museum in Lublin — the museum provides substantive support to our project. Ms Jolanta has impressive experience of over 40 years working at the museum and has curated many exhibitions. She conducts classes on museum activities and art history, and has been running a museum section for the Lublin University of the Third Age for 10 years.",
+      "Lectures from the Encounters with Art series were held at the headquarters of the Complex of Support Centres at Lwowska 28 in Lublin. Ms Jolanta invited the guests into the fascinating world of the artistic Kossak family.",
+      "The meetings were very popular with seniors, attracting many people who receive assistance from the Complex of Support Centres. The initiative aims to facilitate contact with art for people who have difficult access to it or need support for various personal reasons."
+    ],
+    "pl": [
+      "Pierwsze wydarzenia nowej inicjatywy Fundacji Stock — Spotkań ze Sztuką — poprowadziła pani Jolanta Polańska, starsza kustosz Muzeum Narodowego w Lublinie; muzeum zapewnia naszemu projektowi wsparcie merytoryczne. Pani Jolanta ma imponujące, ponad 40-letnie doświadczenie pracy w muzeum i kuratorowała wiele wystaw. Prowadzi zajęcia o działalności muzealnej i historii sztuki, a od 10 lat kieruje sekcją muzealną Lubelskiego Uniwersytetu Trzeciego Wieku.",
+      "Wykłady z cyklu Spotkania ze Sztuką odbyły się w siedzibie Zespołu Ośrodków Wsparcia przy ul. Lwowskiej 28 w Lublinie. Pani Jolanta zaprosiła gości do fascynującego świata artystycznej rodziny Kossaków.",
+      "Spotkania cieszyły się dużą popularnością wśród seniorów, przyciągając wiele osób korzystających z pomocy Zespołu Ośrodków Wsparcia. Celem inicjatywy jest ułatwianie kontaktu ze sztuką osobom, które mają do niej utrudniony dostęp lub z różnych osobistych powodów potrzebują wsparcia."
+    ],
+    "cz": [
+      "První akce nové iniciativy Nadace Stock — Setkání s uměním — vedla paní Jolanta Polańska, starší kurátorka Národního muzea v Lublinu; muzeum poskytuje našemu projektu odbornou podporu. Paní Jolanta má úctyhodné více než 40leté zkušenosti z práce v muzeu a kurátorovala mnoho výstav. Vede lekce o muzejní činnosti a dějinách umění a už 10 let řídí muzejní sekci Lublinské univerzity třetího věku.",
+      "Přednášky z cyklu Setkání s uměním se konaly v sídle Komplexu podpůrných center na ulici Lwowska 28 v Lublinu. Paní Jolanta pozvala hosty do fascinujícího světa umělecké rodiny Kossaků.",
+      "Setkání se u seniorů těšila velké oblibě a přilákala mnoho lidí, kteří využívají pomoci Komplexu podpůrných center. Cílem iniciativy je usnadňovat kontakt s uměním lidem, kteří k němu mají ztížený přístup nebo z různých osobních důvodů potřebují podporu."
+    ],
+    "it": [
+      "I primi eventi della nuova iniziativa della Fondazione Stock — Incontri con l’Arte — sono stati guidati dalla signora Jolanta Polańska, curatrice senior del Museo Nazionale di Lublino; il museo fornisce supporto scientifico al nostro progetto. La signora Jolanta ha un’esperienza impressionante di oltre 40 anni di lavoro al museo e ha curato molte mostre. Tiene lezioni sulle attività museali e sulla storia dell’arte e da 10 anni dirige la sezione museale dell’Università della Terza Età di Lublino.",
+      "Le conferenze del ciclo Incontri con l’Arte si sono tenute nella sede del Complesso dei Centri di Sostegno in via Lwowska 28 a Lublino. La signora Jolanta ha invitato gli ospiti nell’affascinante mondo dell’artistica famiglia Kossak.",
+      "Gli incontri sono stati molto apprezzati dagli anziani, attirando molte persone assistite dal Complesso dei Centri di Sostegno. L’iniziativa mira a facilitare il contatto con l’arte alle persone che vi hanno un accesso difficile o che per varie ragioni personali hanno bisogno di sostegno."
+    ]
+  }
+}

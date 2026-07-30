@@ -1,0 +1,50 @@
+{
+  "id": "dpsart",
+  "ts": "2025-02-20",
+  "cat": "art",
+  "img": "/uploads/news-dpsart.jpg",
+  "date": {
+    "en": "20 February 2025",
+    "pl": "20 lutego 2025",
+    "cz": "20. února 2025",
+    "it": "20 febbraio 2025"
+  },
+  "title": {
+    "en": "Partnering with a Lublin care home to bring art to residents",
+    "pl": "Partnerstwo z lubelskim DPS — sztuka dla mieszkańców",
+    "cz": "Partnerství s lublinským domovem — umění pro obyvatele",
+    "it": "Partnership con una casa di cura di Lublino per portare l’arte ai residenti"
+  },
+  "lead": {
+    "en": "A new partnership with the Social Welfare Home at Kosmonautów Street begins with a multimedia journey through the masterpieces of the Louvre.",
+    "pl": "Nowe partnerstwo z Domem Pomocy Społecznej przy ul. Kosmonautów rozpoczyna multimedialna podróż po arcydziełach Luwru.",
+    "cz": "Nové partnerství s domovem sociální péče na ulici Kosmonautów začíná multimediální cestou po mistrovských dílech Louvru.",
+    "it": "Una nuova partnership con la casa di assistenza sociale di via Kosmonautów inizia con un viaggio multimediale tra i capolavori del Louvre."
+  },
+  "body": {
+    "en": [
+      "The Stock Foundation announced a new partnership with the Social Welfare Home for Physically Disabled Individuals, located at 78 Kosmonautów Street in Lublin. This collaboration aims to enrich the cultural experiences of the home’s residents through a series of art-focused events.",
+      "The Social Welfare Home specializes in providing care and rehabilitation for adults with physical disabilities, including conditions such as multiple sclerosis, spinal cord injuries, traumatic brain injuries, post-stroke states and muscular dystrophy. The facility accommodates 90 residents, most of whom use wheelchairs, and offers daily care, medical supervision, physical rehabilitation and occupational therapy.",
+      "The partnership commenced with an event titled “Encounter with Art”, held in the home’s main hall. Magdalena Norkowska, a distinguished curator from the National Museum in Lublin, delivered an engaging multimedia presentation showcasing masterpieces from the Louvre. The event attracted nearly 40 participants, all of whom expressed great enthusiasm and appreciation.",
+      "Building on this success, the Stock Foundation and the Social Welfare Home plan to continue organizing similar art events, giving residents ongoing opportunities to engage with and appreciate art."
+    ],
+    "pl": [
+      "Fundacja Stock ogłosiła nowe partnerstwo z Domem Pomocy Społecznej dla Osób Niepełnosprawnych Fizycznie przy ul. Kosmonautów 78 w Lublinie. Współpraca ma wzbogacić życie kulturalne mieszkańców poprzez cykl wydarzeń poświęconych sztuce.",
+      "DPS specjalizuje się w opiece i rehabilitacji dorosłych z niepełnosprawnościami ruchowymi — m.in. ze stwardnieniem rozsianym, urazami rdzenia kręgowego, urazami mózgu, stanami po udarach i dystrofią mięśniową. Placówka mieści 90 mieszkańców, w większości poruszających się na wózkach, i zapewnia codzienną opiekę, nadzór medyczny, rehabilitację oraz terapię zajęciową.",
+      "Partnerstwo zainaugurowało wydarzenie „Spotkanie ze Sztuką” w głównej sali domu. Magdalena Norkowska, znakomita kustosz Muzeum Narodowego w Lublinie, poprowadziła wciągającą multimedialną prezentację arcydzieł Luwru. W wydarzeniu wzięło udział blisko 40 uczestników, którzy przyjęli je z ogromnym entuzjazmem.",
+      "Zachęcone tym sukcesem Fundacja Stock i DPS planują kontynuować podobne wydarzenia, dając mieszkańcom stały kontakt ze sztuką."
+    ],
+    "cz": [
+      "Nadace Stock oznámila nové partnerství s domovem sociální péče pro osoby s tělesným postižením na ulici Kosmonautów 78 v Lublinu. Cílem spolupráce je obohatit kulturní život obyvatel prostřednictvím série uměleckých akcí.",
+      "Domov se specializuje na péči a rehabilitaci dospělých s tělesným postižením — mimo jiné s roztroušenou sklerózou, poraněními míchy, úrazy mozku, stavy po mrtvici a svalovou dystrofií. Zařízení má 90 obyvatel, většina z nich používá invalidní vozík, a poskytuje každodenní péči, lékařský dohled, rehabilitaci a ergoterapii.",
+      "Partnerství zahájila akce „Setkání s uměním“ v hlavním sále domova. Magdalena Norkowska, vynikající kurátorka Národního muzea v Lublinu, přednesla poutavou multimediální prezentaci mistrovských děl Louvru. Akce přilákala téměř 40 účastníků, kteří ji přijali s velkým nadšením.",
+      "V návaznosti na tento úspěch plánují Nadace Stock a domov pokračovat v podobných akcích a dávat obyvatelům trvalý kontakt s uměním."
+    ],
+    "it": [
+      "La Fondazione Stock ha annunciato una nuova partnership con la Casa di Assistenza Sociale per Persone con Disabilità Fisiche, situata in via Kosmonautów 78 a Lublino. La collaborazione mira ad arricchire la vita culturale dei residenti attraverso una serie di eventi dedicati all’arte.",
+      "La struttura è specializzata nella cura e riabilitazione di adulti con disabilità fisiche — tra cui sclerosi multipla, lesioni del midollo spinale, traumi cranici, esiti di ictus e distrofia muscolare. Ospita 90 residenti, la maggior parte dei quali usa la sedia a rotelle, e offre assistenza quotidiana, supervisione medica, riabilitazione e terapia occupazionale.",
+      "La partnership è iniziata con l’evento “Incontro con l’Arte”, tenutosi nella sala principale della casa. Magdalena Norkowska, illustre curatrice del Museo Nazionale di Lublino, ha presentato un coinvolgente viaggio multimediale tra i capolavori del Louvre. L’evento ha attirato quasi 40 partecipanti, che lo hanno accolto con grande entusiasmo.",
+      "Sulla scia di questo successo, la Fondazione Stock e la casa di assistenza intendono continuare a organizzare eventi simili, offrendo ai residenti un contatto costante con l’arte."
+    ]
+  }
+}

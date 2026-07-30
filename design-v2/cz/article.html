@@ -85,16 +85,7 @@
   <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
 
 <script>
-const PAGE_I18N = {
-  en: { catart: 'Art Encounters', catcommunity: 'Community', catscholar: 'Scholarships', readMore: 'Read more',
-    backToNews: 'Back to all news', shareLabel: 'Share', moreOverline: 'Keep reading', moreTitle: 'More news', notFound: 'Article not found.' },
-  pl: { catart: 'Spotkania ze sztuką', catcommunity: 'Społeczność', catscholar: 'Stypendia', readMore: 'Czytaj więcej',
-    backToNews: 'Wróć do aktualności', shareLabel: 'Udostępnij', moreOverline: 'Czytaj dalej', moreTitle: 'Więcej aktualności', notFound: 'Nie znaleziono artykułu.' },
-  cz: { catart: 'Setkání s uměním', catcommunity: 'Komunita', catscholar: 'Stipendia', readMore: 'Číst dále',
-    backToNews: 'Zpět na novinky', shareLabel: 'Sdílet', moreOverline: 'Číst dále', moreTitle: 'Další novinky', notFound: 'Článek nenalezen.' },
-  it: { catart: 'Incontri con l’arte', catcommunity: 'Comunità', catscholar: 'Borse di studio', readMore: 'Leggi di più',
-    backToNews: 'Torna alle notizie', shareLabel: 'Condividi', moreOverline: 'Continua a leggere', moreTitle: 'Altre notizie', notFound: 'Articolo non trovato.' }
-};
+const PAGE_I18N = /* CONTENT:PAGE_I18N */{"en":{"catart":"Art Encounters","catcommunity":"Community","catscholar":"Scholarships","readMore":"Read more","backToNews":"Back to all news","shareLabel":"Share","moreOverline":"Keep reading","moreTitle":"More news","notFound":"Article not found."},"pl":{"catart":"Spotkania ze sztuką","catcommunity":"Społeczność","catscholar":"Stypendia","readMore":"Czytaj więcej","backToNews":"Wróć do aktualności","shareLabel":"Udostępnij","moreOverline":"Czytaj dalej","moreTitle":"Więcej aktualności","notFound":"Nie znaleziono artykułu."},"cz":{"catart":"Setkání s uměním","catcommunity":"Komunita","catscholar":"Stipendia","readMore":"Číst dále","backToNews":"Zpět na novinky","shareLabel":"Sdílet","moreOverline":"Číst dále","moreTitle":"Další novinky","notFound":"Článek nenalezen."},"it":{"catart":"Incontri con l’arte","catcommunity":"Comunità","catscholar":"Borse di studio","readMore":"Leggi di più","backToNews":"Torna alle notizie","shareLabel":"Condividi","moreOverline":"Continua a leggere","moreTitle":"Altre notizie","notFound":"Articolo non trovato."}}/* /CONTENT */;
 
 function lang() { return localStorage.getItem('fs-lang') || 'en'; }
 /* Each article lives on its own static page (article-<id>.html) with

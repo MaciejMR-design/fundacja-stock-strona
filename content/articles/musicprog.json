@@ -1,0 +1,46 @@
+{
+  "id": "musicprog",
+  "ts": "2024-08-25",
+  "cat": "scholar",
+  "img": "/uploads/news-musicprog.jpg",
+  "date": {
+    "en": "August 2024",
+    "pl": "Sierpień 2024",
+    "cz": "Srpen 2024",
+    "it": "Agosto 2024"
+  },
+  "title": {
+    "en": "Musical scholarship — an exceptional guitar for our students",
+    "pl": "Stypendia muzyczne — wyjątkowa gitara dla naszych podopiecznych",
+    "cz": "Hudební stipendia — výjimečná kytara pro naše studenty",
+    "it": "Borse di studio musicali — una chitarra eccezionale per i nostri studenti"
+  },
+  "lead": {
+    "en": "An anonymous volunteer donated a remarkable electric guitar, crafted in 1993 by the outstanding luthier Maciej Mensfeld, for the youth in our scholarship programme.",
+    "pl": "Anonimowy wolontariusz przekazał młodzieży z naszego programu stypendialnego niezwykłą gitarę elektryczną, wykonaną w 1993 roku przez wybitnego lutnika Macieja Mensfelda.",
+    "cz": "Anonymní dobrovolník věnoval mládeži z našeho stipendijního programu pozoruhodnou elektrickou kytaru, vyrobenou v roce 1993 vynikajícím houslařem Maciejem Mensfeldem.",
+    "it": "Un volontario anonimo ha donato ai giovani del nostro programma di borse di studio una straordinaria chitarra elettrica, realizzata nel 1993 dall’eccellente liutaio Maciej Mensfeld."
+  },
+  "body": {
+    "en": [
+      "The Stock Foundation scholarship programme, run in Lublin together with Homo Faber, offers support to talented Ukrainian youth. Recently, one of our foundation’s volunteers, who wishes to remain anonymous, donated an exceptional electric guitar for the young people in the programme.",
+      "It is a superb instrument characterised by the excellent quality of its workmanship and accessories. It was made in 1993 by the outstanding luthier Maciej Mensfeld in his workshop in Nowy Targ. Danilo, who uses this guitar most often, says that playing has not been this easy for him in a long time.",
+      "The guitar ensemble’s classes are led by the eminent pedagogue Mirek Sokołowski."
+    ],
+    "pl": [
+      "Program stypendialny Fundacji Stock, prowadzony w Lublinie wspólnie z Homo Faber, wspiera utalentowaną młodzież z Ukrainy. Niedawno jeden z wolontariuszy naszej fundacji, który pragnie pozostać anonimowy, przekazał młodzieży z programu wyjątkową gitarę elektryczną.",
+      "To znakomity instrument, wyróżniający się doskonałą jakością wykonania i użytych podzespołów. Został zbudowany w 1993 roku przez wybitnego lutnika Macieja Mensfelda w jego pracowni w Nowym Targu. Danilo, który korzysta z tej gitary najczęściej, mówi, że od dawna nie grało mu się tak łatwo.",
+      "Zajęcia zespołu gitarowego prowadzi znakomity pedagog Mirek Sokołowski."
+    ],
+    "cz": [
+      "Stipendijní program Nadace Stock, vedený v Lublinu společně s Homo Faber, podporuje talentovanou ukrajinskou mládež. Nedávno jeden z dobrovolníků naší nadace, který si přeje zůstat v anonymitě, věnoval mladým lidem z programu výjimečnou elektrickou kytaru.",
+      "Je to skvělý nástroj, který se vyznačuje vynikající kvalitou zpracování i použitých komponentů. Vyrobil jej v roce 1993 vynikající houslař Maciej Mensfeld ve své dílně v Novém Targu. Danilo, který kytaru používá nejčastěji, říká, že už dlouho se mu nehrálo tak snadno.",
+      "Hodiny kytarového souboru vede vynikající pedagog Mirek Sokołowski."
+    ],
+    "it": [
+      "Il programma di borse di studio della Fondazione Stock, gestito a Lublino insieme a Homo Faber, sostiene giovani talenti ucraini. Di recente uno dei volontari della nostra fondazione, che desidera restare anonimo, ha donato ai giovani del programma una chitarra elettrica eccezionale.",
+      "È uno strumento superbo, caratterizzato dall’eccellente qualità della lavorazione e degli accessori. È stato realizzato nel 1993 dall’eccellente liutaio Maciej Mensfeld nel suo laboratorio di Nowy Targ. Danilo, che usa questa chitarra più spesso, dice che da tempo non gli era così facile suonare.",
+      "Le lezioni dell’ensemble di chitarre sono guidate dall’eminente pedagogo Mirek Sokołowski."
+    ]
+  }
+}

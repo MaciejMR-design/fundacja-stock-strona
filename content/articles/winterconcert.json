@@ -1,0 +1,46 @@
+{
+  "id": "winterconcert",
+  "ts": "2024-01-05",
+  "cat": "scholar",
+  "img": "/uploads/cover-scholar.svg",
+  "date": {
+    "en": "January 2024",
+    "pl": "Styczeń 2024",
+    "cz": "Leden 2024",
+    "it": "Gennaio 2024"
+  },
+  "title": {
+    "en": "Concert “Winter Painted with Sound”",
+    "pl": "Koncert „Zima malowana dźwiękiem”",
+    "cz": "Koncert „Zima malovaná zvukem“",
+    "it": "Concerto “L’inverno dipinto con il suono”"
+  },
+  "lead": {
+    "en": "Choir, guitars, accordion, piano, violin and bandura filled the Baobab with a festive mood at our scholarship recipients’ concert.",
+    "pl": "Chór, gitary, akordeon, fortepian, skrzypce i bandura wypełniły Baobab świątecznym nastrojem na koncercie naszych stypendystów.",
+    "cz": "Sbor, kytary, akordeon, klavír, housle a bandura naplnily Baobab sváteční náladou na koncertě našich stipendistů.",
+    "it": "Coro, chitarre, fisarmonica, pianoforte, violino e bandura hanno riempito il Baobab di atmosfera festiva al concerto dei nostri borsisti."
+  },
+  "body": {
+    "en": [
+      "We recently had the pleasure of listening to our scholarship recipients at the “Winter Painted with Sound” concert hosted by Homo Faber. The singing of the choir and the sounds of the guitar, accordion, piano, violin, bandura and other instruments filled the Baobab, putting the participants in a festive mood.",
+      "The Stock Foundation scholarship programme, of which Homo Faber is a partner, enables talented Ukrainian children to continue their musical education interrupted by the outbreak of war, and also supports the professional activation of Ukrainian teachers.",
+      "The young musicians have the opportunity to continue their passion and develop their skills, which helps them regain their life balance. During this special concert, they showcased their talents to us — magical moments indeed."
+    ],
+    "pl": [
+      "Niedawno mieliśmy przyjemność słuchać naszych stypendystów na koncercie „Zima malowana dźwiękiem” zorganizowanym przez Homo Faber. Śpiew chóru oraz dźwięki gitary, akordeonu, fortepianu, skrzypiec, bandury i innych instrumentów wypełniły Baobab, wprowadzając uczestników w świąteczny nastrój.",
+      "Program stypendialny Fundacji Stock, którego partnerem jest Homo Faber, umożliwia utalentowanym ukraińskim dzieciom kontynuowanie edukacji muzycznej przerwanej wybuchem wojny, a także wspiera aktywizację zawodową ukraińskich nauczycieli.",
+      "Młodzi muzycy mogą kontynuować swoją pasję i rozwijać umiejętności, co pomaga im odzyskiwać życiową równowagę. Podczas tego wyjątkowego koncertu pokazali nam swoje talenty — to były naprawdę magiczne chwile."
+    ],
+    "cz": [
+      "Nedávno jsme měli to potěšení poslechnout si naše stipendisty na koncertě „Zima malovaná zvukem“, který uspořádal Homo Faber. Zpěv sboru a zvuky kytary, akordeonu, klavíru, houslí, bandury a dalších nástrojů naplnily Baobab a navodily účastníkům sváteční náladu.",
+      "Stipendijní program Nadace Stock, jehož partnerem je Homo Faber, umožňuje talentovaným ukrajinským dětem pokračovat v hudebním vzdělávání přerušeném vypuknutím války a podporuje také profesní aktivizaci ukrajinských učitelů.",
+      "Mladí hudebníci mohou pokračovat ve své vášni a rozvíjet své dovednosti, což jim pomáhá znovu nalézt životní rovnováhu. Během tohoto výjimečného koncertu nám předvedli své talenty — byly to opravdu kouzelné okamžiky."
+    ],
+    "it": [
+      "Di recente abbiamo avuto il piacere di ascoltare i nostri borsisti al concerto “L’inverno dipinto con il suono” ospitato da Homo Faber. Il canto del coro e i suoni di chitarra, fisarmonica, pianoforte, violino, bandura e altri strumenti hanno riempito il Baobab, mettendo i partecipanti in un’atmosfera festiva.",
+      "Il programma di borse di studio della Fondazione Stock, di cui Homo Faber è partner, permette ai bambini ucraini di talento di continuare l’educazione musicale interrotta dallo scoppio della guerra e sostiene anche l’attivazione professionale degli insegnanti ucraini.",
+      "I giovani musicisti hanno l’opportunità di coltivare la loro passione e sviluppare le proprie capacità, il che li aiuta a ritrovare l’equilibrio nella vita. Durante questo concerto speciale ci hanno mostrato i loro talenti — momenti davvero magici."
+    ]
+  }
+}

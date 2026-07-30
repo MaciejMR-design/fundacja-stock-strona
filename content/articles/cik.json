@@ -1,0 +1,46 @@
+{
+  "id": "cik",
+  "ts": "2026-04-17",
+  "cat": "community",
+  "img": "/uploads/news-cik.jpg",
+  "date": {
+    "en": "17 April 2026",
+    "pl": "17 kwietnia 2026",
+    "cz": "17. dubna 2026",
+    "it": "17 aprile 2026"
+  },
+  "title": {
+    "en": "Stock Foundation awarded at the Crisis Intervention Center",
+    "pl": "Fundacja Stock wyróżniona przez Centrum Interwencji Kryzysowej",
+    "cz": "Nadace Stock oceněna Centrem krizové intervence",
+    "it": "La Fondazione Stock premiata al Centro di Intervento di Crisi"
+  },
+  "lead": {
+    "en": "In Lublin, celebrations were held for the 20th anniversary of the Crisis Intervention Centre — a municipal unit supporting people in difficult life situations.",
+    "pl": "W Lublinie odbyły się obchody 20-lecia Centrum Interwencji Kryzysowej — miejskiej jednostki wspierającej osoby w trudnych sytuacjach życiowych.",
+    "cz": "V Lublinu se konaly oslavy 20. výročí Centra krizové intervence — městské jednotky podporující lidi v obtížných životních situacích.",
+    "it": "A Lublino si sono svolte le celebrazioni per il 20° anniversario del Centro di Intervento di Crisi — un’unità municipale che sostiene le persone in situazioni di vita difficili."
+  },
+  "body": {
+    "en": [
+      "For years, the CIK has been providing free, specialist psychological, therapeutic, legal and crisis intervention support, available without a referral to city residents. Assistance is directed, among others, to individuals experiencing violence, addiction, personal crises or sudden life events such as the loss of a loved one or job loss.",
+      "During the anniversary event, partners supporting the Centre’s activities were recognized. Among them was the Stock Foundation, which received a certificate of appreciation for its social engagement. On behalf of the Foundation, the award was received by Paweł Jabłoński, who was also individually recognized for his personal contribution to the support activities.",
+      "The event was attended by representatives of city authorities, support institutions and non-governmental organizations cooperating with the CIK, highlighting the importance of collaboration in assisting people in crisis."
+    ],
+    "pl": [
+      "Od lat CIK zapewnia bezpłatne, specjalistyczne wsparcie psychologiczne, terapeutyczne, prawne i interwencji kryzysowej, dostępne dla mieszkańców bez skierowania. Pomoc kierowana jest m.in. do osób doświadczających przemocy, uzależnień, kryzysów osobistych lub nagłych zdarzeń życiowych, takich jak utrata bliskiej osoby czy pracy.",
+      "Podczas jubileuszu wyróżniono partnerów wspierających działalność Centrum. Wśród nich znalazła się Fundacja Stock, która otrzymała dyplom uznania za zaangażowanie społeczne. W imieniu Fundacji nagrodę odebrał Paweł Jabłoński, wyróżniony również indywidualnie za osobisty wkład w działania pomocowe.",
+      "W wydarzeniu wzięli udział przedstawiciele władz miasta, instytucji pomocowych i organizacji pozarządowych współpracujących z CIK, co podkreśliło znaczenie współpracy w niesieniu pomocy osobom w kryzysie."
+    ],
+    "cz": [
+      "CIK po léta poskytuje bezplatnou odbornou psychologickou, terapeutickou, právní a krizovou intervenční podporu dostupnou obyvatelům bez doporučení. Pomoc je směřována mimo jiné lidem, kteří zažívají násilí, závislost, osobní krize nebo náhlé životní události, jako je ztráta blízké osoby či práce.",
+      "Během výročí byli oceněni partneři podporující činnost Centra. Mezi nimi byla i Nadace Stock, která obdržela čestné uznání za společenskou angažovanost. Jménem nadace cenu převzal Paweł Jabłoński, který byl také individuálně oceněn za svůj osobní přínos podpůrným aktivitám.",
+      "Akce se zúčastnili zástupci městských úřadů, podpůrných institucí a nevládních organizací spolupracujících s CIK, což zdůraznilo význam spolupráce při pomoci lidem v krizi."
+    ],
+    "it": [
+      "Da anni il CIK fornisce sostegno psicologico, terapeutico, legale e di intervento di crisi gratuito e specialistico, disponibile senza prescrizione per i residenti. L’assistenza è rivolta, tra gli altri, a persone che subiscono violenza, dipendenze, crisi personali o eventi improvvisi come la perdita di una persona cara o del lavoro.",
+      "Durante l’evento anniversario sono stati riconosciuti i partner che sostengono le attività del Centro. Tra questi la Fondazione Stock, che ha ricevuto un attestato di apprezzamento per il suo impegno sociale. A nome della Fondazione, il premio è stato ritirato da Paweł Jabłoński, riconosciuto anche individualmente per il suo contributo personale alle attività di sostegno.",
+      "All’evento hanno partecipato rappresentanti delle autorità cittadine, delle istituzioni di sostegno e delle organizzazioni non governative che collaborano con il CIK, sottolineando l’importanza della collaborazione nell’assistere le persone in crisi."
+    ]
+  }
+}

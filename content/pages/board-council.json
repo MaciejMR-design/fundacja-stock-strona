@@ -1,0 +1,38 @@
+{
+  "en": {
+    "pageTitle": "Council & Board",
+    "pageLead": "The people who guide the Stock Foundation — its Council and its Board of Directors.",
+    "councilOverline": "Governance",
+    "councilTitle": "Stock Foundation Council",
+    "boardOverline": "Management",
+    "boardTitle": "Board of Directors",
+    "viewProfile": "View profile"
+  },
+  "pl": {
+    "pageTitle": "Rada i Zarząd",
+    "pageLead": "Ludzie, którzy kierują Fundacją Stock — jej Rada oraz Zarząd.",
+    "councilOverline": "Nadzór",
+    "councilTitle": "Rada Fundacji Stock",
+    "boardOverline": "Zarządzanie",
+    "boardTitle": "Zarząd Fundacji",
+    "viewProfile": "Zobacz profil"
+  },
+  "cz": {
+    "pageTitle": "Rada a představenstvo",
+    "pageLead": "Lidé, kteří vedou Nadaci Stock — její rada a představenstvo.",
+    "councilOverline": "Správa",
+    "councilTitle": "Rada Nadace Stock",
+    "boardOverline": "Vedení",
+    "boardTitle": "Představenstvo",
+    "viewProfile": "Zobrazit profil"
+  },
+  "it": {
+    "pageTitle": "Consiglio e direzione",
+    "pageLead": "Le persone che guidano la Fondazione Stock — il suo Consiglio e il Consiglio di Amministrazione.",
+    "councilOverline": "Governance",
+    "councilTitle": "Consiglio della Fondazione Stock",
+    "boardOverline": "Direzione",
+    "boardTitle": "Consiglio di Amministrazione",
+    "viewProfile": "Vedi profilo"
+  }
+}

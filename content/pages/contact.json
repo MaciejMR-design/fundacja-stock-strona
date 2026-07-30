@@ -1,0 +1,50 @@
+{
+  "en": {
+    "pageTitle": "Contact",
+    "pageLead": "Get in touch — we are happy to talk about partnerships, volunteering and support.",
+    "c1Title": "Foundation office",
+    "c2Title": "E-mail us",
+    "c2Text": "For partnership, media and volunteering enquiries:",
+    "c3Title": "Founder’s office",
+    "euOverline": "Stock across Europe",
+    "euTitle": "Twelve places on the map",
+    "euLead": "Stock Group factories and representative offices across Europe.",
+    "euHint": "Tap a point on the map to see the city"
+  },
+  "pl": {
+    "pageTitle": "Kontakt",
+    "pageLead": "Skontaktuj się z nami — chętnie porozmawiamy o współpracy, wolontariacie i wsparciu.",
+    "c1Title": "Biuro fundacji",
+    "c2Title": "Napisz do nas",
+    "c2Text": "W sprawach współpracy, mediów i wolontariatu:",
+    "c3Title": "Biuro fundatora",
+    "euOverline": "Stock w Europie",
+    "euTitle": "Dwanaście miejsc na mapie",
+    "euLead": "Fabryki i przedstawicielstwa Grupy Stock w całej Europie.",
+    "euHint": "Dotknij punktu na mapie, aby zobaczyć miasto"
+  },
+  "cz": {
+    "pageTitle": "Kontakt",
+    "pageLead": "Ozvěte se nám — rádi si promluvíme o spolupráci, dobrovolnictví a podpoře.",
+    "c1Title": "Kancelář nadace",
+    "c2Title": "Napište nám",
+    "c2Text": "Pro dotazy ohledně spolupráce, médií a dobrovolnictví:",
+    "c3Title": "Kancelář zakladatele",
+    "euOverline": "Stock v Evropě",
+    "euTitle": "Dvanáct míst na mapě",
+    "euLead": "Továrny a zastoupení skupiny Stock po celé Evropě.",
+    "euHint": "Klepněte na bod na mapě a uvidíte město"
+  },
+  "it": {
+    "pageTitle": "Contatti",
+    "pageLead": "Contattaci — saremo lieti di parlare di partnership, volontariato e sostegno.",
+    "c1Title": "Ufficio della fondazione",
+    "c2Title": "Scrivici",
+    "c2Text": "Per richieste di partnership, media e volontariato:",
+    "c3Title": "Ufficio del fondatore",
+    "euOverline": "Stock in Europa",
+    "euTitle": "Dodici luoghi sulla mappa",
+    "euLead": "Stabilimenti e uffici di rappresentanza del Gruppo Stock in tutta Europa.",
+    "euHint": "Tocca un punto sulla mappa per vedere la città"
+  }
+}

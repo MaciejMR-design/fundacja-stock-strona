@@ -7,3 +7,6 @@ design-v2/.vercel/
 design-v2/.env.local
 node_modules/
 *.log
+
+.vercel
+.env*

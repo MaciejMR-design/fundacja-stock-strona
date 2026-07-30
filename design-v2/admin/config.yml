@@ -1,0 +1,97 @@
+# Konfiguracja panelu treści (Sveltia CMS)
+# Panel edytuje WYŁĄCZNIE treści (aktualności, teksty sekcji, zdjęcia) — układ strony jest poza jego zasięgiem.
+backend:
+  name: github
+  repo: MaciejMR-design/fundacja-stock-strona
+  branch: main
+  base_url: https://fundacja-stock-design.vercel.app
+  auth_endpoint: api/auth
+  commit_messages:
+    create: 'Panel: dodano {{collection}} „{{slug}}”'
+    update: 'Panel: zmieniono {{collection}} „{{slug}}”'
+    delete: 'Panel: usunięto {{collection}} „{{slug}}”'
+    uploadMedia: 'Panel: dodano plik {{path}}'
+    deleteMedia: 'Panel: usunięto plik {{path}}'
+
+site_url: https://fundacja-stock-design.vercel.app
+logo_url: https://fundacja-stock-design.vercel.app/uploads/logo-footer.svg
+
+media_folder: design-v2/uploads
+public_folder: /uploads
+
+collections:
+  - name: aktualnosci
+    label: Aktualności
+    label_singular: Aktualność
+    description: 'Wpisy z sekcji Aktualności. Nowy wpis publikuje się na stronie 1–2 minuty po zapisaniu. Pola EN/CZ/IT można zostawić — wypełnij po polsku i po angielsku, resztę uzupełnimy.'
+    folder: content/articles
+    format: json
+    extension: json
+    create: true
+    delete: true
+    identifier_field: id
+    slug: '{{fields.id}}'
+    summary: '{{fields.title.pl}} ({{fields.ts}})'
+    sortable_fields: [ts]
+    fields:
+      - { name: id, label: 'Identyfikator (krótki, po angielsku, bez spacji — np. koncert2027)', widget: string, pattern: ['^[a-z0-9-]+$', 'Tylko małe litery, cyfry i myślniki'] }
+      - { name: ts, label: 'Data wydarzenia', widget: datetime, format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false }
+      - name: cat
+        label: Kategoria
+        widget: select
+        options:
+          - { label: 'Spotkania ze sztuką', value: art }
+          - { label: 'Społeczność', value: community }
+          - { label: 'Stypendia', value: scholar }
+      - { name: img, label: 'Zdjęcie główne (okładka)', widget: image }
+      - name: images
+        label: 'Galeria (opcjonalnie — zastępuje okładkę w artykule)'
+        widget: list
+        required: false
+        field: { name: image, label: Zdjęcie, widget: image }
+      - name: date
+        label: 'Data wyświetlana (tekstem)'
+        widget: object
+        fields:
+          - { name: pl, label: 'Polski (np. 5 czerwca 2026)', widget: string }
+          - { name: en, label: 'Angielski (np. 5 June 2026)', widget: string }
+          - { name: cz, label: 'Czeski (np. 5. června 2026)', widget: string }
+          - { name: it, label: 'Włoski (np. 5 giugno 2026)', widget: string }
+      - name: title
+        label: Tytuł
+        widget: object
+        fields:
+          - { name: pl, label: Polski, widget: string }
+          - { name: en, label: Angielski, widget: string }
+          - { name: cz, label: Czeski, widget: string, required: false }
+          - { name: it, label: Włoski, widget: string, required: false }
+      - name: lead
+        label: 'Lead (1–2 zdania zajawki)'
+        widget: object
+        fields:
+          - { name: pl, label: Polski, widget: text }
+          - { name: en, label: Angielski, widget: text }
+          - { name: cz, label: Czeski, widget: text, required: false }
+          - { name: it, label: Włoski, widget: text, required: false }
+      - name: body
+        label: 'Treść (każdy akapit osobno)'
+        widget: object
+        fields:
+          - { name: pl, label: 'Polski — akapity', widget: list, field: { name: p, label: Akapit, widget: text } }
+          - { name: en, label: 'Angielski — akapity', widget: list, field: { name: p, label: Akapit, widget: text } }
+          - { name: cz, label: 'Czeski — akapity', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+          - { name: it, label: 'Włoski — akapity', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+
+  - name: strony
+    label: 'Teksty stron'
+    description: 'Wszystkie teksty istniejących sekcji, pogrupowane wg podstron i języków. Zmieniaj wartości — kluczy (nazw pól) nie ruszaj.'
+    files:
+      - { name: index, label: 'Strona główna', file: content/pages/index.json, fields: &langfields [ { name: pl, label: Polski, widget: keyvalue }, { name: en, label: Angielski, widget: keyvalue }, { name: cz, label: Czeski, widget: keyvalue }, { name: it, label: Włoski, widget: keyvalue } ] }
+      - { name: about-us, label: 'O nas', file: content/pages/about-us.json, fields: *langfields }
+      - { name: news, label: 'Aktualności (nagłówki strony)', file: content/pages/news.json, fields: *langfields }
+      - { name: article, label: 'Strona artykułu (etykiety)', file: content/pages/article.json, fields: *langfields }
+      - { name: statute, label: 'Statut i sprawozdania', file: content/pages/statute.json, fields: *langfields }
+      - { name: board-council, label: 'Rada i Zarząd', file: content/pages/board-council.json, fields: *langfields }
+      - { name: person, label: 'Profil osoby (etykiety)', file: content/pages/person.json, fields: *langfields }
+      - { name: contact, label: 'Kontakt', file: content/pages/contact.json, fields: *langfields }
+      - { name: privacy-policy, label: 'Polityka prywatności', file: content/pages/privacy-policy.json, fields: *langfields }

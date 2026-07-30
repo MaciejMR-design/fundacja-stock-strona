@@ -75,12 +75,7 @@
   <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
 
 <script>
-const PAGE_I18N = {
-  en: { backToTeam: 'Back to Council & Board', moreOverline: 'The team', moreTitle: 'Other members', viewProfile: 'View profile' },
-  pl: { backToTeam: 'Wróć do Rady i Zarządu', moreOverline: 'Zespół', moreTitle: 'Pozostali członkowie', viewProfile: 'Zobacz profil' },
-  cz: { backToTeam: 'Zpět na Radu a představenstvo', moreOverline: 'Tým', moreTitle: 'Další členové', viewProfile: 'Zobrazit profil' },
-  it: { backToTeam: 'Torna a Consiglio e direzione', moreOverline: 'Il team', moreTitle: 'Altri membri', viewProfile: 'Vedi profilo' }
-};
+const PAGE_I18N = /* CONTENT:PAGE_I18N */{"en":{"backToTeam":"Back to Council & Board","moreOverline":"The team","moreTitle":"Other members","viewProfile":"View profile"},"pl":{"backToTeam":"Wróć do Rady i Zarządu","moreOverline":"Zespół","moreTitle":"Pozostali członkowie","viewProfile":"Zobacz profil"},"cz":{"backToTeam":"Zpět na Radu a představenstvo","moreOverline":"Tým","moreTitle":"Další členové","viewProfile":"Zobrazit profil"},"it":{"backToTeam":"Torna a Consiglio e direzione","moreOverline":"Il team","moreTitle":"Altri membri","viewProfile":"Vedi profilo"}}/* /CONTENT */;
 function lang() { return localStorage.getItem('fs-lang') || 'en'; }
 function getId() { return location.hash.slice(1); }
 
