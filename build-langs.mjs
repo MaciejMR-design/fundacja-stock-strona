@@ -193,6 +193,78 @@ const META = {
 const esc = s => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
 const pageUrl = (lang, page) => SITE + '/' + DIR[lang] + (page === 'index.html' ? '' : page);
 
+/* ---- structured data (schema.org) ----
+   Localised names for the JSON-LD blocks. The breadcrumb labels mirror
+   COMMON_I18N in main.js — keep them in step if those ever change. */
+const ORG_NAME = {
+  en: 'Stock Foundation', pl: 'Fundacja Stock', cz: 'Nadace Stock', it: 'Fondazione Stock',
+  sk: 'Nadácia Stock', de: 'Stiftung Stock', fr: 'Fondation Stock'
+};
+const HOME_LABEL = {
+  en: 'Home', pl: 'Strona główna', cz: 'Úvod', it: 'Home',
+  sk: 'Domov', de: 'Startseite', fr: 'Accueil'
+};
+const NEWS_LABEL = {
+  en: 'News', pl: 'Aktualności', cz: 'Novinky', it: 'Notizie',
+  sk: 'Aktuality', de: 'Aktuelles', fr: 'Actualités'
+};
+
+const ld = obj => '<script type="application/ld+json">' +
+  JSON.stringify(obj).replace(/</g, '\\u003c') + '</script>';
+
+/* One Organization block, on the home page of each language. Everything here
+   is already public on the site itself (contact page, footer, financial
+   statements), so nothing new is being disclosed. */
+function orgLd(lang) {
+  return {
+    '@context': 'https://schema.org', '@type': 'NGO',
+    '@id': SITE + '/#organization',
+    name: ORG_NAME[lang],
+    legalName: 'Fundacja Stock',
+    alternateName: 'Stock Foundation',
+    url: pageUrl(lang, 'index.html'),
+    logo: OG_SITE + '/uploads/logo-footer.svg',
+    foundingDate: '2022',
+    taxID: '9462718618',
+    description: META['index.html'][lang][1],
+    address: {
+      '@type': 'PostalAddress', streetAddress: 'Spółdzielcza 6',
+      postalCode: '20-402', addressLocality: 'Lublin', addressCountry: 'PL'
+    },
+    contactPoint: {
+      '@type': 'ContactPoint', telephone: '+48538183916',
+      contactType: 'customer service', email: 'pawel.jablonski@stockspirits.com',
+      availableLanguage: PUBLIC_LANGS.map(l => HTML_LANG[l])
+    },
+    sameAs: ['https://www.facebook.com/fundacjastock/', 'https://www.instagram.com/fundacja_stock']
+  };
+}
+
+function articleLd(lang, art, page) {
+  return {
+    '@context': 'https://schema.org', '@type': 'NewsArticle',
+    headline: art.title,
+    description: art.desc,
+    image: [OG_SITE + art.img],
+    datePublished: art.ts,
+    inLanguage: HTML_LANG[lang],
+    mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl(lang, page) },
+    author: { '@id': SITE + '/#organization' },
+    publisher: { '@id': SITE + '/#organization' }
+  };
+}
+
+function breadcrumbLd(lang, page, art) {
+  const items = [{ '@type': 'ListItem', position: 1, name: HOME_LABEL[lang], item: pageUrl(lang, 'index.html') }];
+  if (art) {
+    items.push({ '@type': 'ListItem', position: 2, name: NEWS_LABEL[lang], item: pageUrl(lang, 'news.html') });
+    items.push({ '@type': 'ListItem', position: 3, name: art.title });
+  } else {
+    items.push({ '@type': 'ListItem', position: 2, name: META[page][lang][0].split(' — ')[0] });
+  }
+  return { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: items };
+}
+
 /* art (optional): { id, title, desc, img } — per-article overrides */
 function transform(src, page, lang, art) {
   const tplPage = page; // template name (content dict lookup) — `page` may become article-<id>.html
@@ -240,6 +312,16 @@ function transform(src, page, lang, art) {
      templates, so later languages read output, not the pristine source. */
   h = h.replace(/\/assets\/articles(-[a-z]{2})?\.js/, `/assets/articles-${lang}.js`);
 
+  /* structured data — rebuilt from scratch on every run so re-running the
+     build never stacks duplicate blocks in the root templates */
+  h = h.replace(/<!-- ld-json -->[\s\S]*?<!-- \/ld-json -->\n?/, '');
+  const bloki = [];
+  if (tplPage === 'index.html') bloki.push(orgLd(lang));
+  else bloki.push(breadcrumbLd(lang, tplPage, art));
+  if (art) bloki.push(articleLd(lang, art, page));
+  h = h.replace('</head>',
+    '<!-- ld-json -->\n' + bloki.map(ld).join('\n') + '\n<!-- /ld-json -->\n</head>');
+
   // inject the editable PAGE_I18N dictionary from content/pages/<page>.json
   const dict = PAGE_DICTS[tplPage];
   if (dict) {
@@ -285,7 +367,7 @@ for (const lang of LANGS) {
   }
   // one static page per article: article-<id>.html
   for (const a of ARTICLES) {
-    const art = { id: a.id, title: a.title[lang], desc: a.lead[lang], img: a.img };
+    const art = { id: a.id, title: a.title[lang], desc: a.lead[lang], img: a.img, ts: a.ts };
     writeFileSync(join(SRC, DIR[lang], `article-${a.id}.html`), transform(articleTemplate, 'article.html', lang, art), 'utf8');
     written++;
   }
