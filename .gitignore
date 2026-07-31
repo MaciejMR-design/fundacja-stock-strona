@@ -1,6 +1,10 @@
 # archiwum starej strony (79+ MB) — trzymane lokalnie, nie w repo
 wp-media/
 
+# skrzynka na surowe materiały od klienta — obrabiane i przenoszone
+# do design-v2/uploads/, same oryginały zostają lokalnie
+_WRZUC-TUTAJ/
+
 # lokalne artefakty narzędzi
 .vercel/
 design-v2/.vercel/
