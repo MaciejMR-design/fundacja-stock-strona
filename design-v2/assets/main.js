@@ -185,6 +185,11 @@ function applyLang(lang, instant) {
       const key = el.getAttribute('data-i18n');
       if (t[key] !== undefined) el.textContent = t[key];
     });
+    /* image descriptions — same dictionary, written to alt instead of text */
+    document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+      const key = el.getAttribute('data-i18n-alt');
+      if (t[key] !== undefined) el.alt = t[key];
+    });
     document.documentElement.lang = lang === 'cz' ? 'cs' : lang;
     const cur = document.getElementById('langCur');
     if (cur) cur.textContent = lang.toUpperCase();

@@ -48,7 +48,10 @@
     "statuteLink2": "All reports",
     "latestLabel": "Latest",
     "newestLabel": "Newest",
-    "cadenceNote": "New actions and stories added regularly"
+    "cadenceNote": "New actions and stories added regularly",
+    "news1Alt": "Art Encounter for seniors in Lublin — a talk at the Social Welfare Home on Ametystowa Street",
+    "news2Alt": "Training for social workers of the Municipal Family Support Centre in Lublin",
+    "news3Alt": "A scholarship holder of the foundation at the Taekwon-Do European Championships"
   },
   "pl": {
     "heroTitle1": "Nadzieja, sztuka",
@@ -99,7 +102,10 @@
     "statuteLink2": "Wszystkie sprawozdania",
     "latestLabel": "Najnowsze",
     "newestLabel": "Najnowsze",
-    "cadenceNote": "Nowe akcje i wpisy dodajemy na bieżąco"
+    "cadenceNote": "Nowe akcje i wpisy dodajemy na bieżąco",
+    "news1Alt": "Spotkanie ze Sztuką dla seniorów w Lublinie — prelekcja w DPS przy ul. Ametystowej",
+    "news2Alt": "Szkolenie dla pracowników socjalnych MOPR w Lublinie",
+    "news3Alt": "Stypendysta fundacji na Mistrzostwach Europy Taekwon-Do"
   },
   "cz": {
     "heroTitle1": "Naděje, umění",
@@ -150,7 +156,10 @@
     "statuteLink2": "Všechny zprávy",
     "latestLabel": "Nejnovější",
     "newestLabel": "Nejnovější",
-    "cadenceNote": "Nové akce a příspěvky přidáváme průběžně"
+    "cadenceNote": "Nové akce a příspěvky přidáváme průběžně",
+    "news1Alt": "Setkání s uměním pro seniory v Lublinu — přednáška v domově sociální péče na ulici Ametystowa",
+    "news2Alt": "Školení pro sociální pracovníky střediska pomoci rodině v Lublinu",
+    "news3Alt": "Stipendista nadace na mistrovství Evropy v Taekwon-Do"
   },
   "it": {
     "heroTitle1": "Speranza, arte",
@@ -201,7 +210,10 @@
     "statuteLink2": "Tutti i rapporti",
     "latestLabel": "Ultima",
     "newestLabel": "Più recente",
-    "cadenceNote": "Nuove azioni e storie aggiunte regolarmente"
+    "cadenceNote": "Nuove azioni e storie aggiunte regolarmente",
+    "news1Alt": "Incontro con l’Arte per anziani a Lublino — una conferenza nella casa di assistenza sociale di via Ametystowa",
+    "news2Alt": "Formazione per gli assistenti sociali del centro di sostegno alla famiglia di Lublino",
+    "news3Alt": "Un borsista della fondazione ai Campionati Europei di Taekwon-Do"
   },
   "sk": {
     "heroTitle1": "Nádej, umenie",
@@ -252,7 +264,10 @@
     "statuteLink2": "Všetky správy",
     "latestLabel": "Najnovšie",
     "newestLabel": "Najnovšie",
-    "cadenceNote": "Nové akcie a príspevky pridávame priebežne"
+    "cadenceNote": "Nové akcie a príspevky pridávame priebežne",
+    "news1Alt": "Stretnutie s umením pre seniorov v Lubline — prednáška v domove sociálnych služieb na Ametystovej ulici",
+    "news2Alt": "Školenie pre sociálnych pracovníkov strediska pomoci rodine v Lubline",
+    "news3Alt": "Štipendista nadácie na majstrovstvách Európy v Taekwon-Do"
   },
   "de": {
     "heroTitle1": "Hoffnung, Kunst",
@@ -303,7 +318,10 @@
     "statuteLink2": "Alle Berichte",
     "latestLabel": "Neueste",
     "newestLabel": "Neueste",
-    "cadenceNote": "Neue Aktionen und Beiträge kommen laufend hinzu"
+    "cadenceNote": "Neue Aktionen und Beiträge kommen laufend hinzu",
+    "news1Alt": "Kunstbegegnung für Seniorinnen und Senioren in Lublin — ein Vortrag im Sozialhilfeheim in der Ametystowa-Straße",
+    "news2Alt": "Schulung für Sozialarbeitende des Familienhilfezentrums in Lublin",
+    "news3Alt": "Ein Stipendiat der Stiftung bei der Taekwon-Do-Europameisterschaft"
   },
   "fr": {
     "heroTitle1": "Espoir, art",
@@ -354,6 +372,9 @@
     "statuteLink2": "Tous les rapports",
     "latestLabel": "Dernière",
     "newestLabel": "La plus récente",
-    "cadenceNote": "Nouvelles actions et publications ajoutées régulièrement"
+    "cadenceNote": "Nouvelles actions et publications ajoutées régulièrement",
+    "news1Alt": "Rencontre avec l’art pour les seniors à Lublin — une conférence au foyer d’aide sociale de la rue Ametystowa",
+    "news2Alt": "Formation pour les travailleurs sociaux du centre d’aide à la famille de Lublin",
+    "news3Alt": "Un boursier de la fondation aux Championnats d’Europe de Taekwon-Do"
   }
 }

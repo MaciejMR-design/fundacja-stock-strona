@@ -117,7 +117,9 @@ function renderArticle() {
   } else {
     gallery.style.display = 'none';
     cover.style.display = '';
-    document.getElementById('artImg').src = a.img;
+    var artImg = document.getElementById('artImg');
+    artImg.src = a.img;
+    artImg.alt = a.title[l];   // same description the gallery path gives its images
   }
 
   const body = document.getElementById('artBody');

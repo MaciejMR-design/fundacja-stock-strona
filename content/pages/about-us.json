@@ -47,7 +47,11 @@
     "tl3T": "Art, mental health & community",
     "tl3X": "Art Encounters, scholarships and creative collective activities that support mental health and bring people together — across generations.",
     "ctaTitle": "See what we are doing right now",
-    "ctaNews": "Our latest actions"
+    "ctaNews": "Our latest actions",
+    "photoFestynAlt": "Community festival for Ukrainian families organized by the Stock Foundation",
+    "photoArtAlt": "An Art Encounter organized by the foundation",
+    "awardMedalAlt": "The „Lublin Bohaterom” medal awarded to the foundation",
+    "awardDiplomaAlt": "Diploma accompanying the „Lublin Bohaterom” medal for the Stock Foundation"
   },
   "pl": {
     "pageTitle": "O nas",
@@ -97,7 +101,11 @@
     "tl3T": "Sztuka, zdrowie psychiczne i wspólnota",
     "tl3X": "Spotkania ze Sztuką, stypendia i wspólne działania twórcze wspierające zdrowie psychiczne i łączące ludzi — ponad pokoleniami.",
     "ctaTitle": "Zobacz, co robimy właśnie teraz",
-    "ctaNews": "Nasze ostatnie akcje"
+    "ctaNews": "Nasze ostatnie akcje",
+    "photoFestynAlt": "Festyn społecznościowy dla rodzin z Ukrainy zorganizowany przez Fundację Stock",
+    "photoArtAlt": "Spotkanie ze Sztuką zorganizowane przez fundację",
+    "awardMedalAlt": "Medal „Lublin Bohaterom” przyznany fundacji",
+    "awardDiplomaAlt": "Dyplom towarzyszący medalowi „Lublin Bohaterom” dla Fundacji Stock"
   },
   "cz": {
     "pageTitle": "O nás",
@@ -147,7 +155,11 @@
     "tl3T": "Umění, duševní zdraví a komunita",
     "tl3X": "Setkání s uměním, stipendia a společné tvořivé aktivity podporující duševní zdraví a spojující lidi — napříč generacemi.",
     "ctaTitle": "Podívejte se, co právě děláme",
-    "ctaNews": "Naše poslední akce"
+    "ctaNews": "Naše poslední akce",
+    "photoFestynAlt": "Komunitní slavnost pro ukrajinské rodiny pořádaná Nadací Stock",
+    "photoArtAlt": "Setkání s uměním pořádané nadací",
+    "awardMedalAlt": "Medaile „Lublin Bohaterom“ udělená nadaci",
+    "awardDiplomaAlt": "Diplom doprovázející medaili „Lublin Bohaterom“ pro Nadaci Stock"
   },
   "it": {
     "pageTitle": "Chi siamo",
@@ -197,7 +209,11 @@
     "tl3T": "Arte, salute mentale e comunità",
     "tl3X": "Incontri con l’Arte, borse di studio e attività creative collettive che sostengono la salute mentale e uniscono le persone — attraverso le generazioni.",
     "ctaTitle": "Guarda cosa stiamo facendo proprio ora",
-    "ctaNews": "Le nostre ultime azioni"
+    "ctaNews": "Le nostre ultime azioni",
+    "photoFestynAlt": "Festa comunitaria per le famiglie ucraine organizzata dalla Fondazione Stock",
+    "photoArtAlt": "Un Incontro con l’Arte organizzato dalla fondazione",
+    "awardMedalAlt": "La medaglia «Lublin Bohaterom» conferita alla fondazione",
+    "awardDiplomaAlt": "Diploma che accompagna la medaglia «Lublin Bohaterom» per la Fondazione Stock"
   },
   "sk": {
     "pageTitle": "O nás",
@@ -247,7 +263,11 @@
     "tl3T": "Umenie, duševné zdravie a spoločenstvo",
     "tl3X": "Stretnutia s umením, štipendiá a spoločné tvorivé aktivity, ktoré podporujú duševné zdravie a spájajú ľudí — naprieč generáciami.",
     "ctaTitle": "Pozrite sa, čo robíme práve teraz",
-    "ctaNews": "Naše najnovšie akcie"
+    "ctaNews": "Naše najnovšie akcie",
+    "photoFestynAlt": "Komunitná slávnosť pre ukrajinské rodiny organizovaná Nadáciou Stock",
+    "photoArtAlt": "Stretnutie s umením organizované nadáciou",
+    "awardMedalAlt": "Medaila „Lublin Bohaterom“ udelená nadácii",
+    "awardDiplomaAlt": "Diplom sprevádzajúci medailu „Lublin Bohaterom“ pre Nadáciu Stock"
   },
   "de": {
     "pageTitle": "Über uns",
@@ -297,7 +317,11 @@
     "tl3T": "Kunst, psychische Gesundheit und Gemeinschaft",
     "tl3X": "Kunstbegegnungen, Stipendien und gemeinsame kreative Aktivitäten, die die psychische Gesundheit stärken und Menschen verbinden — über Generationen hinweg.",
     "ctaTitle": "Sehen Sie, was wir gerade jetzt tun",
-    "ctaNews": "Unsere neuesten Aktionen"
+    "ctaNews": "Unsere neuesten Aktionen",
+    "photoFestynAlt": "Gemeinschaftsfest für ukrainische Familien, organisiert von der Stiftung Stock",
+    "photoArtAlt": "Eine von der Stiftung organisierte Kunstbegegnung",
+    "awardMedalAlt": "Die der Stiftung verliehene Medaille „Lublin Bohaterom“",
+    "awardDiplomaAlt": "Urkunde zur Medaille „Lublin Bohaterom“ für die Stiftung Stock"
   },
   "fr": {
     "pageTitle": "À propos",
@@ -347,6 +371,10 @@
     "tl3T": "Art, santé mentale et communauté",
     "tl3X": "Les Rencontres avec l’art, les bourses d’études et les activités créatives collectives qui soutiennent la santé mentale et rassemblent les gens — au-delà des générations.",
     "ctaTitle": "Découvrez ce que nous faisons en ce moment",
-    "ctaNews": "Nos dernières actions"
+    "ctaNews": "Nos dernières actions",
+    "photoFestynAlt": "Fête communautaire pour les familles ukrainiennes organisée par la Fondation Stock",
+    "photoArtAlt": "Une Rencontre avec l’art organisée par la fondation",
+    "awardMedalAlt": "La médaille « Lublin Bohaterom » décernée à la fondation",
+    "awardDiplomaAlt": "Diplôme accompagnant la médaille « Lublin Bohaterom » pour la Fondation Stock"
   }
 }
