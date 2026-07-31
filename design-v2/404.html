@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 — Stock Foundation</title>
+<meta name="robots" content="noindex">
+<!-- Served by Vercel for any unmatched path, so it must not assume where it
+     sits: assets are root-absolute and the language is read from the URL. -->
+<script>
+  (function () {
+    var seg = location.pathname.split('/')[1];
+    var known = ['pl', 'cz', 'it', 'sk', 'de', 'fr'];
+    window.FS_LANG = known.indexOf(seg) > -1 ? seg : 'en';
+    window.FS_PUBLIC_LANGS = ["en","pl"];
+    document.documentElement.lang = window.FS_LANG === 'cz' ? 'cs' : window.FS_LANG;
+  })();
+</script>
+<link rel="icon" href="/uploads/logo-footer.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/fonts.css">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+  <header class="site" id="site-header"></header>
+
+  <section class="page-hero">
+    <img class="hero-photo" src="/uploads/bg-page.svg" alt="" aria-hidden="true" fetchpriority="high" decoding="async">
+    <div class="container page-hero-inner i18n-fade">
+      <span class="crumb"><a href="/" data-i18n="home"></a> / 404</span>
+      <h1 class="display" data-i18n="notFoundTitle"></h1>
+      <p class="lead" data-i18n="notFoundText"></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container i18n-fade" style="display:flex;gap:16px;flex-wrap:wrap;padding-top:clamp(40px,6vw,72px);padding-bottom:clamp(56px,8vw,96px);">
+      <a href="/" class="btn btn-gold" data-i18n="notFoundHome"></a>
+      <a href="/news.html" class="btn btn-navy" data-i18n="navNews"></a>
+      <a href="/contact.html" class="btn btn-white" data-i18n="navContact"></a>
+    </div>
+  </section>
+
+  <footer class="site" id="site-footer"></footer>
+
+<script>
+const PAGE_I18N = {
+  "en": { "notFoundTitle": "Page not found", "notFoundText": "The address you followed does not exist — it may have changed, or the link may contain a typo.", "notFoundHome": "Back to home page" },
+  "pl": { "notFoundTitle": "Nie ma takiej strony", "notFoundText": "Adres, pod który trafiłeś, nie istnieje — mógł się zmienić albo w odnośniku jest literówka.", "notFoundHome": "Wróć na stronę główną" },
+  "cz": { "notFoundTitle": "Stránka nenalezena", "notFoundText": "Adresa, na kterou jste přišli, neexistuje — mohla se změnit, nebo je v odkazu překlep.", "notFoundHome": "Zpět na úvodní stránku" },
+  "it": { "notFoundTitle": "Pagina non trovata", "notFoundText": "L’indirizzo che hai seguito non esiste — potrebbe essere cambiato oppure il link contiene un errore.", "notFoundHome": "Torna alla home page" },
+  "sk": { "notFoundTitle": "Stránka sa nenašla", "notFoundText": "Adresa, na ktorú ste prišli, neexistuje — mohla sa zmeniť alebo je v odkaze preklep.", "notFoundHome": "Späť na úvodnú stránku" },
+  "de": { "notFoundTitle": "Seite nicht gefunden", "notFoundText": "Die aufgerufene Adresse existiert nicht — sie hat sich möglicherweise geändert oder der Link enthält einen Tippfehler.", "notFoundHome": "Zurück zur Startseite" },
+  "fr": { "notFoundTitle": "Page introuvable", "notFoundText": "L’adresse que vous avez suivie n’existe pas — elle a pu changer ou le lien contient une faute de frappe.", "notFoundHome": "Retour à l’accueil" }
+};
+</script>
+<script src="/assets/main.js"></script>
+</body>
+</html>

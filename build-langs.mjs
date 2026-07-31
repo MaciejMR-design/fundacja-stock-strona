@@ -373,6 +373,16 @@ for (const lang of LANGS) {
   }
 }
 
+/* 404.html is hand-written (Vercel serves it for any unmatched path, so it
+   cannot be built per language — it detects the language from the URL).
+   Only its released-language list is kept in step with PUBLIC_LANGS here. */
+const notFound = join(SRC, '404.html');
+writeFileSync(notFound,
+  readFileSync(notFound, 'utf8').replace(
+    /window\.FS_PUBLIC_LANGS = \[[^\]]*\];/,
+    `window.FS_PUBLIC_LANGS = ${JSON.stringify(PUBLIC_LANGS)};`),
+  'utf8');
+
 // sitemap + robots — released languages only
 const urls = PUBLIC_LANGS.flatMap(l => [
   ...PAGES.map(p => pageUrl(l, p)),

@@ -28,7 +28,7 @@ const COMMON_I18N = {
     footerBlurb: 'A charitable foundation from Lublin helping refugees and local communities, and promoting art as therapy.',
     footerContact: 'Contact', footerCountry: 'Poland', footerNav: 'Explore',
     cityLublin: 'Lublin', cityWarsaw: 'Warsaw', langSoon: 'coming soon',
-    footerPrivacy: 'Privacy and Cookies', footerCredit: 'Website by ',
+    footerPrivacy: 'Privacy and Cookies', cookieSettings: 'Cookie settings', footerCredit: 'Website by ',
     cookieText: 'We use necessary cookies to make the site work and — only with your consent — analytics cookies (Google Analytics) to understand how it is used.', cookieAccept: 'Accept all', cookieDecline: 'Necessary only', cookieMore: 'Learn more'
   },
   pl: {
@@ -37,7 +37,7 @@ const COMMON_I18N = {
     footerBlurb: 'Fundacja charytatywna z Lublina pomagająca uchodźcom i lokalnym społecznościom oraz promująca sztukę jako terapię.',
     footerContact: 'Kontakt', footerCountry: 'Polska', footerNav: 'Nawigacja',
     cityLublin: 'Lublin', cityWarsaw: 'Warszawa', langSoon: 'wkrótce',
-    footerPrivacy: 'Prywatność i cookies', footerCredit: 'Strona wykonana przez ',
+    footerPrivacy: 'Prywatność i cookies', cookieSettings: 'Ustawienia cookies', footerCredit: 'Strona wykonana przez ',
     cookieText: 'Używamy niezbędnych plików cookie, aby strona działała, oraz — wyłącznie za Twoją zgodą — analitycznych (Google Analytics), aby rozumieć, jak jest używana.', cookieAccept: 'Akceptuję wszystkie', cookieDecline: 'Tylko niezbędne', cookieMore: 'Dowiedz się więcej'
   },
   cz: {
@@ -46,7 +46,7 @@ const COMMON_I18N = {
     footerBlurb: 'Charitativní nadace z Lublinu pomáhající uprchlíkům a místním komunitám a podporující umění jako terapii.',
     footerContact: 'Kontakt', footerCountry: 'Polsko', footerNav: 'Prozkoumat',
     cityLublin: 'Lublin', cityWarsaw: 'Varšava', langSoon: 'již brzy',
-    footerPrivacy: 'Soukromí a cookies', footerCredit: 'Web vytvořila ',
+    footerPrivacy: 'Soukromí a cookies', cookieSettings: 'Nastavení cookies', footerCredit: 'Web vytvořila ',
     cookieText: 'Používáme nezbytné soubory cookie, aby web fungoval, a — pouze s vaším souhlasem — analytické (Google Analytics), abychom rozuměli, jak se používá.', cookieAccept: 'Přijmout vše', cookieDecline: 'Pouze nezbytné', cookieMore: 'Zjistit více'
   },
   it: {
@@ -55,7 +55,7 @@ const COMMON_I18N = {
     footerBlurb: 'Una fondazione benefica di Lublino che aiuta rifugiati e comunità locali e promuove l’arte come terapia.',
     footerContact: 'Contatti', footerCountry: 'Polonia', footerNav: 'Esplora',
     cityLublin: 'Lublino', cityWarsaw: 'Varsavia', langSoon: 'presto',
-    footerPrivacy: 'Privacy e cookie', footerCredit: 'Sito realizzato da ',
+    footerPrivacy: 'Privacy e cookie', cookieSettings: 'Impostazioni cookie', footerCredit: 'Sito realizzato da ',
     cookieText: 'Utilizziamo cookie necessari per far funzionare il sito e — solo con il tuo consenso — cookie analitici (Google Analytics) per capire come viene utilizzato.', cookieAccept: 'Accetta tutti', cookieDecline: 'Solo necessari', cookieMore: 'Scopri di più'
   },
   sk: {
@@ -64,7 +64,7 @@ const COMMON_I18N = {
     footerBlurb: 'Charitatívna nadácia z Lublina, ktorá pomáha utečencom a miestnym komunitám a podporuje umenie ako terapiu.',
     footerContact: 'Kontakt', footerCountry: 'Poľsko', footerNav: 'Preskúmať',
     cityLublin: 'Lublin', cityWarsaw: 'Varšava', langSoon: 'čoskoro',
-    footerPrivacy: 'Súkromie a cookies', footerCredit: 'Web vytvorila ',
+    footerPrivacy: 'Súkromie a cookies', cookieSettings: 'Nastavenia cookies', footerCredit: 'Web vytvorila ',
     cookieText: 'Používame nevyhnutné súbory cookie, aby stránka fungovala, a — iba s vaším súhlasom — analytické (Google Analytics), aby sme rozumeli, ako sa používa.', cookieAccept: 'Prijať všetky', cookieDecline: 'Iba nevyhnutné', cookieMore: 'Zistiť viac'
   },
   de: {
@@ -73,7 +73,7 @@ const COMMON_I18N = {
     footerBlurb: 'Eine gemeinnützige Stiftung aus Lublin, die Geflüchteten und lokalen Gemeinschaften hilft und Kunst als Therapie fördert.',
     footerContact: 'Kontakt', footerCountry: 'Polen', footerNav: 'Entdecken',
     cityLublin: 'Lublin', cityWarsaw: 'Warschau', langSoon: 'demnächst',
-    footerPrivacy: 'Datenschutz und Cookies', footerCredit: 'Website von ',
+    footerPrivacy: 'Datenschutz und Cookies', cookieSettings: 'Cookie-Einstellungen', footerCredit: 'Website von ',
     cookieText: 'Wir verwenden notwendige Cookies, damit die Website funktioniert, und — nur mit Ihrer Einwilligung — Analyse-Cookies (Google Analytics), um zu verstehen, wie sie genutzt wird.', cookieAccept: 'Alle akzeptieren', cookieDecline: 'Nur notwendige', cookieMore: 'Mehr erfahren'
   },
   fr: {
@@ -82,7 +82,7 @@ const COMMON_I18N = {
     footerBlurb: 'Une fondation caritative de Lublin qui aide les réfugiés et les communautés locales et promeut l’art comme thérapie.',
     footerContact: 'Contact', footerCountry: 'Pologne', footerNav: 'Explorer',
     cityLublin: 'Lublin', cityWarsaw: 'Varsovie', langSoon: 'bientôt',
-    footerPrivacy: 'Confidentialité et cookies', footerCredit: 'Site réalisé par ',
+    footerPrivacy: 'Confidentialité et cookies', cookieSettings: 'Paramètres des cookies', footerCredit: 'Site réalisé par ',
     cookieText: 'Nous utilisons des cookies nécessaires au fonctionnement du site et — uniquement avec votre consentement — des cookies analytiques (Google Analytics) pour comprendre comment il est utilisé.', cookieAccept: 'Tout accepter', cookieDecline: 'Nécessaires uniquement', cookieMore: 'En savoir plus'
   }
 };
@@ -177,6 +177,7 @@ function buildFooter() {
       <div class="footer-bottom i18n-fade">
         <nav>
           <a href="privacy-policy.html" data-i18n="footerPrivacy"></a>
+          <button type="button" class="cookie-settings" data-i18n="cookieSettings"></button>
         </nav>
         <div class="footer-meta">
           <span>© 2026 Stock Foundation</span>
@@ -190,6 +191,9 @@ function buildFooter() {
 
 buildHeader();
 buildFooter();
+
+const przyciskCookies = document.querySelector('.cookie-settings');
+if (przyciskCookies) przyciskCookies.addEventListener('click', () => window.fsOpenCookieSettings());
 
 /* URL of the current page in another language version (en = root) */
 function langHref(code) {
@@ -351,22 +355,99 @@ document.addEventListener('click', e => {
   lbOpen(img);
 });
 
-/* cookie consent — two-choice banner; analytics (GA) must run only when
-   localStorage 'fs-consent' === 'granted'. Gate any future GA snippet on it. */
-if (!localStorage.getItem('fs-consent')) {
+/* ---------- Google Analytics ----------
+   TO ENABLE: paste the GA4 measurement ID below (looks like 'G-XXXXXXXXXX').
+   Nothing else is needed — the script is injected only after the visitor has
+   accepted analytics cookies, and immediately when they accept in the banner.
+   Leave Google Signals and any Google Ads link switched OFF in the GA4 admin:
+   they add advertising purposes, which would require a second consent toggle.
+   Search Console needs no code here and no consent — it verifies the domain. */
+const GA_ID = '';
+
+function loadAnalytics() {
+  if (!GA_ID || window.__fsGaLoaded || !window.fsConsentGranted()) return;
+  window.__fsGaLoaded = true;
+  const s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('js', new Date());
+  gtag('config', GA_ID, { anonymize_ip: true });
+}
+
+/* ---------- cookie consent ----------
+   One optional purpose (analytics), so a two-button banner already gives the
+   visitor full granular control — a settings panel with a single switch would
+   be friction, not choice. Add per-category toggles only if a second purpose
+   (marketing, ad personalisation) is ever introduced.
+
+   The record keeps a timestamp and a version because the GDPR requires being
+   able to show WHEN and TO WHAT someone consented, and it expires so the
+   question is asked again rather than assumed forever. */
+const CONSENT_KEY = 'fs-consent';
+const CONSENT_VERSION = 1;
+const CONSENT_MONTHS = 12;
+
+function readConsent() {
+  let raw;
+  try { raw = localStorage.getItem(CONSENT_KEY); } catch (e) { return null; }
+  if (!raw) return null;
+  /* records written before versioning were the bare string 'granted'/'denied' */
+  if (raw === 'granted' || raw === 'denied') return { status: raw, ts: null, v: 0 };
+  try { return JSON.parse(raw); } catch (e) { return null; }
+}
+
+function consentValid(c) {
+  if (!c || (c.status !== 'granted' && c.status !== 'denied')) return false;
+  if (c.v !== CONSENT_VERSION || !c.ts) return false;      // migrate old records
+  const wiek = (Date.now() - Date.parse(c.ts)) / 86400000;
+  return !isNaN(wiek) && wiek < CONSENT_MONTHS * 30.4;
+}
+
+function saveConsent(status) {
+  try {
+    localStorage.setItem(CONSENT_KEY, JSON.stringify({
+      status: status, ts: new Date().toISOString(), v: CONSENT_VERSION
+    }));
+  } catch (e) { /* private mode — the banner simply asks again next visit */ }
+}
+
+window.fsConsentGranted = () => readConsent()?.status === 'granted';
+
+function showCookieBar() {
+  if (document.querySelector('.cookie')) return;
   const t = dict(currentLang);
+  const biezacy = readConsent();
   const bar = document.createElement('div');
   bar.className = 'cookie';
+  bar.setAttribute('role', 'dialog');
+  bar.setAttribute('aria-label', t.cookieSettings || 'Cookies');
   bar.innerHTML = '<p>' + t.cookieText + ' <a href="privacy-policy.html">' + t.cookieMore + '</a></p>' +
     '<div class="cookie-actions"><button id="cookieDecline" class="secondary">' + t.cookieDecline + '</button>' +
     '<button id="cookieAccept">' + t.cookieAccept + '</button></div>';
   document.body.appendChild(bar);
+  /* reopened from the footer: mark the choice currently in force */
+  if (biezacy) {
+    const aktywny = bar.querySelector(biezacy.status === 'granted' ? '#cookieAccept' : '#cookieDecline');
+    if (aktywny) aktywny.setAttribute('aria-current', 'true');
+  }
   requestAnimationFrame(() => requestAnimationFrame(() => bar.classList.add('show')));
   const close = (choice) => {
-    localStorage.setItem('fs-consent', choice);
+    saveConsent(choice);
+    if (choice === 'granted') loadAnalytics();
     bar.classList.remove('show');
     setTimeout(() => bar.remove(), 500);
   };
   bar.querySelector('#cookieAccept').addEventListener('click', () => close('granted'));
   bar.querySelector('#cookieDecline').addEventListener('click', () => close('denied'));
 }
+
+/* the footer link promised by the privacy policy — withdrawing consent has to
+   be as easy as giving it, which "clear your browser data" is not */
+window.fsOpenCookieSettings = showCookieBar;
+
+if (!consentValid(readConsent())) showCookieBar();
+loadAnalytics();   // no-op until GA_ID is filled in and consent is on record

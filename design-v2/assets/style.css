@@ -487,6 +487,10 @@ footer.site { background: var(--navy-dark); }
 .footer-bottom nav { display: flex; gap: 20px; flex-wrap: wrap; }
 .footer-bottom a, .footer-bottom span { font-size: 12px; color: rgba(255,255,255,.6); }
 .footer-bottom a:hover { color: var(--gold-light); }
+/* reopens the consent banner — styled as a footer link, but a real button
+   because it performs an action rather than navigating */
+.footer-bottom .cookie-settings { font-family: 'Montserrat', sans-serif; font-size: 12px; color: rgba(255,255,255,.6); background: none; border: 0; padding: 0; cursor: pointer; transition: color .25s; }
+.footer-bottom .cookie-settings:hover { color: var(--gold-light); }
 /* studio credit — deliberately quieter than the rest of the bar, warms up on hover */
 .footer-meta { display: flex; align-items: center; gap: 10px 20px; flex-wrap: wrap; }
 .footer-bottom .credit { display: inline-flex; align-items: baseline; gap: 5px; color: rgba(255,255,255,.34); transition: color .25s; }
