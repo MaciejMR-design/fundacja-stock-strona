@@ -1,6 +1,83 @@
 /* GENERATED from content/articles/*.json by build-langs.mjs — do not edit by hand. */
 window.ARTICLES = [
   {
+    "id": "report2025",
+    "ts": "2026-07-31",
+    "cat": "community",
+    "img": "/uploads/about-workshop.jpg",
+    "date": {
+      "en": "31 July 2026",
+      "pl": "31 lipca 2026",
+      "cz": "31. července 2026",
+      "it": "31 luglio 2026",
+      "sk": "31. júla 2026",
+      "de": "31. Juli 2026",
+      "fr": "31 juillet 2026"
+    },
+    "title": {
+      "en": "Our 2025 report — what we managed to do",
+      "pl": "Sprawozdanie za 2025 rok — co udało nam się zrobić",
+      "cz": "Zpráva za rok 2025 — co se nám podařilo",
+      "it": "Il nostro rapporto 2025 — che cosa siamo riusciti a fare",
+      "sk": "Správa za rok 2025 — čo sa nám podarilo",
+      "de": "Unser Bericht für 2025 — was wir geschafft haben",
+      "fr": "Notre rapport 2025 — ce que nous avons accompli"
+    },
+    "lead": {
+      "en": "We have published our activity and financial reports for 2025. Here are the numbers behind the year: 120 people in therapy, 23 Art Encounters and 141 volunteers.",
+      "pl": "Opublikowaliśmy sprawozdanie merytoryczne i finansowe za 2025 rok. Oto liczby, które kryją się za tym rokiem: 120 osób objętych terapią, 23 Spotkania ze Sztuką i 141 wolontariuszy.",
+      "cz": "Zveřejnili jsme zprávu o činnosti a účetní závěrku za rok 2025. Zde jsou čísla, která se za tímto rokem skrývají: 120 lidí v terapii, 23 setkání s uměním a 141 dobrovolníků.",
+      "it": "Abbiamo pubblicato il rapporto di attività e il bilancio per il 2025. Ecco i numeri dietro quest’anno: 120 persone in terapia, 23 Incontri con l’Arte e 141 volontari.",
+      "sk": "Zverejnili sme správu o činnosti a účtovnú závierku za rok 2025. Tu sú čísla, ktoré sa za týmto rokom skrývajú: 120 ľudí v terapii, 23 stretnutí s umením a 141 dobrovoľníkov.",
+      "de": "Wir haben unseren Tätigkeitsbericht und den Jahresabschluss für 2025 veröffentlicht. Hier sind die Zahlen hinter diesem Jahr: 120 Menschen in Therapie, 23 Kunstbegegnungen und 141 Freiwillige.",
+      "fr": "Nous avons publié notre rapport d’activité et nos états financiers pour 2025. Voici les chiffres de cette année : 120 personnes suivies en thérapie, 23 Rencontres avec l’art et 141 bénévoles."
+    },
+    "body": {
+      "en": [
+        "We have closed the year 2025 and published both the activity report and the financial statements — you will find them all under Statute & Reports. Below we sum up what happened over the past twelve months.",
+        "Psychological support remains the foundation of our work. In 2025 three Ukrainian psychotherapists, who have been working with us continuously for four years, cared for 120 people living with the effects of war trauma. They devoted 1,013 hours to individual sessions with them. In parallel, together with the Homo Faber Association, we ran the music scholarship programme for young people whose artistic education had been interrupted by the war — it covered 65 participants and 5 instructors.",
+        "We also gave a lot of attention to those who help others every day. We organised 9 training sessions on working with people in addiction crisis for more than 140 social workers from the Municipal Family Support Centre, the Association of Support Centres and social welfare homes. According to the directors of those institutions, every trained worker will encounter at least twenty difficult cases within a year — which means the support may indirectly reach around 2,800 people.",
+        "Art Encounters led by curators of the National Museum in Lublin took place 23 times and gathered more than 700 participants. Employee volunteering kept growing as well: 141 volunteers worked 1,140 hours cleaning rivers in Poland and Czechia, helping the Social Welfare Home on Kosmonautów Street and running grant projects. In total, in 2025 we worked with twelve organisations and institutions."
+      ],
+      "pl": [
+        "Zamknęliśmy rok 2025 i opublikowaliśmy zarówno sprawozdanie merytoryczne, jak i finansowe — wszystkie znajdziecie w zakładce Statut i sprawozdania. Poniżej podsumowujemy to, co wydarzyło się przez ostatnie dwanaście miesięcy.",
+        "Wsparcie psychologiczne pozostaje fundamentem naszej pracy. W 2025 roku troje ukraińskich psychoterapeutów, współpracujących z nami nieprzerwanie od czterech lat, objęło opieką 120 osób doświadczających skutków traumy wojennej. Na indywidualne spotkania z nimi przeznaczyli 1013 godzin. Równolegle, wspólnie ze Stowarzyszeniem Homo Faber, prowadziliśmy program stypendiów muzycznych dla młodzieży, której edukacja artystyczna została przerwana przez wojnę — objął on 65 uczestników i 5 instruktorów.",
+        "Wiele uwagi poświęciliśmy również tym, którzy pomagają na co dzień. Zorganizowaliśmy 9 szkoleń z pracy z osobami w kryzysie uzależnienia dla ponad 140 pracowników socjalnych z Miejskiego Ośrodka Pomocy Rodzinie, Związku Ośrodków Wsparcia i domów pomocy społecznej. Jak szacują dyrektorzy tych placówek, każdy przeszkolony pracownik zetknie się w ciągu roku z co najmniej dwudziestoma trudnymi przypadkami — wsparcie może więc pośrednio objąć około 2800 osób.",
+        "Spotkania ze Sztuką prowadzone przez kuratorów Muzeum Narodowego w Lublinie odbyły się 23 razy i wzięło w nich udział ponad 700 osób. Rozwijał się też wolontariat pracowniczy: 141 wolontariuszy przepracowało 1140 godzin przy sprzątaniu rzek w Polsce i Czechach, wsparciu Domu Pomocy Społecznej przy ul. Kosmonautów oraz w projektach grantowych. Łącznie w 2025 roku współpracowaliśmy z dwunastoma organizacjami i instytucjami."
+      ],
+      "cz": [
+        "Uzavřeli jsme rok 2025 a zveřejnili jak zprávu o činnosti, tak účetní závěrku — všechny najdete v sekci Statut a zprávy. Níže shrnujeme, co se za posledních dvanáct měsíců událo.",
+        "Psychologická podpora zůstává základem naší práce. V roce 2025 se tři ukrajinští psychoterapeuti, kteří s námi nepřetržitě spolupracují už čtyři roky, postarali o 120 lidí zasažených následky válečného traumatu. Individuálním setkáním s nimi věnovali 1013 hodin. Souběžně jsme společně se Sdružením Homo Faber vedli program hudebních stipendií pro mladé lidi, jejichž umělecké vzdělávání přerušila válka — zahrnul 65 účastníků a 5 lektorů.",
+        "Hodně pozornosti jsme věnovali také těm, kdo pomáhají každý den. Uspořádali jsme 9 školení o práci s lidmi v krizi závislosti pro více než 140 sociálních pracovníků z Městského střediska pomoci rodině, Sdružení podpůrných center a domovů sociální péče. Podle ředitelů těchto zařízení se každý proškolený pracovník během roku setká nejméně s dvaceti obtížnými případy — podpora tak může nepřímo zasáhnout přibližně 2800 lidí.",
+        "Setkání s uměním vedená kurátory Národního muzea v Lublinu se konala 23krát a zúčastnilo se jich více než 700 lidí. Rozvíjelo se i firemní dobrovolnictví: 141 dobrovolníků odpracovalo 1140 hodin při úklidu řek v Polsku a Česku, podpoře domova sociální péče na ulici Kosmonautów a v grantových projektech. Celkem jsme v roce 2025 spolupracovali s dvanácti organizacemi a institucemi."
+      ],
+      "it": [
+        "Abbiamo chiuso il 2025 e pubblicato sia il rapporto di attività sia il bilancio — li trovate tutti nella sezione Statuto e rapporti. Qui sotto riassumiamo ciò che è accaduto negli ultimi dodici mesi.",
+        "Il sostegno psicologico resta il fondamento del nostro lavoro. Nel 2025 tre psicoterapeuti ucraini, che collaborano con noi ininterrottamente da quattro anni, hanno seguito 120 persone che convivono con gli effetti del trauma di guerra. Hanno dedicato loro 1013 ore di incontri individuali. Parallelamente, insieme all’Associazione Homo Faber, abbiamo portato avanti il programma di borse di studio musicali per i giovani la cui formazione artistica era stata interrotta dalla guerra — ha coinvolto 65 partecipanti e 5 istruttori.",
+        "Molta attenzione l’abbiamo dedicata anche a chi aiuta ogni giorno. Abbiamo organizzato 9 corsi sul lavoro con persone in crisi di dipendenza per oltre 140 assistenti sociali del Centro municipale di sostegno alla famiglia, dell’Associazione dei centri di sostegno e delle case di assistenza sociale. Secondo i direttori di queste strutture, ogni operatore formato incontrerà nel corso di un anno almeno venti casi difficili — il sostegno può quindi raggiungere indirettamente circa 2800 persone.",
+        "Gli Incontri con l’Arte guidati dai curatori del Museo Nazionale di Lublino si sono svolti 23 volte e hanno riunito più di 700 partecipanti. È cresciuto anche il volontariato aziendale: 141 volontari hanno dedicato 1140 ore alla pulizia dei fiumi in Polonia e Cechia, al sostegno della casa di assistenza sociale di via Kosmonautów e ai progetti finanziati. In totale, nel 2025 abbiamo collaborato con dodici organizzazioni e istituzioni."
+      ],
+      "sk": [
+        "Uzavreli sme rok 2025 a zverejnili tak správu o činnosti, ako aj účtovnú závierku — všetky nájdete v sekcii Štatút a správy. Nižšie zhŕňame, čo sa za posledných dvanásť mesiacov udialo.",
+        "Psychologická podpora zostáva základom našej práce. V roku 2025 sa traja ukrajinskí psychoterapeuti, ktorí s nami nepretržite spolupracujú už štyri roky, postarali o 120 ľudí zasiahnutých následkami vojnovej traumy. Individuálnym stretnutiam s nimi venovali 1013 hodín. Súbežne sme spolu so Združením Homo Faber viedli program hudobných štipendií pre mladých ľudí, ktorých umelecké vzdelávanie prerušila vojna — zahrnul 65 účastníkov a 5 lektorov.",
+        "Veľa pozornosti sme venovali aj tým, ktorí pomáhajú každý deň. Zorganizovali sme 9 školení o práci s ľuďmi v kríze závislosti pre viac než 140 sociálnych pracovníkov z Mestského strediska pomoci rodine, Združenia podporných centier a domovov sociálnych služieb. Podľa riaditeľov týchto zariadení sa každý vyškolený pracovník počas roka stretne najmenej s dvadsiatimi náročnými prípadmi — podpora tak môže nepriamo zasiahnuť približne 2800 ľudí.",
+        "Stretnutia s umením vedené kurátormi Národného múzea v Lubline sa konali 23-krát a zúčastnilo sa ich viac než 700 ľudí. Rozvíjalo sa aj firemné dobrovoľníctvo: 141 dobrovoľníkov odpracovalo 1140 hodín pri čistení riek v Poľsku a Česku, podpore domova sociálnych služieb na ulici Kosmonautów a v grantových projektoch. Celkovo sme v roku 2025 spolupracovali s dvanástimi organizáciami a inštitúciami."
+      ],
+      "de": [
+        "Wir haben das Jahr 2025 abgeschlossen und sowohl den Tätigkeitsbericht als auch den Jahresabschluss veröffentlicht — beides finden Sie unter Satzung & Berichte. Im Folgenden fassen wir zusammen, was in den vergangenen zwölf Monaten geschehen ist.",
+        "Psychologische Unterstützung bleibt das Fundament unserer Arbeit. Im Jahr 2025 betreuten drei ukrainische Psychotherapeutinnen und Psychotherapeuten, die seit vier Jahren ununterbrochen mit uns zusammenarbeiten, 120 Menschen mit den Folgen eines Kriegstraumas. Für Einzelgespräche mit ihnen wendeten sie 1.013 Stunden auf. Parallel führten wir gemeinsam mit dem Verein Homo Faber das Musikstipendienprogramm für junge Menschen fort, deren künstlerische Ausbildung durch den Krieg unterbrochen worden war — es umfasste 65 Teilnehmende und 5 Lehrkräfte.",
+        "Viel Aufmerksamkeit galt auch denjenigen, die täglich helfen. Wir organisierten 9 Schulungen zur Arbeit mit suchtbetroffenen Menschen für mehr als 140 Sozialarbeitende des städtischen Familienhilfezentrums, des Verbunds der Unterstützungszentren und der Sozialhilfeheime. Nach Einschätzung der Leitungen dieser Einrichtungen begegnet jede geschulte Fachkraft im Laufe eines Jahres mindestens zwanzig schwierigen Fällen — die Unterstützung kann somit indirekt rund 2.800 Menschen erreichen.",
+        "Die Kunstbegegnungen unter Leitung von Kuratorinnen und Kuratoren des Nationalmuseums in Lublin fanden 23-mal statt und versammelten mehr als 700 Teilnehmende. Auch die Mitarbeiter-Freiwilligenarbeit wuchs weiter: 141 Freiwillige leisteten 1.140 Stunden bei Flussreinigungen in Polen und Tschechien, bei der Unterstützung des Sozialhilfeheims in der Kosmonautów-Straße und in Förderprojekten. Insgesamt arbeiteten wir 2025 mit zwölf Organisationen und Einrichtungen zusammen."
+      ],
+      "fr": [
+        "Nous avons clôturé l’année 2025 et publié à la fois le rapport d’activité et les états financiers — vous les trouverez tous dans la rubrique Statuts et rapports. Nous résumons ci-dessous ce qui s’est passé au cours des douze derniers mois.",
+        "Le soutien psychologique reste le fondement de notre travail. En 2025, trois psychothérapeutes ukrainiens, qui collaborent avec nous sans interruption depuis quatre ans, ont accompagné 120 personnes vivant avec les séquelles d’un traumatisme de guerre. Ils leur ont consacré 1 013 heures d’entretiens individuels. En parallèle, avec l’Association Homo Faber, nous avons mené le programme de bourses musicales destiné aux jeunes dont la formation artistique avait été interrompue par la guerre — il a réuni 65 participants et 5 instructeurs.",
+        "Nous avons également accordé beaucoup d’attention à celles et ceux qui aident au quotidien. Nous avons organisé 9 formations sur l’accompagnement des personnes en situation d’addiction pour plus de 140 travailleurs sociaux du centre municipal d’aide à la famille, de l’Ensemble des centres de soutien et des foyers d’aide sociale. Selon les directions de ces établissements, chaque professionnel formé rencontrera au cours d’une année au moins vingt cas difficiles — le soutien peut donc toucher indirectement environ 2 800 personnes.",
+        "Les Rencontres avec l’art animées par les conservateurs du Musée national de Lublin ont eu lieu 23 fois et ont rassemblé plus de 700 participants. Le bénévolat d’entreprise s’est lui aussi développé : 141 bénévoles ont consacré 1 140 heures au nettoyage des rivières en Pologne et en Tchéquie, au soutien du foyer d’aide sociale de la rue Kosmonautów et à des projets subventionnés. Au total, en 2025, nous avons collaboré avec douze organisations et institutions."
+      ]
+    }
+  },
+  {
     "id": "gerson",
     "ts": "2026-06-05",
     "cat": "art",
