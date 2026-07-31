@@ -30,7 +30,7 @@
   <header class="site" id="site-header"></header>
 
   <section class="page-hero">
-    <img class="hero-photo" src="/uploads/bg-news.svg" alt="" aria-hidden="true">
+    <img class="hero-photo" src="/uploads/bg-news.svg" alt="" aria-hidden="true" fetchpriority="high" decoding="async">
     <svg class="hero-art" viewBox="0 0 1200 400" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
       <g fill="none" stroke="#CD9E0C" stroke-width="1.2">
         <path d="M980 20 C980 20 890 -6 760 -6 C630 -6 540 20 540 20 C537 72 500 112 448 112 L448 300 C448 420 540 520 760 580 C980 520 1072 420 1072 300 L1072 112 C1020 112 983 72 980 20 Z" opacity="0.4"></path>
@@ -104,7 +104,11 @@ function renderNews() {
 
   // featured
   document.getElementById('featured').href = 'article-' + feat.id + '.html';
-  document.getElementById('featImg').src = feat.img;
+  var fi = document.getElementById('featImg');
+  fi.src = feat.img;
+  fi.srcset = window.fsSrcset(feat.img);
+  fi.sizes = '(max-width: 860px) 100vw, 560px';
+  fi.alt = feat.title[l];
   document.getElementById('featCat').textContent = t['cat' + feat.cat];
   document.getElementById('featDate').textContent = feat.date[l];
   document.getElementById('featTitle').textContent = feat.title[l];
@@ -119,7 +123,7 @@ function renderNews() {
     el.dataset.cat = a.cat;
     el.innerHTML =
       '<a href="article-' + a.id + '.html" style="display:flex;flex-direction:column;flex:1;color:inherit;">' +
-        '<div class="card-media"><img src="' + a.img + '" alt="" loading="lazy" decoding="async"><span class="cat">' + t['cat' + a.cat] + '</span></div>' +
+        '<div class="card-media"><img src="' + a.img + '" srcset="' + window.fsSrcset(a.img) + '" sizes="(max-width: 620px) 100vw, (max-width: 1020px) 50vw, 33vw" alt="" loading="lazy" decoding="async"><span class="cat">' + t['cat' + a.cat] + '</span></div>' +
         '<div class="card-body">' +
           '<time>' + a.date[l] + '</time>' +
           '<h3>' + a.title[l] + '</h3>' +
@@ -166,7 +170,7 @@ if (nlForm) nlForm.addEventListener('submit', e => {
 // re-render on language change (called by main.js applyLang)
 window.onLangChange = renderNews;
 </script>
-<script src="/assets/articles.js"></script>
+<script src="/assets/articles-it.js"></script>
 <script src="/assets/main.js"></script>
 <script>renderNews();</script>
 </body>

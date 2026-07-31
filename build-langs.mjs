@@ -235,6 +235,11 @@ function transform(src, page, lang, art) {
   // root-absolute assets/uploads so subdirectory pages share one copy
   h = h.replace(/(src|href)="(assets|uploads)\//g, '$1="/$2/');
 
+  /* Point each page at the single-language article bundle (see writeArticlesJs).
+     Matches an already-rewritten name too: the EN pass overwrites the root
+     templates, so later languages read output, not the pristine source. */
+  h = h.replace(/\/assets\/articles(-[a-z]{2})?\.js/, `/assets/articles-${lang}.js`);
+
   // inject the editable PAGE_I18N dictionary from content/pages/<page>.json
   const dict = PAGE_DICTS[tplPage];
   if (dict) {
@@ -245,13 +250,27 @@ function transform(src, page, lang, art) {
   return h;
 }
 
-/* generate assets/articles.js from content/articles/*.json */
+/* generate assets/articles.js from content/articles/*.json
+   Plus one slimmed file per language: a built page only ever renders its own
+   language (switching languages navigates to another URL), so shipping all
+   seven costs ~284 kB per page load for nothing. The full file stays for the
+   un-built root templates used in local development. */
 function writeArticlesJs() {
   mkdirSync(join(SRC, 'assets'), { recursive: true });
-  const out = '/* GENERATED from content/articles/*.json by build-langs.mjs — do not edit by hand. */\n' +
-    'window.ARTICLES = ' + JSON.stringify(ARTICLES, null, 2).replace(/<\//g, '<\\/') + ';\n' +
-    "window.ARTICLES.sort(function (a, b) { return (b.ts || '').localeCompare(a.ts || ''); });\n";
-  writeFileSync(join(SRC, 'assets', 'articles.js'), out, 'utf8');
+  const head = '/* GENERATED from content/articles/*.json by build-langs.mjs — do not edit by hand. */\n';
+  const tail = "window.ARTICLES.sort(function (a, b) { return (b.ts || '').localeCompare(a.ts || ''); });\n";
+  const dump = a => 'window.ARTICLES = ' + JSON.stringify(a, null, 2).replace(/<\//g, '<\\/') + ';\n';
+
+  writeFileSync(join(SRC, 'assets', 'articles.js'), head + dump(ARTICLES) + tail, 'utf8');
+
+  for (const lang of LANGS) {
+    const slim = ARTICLES.map(a => ({
+      id: a.id, ts: a.ts, cat: a.cat, img: a.img, images: a.images,
+      date: { [lang]: a.date[lang] }, title: { [lang]: a.title[lang] },
+      lead: { [lang]: a.lead[lang] }, body: { [lang]: a.body[lang] }
+    }));
+    writeFileSync(join(SRC, 'assets', `articles-${lang}.js`), head + dump(slim) + tail, 'utf8');
+  }
 }
 
 let written = 0;
