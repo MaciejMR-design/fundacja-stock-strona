@@ -28,7 +28,7 @@ const COMMON_I18N = {
     footerBlurb: 'A charitable foundation from Lublin helping refugees and local communities, and promoting art as therapy.',
     footerContact: 'Contact', footerCountry: 'Poland', footerNav: 'Explore',
     cityLublin: 'Lublin', cityWarsaw: 'Warsaw', langSoon: 'coming soon',
-    footerPrivacy: 'Privacy and Cookies',
+    footerPrivacy: 'Privacy and Cookies', footerCredit: 'Website by ',
     cookieText: 'We use necessary cookies to make the site work and — only with your consent — analytics cookies (Google Analytics) to understand how it is used.', cookieAccept: 'Accept all', cookieDecline: 'Necessary only', cookieMore: 'Learn more'
   },
   pl: {
@@ -37,7 +37,7 @@ const COMMON_I18N = {
     footerBlurb: 'Fundacja charytatywna z Lublina pomagająca uchodźcom i lokalnym społecznościom oraz promująca sztukę jako terapię.',
     footerContact: 'Kontakt', footerCountry: 'Polska', footerNav: 'Nawigacja',
     cityLublin: 'Lublin', cityWarsaw: 'Warszawa', langSoon: 'wkrótce',
-    footerPrivacy: 'Prywatność i cookies',
+    footerPrivacy: 'Prywatność i cookies', footerCredit: 'Strona wykonana przez ',
     cookieText: 'Używamy niezbędnych plików cookie, aby strona działała, oraz — wyłącznie za Twoją zgodą — analitycznych (Google Analytics), aby rozumieć, jak jest używana.', cookieAccept: 'Akceptuję wszystkie', cookieDecline: 'Tylko niezbędne', cookieMore: 'Dowiedz się więcej'
   },
   cz: {
@@ -46,7 +46,7 @@ const COMMON_I18N = {
     footerBlurb: 'Charitativní nadace z Lublinu pomáhající uprchlíkům a místním komunitám a podporující umění jako terapii.',
     footerContact: 'Kontakt', footerCountry: 'Polsko', footerNav: 'Prozkoumat',
     cityLublin: 'Lublin', cityWarsaw: 'Varšava', langSoon: 'již brzy',
-    footerPrivacy: 'Soukromí a cookies',
+    footerPrivacy: 'Soukromí a cookies', footerCredit: 'Web vytvořila ',
     cookieText: 'Používáme nezbytné soubory cookie, aby web fungoval, a — pouze s vaším souhlasem — analytické (Google Analytics), abychom rozuměli, jak se používá.', cookieAccept: 'Přijmout vše', cookieDecline: 'Pouze nezbytné', cookieMore: 'Zjistit více'
   },
   it: {
@@ -55,7 +55,7 @@ const COMMON_I18N = {
     footerBlurb: 'Una fondazione benefica di Lublino che aiuta rifugiati e comunità locali e promuove l’arte come terapia.',
     footerContact: 'Contatti', footerCountry: 'Polonia', footerNav: 'Esplora',
     cityLublin: 'Lublino', cityWarsaw: 'Varsavia', langSoon: 'presto',
-    footerPrivacy: 'Privacy e cookie',
+    footerPrivacy: 'Privacy e cookie', footerCredit: 'Sito realizzato da ',
     cookieText: 'Utilizziamo cookie necessari per far funzionare il sito e — solo con il tuo consenso — cookie analitici (Google Analytics) per capire come viene utilizzato.', cookieAccept: 'Accetta tutti', cookieDecline: 'Solo necessari', cookieMore: 'Scopri di più'
   },
   sk: {
@@ -64,7 +64,7 @@ const COMMON_I18N = {
     footerBlurb: 'Charitatívna nadácia z Lublina, ktorá pomáha utečencom a miestnym komunitám a podporuje umenie ako terapiu.',
     footerContact: 'Kontakt', footerCountry: 'Poľsko', footerNav: 'Preskúmať',
     cityLublin: 'Lublin', cityWarsaw: 'Varšava', langSoon: 'čoskoro',
-    footerPrivacy: 'Súkromie a cookies',
+    footerPrivacy: 'Súkromie a cookies', footerCredit: 'Web vytvorila ',
     cookieText: 'Používame nevyhnutné súbory cookie, aby stránka fungovala, a — iba s vaším súhlasom — analytické (Google Analytics), aby sme rozumeli, ako sa používa.', cookieAccept: 'Prijať všetky', cookieDecline: 'Iba nevyhnutné', cookieMore: 'Zistiť viac'
   },
   de: {
@@ -73,7 +73,7 @@ const COMMON_I18N = {
     footerBlurb: 'Eine gemeinnützige Stiftung aus Lublin, die Geflüchteten und lokalen Gemeinschaften hilft und Kunst als Therapie fördert.',
     footerContact: 'Kontakt', footerCountry: 'Polen', footerNav: 'Entdecken',
     cityLublin: 'Lublin', cityWarsaw: 'Warschau', langSoon: 'demnächst',
-    footerPrivacy: 'Datenschutz und Cookies',
+    footerPrivacy: 'Datenschutz und Cookies', footerCredit: 'Website von ',
     cookieText: 'Wir verwenden notwendige Cookies, damit die Website funktioniert, und — nur mit Ihrer Einwilligung — Analyse-Cookies (Google Analytics), um zu verstehen, wie sie genutzt wird.', cookieAccept: 'Alle akzeptieren', cookieDecline: 'Nur notwendige', cookieMore: 'Mehr erfahren'
   },
   fr: {
@@ -82,7 +82,7 @@ const COMMON_I18N = {
     footerBlurb: 'Une fondation caritative de Lublin qui aide les réfugiés et les communautés locales et promeut l’art comme thérapie.',
     footerContact: 'Contact', footerCountry: 'Pologne', footerNav: 'Explorer',
     cityLublin: 'Lublin', cityWarsaw: 'Varsovie', langSoon: 'bientôt',
-    footerPrivacy: 'Confidentialité et cookies',
+    footerPrivacy: 'Confidentialité et cookies', footerCredit: 'Site réalisé par ',
     cookieText: 'Nous utilisons des cookies nécessaires au fonctionnement du site et — uniquement avec votre consentement — des cookies analytiques (Google Analytics) pour comprendre comment il est utilisé.', cookieAccept: 'Tout accepter', cookieDecline: 'Nécessaires uniquement', cookieMore: 'En savoir plus'
   }
 };
@@ -107,6 +107,7 @@ const NAV = [
   ['board-council.html', 'navCouncil'], ['news.html', 'navNews'], ['contact.html', 'navContact']
 ];
 const FB_SVG = '<svg width="16" height="16" viewBox="0 0 16 16" fill="#D0A41B"><path d="M9.6 16 v-5.9 h2 l0.3 -2.3 H9.6 V6.3 c0 -0.7 0.2 -1.1 1.2 -1.1 h1.2 V3.1 C11.8 3 11 3 10.2 3 C8.4 3 7.1 4.1 7.1 6.1 v1.7 H5.1 v2.3 h2 V16 Z"></path></svg>';
+const IG_SVG = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#D0A41B" stroke-width="1.4"><rect x="1.7" y="1.7" width="12.6" height="12.6" rx="4"></rect><circle cx="8" cy="8" r="3.1"></circle><circle cx="11.9" cy="4.1" r="0.95" fill="#D0A41B" stroke="none"></circle></svg>';
 
 function buildHeader() {
   const h = document.getElementById('site-header');
@@ -148,7 +149,10 @@ function buildFooter() {
           <span class="head" data-i18n="footerContact"></span>
           <span class="info">Spółdzielcza 6<br>20-402 <span data-i18n="cityLublin"></span>, <span data-i18n="footerCountry"></span></span>
           <a href="tel:+48538183916" style="font-weight:600;color:#fff;">+48 538 183 916</a>
-          <a href="https://www.facebook.com/fundacjastock/" aria-label="Facebook" class="li-badge" target="_blank" rel="noopener">${FB_SVG}</a>
+          <div class="socials">
+            <a href="https://www.facebook.com/fundacjastock/" aria-label="Facebook" class="li-badge" target="_blank" rel="noopener">${FB_SVG}</a>
+            <a href="https://www.instagram.com/fundacja_stock" aria-label="Instagram" class="li-badge" target="_blank" rel="noopener">${IG_SVG}</a>
+          </div>
         </div>
         <div class="footer-col">
           <span class="head" data-i18n="footerNav"></span>
@@ -163,7 +167,12 @@ function buildFooter() {
         <nav>
           <a href="privacy-policy.html" data-i18n="footerPrivacy"></a>
         </nav>
-        <span>© 2026 Stock Foundation</span>
+        <div class="footer-meta">
+          <span>© 2026 Stock Foundation</span>
+          <a class="credit" href="https://watahamedia.com/" target="_blank" rel="noopener">
+            <span data-i18n="footerCredit"></span><span class="credit-name">Wataha Media</span>
+          </a>
+        </div>
       </div>
     </div>`;
 }
