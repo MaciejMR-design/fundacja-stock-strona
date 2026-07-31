@@ -18,7 +18,17 @@
     "fin2025X": "Balance sheet and profit & loss statement for the financial year 2025.",
     "download": "Download",
     "balance": "Balance sheet",
-    "pnl": "Profit & loss"
+    "pnl": "Profit & loss",
+    "finSumOverline": "Finances at a glance",
+    "finSumTitle": "2025 in numbers",
+    "finSumLead": "The full figures are in the statements above. Here are the three that best show where the money went.",
+    "finSum1N": "500,000",
+    "finSum2N": "537,958",
+    "finSum3N": "84.5%",
+    "finSum1": "PLN of income from statutory activity",
+    "finSum2": "PLN spent on aid programmes",
+    "finSum3": "of costs went to statutory goals (57.7% in 2024)",
+    "finSumNote": "In 2025 we spent more on programmes than we received in income — the difference was covered from reserves built up in earlier years. At the same time we cut administrative costs from PLN 320,274 to PLN 98,659."
   },
   "pl": {
     "pageTitle": "Statut i sprawozdania",
@@ -39,7 +49,17 @@
     "fin2025X": "Bilans oraz rachunek zysków i strat za rok obrotowy 2025.",
     "download": "Pobierz",
     "balance": "Bilans",
-    "pnl": "Rachunek zysków i strat"
+    "pnl": "Rachunek zysków i strat",
+    "finSumOverline": "Finanse w skrócie",
+    "finSumTitle": "Rok 2025 w liczbach",
+    "finSumLead": "Pełne dane znajdziesz w sprawozdaniach powyżej. Poniżej trzy liczby, które najlepiej pokazują, na co poszły pieniądze.",
+    "finSum1N": "500 000",
+    "finSum2N": "537 958",
+    "finSum3N": "84,5%",
+    "finSum1": "zł przychodów z działalności statutowej",
+    "finSum2": "zł wydanych na programy pomocowe",
+    "finSum3": "kosztów trafiło na cele statutowe (w 2024 roku 57,7%)",
+    "finSumNote": "W 2025 roku wydaliśmy na programy więcej, niż wyniosły przychody — różnicę pokryliśmy z rezerw zgromadzonych w poprzednich latach. Jednocześnie ograniczyliśmy koszty administracyjne z 320 274 zł do 98 659 zł."
   },
   "cz": {
     "pageTitle": "Statut a zprávy",
@@ -60,7 +80,17 @@
     "fin2025X": "Rozvaha a výkaz zisku a ztráty za účetní rok 2025.",
     "download": "Stáhnout",
     "balance": "Rozvaha",
-    "pnl": "Výkaz zisku a ztráty"
+    "pnl": "Výkaz zisku a ztráty",
+    "finSumOverline": "Finance ve zkratce",
+    "finSumTitle": "Rok 2025 v číslech",
+    "finSumLead": "Úplné údaje najdete ve zprávách výše. Níže tři čísla, která nejlépe ukazují, kam peníze šly.",
+    "finSum1N": "500 000",
+    "finSum2N": "537 958",
+    "finSum3N": "84,5 %",
+    "finSum1": "PLN příjmů ze statutární činnosti",
+    "finSum2": "PLN vydaných na pomocné programy",
+    "finSum3": "nákladů šlo na statutární cíle (v roce 2024 to bylo 57,7 %)",
+    "finSumNote": "V roce 2025 jsme na programy vydali více, než činily příjmy — rozdíl jsme pokryli z rezerv nashromážděných v předchozích letech. Zároveň jsme snížili administrativní náklady z 320 274 PLN na 98 659 PLN."
   },
   "it": {
     "pageTitle": "Statuto e rapporti",
@@ -81,7 +111,17 @@
     "fin2025X": "Stato patrimoniale e conto economico per l’esercizio 2025.",
     "download": "Scarica",
     "balance": "Stato patrimoniale",
-    "pnl": "Conto economico"
+    "pnl": "Conto economico",
+    "finSumOverline": "Le finanze in breve",
+    "finSumTitle": "Il 2025 in cifre",
+    "finSumLead": "I dati completi sono nei bilanci qui sopra. Ecco le tre cifre che mostrano meglio dove sono andati i fondi.",
+    "finSum1N": "500.000",
+    "finSum2N": "537.958",
+    "finSum3N": "84,5%",
+    "finSum1": "PLN di ricavi da attività statutaria",
+    "finSum2": "PLN spesi per i programmi di aiuto",
+    "finSum3": "dei costi è andato agli scopi statutari (nel 2024 il 57,7%)",
+    "finSumNote": "Nel 2025 abbiamo speso per i programmi più di quanto abbiamo incassato — la differenza è stata coperta dalle riserve accumulate negli anni precedenti. Allo stesso tempo abbiamo ridotto i costi amministrativi da 320 274 PLN a 98 659 PLN."
   },
   "sk": {
     "pageTitle": "Štatút a správy",
@@ -102,7 +142,17 @@
     "fin2025X": "Súvaha a výkaz ziskov a strát za účtovné obdobie 2025.",
     "download": "Stiahnuť",
     "balance": "Súvaha",
-    "pnl": "Výkaz ziskov a strát"
+    "pnl": "Výkaz ziskov a strát",
+    "finSumOverline": "Financie v skratke",
+    "finSumTitle": "Rok 2025 v číslach",
+    "finSumLead": "Úplné údaje nájdete v správach vyššie. Nižšie tri čísla, ktoré najlepšie ukazujú, kam peniaze išli.",
+    "finSum1N": "500 000",
+    "finSum2N": "537 958",
+    "finSum3N": "84,5 %",
+    "finSum1": "PLN príjmov zo štatutárnej činnosti",
+    "finSum2": "PLN vynaložených na pomocné programy",
+    "finSum3": "nákladov šlo na štatutárne ciele (v roku 2024 to bolo 57,7 %)",
+    "finSumNote": "V roku 2025 sme na programy vynaložili viac, než boli príjmy — rozdiel sme pokryli z rezerv nazhromaždených v predchádzajúcich rokoch. Zároveň sme znížili administratívne náklady z 320 274 PLN na 98 659 PLN."
   },
   "de": {
     "pageTitle": "Satzung & Berichte",
@@ -123,7 +173,17 @@
     "fin2025X": "Bilanz sowie Gewinn- und Verlustrechnung für das Geschäftsjahr 2025.",
     "download": "Herunterladen",
     "balance": "Bilanz",
-    "pnl": "Gewinn- und Verlustrechnung"
+    "pnl": "Gewinn- und Verlustrechnung",
+    "finSumOverline": "Finanzen auf einen Blick",
+    "finSumTitle": "Das Jahr 2025 in Zahlen",
+    "finSumLead": "Die vollständigen Zahlen stehen in den Berichten oben. Hier die drei, die am besten zeigen, wohin das Geld floss.",
+    "finSum1N": "500.000",
+    "finSum2N": "537.958",
+    "finSum3N": "84,5 %",
+    "finSum1": "PLN Erträge aus der Satzungstätigkeit",
+    "finSum2": "PLN für Hilfsprogramme ausgegeben",
+    "finSum3": "der Kosten flossen in Satzungszwecke (2024: 57,7 %)",
+    "finSumNote": "Im Jahr 2025 haben wir mehr für Programme ausgegeben, als wir eingenommen haben — die Differenz wurde aus Rücklagen früherer Jahre gedeckt. Gleichzeitig senkten wir die Verwaltungskosten von 320.274 PLN auf 98.659 PLN."
   },
   "fr": {
     "pageTitle": "Statuts et rapports",
@@ -144,6 +204,16 @@
     "fin2025X": "Bilan et compte de résultat pour l’exercice 2025.",
     "download": "Télécharger",
     "balance": "Bilan",
-    "pnl": "Compte de résultat"
+    "pnl": "Compte de résultat",
+    "finSumOverline": "Les finances en bref",
+    "finSumTitle": "L’année 2025 en chiffres",
+    "finSumLead": "Les données complètes figurent dans les rapports ci-dessus. Voici les trois chiffres qui montrent le mieux où est allé l’argent.",
+    "finSum1N": "500 000",
+    "finSum2N": "537 958",
+    "finSum3N": "84,5 %",
+    "finSum1": "PLN de recettes de l’activité statutaire",
+    "finSum2": "PLN consacrés aux programmes d’aide",
+    "finSum3": "des coûts sont allés aux objectifs statutaires (57,7 % en 2024)",
+    "finSumNote": "En 2025, nous avons dépensé pour les programmes plus que nos recettes — la différence a été couverte par les réserves constituées les années précédentes. Dans le même temps, nous avons réduit les frais administratifs de 320 274 PLN à 98 659 PLN."
   }
 }
