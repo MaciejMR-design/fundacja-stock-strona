@@ -22,43 +22,43 @@ const EU_MAP = {
    `la`/`lx`/`ly` = label anchor + offset (hand-placed to avoid collisions). */
 const EU_CITIES = [
   { id: 'lublin',     lat: 51.2465, lon: 22.5684, hq: true, la: 'start', lx: 13, ly: 4,
-    name: { en: 'Lublin', pl: 'Lublin', cz: 'Lublin', it: 'Lublino' }, country: 'pl' },
+    name: { en: 'Lublin', pl: 'Lublin', cz: 'Lublin', it: 'Lublino', sk: 'Lublin', de: 'Lublin', fr: 'Lublin' }, country: 'pl' },
   { id: 'warszawa',   lat: 52.2297, lon: 21.0122, la: 'start', lx: 11, ly: -9,
-    name: { en: 'Warsaw', pl: 'Warszawa', cz: 'Varšava', it: 'Varsavia' }, country: 'pl' },
+    name: { en: 'Warsaw', pl: 'Warszawa', cz: 'Varšava', it: 'Varsavia', sk: 'Varšava', de: 'Warschau', fr: 'Varsovie' }, country: 'pl' },
   { id: 'bielsko',    lat: 49.8224, lon: 19.0444, la: 'start', lx: 13, ly: 5,
-    name: { en: 'Bielsko-Biała', pl: 'Bielsko-Biała', cz: 'Bielsko-Biała', it: 'Bielsko-Biała' }, country: 'pl' },
+    name: { en: 'Bielsko-Biała', pl: 'Bielsko-Biała', cz: 'Bielsko-Biała', it: 'Bielsko-Biała', sk: 'Bielsko-Biała', de: 'Bielsko-Biała', fr: 'Bielsko-Biała' }, country: 'pl' },
   { id: 'praha',      lat: 50.0755, lon: 14.4378, la: 'middle', lx: 0, ly: -15,
-    name: { en: 'Prague', pl: 'Praga', cz: 'Praha', it: 'Praga' }, country: 'cz' },
+    name: { en: 'Prague', pl: 'Praga', cz: 'Praha', it: 'Praga', sk: 'Praha', de: 'Prag', fr: 'Prague' }, country: 'cz' },
   { id: 'plzen',      lat: 49.7384, lon: 13.3736, dx: -6, dy: -4, la: 'end', lx: -14, ly: 4,
-    name: { en: 'Pilsen', pl: 'Pilzno', cz: 'Plzeň', it: 'Pilsen' }, country: 'cz' },
+    name: { en: 'Pilsen', pl: 'Pilzno', cz: 'Plzeň', it: 'Pilsen', sk: 'Plzeň', de: 'Pilsen', fr: 'Pilsen' }, country: 'cz' },
   { id: 'bozkov',     lat: 49.7256, lon: 13.4342, dx: 12, dy: 9, la: 'start', lx: 9, ly: 18,
-    name: { en: 'Božkov', pl: 'Božkov', cz: 'Božkov', it: 'Božkov' }, country: 'cz' },
+    name: { en: 'Božkov', pl: 'Božkov', cz: 'Božkov', it: 'Božkov', sk: 'Božkov', de: 'Božkov', fr: 'Božkov' }, country: 'cz' },
   { id: 'bratislava', lat: 48.1486, lon: 17.1077, la: 'start', lx: 13, ly: 6,
-    name: { en: 'Bratislava', pl: 'Bratysława', cz: 'Bratislava', it: 'Bratislava' }, country: 'sk' },
+    name: { en: 'Bratislava', pl: 'Bratysława', cz: 'Bratislava', it: 'Bratislava', sk: 'Bratislava', de: 'Bratislava', fr: 'Bratislava' }, country: 'sk' },
   { id: 'milano',     lat: 45.4642, lon: 9.19, la: 'middle', lx: 0, ly: 21,
-    name: { en: 'Milan', pl: 'Mediolan', cz: 'Milán', it: 'Milano' }, country: 'it' },
+    name: { en: 'Milan', pl: 'Mediolan', cz: 'Milán', it: 'Milano', sk: 'Miláno', de: 'Mailand', fr: 'Milan' }, country: 'it' },
   { id: 'zagreb',     lat: 45.815,  lon: 15.9819, la: 'start', lx: 13, ly: 4,
-    name: { en: 'Zagreb', pl: 'Zagrzeb', cz: 'Záhřeb', it: 'Zagabria' }, country: 'hr' },
+    name: { en: 'Zagreb', pl: 'Zagrzeb', cz: 'Záhřeb', it: 'Zagabria', sk: 'Záhreb', de: 'Zagreb', fr: 'Zagreb' }, country: 'hr' },
   { id: 'paris',      lat: 48.8566, lon: 2.3522, la: 'end', lx: -14, ly: 5,
-    name: { en: 'Paris', pl: 'Paryż', cz: 'Paříž', it: 'Parigi' }, country: 'fr' },
+    name: { en: 'Paris', pl: 'Paryż', cz: 'Paříž', it: 'Parigi', sk: 'Paríž', de: 'Paris', fr: 'Paris' }, country: 'fr' },
   { id: 'hamburg',    lat: 53.5511, lon: 9.9937, la: 'middle', lx: 0, ly: -15,
-    name: { en: 'Hamburg', pl: 'Hamburg', cz: 'Hamburk', it: 'Amburgo' }, country: 'de' },
+    name: { en: 'Hamburg', pl: 'Hamburg', cz: 'Hamburk', it: 'Amburgo', sk: 'Hamburg', de: 'Hamburg', fr: 'Hambourg' }, country: 'de' },
   { id: 'london',     lat: 51.5074, lon: -0.1278, la: 'end', lx: -14, ly: 4,
-    name: { en: 'London', pl: 'Londyn', cz: 'Londýn', it: 'Londra' }, country: 'gb' }
+    name: { en: 'London', pl: 'Londyn', cz: 'Londýn', it: 'Londra', sk: 'Londýn', de: 'London', fr: 'Londres' }, country: 'gb' }
 ];
 
 const EU_I18N = {
   countries: {
-    pl: { en: 'Poland', pl: 'Polska', cz: 'Polsko', it: 'Polonia' },
-    cz: { en: 'Czechia', pl: 'Czechy', cz: 'Česko', it: 'Cechia' },
-    sk: { en: 'Slovakia', pl: 'Słowacja', cz: 'Slovensko', it: 'Slovacchia' },
-    it: { en: 'Italy', pl: 'Włochy', cz: 'Itálie', it: 'Italia' },
-    hr: { en: 'Croatia', pl: 'Chorwacja', cz: 'Chorvatsko', it: 'Croazia' },
-    fr: { en: 'France', pl: 'Francja', cz: 'Francie', it: 'Francia' },
-    de: { en: 'Germany', pl: 'Niemcy', cz: 'Německo', it: 'Germania' },
-    gb: { en: 'United Kingdom', pl: 'Wielka Brytania', cz: 'Spojené království', it: 'Regno Unito' }
+    pl: { en: 'Poland', pl: 'Polska', cz: 'Polsko', it: 'Polonia', sk: 'Poľsko', de: 'Polen', fr: 'Pologne' },
+    cz: { en: 'Czechia', pl: 'Czechy', cz: 'Česko', it: 'Cechia', sk: 'Česko', de: 'Tschechien', fr: 'Tchéquie' },
+    sk: { en: 'Slovakia', pl: 'Słowacja', cz: 'Slovensko', it: 'Slovacchia', sk: 'Slovensko', de: 'Slowakei', fr: 'Slovaquie' },
+    it: { en: 'Italy', pl: 'Włochy', cz: 'Itálie', it: 'Italia', sk: 'Taliansko', de: 'Italien', fr: 'Italie' },
+    hr: { en: 'Croatia', pl: 'Chorwacja', cz: 'Chorvatsko', it: 'Croazia', sk: 'Chorvátsko', de: 'Kroatien', fr: 'Croatie' },
+    fr: { en: 'France', pl: 'Francja', cz: 'Francie', it: 'Francia', sk: 'Francúzsko', de: 'Frankreich', fr: 'France' },
+    de: { en: 'Germany', pl: 'Niemcy', cz: 'Německo', it: 'Germania', sk: 'Nemecko', de: 'Deutschland', fr: 'Allemagne' },
+    gb: { en: 'United Kingdom', pl: 'Wielka Brytania', cz: 'Spojené království', it: 'Regno Unito', sk: 'Spojené kráľovstvo', de: 'Vereinigtes Königreich', fr: 'Royaume-Uni' }
   },
-  hq: { en: 'Home of the foundation', pl: 'Dom fundacji', cz: 'Domov nadace', it: 'Casa della fondazione' }
+  hq: { en: 'Home of the foundation', pl: 'Dom fundacji', cz: 'Domov nadace', it: 'Casa della fondazione', sk: 'Domov nadácie', de: 'Zuhause der Stiftung', fr: 'Berceau de la fondation' }
 };
 
 (function () {

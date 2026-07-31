@@ -7,19 +7,28 @@
     "en": "September 2024",
     "pl": "Wrzesień 2024",
     "cz": "Září 2024",
-    "it": "Settembre 2024"
+    "it": "Settembre 2024",
+    "sk": "September 2024",
+    "de": "September 2024",
+    "fr": "septembre 2024"
   },
   "title": {
     "en": "Trainings for social workers — a new Foundation initiative",
     "pl": "Szkolenia dla pracowników socjalnych — nowa inicjatywa Fundacji",
     "cz": "Školení pro sociální pracovníky — nová iniciativa nadace",
-    "it": "Formazione per gli operatori sociali — una nuova iniziativa della Fondazione"
+    "it": "Formazione per gli operatori sociali — una nuova iniziativa della Fondazione",
+    "sk": "Školenia pre sociálnych pracovníkov — nová iniciatíva nadácie",
+    "de": "Schulungen für Sozialarbeiter — eine neue Initiative der Stiftung",
+    "fr": "Formations pour les travailleurs sociaux — une nouvelle initiative de la Fondation"
   },
   "lead": {
     "en": "Twenty-five social workers took part in the first trainings on supporting people at risk of addiction, led by psychologists Anna Kalbus and Jerzy Brożyna.",
     "pl": "Dwudziestu pięciu pracowników socjalnych wzięło udział w pierwszych szkoleniach ze wspierania osób zagrożonych uzależnieniem, prowadzonych przez psychologów Annę Kalbus i Jerzego Brożynę.",
     "cz": "Dvacet pět sociálních pracovníků se zúčastnilo prvních školení o podpoře osob ohrožených závislostí pod vedením psychologů Anny Kalbus a Jerzyho Brożyny.",
-    "it": "Venticinque operatori sociali hanno partecipato alle prime formazioni sul sostegno alle persone a rischio di dipendenza, condotte dagli psicologi Anna Kalbus e Jerzy Brożyna."
+    "it": "Venticinque operatori sociali hanno partecipato alle prime formazioni sul sostegno alle persone a rischio di dipendenza, condotte dagli psicologi Anna Kalbus e Jerzy Brożyna.",
+    "sk": "Dvadsaťpäť sociálnych pracovníkov sa zúčastnilo na prvých školeniach o podpore osôb ohrozených závislosťou pod vedením psychológov Anny Kalbus a Jerzyho Brożynu.",
+    "de": "Fünfundzwanzig Sozialarbeiter nahmen an den ersten Schulungen zur Unterstützung suchtgefährdeter Menschen teil, geleitet von den Psychologen Anna Kalbus und Jerzy Brożyna.",
+    "fr": "Vingt-cinq travailleurs sociaux ont participé aux premières formations sur l’accompagnement des personnes exposées au risque d’addiction, animées par les psychologues Anna Kalbus et Jerzy Brożyna."
   },
   "body": {
     "en": [
@@ -41,6 +50,21 @@
       "La formazione degli operatori sociali nel lavoro con persone a rischio di dipendenza è una nuova iniziativa della Fondazione Stock, realizzata in collaborazione con il Complesso dei Centri di Sostegno. I loro operatori aiutano ogni giorno decine di persone e incontrano casi che richiedono buona capacità di riconoscimento, empatia e preparazione professionale. Durante le formazioni i partecipanti conoscono i meccanismi di sviluppo delle dipendenze e le forme di aiuto disponibili.",
       "Alle prime formazioni hanno partecipato venticinque persone, guidate dai nostri esperti psicologi — la signora Anna Kalbus e il signor Jerzy Brożyna. Le sessioni comprendevano mini-lezioni, psicoeducazione e una parte laboratoriale — lavoro di gruppo e vari tipi di esercizi. I partecipanti hanno imparato come lavorare con le persone dipendenti, come funziona il sistema familiare in presenza di una dipendenza, e strategie e tecniche per aiutare queste famiglie.",
       "La formazione ha permesso loro di acquisire competenze per affrontare meglio le situazioni difficili e di conoscere le proprie risorse e i propri limiti. Il carattere laboratoriale ha incoraggiato la partecipazione attiva a discussioni ed esercizi — ora i partecipanti comprendono meglio il problema delle dipendenze e sanno distinguere i comportamenti dannosi dall’aiuto efficace."
+    ],
+    "sk": [
+      "Školenia pre sociálnych pracovníkov o práci s osobami ohrozenými závislosťou sú novou iniciatívou Nadácie Stock, ktorú realizujeme v spolupráci so Združením centier podpory. Tamojší sociálni pracovníci pomáhajú denne desiatkam ľudí a stretávajú sa s prípadmi, ktoré si vyžadujú dobrý úsudok, empatiu a profesionálnu prípravu. Počas školení účastníci spoznávajú mechanizmy vzniku závislosti a dostupné formy pomoci.",
+      "Prvých školení sa zúčastnilo dvadsaťpäť osôb a viedli ich naši skúsení psychológovia — pani Anna Kalbus a pán Jerzy Brożyna. Stretnutia pozostávali z miniprednášok, psychoedukácie a workshopovej časti — práce v skupinách a rôznych cvičení. Účastníci sa učili, ako pracovať s ľuďmi so závislosťou, ako funguje rodinný systém, v ktorom sa objaví závislosť, a spoznávali stratégie a techniky pomoci takýmto rodinám.",
+      "Školenie im umožnilo získať kompetencie na lepšie zvládanie náročných situácií a spoznať vlastné zdroje aj obmedzenia. Workshopový charakter podnecoval k aktívnej účasti na diskusiách a cvičeniach — účastníci teraz lepšie rozumejú problému závislostí a dokážu odlíšiť škodlivé správanie od účinnej pomoci."
+    ],
+    "de": [
+      "Schulungen für Sozialarbeiterinnen und Sozialarbeiter zur Arbeit mit suchtgefährdeten Menschen sind eine neue Initiative der Stiftung Stock, die in Zusammenarbeit mit dem Verbund der Unterstützungszentren durchgeführt wird. Die dortigen Sozialarbeitenden helfen täglich Dutzenden von Menschen und begegnen Fällen, die ein gutes Gespür, Empathie und professionelle Vorbereitung erfordern. In den Schulungen lernen die Teilnehmenden die Mechanismen der Suchtentstehung und die verfügbaren Hilfsangebote kennen.",
+      "An den ersten Schulungen nahmen fünfundzwanzig Personen teil; geleitet wurden sie von unseren erfahrenen Psychologen — Frau Anna Kalbus und Herrn Jerzy Brożyna. Die Sitzungen bestanden aus Kurzvorträgen, Psychoedukation und einem Workshop-Teil — Gruppenarbeit und verschiedenen Übungen. Die Teilnehmenden lernten, wie man mit suchtkranken Menschen arbeitet, wie ein Familiensystem funktioniert, in dem eine Sucht auftritt, und sie lernten Strategien und Techniken kennen, um solchen Familien zu helfen.",
+      "Die Schulung ermöglichte es ihnen, Kompetenzen für den besseren Umgang mit schwierigen Situationen zu erwerben und die eigenen Ressourcen und Grenzen kennenzulernen. Der Workshop-Charakter lud zur aktiven Beteiligung an Diskussionen und Übungen ein — die Teilnehmenden verstehen die Suchtproblematik nun besser und können schädliche Verhaltensweisen von wirksamer Hilfe unterscheiden."
+    ],
+    "fr": [
+      "Les formations destinées aux travailleurs sociaux sur l’accompagnement des personnes exposées au risque d’addiction constituent une nouvelle initiative de la Fondation Stock, menée en coopération avec l’Ensemble des centres de soutien. Les travailleurs sociaux y aident chaque jour des dizaines de personnes et rencontrent des situations qui exigent un bon discernement, de l’empathie et une préparation professionnelle. Au cours des formations, les participants découvrent les mécanismes de développement de l’addiction et les formes d’aide disponibles.",
+      "Vingt-cinq personnes ont pris part aux premières formations, animées par nos psychologues expérimentés — Mme Anna Kalbus et M. Jerzy Brożyna. Les séances comprenaient de courtes conférences, de la psychoéducation et une partie en atelier — travail en groupe et exercices variés. Les participants ont appris à travailler avec des personnes dépendantes, à comprendre le fonctionnement du système familial confronté à une addiction, ainsi que les stratégies et les techniques permettant d’aider ces familles.",
+      "La formation leur a permis d’acquérir des compétences pour mieux faire face aux situations difficiles et de découvrir leurs propres ressources et leurs limites. Le caractère participatif de l’atelier a encouragé l’engagement actif dans les discussions et les exercices — les participants comprennent désormais mieux la problématique des addictions et savent distinguer les comportements nuisibles d’une aide efficace."
     ]
   }
 }

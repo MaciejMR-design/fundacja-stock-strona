@@ -7,19 +7,28 @@
     "en": "July 2024",
     "pl": "Lipiec 2024",
     "cz": "Červenec 2024",
-    "it": "Luglio 2024"
+    "it": "Luglio 2024",
+    "sk": "Júl 2024",
+    "de": "Juli 2024",
+    "fr": "juillet 2024"
   },
   "title": {
     "en": "Scholarship programme — the successes of Viktoria Pronchakova",
     "pl": "Program stypendialny — sukcesy Viktorii Pronchakovej",
     "cz": "Stipendijní program — úspěchy Viktorie Pronchakovové",
-    "it": "Programma di borse di studio — i successi di Viktoria Pronchakova"
+    "it": "Programma di borse di studio — i successi di Viktoria Pronchakova",
+    "sk": "Štipendijný program — úspechy Viktorie Pronchakovovej",
+    "de": "Stipendienprogramm — die Erfolge von Viktoria Pronchakova",
+    "fr": "Programme de bourses d’études — les succès de Viktoria Pronchakova"
   },
   "lead": {
     "en": "Viktoria, supported by our scholarship programme, won medals at the Ukrainian Cadet Swimming Championships near Kyiv.",
     "pl": "Wspierana przez nasz program stypendialny Viktoria zdobyła medale na mistrzostwach Ukrainy kadetów w pływaniu pod Kijowem.",
     "cz": "Viktoria, podporovaná naším stipendijním programem, získala medaile na ukrajinském mistrovství kadetů v plavání u Kyjeva.",
-    "it": "Viktoria, sostenuta dal nostro programma di borse di studio, ha vinto medaglie ai Campionati ucraini di nuoto per cadetti vicino a Kiev."
+    "it": "Viktoria, sostenuta dal nostro programma di borse di studio, ha vinto medaglie ai Campionati ucraini di nuoto per cadetti vicino a Kiev.",
+    "sk": "Viktoria, ktorú podporuje náš štipendijný program, získala medaily na majstrovstvách Ukrajiny kadetov v plávaní pri Kyjeve.",
+    "de": "Viktoria, die von unserem Stipendienprogramm unterstützt wird, gewann bei den ukrainischen Kadetten-Schwimmmeisterschaften bei Kiew mehrere Medaillen.",
+    "fr": "Soutenue par notre programme de bourses d’études, Viktoria a remporté des médailles aux championnats d’Ukraine de natation cadets, près de Kiev."
   },
   "body": {
     "en": [
@@ -41,6 +50,21 @@
       "Ottime notizie! Viktoria Pronchakova, sostenuta dalla Fondazione Stock nei corsi di nuoto nell’ambito del programma di borse di studio gestito insieme a Homo Faber a Lublino — dove accanto a un folto gruppo di musicisti si allenano anche diversi giovani atleti — ha vinto premi ai Campionati ucraini di nuoto per cadetti. Si sono svolti dal 27 al 29 giugno a Brovary, vicino a Kiev, con circa 300 partecipanti da 19 regioni dell’Ucraina. La squadra della regione di Donetsk, di cui Viktoria fa parte, ha conquistato il 2° posto ai Campionati.",
       "Viktoria ha vinto una medaglia d’argento nella staffetta 4×50 e una di bronzo nella staffetta stile libero. Con i suoi risultati è entrata nella TOP 8 delle nuotatrici dei Campionati: 4° posto nei 100 m stile libero, 6° nei 200 m dorso e 8° negli 800 m e 400 m stile libero.",
       "Congratulazioni a Viktoria — siamo felicissimi di sostenere un’atleta così talentuosa!"
+    ],
+    "sk": [
+      "Skvelé správy! Viktoria Pronchakovová, ktorú Nadácia Stock podporuje v plaveckých tréningoch v rámci štipendijného programu vedeného spoločne s Homo Faber v Lubline — kde popri veľkej skupine hudobníkov trénuje aj niekoľko mladých športovcov — získala ocenenia na majstrovstvách Ukrajiny kadetov v plávaní. Konali sa 27.–29. júna v Brovaroch pri Kyjeve a zúčastnilo sa ich približne 300 pretekárov z 19 regiónov Ukrajiny. Tím Doneckej oblasti, za ktorý Viktoria pláva, obsadil na majstrovstvách 2. miesto.",
+      "Samotná Viktoria získala striebornú medailu v štafete 4×50 m a bronzovú v kraulovej štafete. Svojimi výsledkami sa dostala do TOP 8 plavkýň majstrovstiev: 4. miesto na 100 m voľným spôsobom, 6. na 200 m znak a 8. na 800 m a 400 m voľným spôsobom.",
+      "Viktorii gratulujeme — nesmierne nás teší, že môžeme podporovať takú talentovanú športovkyňu!"
+    ],
+    "de": [
+      "Großartige Neuigkeiten! Viktoria Pronchakova, die die Stiftung Stock im Schwimmtraining im Rahmen des gemeinsam mit Homo Faber in Lublin geführten Stipendienprogramms unterstützt — wo neben einer großen Gruppe von Musikerinnen und Musikern auch mehrere junge Sporttalente trainieren —, hat bei den ukrainischen Kadetten-Schwimmmeisterschaften Preise gewonnen. Sie fanden vom 27. bis 29. Juni in Browary bei Kiew statt und versammelten rund 300 Teilnehmende aus 19 Regionen der Ukraine. Das Team der Oblast Donezk, für das Viktoria startet, belegte bei den Meisterschaften den 2. Platz.",
+      "Viktoria selbst gewann Silber in der 4×50-m-Staffel und Bronze in der Freistilstaffel. Mit ihren Ergebnissen zählte sie zu den TOP 8 Schwimmerinnen der Meisterschaften: 4. Platz über 100 m Freistil, 6. Platz über 200 m Rücken sowie 8. Platz über 800 m und 400 m Freistil.",
+      "Wir gratulieren Viktoria — wir freuen uns außerordentlich, eine so talentierte Sportlerin unterstützen zu können!"
+    ],
+    "fr": [
+      "Excellente nouvelle ! Viktoria Pronchakova, que la Fondation Stock soutient dans ses cours de natation dans le cadre du programme de bourses d’études mené avec Homo Faber à Lublin — où, aux côtés d’un large groupe de musiciens, s’entraînent aussi plusieurs jeunes sportifs —, a remporté des prix aux championnats d’Ukraine de natation cadets. Ils se sont déroulés du 27 au 29 juin à Brovary, près de Kiev, et ont réuni environ 300 participants venus de 19 régions d’Ukraine. L’équipe de la région de Donetsk, dont Viktoria fait partie, a pris la 2e place du championnat.",
+      "Viktoria a personnellement décroché la médaille d’argent au relais 4×50 m et le bronze au relais nage libre. Ses résultats l’ont placée dans le TOP 8 des nageuses des championnats : 4e place sur 100 m nage libre, 6e sur 200 m dos et 8e sur 800 m et 400 m nage libre.",
+      "Félicitations à Viktoria — nous sommes ravis de pouvoir soutenir une athlète aussi talentueuse !"
     ]
   }
 }

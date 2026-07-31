@@ -7,19 +7,28 @@
     "en": "24 April 2026",
     "pl": "24 kwietnia 2026",
     "cz": "24. dubna 2026",
-    "it": "24 aprile 2026"
+    "it": "24 aprile 2026",
+    "sk": "24. apríla 2026",
+    "de": "24. April 2026",
+    "fr": "24 avril 2026"
   },
   "title": {
     "en": "Across generations — meeting with art at UrbanLab",
     "pl": "Międzypokoleniowo — spotkanie ze sztuką w UrbanLab",
     "cz": "Napříč generacemi — setkání s uměním v UrbanLab",
-    "it": "Attraverso le generazioni — incontro con l’arte all’UrbanLab"
+    "it": "Attraverso le generazioni — incontro con l’arte all’UrbanLab",
+    "sk": "Medzigeneračne — stretnutie s umením v UrbanLab",
+    "de": "Über Generationen hinweg — Kunstbegegnung im UrbanLab",
+    "fr": "À travers les générations — rencontre avec l’art à l’UrbanLab"
   },
   "lead": {
     "en": "The City Hall’s main chamber hosted a unique cultural event organized by the Stock Foundation, dedicated to art and its multigenerational dimension.",
     "pl": "W głównej sali ratusza odbyło się wyjątkowe wydarzenie kulturalne zorganizowane przez Fundację Stock, poświęcone sztuce i jej międzypokoleniowemu wymiarowi.",
     "cz": "V hlavním sále radnice se konala jedinečná kulturní akce pořádaná Nadací Stock, věnovaná umění a jeho mezigeneračnímu rozměru.",
-    "it": "La sala principale del municipio ha ospitato un evento culturale unico organizzato dalla Fondazione Stock, dedicato all’arte e alla sua dimensione multigenerazionale."
+    "it": "La sala principale del municipio ha ospitato un evento culturale unico organizzato dalla Fondazione Stock, dedicato all’arte e alla sua dimensione multigenerazionale.",
+    "sk": "V hlavnej sále radnice sa uskutočnilo výnimočné kultúrne podujatie, ktoré zorganizovala Nadácia Stock a ktoré bolo venované umeniu a jeho medzigeneračnému rozmeru.",
+    "de": "Im Hauptsaal des Rathauses fand eine besondere Kulturveranstaltung der Stiftung Stock statt, die der Kunst und ihrer generationenübergreifenden Dimension gewidmet war.",
+    "fr": "La salle principale de l’hôtel de ville a accueilli un événement culturel exceptionnel organisé par la Fondation Stock, consacré à l’art et à sa dimension intergénérationnelle."
   },
   "body": {
     "en": [
@@ -41,6 +50,21 @@
       "L’incontro è stato guidato da un’eccezionale curatrice del Museo Nazionale di Lublino, Danuta Szewczyk-Prokurat. La conferenza si è concentrata sull’affascinante fenomeno del talento artistico tramandato di generazione in generazione, rivelando come creatività e maestria possano attraversare il tempo all’interno delle famiglie.",
       "La presentazione è stata arricchita da esempi notevoli della storia dell’arte, tra cui opere di Pieter Bruegel, Peter Paul Rubens e della famiglia Kossak, che illustrano come il patrimonio artistico si evolva attraverso le generazioni. Una parte particolarmente coinvolgente è stata dedicata alla Sagrada Família — il capolavoro di Antoni Gaudí a Barcellona, la cui costruzione ha coinvolto più generazioni di artisti e architetti.",
       "L’evento era rivolto agli anziani assistiti dal municipio. Ha offerto un’occasione stimolante per riflettere sulla continuità, sull’eredità e sul potere duraturo dell’arte di unire le persone attraverso le generazioni."
+    ],
+    "sk": [
+      "Stretnutie viedla vynikajúca kurátorka Národného múzea v Lubline Danuta Szewczyk-Prokurat. Prednáška sa zamerala na fascinujúci fenomén umeleckého talentu odovzdávaného z generácie na generáciu a ukázala, ako tvorivosť a majstrovstvo dokážu v rodinách prekonávať čas.",
+      "Prezentáciu obohatili pozoruhodné príklady z dejín umenia vrátane diel Pietera Bruegela, Petra Paula Rubensa a rodiny Kossakovcov, ktoré ilustrujú, ako sa umelecké dedičstvo vyvíja naprieč generáciami. Mimoriadne pútavá časť stretnutia bola venovaná Sagrada Família — majstrovskému dielu Antoniho Gaudího v Barcelone, na ktorého stavbe sa podieľalo mnoho generácií umelcov a architektov.",
+      "Podujatie bolo určené seniorom v starostlivosti radnice. Bolo inšpiratívnou príležitosťou zamyslieť sa nad kontinuitou, dedičstvom a nadčasovou silou umenia, ktoré spája ľudí naprieč generáciami."
+    ],
+    "de": [
+      "Die Begegnung leitete die herausragende Kuratorin des Nationalmuseums in Lublin, Danuta Szewczyk-Prokurat. Der Vortrag widmete sich dem faszinierenden Phänomen des künstlerischen Talents, das von Generation zu Generation weitergegeben wird, und zeigte, wie Kreativität und Können innerhalb von Familien die Zeit überdauern können.",
+      "Bereichert wurde der Vortrag durch bemerkenswerte Beispiele aus der Kunstgeschichte, darunter Werke von Pieter Bruegel, Peter Paul Rubens und der Familie Kossak, die veranschaulichen, wie sich künstlerisches Erbe über Generationen hinweg entwickelt. Ein besonders fesselnder Teil des Treffens war der Sagrada Família gewidmet — dem Meisterwerk Antoni Gaudís in Barcelona, an dessen Bau mehrere Generationen von Künstlern und Architekten beteiligt waren.",
+      "Die Veranstaltung richtete sich an Seniorinnen und Senioren, die vom Rathaus betreut werden. Sie bot eine inspirierende Gelegenheit, über Kontinuität, Vermächtnis und die bleibende Kraft der Kunst nachzudenken, die Menschen über Generationen hinweg verbindet."
+    ],
+    "fr": [
+      "La rencontre était animée par Danuta Szewczyk-Prokurat, éminente conservatrice du Musée national de Lublin. La conférence portait sur le phénomène fascinant du talent artistique transmis de génération en génération, montrant comment la créativité et le savoir-faire peuvent traverser le temps au sein des familles.",
+      "La présentation était enrichie d’exemples remarquables tirés de l’histoire de l’art, dont des œuvres de Pieter Bruegel, de Peter Paul Rubens et de la famille Kossak, qui illustrent l’évolution de l’héritage artistique au fil des générations. Un moment particulièrement captivant a été consacré à la Sagrada Família — le chef-d’œuvre d’Antoni Gaudí à Barcelone, dont la construction a mobilisé plusieurs générations d’artistes et d’architectes.",
+      "L’événement s’adressait aux seniors pris en charge par l’hôtel de ville. Il a offert une occasion inspirante de réfléchir à la continuité, à l’héritage et au pouvoir durable de l’art de relier les gens par-delà les générations."
     ]
   }
 }

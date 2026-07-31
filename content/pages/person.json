@@ -22,5 +22,23 @@
     "moreOverline": "Il team",
     "moreTitle": "Altri membri",
     "viewProfile": "Vedi profilo"
+  },
+  "sk": {
+    "backToTeam": "Späť na Radu a predstavenstvo",
+    "moreOverline": "Tím",
+    "moreTitle": "Ostatní členovia",
+    "viewProfile": "Zobraziť profil"
+  },
+  "de": {
+    "backToTeam": "Zurück zu Stiftungsrat und Vorstand",
+    "moreOverline": "Das Team",
+    "moreTitle": "Weitere Mitglieder",
+    "viewProfile": "Profil ansehen"
+  },
+  "fr": {
+    "backToTeam": "Retour au Conseil et à la direction",
+    "moreOverline": "L’équipe",
+    "moreTitle": "Autres membres",
+    "viewProfile": "Voir le profil"
   }
 }

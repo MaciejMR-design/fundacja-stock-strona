@@ -7,19 +7,28 @@
     "en": "9 April 2025",
     "pl": "9 kwietnia 2025",
     "cz": "9. dubna 2025",
-    "it": "9 aprile 2025"
+    "it": "9 aprile 2025",
+    "sk": "9. apríla 2025",
+    "de": "9. April 2025",
+    "fr": "9 avril 2025"
   },
   "title": {
     "en": "A day of cultural encounters with the Stock Foundation",
     "pl": "Dzień kulturalnych spotkań z Fundacją Stock",
     "cz": "Den kulturních setkání s Nadací Stock",
-    "it": "Una giornata di incontri culturali con la Fondazione Stock"
+    "it": "Una giornata di incontri culturali con la Fondazione Stock",
+    "sk": "Deň kultúrnych stretnutí s Nadáciou Stock",
+    "de": "Ein Tag der kulturellen Begegnungen mit der Stiftung Stock",
+    "fr": "Une journée de rencontres culturelles avec la Fondation Stock"
   },
   "lead": {
     "en": "Polish patriotic painting and a virtual journey through the Vatican Museums — two art events in one day, for two different communities.",
     "pl": "Polskie malarstwo patriotyczne i wirtualna podróż po Muzeach Watykańskich — dwa wydarzenia jednego dnia, dla dwóch różnych społeczności.",
     "cz": "Polské vlastenecké malířství a virtuální cesta po Vatikánských muzeích — dvě umělecké akce v jednom dni, pro dvě různé komunity.",
-    "it": "La pittura patriottica polacca e un viaggio virtuale nei Musei Vaticani — due eventi d’arte in un giorno, per due comunità diverse."
+    "it": "La pittura patriottica polacca e un viaggio virtuale nei Musei Vaticani — due eventi d’arte in un giorno, per due comunità diverse.",
+    "sk": "Poľské vlastenecké maliarstvo a virtuálna cesta po Vatikánskych múzeách — dve umelecké podujatia v jeden deň, pre dve rôzne komunity.",
+    "de": "Polnische patriotische Malerei und eine virtuelle Reise durch die Vatikanischen Museen — zwei Kunstveranstaltungen an einem Tag, für zwei verschiedene Gemeinschaften.",
+    "fr": "La peinture patriotique polonaise et un voyage virtuel dans les musées du Vatican — deux événements artistiques en une journée, pour deux communautés différentes."
   },
   "body": {
     "en": [
@@ -41,6 +50,21 @@
       "Il 9 aprile la Fondazione Stock ha organizzato due arricchenti eventi artistici, portando la gioia dell’arte a due comunità diverse.",
       "Il primo si è svolto in una casa di cura per persone con disabilità, dove la signora Jolanta Polańska, stimata curatrice del Museo Nazionale, ha presentato una mostra digitale dedicata ai temi patriottici nella pittura polacca. La sessione ha incluso opere di Jan Matejko e della famiglia Kossak, offrendo ai residenti un legame significativo con il patrimonio nazionale.",
       "Più tardi, lo stesso giorno, la signora Barbara Czajkowska, anche lei del Museo Nazionale, ha tenuto al municipio una presentazione sulle collezioni dei Musei Vaticani. L’evento, rivolto agli anziani, è stato accolto con entusiasmo — molti partecipanti hanno detto di essersi sentiti come se avessero visitato personalmente il Vaticano. Siamo stati onorati dalla presenza della vicesindaca di Lublino per gli affari sociali, Anna Augustyniak."
+    ],
+    "sk": [
+      "9. apríla zorganizovala Nadácia Stock dve obohacujúce umelecké podujatia a priniesla radosť z umenia dvom rôznym komunitám.",
+      "Prvé sa konalo v domove pre osoby so zdravotným postihnutím, kde pani Jolanta Polańska, uznávaná kurátorka Národného múzea, predstavila digitálnu výstavu venovanú vlasteneckým témam v poľskom maliarstve. Prezentácia zahŕňala diela Jana Matejku a rodiny Kossakovcov a ponúkla obyvateľom živý kontakt s národným dedičstvom.",
+      "V ten istý deň viedla pani Barbara Czajkowska, takisto z Národného múzea, na radnici prezentáciu o zbierkach Vatikánskych múzeí. Podujatie určené seniorom sa stretlo s vrelým prijatím — mnohí účastníci hovorili, že sa cítili, akoby Vatikán navštívili osobne. Poctila nás prítomnosť zástupkyne primátora Lublinu pre sociálne veci, pani Anny Augustyniak."
+    ],
+    "de": [
+      "Am 9. April organisierte die Stiftung Stock zwei bereichernde Kunstveranstaltungen und brachte die Freude an der Kunst zu zwei verschiedenen Gemeinschaften.",
+      "Die erste fand in einem Pflegeheim für Menschen mit Behinderungen statt, wo Frau Jolanta Polańska, eine angesehene Kuratorin des Nationalmuseums, eine digitale Ausstellung zu patriotischen Motiven in der polnischen Malerei präsentierte. Gezeigt wurden Werke von Jan Matejko und der Familie Kossak, die den Bewohnerinnen und Bewohnern eine lebendige Verbindung zum nationalen Erbe boten.",
+      "Am selben Tag hielt Frau Barbara Czajkowska, ebenfalls vom Nationalmuseum, im Rathaus einen Vortrag über die Sammlungen der Vatikanischen Museen. Die an Seniorinnen und Senioren gerichtete Veranstaltung stieß auf herzliche Resonanz — viele Teilnehmende sagten, sie hätten sich gefühlt, als hätten sie den Vatikan persönlich besucht. Geehrt hat uns die Anwesenheit der stellvertretenden Stadtpräsidentin von Lublin für soziale Angelegenheiten, Frau Anna Augustyniak."
+    ],
+    "fr": [
+      "Le 9 avril, la Fondation Stock a organisé deux événements artistiques enrichissants, apportant la joie de l’art à deux communautés différentes.",
+      "Le premier s’est déroulé dans une maison de soins pour personnes en situation de handicap, où Mme Jolanta Polańska, conservatrice réputée du Musée national, a présenté une exposition numérique consacrée aux thèmes patriotiques dans la peinture polonaise. La présentation comprenait des œuvres de Jan Matejko et de la famille Kossak, offrant aux résidents un contact vivant avec le patrimoine national.",
+      "Le même jour, Mme Barbara Czajkowska, également du Musée national, a animé à l’hôtel de ville une présentation sur les collections des musées du Vatican. L’événement, destiné aux seniors, a été accueilli avec enthousiasme — de nombreux participants ont dit avoir eu l’impression de visiter le Vatican en personne. Nous avons été honorés par la présence de l’adjointe au maire de Lublin chargée des affaires sociales, Mme Anna Augustyniak."
     ]
   }
 }

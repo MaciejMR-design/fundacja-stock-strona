@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matejko — eine Kunstbegegnung im Nationalmuseum — Stock Foundation</title>
+<meta name="description" content="Eine Reise durch Geschichte und Patriotismus im Werk eines der größten polnischen Maler, organisiert mit der Abteilung für soziale Initiativen.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Stock Foundation">
+<meta property="og:title" content="Matejko — eine Kunstbegegnung im Nationalmuseum — Stock Foundation">
+<meta property="og:description" content="Eine Reise durch Geschichte und Patriotismus im Werk eines der größten polnischen Maler, organisiert mit der Abteilung für soziale Initiativen.">
+<meta property="og:image" content="https://fundacja-stock-design.vercel.app/uploads/news-matejko.jpg">
+<meta property="og:url" content="https://fundacjastock.pl/de/article-matejko.html">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary_large_image">
+<!-- lang-alternates -->
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://fundacjastock.pl/de/article-matejko.html">
+<link rel="alternate" hreflang="en" href="https://fundacjastock.pl/article-matejko.html">
+<link rel="alternate" hreflang="pl" href="https://fundacjastock.pl/pl/article-matejko.html">
+<link rel="alternate" hreflang="x-default" href="https://fundacjastock.pl/article-matejko.html">
+<!-- /lang-alternates -->
+<script data-fs-lang>window.FS_LANG='de';window.FS_PUBLIC_LANGS=["en","pl"];try{localStorage.setItem('fs-lang','de')}catch(e){}</script>
+<script data-fs-article>window.FS_ARTICLE='matejko';</script>
+<link rel="icon" href="/uploads/logo-footer.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/fonts.css">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+  <header class="site" id="site-header"></header>
+
+  <section class="page-hero">
+    <img class="hero-photo" id="heroPhoto" src="/uploads/bg-news.svg" alt="" aria-hidden="true">
+    <svg class="hero-art" viewBox="0 0 1200 400" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
+      <g fill="none" stroke="#CD9E0C" stroke-width="1.2">
+        <path d="M980 20 C980 20 890 -6 760 -6 C630 -6 540 20 540 20 C537 72 500 112 448 112 L448 300 C448 420 540 520 760 580 C980 520 1072 420 1072 300 L1072 112 C1020 112 983 72 980 20 Z" opacity="0.4"></path>
+        <path d="M-40 320 Q 250 240 560 320 T 1240 290" opacity="0.35"></path>
+      </g>
+    </svg>
+    <div class="container page-hero-inner">
+      <span class="crumb"><a href="index.html" data-i18n="home"></a> / <a href="news.html" data-i18n="navNews"></a> / <span id="crumbTitle"></span></span>
+      <h1 class="display" id="artTitle"></h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="article-wrap reveal">
+        <div class="article-meta">
+          <span class="tag" id="artCat"></span>
+          <time id="artDate"></time>
+        </div>
+        <div class="article-cover" id="artCover"><img id="artImg" src="" alt=""></div>
+        <div class="article-gallery" id="artGallery" style="display:none;"></div>
+        <div class="article-body" id="artBody"></div>
+        <div class="article-share">
+          <a href="news.html" class="back-link"><span class="arr">←</span> <span data-i18n="backToNews"></span></a>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <span style="font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(22,59,101,.55);" data-i18n="shareLabel"></span>
+            <a id="shareLinkedin" href="#" target="_blank" rel="noopener" class="li-badge" style="border-color:rgba(205,158,12,.5);" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="#CD9E0C"><path d="M3.4 2.4 a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0 -2.8 Z M2.2 6 h2.4 v7.6 H2.2 Z M6.2 6 h2.3 v1 c0.4 -0.6 1.2 -1.2 2.4 -1.2 c2 0 2.9 1.2 2.9 3.3 v4.5 h-2.4 v-4.1 c0 -1 -0.4 -1.7 -1.3 -1.7 c-1 0 -1.5 0.7 -1.5 1.7 v4.1 H6.2 Z"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MORE NEWS -->
+  <section class="more-news">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="overline"><span class="line"></span><span data-i18n="moreOverline"></span></div>
+        <h2 class="display" style="font-size:clamp(30px,4vw,48px);" data-i18n="moreTitle"></h2>
+      </div>
+      <div class="news-grid" id="moreGrid"></div>
+    </div>
+  </section>
+
+  <footer class="site" id="site-footer"></footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script>
+const PAGE_I18N = /* CONTENT:PAGE_I18N */{"en":{"catart":"Art Encounters","catcommunity":"Community","catscholar":"Scholarships","readMore":"Read more","backToNews":"Back to all news","shareLabel":"Share","moreOverline":"Keep reading","moreTitle":"More news","notFound":"Article not found."},"pl":{"catart":"Spotkania ze sztuką","catcommunity":"Społeczność","catscholar":"Stypendia","readMore":"Czytaj więcej","backToNews":"Wróć do aktualności","shareLabel":"Udostępnij","moreOverline":"Czytaj dalej","moreTitle":"Więcej aktualności","notFound":"Nie znaleziono artykułu."},"cz":{"catart":"Setkání s uměním","catcommunity":"Komunita","catscholar":"Stipendia","readMore":"Číst dále","backToNews":"Zpět na novinky","shareLabel":"Sdílet","moreOverline":"Číst dále","moreTitle":"Další novinky","notFound":"Článek nenalezen."},"it":{"catart":"Incontri con l’arte","catcommunity":"Comunità","catscholar":"Borse di studio","readMore":"Leggi di più","backToNews":"Torna alle notizie","shareLabel":"Condividi","moreOverline":"Continua a leggere","moreTitle":"Altre notizie","notFound":"Articolo non trovato."},"sk":{"catart":"Stretnutia s umením","catcommunity":"Komunita","catscholar":"Štipendiá","readMore":"Čítať ďalej","backToNews":"Späť na aktuality","shareLabel":"Zdieľať","moreOverline":"Čítajte ďalej","moreTitle":"Ďalšie aktuality","notFound":"Článok sa nenašiel."},"de":{"catart":"Kunstbegegnungen","catcommunity":"Gemeinschaft","catscholar":"Stipendien","readMore":"Weiterlesen","backToNews":"Zurück zu allen Neuigkeiten","shareLabel":"Teilen","moreOverline":"Lesen Sie weiter","moreTitle":"Weitere Neuigkeiten","notFound":"Artikel nicht gefunden."},"fr":{"catart":"Rencontres avec l’art","catcommunity":"Communauté","catscholar":"Bourses d’études","readMore":"Lire la suite","backToNews":"Retour aux actualités","shareLabel":"Partager","moreOverline":"Poursuivre la lecture","moreTitle":"Plus d’actualités","notFound":"Article introuvable."}}/* /CONTENT */;
+
+function lang() { return localStorage.getItem('fs-lang') || 'en'; }
+/* Each article lives on its own static page (article-<id>.html) with
+   window.FS_ARTICLE baked in by build-langs.mjs. The bare article.html
+   stays as a fallback for legacy #hash links and redirects them. */
+function getId() { return window.FS_ARTICLE || location.hash.slice(1); }
+
+function renderArticle() {
+  const l = lang();
+  const t = Object.assign({}, PAGE_I18N.en, PAGE_I18N[l]);
+  const list = window.ARTICLES || [];
+  const a = list.find(x => x.id === getId()) || list[0];
+  if (!a) return;
+
+  document.title = a.title[l] + ' — Stock Foundation';
+  document.getElementById('crumbTitle').textContent = a.title[l];
+  document.getElementById('artTitle').textContent = a.title[l];
+  document.getElementById('artCat').textContent = t['cat' + a.cat];
+  document.getElementById('artDate').textContent = a.date[l];
+  var cover = document.getElementById('artCover');
+  var gallery = document.getElementById('artGallery');
+  if (a.images && a.images.length) {
+    cover.style.display = 'none';
+    gallery.style.display = '';
+    gallery.innerHTML = '';
+    a.images.forEach(function (src) {
+      var im = document.createElement('img');
+      im.src = src; im.alt = a.title[l];
+      im.loading = 'lazy'; im.decoding = 'async';
+      gallery.appendChild(im);
+    });
+  } else {
+    gallery.style.display = 'none';
+    cover.style.display = '';
+    document.getElementById('artImg').src = a.img;
+  }
+
+  const body = document.getElementById('artBody');
+  body.innerHTML = '';
+  a.body[l].forEach(p => { const el = document.createElement('p'); el.textContent = p; body.appendChild(el); });
+
+  document.getElementById('shareLinkedin').href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(location.href);
+
+  // more news: other articles (max 3)
+  const grid = document.getElementById('moreGrid');
+  grid.innerHTML = '';
+  list.filter(x => x.id !== a.id && !x.hidden).slice(0, 3).forEach(o => {
+    const el = document.createElement('article');
+    el.className = 'card reveal';
+    el.innerHTML =
+      '<a href="article-' + o.id + '.html" style="display:flex;flex-direction:column;flex:1;color:inherit;">' +
+        '<div class="card-media"><img src="' + o.img + '" alt="" loading="lazy" decoding="async"><span class="cat">' + t['cat' + o.cat] + '</span></div>' +
+        '<div class="card-body">' +
+          '<time>' + o.date[l] + '</time>' +
+          '<h3>' + o.title[l] + '</h3>' +
+          '<p>' + o.lead[l] + '</p>' +
+          '<span class="read-more" style="margin-top:4px;"><span>' + t.readMore + '</span> <span class="arr">→</span></span>' +
+        '</div>' +
+      '</a>';
+    grid.appendChild(el);
+  });
+  if (window.observeReveals) window.observeReveals();
+}
+
+window.onLangChange = renderArticle;
+window.addEventListener('hashchange', renderArticle);
+</script>
+<script src="/assets/articles.js"></script>
+<script src="/assets/main.js"></script>
+<script>
+(function () { // legacy deep links: article.html#gerson -> article-gerson.html
+  if (!window.FS_ARTICLE) {
+    var h = location.hash.slice(1);
+    if (h && (window.ARTICLES || []).some(function (a) { return a.id === h; })) {
+      location.replace('article-' + h + '.html');
+      return;
+    }
+  }
+  renderArticle();
+})();
+</script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 /* Automatyczne tłumaczenie brakujących wersji językowych wpisów (DeepL API).
    Zasada: polski jest źródłem prawdy. Dla każdego wpisu w content/articles/
-   uzupełnia PUSTE pola en/cz/it tłumaczeniem z pl. Pola już wypełnione
+   uzupełnia PUSTE pola en/cz/it/sk/de/fr tłumaczeniem z pl. Pola już wypełnione
    (ręcznie lub wcześniej przetłumaczone) nie są nadpisywane.
    Wymaga zmiennej środowiskowej DEEPL_API_KEY (darmowy plan: 500k znaków/mies.).
    Uruchamiane przez GitHub Action (.github/workflows/translate.yml) lub ręcznie:
@@ -11,7 +11,7 @@ import { join } from 'path';
 const KEY = process.env.DEEPL_API_KEY;
 if (!KEY) { console.log('Brak DEEPL_API_KEY — pomijam tłumaczenie.'); process.exit(0); }
 const API = KEY.endsWith(':fx') ? 'https://api-free.deepl.com/v2/translate' : 'https://api.deepl.com/v2/translate';
-const TARGETS = { en: 'EN-GB', cz: 'CS', it: 'IT' };
+const TARGETS = { en: 'EN-GB', cz: 'CS', it: 'IT', sk: 'SK', de: 'DE', fr: 'FR' };
 /* nazwy własne, których DeepL ma nie ruszać */
 const GLOSSARY = ['Fundacja Stock', 'Stock Foundation', 'Spirit of Ukraine', 'Flavours of Change', 'Homo Faber', 'Stock Polska', 'Stock Spirits Group'];
 

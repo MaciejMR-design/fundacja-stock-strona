@@ -34,5 +34,32 @@
     "boardOverline": "Direzione",
     "boardTitle": "Consiglio di Amministrazione",
     "viewProfile": "Vedi profilo"
+  },
+  "sk": {
+    "pageTitle": "Rada a predstavenstvo",
+    "pageLead": "Ľudia, ktorí vedú Nadáciu Stock — jej rada a predstavenstvo.",
+    "councilOverline": "Dohľad",
+    "councilTitle": "Rada Nadácie Stock",
+    "boardOverline": "Riadenie",
+    "boardTitle": "Predstavenstvo nadácie",
+    "viewProfile": "Zobraziť profil"
+  },
+  "de": {
+    "pageTitle": "Stiftungsrat und Vorstand",
+    "pageLead": "Die Menschen, die die Stiftung Stock leiten — ihr Stiftungsrat und ihr Vorstand.",
+    "councilOverline": "Aufsicht",
+    "councilTitle": "Stiftungsrat der Stiftung Stock",
+    "boardOverline": "Leitung",
+    "boardTitle": "Vorstand der Stiftung",
+    "viewProfile": "Profil ansehen"
+  },
+  "fr": {
+    "pageTitle": "Conseil et direction",
+    "pageLead": "Les personnes qui dirigent la Fondation Stock — son Conseil et sa direction.",
+    "councilOverline": "Gouvernance",
+    "councilTitle": "Conseil de la Fondation Stock",
+    "boardOverline": "Gestion",
+    "boardTitle": "Direction de la Fondation",
+    "viewProfile": "Voir le profil"
   }
 }

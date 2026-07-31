@@ -42,5 +42,38 @@
     "moreOverline": "Continua a leggere",
     "moreTitle": "Altre notizie",
     "notFound": "Articolo non trovato."
+  },
+  "sk": {
+    "catart": "Stretnutia s umením",
+    "catcommunity": "Komunita",
+    "catscholar": "Štipendiá",
+    "readMore": "Čítať ďalej",
+    "backToNews": "Späť na aktuality",
+    "shareLabel": "Zdieľať",
+    "moreOverline": "Čítajte ďalej",
+    "moreTitle": "Ďalšie aktuality",
+    "notFound": "Článok sa nenašiel."
+  },
+  "de": {
+    "catart": "Kunstbegegnungen",
+    "catcommunity": "Gemeinschaft",
+    "catscholar": "Stipendien",
+    "readMore": "Weiterlesen",
+    "backToNews": "Zurück zu allen Neuigkeiten",
+    "shareLabel": "Teilen",
+    "moreOverline": "Lesen Sie weiter",
+    "moreTitle": "Weitere Neuigkeiten",
+    "notFound": "Artikel nicht gefunden."
+  },
+  "fr": {
+    "catart": "Rencontres avec l’art",
+    "catcommunity": "Communauté",
+    "catscholar": "Bourses d’études",
+    "readMore": "Lire la suite",
+    "backToNews": "Retour aux actualités",
+    "shareLabel": "Partager",
+    "moreOverline": "Poursuivre la lecture",
+    "moreTitle": "Plus d’actualités",
+    "notFound": "Article introuvable."
   }
 }

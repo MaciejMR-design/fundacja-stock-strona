@@ -7,19 +7,28 @@
     "en": "February 2024",
     "pl": "Luty 2024",
     "cz": "Únor 2024",
-    "it": "Febbraio 2024"
+    "it": "Febbraio 2024",
+    "sk": "Február 2024",
+    "de": "Februar 2024",
+    "fr": "février 2024"
   },
   "title": {
     "en": "Polish language courses — summary",
     "pl": "Kursy języka polskiego — podsumowanie",
     "cz": "Kurzy polštiny — shrnutí",
-    "it": "Corsi di lingua polacca — bilancio"
+    "it": "Corsi di lingua polacca — bilancio",
+    "sk": "Kurzy poľštiny — zhrnutie",
+    "de": "Polnischkurse — Bilanz",
+    "fr": "Cours de langue polonaise — bilan"
   },
   "lead": {
     "en": "Over 100 participants and 632 lessons — language skills that turned into jobs, diplomas and new beginnings.",
     "pl": "Ponad 100 uczestników i 632 lekcje — kompetencje językowe, które zamieniły się w pracę, dyplomy i nowe początki.",
     "cz": "Přes 100 účastníků a 632 lekcí — jazykové dovednosti, které se proměnily v práci, diplomy a nové začátky.",
-    "it": "Oltre 100 partecipanti e 632 lezioni — competenze linguistiche trasformate in lavoro, diplomi e nuovi inizi."
+    "it": "Oltre 100 partecipanti e 632 lezioni — competenze linguistiche trasformate in lavoro, diplomi e nuovi inizi.",
+    "sk": "Vyše 100 účastníkov a 632 lekcií — jazykové zručnosti, ktoré sa premenili na prácu, diplomy a nové začiatky.",
+    "de": "Über 100 Teilnehmende und 632 Unterrichtsstunden — Sprachkenntnisse, die zu Arbeit, Diplomen und Neuanfängen wurden.",
+    "fr": "Plus de 100 participants et 632 leçons — des compétences linguistiques transformées en emplois, en diplômes et en nouveaux départs."
   },
   "body": {
     "en": [
@@ -41,6 +50,21 @@
       "L’inizio del nuovo anno è un ottimo momento per fare il bilancio di una delle prime iniziative della Fondazione Stock — il programma per rifugiati Spirit of Ukraine e i corsi di lingua polacca. Finanziato da noi, il programma è stato realizzato da luglio 2022 a dicembre 2023 in collaborazione con IKO, l’Istituto per l’Educazione degli Stranieri.",
       "Vi hanno partecipato oltre 100 persone — il 60% a livello principiante e il 40% a livello intermedio — completando 632 lezioni in 7 gruppi. I partecipanti hanno acquisito competenze linguistiche che permettono loro di comunicare in polacco, facilitando l’integrazione e l’accesso al lavoro.",
       "Secondo i partecipanti stessi, l’aiuto ha avuto un impatto reale sulle loro vite: la signora Viktoria ha iniziato a lavorare a scuola, la signora Tetiana di Hrubieszów ha superato l’esame presso l’Ordine dei Medici e lavora come medico in ospedale, la signora Anna lavora come dentista, la signora Maja si è trasferita a Varsavia, la signora Yulia lavora in un’azienda di Lublino e la signora Tetiana come tecnico d’ufficio presso il comune. Ringraziamo tutti per l’impegno e ci congratuliamo per i successi!"
+    ],
+    "sk": [
+      "Začiatok nového roka je skvelý čas na zhrnutie jednej z najstarších iniciatív Nadácie Stock — programu pre utečencov Spirit of Ukraine a kurzov poľštiny. Nami financovaný program prebiehal od júla 2022 do decembra 2023 v spolupráci s IKO — Inštitútom vzdelávania cudzincov.",
+      "Zúčastnilo sa ho vyše 100 osôb — 60 % na začiatočníckej úrovni a 40 % na stredne pokročilej — ktoré absolvovali 632 lekcií v 7 skupinách. Účastníci získali jazykové kompetencie umožňujúce dorozumieť sa po poľsky, čo im uľahčilo integráciu a nástup do zamestnania.",
+      "Ako hovoria samotní účastníci, pomoc mala skutočný vplyv na ich životy: pani Viktoria začala pracovať v škole, pani Tetiana z Hrubieszówa zložila skúšku v lekárskej komore a pracuje ako lekárka v nemocnici, pani Anna pracuje ako zubárka, pani Maja sa presťahovala do Varšavy, pani Yulia pracuje vo firme v Lubline a pani Tetiana ako administratívna technička na obecnom úrade. Ďakujeme všetkým za nasadenie a gratulujeme k úspechom!"
+    ],
+    "de": [
+      "Der Beginn des neuen Jahres ist ein guter Moment, um Bilanz über eine der frühesten Initiativen der Stiftung Stock zu ziehen — das Flüchtlingsprogramm Spirit of Ukraine und die Polnischkurse. Das von uns finanzierte Programm wurde von Juli 2022 bis Dezember 2023 in Zusammenarbeit mit IKO, dem Institut für die Bildung von Ausländern, durchgeführt.",
+      "Mehr als 100 Personen nahmen teil — 60 % auf Anfängerniveau und 40 % auf mittlerem Niveau — und absolvierten 632 Unterrichtsstunden in 7 Gruppen. Die Teilnehmenden erwarben Sprachkompetenzen, die ihnen die Verständigung auf Polnisch ermöglichen, was ihre Integration und die Aufnahme einer Arbeit erleichterte.",
+      "Wie die Teilnehmenden selbst sagen, hatte die Hilfe einen realen Einfluss auf ihr Leben: Frau Viktoria hat begonnen, an einer Schule zu arbeiten, Frau Tetiana aus Hrubieszów hat die Prüfung bei der Ärztekammer bestanden und arbeitet als Ärztin in einem Krankenhaus, Frau Anna arbeitet als Zahnärztin, Frau Maja ist nach Warschau gezogen, Frau Yulia arbeitet in einem Unternehmen in Lublin und Frau Tetiana als Bürotechnikerin in der Gemeindeverwaltung. Wir danken allen für ihr Engagement und gratulieren zu den Erfolgen!"
+    ],
+    "fr": [
+      "Le début de la nouvelle année est un excellent moment pour dresser le bilan de l’une des toutes premières initiatives de la Fondation Stock — le programme pour réfugiés Spirit of Ukraine et les cours de langue polonaise. Financé par nos soins, le programme a été mis en œuvre de juillet 2022 à décembre 2023 en coopération avec IKO, l’Institut de formation des étrangers.",
+      "Plus de 100 personnes y ont participé — 60 % au niveau débutant et 40 % au niveau intermédiaire — et ont suivi 632 leçons réparties en 7 groupes. Les participants ont acquis des compétences linguistiques leur permettant de communiquer en polonais, ce qui a facilité leur intégration et leur accès à l’emploi.",
+      "Comme le disent les participants eux-mêmes, cette aide a eu un impact réel sur leur vie : Mme Viktoria a commencé à travailler dans une école, Mme Tetiana de Hrubieszów a réussi l’examen de l’Ordre des médecins et travaille comme médecin à l’hôpital, Mme Anna travaille comme dentiste, Mme Maja s’est installée à Varsovie, Mme Yulia travaille dans une entreprise de Lublin et Mme Tetiana comme technicienne de bureau à la mairie. Nous remercions tout le monde pour son engagement et félicitons chacune pour ses succès !"
     ]
   }
 }

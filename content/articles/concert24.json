@@ -7,19 +7,28 @@
     "en": "June 2024",
     "pl": "Czerwiec 2024",
     "cz": "Červen 2024",
-    "it": "Giugno 2024"
+    "it": "Giugno 2024",
+    "sk": "Jún 2024",
+    "de": "Juni 2024",
+    "fr": "juin 2024"
   },
   "title": {
     "en": "Concert of scholarship recipients — a year of work and talent",
     "pl": "Koncert stypendystów — rok pracy i talentu",
     "cz": "Koncert stipendistů — rok práce a talentu",
-    "it": "Concerto dei borsisti — un anno di lavoro e talento"
+    "it": "Concerto dei borsisti — un anno di lavoro e talento",
+    "sk": "Koncert štipendistov — rok práce a talentu",
+    "de": "Konzert der Stipendiatinnen und Stipendiaten — ein Jahr Arbeit und Talent",
+    "fr": "Concert des boursiers — une année de travail et de talent"
   },
   "lead": {
     "en": "At the Culture Workshops in Lublin, our scholarship recipients summed up a year of honing their talents — with a hall filled to the brim.",
     "pl": "W Warsztatach Kultury w Lublinie nasi stypendyści podsumowali rok szlifowania talentów — przy sali wypełnionej po brzegi.",
     "cz": "V Dílnách kultury v Lublinu naši stipendisté shrnuli rok pilování talentů — před sálem zaplněným do posledního místa.",
-    "it": "Ai Laboratori di Cultura di Lublino i nostri borsisti hanno riassunto un anno di perfezionamento dei loro talenti — con la sala piena fino all’orlo."
+    "it": "Ai Laboratori di Cultura di Lublino i nostri borsisti hanno riassunto un anno di perfezionamento dei loro talenti — con la sala piena fino all’orlo.",
+    "sk": "V Dielňach kultúry v Lubline naši štipendisti zhrnuli rok brúsenia talentov — pred sálou zaplnenou do posledného miesta.",
+    "de": "In den Kulturwerkstätten in Lublin ließen unsere Stipendiatinnen und Stipendiaten ein Jahr des Talentschliffs Revue passieren — vor einem bis auf den letzten Platz gefüllten Saal.",
+    "fr": "Aux Ateliers de la Culture de Lublin, nos boursiers ont fait le bilan d’une année passée à perfectionner leurs talents — devant une salle comble."
   },
   "body": {
     "en": [
@@ -41,6 +50,21 @@
       "Ai Laboratori di Cultura di Lublino si è tenuto un bellissimo concerto dei borsisti, che ha riassunto un anno di lavoro e di perfezionamento dei talenti. La Fondazione Stock continua il suo programma di sostegno ai giovani talenti ucraini, permettendo loro di proseguire l’educazione musicale interrotta dalla guerra.",
       "Al concerto abbiamo avuto il piacere di ascoltare il coro “Veselyki” diretto da Halyna e Aleksandr Navrocki, oltre ai testi originali di Mirek Sokołowski accompagnati dall’ensemble di chitarre da lui guidato. Il gruppo ha suonato impressioni in atmosfera rock and roll, riassumendo i temi su cui aveva lavorato nell’ultimo anno.",
       "L’esecuzione di una canzone con la bandura — sotto la guida di Ola Maciupa — ha suscitato grande entusiasmo. Il pubblico è stato meraviglioso e la sala era piena fino all’orlo."
+    ],
+    "sk": [
+      "V Dielňach kultúry v Lubline sa konal krásny koncert štipendistov, ktorý zhrnul rok práce a brúsenia talentov. Nadácia Stock pokračuje v programe podpory talentovanej mládeže z Ukrajiny a umožňuje jej pokračovať v hudobnom vzdelávaní prerušenom vojnou.",
+      "Na koncerte sme si s potešením vypočuli zbor „Veselyki“ pod vedením Halyny a Aleksandra Navrockých, ako aj autorské texty Mirka Sokołowského so sprievodom gitarového súboru, ktorý vedie. Kapela zahrala impresie v rokenrolovej atmosfére a zhrnula témy, na ktorých pracovala počas uplynulého roka.",
+      "Prevedenie piesne s bandurou — pod vedením Oly Maciupy — vyvolalo veľké nadšenie. Publikum bolo skvelé a sála bola zaplnená do posledného miesta."
+    ],
+    "de": [
+      "In den Kulturwerkstätten in Lublin fand ein wunderschönes Konzert der Stipendiatinnen und Stipendiaten statt, das ein Jahr der Arbeit und des Talentschliffs zusammenfasste. Die Stiftung Stock setzt ihr Programm zur Förderung talentierter Jugendlicher aus der Ukraine fort und ermöglicht ihnen, ihre durch den Krieg unterbrochene musikalische Ausbildung fortzusetzen.",
+      "Beim Konzert hatten wir das Vergnügen, den Chor „Veselyki“ unter der Leitung von Halyna und Aleksandr Navrocki zu hören, ebenso wie eigene Texte von Mirek Sokołowski, begleitet von dem von ihm geleiteten Gitarrenensemble. Das Ensemble spielte Impressionen in Rock’n’Roll-Atmosphäre und fasste die Themen zusammen, an denen sie im vergangenen Jahr gearbeitet hatte.",
+      "Die Darbietung eines Liedes mit Bandura — unter der Betreuung von Ola Maciupa — löste große Begeisterung aus. Das Publikum war wunderbar, und der Saal war bis auf den letzten Platz gefüllt."
+    ],
+    "fr": [
+      "Aux Ateliers de la Culture de Lublin s’est tenu un magnifique concert des boursiers, bilan d’une année de travail et de perfectionnement des talents. La Fondation Stock poursuit son programme de soutien aux jeunes talents d’Ukraine, leur permettant de continuer une éducation musicale interrompue par la guerre.",
+      "Lors du concert, nous avons eu le plaisir d’écouter le chœur « Veselyki » sous la direction de Halyna et Aleksandr Navrocki, ainsi que les textes originaux de Mirek Sokołowski, accompagnés par l’ensemble de guitares qu’il dirige. Le groupe a joué des impressions dans une ambiance rock’n’roll, récapitulant les thèmes travaillés au cours de l’année écoulée.",
+      "L’interprétation d’une chanson avec bandoura — sous la houlette d’Ola Maciupa — a suscité un grand enthousiasme. Le public était formidable et la salle comble."
     ]
   }
 }

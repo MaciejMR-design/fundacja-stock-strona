@@ -11,19 +11,28 @@
     "en": "October 2024",
     "pl": "Październik 2024",
     "cz": "Říjen 2024",
-    "it": "Ottobre 2024"
+    "it": "Ottobre 2024",
+    "sk": "Október 2024",
+    "de": "Oktober 2024",
+    "fr": "octobre 2024"
   },
   "title": {
     "en": "Flavours of Change grants: a community initiative in Šišan, Croatia",
     "pl": "Granty Flavours of Change: inicjatywa społeczna w Šišan w Chorwacji",
     "cz": "Granty Flavours of Change: komunitní iniciativa v Šišanu v Chorvatsku",
-    "it": "Borse Flavours of Change: un’iniziativa comunitaria a Šišan, in Croazia"
+    "it": "Borse Flavours of Change: un’iniziativa comunitaria a Šišan, in Croazia",
+    "sk": "Granty Flavours of Change: komunitná iniciatíva v Šišane v Chorvátsku",
+    "de": "Flavours-of-Change-Zuschüsse: eine Gemeinschaftsinitiative im kroatischen Šišan",
+    "fr": "Subventions Flavours of Change : une initiative communautaire à Šišan, en Croatie"
   },
   "lead": {
     "en": "In Šišan, Croatia, the local kindergarten „Bubamara” was transformed into a vibrant space for education and play through a community-driven project.",
     "pl": "W chorwackim Šišan lokalne przedszkole „Bubamara” zmieniło się w tętniącą życiem przestrzeń edukacji i zabawy dzięki projektowi społeczności.",
-    "cz": "V chorvatském Šišanu se místní školka „Bubamara” proměnila v živý prostor pro vzdělávání a hru díky komunitnímu projektu.",
-    "it": "A Šišan, in Croazia, l’asilo locale „Bubamara” è stato trasformato in un vivace spazio di educazione e gioco grazie a un progetto della comunità."
+    "cz": "V chorvatském Šišanu se místní školka „Bubamara“ proměnila v živý prostor pro vzdělávání a hru díky komunitnímu projektu.",
+    "it": "A Šišan, in Croazia, l’asilo locale „Bubamara” è stato trasformato in un vivace spazio di educazione e gioco grazie a un progetto della comunità.",
+    "sk": "V chorvátskom Šišane sa miestna škôlka „Bubamara“ premenila na živý priestor vzdelávania a hier vďaka komunitnému projektu.",
+    "de": "Im kroatischen Šišan wurde der örtliche Kindergarten „Bubamara“ dank eines Gemeinschaftsprojekts in einen lebendigen Ort des Lernens und Spielens verwandelt.",
+    "fr": "À Šišan, en Croatie, l’école maternelle locale « Bubamara » a été transformée en un espace vivant d’éducation et de jeu grâce à un projet communautaire."
   },
   "body": {
     "en": [
@@ -37,7 +46,7 @@
       "Efektem jest plac zabaw pełniący jednocześnie funkcję przestrzeni edukacyjnej — rozwijającej kreatywność, pracę zespołową i świadomość ekologiczną."
     ],
     "cz": [
-      "V chorvatském Šišanu byla místní školka „Bubamara” proměněna v živý prostor pro vzdělávání a hru díky komunitnímu projektu, do něhož se zapojilo 24 dobrovolníků, pedagogů a obyvatel. Projekt, částečně financovaný Nadací Stock, zahrnoval stavbu dřevěného mostku, výsadbu středomořské zeleně a barevné dokončovací práce.",
+      "V chorvatském Šišanu byla místní školka „Bubamara“ proměněna v živý prostor pro vzdělávání a hru díky komunitnímu projektu, do něhož se zapojilo 24 dobrovolníků, pedagogů a obyvatel. Projekt, částečně financovaný Nadací Stock, zahrnoval stavbu dřevěného mostku, výsadbu středomořské zeleně a barevné dokončovací práce.",
       "Iniciativa spojila rodiče, personál a odborníky — celkem 159 hodin práce: 40 hodin příprav, 64 hodin stavby a terénních úprav a 76 hodin výsadby a závěrečných detailů.",
       "Výsledkem je hřiště, které slouží zároveň jako vzdělávací prostor — rozvíjí kreativitu, týmovou práci a ekologické povědomí."
     ],
@@ -45,6 +54,21 @@
       "A Šišan, in Croazia, l’asilo locale „Bubamara” è stato trasformato in un vivace spazio di educazione e gioco grazie a un progetto guidato dalla comunità con 24 volontari, educatori e residenti. Finanziato in parte dalla Fondazione Stock, il progetto ha riguardato la costruzione di un ponte di legno, la piantumazione di verde mediterraneo e colorati tocchi finali.",
       "L’iniziativa ha riunito genitori, personale e professionisti per completare 159 ore di lavoro — di cui 40 di preparazione, 64 di costruzione e sistemazione del verde e 76 di piantumazione e dettagli finali.",
       "Il risultato è un’area giochi che è anche uno spazio educativo, che favorisce creatività, lavoro di squadra e consapevolezza ambientale."
+    ],
+    "sk": [
+      "V chorvátskom Šišane bola miestna škôlka „Bubamara“ premenená na živý priestor vzdelávania a hier vďaka komunitnému projektu, do ktorého sa zapojilo 24 dobrovoľníkov, pedagógov a obyvateľov. Projekt, čiastočne financovaný Nadáciou Stock, zahŕňal stavbu dreveného mostíka, výsadbu stredomorskej zelene a farebné dokončovacie práce.",
+      "Iniciatíva spojila rodičov, personál a odborníkov — spolu 159 hodín práce: 40 hodín príprav, 64 hodín stavby a terénnych úprav a 76 hodín výsadby a záverečných detailov.",
+      "Výsledkom je ihrisko, ktoré slúži zároveň ako vzdelávací priestor — rozvíja kreativitu, tímovú prácu a environmentálne povedomie."
+    ],
+    "de": [
+      "Im kroatischen Šišan wurde der örtliche Kindergarten „Bubamara“ durch ein Gemeinschaftsprojekt, an dem sich 24 Freiwillige, Erzieherinnen und Erzieher sowie Anwohner beteiligten, in einen lebendigen Ort des Lernens und Spielens verwandelt. Das teilweise von der Stiftung Stock finanzierte Projekt umfasste den Bau einer Holzbrücke, die Pflanzung mediterranen Grüns und farbenfrohe letzte Handgriffe.",
+      "Die Initiative brachte Eltern, Mitarbeitende und Fachleute zusammen — insgesamt 159 Arbeitsstunden: 40 Stunden Vorbereitung, 64 Stunden Bau- und Gartenarbeiten sowie 76 Stunden für Bepflanzung und letzte Details.",
+      "Das Ergebnis ist ein Spielplatz, der zugleich als Lernraum dient — er fördert Kreativität, Teamarbeit und Umweltbewusstsein."
+    ],
+    "fr": [
+      "À Šišan, en Croatie, l’école maternelle locale « Bubamara » a été transformée en un espace vivant d’éducation et de jeu grâce à un projet communautaire qui a mobilisé 24 bénévoles, éducateurs et habitants. Financé en partie par la Fondation Stock, le projet comprenait la construction d’un pont en bois, la plantation de verdure méditerranéenne et des finitions colorées.",
+      "L’initiative a réuni parents, personnel et professionnels — 159 heures de travail au total : 40 heures de préparation, 64 heures de construction et d’aménagement paysager et 76 heures de plantation et de finitions.",
+      "Le résultat est une aire de jeux qui fait aussi office d’espace éducatif — favorisant la créativité, le travail d’équipe et la sensibilisation à l’environnement."
     ]
   }
 }

@@ -7,19 +7,28 @@
     "en": "12 September 2025",
     "pl": "12 września 2025",
     "cz": "12. září 2025",
-    "it": "12 settembre 2025"
+    "it": "12 settembre 2025",
+    "sk": "12. septembra 2025",
+    "de": "12. September 2025",
+    "fr": "12 septembre 2025"
   },
   "title": {
     "en": "Stock Foundation becomes a Public Benefit Organization (OPP)",
     "pl": "Fundacja Stock z oficjalnym statusem OPP",
     "cz": "Nadace Stock získala status veřejně prospěšné organizace (OPP)",
-    "it": "La Fondazione Stock diventa Organizzazione di Pubblica Utilità (OPP)"
+    "it": "La Fondazione Stock diventa Organizzazione di Pubblica Utilità (OPP)",
+    "sk": "Nadácia Stock s oficiálnym štatútom verejnoprospešnej organizácie (OPP)",
+    "de": "Stiftung Stock erhält offiziell den Status einer gemeinnützigen Organisation (OPP)",
+    "fr": "La Fondation Stock obtient officiellement le statut d’organisation d’utilité publique (OPP)"
   },
   "lead": {
     "en": "We are proud to share that the Stock Foundation has officially obtained the status of a Public Benefit Organization.",
     "pl": "Z dumą informujemy, że Fundacja Stock oficjalnie uzyskała status Organizacji Pożytku Publicznego.",
     "cz": "S hrdostí oznamujeme, že Nadace Stock oficiálně získala status veřejně prospěšné organizace.",
-    "it": "Siamo orgogliosi di annunciare che la Fondazione Stock ha ufficialmente ottenuto lo status di Organizzazione di Pubblica Utilità."
+    "it": "Siamo orgogliosi di annunciare che la Fondazione Stock ha ufficialmente ottenuto lo status di Organizzazione di Pubblica Utilità.",
+    "sk": "S hrdosťou oznamujeme, že Nadácia Stock oficiálne získala štatút verejnoprospešnej organizácie.",
+    "de": "Mit Stolz geben wir bekannt, dass die Stiftung Stock offiziell den Status einer gemeinnützigen Organisation erhalten hat.",
+    "fr": "Nous sommes fiers d’annoncer que la Fondation Stock a officiellement obtenu le statut d’organisation d’utilité publique."
   },
   "body": {
     "en": [
@@ -41,6 +50,21 @@
       "Siamo orgogliosi di annunciare che la Fondazione Stock ha ufficialmente ottenuto lo status di Organizzazione di Pubblica Utilità (OPP). Questa qualifica viene concessa alle istituzioni che soddisfano rigorosi standard legali e organizzativi e operano con piena trasparenza e professionalità.",
       "Con questo status riaffermiamo la nostra credibilità e apertura verso donatori, partner e pubblico. Possiamo ora ricevere l’1,5% delle imposte sul reddito delle persone fisiche in Polonia e otteniamo accesso a nuove sovvenzioni pubbliche e opportunità di finanziamento.",
       "Lo status OPP rafforza inoltre la nostra posizione nella cooperazione con istituzioni, organizzazioni partner e volontari. È una tappa importante nello sviluppo della Fondazione Stock, che ci permette di agire in modo ancora più efficace e di servire meglio la nostra comunità."
+    ],
+    "sk": [
+      "S hrdosťou oznamujeme, že Nadácia Stock oficiálne získala štatút verejnoprospešnej organizácie (OPP). Tento štatút sa udeľuje inštitúciám, ktoré spĺňajú prísne právne a organizačné štandardy a pôsobia plne transparentne a profesionálne.",
+      "Týmto štatútom potvrdzujeme svoju dôveryhodnosť a otvorenosť voči darcom, partnerom aj verejnosti. V Poľsku teraz môžeme prijímať 1,5 % z dane z príjmov fyzických osôb a získavame prístup k novým verejným grantom a možnostiam financovania.",
+      "Štatút OPP zároveň posilňuje našu pozíciu v spolupráci s inštitúciami, partnerskými organizáciami a dobrovoľníkmi. Je to dôležitý míľnik v rozvoji Nadácie Stock, ktorý nám umožňuje konať ešte účinnejšie a lepšie slúžiť našej komunite."
+    ],
+    "de": [
+      "Mit Stolz geben wir bekannt, dass die Stiftung Stock offiziell den Status einer gemeinnützigen Organisation (OPP) erhalten hat. Dieser Status wird Institutionen verliehen, die strenge rechtliche und organisatorische Standards erfüllen und vollkommen transparent und professionell arbeiten.",
+      "Mit diesem Status bekräftigen wir unsere Glaubwürdigkeit und Offenheit gegenüber Spenderinnen und Spendern, Partnern und der Öffentlichkeit. Wir können nun in Polen 1,5 % der Einkommensteuer natürlicher Personen erhalten und bekommen Zugang zu neuen öffentlichen Zuschüssen und Finanzierungsmöglichkeiten.",
+      "Der OPP-Status stärkt zudem unsere Position in der Zusammenarbeit mit Institutionen, Partnerorganisationen und Freiwilligen. Dies ist ein wichtiger Meilenstein in der Entwicklung der Stiftung Stock, der es uns ermöglicht, noch wirksamer zu handeln und unserer Gemeinschaft besser zu dienen."
+    ],
+    "fr": [
+      "Nous sommes fiers d’annoncer que la Fondation Stock a officiellement obtenu le statut d’organisation d’utilité publique (OPP). Ce statut est accordé aux institutions qui répondent à des normes juridiques et organisationnelles strictes et qui agissent en toute transparence et avec professionnalisme.",
+      "Ce statut confirme notre crédibilité et notre ouverture envers les donateurs, les partenaires et le public. Nous pouvons désormais recevoir en Pologne 1,5 % de l’impôt sur le revenu des personnes physiques et accéder à de nouvelles subventions publiques et possibilités de financement.",
+      "Le statut OPP renforce également notre position dans la coopération avec les institutions, les organisations partenaires et les bénévoles. C’est une étape importante dans le développement de la Fondation Stock, qui nous permet d’agir encore plus efficacement et de mieux servir notre communauté."
     ]
   }
 }

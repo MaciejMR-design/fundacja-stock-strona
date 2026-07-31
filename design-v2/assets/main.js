@@ -7,9 +7,19 @@ const LANGS = [
   { code: 'en', name: 'English' },
   { code: 'pl', name: 'Polski' },
   { code: 'cz', name: 'Čeština' },
-  { code: 'it', name: 'Italiano' }
-  // { code: 'de', name: 'Deutsch' }, { code: 'sk', name: 'Slovenčina' }, ...
+  { code: 'it', name: 'Italiano' },
+  { code: 'sk', name: 'Slovenčina' },
+  { code: 'de', name: 'Deutsch' },
+  { code: 'fr', name: 'Français' }
 ];
+
+/* Languages actually released to the public. build-langs.mjs sets
+   window.FS_PUBLIC_LANGS from its own PUBLIC_LANGS list — change it THERE, not
+   here. The rest stay in the picker as a disabled "coming soon" entry: the
+   translations are finished and deployed, they just await native-speaker sign-off.
+   Raw dev files (no build) show every language. */
+const PUBLIC_LANGS = Array.isArray(window.FS_PUBLIC_LANGS) ? window.FS_PUBLIC_LANGS : LANGS.map(l => l.code);
+const isPublic = code => PUBLIC_LANGS.includes(code);
 
 const COMMON_I18N = {
   en: {
@@ -17,6 +27,7 @@ const COMMON_I18N = {
     readMore: 'Read more', findOutMore: 'Find out more', home: 'Home',
     footerBlurb: 'A charitable foundation from Lublin helping refugees and local communities, and promoting art as therapy.',
     footerContact: 'Contact', footerCountry: 'Poland', footerNav: 'Explore',
+    cityLublin: 'Lublin', cityWarsaw: 'Warsaw', langSoon: 'coming soon',
     footerPrivacy: 'Privacy and Cookies',
     cookieText: 'We use necessary cookies to make the site work and — only with your consent — analytics cookies (Google Analytics) to understand how it is used.', cookieAccept: 'Accept all', cookieDecline: 'Necessary only', cookieMore: 'Learn more'
   },
@@ -25,6 +36,7 @@ const COMMON_I18N = {
     readMore: 'Czytaj więcej', findOutMore: 'Dowiedz się więcej', home: 'Strona główna',
     footerBlurb: 'Fundacja charytatywna z Lublina pomagająca uchodźcom i lokalnym społecznościom oraz promująca sztukę jako terapię.',
     footerContact: 'Kontakt', footerCountry: 'Polska', footerNav: 'Nawigacja',
+    cityLublin: 'Lublin', cityWarsaw: 'Warszawa', langSoon: 'wkrótce',
     footerPrivacy: 'Prywatność i cookies',
     cookieText: 'Używamy niezbędnych plików cookie, aby strona działała, oraz — wyłącznie za Twoją zgodą — analitycznych (Google Analytics), aby rozumieć, jak jest używana.', cookieAccept: 'Akceptuję wszystkie', cookieDecline: 'Tylko niezbędne', cookieMore: 'Dowiedz się więcej'
   },
@@ -33,6 +45,7 @@ const COMMON_I18N = {
     readMore: 'Číst dále', findOutMore: 'Zjistit více', home: 'Úvod',
     footerBlurb: 'Charitativní nadace z Lublinu pomáhající uprchlíkům a místním komunitám a podporující umění jako terapii.',
     footerContact: 'Kontakt', footerCountry: 'Polsko', footerNav: 'Prozkoumat',
+    cityLublin: 'Lublin', cityWarsaw: 'Varšava', langSoon: 'již brzy',
     footerPrivacy: 'Soukromí a cookies',
     cookieText: 'Používáme nezbytné soubory cookie, aby web fungoval, a — pouze s vaším souhlasem — analytické (Google Analytics), abychom rozuměli, jak se používá.', cookieAccept: 'Přijmout vše', cookieDecline: 'Pouze nezbytné', cookieMore: 'Zjistit více'
   },
@@ -41,15 +54,52 @@ const COMMON_I18N = {
     readMore: 'Leggi di più', findOutMore: 'Scopri di più', home: 'Home',
     footerBlurb: 'Una fondazione benefica di Lublino che aiuta rifugiati e comunità locali e promuove l’arte come terapia.',
     footerContact: 'Contatti', footerCountry: 'Polonia', footerNav: 'Esplora',
+    cityLublin: 'Lublino', cityWarsaw: 'Varsavia', langSoon: 'presto',
     footerPrivacy: 'Privacy e cookie',
     cookieText: 'Utilizziamo cookie necessari per far funzionare il sito e — solo con il tuo consenso — cookie analitici (Google Analytics) per capire come viene utilizzato.', cookieAccept: 'Accetta tutti', cookieDecline: 'Solo necessari', cookieMore: 'Scopri di più'
+  },
+  sk: {
+    navMission: 'Misia', navAbout: 'O nás', navStatute: 'Štatút a správy', navCouncil: 'Rada a predstavenstvo', navNews: 'Aktuality', navContact: 'Kontakt',
+    readMore: 'Čítať ďalej', findOutMore: 'Zistiť viac', home: 'Domov',
+    footerBlurb: 'Charitatívna nadácia z Lublina, ktorá pomáha utečencom a miestnym komunitám a podporuje umenie ako terapiu.',
+    footerContact: 'Kontakt', footerCountry: 'Poľsko', footerNav: 'Preskúmať',
+    cityLublin: 'Lublin', cityWarsaw: 'Varšava', langSoon: 'čoskoro',
+    footerPrivacy: 'Súkromie a cookies',
+    cookieText: 'Používame nevyhnutné súbory cookie, aby stránka fungovala, a — iba s vaším súhlasom — analytické (Google Analytics), aby sme rozumeli, ako sa používa.', cookieAccept: 'Prijať všetky', cookieDecline: 'Iba nevyhnutné', cookieMore: 'Zistiť viac'
+  },
+  de: {
+    navMission: 'Mission', navAbout: 'Über uns', navStatute: 'Satzung & Berichte', navCouncil: 'Stiftungsrat & Vorstand', navNews: 'Aktuelles', navContact: 'Kontakt',
+    readMore: 'Weiterlesen', findOutMore: 'Mehr erfahren', home: 'Startseite',
+    footerBlurb: 'Eine gemeinnützige Stiftung aus Lublin, die Geflüchteten und lokalen Gemeinschaften hilft und Kunst als Therapie fördert.',
+    footerContact: 'Kontakt', footerCountry: 'Polen', footerNav: 'Entdecken',
+    cityLublin: 'Lublin', cityWarsaw: 'Warschau', langSoon: 'demnächst',
+    footerPrivacy: 'Datenschutz und Cookies',
+    cookieText: 'Wir verwenden notwendige Cookies, damit die Website funktioniert, und — nur mit Ihrer Einwilligung — Analyse-Cookies (Google Analytics), um zu verstehen, wie sie genutzt wird.', cookieAccept: 'Alle akzeptieren', cookieDecline: 'Nur notwendige', cookieMore: 'Mehr erfahren'
+  },
+  fr: {
+    navMission: 'Mission', navAbout: 'À propos', navStatute: 'Statuts et rapports', navCouncil: 'Conseil et direction', navNews: 'Actualités', navContact: 'Contact',
+    readMore: 'Lire la suite', findOutMore: 'En savoir plus', home: 'Accueil',
+    footerBlurb: 'Une fondation caritative de Lublin qui aide les réfugiés et les communautés locales et promeut l’art comme thérapie.',
+    footerContact: 'Contact', footerCountry: 'Pologne', footerNav: 'Explorer',
+    cityLublin: 'Lublin', cityWarsaw: 'Varsovie', langSoon: 'bientôt',
+    footerPrivacy: 'Confidentialité et cookies',
+    cookieText: 'Nous utilisons des cookies nécessaires au fonctionnement du site et — uniquement avec votre consentement — des cookies analytiques (Google Analytics) pour comprendre comment il est utilisé.', cookieAccept: 'Tout accepter', cookieDecline: 'Nécessaires uniquement', cookieMore: 'En savoir plus'
   }
 };
 
-const PAGE = (typeof PAGE_I18N !== 'undefined') ? PAGE_I18N : { en: {}, pl: {}, cz: {}, it: {} };
+const PAGE = (typeof PAGE_I18N !== 'undefined') ? PAGE_I18N : { en: {}, pl: {}, cz: {}, it: {}, sk: {}, de: {}, fr: {} };
 function dict(lang) {
   return Object.assign({}, COMMON_I18N.en, (PAGE.en || {}), COMMON_I18N[lang] || {}, PAGE[lang] || {});
 }
+
+/* ---------- i18n ----------
+   With the static language builds each URL carries its own language via
+   window.FS_LANG (set in <head> by build-langs.mjs). English lives at the
+   root, the others in subdirectories. Without FS_LANG (raw dev files) we fall
+   back to the old localStorage behaviour. Declared before buildHeader() runs,
+   because the language picker needs it to label the "coming soon" entries. */
+let currentLang = window.FS_LANG || localStorage.getItem('fs-lang') || 'en';
+if (!LANGS.some(l => l.code === currentLang)) currentLang = 'en';
 
 /* ---------- inject header + footer ---------- */
 const NAV = [
@@ -62,7 +112,11 @@ function buildHeader() {
   const h = document.getElementById('site-header');
   if (!h) return;
   const links = NAV.map(([href, k]) => `<a href="${href}" data-i18n="${k}"></a>`).join('');
-  const langItems = LANGS.map(l => `<li><button data-lang="${l.code}"><span class="code">${l.code.toUpperCase()}</span>${l.name}</button></li>`).join('');
+  const soonLabel = dict(currentLang).langSoon;
+  const langItems = LANGS.map(l => isPublic(l.code)
+    ? `<li><button data-lang="${l.code}"><span class="code">${l.code.toUpperCase()}</span>${l.name}</button></li>`
+    : `<li><button data-lang="${l.code}" class="soon" disabled aria-disabled="true"><span class="code">${l.code.toUpperCase()}</span>${l.name}<span class="soon-tag">${soonLabel}</span></button></li>`
+  ).join('');
   h.innerHTML = `
     <div class="container header-inner">
       <a href="index.html" class="logo"><img src="/uploads/logo-footer.svg" alt="Stock Foundation"></a>
@@ -92,7 +146,7 @@ function buildFooter() {
         </div>
         <div class="footer-col">
           <span class="head" data-i18n="footerContact"></span>
-          <span class="info">Spółdzielcza 6<br>20-402 Lublin, <span data-i18n="footerCountry"></span></span>
+          <span class="info">Spółdzielcza 6<br>20-402 <span data-i18n="cityLublin"></span>, <span data-i18n="footerCountry"></span></span>
           <a href="tel:+48538183916" style="font-weight:600;color:#fff;">+48 538 183 916</a>
           <a href="https://www.facebook.com/fundacjastock/" aria-label="Facebook" class="li-badge" target="_blank" rel="noopener">${FB_SVG}</a>
         </div>
@@ -116,14 +170,6 @@ function buildFooter() {
 
 buildHeader();
 buildFooter();
-
-/* ---------- i18n ----------
-   With the static language builds each URL carries its own language via
-   window.FS_LANG (set in <head> by build-langs.mjs). English lives at the
-   root, pl/cz/it in subdirectories. Without FS_LANG (raw dev files) we fall
-   back to the old localStorage behaviour. */
-let currentLang = window.FS_LANG || localStorage.getItem('fs-lang') || 'en';
-if (!LANGS.some(l => l.code === currentLang)) currentLang = 'en';
 
 /* URL of the current page in another language version (en = root) */
 function langHref(code) {
@@ -163,6 +209,7 @@ if (langDD && langBtn) {
   });
   langDD.querySelectorAll('.lang-list button').forEach(btn => {
     btn.addEventListener('click', () => {
+      if (!isPublic(btn.dataset.lang)) return;   // unreleased — picker entry is inert
       langDD.classList.remove('open');
       langBtn.setAttribute('aria-expanded', 'false');
       if (btn.dataset.lang === currentLang) return;
@@ -176,13 +223,15 @@ if (langDD && langBtn) {
 
 applyLang(currentLang, true);
 
-/* active nav link */
-const path = location.pathname.split('/').pop() || 'index.html';
-const activeFor = { 'article.html': 'news.html', 'person.html': 'board-council.html' };
-const activePath = activeFor[path] || path;
+/* active nav link — the filename is normalised without its .html suffix so this
+   works whether or not the host serves extensionless URLs, and every static
+   article-<id> page highlights News (same for person-* → Council & Board). */
+const file = (location.pathname.split('/').pop() || '').replace(/\.html$/, '');
+const activeFor = { '': 'index.html', 'article': 'news.html', 'person': 'board-council.html' };
+const activePath = activeFor[file] ||
+  (file.startsWith('article-') ? 'news.html' : file.startsWith('person-') ? 'board-council.html' : file + '.html');
 document.querySelectorAll('.main-nav a, .mobile-nav a').forEach(a => {
-  const href = a.getAttribute('href');
-  if (href === activePath || (activePath === '' && href === 'index.html')) a.classList.add('active');
+  if (a.getAttribute('href') === activePath) a.classList.add('active');
 });
 
 /* header shadow + back-to-top */

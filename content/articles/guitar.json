@@ -7,19 +7,28 @@
     "en": "16 March 2026",
     "pl": "16 marca 2026",
     "cz": "16. března 2026",
-    "it": "16 marzo 2026"
+    "it": "16 marzo 2026",
+    "sk": "16. marca 2026",
+    "de": "16. März 2026",
+    "fr": "16 mars 2026"
   },
   "title": {
     "en": "Meet our new volunteer — renowned luthier Łukasz Murawski",
     "pl": "Poznajcie naszego wolontariusza — lutnika Łukasza Murawskiego",
     "cz": "Poznejte našeho dobrovolníka — houslaře Łukasze Murawského",
-    "it": "Il nostro nuovo volontario — il liutaio Łukasz Murawski"
+    "it": "Il nostro nuovo volontario — il liutaio Łukasz Murawski",
+    "sk": "Spoznajte nášho dobrovoľníka — nástrojára Łukasza Murawského",
+    "de": "Lernen Sie unseren Freiwilligen kennen — den Gitarrenbauer Łukasz Murawski",
+    "fr": "Découvrez notre bénévole — le luthier Łukasz Murawski"
   },
   "lead": {
     "en": "The Stock Foundation is proud to share that we have gained an extraordinary volunteer — a master luthier and creator of electric guitars.",
     "pl": "Fundacja Stock z dumą informuje, że pozyskaliśmy niezwykłego wolontariusza — mistrza lutnictwa i twórcę gitar elektrycznych.",
     "cz": "Nadace Stock s hrdostí oznamuje, že jsme získali výjimečného dobrovolníka — mistra houslaře a tvůrce elektrických kytar.",
-    "it": "La Fondazione Stock è orgogliosa di annunciare di aver acquisito un volontario straordinario — un maestro liutaio e creatore di chitarre elettriche."
+    "it": "La Fondazione Stock è orgogliosa di annunciare di aver acquisito un volontario straordinario — un maestro liutaio e creatore di chitarre elettriche.",
+    "sk": "Nadácia Stock s hrdosťou oznamuje, že sme získali výnimočného dobrovoľníka — majstra nástrojára a tvorcu elektrických gitár.",
+    "de": "Die Stiftung Stock ist stolz, mitteilen zu können, dass wir einen außergewöhnlichen Freiwilligen gewonnen haben — einen Meister des Gitarrenbaus und Erbauer von E-Gitarren.",
+    "fr": "La Fondation Stock est fière d’annoncer qu’elle a accueilli un bénévole extraordinaire — un maître luthier et créateur de guitares électriques."
   },
   "body": {
     "en": [
@@ -41,6 +50,21 @@
       "Łukasz Murawski, creatore di chitarre elettriche, dopo aver appreso del nostro programma di borse di studio musicali per giovani talentuosi costretti ad abbandonare l’educazione musicale a causa dello scoppio della guerra, ha deciso di agire. Ha generosamente donato la sua chitarra elettrica artigianale ai partecipanti del nostro programma.",
       "Lo strumento è stato ricevuto dai nostri insegnanti, Olga e Mirek di Homo Faber, che contribuiranno a farne buon uso. Lo strumento è davvero eccezionale — splendidamente realizzato, leggero, facile da suonare e con un suono fantastico, che lo rende perfetto per imparare e sviluppare le abilità musicali.",
       "Siamo profondamente grati per questo straordinario gesto e sostegno."
+    ],
+    "sk": [
+      "Łukasz Murawski, tvorca elektrických gitár, sa po tom, čo sa dozvedel o našom programe hudobných štipendií pre talentovaných mladých ľudí, ktorí museli pre vypuknutie vojny opustiť hudobné vzdelávanie, rozhodol konať. Veľkoryso venoval svoju ručne vyrobenú elektrickú gitaru účastníkom nášho programu.",
+      "Nástroj prevzali naši učitelia Olga a Mirek z Homo Faber, ktorí sa postarajú o jeho skvelé využitie. Nástroj je naozaj výnimočný — krásne vyrobený, ľahký, ľahko sa na ňom hrá a má fantastický zvuk, vďaka čomu je ideálny na učenie a rozvíjanie hudobných zručností.",
+      "Sme hlboko vďační za toto pozoruhodné gesto a podporu."
+    ],
+    "de": [
+      "Łukasz Murawski, Erbauer von E-Gitarren, beschloss zu handeln, nachdem er von unserem Musikstipendienprogramm für talentierte junge Menschen erfahren hatte, die ihre musikalische Ausbildung wegen des Kriegsausbruchs aufgeben mussten. Großzügig schenkte er den Teilnehmern unseres Programms seine handgefertigte E-Gitarre.",
+      "Das Instrument nahmen unsere Lehrer Olga und Mirek von Homo Faber entgegen, die dafür sorgen werden, dass es bestens genutzt wird. Das Instrument ist wirklich außergewöhnlich — wunderschön gefertigt, leicht, einfach zu spielen und mit einem fantastischen Klang, was es ideal zum Lernen und zur Entwicklung musikalischer Fähigkeiten macht.",
+      "Wir sind zutiefst dankbar für diese bemerkenswerte Geste und Unterstützung."
+    ],
+    "fr": [
+      "Łukasz Murawski, créateur de guitares électriques, a décidé d’agir après avoir appris l’existence de notre programme de bourses musicales destiné à de jeunes talents contraints d’abandonner leur éducation musicale en raison de l’éclatement de la guerre. Il a généreusement offert sa guitare électrique fabriquée à la main aux participants de notre programme.",
+      "L’instrument a été remis à nos enseignants, Olga et Mirek de Homo Faber, qui veilleront à ce qu’il soit bien utilisé. C’est un instrument vraiment exceptionnel — magnifiquement réalisé, léger, facile à jouer et doté d’une sonorité fantastique, ce qui le rend idéal pour apprendre et développer ses compétences musicales.",
+      "Nous sommes profondément reconnaissants pour ce geste remarquable et ce soutien."
     ]
   }
 }

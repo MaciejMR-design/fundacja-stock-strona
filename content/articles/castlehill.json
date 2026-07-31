@@ -7,19 +7,28 @@
     "en": "24 October 2025",
     "pl": "24 października 2025",
     "cz": "24. října 2025",
-    "it": "24 ottobre 2025"
+    "it": "24 ottobre 2025",
+    "sk": "24. októbra 2025",
+    "de": "24. Oktober 2025",
+    "fr": "24 octobre 2025"
   },
   "title": {
     "en": "Anna Czajczyk leads a history session for seniors at City Hall",
     "pl": "Anna Czajczyk prowadzi spotkanie historyczne dla seniorów w ratuszu",
     "cz": "Anna Czajczyk vede historické setkání pro seniory na radnici",
-    "it": "Anna Czajczyk guida una sessione di storia per anziani al municipio"
+    "it": "Anna Czajczyk guida una sessione di storia per anziani al municipio",
+    "sk": "Anna Czajczyk vedie historické stretnutie pre seniorov na radnici",
+    "de": "Anna Czajczyk leitet ein Geschichtstreffen für Senioren im Rathaus",
+    "fr": "Anna Czajczyk anime une rencontre historique pour les seniors à l’hôtel de ville"
   },
   "lead": {
     "en": "A talk about the history of Lublin’s Castle Hill — from the medieval stronghold to the Chapel of the Holy Trinity.",
     "pl": "Opowieść o historii lubelskiego Wzgórza Zamkowego — od średniowiecznego grodu po Kaplicę Trójcy Świętej.",
     "cz": "Vyprávění o historii lublinského Zámeckého vrchu — od středověkého hradiště po kapli Nejsvětější Trojice.",
-    "it": "Una conferenza sulla storia della Collina del Castello di Lublino — dalla fortezza medievale alla Cappella della Santissima Trinità."
+    "it": "Una conferenza sulla storia della Collina del Castello di Lublino — dalla fortezza medievale alla Cappella della Santissima Trinità.",
+    "sk": "Rozprávanie o histórii lublinského Zámockého vŕšku — od stredovekého hradiska po Kaplnku Najsvätejšej Trojice.",
+    "de": "Ein Vortrag über die Geschichte des Lubliner Schlossbergs — von der mittelalterlichen Burgsiedlung bis zur Kapelle der Heiligen Dreifaltigkeit.",
+    "fr": "Un récit sur l’histoire de la colline du Château de Lublin — de la place forte médiévale à la chapelle de la Sainte-Trinité."
   },
   "body": {
     "en": [
@@ -41,6 +50,21 @@
       "Il 24 ottobre si è tenuto al municipio un evento per anziani con Anna Czajczyk, esperta curatrice d’arte. Ha guidato una conferenza sulla storia della Collina del Castello di Lublino, concentrandosi su come il luogo sia cambiato nei secoli.",
       "Ha parlato delle origini della fortezza medievale, della costruzione della torre gotica e della successiva trasformazione del castello in prigione nel XIX e XX secolo. Ha anche spiegato come la Cappella della Santissima Trinità sia diventata uno dei più importanti monumenti dell’arte medievale polacca.",
       "I partecipanti hanno apprezzato la possibilità di conoscere la storia locale in modo chiaro e accessibile."
+    ],
+    "sk": [
+      "24. októbra sa na radnici konalo podujatie pre seniorov s Annou Czajczyk, skúsenou kurátorkou. Viedla rozprávanie o histórii lublinského Zámockého vŕšku a zamerala sa na to, ako sa toto miesto menilo v priebehu storočí.",
+      "Hovorila o počiatkoch stredovekého hradiska, stavbe gotickej veže a neskoršej premene hradu na väzenie v 19. a 20. storočí. Vysvetlila tiež, ako sa Kaplnka Najsvätejšej Trojice stala jednou z najvýznamnejších pamiatok poľského stredovekého umenia.",
+      "Účastníci ocenili možnosť spoznať miestnu históriu jasným a prístupným spôsobom."
+    ],
+    "de": [
+      "Am 24. Oktober fand im Rathaus eine Veranstaltung für Senioren mit Anna Czajczyk statt, einer erfahrenen Kuratorin. Sie hielt einen Vortrag über die Geschichte des Lubliner Schlossbergs und zeigte, wie sich dieser Ort im Laufe der Jahrhunderte verändert hat.",
+      "Sie sprach über die Anfänge der mittelalterlichen Burgsiedlung, den Bau des gotischen Turms und die spätere Umwandlung des Schlosses in ein Gefängnis im 19. und 20. Jahrhundert. Sie erklärte auch, wie die Kapelle der Heiligen Dreifaltigkeit zu einem der bedeutendsten Denkmäler der polnischen mittelalterlichen Kunst wurde.",
+      "Die Teilnehmer schätzten die Gelegenheit, die lokale Geschichte auf klare und zugängliche Weise kennenzulernen."
+    ],
+    "fr": [
+      "Le 24 octobre, un événement pour les seniors s’est tenu à l’hôtel de ville avec Anna Czajczyk, conservatrice expérimentée. Elle a raconté l’histoire de la colline du Château de Lublin, en montrant comment ce lieu a évolué au fil des siècles.",
+      "Elle a évoqué les origines de la place forte médiévale, la construction de la tour gothique et la transformation ultérieure du château en prison aux XIXe et XXe siècles. Elle a également expliqué comment la chapelle de la Sainte-Trinité est devenue l’un des monuments les plus importants de l’art médiéval polonais.",
+      "Les participants ont apprécié de pouvoir découvrir l’histoire locale de manière claire et accessible."
     ]
   }
 }

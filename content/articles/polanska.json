@@ -7,19 +7,28 @@
     "en": "May 2024",
     "pl": "Maj 2024",
     "cz": "Květen 2024",
-    "it": "Maggio 2024"
+    "it": "Maggio 2024",
+    "sk": "Máj 2024",
+    "de": "Mai 2024",
+    "fr": "mai 2024"
   },
   "title": {
     "en": "Meetings with Art — curator Jolanta Polańska",
     "pl": "Spotkania ze Sztuką — kustosz Jolanta Polańska",
     "cz": "Setkání s uměním — kurátorka Jolanta Polańska",
-    "it": "Incontri con l’Arte — la curatrice Jolanta Polańska"
+    "it": "Incontri con l’Arte — la curatrice Jolanta Polańska",
+    "sk": "Stretnutia s umením — kurátorka Jolanta Polańska",
+    "de": "Kunstbegegnungen — Kuratorin Jolanta Polańska",
+    "fr": "Rencontres avec l’art — la conservatrice Jolanta Polańska"
   },
   "lead": {
     "en": "The first events of our new initiative were led by the Senior Curator of the National Museum in Lublin, with over 40 years of museum experience.",
     "pl": "Pierwsze wydarzenia naszej nowej inicjatywy poprowadziła starsza kustosz Muzeum Narodowego w Lublinie, z ponad 40-letnim doświadczeniem muzealnym.",
     "cz": "První akce naší nové iniciativy vedla starší kurátorka Národního muzea v Lublinu s více než 40 lety muzejní praxe.",
-    "it": "I primi eventi della nostra nuova iniziativa sono stati guidati dalla curatrice senior del Museo Nazionale di Lublino, con oltre 40 anni di esperienza museale."
+    "it": "I primi eventi della nostra nuova iniziativa sono stati guidati dalla curatrice senior del Museo Nazionale di Lublino, con oltre 40 anni di esperienza museale.",
+    "sk": "Prvé podujatia našej novej iniciatívy viedla staršia kurátorka Národného múzea v Lubline s viac ako 40-ročnými skúsenosťami z múzejnej práce.",
+    "de": "Die ersten Veranstaltungen unserer neuen Initiative leitete die leitende Kuratorin des Nationalmuseums in Lublin mit über 40 Jahren Museumserfahrung.",
+    "fr": "Les premières rencontres de notre nouvelle initiative ont été animées par la conservatrice principale du Musée national de Lublin, forte de plus de 40 ans d’expérience muséale."
   },
   "body": {
     "en": [
@@ -41,6 +50,21 @@
       "I primi eventi della nuova iniziativa della Fondazione Stock — Incontri con l’Arte — sono stati guidati dalla signora Jolanta Polańska, curatrice senior del Museo Nazionale di Lublino; il museo fornisce supporto scientifico al nostro progetto. La signora Jolanta ha un’esperienza impressionante di oltre 40 anni di lavoro al museo e ha curato molte mostre. Tiene lezioni sulle attività museali e sulla storia dell’arte e da 10 anni dirige la sezione museale dell’Università della Terza Età di Lublino.",
       "Le conferenze del ciclo Incontri con l’Arte si sono tenute nella sede del Complesso dei Centri di Sostegno in via Lwowska 28 a Lublino. La signora Jolanta ha invitato gli ospiti nell’affascinante mondo dell’artistica famiglia Kossak.",
       "Gli incontri sono stati molto apprezzati dagli anziani, attirando molte persone assistite dal Complesso dei Centri di Sostegno. L’iniziativa mira a facilitare il contatto con l’arte alle persone che vi hanno un accesso difficile o che per varie ragioni personali hanno bisogno di sostegno."
+    ],
+    "sk": [
+      "Prvé podujatia novej iniciatívy Nadácie Stock — Stretnutí s umením — viedla pani Jolanta Polańska, staršia kurátorka Národného múzea v Lubline; múzeum poskytuje nášmu projektu odbornú podporu. Pani Jolanta má úctyhodné, viac ako 40-ročné skúsenosti z práce v múzeu a kurátorsky pripravila mnoho výstav. Vedie kurzy o múzejnej činnosti a dejinách umenia a už 10 rokov vedie múzejnú sekciu Lublinskej univerzity tretieho veku.",
+      "Prednášky z cyklu Stretnutia s umením sa konali v sídle Združenia centier podpory na ulici Lwowska 28 v Lubline. Pani Jolanta pozvala hostí do fascinujúceho sveta umeleckej rodiny Kossakovcov.",
+      "Stretnutia sa medzi seniormi tešili veľkej obľube a prilákali mnoho ľudí, ktorí využívajú pomoc Združenia centier podpory. Cieľom iniciatívy je uľahčiť kontakt s umením ľuďom, ktorí k nemu majú sťažený prístup alebo z rôznych osobných dôvodov potrebujú podporu."
+    ],
+    "de": [
+      "Die ersten Veranstaltungen der neuen Initiative der Stiftung Stock — der Kunstbegegnungen — leitete Frau Jolanta Polańska, leitende Kuratorin des Nationalmuseums in Lublin; das Museum unterstützt unser Projekt fachlich. Frau Jolanta verfügt über beeindruckende, mehr als 40-jährige Erfahrung in der Museumsarbeit und hat zahlreiche Ausstellungen kuratiert. Sie gibt Kurse über Museumsarbeit und Kunstgeschichte und leitet seit 10 Jahren die Museumssektion der Lubliner Universität des Dritten Lebensalters.",
+      "Die Vorträge aus der Reihe Kunstbegegnungen fanden am Sitz des Verbunds der Unterstützungszentren in der Lwowska-Straße 28 in Lublin statt. Frau Jolanta lud die Gäste in die faszinierende Welt der Künstlerfamilie Kossak ein.",
+      "Die Treffen erfreuten sich bei den Seniorinnen und Senioren großer Beliebtheit und zogen viele Menschen an, die die Hilfe des Verbunds der Unterstützungszentren in Anspruch nehmen. Ziel der Initiative ist es, Menschen den Kontakt mit Kunst zu erleichtern, die nur erschwerten Zugang zu ihr haben oder aus verschiedenen persönlichen Gründen Unterstützung brauchen."
+    ],
+    "fr": [
+      "Les premières rencontres de la nouvelle initiative de la Fondation Stock — les Rencontres avec l’art — ont été animées par Mme Jolanta Polańska, conservatrice principale du Musée national de Lublin ; le musée apporte à notre projet son soutien scientifique. Mme Jolanta possède une impressionnante expérience de plus de 40 ans de travail au musée et a assuré le commissariat de nombreuses expositions. Elle anime des cours sur l’activité muséale et l’histoire de l’art et dirige depuis 10 ans la section musée de l’Université du troisième âge de Lublin.",
+      "Les conférences du cycle Rencontres avec l’art se sont tenues au siège de l’Ensemble des centres de soutien, rue Lwowska 28, à Lublin. Mme Jolanta a invité les participants dans le monde fascinant de la famille d’artistes Kossak.",
+      "Les rencontres ont connu un grand succès auprès des seniors, attirant de nombreuses personnes bénéficiant de l’aide de l’Ensemble des centres de soutien. L’initiative vise à faciliter le contact avec l’art aux personnes qui y ont difficilement accès ou qui, pour diverses raisons personnelles, ont besoin de soutien."
     ]
   }
 }

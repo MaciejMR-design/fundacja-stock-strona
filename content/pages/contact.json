@@ -46,5 +46,41 @@
     "euTitle": "Dodici luoghi sulla mappa",
     "euLead": "Stabilimenti e uffici di rappresentanza del Gruppo Stock in tutta Europa.",
     "euHint": "Tocca un punto sulla mappa per vedere la città"
+  },
+  "sk": {
+    "pageTitle": "Kontakt",
+    "pageLead": "Ozvite sa nám — radi sa porozprávame o spolupráci, dobrovoľníctve a podpore.",
+    "c1Title": "Kancelária nadácie",
+    "c2Title": "Napíšte nám",
+    "c2Text": "V otázkach spolupráce, médií a dobrovoľníctva:",
+    "c3Title": "Kancelária zakladateľa",
+    "euOverline": "Stock v Európe",
+    "euTitle": "Dvanásť miest na mape",
+    "euLead": "Závody a zastúpenia skupiny Stock po celej Európe.",
+    "euHint": "Ťuknite na bod na mape a zobrazí sa mesto"
+  },
+  "de": {
+    "pageTitle": "Kontakt",
+    "pageLead": "Nehmen Sie Kontakt mit uns auf — wir sprechen gerne über Zusammenarbeit, Freiwilligenarbeit und Unterstützung.",
+    "c1Title": "Büro der Stiftung",
+    "c2Title": "Schreiben Sie uns",
+    "c2Text": "Für Anfragen zu Zusammenarbeit, Medien und Freiwilligenarbeit:",
+    "c3Title": "Büro des Stifters",
+    "euOverline": "Stock in Europa",
+    "euTitle": "Zwölf Orte auf der Karte",
+    "euLead": "Werke und Vertretungen der Stock Group in ganz Europa.",
+    "euHint": "Tippen Sie auf einen Punkt auf der Karte, um die Stadt zu sehen"
+  },
+  "fr": {
+    "pageTitle": "Contact",
+    "pageLead": "Contactez-nous — nous serons ravis de parler de coopération, de bénévolat et de soutien.",
+    "c1Title": "Bureau de la fondation",
+    "c2Title": "Écrivez-nous",
+    "c2Text": "Pour toute question concernant les partenariats, les médias et le bénévolat :",
+    "c3Title": "Bureau du fondateur",
+    "euOverline": "Stock en Europe",
+    "euTitle": "Douze lieux sur la carte",
+    "euLead": "Usines et bureaux de représentation du groupe Stock dans toute l’Europe.",
+    "euHint": "Touchez un point sur la carte pour voir la ville"
   }
 }

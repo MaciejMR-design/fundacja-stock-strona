@@ -7,19 +7,28 @@
     "en": "August 2024",
     "pl": "Sierpień 2024",
     "cz": "Srpen 2024",
-    "it": "Agosto 2024"
+    "it": "Agosto 2024",
+    "sk": "August 2024",
+    "de": "August 2024",
+    "fr": "août 2024"
   },
   "title": {
     "en": "Flavours of Change — a grant for the Czernięcin fire brigade",
     "pl": "Flavours of Change — grant dla OSP Czernięcin",
     "cz": "Flavours of Change — grant pro hasiče z Czernięcina",
-    "it": "Flavours of Change — una sovvenzione per i vigili del fuoco di Czernięcin"
+    "it": "Flavours of Change — una sovvenzione per i vigili del fuoco di Czernięcin",
+    "sk": "Flavours of Change — grant pre dobrovoľných hasičov z Czernięcina",
+    "de": "Flavours of Change — ein Zuschuss für die Feuerwehr in Czernięcin",
+    "fr": "Flavours of Change — une subvention pour les pompiers de Czernięcin"
   },
   "lead": {
     "en": "Volunteer Sebastian Puchała obtained funds to renovate the fire station — cutting the brigade’s response time to under four minutes.",
     "pl": "Wolontariusz Sebastian Puchała pozyskał środki na remont remizy — skracając czas reakcji strażaków do poniżej czterech minut.",
     "cz": "Dobrovolník Sebastian Puchała získal prostředky na renovaci hasičské zbrojnice — a zkrátil dobu reakce sboru pod čtyři minuty.",
-    "it": "Il volontario Sebastian Puchała ha ottenuto i fondi per ristrutturare la caserma — riducendo i tempi di risposta a meno di quattro minuti."
+    "it": "Il volontario Sebastian Puchała ha ottenuto i fondi per ristrutturare la caserma — riducendo i tempi di risposta a meno di quattro minuti.",
+    "sk": "Dobrovoľník Sebastian Puchała získal prostriedky na rekonštrukciu hasičskej zbrojnice — a skrátil čas reakcie hasičov pod štyri minúty.",
+    "de": "Der Freiwillige Sebastian Puchała hat Mittel für die Renovierung des Feuerwehrhauses eingeworben — und die Einsatzzeit der Feuerwehr auf unter vier Minuten verkürzt.",
+    "fr": "Le bénévole Sebastian Puchała a obtenu des fonds pour rénover la caserne — ramenant le temps de réaction des pompiers à moins de quatre minutes."
   },
   "body": {
     "en": [
@@ -45,6 +54,24 @@
       "Sebastian Puchała, attivamente impegnato come volontario, ha ottenuto i fondi per la ristrutturazione della caserma. L’uscita rinnovata e un nuovo sistema di drenaggio accelereranno i tempi di risposta e ridurranno il tempo dalla chiamata all’azione a meno di quattro minuti. Migliori condizioni di lavoro si traducono direttamente in operazioni di soccorso più efficienti.",
       "La brigata dispone di 30 vigili del fuoco e di un veicolo — un logoro Star è stato sostituito da un più moderno MAN. L’unità ha recentemente celebrato il suo magnifico centenario e guarda con orgoglio sia al passato che al futuro — i giovani sono desiderosi di partecipare alle sue attività.",
       "Le iniziative sostenute dalla Fondazione Stock rafforzano le comunità locali e contribuiscono a migliorarne la sicurezza, e l’impegno dei volontari fa davvero la differenza per la qualità della vita di queste comunità."
+    ],
+    "sk": [
+      "Program „Flavours of Change Grants“ Nadácie Stock podporuje miestne komunity grantmi na pomocné projekty, do ktorých sa ako dobrovoľníci zapájajú zamestnanci Stock Polska. Spustil sa začiatkom roka a medzi víťazmi boli projekty z Česka, Talianska, Poľska a Chorvátska. Tentoraz grant putoval k dobrovoľnému hasičskému zboru v Czernięcine pri Lubline.",
+      "Sebastian Puchała, aktívne zapojený ako dobrovoľník, získal prostriedky na rekonštrukciu hasičskej zbrojnice. Opravený výjazd a nový odvodňovací systém urýchlia reakciu hasičov a skrátia čas od výzvy po zásah na necelé štyri minúty. Lepšie pracovné podmienky sa priamo premietajú do efektívnejších záchranných akcií.",
+      "Jednotka má k dispozícii 30 hasičov a jedno vozidlo — opotrebovaný Star nahradil modernejší MAN. Zbor nedávno oslávil veľkolepé 100. výročie a hrdo hľadí do minulosti aj do budúcnosti — do jeho činnosti sa radi zapájajú mladí ľudia.",
+      "Iniciatívy podporované Nadáciou Stock posilňujú miestne komunity a prispievajú k zlepšeniu ich bezpečnosti a zapojenie dobrovoľníkov skutočne mení kvalitu života v týchto obciach."
+    ],
+    "de": [
+      "Das Programm „Flavours of Change Grants“ der Stiftung Stock unterstützt lokale Gemeinschaften mit Zuschüssen für Hilfsprojekte, in denen sich Mitarbeitende von Stock Polska als Freiwillige engagieren. Es startete Anfang des Jahres, und zu den Gewinnern zählten Projekte aus Tschechien, Italien, Polen und Kroatien. Diesmal ging ein Zuschuss an die Freiwillige Feuerwehr in Czernięcin bei Lublin.",
+      "Sebastian Puchała, der sich aktiv als Freiwilliger engagiert, warb Mittel für die Renovierung des Feuerwehrhauses ein. Die sanierte Ausfahrt und ein neues Entwässerungssystem beschleunigen die Reaktion der Feuerwehr und verkürzen die Zeit vom Alarm bis zum Einsatz auf weniger als vier Minuten. Bessere Arbeitsbedingungen schlagen sich unmittelbar in effizienteren Rettungseinsätzen nieder.",
+      "Die Einheit verfügt über 30 Feuerwehrleute und ein Fahrzeug — ein ausgedienter Star wurde durch einen moderneren MAN ersetzt. Die Wehr feierte kürzlich ihr großartiges 100-jähriges Jubiläum und blickt mit Stolz sowohl in die Vergangenheit als auch in die Zukunft — junge Menschen engagieren sich gern in ihren Reihen.",
+      "Die von der Stiftung Stock unterstützten Initiativen stärken lokale Gemeinschaften und tragen zu ihrer Sicherheit bei, und das Engagement der Freiwilligen verändert die Lebensqualität in diesen Orten ganz konkret."
+    ],
+    "fr": [
+      "Le programme « Flavours of Change Grants » de la Fondation Stock soutient les communautés locales par des subventions destinées à des projets d’entraide dans lesquels les salariés de Stock Polska s’engagent comme bénévoles. Lancé au début de l’année, il a récompensé des projets venus de Tchéquie, d’Italie, de Pologne et de Croatie. Cette fois, une subvention a été attribuée aux pompiers volontaires de Czernięcin, près de Lublin.",
+      "Sebastian Puchała, bénévole très engagé, a obtenu des fonds pour la rénovation de la caserne. La sortie rénovée et un nouveau système de drainage accéléreront la réaction des pompiers et ramèneront le temps entre l’alerte et l’intervention à moins de quatre minutes. De meilleures conditions de travail se traduisent directement par des opérations de secours plus efficaces.",
+      "L’unité dispose de 30 pompiers et d’un véhicule — un Star usé a été remplacé par un MAN plus moderne. La brigade a récemment fêté son magnifique centenaire et regarde avec fierté aussi bien vers le passé que vers l’avenir — les jeunes s’engagent volontiers dans ses activités.",
+      "Les initiatives soutenues par la Fondation Stock renforcent les communautés locales et améliorent leur sécurité, et l’engagement des bénévoles change réellement la qualité de vie dans ces localités."
     ]
   }
 }

@@ -1,5 +1,5 @@
 /* Static language builds for the Stock Foundation site.
-   English lives at the root (default), pl/cz/it in subdirectories.
+   English lives at the root (default), pl/cz/it/sk/de/fr in subdirectories.
    Run:  node build-langs.mjs
    Idempotent — safe to re-run after any content change.
    NOTE: SITE must match the production domain at launch. */
@@ -22,12 +22,12 @@ const ARTICLES = readdirSync(join(CONTENT, 'articles'))
 for (const a of ARTICLES) {
   for (const key of ['date', 'title', 'lead']) {
     a[key] = a[key] || {};
-    for (const l of ['en', 'pl', 'cz', 'it']) {
+    for (const l of ['en', 'pl', 'cz', 'it', 'sk', 'de', 'fr']) {
       if (!a[key][l]) a[key][l] = a[key].en || a[key].pl || '';
     }
   }
   a.body = a.body || {};
-  for (const l of ['en', 'pl', 'cz', 'it']) {
+  for (const l of ['en', 'pl', 'cz', 'it', 'sk', 'de', 'fr']) {
     if (!Array.isArray(a.body[l]) || a.body[l].length === 0) {
       a.body[l] = a.body.en || a.body.pl || [];
     }
@@ -44,11 +44,17 @@ const SITE = 'https://fundacjastock.pl';
 const OG_SITE = 'https://fundacja-stock-design.vercel.app';
 const SRC = join(import.meta.dirname, 'design-v2');
 const PAGES = ['index.html', 'about-us.html', 'news.html', 'article.html', 'statute.html', 'board-council.html', 'person.html', 'contact.html', 'privacy-policy.html'];
-const LANGS = ['en', 'pl', 'cz', 'it'];                     // en = root
-const DIR = { en: '', pl: 'pl/', cz: 'cz/', it: 'it/' };
-const HTML_LANG = { en: 'en', pl: 'pl', cz: 'cs', it: 'it' };
-const HREFLANG = { en: 'en', pl: 'pl', cz: 'cs', it: 'it' };
-const OG_LOCALE = { en: 'en_GB', pl: 'pl_PL', cz: 'cs_CZ', it: 'it_IT' };
+const LANGS = ['en', 'pl', 'cz', 'it', 'sk', 'de', 'fr'];   // en = root
+/* Languages the public may actually switch to. Everything else is still built
+   and deployed (translations are finished and ready), but is hidden behind a
+   "coming soon" state in the picker, kept out of sitemap/hreflang and marked
+   noindex — so search engines do not index a version we have not released yet.
+   TO RELEASE A LANGUAGE: add its code here and re-run the build. Nothing else. */
+const PUBLIC_LANGS = ['en', 'pl'];
+const DIR = { en: '', pl: 'pl/', cz: 'cz/', it: 'it/', sk: 'sk/', de: 'de/', fr: 'fr/' };
+const HTML_LANG = { en: 'en', pl: 'pl', cz: 'cs', it: 'it', sk: 'sk', de: 'de', fr: 'fr' };
+const HREFLANG = { en: 'en', pl: 'pl', cz: 'cs', it: 'it', sk: 'sk', de: 'de', fr: 'fr' };
+const OG_LOCALE = { en: 'en_GB', pl: 'pl_PL', cz: 'cs_CZ', it: 'it_IT', sk: 'sk_SK', de: 'de_DE', fr: 'fr_FR' };
 
 /* page → lang → [title, meta description] */
 const META = {
@@ -60,7 +66,13 @@ const META = {
     cz: ['Nadace Stock — Naděje, umění a komunita',
       'Nadace Stock (zal. 2022, Lublin) pomáhá uprchlíkům a místním komunitám a podporuje umění jako terapii. Podívejte se na naše nejnovější akce a novinky.'],
     it: ['Fondazione Stock — Speranza, arte e comunità',
-      'La Fondazione Stock (fond. 2022, Lublino) aiuta rifugiati e comunità locali e promuove l’arte come terapia. Scopri le nostre ultime azioni e notizie.']
+      'La Fondazione Stock (fond. 2022, Lublino) aiuta rifugiati e comunità locali e promuove l’arte come terapia. Scopri le nostre ultime azioni e notizie.'],
+    sk: ['Nadácia Stock — Nádej, umenie a komunita',
+      'Nadácia Stock (zal. 2022, Lublin) pomáha utečencom a miestnym komunitám a podporuje umenie ako terapiu. Pozrite si naše najnovšie aktivity a novinky.'],
+    de: ['Stiftung Stock — Hoffnung, Kunst & Gemeinschaft',
+      'Die Stiftung Stock (gegr. 2022, Lublin) hilft Geflüchteten und lokalen Gemeinschaften und fördert Kunst als Therapie. Entdecken Sie unsere neuesten Aktionen und Nachrichten.'],
+    fr: ['Fondation Stock — Espoir, art et communauté',
+      'La Fondation Stock (fond. 2022, Lublin) aide les réfugiés et les communautés locales et promeut l’art comme thérapie. Découvrez nos dernières actions.']
   },
   'about-us.html': {
     en: ['About us — Stock Foundation',
@@ -70,7 +82,13 @@ const META = {
     cz: ['O nás — Nadace Stock',
       'Příběh Nadace Stock — od nouzové pomoci ukrajinským uprchlíkům v Lublinu po umění, stipendia a komunitní programy.'],
     it: ['Chi siamo — Fondazione Stock',
-      'La storia della Fondazione Stock — dall’aiuto d’emergenza per i rifugiati ucraini a Lublino ad arte, borse di studio e programmi sociali.']
+      'La storia della Fondazione Stock — dall’aiuto d’emergenza per i rifugiati ucraini a Lublino ad arte, borse di studio e programmi sociali.'],
+    sk: ['O nás — Nadácia Stock',
+      'Príbeh Nadácie Stock — od núdzovej pomoci ukrajinským utečencom v Lubline po umenie, štipendiá a komunitné programy.'],
+    de: ['Über uns — Stiftung Stock',
+      'Die Geschichte der Stiftung Stock — von der Nothilfe für ukrainische Geflüchtete in Lublin bis zu Kunst, Stipendien und Gemeinschaftsprogrammen.'],
+    fr: ['À propos — Fondation Stock',
+      'L’histoire de la Fondation Stock — de l’aide d’urgence aux réfugiés ukrainiens à Lublin à l’art, aux bourses d’études et aux programmes communautaires.']
   },
   'news.html': {
     en: ['News — Stock Foundation',
@@ -80,7 +98,13 @@ const META = {
     cz: ['Novinky — Nadace Stock',
       'Novinky a pravidelné akce Nadace Stock — setkání s uměním, stipendia, školení a komunitní iniciativy.'],
     it: ['Notizie — Fondazione Stock',
-      'Notizie e azioni ricorrenti della Fondazione Stock — incontri con l’arte, borse di studio, formazione e iniziative per la comunità.']
+      'Notizie e azioni ricorrenti della Fondazione Stock — incontri con l’arte, borse di studio, formazione e iniziative per la comunità.'],
+    sk: ['Aktuality — Nadácia Stock',
+      'Novinky a pravidelné aktivity Nadácie Stock — stretnutia s umením, štipendiá, školenia a komunitné iniciatívy.'],
+    de: ['Aktuelles — Stiftung Stock',
+      'Neuigkeiten und regelmäßige Aktionen der Stiftung Stock — Kunstbegegnungen, Stipendien, Schulungen und Gemeinschaftsinitiativen.'],
+    fr: ['Actualités — Fondation Stock',
+      'Actualités et actions récurrentes de la Fondation Stock — rencontres avec l’art, bourses d’études, formations et initiatives communautaires.']
   },
   'article.html': {
     en: ['News — Stock Foundation',
@@ -90,7 +114,13 @@ const META = {
     cz: ['Novinky — Nadace Stock',
       'Novinky a příběhy Nadace Stock — pomoc uprchlíkům a komunitám a umění jako terapie.'],
     it: ['Notizie — Fondazione Stock',
-      'Notizie e storie della Fondazione Stock — aiuto a rifugiati e comunità e arte come terapia.']
+      'Notizie e storie della Fondazione Stock — aiuto a rifugiati e comunità e arte come terapia.'],
+    sk: ['Aktuality — Nadácia Stock',
+      'Novinky a príbehy Nadácie Stock — pomoc utečencom a komunitám a umenie ako terapia.'],
+    de: ['Aktuelles — Stiftung Stock',
+      'Nachrichten und Geschichten der Stiftung Stock — Hilfe für Geflüchtete und Gemeinschaften und Kunst als Therapie.'],
+    fr: ['Actualités — Fondation Stock',
+      'Actualités et histoires de la Fondation Stock — aide aux réfugiés et aux communautés, l’art comme thérapie.']
   },
   'statute.html': {
     en: ['Statute & Reports — Stock Foundation',
@@ -100,7 +130,13 @@ const META = {
     cz: ['Statut a zprávy — Nadace Stock',
       'Statut, výroční zprávy a účetní závěrky Nadace Stock — plná transparentnost.'],
     it: ['Statuto e rapporti — Fondazione Stock',
-      'Statuto, rapporti annuali e bilanci della Fondazione Stock — piena trasparenza.']
+      'Statuto, rapporti annuali e bilanci della Fondazione Stock — piena trasparenza.'],
+    sk: ['Štatút a správy — Nadácia Stock',
+      'Štatút, výročné správy a účtovné závierky Nadácie Stock — plná transparentnosť.'],
+    de: ['Satzung & Berichte — Stiftung Stock',
+      'Satzung, Jahresberichte und Jahresabschlüsse der Stiftung Stock — volle Transparenz.'],
+    fr: ['Statuts et rapports — Fondation Stock',
+      'Statuts, rapports annuels et états financiers de la Fondation Stock — transparence totale.']
   },
   'board-council.html': {
     en: ['Council & Board — Stock Foundation',
@@ -110,13 +146,22 @@ const META = {
     cz: ['Rada a představenstvo — Nadace Stock',
       'Poznejte radu a představenstvo Nadace Stock.'],
     it: ['Consiglio e direzione — Fondazione Stock',
-      'Il Consiglio e la direzione della Fondazione Stock.']
+      'Il Consiglio e la direzione della Fondazione Stock.'],
+    sk: ['Rada a predstavenstvo — Nadácia Stock',
+      'Spoznajte radu a predstavenstvo Nadácie Stock.'],
+    de: ['Stiftungsrat & Vorstand — Stiftung Stock',
+      'Lernen Sie den Stiftungsrat und den Vorstand der Stiftung Stock kennen.'],
+    fr: ['Conseil et direction — Fondation Stock',
+      'Découvrez le Conseil et la direction de la Fondation Stock.']
   },
   'person.html': {
     en: ['Council & Board — Stock Foundation', 'Council and Board of the Stock Foundation.'],
     pl: ['Rada i Zarząd — Fundacja Stock', 'Rada i Zarząd Fundacji Stock.'],
     cz: ['Rada a představenstvo — Nadace Stock', 'Rada a představenstvo Nadace Stock.'],
-    it: ['Consiglio e direzione — Fondazione Stock', 'Consiglio e direzione della Fondazione Stock.']
+    it: ['Consiglio e direzione — Fondazione Stock', 'Consiglio e direzione della Fondazione Stock.'],
+    sk: ['Rada a predstavenstvo — Nadácia Stock', 'Rada a predstavenstvo Nadácie Stock.'],
+    de: ['Stiftungsrat & Vorstand — Stiftung Stock', 'Stiftungsrat und Vorstand der Stiftung Stock.'],
+    fr: ['Conseil et direction — Fondation Stock', 'Conseil et direction de la Fondation Stock.']
   },
   'contact.html': {
     en: ['Contact — Stock Foundation',
@@ -126,13 +171,22 @@ const META = {
     cz: ['Kontakt — Nadace Stock',
       'Kontaktujte Nadaci Stock v Lublinu — adresa, telefon a e-mail.'],
     it: ['Contatti — Fondazione Stock',
-      'Contatta la Fondazione Stock a Lublino — indirizzo, telefono ed e-mail.']
+      'Contatta la Fondazione Stock a Lublino — indirizzo, telefono ed e-mail.'],
+    sk: ['Kontakt — Nadácia Stock',
+      'Kontaktujte Nadáciu Stock v Lubline — adresa, telefón a e-mail.'],
+    de: ['Kontakt — Stiftung Stock',
+      'Kontaktieren Sie die Stiftung Stock in Lublin — Adresse, Telefon und E-Mail.'],
+    fr: ['Contact — Fondation Stock',
+      'Contactez la Fondation Stock à Lublin — adresse, téléphone et e-mail.']
   },
   'privacy-policy.html': {
     en: ['Privacy and Cookies — Stock Foundation', 'Privacy and cookie policy of the Stock Foundation website.'],
     pl: ['Prywatność i cookies — Fundacja Stock', 'Polityka prywatności i cookies strony Fundacji Stock.'],
     cz: ['Soukromí a cookies — Nadace Stock', 'Zásady ochrany soukromí a cookies webu Nadace Stock.'],
-    it: ['Privacy e cookie — Fondazione Stock', 'Informativa privacy e cookie del sito della Fondazione Stock.']
+    it: ['Privacy e cookie — Fondazione Stock', 'Informativa privacy e cookie del sito della Fondazione Stock.'],
+    sk: ['Súkromie a cookies — Nadácia Stock', 'Zásady ochrany súkromia a cookies webu Nadácie Stock.'],
+    de: ['Datenschutz und Cookies — Stiftung Stock', 'Datenschutz- und Cookie-Richtlinie der Website der Stiftung Stock.'],
+    fr: ['Confidentialité et cookies — Fondation Stock', 'Politique de confidentialité et de cookies du site de la Fondation Stock.']
   }
 };
 
@@ -159,11 +213,13 @@ function transform(src, page, lang, art) {
   h = h.replace(/(<meta property="og:image" content="[^"]*">)/,
     `$1\n<meta property="og:url" content="${pageUrl(lang, page)}">\n<meta property="og:locale" content="${OG_LOCALE[lang]}">`);
 
-  // canonical + hreflang alternates
+  // canonical + hreflang alternates (unreleased languages stay out of both)
   h = h.replace(/<!-- lang-alternates -->[\s\S]*?<!-- \/lang-alternates -->\n?/, '');
+  const published = PUBLIC_LANGS.includes(lang);
   const alt = ['<!-- lang-alternates -->',
+    ...(published ? [] : ['<meta name="robots" content="noindex,follow">']),
     `<link rel="canonical" href="${pageUrl(lang, page)}">`,
-    ...LANGS.map(l => `<link rel="alternate" hreflang="${HREFLANG[l]}" href="${pageUrl(l, page)}">`),
+    ...PUBLIC_LANGS.map(l => `<link rel="alternate" hreflang="${HREFLANG[l]}" href="${pageUrl(l, page)}">`),
     `<link rel="alternate" hreflang="x-default" href="${pageUrl('en', page)}">`,
     '<!-- /lang-alternates -->'].join('\n');
   h = h.replace(/(<meta name="twitter:card" content="[^"]*">)/, `$1\n${alt}`);
@@ -171,7 +227,7 @@ function transform(src, page, lang, art) {
   // per-URL language marker (read by main.js and page scripts before render)
   h = h.replace(/<script data-fs-lang>[\s\S]*?<\/script>\n?/, '');
   h = h.replace(/(<link rel="icon")/,
-    `<script data-fs-lang>window.FS_LANG='${lang}';try{localStorage.setItem('fs-lang','${lang}')}catch(e){}</script>\n$1`);
+    `<script data-fs-lang>window.FS_LANG='${lang}';window.FS_PUBLIC_LANGS=${JSON.stringify(PUBLIC_LANGS)};try{localStorage.setItem('fs-lang','${lang}')}catch(e){}</script>\n$1`);
   // per-URL article marker (static article pages)
   h = h.replace(/<script data-fs-article>[\s\S]*?<\/script>\n?/, '');
   if (art) h = h.replace(/(<link rel="icon")/, `<script data-fs-article>window.FS_ARTICLE='${art.id}';</script>\n$1`);
@@ -216,8 +272,8 @@ for (const lang of LANGS) {
   }
 }
 
-// sitemap + robots
-const urls = LANGS.flatMap(l => [
+// sitemap + robots — released languages only
+const urls = PUBLIC_LANGS.flatMap(l => [
   ...PAGES.map(p => pageUrl(l, p)),
   ...ARTICLES.map(a => pageUrl(l, `article-${a.id}.html`))
 ]);
@@ -228,5 +284,7 @@ const sm = ['<?xml version="1.0" encoding="UTF-8"?>',
 writeFileSync(join(SRC, 'sitemap.xml'), sm, 'utf8');
 writeFileSync(join(SRC, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\n`, 'utf8');
 
-console.log(`pages written: ${written} (4 langs x [${PAGES.length} pages + ${ARTICLES.length} articles]) + sitemap.xml + robots.txt`);
-console.log('root = EN; subdirs: pl/ cz/ it/');
+console.log(`pages written: ${written} (${LANGS.length} langs x [${PAGES.length} pages + ${ARTICLES.length} articles]) + sitemap.xml + robots.txt`);
+console.log('root = EN; subdirs: pl/ cz/ it/ sk/ de/ fr/');
+console.log(`released to the public: ${PUBLIC_LANGS.join(', ')} (${urls.length} URLs in sitemap)`);
+console.log(`built but hidden ("coming soon", noindex): ${LANGS.filter(l => !PUBLIC_LANGS.includes(l)).join(', ') || 'none'}`);

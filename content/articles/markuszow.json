@@ -7,19 +7,28 @@
     "en": "June 2024",
     "pl": "Czerwiec 2024",
     "cz": "Červen 2024",
-    "it": "Giugno 2024"
+    "it": "Giugno 2024",
+    "sk": "Jún 2024",
+    "de": "Juni 2024",
+    "fr": "juin 2024"
   },
   "title": {
     "en": "Flavours of Change — a grant for the Markuszów fire brigade",
     "pl": "Flavours of Change — grant dla OSP Markuszów",
     "cz": "Flavours of Change — grant pro hasiče z Markuszówa",
-    "it": "Flavours of Change — una sovvenzione per i vigili del fuoco di Markuszów"
+    "it": "Flavours of Change — una sovvenzione per i vigili del fuoco di Markuszów",
+    "sk": "Flavours of Change — grant pre dobrovoľných hasičov z Markuszówa",
+    "de": "Flavours of Change — ein Zuschuss für die Freiwillige Feuerwehr in Markuszów",
+    "fr": "Flavours of Change — une subvention pour les pompiers volontaires de Markuszów"
   },
   "lead": {
     "en": "Volunteer Kasia Brillowska won a grant to equip the Youth Fire Team — from combat training gear to training clothing.",
     "pl": "Wolontariuszka Kasia Brillowska zdobyła grant na wyposażenie Młodzieżowej Drużyny Pożarniczej — od sprzętu do ćwiczeń bojowych po odzież treningową.",
     "cz": "Dobrovolnice Kasia Brillowska získala grant na vybavení mládežnického hasičského družstva — od výcvikového vybavení po tréninkové oblečení.",
-    "it": "La volontaria Kasia Brillowska ha vinto una sovvenzione per equipaggiare la Squadra Giovanile dei Vigili del Fuoco — dall’attrezzatura di addestramento all’abbigliamento sportivo."
+    "it": "La volontaria Kasia Brillowska ha vinto una sovvenzione per equipaggiare la Squadra Giovanile dei Vigili del Fuoco — dall’attrezzatura di addestramento all’abbigliamento sportivo.",
+    "sk": "Dobrovoľníčka Kasia Brillowska získala grant na vybavenie mládežníckeho hasičského družstva — od vybavenia na zásahové cvičenia po tréningové oblečenie.",
+    "de": "Die Freiwillige Kasia Brillowska hat einen Zuschuss für die Ausstattung der Jugendfeuerwehr gewonnen — von Geräten für Einsatzübungen bis hin zur Trainingskleidung.",
+    "fr": "La bénévole Kasia Brillowska a obtenu une subvention pour équiper la section jeunesse des pompiers — du matériel pour les exercices d’intervention aux vêtements de sport."
   },
   "body": {
     "en": [
@@ -41,6 +50,21 @@
       "Un nuovo progetto nell’ambito del programma Flavours of Change Grants della Fondazione Stock sostiene i Vigili del Fuoco Volontari di Markuszów. Kasia Brillowska, volontaria della Fondazione Stock che aiuta la brigata, ha vinto una sovvenzione per finanziare l’equipaggiamento della Squadra Giovanile: elementi per l’addestramento — una passerella, uno scudo di versamento, una postazione per i nodi — oltre ad abbigliamento da allenamento, con un set di divise e felpe in pile per i ragazzi.",
       "La Squadra Giovanile opera da poco presso i Vigili del Fuoco Volontari di Markuszów e si sta preparando a partecipare alle gare antincendio. Gli incontri, che si tengono ogni venerdì presso la scuola primaria, comprendono l’apprendimento dei nodi, l’uso dell’estintore, il collegamento delle manichette e il riconoscimento delle singole attrezzature.",
       "Le lezioni diffondono tra i giovani i temi della sicurezza antincendio e sono al tempo stesso un buon modo di trascorrere il tempo. L’obiettivo dell’iniziativa è garantire la continuità delle attività della brigata formando i giovani, coinvolgendoli nella comunità locale e migliorandone la sicurezza."
+    ],
+    "sk": [
+      "Nový projekt v rámci programu Flavours of Change Grants Nadácie Stock podporuje dobrovoľných hasičov v Markuszówe. Kasia Brillowska, dobrovoľníčka Nadácie Stock, ktorá zboru pomáha, získala grant na financovanie výbavy mládežníckeho hasičského družstva: prvkov výcvikového vybavenia — lávky, nalievacieho terča, stanovišťa na viazanie uzlov — ako aj tréningového oblečenia vrátane sady dresov a flísových mikín pre mládež.",
+      "Mládežnícke hasičské družstvo pôsobí pri dobrovoľných hasičoch v Markuszówe len krátko a v súčasnosti sa pripravuje na účasť v hasičských súťažiach. Stretnutia, ktoré sa konajú každý piatok na základnej škole, zahŕňajú nácvik viazania uzlov, obsluhy hasiaceho prístroja, spájania hadíc a rozpoznávania jednotlivých častí výbavy.",
+      "Lekcie popularizujú medzi mladými tému požiarnej bezpečnosti a sú zároveň dobrým spôsobom trávenia času. Cieľom iniciatívy je zabezpečiť kontinuitu činnosti zboru prostredníctvom výcviku mládeže, jej zapájania do života miestnej komunity a zlepšovania jej bezpečnosti."
+    ],
+    "de": [
+      "Ein neues Projekt im Rahmen des Programms Flavours of Change Grants der Stiftung Stock unterstützt die Freiwillige Feuerwehr in Markuszów. Kasia Brillowska, Freiwillige der Stiftung Stock, die der Feuerwehr hilft, hat einen Zuschuss zur Finanzierung der Ausstattung der Jugendfeuerwehr gewonnen: Elemente der Übungsausrüstung — ein Laufbrett, eine Spritzwand, eine Station zum Knotenbinden — sowie Trainingskleidung, darunter ein Satz Trainingsanzüge und Fleecepullover für die Jugendlichen.",
+      "Die Jugendfeuerwehr besteht bei der Freiwilligen Feuerwehr Markuszów erst seit Kurzem und bereitet sich derzeit auf die Teilnahme an Feuerwehrwettbewerben vor. Bei den Treffen, die jeden Freitag in der Grundschule stattfinden, lernen die Jugendlichen, Knoten zu binden, einen Feuerlöscher zu bedienen, Schläuche zu kuppeln und die einzelnen Ausrüstungsteile zu erkennen.",
+      "Der Unterricht macht junge Menschen mit dem Thema Brandschutz vertraut und ist zugleich eine sinnvolle Freizeitbeschäftigung. Ziel der Initiative ist es, den Fortbestand der Feuerwehr zu sichern, indem Jugendliche ausgebildet und in das Leben der lokalen Gemeinschaft eingebunden werden und deren Sicherheit verbessert wird."
+    ],
+    "fr": [
+      "Un nouveau projet mené dans le cadre du programme Flavours of Change Grants de la Fondation Stock soutient les pompiers volontaires de Markuszów. Kasia Brillowska, bénévole de la Fondation Stock qui vient en aide à la caserne, a obtenu une subvention pour financer l’équipement de la section jeunesse : des éléments de matériel d’entraînement — une passerelle, une cible d’arrosage, un poste de nouage — ainsi que des vêtements d’entraînement, dont un ensemble de tenues et des sweats polaires pour les jeunes.",
+      "La section jeunesse existe depuis peu au sein des pompiers volontaires de Markuszów et se prépare actuellement à participer à des concours de sapeurs-pompiers. Les rencontres, qui ont lieu chaque vendredi à l’école primaire, comprennent l’apprentissage des nœuds, le maniement de l’extincteur, le raccordement des tuyaux et la reconnaissance des différents éléments de l’équipement.",
+      "Ces activités sensibilisent les jeunes à la sécurité incendie tout en leur offrant une belle façon d’occuper leur temps. L’objectif de l’initiative est d’assurer la continuité des activités de la caserne en formant les jeunes, en les impliquant dans la vie de la communauté locale et en améliorant la sécurité de celle-ci."
     ]
   }
 }

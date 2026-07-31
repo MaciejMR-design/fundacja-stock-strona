@@ -23,7 +23,7 @@ collections:
   - name: aktualnosci
     label: Aktualności
     label_singular: Aktualność
-    description: 'Wpisy z sekcji Aktualności. Nowy wpis publikuje się na stronie 1–2 minuty po zapisaniu. Pola EN/CZ/IT można zostawić — wypełnij po polsku i po angielsku, resztę uzupełnimy.'
+    description: 'Wpisy z sekcji Aktualności. Nowy wpis publikuje się na stronie 1–2 minuty po zapisaniu. Wypełnij po polsku i po angielsku — pozostałe języki (CZ/IT/SK/DE/FR) można zostawić, uzupełnimy je.'
     folder: content/articles
     format: json
     extension: json
@@ -57,6 +57,9 @@ collections:
           - { name: en, label: 'Angielski (np. 5 June 2026)', widget: string }
           - { name: cz, label: 'Czeski (np. 5. června 2026)', widget: string }
           - { name: it, label: 'Włoski (np. 5 giugno 2026)', widget: string }
+          - { name: sk, label: 'Słowacki (np. 5. júna 2026)', widget: string, required: false }
+          - { name: de, label: 'Niemiecki (np. 5. Juni 2026)', widget: string, required: false }
+          - { name: fr, label: 'Francuski (np. 5 juin 2026)', widget: string, required: false }
       - name: title
         label: Tytuł
         widget: object
@@ -65,6 +68,9 @@ collections:
           - { name: en, label: Angielski, widget: string }
           - { name: cz, label: Czeski, widget: string, required: false }
           - { name: it, label: Włoski, widget: string, required: false }
+          - { name: sk, label: Słowacki, widget: string, required: false }
+          - { name: de, label: Niemiecki, widget: string, required: false }
+          - { name: fr, label: Francuski, widget: string, required: false }
       - name: lead
         label: 'Lead (1–2 zdania zajawki)'
         widget: object
@@ -73,6 +79,9 @@ collections:
           - { name: en, label: Angielski, widget: text }
           - { name: cz, label: Czeski, widget: text, required: false }
           - { name: it, label: Włoski, widget: text, required: false }
+          - { name: sk, label: Słowacki, widget: text, required: false }
+          - { name: de, label: Niemiecki, widget: text, required: false }
+          - { name: fr, label: Francuski, widget: text, required: false }
       - name: body
         label: 'Treść (każdy akapit osobno)'
         widget: object
@@ -81,12 +90,15 @@ collections:
           - { name: en, label: 'Angielski — akapity', widget: list, field: { name: p, label: Akapit, widget: text } }
           - { name: cz, label: 'Czeski — akapity', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
           - { name: it, label: 'Włoski — akapity', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+          - { name: sk, label: 'Słowacki — akapity', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+          - { name: de, label: 'Niemiecki — akapity', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+          - { name: fr, label: 'Francuski — akapity', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
 
   - name: strony
     label: 'Teksty stron'
     description: 'Wszystkie teksty istniejących sekcji, pogrupowane wg podstron i języków. Zmieniaj wartości — kluczy (nazw pól) nie ruszaj.'
     files:
-      - { name: index, label: 'Strona główna', file: content/pages/index.json, fields: &langfields [ { name: pl, label: Polski, widget: keyvalue }, { name: en, label: Angielski, widget: keyvalue }, { name: cz, label: Czeski, widget: keyvalue }, { name: it, label: Włoski, widget: keyvalue } ] }
+      - { name: index, label: 'Strona główna', file: content/pages/index.json, fields: &langfields [ { name: pl, label: Polski, widget: keyvalue }, { name: en, label: Angielski, widget: keyvalue }, { name: cz, label: Czeski, widget: keyvalue }, { name: it, label: Włoski, widget: keyvalue }, { name: sk, label: Słowacki, widget: keyvalue }, { name: de, label: Niemiecki, widget: keyvalue }, { name: fr, label: Francuski, widget: keyvalue } ] }
       - { name: about-us, label: 'O nas', file: content/pages/about-us.json, fields: *langfields }
       - { name: news, label: 'Aktualności (nagłówki strony)', file: content/pages/news.json, fields: *langfields }
       - { name: article, label: 'Strona artykułu (etykiety)', file: content/pages/article.json, fields: *langfields }

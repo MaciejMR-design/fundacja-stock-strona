@@ -7,19 +7,28 @@
     "en": "18 November 2025",
     "pl": "18 listopada 2025",
     "cz": "18. listopadu 2025",
-    "it": "18 novembre 2025"
+    "it": "18 novembre 2025",
+    "sk": "18. novembra 2025",
+    "de": "18. November 2025",
+    "fr": "18 novembre 2025"
   },
   "title": {
     "en": "Art curator Barbara Czajkowska takes residents of DPS to Florence",
     "pl": "Kustosz Barbara Czajkowska zabiera mieszkańców DPS do Florencji",
     "cz": "Kurátorka Barbara Czajkowska bere obyvatele DPS do Florencie",
-    "it": "La curatrice Barbara Czajkowska porta i residenti del DPS a Firenze"
+    "it": "La curatrice Barbara Czajkowska porta i residenti del DPS a Firenze",
+    "sk": "Kurátorka Barbara Czajkowska berie obyvateľov domova sociálnych služieb do Florencie",
+    "de": "Kuratorin Barbara Czajkowska nimmt die Bewohner des Sozialhilfeheims mit nach Florenz",
+    "fr": "La conservatrice Barbara Czajkowska emmène les résidents du foyer d’aide sociale à Florence"
   },
   "lead": {
     "en": "A talk about the Galleria degli Uffizi brought Botticelli, Michelangelo and Leonardo to the Social Welfare Home on Ametystowa Street.",
     "pl": "Opowieść o Galerii Uffizi przeniosła Botticellego, Michała Anioła i Leonarda do Domu Pomocy Społecznej przy ul. Ametystowej.",
     "cz": "Vyprávění o Galerii Uffizi přeneslo Botticelliho, Michelangela a Leonarda do domova sociální péče na ulici Ametystowa.",
-    "it": "Una conferenza sulla Galleria degli Uffizi ha portato Botticelli, Michelangelo e Leonardo nella casa di assistenza sociale di via Ametystowa."
+    "it": "Una conferenza sulla Galleria degli Uffizi ha portato Botticelli, Michelangelo e Leonardo nella casa di assistenza sociale di via Ametystowa.",
+    "sk": "Rozprávanie o galérii Uffizi prenieslo Botticelliho, Michelangela a Leonarda do domova sociálnych služieb na Ametystovej ulici.",
+    "de": "Eine Erzählung über die Uffizien brachte Botticelli, Michelangelo und Leonardo in das Sozialhilfeheim in der Ametystowa-Straße.",
+    "fr": "Un récit sur la Galerie des Offices a transporté Botticelli, Michel-Ange et Léonard au foyer d’aide sociale de la rue Ametystowa."
   },
   "body": {
     "en": [
@@ -41,6 +50,21 @@
       "Il 18 novembre si è svolto un incontro speciale nella casa di assistenza sociale di via Ametystowa a Lublino. La nostra Fondazione ha invitato Barbara Czajkowska, esperta curatrice d’arte, che ha guidato una conferenza sulle collezioni di un grande museo di Firenze — la Galleria degli Uffizi.",
       "Ha parlato di opere di artisti come Botticelli, Michelangelo e Leonardo da Vinci, spiegandone le storie in modo chiaro e coinvolgente. Ha anche raccontato come queste opere siano arrivate a Firenze e cosa renda questo museo così importante oggi.",
       "I residenti hanno ascoltato con grande interesse e molti hanno detto di essersi sentiti come se fossero davvero lì, camminando per le sale del museo. Siamo felici di aver portato un pezzo di Firenze in via Ametystowa."
+    ],
+    "sk": [
+      "18. novembra sa v domove sociálnych služieb na Ametystovej ulici v Lubline konalo výnimočné stretnutie. Naša nadácia pozvala Barbaru Czajkowskú, skúsenú kurátorku, ktorá viedla rozprávanie o zbierkach jedného z najvýznamnejších múzeí Florencie — galérie Uffizi.",
+      "Hovorila o dielach umelcov ako Botticelli, Michelangelo a Leonardo da Vinci a zrozumiteľne a pútavo vysvetľovala ich príbehy. Opísala tiež, ako sa tieto diela dostali do Florencie a čo robí toto múzeum takým významným dodnes.",
+      "Obyvatelia počúvali s obrovským záujmom a mnohí hovorili, že sa cítili, akoby tam naozaj boli — prechádzali sa sálami múzea a videli umenie na vlastné oči. Tešíme sa, že sme mohli priniesť kúsok Florencie na Ametystovú ulicu."
+    ],
+    "de": [
+      "Am 18. November fand im Sozialhilfeheim in der Ametystowa-Straße in Lublin eine besondere Begegnung statt. Unsere Stiftung hatte Barbara Czajkowska eingeladen, eine erfahrene Kuratorin, die von den Sammlungen eines der bedeutendsten Museen von Florenz erzählte — der Uffizien.",
+      "Sie sprach über Werke von Künstlern wie Botticelli, Michelangelo und Leonardo da Vinci und erklärte ihre Geschichten anschaulich und fesselnd. Sie schilderte auch, wie diese Werke nach Florenz gelangten und was dieses Museum bis heute so bedeutend macht.",
+      "Die Bewohnerinnen und Bewohner hörten mit großem Interesse zu, und viele sagten, sie hätten sich gefühlt, als wären sie wirklich dort gewesen — als gingen sie durch die Säle des Museums und sähen die Kunst mit eigenen Augen. Wir freuen uns, dass wir ein Stück Florenz in die Ametystowa-Straße bringen konnten."
+    ],
+    "fr": [
+      "Le 18 novembre, une rencontre exceptionnelle a eu lieu au foyer d’aide sociale de la rue Ametystowa à Lublin. Notre Fondation a invité Barbara Czajkowska, conservatrice expérimentée, qui a présenté les collections de l’un des plus importants musées de Florence — la Galerie des Offices.",
+      "Elle a parlé des œuvres d’artistes tels que Botticelli, Michel-Ange et Léonard de Vinci, en expliquant leurs histoires de manière claire et captivante. Elle a également raconté comment ces œuvres sont arrivées à Florence et ce qui rend ce musée si important aujourd’hui.",
+      "Les résidents ont écouté avec un immense intérêt, et beaucoup ont dit avoir eu l’impression d’y être vraiment — de se promener dans les salles du musée et de voir les œuvres de leurs propres yeux. Nous sommes heureux d’avoir pu apporter un morceau de Florence rue Ametystowa."
     ]
   }
 }

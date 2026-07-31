@@ -7,19 +7,28 @@
     "en": "28 May 2025",
     "pl": "28 maja 2025",
     "cz": "28. května 2025",
-    "it": "28 maggio 2025"
+    "it": "28 maggio 2025",
+    "sk": "28. mája 2025",
+    "de": "28. Mai 2025",
+    "fr": "28 mai 2025"
   },
   "title": {
     "en": "Training day for social workers at the care home",
     "pl": "Dzień szkoleniowy dla pracowników socjalnych DPS",
     "cz": "Školicí den pro sociální pracovníky domova",
-    "it": "Giornata di formazione per gli operatori sociali della casa di cura"
+    "it": "Giornata di formazione per gli operatori sociali della casa di cura",
+    "sk": "Školiaci deň pre sociálnych pracovníkov domova sociálnych služieb",
+    "de": "Schulungstag für die Mitarbeitenden des Sozialhilfeheims",
+    "fr": "Journée de formation pour les travailleurs sociaux du foyer d’aide sociale"
   },
   "lead": {
     "en": "A session for the social work staff of the Social Welfare Home focused on supporting individuals at risk of addiction.",
     "pl": "Warsztaty dla kadry Domu Pomocy Społecznej poświęcone wspieraniu osób zagrożonych uzależnieniem.",
     "cz": "Setkání pro personál domova sociální péče zaměřené na podporu osob ohrožených závislostí.",
-    "it": "Una sessione per il personale della casa di assistenza sociale dedicata al sostegno delle persone a rischio di dipendenza."
+    "it": "Una sessione per il personale della casa di assistenza sociale dedicata al sostegno delle persone a rischio di dipendenza.",
+    "sk": "Workshop pre zamestnancov domova sociálnych služieb venovaný podpore osôb ohrozených závislosťou.",
+    "de": "Ein Workshop für die Mitarbeitenden des Sozialhilfeheims zur Unterstützung suchtgefährdeter Menschen.",
+    "fr": "Un atelier destiné au personnel du foyer d’aide sociale, consacré à l’accompagnement des personnes exposées au risque d’addiction."
   },
   "body": {
     "en": [
@@ -41,6 +50,21 @@
       "Il 28 maggio la Fondazione Stock ha organizzato un’altra sessione per il personale sociale della casa di assistenza per persone con disabilità, dedicata al sostegno delle persone a rischio di dipendenza.",
       "Il laboratorio ha unito elementi teorici e pratici: i partecipanti hanno appreso l’impatto delle dipendenze, analizzato casi di studio per riconoscere i segnali d’allarme e partecipato a un confronto con i nostri esperti terapeuti, Anna Kalbus e Jerzy Brożyna.",
       "Questa formazione è fondamentale perché gli operatori sociali sono spesso i primi ad accorgersi quando qualcuno è in difficoltà. Approfondendo la comprensione e affinando le competenze pratiche, il team sarà meglio preparato ad assistere le persone in crisi e a rafforzare la prevenzione delle dipendenze. Grazie a tutti gli operatori sociali che hanno partecipato — la vostra dedizione aiuta a creare una comunità più sicura e solidale."
+    ],
+    "sk": [
+      "28. mája zorganizovala Nadácia Stock ďalšie stretnutie pre sociálny personál domova sociálnych služieb pre osoby so zdravotným postihnutím, venované podpore ľudí ohrozených závislosťou.",
+      "Workshop spájal teoretické a praktické prvky: účastníci spoznali mechanizmy závislosti, analyzovali prípadové štúdie a učili sa rozpoznávať varovné signály a zapojili sa do diskusie s našimi skúsenými terapeutmi — Annou Kalbus a Jerzym Brożynom.",
+      "Toto školenie je kľúčové, pretože sociálni pracovníci si často ako prví všimnú, že si niekto nevie poradiť. Prehlbovaním vedomostí a zdokonaľovaním praktických zručností bude tím lepšie pripravený pomáhať ľuďom v kríze a posilní prevenciu závislostí. Ďakujeme všetkým sociálnym pracovníkom za účasť — vaše nasadenie pomáha vytvárať bezpečnejšiu a viac podporujúcu komunitu."
+    ],
+    "de": [
+      "Am 28. Mai veranstaltete die Stiftung Stock ein weiteres Treffen für die Sozialarbeitenden des Sozialhilfeheims für Menschen mit Behinderungen, das der Unterstützung suchtgefährdeter Personen gewidmet war.",
+      "Der Workshop verband theoretische und praktische Elemente: Die Teilnehmenden lernten die Mechanismen der Sucht kennen, analysierten Fallbeispiele, um Warnsignale zu erkennen, und beteiligten sich an einer Frage-und-Antwort-Runde mit unseren erfahrenen Therapeuten — Anna Kalbus und Jerzy Brożyna.",
+      "Diese Schulung ist entscheidend, denn Sozialarbeitende bemerken oft als Erste, wenn jemand nicht mehr weiterweiß. Durch vertieftes Wissen und geschärfte praktische Fähigkeiten ist das Team besser darauf vorbereitet, Menschen in Krisen zu helfen und die Suchtprävention zu stärken. Wir danken allen Sozialarbeitenden für ihre Teilnahme — Ihr Engagement trägt dazu bei, eine sicherere und solidarischere Gemeinschaft zu schaffen."
+    ],
+    "fr": [
+      "Le 28 mai, la Fondation Stock a organisé une nouvelle rencontre pour le personnel social du foyer d’aide sociale pour personnes en situation de handicap, consacrée à l’accompagnement des personnes exposées au risque d’addiction.",
+      "L’atelier associait théorie et pratique : les participants ont découvert les mécanismes de l’addiction, analysé des études de cas pour apprendre à repérer les signaux d’alerte et pris part à une séance de questions-réponses avec nos thérapeutes expérimentés — Anna Kalbus et Jerzy Brożyna.",
+      "Cette formation est essentielle, car les travailleurs sociaux sont souvent les premiers à remarquer qu’une personne est en difficulté. En approfondissant leurs connaissances et en affinant leurs compétences pratiques, l’équipe sera mieux préparée à aider les personnes en crise et à renforcer la prévention des addictions. Merci à tous les travailleurs sociaux qui ont participé — votre engagement contribue à créer une communauté plus sûre et plus solidaire."
     ]
   }
 }

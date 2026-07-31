@@ -7,19 +7,28 @@
     "en": "January 2024",
     "pl": "Styczeń 2024",
     "cz": "Leden 2024",
-    "it": "Gennaio 2024"
+    "it": "Gennaio 2024",
+    "sk": "Január 2024",
+    "de": "Januar 2024",
+    "fr": "janvier 2024"
   },
   "title": {
     "en": "Flavours of Change Grants — let’s change the world together",
     "pl": "Granty Flavours of Change — zmieniajmy świat razem",
     "cz": "Granty Flavours of Change — měňme svět společně",
-    "it": "Flavours of Change Grants — cambiamo il mondo insieme"
+    "it": "Flavours of Change Grants — cambiamo il mondo insieme",
+    "sk": "Granty Flavours of Change — meňme svet spoločne",
+    "de": "Flavours of Change Grants — verändern wir die Welt gemeinsam",
+    "fr": "Subventions Flavours of Change — changeons le monde ensemble"
   },
   "lead": {
     "en": "We launched our international employee volunteering programme — grants of up to €2,200 for community projects submitted by Stock employees.",
     "pl": "Wystartował nasz międzynarodowy program wolontariatu pracowniczego — granty do 2200 euro na projekty społeczne zgłaszane przez pracowników Stock.",
     "cz": "Spustili jsme náš mezinárodní program zaměstnaneckého dobrovolnictví — granty až 2 200 eur na komunitní projekty podávané zaměstnanci Stock.",
-    "it": "Abbiamo lanciato il nostro programma internazionale di volontariato aziendale — sovvenzioni fino a 2.200 euro per progetti comunitari presentati dai dipendenti Stock."
+    "it": "Abbiamo lanciato il nostro programma internazionale di volontariato aziendale — sovvenzioni fino a 2.200 euro per progetti comunitari presentati dai dipendenti Stock.",
+    "sk": "Spustili sme náš medzinárodný program zamestnaneckého dobrovoľníctva — granty do 2 200 eur na komunitné projekty, ktoré prihlasujú zamestnanci Stock.",
+    "de": "Wir haben unser internationales Mitarbeiter-Freiwilligenprogramm gestartet — Zuschüsse von bis zu 2.200 Euro für gemeinnützige Projekte, die von Stock-Mitarbeitenden eingereicht werden.",
+    "fr": "Nous avons lancé notre programme international de bénévolat d’entreprise : des subventions allant jusqu’à 2 200 euros pour des projets solidaires proposés par les salariés de Stock."
   },
   "body": {
     "en": [
@@ -45,6 +54,24 @@
       "Gli obiettivi principali del programma sono incoraggiare il personale di Stock Spirits Group a fare volontariato e a partecipare a progetti a beneficio delle proprie comunità, sostenere progetti che rispondono ai diversi bisogni della comunità e sviluppare il senso di responsabilità sociale tra i dipendenti.",
       "La Fondazione incoraggia tutti i dipendenti SSG che desiderano contribuire alla propria comunità a presentare progetti che necessitano di sostegno finanziario. Sono disponibili sovvenzioni fino a 2.200 euro, a seconda della portata e dell’impatto del progetto proposto.",
       "Cerchiamo progetti in linea con la nostra missione di sostegno, inclusività, impegno comunitario, educazione e sostenibilità ambientale — in ambiti come la salute, l’arte e la cultura, i servizi alla comunità e il miglioramento dell’ambiente locale. Vogliamo che rispondano a bisogni immediati e facciano la differenza più grande possibile."
+    ],
+    "sk": [
+      "Rok sme zakončili s veľkým nadšením — oznámili sme štart medzinárodného programu zamestnaneckého dobrovoľníctva Nadácie Stock, Flavours of Change Grants!",
+      "Hlavnými cieľmi programu sú povzbudzovať zamestnancov Stock Spirits Group k dobrovoľníctvu a účasti na projektoch v prospech ich komunít, podporovať projekty reagujúce na rozmanité potreby komunít a rozvíjať u zamestnancov zmysel pre spoločenskú zodpovednosť.",
+      "Nadácia vyzýva všetkých zamestnancov SSG, ktorí chcú konať v prospech svojej komunity, aby prihlásili projekty potrebujúce finančnú podporu. K dispozícii sú granty do 2 200 eur v závislosti od rozsahu a dosahu navrhovaného projektu.",
+      "Hľadáme projekty v súlade s našou misiou podpory, inklúzie, komunitného zapojenia, vzdelávania a udržateľného rozvoja — v oblastiach ako zdravie, umenie a kultúra, služby pre komunitu či zlepšovanie miestneho prostredia. Chceme, aby reagovali na naliehavé potreby a priniesli čo najväčšiu zmenu."
+    ],
+    "de": [
+      "Wir haben das Jahr mit großer Begeisterung beendet und den Start des internationalen Mitarbeiter-Freiwilligenprogramms der Stiftung Stock angekündigt — Flavours of Change Grants!",
+      "Die Hauptziele des Programms sind, die Beschäftigten der Stock Spirits Group zu freiwilligem Engagement und zur Teilnahme an Projekten für ihre Gemeinschaften zu ermutigen, Projekte zu fördern, die auf die vielfältigen Bedürfnisse der Gemeinschaften eingehen, und das Verantwortungsbewusstsein der Mitarbeitenden zu stärken.",
+      "Die Stiftung lädt alle SSG-Mitarbeitenden, die sich für ihre Gemeinschaft einsetzen möchten, dazu ein, Projekte einzureichen, die finanzielle Unterstützung benötigen. Je nach Umfang und Wirkung des vorgeschlagenen Projekts stehen Zuschüsse von bis zu 2.200 Euro zur Verfügung.",
+      "Wir suchen Projekte, die zu unserer Mission aus Unterstützung, Inklusion, gesellschaftlichem Engagement, Bildung und Nachhaltigkeit passen — in Bereichen wie Gesundheit, Kunst und Kultur, Dienste für die Gemeinschaft oder Verbesserung des lokalen Umfelds. Sie sollen auf dringende Bedürfnisse eingehen und möglichst viel bewirken."
+    ],
+    "fr": [
+      "Nous avons terminé l’année avec beaucoup d’enthousiasme en annonçant le lancement du programme international de bénévolat des salariés de la Fondation Stock : les Flavours of Change Grants !",
+      "Les principaux objectifs du programme sont d’encourager les salariés de Stock Spirits Group à faire du bénévolat et à participer à des projets au bénéfice de leurs communautés, de soutenir des projets répondant aux besoins variés de ces communautés et de développer le sens de la responsabilité sociale parmi les collaborateurs.",
+      "La Fondation invite tous les salariés de SSG désireux d’agir pour leur communauté à soumettre des projets nécessitant un soutien financier. Des subventions allant jusqu’à 2 200 euros sont disponibles, selon l’ampleur et l’impact du projet proposé.",
+      "Nous recherchons des projets conformes à notre mission de soutien, d’inclusion, d’engagement citoyen, d’éducation et de développement durable — dans des domaines tels que la santé, l’art et la culture, les services à la communauté ou l’amélioration de l’environnement local. Nous souhaitons qu’ils répondent à des besoins urgents et fassent la plus grande différence possible."
     ]
   }
 }

@@ -7,19 +7,28 @@
     "en": "5 June 2026",
     "pl": "5 czerwca 2026",
     "cz": "5. června 2026",
-    "it": "5 giugno 2026"
+    "it": "5 giugno 2026",
+    "sk": "5. júna 2026",
+    "de": "5. Juni 2026",
+    "fr": "5 juin 2026"
   },
   "title": {
     "en": "Paintings of Wojciech Gerson presented at DPS Ametystowa",
     "pl": "Malarstwo Wojciecha Gersona w DPS przy ul. Ametystowej",
     "cz": "Obrazy Wojciecha Gersona v domově sociální péče Ametystowa",
-    "it": "I dipinti di Wojciech Gerson presentati al DPS Ametystowa"
+    "it": "I dipinti di Wojciech Gerson presentati al DPS Ametystowa",
+    "sk": "Maliarstvo Wojciecha Gersona v domove sociálnych služieb na Ametystovej ulici",
+    "de": "Die Malerei Wojciech Gersons im Sozialhilfeheim in der Ametystowa-Straße",
+    "fr": "La peinture de Wojciech Gerson au foyer d’aide sociale de la rue Ametystowa"
   },
   "lead": {
     "en": "Another inspiring Art Encounter took place at the Social Welfare Home on Ametystowa Street in Lublin.",
     "pl": "Kolejne inspirujące Spotkanie ze Sztuką odbyło się w Domu Pomocy Społecznej przy ul. Ametystowej w Lublinie.",
     "cz": "Další inspirativní Setkání s uměním se konalo v Domově sociální péče na ulici Ametystowa v Lublinu.",
-    "it": "Un altro ispirante Incontro con l’Arte si è svolto nella casa di assistenza sociale di via Ametystowa a Lublino."
+    "it": "Un altro ispirante Incontro con l’Arte si è svolto nella casa di assistenza sociale di via Ametystowa a Lublino.",
+    "sk": "Ďalšie inšpiratívne Stretnutie s umením sa konalo v domove sociálnych služieb na Ametystovej ulici v Lubline.",
+    "de": "Eine weitere inspirierende Kunstbegegnung fand im Sozialhilfeheim in der Ametystowa-Straße in Lublin statt.",
+    "fr": "Une nouvelle et inspirante Rencontre avec l’art a eu lieu au foyer d’aide sociale de la rue Ametystowa à Lublin."
   },
   "body": {
     "en": [
@@ -41,6 +50,21 @@
       "Abbiamo avuto il grande piacere di accogliere la signora Jolanta Polańska, eccezionale curatrice del Museo Nazionale di Lublino, che ha tenuto un’affascinante conferenza sulla pittura e sull’eredità artistica di Wojciech Gerson.",
       "Wojciech Gerson (1831–1901) è stato uno dei più importanti pittori polacchi dell’Ottocento, esponente di spicco del realismo polacco e appassionato promotore della pittura storica e paesaggistica. È stato anche un educatore eccezionale che ha insegnato e ispirato generazioni di artisti, tra cui pittori celebri come Józef Chełmoński, Leon Wyczółkowski, Władysław Podkowiński e Józef Pankiewicz.",
       "È stato un altro meraviglioso Incontro con l’Arte guidato dalla signora Jolanta Polańska nella casa di assistenza sociale. In riconoscimento della sua dedizione e del suo straordinario contributo nel portare luce, bellezza e gioia nella vita dei residenti, le è stato consegnato un diploma speciale di apprezzamento."
+    ],
+    "sk": [
+      "Mali sme obrovské potešenie privítať pani Jolantu Polańskú, vynikajúcu kurátorku z Národného múzea v Lubline, ktorá predniesla fascinujúcu prednášku o maliarstve a umeleckom odkaze Wojciecha Gersona.",
+      "Wojciech Gerson (1831–1901) bol jedným z najvýznamnejších poľských maliarov 19. storočia, popredným predstaviteľom poľského realizmu a zanieteným propagátorom historického a krajinárskeho maliarstva. Bol tiež výnimočným pedagógom, ktorý učil a inšpiroval generácie umelcov vrátane takých maliarov ako Józef Chełmoński, Leon Wyczółkowski, Władysław Podkowiński a Józef Pankiewicz.",
+      "Bolo to ďalšie nádherné Stretnutie s umením, ktoré v domove sociálnych služieb viedla pani Jolanta Polańska. Za svoju oddanosť a mimoriadny prínos k tomu, že do životov obyvateľov prináša svetlo, krásu a radosť, dostala špeciálny ďakovný diplom."
+    ],
+    "de": [
+      "Wir hatten die große Freude, Frau Jolanta Polańska bei uns zu begrüßen, eine herausragende Kuratorin des Nationalmuseums in Lublin, die einen faszinierenden Vortrag über die Malerei und das künstlerische Erbe Wojciech Gersons hielt.",
+      "Wojciech Gerson (1831–1901) war einer der bedeutendsten polnischen Maler des 19. Jahrhunderts, ein führender Vertreter des polnischen Realismus und ein leidenschaftlicher Förderer der Historien- und Landschaftsmalerei. Er war zudem ein außergewöhnlicher Pädagoge, der Generationen von Künstlern unterrichtete und inspirierte, darunter Maler wie Józef Chełmoński, Leon Wyczółkowski, Władysław Podkowiński und Józef Pankiewicz.",
+      "Es war eine weitere wunderbare Kunstbegegnung, die Frau Jolanta Polańska im Sozialhilfeheim leitete. In Anerkennung ihres Engagements und ihres außergewöhnlichen Beitrags, Licht, Schönheit und Freude in das Leben der Bewohnerinnen und Bewohner zu bringen, erhielt sie ein besonderes Ehrendiplom."
+    ],
+    "fr": [
+      "Nous avons eu le grand plaisir d’accueillir Mme Jolanta Polańska, éminente conservatrice du Musée national de Lublin, qui a donné une conférence fascinante sur la peinture et l’héritage artistique de Wojciech Gerson.",
+      "Wojciech Gerson (1831–1901) fut l’un des plus importants peintres polonais du XIXe siècle, figure de proue du réalisme polonais et ardent promoteur de la peinture d’histoire et de paysage. Il fut également un pédagogue exceptionnel, qui a formé et inspiré des générations d’artistes, parmi lesquels des peintres tels que Józef Chełmoński, Leon Wyczółkowski, Władysław Podkowiński et Józef Pankiewicz.",
+      "Ce fut une nouvelle et magnifique Rencontre avec l’art animée par Mme Jolanta Polańska au foyer d’aide sociale. En reconnaissance de son engagement et de sa contribution extraordinaire à apporter lumière, beauté et joie dans la vie des résidents, elle a reçu un diplôme spécial de reconnaissance."
     ]
   }
 }

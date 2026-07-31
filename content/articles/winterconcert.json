@@ -7,19 +7,28 @@
     "en": "January 2024",
     "pl": "Styczeń 2024",
     "cz": "Leden 2024",
-    "it": "Gennaio 2024"
+    "it": "Gennaio 2024",
+    "sk": "Január 2024",
+    "de": "Januar 2024",
+    "fr": "janvier 2024"
   },
   "title": {
     "en": "Concert “Winter Painted with Sound”",
     "pl": "Koncert „Zima malowana dźwiękiem”",
     "cz": "Koncert „Zima malovaná zvukem“",
-    "it": "Concerto “L’inverno dipinto con il suono”"
+    "it": "Concerto “L’inverno dipinto con il suono”",
+    "sk": "Koncert „Zima maľovaná zvukom“",
+    "de": "Konzert „Winter, mit Klang gemalt“",
+    "fr": "Concert « L’hiver peint par le son »"
   },
   "lead": {
     "en": "Choir, guitars, accordion, piano, violin and bandura filled the Baobab with a festive mood at our scholarship recipients’ concert.",
     "pl": "Chór, gitary, akordeon, fortepian, skrzypce i bandura wypełniły Baobab świątecznym nastrojem na koncercie naszych stypendystów.",
     "cz": "Sbor, kytary, akordeon, klavír, housle a bandura naplnily Baobab sváteční náladou na koncertě našich stipendistů.",
-    "it": "Coro, chitarre, fisarmonica, pianoforte, violino e bandura hanno riempito il Baobab di atmosfera festiva al concerto dei nostri borsisti."
+    "it": "Coro, chitarre, fisarmonica, pianoforte, violino e bandura hanno riempito il Baobab di atmosfera festiva al concerto dei nostri borsisti.",
+    "sk": "Zbor, gitary, akordeón, klavír, husle a bandura naplnili Baobab sviatočnou náladou na koncerte našich štipendistov.",
+    "de": "Chor, Gitarren, Akkordeon, Klavier, Violine und Bandura erfüllten das Baobab beim Konzert unserer Stipendiatinnen und Stipendiaten mit festlicher Stimmung.",
+    "fr": "Chœur, guitares, accordéon, piano, violon et bandoura ont empli le Baobab d’une atmosphère de fête lors du concert de nos boursiers."
   },
   "body": {
     "en": [
@@ -41,6 +50,21 @@
       "Di recente abbiamo avuto il piacere di ascoltare i nostri borsisti al concerto “L’inverno dipinto con il suono” ospitato da Homo Faber. Il canto del coro e i suoni di chitarra, fisarmonica, pianoforte, violino, bandura e altri strumenti hanno riempito il Baobab, mettendo i partecipanti in un’atmosfera festiva.",
       "Il programma di borse di studio della Fondazione Stock, di cui Homo Faber è partner, permette ai bambini ucraini di talento di continuare l’educazione musicale interrotta dallo scoppio della guerra e sostiene anche l’attivazione professionale degli insegnanti ucraini.",
       "I giovani musicisti hanno l’opportunità di coltivare la loro passione e sviluppare le proprie capacità, il che li aiuta a ritrovare l’equilibrio nella vita. Durante questo concerto speciale ci hanno mostrato i loro talenti — momenti davvero magici."
+    ],
+    "sk": [
+      "Nedávno sme mali to potešenie počúvať našich štipendistov na koncerte „Zima maľovaná zvukom“, ktorý zorganizovalo Homo Faber. Spev zboru a zvuky gitary, akordeónu, klavíra, huslí, bandury a ďalších nástrojov naplnili Baobab a vniesli medzi účastníkov sviatočnú náladu.",
+      "Štipendijný program Nadácie Stock, ktorého partnerom je Homo Faber, umožňuje talentovaným ukrajinským deťom pokračovať v hudobnom vzdelávaní prerušenom vypuknutím vojny a zároveň podporuje profesijnú aktivizáciu ukrajinských učiteľov.",
+      "Mladí hudobníci môžu pokračovať vo svojej vášni a rozvíjať zručnosti, čo im pomáha znovu nachádzať životnú rovnováhu. Počas tohto výnimočného koncertu nám ukázali svoje talenty — boli to naozaj čarovné chvíle."
+    ],
+    "de": [
+      "Vor Kurzem hatten wir das Vergnügen, unseren Stipendiatinnen und Stipendiaten beim Konzert „Winter, mit Klang gemalt“ zuzuhören, das Homo Faber veranstaltete. Der Gesang des Chores sowie die Klänge von Gitarre, Akkordeon, Klavier, Violine, Bandura und weiteren Instrumenten erfüllten das Baobab und versetzten das Publikum in festliche Stimmung.",
+      "Das Stipendienprogramm der Stiftung Stock, dessen Partner Homo Faber ist, ermöglicht begabten ukrainischen Kindern, ihre durch den Kriegsausbruch unterbrochene musikalische Ausbildung fortzusetzen, und unterstützt zugleich die berufliche Eingliederung ukrainischer Lehrkräfte.",
+      "Die jungen Musikerinnen und Musiker können ihrer Leidenschaft weiter nachgehen und ihre Fähigkeiten entwickeln, was ihnen hilft, ihr inneres Gleichgewicht wiederzufinden. Bei diesem besonderen Konzert zeigten sie uns ihr Talent — es waren wirklich magische Momente."
+    ],
+    "fr": [
+      "Nous avons récemment eu le plaisir d’écouter nos boursiers lors du concert « L’hiver peint par le son », organisé par Homo Faber. Le chant de la chorale et les sons de la guitare, de l’accordéon, du piano, du violon, de la bandoura et d’autres instruments ont empli le Baobab, plongeant le public dans une atmosphère de fête.",
+      "Le programme de bourses d’études de la Fondation Stock, dont Homo Faber est partenaire, permet à des enfants ukrainiens talentueux de poursuivre l’éducation musicale interrompue par le déclenchement de la guerre et soutient également l’insertion professionnelle des enseignants ukrainiens.",
+      "Les jeunes musiciens peuvent continuer à cultiver leur passion et à développer leurs compétences, ce qui les aide à retrouver leur équilibre de vie. Lors de ce concert exceptionnel, ils nous ont montré leurs talents — de véritables moments magiques."
     ]
   }
 }
