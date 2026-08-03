@@ -106,7 +106,7 @@ if (!LANGS.some(l => l.code === currentLang)) currentLang = 'en';
    or hero (`<name>-800.jpg`). Phones display these at ~375 px, so serving the
    full 1600 px file wastes several hundred kB per page. Returns a srcset for
    the paths that have a variant, '' for the rest (portraits, badges, SVGs). */
-const HAS_SMALL = /\/uploads\/(news-[a-z0-9]+|sisan-[a-z]+|about-festyn|about-workshop|hero-home)\.jpg$/;
+const HAS_SMALL = /\/uploads\/(news-[a-z0-9]+|sisan-[a-z]+|about-festyn|about-workshop)\.jpg$/;
 window.fsSrcset = function (src) {
   if (!src || !HAS_SMALL.test(src)) return '';
   return src.replace(/\.jpg$/, '-800.jpg') + ' 800w, ' + src + ' 1600w';
