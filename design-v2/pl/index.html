@@ -33,7 +33,30 @@
 
   <!-- HERO -->
   <section id="top" class="hero">
-    <img class="hero-photo" src="/uploads/hero-home.jpg" srcset="/uploads/hero-home-800.jpg 800w, /uploads/hero-home.jpg 1920w" sizes="100vw" alt="" aria-hidden="true" fetchpriority="high" decoding="async">
+    <!-- Hero slideshow. The photos are decorative (alt="" + aria-hidden) — the
+         heading and the lead carry the meaning. Slide 1 is the page's LCP element
+         and loads at high priority; the rest go out at fetchpriority="low" so they
+         never compete with it for bandwidth — they are not needed for 3 seconds.
+         object-position is set per frame: on phones the portrait crop makes the X
+         axis decisive, on desktop (photo = right 64% of the viewport) the Y axis. -->
+    <div class="hero-slides" id="heroSlides">
+      <picture>
+        <source type="image/webp" srcset="/uploads/hero-museum-800.webp 800w, /uploads/hero-museum-1280.webp 1280w, /uploads/hero-museum-1600.webp 1600w" sizes="(min-width: 981px) 64vw, 100vw">
+        <img class="hero-photo is-active" src="/uploads/hero-museum-1280.jpg" srcset="/uploads/hero-museum-800.jpg 800w, /uploads/hero-museum-1280.jpg 1280w, /uploads/hero-museum-1600.jpg 1600w" sizes="(min-width: 981px) 64vw, 100vw" style="object-position: 50% 38%" alt="" aria-hidden="true" fetchpriority="high" decoding="async">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="/uploads/hero-music-800.webp 800w, /uploads/hero-music-1280.webp 1280w, /uploads/hero-music-1600.webp 1600w" sizes="(min-width: 981px) 64vw, 100vw">
+        <img class="hero-photo" src="/uploads/hero-music-1280.jpg" srcset="/uploads/hero-music-800.jpg 800w, /uploads/hero-music-1280.jpg 1280w, /uploads/hero-music-1600.jpg 1600w" sizes="(min-width: 981px) 64vw, 100vw" style="object-position: 48% 42%" alt="" aria-hidden="true" fetchpriority="low" decoding="async">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="/uploads/hero-training-800.webp 800w, /uploads/hero-training-1280.webp 1280w, /uploads/hero-training-1600.webp 1600w" sizes="(min-width: 981px) 64vw, 100vw">
+        <img class="hero-photo" src="/uploads/hero-training-1280.jpg" srcset="/uploads/hero-training-800.jpg 800w, /uploads/hero-training-1280.jpg 1280w, /uploads/hero-training-1600.jpg 1600w" sizes="(min-width: 981px) 64vw, 100vw" style="object-position: 50% 46%" alt="" aria-hidden="true" fetchpriority="low" decoding="async">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="/uploads/hero-volunteers-800.webp 800w, /uploads/hero-volunteers-1280.webp 1280w, /uploads/hero-volunteers-1600.webp 1600w" sizes="(min-width: 981px) 64vw, 100vw">
+        <img class="hero-photo" src="/uploads/hero-volunteers-1280.jpg" srcset="/uploads/hero-volunteers-800.jpg 800w, /uploads/hero-volunteers-1280.jpg 1280w, /uploads/hero-volunteers-1600.jpg 1600w" sizes="(min-width: 981px) 64vw, 100vw" style="object-position: 50% 46%" alt="" aria-hidden="true" fetchpriority="low" decoding="async">
+      </picture>
+    </div>
     <svg class="hero-art" viewBox="0 0 1200 600" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
       <g fill="none" stroke="#CD9E0C" stroke-width="1.2">
         <path d="M900 80 C900 80 830 60 760 60 C690 60 620 80 620 80 C618 120 590 150 550 150 L550 380 C550 500 620 600 760 650 C900 600 970 500 970 380 L970 150 C930 150 902 120 900 80 Z" opacity="0.55"></path>

@@ -5,6 +5,10 @@ wp-media/
 # do design-v2/uploads/, same oryginały zostają lokalnie
 _WRZUC-TUTAJ/
 
+# oryginały zdjęć hero (4096x3072, ~12 MB) — w repo trafiają tylko
+# przeskalowane warianty design-v2/uploads/hero-*.webp i .jpg
+Hero nowe/
+
 # lokalne artefakty narzędzi
 .vercel/
 design-v2/.vercel/

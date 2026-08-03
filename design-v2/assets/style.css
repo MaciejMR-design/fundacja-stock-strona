@@ -83,13 +83,19 @@ header.site.scrolled .logo img { height: 42px; }
 /* background photo layer + navy overlay for legibility (all heroes) */
 .hero-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .85; z-index: 0; transform-origin: center; animation: slowZoom 24s ease-in-out infinite alternate; }
 .page-hero::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(115deg, rgba(0,41,87,.55) 0%, rgba(0,41,87,.3) 46%, rgba(22,59,101,0) 100%); pointer-events: none; }
-/* homepage: real photo. On mobile = full-bleed with strong overlay; on desktop = split (text left / photo right) so faces never sit under text */
-.hero .hero-photo { opacity: 1; object-position: 56% 24%; transform-origin: 60% top; }
+/* homepage: a slideshow of real photos. On mobile = full-bleed with strong overlay; on desktop = split (text left / photo right) so faces never sit under text.
+   The slow zoom sits on the wrapper, not on the individual slides: one continuous
+   movement across the whole loop, instead of a scale that snaps back to 1 every
+   time a new photo fades in. Each slide only cross-fades. */
+.hero-slides { position: absolute; inset: 0; z-index: 0; overflow: hidden; transform-origin: 60% top; animation: slowZoom 24s ease-in-out infinite alternate; }
+.hero-slides picture { display: contents; }
+.hero .hero-photo { opacity: 0; transform: none; animation: none; transition: opacity 1.1s ease-in-out; }
+.hero .hero-photo.is-active { opacity: 1; }
 .hero::before { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(100deg, rgba(0,18,40,.96) 0%, rgba(0,26,58,.9) 30%, rgba(0,41,87,.65) 54%, rgba(0,41,87,.3) 80%, rgba(0,41,87,.18) 100%); }
 .hero::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(to top, rgba(0,16,38,.6) 0%, rgba(0,16,38,0) 34%); }
 .hero .hero-art { display: none; }
 @media (min-width: 981px) {
-  .hero .hero-photo { left: auto; right: 0; width: 64%; object-position: 42% 20%; }
+  .hero-slides { left: auto; right: 0; width: 64%; }
   .hero::before { background: linear-gradient(90deg, #002957 0%, #002957 32%, rgba(0,41,87,.9) 42%, rgba(0,41,87,.5) 55%, rgba(0,41,87,.2) 76%, rgba(0,41,87,.12) 100%); }
   .hero-content { max-width: 540px; }
 }
@@ -97,7 +103,10 @@ header.site.scrolled .logo img { height: 42px; }
 /* no line-drawing sweep anywhere — static crest lines only */
 .hero-art path, .hero-art circle { stroke-dasharray: none; stroke-dashoffset: 0; }
 @keyframes slowZoom { from { transform: scale(1); } to { transform: scale(1.12); } }
-@media (prefers-reduced-motion: reduce) { .hero-art, .page-hero .hero-art { animation: none; } .hero-art path, .hero-art circle { animation: none; stroke-dashoffset: 0; } }
+/* reduced motion: no zoom, no cross-fade. main.js additionally stops the slideshow
+   on the first photo — an image swapping itself every 3 s is exactly the kind of
+   movement this setting asks us not to make. */
+@media (prefers-reduced-motion: reduce) { .hero-art, .page-hero .hero-art { animation: none; } .hero-art path, .hero-art circle { animation: none; stroke-dashoffset: 0; } .hero-slides { animation: none; } .hero .hero-photo { transition: none; } }
 .hero-inner { position: relative; z-index: 3; padding-top: clamp(90px, 12vw, 160px); padding-bottom: clamp(100px, 13vw, 170px); }
 .scroll-hint { z-index: 3; }
 .hero-content { max-width: 760px; display: flex; flex-direction: column; gap: 26px; }

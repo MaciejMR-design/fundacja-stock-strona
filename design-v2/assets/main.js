@@ -323,6 +323,46 @@ if (statsBand) {
   statsObserver.observe(statsBand);
 }
 
+/* hero slideshow (home) — four photos, one at a time, 3 s each. The cross-fade
+   itself is CSS (.hero-photo → .is-active); this only moves the class along.
+
+   Two guards that matter outside a fast connection: a slide is skipped until its
+   file has actually arrived — switching to an <img> that has not loaded would
+   flash the bare navy background — and a photo that failed outright is passed
+   over for good instead of stalling the loop on it. The timer is also parked
+   while the tab sits in the background, so coming back does not replay a queue
+   of transitions. Visitors who asked for reduced motion keep the first photo. */
+const heroSlides = document.getElementById('heroSlides');
+if (heroSlides && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const slides = Array.from(heroSlides.querySelectorAll('.hero-photo'));
+  if (slides.length > 1) {
+    const HERO_MS = 3000;
+    let idx = 0;
+    let timer = null;
+
+    const gotowy = img => img.complete && img.naturalWidth > 0;
+    function nextSlide() {
+      for (let step = 1; step < slides.length; step++) {
+        const kandydat = slides[(idx + step) % slides.length];
+        if (gotowy(kandydat)) return kandydat;
+      }
+      return null;   // nothing else is ready yet — hold the current photo
+    }
+    function advance() {
+      const next = nextSlide();
+      if (!next) return;
+      slides[idx].classList.remove('is-active');
+      next.classList.add('is-active');
+      idx = slides.indexOf(next);
+    }
+
+    const startSlides = () => { if (!timer) timer = setInterval(advance, HERO_MS); };
+    const stopSlides = () => { clearInterval(timer); timer = null; };
+    document.addEventListener('visibilitychange', () => document.hidden ? stopSlides() : startSlides());
+    startSlides();
+  }
+}
+
 /* lightbox — click any content image to enlarge */
 const lb = document.createElement('div');
 lb.className = 'lightbox';
