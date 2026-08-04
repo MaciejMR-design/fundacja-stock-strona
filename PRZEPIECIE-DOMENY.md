@@ -48,7 +48,7 @@ Ustalenia ze starej strony (sprawdzone na żywo, nie z eksportu):
    node sprawdz-przekierowania.mjs https://fundacjastock.pl
    ```
 6. Ustaw `OG_SITE = SITE` w `build-langs.mjs` (linia ~113) oraz `site_url`
-   i `base_url` w `design-v2/admin/admin/config.yml` na `https://fundacjastock.pl`.
+   i `base_url` w `design-v2/admin/config.yml` na `https://fundacjastock.pl`.
    Push uruchomi build. Dopóki tego nie zrobisz, każdy build przypomina o tym
    w logu.
 7. Zmień **Authorization callback URL** aplikacji OAuth na GitHubie na
