@@ -124,16 +124,56 @@ Od tego momentu każdy krok jest odwracalny.
 
 # Część III — Przepięcie DNS (30 min pracy + do 2 h czekania)
 
-1. nazwa.pl: obniż TTL rekordów `A` i `CNAME` do 300 s i odczekaj tyle, ile
-   wynosił poprzedni TTL (często 1–4 h). Można pominąć — wtedy propagacja
-   potrwa dłużej.
-2. Vercel → projekt → Domains: dodaj `fundacjastock.pl` i `www.fundacjastock.pl`;
-   `www` ustaw jako **przekierowanie** na wersję bez `www`.
-3. nazwa.pl: podmień `A` (domena główna) i `CNAME` (`www`) na wartości
-   **z panelu Vercela**. **Rekordów `MX` i `TXT` nie ruszaj** — inaczej padnie
-   poczta fundacji, a to jedyny kanał kontaktu na stronie. Nie przełączaj
-   serwerów nazw.
-4. Czekaj. Zwykle poniżej 30 minut, czasem do 2 h. Certyfikat Vercel wystawia sam.
+Domena `fundacjastock.pl` ma strefę u **LH.pl** — te dwa rekordy zmienia się
+w panelu LH.pl, nie w nazwa.pl.
+
+| Rekord | Nazwa | Było (LH.pl) | Ma być (Vercel) |
+|---|---|---|---|
+| `A` | `@` | `185.135.90.43` | `216.198.79.1` |
+| `CNAME` (lub `A`) | `www` | `185.135.90.43` | `e377614e4284ca79.vercel-dns-017.com` |
+
+**To są DWA rekordy, nie jeden.** `www` ma dziś w LH.pl własny rekord `A`.
+Zmiana tylko domeny głównej zostawiłaby `www.fundacjastock.pl` na starym
+WordPressie — dwie wersje serwisu żywe naraz i duplikat treści w Google.
+
+Kroki:
+
+1. LH.pl: obniż TTL obu rekordów do 300 s i odczekaj tyle, ile wynosił poprzedni
+   TTL. Można pominąć — wtedy propagacja potrwa dłużej.
+2. Vercel → projekt → Domains: `fundacjastock.pl` jako **Connect to environment
+   → Production**, `www.fundacjastock.pl` jako **Redirect to Another Domain →
+   fundacjastock.pl, 308 Permanent**. (Zrobione 04.08.2026.)
+3. LH.pl: podmień oba rekordy według tabeli wyżej. **`MX`, `TXT` (SPF, DMARC,
+   DKIM) i wildcard `*` zostają nietknięte** — inaczej padnie poczta fundacji,
+   a to jedyny kanał kontaktu na stronie. Nie przełączaj serwerów nazw.
+4. Czekaj. Zwykle poniżej 30 minut, czasem do 2 h.
+
+**Kilkuminutowe okno bez HTTPS jest nieuniknione.** Certyfikat dla
+`fundacjastock.pl` może powstać dopiero wtedy, gdy domena wskazuje na Vercela —
+więc między zniknięciem starej strony a wystawieniem certyfikatu wejście po
+`https` zwróci błąd. Vercel wystawia go zwykle w kilkadziesiąt sekund. Rób to
+w godzinach niskiego ruchu; jeśli po 10 minutach `https` nadal nie działa,
+wtedy dopiero szukaj przyczyny.
+
+## Plan awaryjny
+
+Wpisz w LH.pl z powrotem `185.135.90.43` w obu rekordach — stara strona wraca
+w czasie TTL, czyli kilka minut. Nic nie jest nieodwracalne, dopóki nie ruszasz
+`MX` i nie usuwasz hostingu w LH.pl.
+
+## Test przed przepięciem (bez zmiany DNS)
+
+Można sprawdzić cały serwis pod prawdziwą domeną, wymuszając adres Vercela.
+Certyfikatu jeszcze nie ma, więc test idzie po HTTP:
+
+```bash
+curl -s --resolve fundacjastock.pl:80:216.198.79.1 http://fundacjastock.pl/ | head -20
+curl -s -o /dev/null --resolve fundacjastock.pl:80:216.198.79.1 -w '%{http_code} -> %{redirect_url}\n' http://fundacjastock.pl/about-us/
+```
+
+Sprawdzone 04.08.2026: strona główna zwraca nową wersję z poprawnym adresem
+kanonicznym, wszystkie rodziny starych adresów przekierowują, `/admin/`, `/pl/`
+i `/sitemap.xml` odpowiadają 200.
 
 # Część IV — Dokończenie (25 min)
 
@@ -152,11 +192,28 @@ Od tego momentu każdy krok jest odwracalny.
    wyjdzie bez świadków.
 5. Podmień adres panelu w `INSTRUKCJA-PANELU.md`.
 
-# Część V — Pozostałe domeny (20 min)
+# Część V — Pozostałe domeny (30–40 min)
 
-Każdą razem z jej `www` dodaj w Vercelu z opcją **Redirect to**
-`fundacjastock.pl`, a na nazwa.pl skieruj `A`/`CNAME` na Vercela. Jeśli któraś
-obsługuje pocztę — zostaw jej `MX`.
+Sześć domen-wariantów, wszystkie z DNS w **nazwa.pl** (w odróżnieniu od głównej),
+więc niezależne od LH.pl: `fundacjastock.com`, `fundacjastock.eu`,
+`fundacjastock.org`, `fundacjastock.com.pl`, `stockfoundation.pl`,
+`stockfoundation.eu`. Dziś pokazują stronę parkingową nazwa.pl.
+
+1. Vercel: dodaj każdą razem z jej `www` (12 adresów, można wklejić naraz),
+   opcja **Redirect to Another Domain → fundacjastock.pl, 308 Permanent**,
+   checkbox „Include apex and www variants" **odznaczony**.
+2. nazwa.pl → Panel Klienta → Usługi → Domeny → wybrana domena → **Ręczna
+   konfiguracja DNS**: `A` dla `@` = `216.198.79.1`, `CNAME` dla `www` =
+   wartość z panelu Vercela. Bez kropki na końcu.
+
+Nie używać wbudowanego „Przekierowania na adres URL" w nazwa.pl. Sprawdzone
+04.08.2026: nie ma certyfikatu dla tych domen (serwer podstawia `CN=*.nazwa.pl`),
+więc wejście po `https` daje ostrzeżenie przeglądarki, a samo przekierowanie
+działało niestabilnie i tylko dla wariantu z `www`.
+
+Do rezygnacji z hostingu LH.pl potrzebne są **najpierw** DNS i poczta w innym
+miejscu — wyłączenie LH.pl przy serwerach nazw wskazujących na `ns.lh.pl`
+wygasza całą domenę, razem ze stroną na Vercelu i pocztą.
 
 # Część VI — Search Console (15 min + obserwacja)
 
