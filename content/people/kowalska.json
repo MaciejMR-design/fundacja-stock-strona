@@ -1,0 +1,39 @@
+{
+  "id": "kowalska",
+  "order": 20,
+  "group": "council",
+  "name": "Marta Kowalska",
+  "photo": "/uploads/kowalska.jpg",
+  "role": {
+    "pl": "Członek Rady",
+    "en": "Council Member",
+    "cz": "Členka rady",
+    "it": "Membro del Consiglio",
+    "sk": "Členka rady",
+    "de": "Mitglied des Stiftungsrats",
+    "fr": "Membre du Conseil"
+  },
+  "bio": {
+    "pl": [
+      "Doświadczona specjalistka inwestycyjna wyspecjalizowana w private equity w sektorze ochrony zdrowia. Obecnie pełni funkcję Dyrektorki Inwestycyjnej z siedzibą w Nowym Jorku, wcześniej pracowała jako Investment Executive w Warszawie oraz analityczka bankowości inwestycyjnej w Deutsche Bank w Nowym Jorku. Pierwsze doświadczenia zdobywała na stanowiskach badawczych w The Wharton School oraz podczas staży w venture capital i nieruchomościach. Duże kompetencje w analizie finansowej, realizacji transakcji i inwestycjach w ochronie zdrowia."
+    ],
+    "en": [
+      "An experienced investment professional specializing in private equity within the healthcare sector. Currently serving as Investment Director and based in New York, with prior roles as an Investment Executive in Warsaw and an Investment Banking Analyst at Deutsche Bank in New York. Gained early experience through research positions at The Wharton School and internships in venture capital and real estate. Strong expertise in financial analysis, deal execution, and healthcare investments."
+    ],
+    "cz": [
+      "Zkušená investiční profesionálka specializující se na private equity ve zdravotnickém sektoru. V současnosti působí jako investiční ředitelka se sídlem v New Yorku, dříve jako Investment Executive ve Varšavě a analytička investičního bankovnictví v Deutsche Bank v New Yorku. První zkušenosti získala na výzkumných pozicích na The Wharton School a při stážích ve venture kapitálu a v realitách. Silná odbornost ve finanční analýze, realizaci transakcí a zdravotnických investicích."
+    ],
+    "it": [
+      "Professionista degli investimenti esperta, specializzata in private equity nel settore sanitario. Attualmente Direttrice degli Investimenti con sede a New York, in precedenza Investment Executive a Varsavia e analista di investment banking presso Deutsche Bank a New York. Ha maturato le prime esperienze in posizioni di ricerca alla Wharton School e in stage nel venture capital e nel real estate. Forte competenza in analisi finanziaria, esecuzione di operazioni e investimenti sanitari."
+    ],
+    "sk": [
+      "Skúsená investičná profesionálka špecializujúca sa na private equity v sektore zdravotníctva. V súčasnosti pôsobí ako investičná riaditeľka so sídlom v New Yorku, predtým ako Investment Executive vo Varšave a analytička investičného bankovníctva v Deutsche Bank v New Yorku. Prvé skúsenosti získala na výskumných pozíciách na The Wharton School a počas stáží v oblasti rizikového kapitálu a v oblasti nehnuteľností. Silná odbornosť vo finančnej analýze, realizácii transakcií a investíciách do zdravotníctva."
+    ],
+    "de": [
+      "Erfahrene Investmentexpertin mit Spezialisierung auf Private Equity im Gesundheitssektor. Derzeit als Investment Director in New York tätig, zuvor als Investment Executive in Warschau und als Investment-Banking-Analystin bei der Deutschen Bank in New York. Erste Erfahrungen sammelte sie in Forschungspositionen an der Wharton School sowie in Praktika in den Bereichen Venture Capital und Immobilien. Ausgeprägte Expertise in Finanzanalyse, Transaktionsabwicklung und Investitionen im Gesundheitswesen."
+    ],
+    "fr": [
+      "Professionnelle expérimentée de l’investissement, spécialisée en private equity dans le secteur de la santé. Actuellement directrice des investissements basée à New York, elle a auparavant travaillé comme Investment Executive à Varsovie et comme analyste en banque d’investissement chez Deutsche Bank à New York. Elle a acquis ses premières expériences dans des postes de recherche à la Wharton School et lors de stages en venture capital et en immobilier. Solides compétences en analyse financière, en exécution de transactions et en investissements dans le secteur de la santé."
+    ]
+  }
+}

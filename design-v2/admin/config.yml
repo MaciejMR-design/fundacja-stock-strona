@@ -1,11 +1,19 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms@0.178.0/schema/sveltia-cms.json
 # Konfiguracja panelu treści (Sveltia CMS)
-# Panel edytuje WYŁĄCZNIE treści (aktualności, teksty sekcji, zdjęcia) — układ strony jest poza jego zasięgiem.
+# Panel edytuje WYŁĄCZNIE treści (aktualności, osoby, dokumenty, teksty sekcji,
+# zdjęcia) — układ strony jest poza jego zasięgiem.
 backend:
   name: github
   repo: MaciejMR-design/fundacja-stock-strona
   branch: main
   base_url: https://fundacja-stock-design.vercel.app
   auth_endpoint: api/auth
+  # Na ekranie logowania ma być jeden przycisk: „Sign In with GitHub".
+  # Domyślnie panel pokazuje też „Sign In Using Access Token" — logowanie
+  # wklejanym kluczem, którego redaktor nie potrzebuje i którym może się
+  # tylko pomylić (a klucz w cudzej przeglądarce to trwałe prawo zapisu
+  # do repozytorium). Gdybyśmy jednak wybrali logowanie kluczem: [token].
+  auth_methods: [oauth]
   commit_messages:
     create: 'Panel: dodano {{collection}} „{{slug}}”'
     update: 'Panel: zmieniono {{collection}} „{{slug}}”'
@@ -13,17 +21,44 @@ backend:
     uploadMedia: 'Panel: dodano plik {{path}}'
     deleteMedia: 'Panel: usunięto plik {{path}}'
 
+# TODO po przełączeniu na fundacjastock.pl: podmienić site_url i base_url.
 site_url: https://fundacja-stock-design.vercel.app
-logo_url: https://fundacja-stock-design.vercel.app/uploads/logo-footer.svg
+logo_url: /uploads/logo-footer.svg
 
 media_folder: design-v2/uploads
 public_folder: /uploads
+
+media_libraries:
+  default:
+    config:
+      # Zdjęcia z telefonu (12 MB, 4000 px) są przy wgrywaniu przerabiane
+      # w przeglądarce na WebP i skalowane do 1600 px — do repozytorium
+      # trafia plik ~150 kB zamiast kilkunastu megabajtów. PDF-y i inne
+      # pliki przechodzą bez zmian.
+      max_file_size: 26214400   # 25 MB na plik źródłowy
+      slugify_filename: true    # spacje i polskie znaki w nazwach -> myślniki
+      transformations:
+        raster_image:
+          format: webp
+          quality: 82
+          width: 1600
+          height: 1600
+        svg:
+          optimize: true
+  # bez banków zdjęć w okienku wyboru — na stronie fundacji używamy
+  # wyłącznie własnych fotografii
+  stock_assets:
+    providers: []
+
+output:
+  omit_empty_optional_fields: true
 
 collections:
   - name: aktualnosci
     label: Aktualności
     label_singular: Aktualność
-    description: 'Wpisy z sekcji Aktualności. Nowy wpis publikuje się na stronie 1–2 minuty po zapisaniu. Wypełnij po polsku i po angielsku — pozostałe języki (CZ/IT/SK/DE/FR) można zostawić, uzupełnimy je.'
+    icon: newspaper
+    description: 'Wpisy z sekcji Aktualności. Nowy wpis publikuje się na stronie 1–2 minuty po zapisaniu. Wypełnij po polsku i po angielsku — pozostałe języki można zostawić puste (pokaże się wtedy wersja angielska).'
     folder: content/articles
     format: json
     extension: json
@@ -32,10 +67,28 @@ collections:
     identifier_field: id
     slug: '{{fields.id}}'
     summary: '{{fields.title.pl}} ({{fields.ts}})'
-    sortable_fields: [ts]
+    thumbnail: img
+    preview_path: 'article-{{fields.id}}.html'
+    sortable_fields:
+      fields: [ts, cat, id]
+      default: { field: ts, direction: descending }
+    view_filters:
+      - { label: 'Spotkania ze sztuką', field: cat, pattern: art }
+      - { label: 'Społeczność', field: cat, pattern: community }
+      - { label: 'Stypendia', field: cat, pattern: scholar }
+    view_groups:
+      - { label: Rok, field: ts, pattern: '\d{4}' }
+      - { label: Kategoria, field: cat }
     fields:
-      - { name: id, label: 'Identyfikator (krótki, po angielsku, bez spacji — np. koncert2027)', widget: string, pattern: ['^[a-z0-9-]+$', 'Tylko małe litery, cyfry i myślniki'] }
-      - { name: ts, label: 'Data wydarzenia', widget: datetime, format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false }
+      - { name: id, label: 'Identyfikator', hint: 'Krótko, po angielsku, bez spacji — np. koncert2027. Tworzy adres artykułu, więc po opublikowaniu lepiej go nie zmieniać.', widget: string, pattern: ['^[a-z0-9-]+$', 'Tylko małe litery, cyfry i myślniki'] }
+      - { name: ts, label: 'Data wydarzenia', hint: 'Ustawia kolejność wpisów i datę widoczną na stronie — we wszystkich językach automatycznie.', widget: datetime, format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false }
+      - name: dateSpan
+        label: 'Dokładność daty na stronie'
+        widget: select
+        default: day
+        options:
+          - { label: 'Pełna data (5 czerwca 2026)', value: day }
+          - { label: 'Tylko miesiąc (czerwiec 2026)', value: month }
       - name: cat
         label: Kategoria
         widget: select
@@ -49,61 +102,144 @@ collections:
         widget: list
         required: false
         field: { name: image, label: Zdjęcie, widget: image }
-      - name: date
-        label: 'Data wyświetlana (tekstem)'
-        widget: object
-        fields:
-          - { name: pl, label: 'Polski (np. 5 czerwca 2026)', widget: string }
-          - { name: en, label: 'Angielski (np. 5 June 2026)', widget: string }
-          - { name: cz, label: 'Czeski (np. 5. června 2026)', widget: string }
-          - { name: it, label: 'Włoski (np. 5 giugno 2026)', widget: string }
-          - { name: sk, label: 'Słowacki (np. 5. júna 2026)', widget: string, required: false }
-          - { name: de, label: 'Niemiecki (np. 5. Juni 2026)', widget: string, required: false }
-          - { name: fr, label: 'Francuski (np. 5 juin 2026)', widget: string, required: false }
       - name: title
         label: Tytuł
         widget: object
-        fields:
+        fields: &langString
           - { name: pl, label: Polski, widget: string }
           - { name: en, label: Angielski, widget: string }
+          - { name: cz, label: 'Czeski (opcjonalnie)', widget: string, required: false }
+          - { name: it, label: 'Włoski (opcjonalnie)', widget: string, required: false }
+          - { name: sk, label: 'Słowacki (opcjonalnie)', widget: string, required: false }
+          - { name: de, label: 'Niemiecki (opcjonalnie)', widget: string, required: false }
+          - { name: fr, label: 'Francuski (opcjonalnie)', widget: string, required: false }
+      - name: lead
+        label: 'Lead (1–2 zdania zajawki)'
+        widget: object
+        fields: &langText
+          - { name: pl, label: Polski, widget: text }
+          - { name: en, label: Angielski, widget: text }
+          - { name: cz, label: 'Czeski (opcjonalnie)', widget: text, required: false }
+          - { name: it, label: 'Włoski (opcjonalnie)', widget: text, required: false }
+          - { name: sk, label: 'Słowacki (opcjonalnie)', widget: text, required: false }
+          - { name: de, label: 'Niemiecki (opcjonalnie)', widget: text, required: false }
+          - { name: fr, label: 'Francuski (opcjonalnie)', widget: text, required: false }
+      - name: body
+        label: 'Treść (każdy akapit osobno)'
+        widget: object
+        fields: &langParas
+          - { name: pl, label: 'Polski — akapity', widget: list, field: { name: p, label: Akapit, widget: text } }
+          - { name: en, label: 'Angielski — akapity', widget: list, field: { name: p, label: Akapit, widget: text } }
+          - { name: cz, label: 'Czeski (opcjonalnie)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+          - { name: it, label: 'Włoski (opcjonalnie)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+          - { name: sk, label: 'Słowacki (opcjonalnie)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+          - { name: de, label: 'Niemiecki (opcjonalnie)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+          - { name: fr, label: 'Francuski (opcjonalnie)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+      - name: date
+        label: 'Data słownie — nadpisanie (zwykle niepotrzebne)'
+        hint: 'Zostaw puste: data powstaje sama z „Daty wydarzenia”. Wpisz tylko wtedy, gdy ma brzmieć inaczej niż standardowo.'
+        widget: object
+        collapsed: true
+        required: false
+        fields:
+          - { name: pl, label: 'Polski (np. 5 czerwca 2026)', widget: string, required: false }
+          - { name: en, label: 'Angielski (np. 5 June 2026)', widget: string, required: false }
           - { name: cz, label: Czeski, widget: string, required: false }
           - { name: it, label: Włoski, widget: string, required: false }
           - { name: sk, label: Słowacki, widget: string, required: false }
           - { name: de, label: Niemiecki, widget: string, required: false }
           - { name: fr, label: Francuski, widget: string, required: false }
-      - name: lead
-        label: 'Lead (1–2 zdania zajawki)'
+
+  - name: osoby
+    label: 'Rada i Zarząd'
+    label_singular: Osoba
+    icon: group
+    description: 'Skład Rady Fundacji i Zarządu — zdjęcia, funkcje i biogramy. Kolejność na stronie ustawia pole „Kolejność”.'
+    folder: content/people
+    format: json
+    extension: json
+    create: true
+    delete: true
+    identifier_field: name
+    slug: '{{fields.id}}'
+    summary: '{{fields.name}} — {{fields.role.pl}}'
+    thumbnail: photo
+    sortable_fields:
+      fields: [order, name]
+      default: { field: order }
+    view_groups:
+      - { label: Organ, field: group }
+    fields:
+      - { name: id, label: 'Identyfikator', hint: 'Nazwisko małymi literami, bez polskich znaków — np. kowalska. Tworzy adres profilu.', widget: string, pattern: ['^[a-z0-9-]+$', 'Tylko małe litery, cyfry i myślniki'] }
+      - name: group
+        label: Organ
+        widget: select
+        options:
+          - { label: 'Rada Fundacji', value: council }
+          - { label: 'Zarząd Fundacji', value: board }
+      - { name: order, label: 'Kolejność w obrębie organu', hint: 'Mniejsza liczba = wyżej. Przewodniczący zwykle 10, kolejne osoby 20, 30…', widget: number, value_type: int, default: 100, min: 1 }
+      - { name: name, label: 'Imię i nazwisko', widget: string }
+      - { name: photo, label: 'Zdjęcie', widget: image }
+      - name: role
+        label: 'Funkcja'
         widget: object
-        fields:
-          - { name: pl, label: Polski, widget: text }
-          - { name: en, label: Angielski, widget: text }
-          - { name: cz, label: Czeski, widget: text, required: false }
-          - { name: it, label: Włoski, widget: text, required: false }
-          - { name: sk, label: Słowacki, widget: text, required: false }
-          - { name: de, label: Niemiecki, widget: text, required: false }
-          - { name: fr, label: Francuski, widget: text, required: false }
-      - name: body
-        label: 'Treść (każdy akapit osobno)'
+        fields: *langString
+      - name: bio
+        label: 'Biogram (każdy akapit osobno)'
         widget: object
+        fields: *langParas
+
+  - name: dokumenty
+    label: 'Statut i sprawozdania'
+    icon: folder_open
+    description: 'Pliki PDF widoczne na podstronie „Statut i sprawozdania”. Nowy rok = przycisk „+” na liście sprawozdań.'
+    files:
+      - name: documents
+        label: 'Statut i sprawozdania roczne'
+        file: content/documents.json
         fields:
-          - { name: pl, label: 'Polski — akapity', widget: list, field: { name: p, label: Akapit, widget: text } }
-          - { name: en, label: 'Angielski — akapity', widget: list, field: { name: p, label: Akapit, widget: text } }
-          - { name: cz, label: 'Czeski — akapity', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
-          - { name: it, label: 'Włoski — akapity', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
-          - { name: sk, label: 'Słowacki — akapity', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
-          - { name: de, label: 'Niemiecki — akapity', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
-          - { name: fr, label: 'Francuski — akapity', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+          - { name: statuteFile, label: 'Statut fundacji (PDF)', widget: file }
+          - name: reports
+            label: 'Sprawozdania — jeden wpis na rok'
+            label_singular: Rok
+            widget: list
+            summary: '{{fields.year}}'
+            fields:
+              - { name: year, label: Rok, widget: string, pattern: ['^\d{4}$', 'Cztery cyfry, np. 2026'] }
+              - { name: activityFile, label: 'Sprawozdanie z działalności (PDF)', widget: file, required: false }
+              - name: activityDesc
+                label: 'Opis sprawozdania z działalności'
+                widget: object
+                required: false
+                collapsed: true
+                fields: &langTextOptional
+                  - { name: pl, label: Polski, widget: text, required: false }
+                  - { name: en, label: Angielski, widget: text, required: false }
+                  - { name: cz, label: Czeski, widget: text, required: false }
+                  - { name: it, label: Włoski, widget: text, required: false }
+                  - { name: sk, label: Słowacki, widget: text, required: false }
+                  - { name: de, label: Niemiecki, widget: text, required: false }
+                  - { name: fr, label: Francuski, widget: text, required: false }
+              - { name: balanceFile, label: 'Bilans (PDF)', widget: file, required: false }
+              - { name: pnlFile, label: 'Rachunek zysków i strat (PDF)', widget: file, required: false }
+              - name: finDesc
+                label: 'Opis sprawozdania finansowego'
+                widget: object
+                required: false
+                collapsed: true
+                fields: *langTextOptional
 
   - name: strony
     label: 'Teksty stron'
+    icon: description
     description: 'Wszystkie teksty istniejących sekcji, pogrupowane wg podstron i języków. Zmieniaj wartości — kluczy (nazw pól) nie ruszaj.'
     files:
       - { name: index, label: 'Strona główna', file: content/pages/index.json, fields: &langfields [ { name: pl, label: Polski, widget: keyvalue }, { name: en, label: Angielski, widget: keyvalue }, { name: cz, label: Czeski, widget: keyvalue }, { name: it, label: Włoski, widget: keyvalue }, { name: sk, label: Słowacki, widget: keyvalue }, { name: de, label: Niemiecki, widget: keyvalue }, { name: fr, label: Francuski, widget: keyvalue } ] }
       - { name: about-us, label: 'O nas', file: content/pages/about-us.json, fields: *langfields }
       - { name: news, label: 'Aktualności (nagłówki strony)', file: content/pages/news.json, fields: *langfields }
       - { name: article, label: 'Strona artykułu (etykiety)', file: content/pages/article.json, fields: *langfields }
-      - { name: statute, label: 'Statut i sprawozdania', file: content/pages/statute.json, fields: *langfields }
-      - { name: board-council, label: 'Rada i Zarząd', file: content/pages/board-council.json, fields: *langfields }
+      - { name: statute, label: 'Statut i sprawozdania (nagłówki, liczby)', file: content/pages/statute.json, fields: *langfields }
+      - { name: board-council, label: 'Rada i Zarząd (nagłówki strony)', file: content/pages/board-council.json, fields: *langfields }
       - { name: person, label: 'Profil osoby (etykiety)', file: content/pages/person.json, fields: *langfields }
       - { name: contact, label: 'Kontakt', file: content/pages/contact.json, fields: *langfields }
       - { name: privacy-policy, label: 'Polityka prywatności', file: content/pages/privacy-policy.json, fields: *langfields }

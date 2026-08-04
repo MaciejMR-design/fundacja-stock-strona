@@ -1,0 +1,80 @@
+{
+  "statuteFile": "/uploads/docs/Statut-FS-2025.pdf",
+  "reports": [
+    {
+      "year": "2022",
+      "activityFile": "/uploads/docs/Fundacja-Stock-sprawozdanie_z_dzialalnosci_2022-wersja-2.4.pdf",
+      "activityDesc": {
+        "pl": "Sprawozdanie z działalności fundacji w 2022 roku — roku założenia i uruchomienia programu „Spirit of Ukraine\".",
+        "en": "Report on the foundation’s activity in 2022 — the founding year and the launch of the \"Spirit of Ukraine\" program.",
+        "cz": "Zpráva o činnosti nadace v roce 2022 — roce založení a spuštění programu „Spirit of Ukraine\".",
+        "it": "Rapporto sull’attività della fondazione nel 2022 — l’anno della fondazione e del lancio del programma \"Spirit of Ukraine\".",
+        "sk": "Správa o činnosti nadácie v roku 2022 — roku založenia a spustenia programu „Spirit of Ukraine“.",
+        "de": "Bericht über die Tätigkeit der Stiftung im Jahr 2022 — dem Jahr der Gründung und des Starts des Programms „Spirit of Ukraine“.",
+        "fr": "Rapport d’activité de la fondation pour l’année 2022 — l’année de sa création et du lancement du programme « Spirit of Ukraine »."
+      }
+    },
+    {
+      "year": "2023",
+      "activityFile": "/uploads/docs/Sprawozdanie_z_dzialalnosci_fundacji_2023-PJ2024.pdf",
+      "activityDesc": {
+        "pl": "Sprawozdanie z działalności fundacji w 2023 roku — kontynuacja wsparcia uchodźców i zwrot ku projektom kulturalnym i społecznym.",
+        "en": "Report on the foundation’s activity in 2023 — continued refugee support and the turn towards art and community projects.",
+        "cz": "Zpráva o činnosti nadace v roce 2023 — pokračující podpora uprchlíků a obrat ke kulturním a komunitním projektům.",
+        "it": "Rapporto sull’attività della fondazione nel 2023 — il proseguimento del sostegno ai rifugiati e la svolta verso progetti culturali e sociali.",
+        "sk": "Správa o činnosti nadácie v roku 2023 — pokračovanie podpory utečencov a obrat ku kultúrnym a komunitným projektom.",
+        "de": "Bericht über die Tätigkeit der Stiftung im Jahr 2023 — die Fortsetzung der Unterstützung für Geflüchtete und die Hinwendung zu Kultur- und Gemeinschaftsprojekten.",
+        "fr": "Rapport d’activité de la fondation pour l’année 2023 — la poursuite du soutien aux réfugiés et le tournant vers des projets culturels et solidaires."
+      },
+      "balanceFile": "/uploads/docs/BILANS-STOCK-2023.pdf",
+      "pnlFile": "/uploads/docs/RZiS-STOCK-2023.pdf",
+      "finDesc": {
+        "pl": "Bilans oraz rachunek zysków i strat za rok obrotowy 2023.",
+        "en": "Balance sheet and profit & loss statement for the financial year 2023.",
+        "cz": "Rozvaha a výkaz zisku a ztráty za účetní rok 2023.",
+        "it": "Stato patrimoniale e conto economico per l’esercizio 2023.",
+        "sk": "Súvaha a výkaz ziskov a strát za účtovné obdobie 2023.",
+        "de": "Bilanz sowie Gewinn- und Verlustrechnung für das Geschäftsjahr 2023.",
+        "fr": "Bilan et compte de résultat pour l’exercice 2023."
+      }
+    },
+    {
+      "year": "2024",
+      "balanceFile": "/uploads/docs/Bilans-Fundacja-Stock-2024.pdf",
+      "pnlFile": "/uploads/docs/RZiS-Fundacja-Stock-2024.pdf",
+      "finDesc": {
+        "pl": "Bilans oraz rachunek zysków i strat za rok obrotowy 2024.",
+        "en": "Balance sheet and profit & loss statement for the financial year 2024.",
+        "cz": "Rozvaha a výkaz zisku a ztráty za účetní rok 2024.",
+        "it": "Stato patrimoniale e conto economico per l’esercizio 2024.",
+        "sk": "Súvaha a výkaz ziskov a strát za účtovné obdobie 2024.",
+        "de": "Bilanz sowie Gewinn- und Verlustrechnung für das Geschäftsjahr 2024.",
+        "fr": "Bilan et compte de résultat pour l’exercice 2024."
+      }
+    },
+    {
+      "year": "2025",
+      "activityFile": "/uploads/docs/Sprawozdanie-z-dzialalnosci-2025.pdf",
+      "activityDesc": {
+        "pl": "Sprawozdanie merytoryczne za 2025 rok — wsparcie psychologiczne, stypendia muzyczne, szkolenia dla pracowników socjalnych, spotkania ze sztuką i wolontariat pracowniczy.",
+        "en": "Activity report for 2025 — psychological support, music scholarships, training for social workers, Art Encounters and employee volunteering.",
+        "cz": "Zpráva o činnosti za rok 2025 — psychologická podpora, hudební stipendia, školení pro sociální pracovníky, setkání s uměním a firemní dobrovolnictví.",
+        "it": "Rapporto di attività per il 2025 — sostegno psicologico, borse di studio musicali, formazione per assistenti sociali, Incontri con l’Arte e volontariato aziendale.",
+        "sk": "Správa o činnosti za rok 2025 — psychologická podpora, hudobné štipendiá, školenia pre sociálnych pracovníkov, stretnutia s umením a firemné dobrovoľníctvo.",
+        "de": "Tätigkeitsbericht für 2025 — psychologische Unterstützung, Musikstipendien, Schulungen für Sozialarbeitende, Kunstbegegnungen und Mitarbeiter-Freiwilligenarbeit.",
+        "fr": "Rapport d’activité pour 2025 — soutien psychologique, bourses musicales, formations pour les travailleurs sociaux, Rencontres avec l’art et bénévolat d’entreprise."
+      },
+      "balanceFile": "/uploads/docs/Bilans-Fundacja-Stock-2025.pdf",
+      "pnlFile": "/uploads/docs/RZiS-Fundacja-Stock-2025.pdf",
+      "finDesc": {
+        "pl": "Bilans oraz rachunek zysków i strat za rok obrotowy 2025.",
+        "en": "Balance sheet and profit & loss statement for the financial year 2025.",
+        "cz": "Rozvaha a výkaz zisku a ztráty za účetní rok 2025.",
+        "it": "Stato patrimoniale e conto economico per l’esercizio 2025.",
+        "sk": "Súvaha a výkaz ziskov a strát za účtovné obdobie 2025.",
+        "de": "Bilanz sowie Gewinn- und Verlustrechnung für das Geschäftsjahr 2025.",
+        "fr": "Bilan et compte de résultat pour l’exercice 2025."
+      }
+    }
+  ]
+}

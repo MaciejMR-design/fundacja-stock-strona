@@ -8,7 +8,13 @@
 <meta name="robots" content="noindex">
 </head>
 <body>
-<!-- Sveltia CMS — panel zarządzania treścią (edycja aktualności, tekstów i zdjęć) -->
-<script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js" type="module"></script>
+<!-- Sveltia CMS — panel zarządzania treścią (edycja aktualności, osób, dokumentów,
+     tekstów i zdjęć). Wersja jest przypięta celowo: bez numeru unpkg podaje
+     najnowsze wydanie, więc zmiana u autora panelu mogłaby zepsuć panel
+     klientowi bez żadnej zmiany w tym repozytorium. Aktualizacja = podniesienie
+     numeru niżej i sprawdzenie, czy panel się otwiera i zapisuje.
+     Bez type="module" — paczka nie jest modułem ES i sam panel ostrzega
+     w konsoli, że ten atrybut może powodować nieoczekiwane zachowanie. -->
+<script src="https://unpkg.com/@sveltia/cms@0.178.0/dist/sveltia-cms.js"></script>
 </body>
 </html>

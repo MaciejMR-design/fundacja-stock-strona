@@ -1,0 +1,39 @@
+{
+  "id": "coutures",
+  "order": 10,
+  "group": "council",
+  "name": "Jean-Christophe Coutures",
+  "photo": "/uploads/coutures.png",
+  "role": {
+    "pl": "Przewodniczący Rady",
+    "en": "Chairman of the Council",
+    "cz": "Předseda rady",
+    "it": "Presidente del Consiglio",
+    "sk": "Predseda rady",
+    "de": "Vorsitzender des Stiftungsrats",
+    "fr": "Président du Conseil"
+  },
+  "bio": {
+    "pl": [
+      "Jean-Christophe Coutures dołączył do Stock Spirits Group w sierpniu 2022 roku i jednocześnie został Przewodniczącym Rady Fundacji. Ma ponad 20 lat międzynarodowego doświadczenia i udokumentowane osiągnięcia w branży spirytusowej. W ostatnich latach pracował w Londynie jako CEO Chivas Brothers, globalnego biznesu whisky szkockiej Pernod Ricard. Wcześniej Jean-Christophe pełnił różne funkcje kierownicze w Pernod Ricard, w tym CEO Pernod Ricard Winemakers, CEO Pernod Ricard Irish Distillers, CEO Pernod Ricard Korea oraz CFO we Francji i Azji."
+    ],
+    "en": [
+      "Jean-Christophe Coutures joined Stock Spirits Group in August 2022 and simultaneously became the Chairman of the Foundation’s Board. He has over 20 years of international experience and a proven track record in the spirits industry. In recent years, he worked in London as the CEO of Chivas Brothers, Pernod Ricard’s global Scotch whisky business. Previously, Jean-Christophe held various leadership roles at Pernod Ricard, including CEO of Pernod Ricard Winemakers, CEO of Pernod Ricard Irish Distillers, CEO of Pernod Ricard Korea, and CFO in France and Asia."
+    ],
+    "cz": [
+      "Jean-Christophe Coutures nastoupil do Stock Spirits Group v srpnu 2022 a současně se stal předsedou rady nadace. Má více než 20 let mezinárodních zkušeností a prokazatelné výsledky v lihovarnickém odvětví. V posledních letech působil v Londýně jako generální ředitel Chivas Brothers, globálního byznysu skotské whisky Pernod Ricard. Předtím zastával Jean-Christophe různé vedoucí pozice v Pernod Ricard, včetně generálního ředitele Pernod Ricard Winemakers, Pernod Ricard Irish Distillers, Pernod Ricard Korea a finančního ředitele ve Francii a Asii."
+    ],
+    "it": [
+      "Jean-Christophe Coutures è entrato in Stock Spirits Group nell’agosto 2022 e ne è diventato contemporaneamente Presidente del Consiglio della Fondazione. Ha oltre 20 anni di esperienza internazionale e un solido percorso nel settore degli spiriti. Negli ultimi anni ha lavorato a Londra come CEO di Chivas Brothers, il business globale di whisky scozzese di Pernod Ricard. In precedenza ha ricoperto vari ruoli di leadership in Pernod Ricard, tra cui CEO di Pernod Ricard Winemakers, CEO di Pernod Ricard Irish Distillers, CEO di Pernod Ricard Korea e CFO in Francia e Asia."
+    ],
+    "sk": [
+      "Jean-Christophe Coutures nastúpil do Stock Spirits Group v auguste 2022 a zároveň sa stal predsedom rady nadácie. Má viac ako 20 rokov medzinárodných skúseností a preukázateľné výsledky v liehovarníckom odvetví. V posledných rokoch pôsobil v Londýne ako generálny riaditeľ Chivas Brothers, globálneho biznisu škótskej whisky spoločnosti Pernod Ricard. Predtým zastával Jean-Christophe rôzne vedúce pozície v Pernod Ricard, vrátane generálneho riaditeľa Pernod Ricard Winemakers, Pernod Ricard Irish Distillers, Pernod Ricard Korea a finančného riaditeľa vo Francúzsku a Ázii."
+    ],
+    "de": [
+      "Jean-Christophe Coutures kam im August 2022 zur Stock Spirits Group und wurde zugleich Vorsitzender des Stiftungsrats. Er verfügt über mehr als 20 Jahre internationale Erfahrung und nachweisliche Erfolge in der Spirituosenbranche. In den letzten Jahren war er in London als CEO von Chivas Brothers tätig, dem globalen Scotch-Whisky-Geschäft von Pernod Ricard. Zuvor hatte Jean-Christophe verschiedene Führungspositionen bei Pernod Ricard inne, darunter CEO von Pernod Ricard Winemakers, CEO von Pernod Ricard Irish Distillers, CEO von Pernod Ricard Korea sowie CFO in Frankreich und Asien."
+    ],
+    "fr": [
+      "Jean-Christophe Coutures a rejoint Stock Spirits Group en août 2022 et est devenu simultanément Président du Conseil de la Fondation. Il possède plus de 20 ans d’expérience internationale et un parcours confirmé dans le secteur des spiritueux. Ces dernières années, il a travaillé à Londres comme CEO de Chivas Brothers, l’activité mondiale de whisky écossais de Pernod Ricard. Auparavant, Jean-Christophe a occupé divers postes de direction chez Pernod Ricard, notamment CEO de Pernod Ricard Winemakers, CEO de Pernod Ricard Irish Distillers, CEO de Pernod Ricard Korea, ainsi que CFO en France et en Asie."
+    ]
+  }
+}

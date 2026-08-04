@@ -5,37 +5,83 @@
 
 ## Logowanie
 1. Wejdź na adres panelu.
-2. Kliknij **„Sign In with GitHub"** i zatwierdź w okienku (jednorazowo; przeglądarka zapamięta sesję).
+2. Kliknij **„Sign In with GitHub"** — to jedyny przycisk na ekranie.
+3. W okienku zaloguj się **kontem fundacji**, którego dane przekazaliśmy osobno
+   (adres e-mail + hasło), i zatwierdź dostęp.
+
+Przeglądarka zapamięta sesję: przy kolejnych wejściach wystarczy sam adres panelu.
+Dane logowania warto zachować — będą potrzebne po zmianie komputera albo po
+wyczyszczeniu danych przeglądarki. Konto służy wyłącznie do tego panelu i ma
+dostęp tylko do treści tej strony.
+
+## Co można zmieniać
+Panel ma cztery sekcje:
+
+| Sekcja | Co obejmuje |
+|---|---|
+| **Aktualności** | wpisy z sekcji Aktualności |
+| **Rada i Zarząd** | skład, zdjęcia, funkcje i biogramy osób |
+| **Statut i sprawozdania** | pliki PDF na podstronie „Statut i sprawozdania" |
+| **Teksty stron** | teksty i liczby w istniejących sekcjach podstron |
+
+Każdy zapis pojawia się na stronie po 1–2 minutach, we wszystkich językach.
 
 ## Dodanie nowej aktualności
-1. Kolekcja **Aktualności** → przycisk **New**.
+1. Sekcja **Aktualności** → przycisk **New**.
 2. Wypełnij pola:
-   - **Identyfikator** — krótka nazwa robocza bez spacji, np. `koncert2027` (tworzy adres artykułu),
-   - **Data wydarzenia** — z kalendarza (ustawia kolejność na liście),
+   - **Identyfikator** — krótka nazwa robocza bez spacji, np. `koncert2027` (tworzy adres artykułu; po opublikowaniu lepiej go nie zmieniać),
+   - **Data wydarzenia** — z kalendarza. Ustawia kolejność na liście **i datę widoczną na stronie** — data słownie powstaje sama, w każdym języku („5 czerwca 2026", „5 June 2026"). Nie trzeba jej nigdzie wpisywać.
+   - **Dokładność daty** — „Pełna data" albo „Tylko miesiąc", gdy dokładny dzień nie ma znaczenia („czerwiec 2026"),
    - **Kategoria** — Spotkania ze sztuką / Społeczność / Stypendia,
-   - **Zdjęcie główne** — wgraj z dysku (przycisk wybierze plik i doda go do biblioteki),
-   - **Data wyświetlana, Tytuł, Lead, Treść** — wypełnij **po polsku i po angielsku**
-     (pola czeskie i włoskie można zostawić puste — uzupełnimy je tłumaczeniem).
+   - **Zdjęcie główne** — wgraj z dysku. Zdjęcia z telefonu są przy wgrywaniu automatycznie zmniejszane i przerabiane na lekki format WebP — nie trzeba ich wcześniej przygotowywać.
+   - **Tytuł, Lead, Treść** — wypełnij **po polsku i po angielsku**. Pola czeskie, włoskie, słowackie, niemieckie i francuskie można zostawić puste — w tych wersjach pokaże się wtedy tekst angielski.
    - Treść wpisuje się **akapitami** — każdy akapit to osobne pole (przycisk „+" dodaje kolejny).
-3. Kliknij **Save**. Strona zaktualizuje się automatycznie w ciągu 1–2 minut — we wszystkich językach.
+3. Kliknij **Save**.
+
+Pole **„Data słownie — nadpisanie"** (zwinięte na dole) zostaw puste. Przydaje się tylko wtedy, gdy data ma brzmieć inaczej niż standardowo, np. „przełom wiosny i lata 2026".
 
 ## Edycja lub usunięcie wpisu
 - Kliknij wpis na liście → zmień pola → **Save**.
-- **Delete** usuwa wpis ze strony. Pomyłka? Każdą zmianę można cofnąć — daj znać, przywrócimy.
+- **Delete** usuwa wpis wraz z jego stroną.
+- Pomyłka? Każdą zmianę można cofnąć — daj znać, przywrócimy.
+- Nad listą są **filtry** (po kategorii) i **grupowanie** (po roku) — przy kilkudziesięciu wpisach szybciej się szuka.
+
+## Rada i Zarząd
+Sekcja **Rada i Zarząd** → **New** albo klik w osobę na liście.
+- **Organ** — Rada Fundacji albo Zarząd (decyduje, w której części strony osoba się pokaże),
+- **Kolejność w obrębie organu** — mniejsza liczba wyżej: przewodniczący 10, kolejne osoby 20, 30…
+- **Funkcja** i **Biogram** — po polsku i angielsku; pozostałe języki opcjonalnie (bez nich pokaże się wersja angielska).
+
+## Statut i sprawozdania
+Sekcja **Statut i sprawozdania** → **Statut i sprawozdania roczne**.
+- **Statut fundacji (PDF)** — podmiana pliku statutu.
+- **Sprawozdania** — lista, jeden wpis na rok. Przycisk **+** dodaje nowy rok:
+  wpisz **Rok** (cztery cyfry) i wgraj te pliki, które są — sprawozdanie z działalności,
+  bilans, rachunek zysków i strat. Na stronie pojawią się karty tylko dla wgranych plików.
+  Opisy pod tytułem są opcjonalne.
 
 ## Edycja tekstów na podstronach
-Kolekcja **Teksty stron** → wybierz podstronę (Strona główna, O nas, Kontakt…) →
-teksty pogrupowane językami (Polski / Angielski / Czeski / Włoski) jako lista „pole → treść".
+Sekcja **Teksty stron** → wybierz podstronę (Strona główna, O nas, Kontakt…) →
+teksty pogrupowane językami jako lista „pole → treść".
 Zmieniaj **wartości**; nazw pól (kluczy) nie ruszaj. **Save** publikuje jak wyżej.
 
-## Zdjęcia
-Ikona biblioteki mediów (obrazek w górnym pasku) — tu można wgrywać i podmieniać pliki.
+## Zdjęcia i pliki
+Ikona biblioteki mediów w górnym pasku — tu można wgrywać i podmieniać pliki.
 Wgrane zdjęcia wybiera się potem w polu „Zdjęcie główne" wpisu.
+Zdjęcia są optymalizowane automatycznie przy wgrywaniu; PDF-y trafiają na stronę bez zmian.
+
+## Gdy zmiana nie pojawia się na stronie
+Strona jest przebudowywana po każdym zapisie i przy tej okazji sprawdzana.
+Jeśli w treści jest coś, co zepsułoby stronę (dwa wpisy o tym samym identyfikatorze,
+brak polskiego lub angielskiego tekstu, wskazanie pliku, którego nie ma), przebudowa
+zatrzymuje się i **na stronie zostaje poprzednia, działająca wersja**. Nic nie ginie —
+napisz do nas, powiemy, które pole poprawić.
 
 ## Czego panel nie robi (celowo)
 Panel nie zmienia układu, kolorów ani kodu strony — edytuje wyłącznie treści.
 Dzięki temu niczego nie da się „zepsuć": strona zawsze działa, a każda zmiana jest odwracalna.
+Poza panelem zostają zdjęcia w nagłówku strony głównej (slideshow) — każde wymaga
+przygotowania kilku wariantów rozmiarowych, więc ich podmianę robimy my.
 
 ---
 *Pomoc techniczna: Maciej (wykonawca strony).*
-

@@ -1,0 +1,39 @@
+{
+  "id": "holder",
+  "order": 60,
+  "group": "board",
+  "name": "Bradley Holder",
+  "photo": "/uploads/holder.jpg",
+  "role": {
+    "pl": "Członek Zarządu",
+    "en": "Board Member",
+    "cz": "Člen představenstva",
+    "it": "Membro del CdA",
+    "sk": "Člen predstavenstva",
+    "de": "Mitglied des Vorstands",
+    "fr": "Membre de la direction"
+  },
+  "bio": {
+    "pl": [
+      "Bradley Holder jest byłym i pierwszym Prezesem Zarządu Fundacji Stock. Doświadczony menedżer finansowy z ponad 30-letnim stażem na stanowiskach kierowniczych w finansach w międzynarodowych korporacjach. Obecnie pełni funkcję Group Financial Controllera i Dyrektora Finansowego w Stock Spirits Group, gdzie od niemal dekady jest jednym z kluczowych liderów. Wcześniej zajmował wysokie stanowiska finansowe w Coca-Cola, PepsiCo i GE Capital, specjalizując się w planowaniu finansowym, integracji i ekspansji strategicznej. Udokumentowana wiedza w zarządzaniu operacjami finansowymi na dużą skalę, transformacjami biznesowymi i złożonymi integracjami fuzji i przejęć."
+    ],
+    "en": [
+      "Bradley Holder is former and first President of the Board of Stock Foundation. An experienced finance executive with over 30 years in financial leadership roles across multinational corporations. Currently serving as Group Financial Controller and Finance Director at Stock Spirits Group, where he has been a key leader for nearly a decade. Previously held senior finance roles at Coca-Cola, PepsiCo, and GE Capital, specializing in financial planning, integration, and strategic expansion. Proven expertise in managing large-scale financial operations, business transformations, and complex M&A integrations."
+    ],
+    "cz": [
+      "Bradley Holder je bývalý a první předseda představenstva Nadace Stock. Zkušený finanční manažer s více než 30 lety ve vedoucích finančních rolích v nadnárodních korporacích. V současnosti působí jako Group Financial Controller a finanční ředitel ve Stock Spirits Group, kde je téměř deset let klíčovou vedoucí osobností. Dříve zastával vysoké finanční pozice v Coca-Cola, PepsiCo a GE Capital, se specializací na finanční plánování, integraci a strategickou expanzi. Prokazatelná odbornost v řízení rozsáhlých finančních operací, obchodních transformací a složitých integrací fúzí a akvizic."
+    ],
+    "it": [
+      "Bradley Holder è ex e primo Presidente del Consiglio della Fondazione Stock. Dirigente finanziario esperto con oltre 30 anni in ruoli di leadership finanziaria in multinazionali. Attualmente Group Financial Controller e Direttore Finanziario di Stock Spirits Group, dove è una figura chiave da quasi un decennio. In precedenza ha ricoperto ruoli finanziari senior in Coca-Cola, PepsiCo e GE Capital, specializzandosi in pianificazione finanziaria, integrazione ed espansione strategica. Comprovata competenza nella gestione di operazioni finanziarie su larga scala, trasformazioni aziendali e complesse integrazioni di M&A."
+    ],
+    "sk": [
+      "Bradley Holder je bývalý a prvý predseda predstavenstva Nadácie Stock. Skúsený finančný manažér s viac ako 30 rokmi praxe vo vedúcich finančných pozíciách v nadnárodných korporáciách. V súčasnosti pôsobí ako Group Financial Controller a finančný riaditeľ v Stock Spirits Group, kde je už takmer desať rokov jednou z kľúčových vedúcich osobností. Predtým zastával vysoké finančné pozície v Coca-Cola, PepsiCo a GE Capital so špecializáciou na finančné plánovanie, integráciu a strategickú expanziu. Preukázateľná odbornosť v riadení rozsiahlych finančných operácií, obchodných transformácií a zložitých integrácií fúzií a akvizícií."
+    ],
+    "de": [
+      "Bradley Holder ist der ehemalige und erste Vorstandsvorsitzende der Stiftung Stock. Erfahrener Finanzmanager mit über 30 Jahren in leitenden Finanzfunktionen in multinationalen Konzernen. Derzeit ist er Group Financial Controller und Finanzdirektor bei der Stock Spirits Group, wo er seit fast einem Jahrzehnt zu den zentralen Führungskräften gehört. Zuvor hatte er hochrangige Finanzpositionen bei Coca-Cola, PepsiCo und GE Capital inne, mit Spezialisierung auf Finanzplanung, Integration und strategische Expansion. Nachgewiesene Expertise im Management umfangreicher Finanzoperationen, geschäftlicher Transformationen und komplexer M&A-Integrationen."
+    ],
+    "fr": [
+      "Bradley Holder a été le premier président de la direction de la Fondation Stock. Dirigeant financier expérimenté, fort de plus de 30 ans à des postes de direction financière au sein de multinationales. Actuellement Group Financial Controller et directeur financier de Stock Spirits Group, où il est l’un des dirigeants clés depuis près d’une décennie. Il a auparavant occupé de hautes fonctions financières chez Coca-Cola, PepsiCo et GE Capital, se spécialisant en planification financière, intégration et expansion stratégique. Expertise avérée dans la gestion d’opérations financières à grande échelle, de transformations d’entreprise et d’intégrations complexes de fusions-acquisitions."
+    ]
+  }
+}

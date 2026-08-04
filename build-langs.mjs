@@ -3,36 +3,105 @@
    Run:  node build-langs.mjs
    Idempotent — safe to re-run after any content change.
    NOTE: SITE must match the production domain at launch. */
-import { readFileSync, writeFileSync, mkdirSync, readdirSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync, rmSync } from 'fs';
 import { join } from 'path';
 
 /* Editable content lives in content/ (managed via the /admin CMS panel):
    - content/articles/<id>.json  -> generates design-v2/assets/articles.js
+   - content/people/<id>.json    -> generates design-v2/assets/people.js
+   - content/documents.json      -> injected into statute.html
    - content/pages/<page>.json   -> injected as PAGE_I18N into each page */
 const CONTENT = join(import.meta.dirname, 'content');
 const stripBom = s => s.replace(/^﻿/, '');
-const ARTICLES = readdirSync(join(CONTENT, 'articles'))
+const readJson = (...p) => JSON.parse(stripBom(readFileSync(join(CONTENT, ...p), 'utf8')));
+const readJsonDir = dir => readdirSync(join(CONTENT, dir))
   .filter(f => f.endsWith('.json'))
-  .map(f => JSON.parse(stripBom(readFileSync(join(CONTENT, 'articles', f), 'utf8'))))
-  .sort((a, b) => (b.ts || '').localeCompare(a.ts || ''));
+  .map(f => {
+    const data = readJson(dir, f);
+    // nazwa pliku tylko do komunikatów walidacji — niewidoczna dla JSON.stringify
+    Object.defineProperty(data, '_file', { value: `content/${dir}/${f}`, enumerable: false });
+    return data;
+  });
 
-/* Safety net for entries added via the CMS: any missing/empty language falls
-   back to English (then Polish), so no page ever renders blank/undefined.
-   Proper CZ/IT translations can overwrite these fields at any time. */
-for (const a of ARTICLES) {
-  for (const key of ['date', 'title', 'lead']) {
-    a[key] = a[key] || {};
-    for (const l of ['en', 'pl', 'cz', 'it', 'sk', 'de', 'fr']) {
-      if (!a[key][l]) a[key][l] = a[key].en || a[key].pl || '';
+const ARTICLES = readJsonDir('articles').sort((a, b) => (b.ts || '').localeCompare(a.ts || ''));
+/* Council & board members. `order` decides the position within a group — the
+   Chairman first — so it does not depend on file names. */
+const PEOPLE = readJsonDir('people')
+  .sort((a, b) => (a.order ?? 999) - (b.order ?? 999) || a.name.localeCompare(b.name));
+/* Statute + yearly reports shown on statute.html. */
+const DOCUMENTS = readJson('documents.json');
+
+/* Allowed values — keep in step with the select options in
+   design-v2/admin/config.yml, which is what the editor actually picks from. */
+const CATEGORIES = ['art', 'community', 'scholar'];
+const PERSON_GROUPS = ['council', 'board'];
+
+/* Content coming from the /admin panel is checked before anything is written.
+   A broken entry must stop the build with a message the person who edited it
+   can act on — on Vercel a failed build keeps the previous deployment, which
+   beats publishing a page with a blank card or a dead PDF link. */
+function validateContent(srcDir) {
+  const problems = [];
+  const filePath = p => join(srcDir, String(p).replace(/^\//, ''));
+  const missingFile = p => p && !/^https?:/i.test(p) && !existsSync(filePath(p));
+  const seen = new Map();
+
+  for (const a of ARTICLES) {
+    const where = a._file || `wpis „${a.id}”`;
+    if (!a.id || !/^[a-z0-9-]+$/.test(a.id)) problems.push(`${where}: identyfikator „${a.id}” — dozwolone tylko małe litery, cyfry i myślniki`);
+    if (seen.has(a.id)) problems.push(`${where}: identyfikator „${a.id}” jest już użyty w ${seen.get(a.id)} — dwa wpisy nie mogą mieć tego samego`);
+    else seen.set(a.id, where);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(a.ts || '') || Number.isNaN(new Date(`${a.ts}T00:00:00Z`).getTime()))
+      problems.push(`${where}: data wydarzenia „${a.ts}” nie jest poprawną datą (oczekiwane RRRR-MM-DD)`);
+    if (!CATEGORIES.includes(a.cat)) problems.push(`${where}: kategoria „${a.cat}” — dozwolone: ${CATEGORIES.join(', ')}`);
+    for (const key of ['title', 'lead', 'body']) {
+      for (const l of ['pl', 'en']) {
+        const v = a[key]?.[l];
+        if (!v || (Array.isArray(v) && v.length === 0)) problems.push(`${where}: brakuje pola „${key}” w języku ${l.toUpperCase()}`);
+      }
     }
+    if (!a.img) problems.push(`${where}: brak zdjęcia głównego`);
+    else if (missingFile(a.img)) problems.push(`${where}: plik zdjęcia ${a.img} nie istnieje w repozytorium`);
+    for (const img of a.images || []) if (missingFile(img)) problems.push(`${where}: plik z galerii ${img} nie istnieje w repozytorium`);
   }
-  a.body = a.body || {};
-  for (const l of ['en', 'pl', 'cz', 'it', 'sk', 'de', 'fr']) {
-    if (!Array.isArray(a.body[l]) || a.body[l].length === 0) {
-      a.body[l] = a.body.en || a.body.pl || [];
-    }
+
+  const people = new Map();
+  for (const p of PEOPLE) {
+    const where = p._file || `osoba „${p.id}”`;
+    if (!p.id || !/^[a-z0-9-]+$/.test(p.id)) problems.push(`${where}: identyfikator „${p.id}” — dozwolone tylko małe litery, cyfry i myślniki`);
+    if (people.has(p.id)) problems.push(`${where}: identyfikator „${p.id}” jest już użyty w ${people.get(p.id)}`);
+    else people.set(p.id, where);
+    if (!p.name) problems.push(`${where}: brak imienia i nazwiska`);
+    if (!PERSON_GROUPS.includes(p.group)) problems.push(`${where}: organ „${p.group}” — dozwolone: ${PERSON_GROUPS.join(', ')}`);
+    if (!p.role?.pl || !p.role?.en) problems.push(`${where}: brak funkcji po polsku lub angielsku`);
+    if (!p.photo) problems.push(`${where}: brak zdjęcia`);
+    else if (missingFile(p.photo)) problems.push(`${where}: plik zdjęcia ${p.photo} nie istnieje w repozytorium`);
   }
+
+  const docs = [
+    ['statut', DOCUMENTS.statuteFile],
+    ...(DOCUMENTS.reports || []).flatMap(r => [
+      [`sprawozdanie z działalności ${r.year}`, r.activityFile],
+      [`bilans ${r.year}`, r.balanceFile],
+      [`rachunek zysków i strat ${r.year}`, r.pnlFile]
+    ])
+  ];
+  if (!DOCUMENTS.statuteFile) problems.push('content/documents.json: brak pliku statutu');
+  for (const [label, p] of docs) if (missingFile(p)) problems.push(`content/documents.json: ${label} — plik ${p} nie istnieje w repozytorium`);
+  for (const r of DOCUMENTS.reports || []) {
+    if (!/^\d{4}$/.test(String(r.year || ''))) problems.push(`content/documents.json: rok „${r.year}” — oczekiwane cztery cyfry`);
+    if (!r.activityFile && !r.balanceFile && !r.pnlFile) problems.push(`content/documents.json: rok ${r.year} nie ma żadnego pliku PDF — usuń go z listy albo dodaj dokument`);
+  }
+
+  if (problems.length) {
+    console.error(`\nTreść z panelu wymaga poprawy — build zatrzymany (${problems.length}):`);
+    for (const p of problems) console.error('  • ' + p);
+    console.error('\nPoprawka w panelu /admin (albo w plikach content/) i zapis uruchomi build ponownie.\n');
+    process.exit(1);
+  }
+  console.log(`content sprawdzony: ${ARTICLES.length} wpisów, ${PEOPLE.length} osób, ${(DOCUMENTS.reports || []).length} lat sprawozdań`);
 }
+
 const PAGE_DICTS = {};
 for (const f of readdirSync(join(CONTENT, 'pages')).filter(f => f.endsWith('.json'))) {
   PAGE_DICTS[f.replace('.json', '.html')] = JSON.parse(stripBom(readFileSync(join(CONTENT, 'pages', f), 'utf8')));
@@ -55,6 +124,42 @@ const DIR = { en: '', pl: 'pl/', cz: 'cz/', it: 'it/', sk: 'sk/', de: 'de/', fr:
 const HTML_LANG = { en: 'en', pl: 'pl', cz: 'cs', it: 'it', sk: 'sk', de: 'de', fr: 'fr' };
 const HREFLANG = { en: 'en', pl: 'pl', cz: 'cs', it: 'it', sk: 'sk', de: 'de', fr: 'fr' };
 const OG_LOCALE = { en: 'en_GB', pl: 'pl_PL', cz: 'cs_CZ', it: 'it_IT', sk: 'sk_SK', de: 'de_DE', fr: 'fr_FR' };
+const DATE_LOCALE = { en: 'en-GB', pl: 'pl-PL', cz: 'cs-CZ', it: 'it-IT', sk: 'sk-SK', de: 'de-DE', fr: 'fr-FR' };
+
+/* The date shown on a card ("5 June 2026") is derived from the entry's `ts`,
+   so the editor never types it in seven languages — DeepL does not translate
+   that field either. `span: 'month'` drops the day for older entries where
+   only the month is known ("June 2024"). */
+function displayDate(ts, lang, span) {
+  const d = new Date(`${ts}T00:00:00Z`);
+  if (Number.isNaN(d.getTime())) return '';
+  return new Intl.DateTimeFormat(DATE_LOCALE[lang], {
+    ...(span === 'month' ? {} : { day: 'numeric' }),
+    month: 'long', year: 'numeric', timeZone: 'UTC'
+  }).format(d);
+}
+
+/* Must run before the fallbacks below, otherwise a missing Polish or English
+   text would be quietly filled in from the other language instead of reported. */
+validateContent(SRC);
+
+/* Normalise every entry so no page can render blank/undefined:
+   - date: generated from `ts` unless the entry carries its own wording
+     (the pre-CMS entries do, and keep it),
+   - title/lead/body: a missing language falls back to English, then Polish.
+   A proper translation may overwrite any of these fields at any time. */
+for (const a of ARTICLES) {
+  a.date = a.date || {};
+  for (const l of LANGS) if (!a.date[l]) a.date[l] = displayDate(a.ts, l, a.dateSpan);
+  for (const key of ['title', 'lead']) {
+    a[key] = a[key] || {};
+    for (const l of LANGS) if (!a[key][l]) a[key][l] = a[key].en || a[key].pl || '';
+  }
+  a.body = a.body || {};
+  for (const l of LANGS) {
+    if (!Array.isArray(a.body[l]) || a.body[l].length === 0) a.body[l] = a.body.en || a.body.pl || [];
+  }
+}
 
 /* page → lang → [title, meta description] */
 const META = {
@@ -190,7 +295,9 @@ const META = {
   }
 };
 
-const esc = s => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+/* for text nodes built from CMS input — a stray < must not open a tag */
+const escText = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const pageUrl = (lang, page) => SITE + '/' + DIR[lang] + (page === 'index.html' ? '' : page);
 
 /* ---- structured data (schema.org) ----
@@ -329,7 +436,62 @@ function transform(src, page, lang, art) {
     h = h.replace(/\/\* CONTENT:PAGE_I18N \*\/[\s\S]*?\/\* \/CONTENT \*\//,
       `/* CONTENT:PAGE_I18N */${json}/* /CONTENT */`);
   }
+
+  // inject the document list from content/documents.json (statute page only)
+  if (tplPage === 'statute.html') {
+    h = fillBlock(h, 'STATUTE_DOC', statuteDocHtml());
+    h = fillBlock(h, 'DOCS', docsGridHtml(lang));
+  }
   return h;
+}
+
+/* Marker-based HTML injection: <!-- CONTENT:NAME -->…<!-- /CONTENT --> is
+   replaced on every run, so the build stays idempotent even though the EN pass
+   writes back over the root templates it just read. */
+function fillBlock(html, name, inner) {
+  return html.replace(
+    new RegExp(`<!-- CONTENT:${name} -->[\\s\\S]*?<!-- /CONTENT -->`),
+    `<!-- CONTENT:${name} -->\n${inner}\n      <!-- /CONTENT -->`);
+}
+
+function statuteDocHtml() {
+  return [
+    `        <a href="${esc(DOCUMENTS.statuteFile)}" class="doc-link" target="_blank" rel="noopener">`,
+    '          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 2 h7 l3 3 v11 h-10 Z M11 2 v3 h3 M6.5 9 h5 M6.5 12 h5" stroke="#CD9E0C" stroke-width="1.5" stroke-linejoin="round"></path></svg>',
+    '          <span data-i18n="statutePdf"></span>',
+    '        </a>'
+  ].join('\n');
+}
+
+/* Activity reports first, then financial statements — each group by year,
+   oldest first. A year shows up in a group only if it has the files for it. */
+function docsGridHtml(lang) {
+  const byYear = [...DOCUMENTS.reports].sort((a, b) => String(a.year).localeCompare(String(b.year)));
+  const text = (o, l) => o?.[l] || o?.en || o?.pl || '';
+  const card = (year, headingKey, descHtml, links) => [
+    '        <div class="doc-card reveal">',
+    `          <span class="year">${escText(year)}</span>`,
+    `          <h3 data-i18n="${headingKey}"></h3>`,
+    ...(descHtml ? [`          <p>${descHtml}</p>`] : []),
+    ...links,
+    '        </div>'
+  ].join('\n');
+
+  const cards = [];
+  for (const r of byYear.filter(r => r.activityFile)) {
+    cards.push(card(r.year, 'activityReport', escText(text(r.activityDesc, lang)), [
+      `          <a href="${esc(r.activityFile)}" class="dl" target="_blank" rel="noopener">↓ <span data-i18n="download"></span> (PDF)</a>`
+    ]));
+  }
+  for (const r of byYear.filter(r => r.balanceFile || r.pnlFile)) {
+    const links = [
+      ...(r.balanceFile ? [`            <a href="${esc(r.balanceFile)}" class="dl" target="_blank" rel="noopener">↓ <span data-i18n="balance"></span></a>`] : []),
+      ...(r.pnlFile ? [`            <a href="${esc(r.pnlFile)}" class="dl" target="_blank" rel="noopener">↓ <span data-i18n="pnl"></span></a>`] : [])
+    ];
+    cards.push(card(r.year, 'financials', escText(text(r.finDesc, lang)),
+      ['          <div style="display:flex;gap:18px;flex-wrap:wrap;">', ...links, '          </div>']));
+  }
+  return cards.join('\n');
 }
 
 /* generate assets/articles.js from content/articles/*.json
@@ -355,8 +517,29 @@ function writeArticlesJs() {
   }
 }
 
+/* generate assets/people.js from content/people/*.json — the single source for
+   board-council.html and person.html. Unlike articles this file is small
+   (6 members), so there is no per-language variant to split out. */
+function writePeopleJs() {
+  mkdirSync(join(SRC, 'assets'), { recursive: true });
+  const people = PEOPLE.map(p => {
+    const role = {}, bio = {};
+    for (const l of LANGS) {
+      role[l] = p.role?.[l] || p.role?.en || p.role?.pl || '';
+      const b = p.bio?.[l];
+      bio[l] = Array.isArray(b) && b.length ? b : (p.bio?.en || p.bio?.pl || []);
+    }
+    return { id: p.id, name: p.name, group: p.group, photo: p.photo, role, bio };
+  });
+  writeFileSync(join(SRC, 'assets', 'people.js'),
+    '/* GENERATED from content/people/*.json by build-langs.mjs — do not edit by hand. */\n' +
+    'window.PEOPLE = ' + JSON.stringify(people, null, 2).replace(/<\//g, '<\\/') + ';\n', 'utf8');
+}
+
 let written = 0;
+const removed = [];
 writeArticlesJs();
+writePeopleJs();
 const articleTemplate = readFileSync(join(SRC, 'article.html'), 'utf8');
 for (const lang of LANGS) {
   if (lang !== 'en') mkdirSync(join(SRC, DIR[lang]), { recursive: true });
@@ -370,6 +553,17 @@ for (const lang of LANGS) {
     const art = { id: a.id, title: a.title[lang], desc: a.lead[lang], img: a.img, ts: a.ts };
     writeFileSync(join(SRC, DIR[lang], `article-${a.id}.html`), transform(articleTemplate, 'article.html', lang, art), 'utf8');
     written++;
+  }
+  /* Deleting an entry in the panel removes content/articles/<id>.json, but its
+     already-generated page would stay on the server and keep answering at its
+     old URL. Sweep those away — the article template (article.html, no dash)
+     is not touched. */
+  for (const f of readdirSync(join(SRC, DIR[lang] || '.'))) {
+    const id = /^article-(.+)\.html$/.exec(f)?.[1];
+    if (id && !ARTICLES.some(a => a.id === id)) {
+      rmSync(join(SRC, DIR[lang], f));
+      removed.push(`${DIR[lang]}${f}`);
+    }
   }
 }
 
@@ -393,9 +587,13 @@ const sm = ['<?xml version="1.0" encoding="UTF-8"?>',
   ...urls.map(u => `  <url><loc>${u}</loc></url>`),
   '</urlset>', ''].join('\n');
 writeFileSync(join(SRC, 'sitemap.xml'), sm, 'utf8');
-writeFileSync(join(SRC, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\n`, 'utf8');
+/* /admin is the editing panel, not a page of the site — it also carries a
+   noindex tag, but keeping crawlers out of it entirely is tidier. */
+writeFileSync(join(SRC, 'robots.txt'),
+  `User-agent: *\nAllow: /\nDisallow: /admin/\nSitemap: ${SITE}/sitemap.xml\n`, 'utf8');
 
 console.log(`pages written: ${written} (${LANGS.length} langs x [${PAGES.length} pages + ${ARTICLES.length} articles]) + sitemap.xml + robots.txt`);
+if (removed.length) console.log(`pages removed (entry no longer exists): ${removed.join(', ')}`);
 console.log('root = EN; subdirs: pl/ cz/ it/ sk/ de/ fr/');
 console.log(`released to the public: ${PUBLIC_LANGS.join(', ')} (${urls.length} URLs in sitemap)`);
 console.log(`built but hidden ("coming soon", noindex): ${LANGS.filter(l => !PUBLIC_LANGS.includes(l)).join(', ') || 'none'}`);

@@ -1,0 +1,46 @@
+{
+  "id": "stachowicz",
+  "order": 40,
+  "group": "council",
+  "name": "Mirosław Stachowicz",
+  "photo": "/uploads/stachowicz.jpg",
+  "role": {
+    "pl": "Członek Rady",
+    "en": "Council Member",
+    "cz": "Člen rady",
+    "it": "Membro del Consiglio",
+    "sk": "Člen rady",
+    "de": "Mitglied des Stiftungsrats",
+    "fr": "Membre du Conseil"
+  },
+  "bio": {
+    "pl": [
+      "Mirosław Stachowicz ma bogate doświadczenie jako członek rad nadzorczych spółek publicznych i prywatnych. Nieprzerwanie od 1994 roku zarządza przedsiębiorstwami w sektorze FMCG w Europie Środkowo-Wschodniej, w tym jako CEO spółki notowanej na giełdzie w Londynie w latach 2016–2022, jako pierwszy Polak na takim stanowisku. Jest absolwentem Uniwersytetu Jagiellońskiego, Johns Hopkins University w Bolonii, Carleton University w Ottawie oraz INSEAD.",
+      "Aktywnie angażuje się w inicjatywy społeczne, m.in. jako założyciel think tanku Onkologia 2025 i członek rady nadzorczej fundacji charytatywnej Stock. Wolontariacko działa również w Richmond Furniture Scheme i wspiera finansowo m.in. SOS Wioski Dziecięce."
+    ],
+    "en": [
+      "Mirosław Stachowicz has extensive experience as a member of supervisory boards in both public and private companies. He has continuously managed businesses in the FMCG sector in Central and Eastern Europe since 1994, including serving as CEO of a London-listed company from 2016 to 2022, becoming the first Pole to hold such a position. He is a graduate of the Jagiellonian University, Johns Hopkins University in Bologna, Carleton University in Ottawa, and INSEAD.",
+      "He is actively involved in social initiatives, including as the founder of the think tank Onkologia 2025 and a member of the supervisory board of the Stock charity foundation. He also volunteers at the Richmond Furniture Scheme and supports financially, among others, SOS Children’s Villages (SOS Wioski Dziecięce)."
+    ],
+    "cz": [
+      "Mirosław Stachowicz má rozsáhlé zkušenosti jako člen dozorčích rad veřejných i soukromých společností. Od roku 1994 nepřetržitě řídí podniky v sektoru FMCG ve střední a východní Evropě, včetně pozice CEO společnosti kotované na londýnské burze v letech 2016 až 2022, jako první Polák v takové funkci. Je absolventem Jagellonské univerzity, Johns Hopkins University v Boloni, Carleton University v Ottawě a INSEAD.",
+      "Aktivně se zapojuje do společenských iniciativ, mimo jiné jako zakladatel think tanku Onkologia 2025 a člen dozorčí rady charitativní nadace Stock. Působí také jako dobrovolník v Richmond Furniture Scheme a finančně podporuje mimo jiné SOS dětské vesničky (SOS Wioski Dziecięce)."
+    ],
+    "it": [
+      "Mirosław Stachowicz ha una vasta esperienza come membro di consigli di sorveglianza in società pubbliche e private. Dal 1994 gestisce ininterrottamente imprese nel settore FMCG nell’Europa centrale e orientale, ricoprendo tra l’altro il ruolo di CEO di una società quotata a Londra dal 2016 al 2022, primo polacco a ricoprire tale posizione. È laureato all’Università Jagellonica, alla Johns Hopkins University di Bologna, alla Carleton University di Ottawa e all’INSEAD.",
+      "È attivamente coinvolto in iniziative sociali, tra cui come fondatore del think tank Onkologia 2025 e membro del consiglio di sorveglianza della fondazione benefica Stock. È inoltre volontario presso il Richmond Furniture Scheme e sostiene finanziariamente, tra gli altri, i Villaggi SOS per Bambini (SOS Wioski Dziecięce)."
+    ],
+    "sk": [
+      "Mirosław Stachowicz má bohaté skúsenosti ako člen dozorných rád verejných aj súkromných spoločností. Od roku 1994 nepretržite riadi podniky v sektore FMCG v strednej a východnej Európe, okrem iného ako CEO spoločnosti kótovanej na londýnskej burze v rokoch 2016 až 2022 – ako prvý Poliak v takejto funkcii. Je absolventom Jagelovskej univerzity, Johns Hopkins University v Bologni, Carleton University v Ottawe a INSEAD.",
+      "Aktívne sa zapája do spoločenských iniciatív, okrem iného ako zakladateľ think tanku Onkologia 2025 a člen dozornej rady charitatívnej nadácie Stock. Pôsobí tiež ako dobrovoľník v Richmond Furniture Scheme a finančne podporuje okrem iného SOS detské dedinky (SOS Wioski Dziecięce)."
+    ],
+    "de": [
+      "Mirosław Stachowicz verfügt über umfangreiche Erfahrung als Mitglied von Aufsichtsräten börsennotierter und privater Gesellschaften. Seit 1994 führt er ununterbrochen Unternehmen im FMCG-Sektor in Mittel- und Osteuropa, unter anderem war er von 2016 bis 2022 CEO eines an der Londoner Börse notierten Unternehmens – als erster Pole in einer solchen Position. Er ist Absolvent der Jagiellonen-Universität, der Johns Hopkins University in Bologna, der Carleton University in Ottawa und des INSEAD.",
+      "Er engagiert sich aktiv in gesellschaftlichen Initiativen, unter anderem als Gründer des Think-Tanks Onkologia 2025 und Mitglied des Stiftungsrats der wohltätigen Stiftung Stock. Zudem ist er ehrenamtlich beim Richmond Furniture Scheme tätig und unterstützt finanziell unter anderem die SOS-Kinderdörfer (SOS Wioski Dziecięce)."
+    ],
+    "fr": [
+      "Mirosław Stachowicz possède une riche expérience en tant que membre de conseils de surveillance de sociétés cotées et privées. Depuis 1994, il dirige sans interruption des entreprises du secteur des biens de grande consommation (FMCG) en Europe centrale et orientale, notamment comme CEO d’une société cotée à la Bourse de Londres de 2016 à 2022 — premier Polonais à occuper un tel poste. Il est diplômé de l’Université Jagellonne, de la Johns Hopkins University à Bologne, de la Carleton University à Ottawa et de l’INSEAD.",
+      "Il s’implique activement dans des initiatives sociales, notamment comme fondateur du think tank Onkologia 2025 et membre du conseil de surveillance de la fondation caritative Stock. Il est également bénévole au Richmond Furniture Scheme et soutient financièrement, entre autres, les Villages d’Enfants SOS (SOS Wioski Dziecięce)."
+    ]
+  }
+}

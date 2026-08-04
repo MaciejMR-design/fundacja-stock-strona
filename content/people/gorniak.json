@@ -1,0 +1,46 @@
+{
+  "id": "gorniak",
+  "order": 50,
+  "group": "board",
+  "name": "Beata Górniak",
+  "photo": "/uploads/gorniak.webp",
+  "role": {
+    "pl": "Prezes Zarządu",
+    "en": "President of the Board",
+    "cz": "Předsedkyně představenstva",
+    "it": "Presidente del CdA",
+    "sk": "Predsedníčka predstavenstva",
+    "de": "Vorstandsvorsitzende",
+    "fr": "Présidente de la direction"
+  },
+  "bio": {
+    "pl": [
+      "Beata Górniak dołączyła do Stock Spirits Group w listopadzie 2022 roku z PKP Energetyka, gdzie przez ostatnie sześć lat pełniła funkcję Dyrektorki HR i Członkini Zarządu. Jest ekspertką w procesach zarządzania zmianą i relacjach pracowniczych, z ponad 20-letnim doświadczeniem zawodowym. Beata kierowała działami HR w firmach takich jak Tesco, Vattenfall, Grupa Tauron i Saint-Gobain. W Stock Spirits Group odpowiada za strategię i procesy HR Grupy, a także ESG i komunikację wewnętrzną, współpracując bezpośrednio z zespołami HR na rynkach Grupy.",
+      "Ma również bogate doświadczenie w prowadzeniu fundacji charytatywnych, projektów pomocy uchodźcom, inicjatyw środowiskowych i kluczowych programów społecznych. Była Prezeską Fundacji Dobra Energia."
+    ],
+    "en": [
+      "Beata Górniak joined Stock Spirits Group in November 2022 from PKP Energetyka, where she spent the last six years as HR Director and Management Board Member. She is an expert in change management processes and employee relations, with over 20 years of professional experience. Beata has led HR departments in companies such as Tesco, Vattenfall, Grupa Tauron, and Saint-Gobain. At Stock Spirits Group, she is responsible for the Group’s HR strategy and processes, as well as ESG and internal communications, working directly with HR teams across the Group’s markets.",
+      "She also has extensive experience in leading charitable foundations, refugee aid projects, environmental initiatives, and key social programs. Former President of the Dobra Energia Foundation."
+    ],
+    "cz": [
+      "Beata Górniak nastoupila do Stock Spirits Group v listopadu 2022 z PKP Energetyka, kde posledních šest let působila jako HR ředitelka a členka představenstva. Je expertkou na procesy řízení změn a zaměstnanecké vztahy s více než 20 lety profesních zkušeností. Beata vedla HR oddělení ve firmách jako Tesco, Vattenfall, Grupa Tauron a Saint-Gobain. Ve Stock Spirits Group odpovídá za HR strategii a procesy skupiny, jakož i za ESG a interní komunikaci, a spolupracuje přímo s HR týmy na trzích skupiny.",
+      "Má také rozsáhlé zkušenosti s vedením charitativních nadací, projektů pomoci uprchlíkům, ekologických iniciativ a klíčových sociálních programů. Bývalá předsedkyně nadace Dobra Energia."
+    ],
+    "it": [
+      "Beata Górniak è entrata in Stock Spirits Group nel novembre 2022 da PKP Energetyka, dove negli ultimi sei anni è stata Direttrice HR e membro del Consiglio di Gestione. È esperta nei processi di gestione del cambiamento e nelle relazioni con i dipendenti, con oltre 20 anni di esperienza professionale. Beata ha guidato dipartimenti HR in aziende come Tesco, Vattenfall, Grupa Tauron e Saint-Gobain. In Stock Spirits Group è responsabile della strategia e dei processi HR del Gruppo, nonché dell’ESG e della comunicazione interna, lavorando direttamente con i team HR nei mercati del Gruppo.",
+      "Ha inoltre una vasta esperienza nella guida di fondazioni benefiche, progetti di aiuto ai rifugiati, iniziative ambientali e importanti programmi sociali. Ex Presidente della Fondazione Dobra Energia."
+    ],
+    "sk": [
+      "Beata Górniak nastúpila do Stock Spirits Group v novembri 2022 z PKP Energetyka, kde posledných šesť rokov pôsobila ako HR riaditeľka a členka predstavenstva. Je expertkou na procesy riadenia zmien a zamestnanecké vzťahy s viac ako 20-ročnými profesijnými skúsenosťami. Beata viedla HR oddelenia vo firmách ako Tesco, Vattenfall, Grupa Tauron a Saint-Gobain. V Stock Spirits Group zodpovedá za HR stratégiu a procesy skupiny, ako aj za ESG a internú komunikáciu, pričom priamo spolupracuje s HR tímami na trhoch skupiny.",
+      "Má tiež bohaté skúsenosti s vedením charitatívnych nadácií, projektov pomoci utečencom, environmentálnych iniciatív a kľúčových sociálnych programov. Bývalá predsedníčka nadácie Dobra Energia."
+    ],
+    "de": [
+      "Beata Górniak kam im November 2022 zur Stock Spirits Group. Zuvor war sie sechs Jahre lang HR-Direktorin und Vorstandsmitglied bei PKP Energetyka. Sie ist Expertin für Change-Management-Prozesse und Mitarbeiterbeziehungen mit über 20 Jahren Berufserfahrung. Beata leitete HR-Abteilungen in Unternehmen wie Tesco, Vattenfall, Grupa Tauron und Saint-Gobain. Bei der Stock Spirits Group verantwortet sie die HR-Strategie und -Prozesse der Gruppe sowie ESG und interne Kommunikation und arbeitet dabei direkt mit den HR-Teams auf den Märkten der Gruppe zusammen.",
+      "Darüber hinaus verfügt sie über umfangreiche Erfahrung mit der Leitung wohltätiger Stiftungen, Hilfsprojekten für Geflüchtete, Umweltinitiativen und zentralen Sozialprogrammen. Ehemalige Vorstandsvorsitzende der Stiftung Dobra Energia."
+    ],
+    "fr": [
+      "Beata Górniak a rejoint Stock Spirits Group en novembre 2022 en provenance de PKP Energetyka, où elle a occupé pendant les six dernières années les fonctions de directrice des ressources humaines et membre du directoire. Experte des processus de conduite du changement et des relations avec les salariés, elle possède plus de 20 ans d’expérience professionnelle. Beata a dirigé les départements RH d’entreprises telles que Tesco, Vattenfall, Grupa Tauron et Saint-Gobain. Au sein de Stock Spirits Group, elle est responsable de la stratégie et des processus RH du Groupe, ainsi que de l’ESG et de la communication interne, en collaboration directe avec les équipes RH sur les marchés du Groupe.",
+      "Elle possède également une riche expérience dans la conduite de fondations caritatives, de projets d’aide aux réfugiés, d’initiatives environnementales et de programmes sociaux majeurs. Ancienne présidente de la Fondation Dobra Energia."
+    ]
+  }
+}

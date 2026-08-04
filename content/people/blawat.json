@@ -1,0 +1,46 @@
+{
+  "id": "blawat",
+  "order": 30,
+  "group": "council",
+  "name": "Tomasz Bławat",
+  "photo": "/uploads/blawat.jpg",
+  "role": {
+    "pl": "Członek Rady",
+    "en": "Council Member",
+    "cz": "Člen rady",
+    "it": "Membro del Consiglio",
+    "sk": "Člen rady",
+    "de": "Mitglied des Stiftungsrats",
+    "fr": "Membre du Conseil"
+  },
+  "bio": {
+    "pl": [
+      "Doświadczony menedżer z ponad 30-letnim stażem na stanowiskach kierowniczych w branżach FMCG, napojów i usług finansowych. Obecnie Group CEO Kex Confectionery SA, gdzie kieruje ekspansją firmy w Europie Środkowej poprzez wzrost organiczny oraz fuzje i przejęcia. Wcześniej pełnił funkcje CEO Carlsberg UK, Carlsberg Polska oraz dywizji ubezpieczeniowej i emerytalnej ING Polska, budując pozycję rynkową i przeprowadzając strategiczne transformacje. Zajmował wysokie stanowiska w SABMiller i Procter & Gamble, nadzorując sprzedaż, marketing i dystrybucję na wielu rynkach europejskich. Udokumentowana wiedza w zakresie strategii biznesowej, zarządzania zmianą, restrukturyzacji i zarządzania rachunkiem wyników.",
+      "Aktywnie zaangażowany w inicjatywy charytatywne, wspierający projekty społeczne i lokalne. Doświadczony w prowadzeniu programów społecznej odpowiedzialności biznesu, ze szczególnym naciskiem na trwały wpływ."
+    ],
+    "en": [
+      "An accomplished executive with over 30 years of leadership experience in FMCG, beverages, and financial services. Currently Group CEO of Kex Confectionery SA, leading the company’s expansion across Central Europe through organic growth and M&A. Previously served as CEO of Carlsberg UK, Carlsberg Poland, and ING Poland’s insurance and pension division, driving market leadership and strategic transformations. Held senior roles at SABMiller and Procter & Gamble, overseeing sales, marketing, and distribution in multiple European markets. Proven expertise in business strategy, change management, restructuring, and P&L leadership.",
+      "Actively engaged in charity initiatives, supporting social and community-driven projects. Experienced in leading corporate social responsibility programs, with a strong focus on sustainable impact."
+    ],
+    "cz": [
+      "Zkušený manažer s více než 30 lety vedoucích zkušeností v oblasti FMCG, nápojů a finančních služeb. V současnosti Group CEO společnosti Kex Confectionery SA, kde řídí expanzi firmy ve střední Evropě prostřednictvím organického růstu a fúzí a akvizic. Dříve působil jako CEO Carlsberg UK, Carlsberg Polsko a pojišťovací a penzijní divize ING Polsko, kde budoval tržní vedení a strategické transformace. Zastával vysoké pozice v SABMiller a Procter & Gamble, kde dohlížel na prodej, marketing a distribuci na několika evropských trzích. Prokazatelná odbornost v obchodní strategii, řízení změn, restrukturalizaci a řízení hospodářského výsledku.",
+      "Aktivně se zapojuje do charitativních iniciativ a podporuje sociální a komunitní projekty. Zkušený ve vedení programů společenské odpovědnosti firem se silným důrazem na udržitelný dopad."
+    ],
+    "it": [
+      "Dirigente affermato con oltre 30 anni di esperienza di leadership nei settori FMCG, bevande e servizi finanziari. Attualmente Group CEO di Kex Confectionery SA, guida l’espansione dell’azienda nell’Europa centrale tramite crescita organica e operazioni di M&A. In precedenza è stato CEO di Carlsberg UK, Carlsberg Polonia e della divisione assicurativa e previdenziale di ING Polonia, guidando la leadership di mercato e trasformazioni strategiche. Ha ricoperto ruoli senior in SABMiller e Procter & Gamble, supervisionando vendite, marketing e distribuzione in diversi mercati europei. Comprovata competenza in strategia aziendale, gestione del cambiamento, ristrutturazione e gestione del conto economico.",
+      "Attivamente impegnato in iniziative benefiche, a sostegno di progetti sociali e comunitari. Esperto nella guida di programmi di responsabilità sociale d’impresa, con forte attenzione all’impatto sostenibile."
+    ],
+    "sk": [
+      "Skúsený manažér s viac ako 30-ročnou praxou vo vedúcich pozíciách v oblasti FMCG, nápojov a finančných služieb. V súčasnosti Group CEO spoločnosti Kex Confectionery SA, kde riadi expanziu firmy v strednej Európe prostredníctvom organického rastu a fúzií a akvizícií. Predtým pôsobil ako CEO Carlsberg UK, Carlsberg Poľsko a poisťovacej a penzijnej divízie ING Poľsko, kde budoval vedúce postavenie na trhu a realizoval strategické transformácie. Zastával vysoké pozície v SABMiller a Procter & Gamble, kde dohliadal na predaj, marketing a distribúciu na viacerých európskych trhoch. Preukázateľná odbornosť v obchodnej stratégii, riadení zmien, reštrukturalizácii a riadení hospodárskeho výsledku.",
+      "Aktívne sa zapája do charitatívnych iniciatív a podporuje sociálne a komunitné projekty. Skúsený vo vedení programov spoločenskej zodpovednosti firiem so silným dôrazom na udržateľný dopad."
+    ],
+    "de": [
+      "Erfahrene Führungskraft mit über 30 Jahren Leitungserfahrung in den Bereichen FMCG, Getränke und Finanzdienstleistungen. Derzeit Group CEO der Kex Confectionery SA, wo er die Expansion des Unternehmens in Mitteleuropa durch organisches Wachstum sowie Fusionen und Übernahmen vorantreibt. Zuvor war er CEO von Carlsberg UK, Carlsberg Polen sowie der Versicherungs- und Pensionssparte von ING Polen, wo er Marktführerschaft aufbaute und strategische Transformationen umsetzte. Er hatte leitende Positionen bei SABMiller und Procter & Gamble inne und verantwortete Vertrieb, Marketing und Distribution auf mehreren europäischen Märkten. Nachgewiesene Expertise in Geschäftsstrategie, Change-Management, Restrukturierung und Ergebnisverantwortung.",
+      "Er engagiert sich aktiv in wohltätigen Initiativen und unterstützt soziale und gemeinnützige Projekte. Erfahren in der Leitung von Programmen der unternehmerischen Gesellschaftsverantwortung, mit besonderem Fokus auf nachhaltige Wirkung."
+    ],
+    "fr": [
+      "Dirigeant accompli, fort de plus de 30 ans d’expérience à des postes de direction dans les secteurs des biens de grande consommation (FMCG), des boissons et des services financiers. Actuellement Group CEO de Kex Confectionery SA, il pilote l’expansion de l’entreprise en Europe centrale par la croissance organique et les fusions-acquisitions. Il a auparavant été CEO de Carlsberg UK, de Carlsberg Pologne et de la division assurance et retraite d’ING Pologne, où il a bâti des positions de leader et mené des transformations stratégiques. Il a occupé de hautes fonctions chez SABMiller et Procter & Gamble, supervisant les ventes, le marketing et la distribution sur plusieurs marchés européens. Expertise avérée en stratégie d’entreprise, conduite du changement, restructuration et gestion du compte de résultat.",
+      "Activement engagé dans des initiatives caritatives, il soutient des projets sociaux et communautaires. Expérimenté dans la conduite de programmes de responsabilité sociale des entreprises, avec un accent particulier sur l’impact durable."
+    ]
+  }
+}
