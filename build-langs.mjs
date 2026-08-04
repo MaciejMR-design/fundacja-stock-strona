@@ -597,3 +597,11 @@ if (removed.length) console.log(`pages removed (entry no longer exists): ${remov
 console.log('root = EN; subdirs: pl/ cz/ it/ sk/ de/ fr/');
 console.log(`released to the public: ${PUBLIC_LANGS.join(', ')} (${urls.length} URLs in sitemap)`);
 console.log(`built but hidden ("coming soon", noindex): ${LANGS.filter(l => !PUBLIC_LANGS.includes(l)).join(', ') || 'none'}`);
+/* Widoczne w logu każdego builda na Vercelu, dopóki nie zniknie powód —
+   po przepięciu domeny łatwo o tym zapomnieć, a og:image i logo w danych
+   strukturalnych zostałyby wtedy na adresie *.vercel.app. */
+if (OG_SITE !== SITE) {
+  console.log(`\nDO ZROBIENIA PO PRZEPIECIU DOMENY: og:image i logo wskazuja na ${OG_SITE},`);
+  console.log(`a strona na ${SITE}. Gdy ${SITE} juz odpowiada, ustaw OG_SITE = SITE`);
+  console.log('i podmien site_url + base_url w design-v2/admin/config.yml. Szczegoly: PRZEPIECIE-DOMENY.md\n');
+}
