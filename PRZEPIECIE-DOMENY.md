@@ -49,6 +49,53 @@ Potem dwa zaglądnięcia do Search Console przez trzy tygodnie.
 
 ---
 
+## Gdzie realnie stoi domena — sprawdzone 04.08.2026
+
+| Co | Gdzie |
+|---|---|
+| Serwery nazw (DNS) | `ns.lh.pl`, `ns2.lighthosting.net` → **LH.pl** |
+| Strona (rekord A) | `185.135.90.43` → **LH.pl** |
+| Poczta (MX) | `mail19.lh.pl` → **LH.pl** |
+
+nazwa.pl jest najpewniej tylko **rejestratorem** domeny. Strefa DNS, hosting
+strony i poczta są u **LH.pl**, więc kopię zapasową robi się w panelu LH.pl
+i **tam też zmienia się rekord A** — zmiana w edytorze DNS nazwa.pl nie zadziała,
+dopóki serwery nazw wskazują na LH.pl.
+
+**Droga A (zalecana): dostęp do LH.pl.** Zmieniasz tam dwa rekordy `A` i nic
+więcej — poczta zostaje nietknięta.
+
+**Droga B (bez dostępu do LH.pl):** przełączasz serwery nazw na nazwa.pl
+i odtwarzasz strefę od zera. Poniżej pełny zrzut obecnej strefy — wszystko
+oprócz `A` przepisujesz bez zmian, `A` wskazujesz na Vercela.
+
+### Zrzut strefy fundacjastock.pl (04.08.2026)
+
+| Typ | Nazwa | Wartość | Co z tym |
+|---|---|---|---|
+| A | `@` | `185.135.90.43` | **zmienić** na wartość z Vercela |
+| A | `www` | `185.135.90.43` | **zmienić** na wartość z Vercela (CNAME) |
+| A | `*` (wildcard) | `185.135.90.43` | nie odtwarzać — niepotrzebny |
+| MX | `@` | `5 mail19.lh.pl` | przepisać bez zmian |
+| TXT | `@` | `v=spf1 include:_spf.lh.pl -all` | przepisać bez zmian |
+| TXT | `_dmarc` | `v=DMARC1; p=quarantine; rua=mailto:dmarc-report@lh.pl;` | przepisać bez zmian |
+| TXT | `default._domainkey` | klucz DKIM (poniżej) | przepisać bez zmian |
+| CNAME | `mail`, `smtp`, `imap` | `mail19.lh.pl` | przepisać (konfiguracja programów pocztowych) |
+| A | `autoconfig` | `185.135.89.143` | przepisać (autokonfiguracja Thunderbirda) |
+
+DKIM (`default._domainkey`, jedna linia):
+
+```
+v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqjhsEav0jzbMlN8IaOOc3g3K5oViXdu5s+b5S3FN8KbuE2N7otEV+kNFkXeZKxEtPpwWI7+QgqZm5XMLwP+XXmz2LwpQLxnrig0OJehyj228NPkuAfyL8kKAUgoI2KjixMOPDqVQYEzjgyJ8bTR645x4f/YAkQdRRs7BqmXRx6dMt6erRlgEOkuqUsJNOEgB4793W4QTxsNnzDN+ee5N3MpJEM45gnVIQN/zFpQ0kImGz+hW//B3ghoy2ZNK2/w5u335pmjxxZl05jy+vOCxQzcOSIgU0jrdfq+z69ckWUQPO1NuAJLK+T7MhxKRO0SU3bf85eD4nZ/N7bHHtCuilQIDAQAB
+```
+
+Uwaga: przy Drodze B zmiana serwerów nazw propaguje się wolniej niż zmiana
+samego rekordu `A` (bywa, że kilkanaście godzin). Przy Drodze A liczy się TTL.
+
+Docelowy zakup poczty fundacji w nazwa.pl to **osobna operacja**: zmienia `MX`,
+`SPF` i `DKIM`, więc robi się ją dopiero po tym, jak strona już działa — nigdy
+razem z przepięciem strony.
+
 # Część I — Kopia zapasowa (30–45 min)
 
 **Nie aktualizuj wtyczek** (jest 9 aktualizacji) i **nie włączaj trybu
