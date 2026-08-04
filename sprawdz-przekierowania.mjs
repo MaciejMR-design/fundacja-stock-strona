@@ -14,16 +14,18 @@ import { join } from 'path';
 const BASE = (process.argv[2] || 'https://fundacja-stock-design.vercel.app').replace(/\/$/, '');
 const { redirects } = JSON.parse(readFileSync(join(import.meta.dirname, 'vercel.json'), 'utf8'));
 
-/* adresy z parametrem (:path*) trzeba sprawdzić na konkretnym przykładzie */
+/* Wzorce trzeba sprawdzić na konkretnym przykładzie. Przykłady są w formie,
+   w jakiej adresy naprawdę występowały na starej stronie — czyli z ukośnikiem
+   na końcu. To właśnie na tym wyszło, że `:path*` takich adresów nie łapie. */
 const PRZYKLADY = {
-  '/category/:path*': '/category/blog/',
-  '/tag/:path*': '/tag/cokolwiek/',
-  '/author/:path*': '/author/admin/',
-  '/page/:path*': '/page/2/',
-  '/blog/:path*': '/blog/page/2/',
+  '/category/:rest(.*)': '/category/blog/',
+  '/tag/:rest(.*)': '/tag/cokolwiek/',
+  '/author/:rest(.*)': '/author/admin/',
+  '/page/:rest(.*)': '/page/2/',
+  '/blog/:rest(.*)': '/blog/page/2/',
+  '/wp-admin/:rest(.*)': '/wp-admin/edit.php',
   '/:year(\\d{4})': '/2024',
-  '/:year(\\d{4})/:path*': '/2024/05/',
-  '/wp-admin/:path*': '/wp-admin/edit.php'
+  '/:year(\\d{4})/:rest(.*)': '/2024/05/'
 };
 
 const status = async url => {

@@ -403,16 +403,6 @@
       "statusCode": 301
     },
     {
-      "source": "/blog",
-      "destination": "/news.html",
-      "statusCode": 301
-    },
-    {
-      "source": "/blog/",
-      "destination": "/news.html",
-      "statusCode": 301
-    },
-    {
       "source": "/contact",
       "destination": "/contact.html",
       "statusCode": 301
@@ -533,29 +523,64 @@
       "statusCode": 301
     },
     {
-      "source": "/category/:path*",
+      "source": "/category",
       "destination": "/news.html",
       "statusCode": 301
     },
     {
-      "source": "/tag/:path*",
+      "source": "/category/:rest(.*)",
       "destination": "/news.html",
       "statusCode": 301
     },
     {
-      "source": "/author/:path*",
+      "source": "/tag",
+      "destination": "/news.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/tag/:rest(.*)",
+      "destination": "/news.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/author",
       "destination": "/about-us.html",
       "statusCode": 301
     },
     {
-      "source": "/page/:path*",
+      "source": "/author/:rest(.*)",
+      "destination": "/about-us.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/page",
       "destination": "/news.html",
       "statusCode": 301
     },
     {
-      "source": "/blog/:path*",
+      "source": "/page/:rest(.*)",
       "destination": "/news.html",
       "statusCode": 301
+    },
+    {
+      "source": "/blog",
+      "destination": "/news.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/:rest(.*)",
+      "destination": "/news.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-admin",
+      "destination": "/admin/",
+      "statusCode": 302
+    },
+    {
+      "source": "/wp-admin/:rest(.*)",
+      "destination": "/admin/",
+      "statusCode": 302
     },
     {
       "source": "/:year(\\d{4})",
@@ -563,7 +588,7 @@
       "statusCode": 301
     },
     {
-      "source": "/:year(\\d{4})/:path*",
+      "source": "/:year(\\d{4})/:rest(.*)",
       "destination": "/news.html",
       "statusCode": 301
     },
@@ -596,16 +621,6 @@
       "source": "/sitemap_index.xml",
       "destination": "/sitemap.xml",
       "statusCode": 301
-    },
-    {
-      "source": "/wp-admin",
-      "destination": "/admin/",
-      "statusCode": 302
-    },
-    {
-      "source": "/wp-admin/:path*",
-      "destination": "/admin/",
-      "statusCode": 302
     },
     {
       "source": "/wp-login.php",
