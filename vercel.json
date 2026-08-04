@@ -1,4 +1,616 @@
 {
   "buildCommand": "node build-langs.mjs",
-  "outputDirectory": "design-v2"
+  "outputDirectory": "design-v2",
+  "redirects": [
+    {
+      "source": "/paintings-of-wojciech-gerson-presented-at-dps-ametystowa-05-june2026",
+      "destination": "/article-gerson.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/paintings-of-wojciech-gerson-presented-at-dps-ametystowa-05-june2026/",
+      "destination": "/article-gerson.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/supporting-those-who-support-others-26-may-2026",
+      "destination": "/article-mopr.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/supporting-those-who-support-others-26-may-2026/",
+      "destination": "/article-mopr.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/music-and-sport-scholarship-another-victory-07-may2026",
+      "destination": "/article-taekwondo.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/music-and-sport-scholarship-another-victory-07-may2026/",
+      "destination": "/article-taekwondo.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/across-generations-meeting-with-art-at-urbanlab-24-april-2026",
+      "destination": "/article-urbanlab.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/across-generations-meeting-with-art-at-urbanlab-24-april-2026/",
+      "destination": "/article-urbanlab.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/stock-foundation-awarded-at-crisis-intervention-center-cik-17-april-2026",
+      "destination": "/article-cik.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/stock-foundation-awarded-at-crisis-intervention-center-cik-17-april-2026/",
+      "destination": "/article-cik.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/meet-our-new-volunteer-renowned-luthier-lukasz-murawski-16-march-2026",
+      "destination": "/article-guitar.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/meet-our-new-volunteer-renowned-luthier-lukasz-murawski-16-march-2026/",
+      "destination": "/article-guitar.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/meeting-for-seniors-dedicated-to-the-art-and-life-of-adam-chmielowski-22-january-2026",
+      "destination": "/article-chmielowski.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/meeting-for-seniors-dedicated-to-the-art-and-life-of-adam-chmielowski-22-january-2026/",
+      "destination": "/article-chmielowski.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/our-bandura-young-players-in-concert-at-home-faber-premises-18-december-2025",
+      "destination": "/article-bandura.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/our-bandura-young-players-in-concert-at-home-faber-premises-18-december-2025/",
+      "destination": "/article-bandura.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/art-curator-barbara-czajkowska-takes-residents-of-dps-to-florence-18-november-2025",
+      "destination": "/article-florence.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/art-curator-barbara-czajkowska-takes-residents-of-dps-to-florence-18-november-2025/",
+      "destination": "/article-florence.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/art-curator-anna-czajczyk-leads-a-history-session-for-seniors-at-city-hall-24-october-2025",
+      "destination": "/article-castlehill.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/art-curator-anna-czajczyk-leads-a-history-session-for-seniors-at-city-hall-24-october-2025/",
+      "destination": "/article-castlehill.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/stock-foundation-organizacja-pozytku-publicznego-public-benefit-organization-12-september-2025",
+      "destination": "/article-opp.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/stock-foundation-organizacja-pozytku-publicznego-public-benefit-organization-12-september-2025/",
+      "destination": "/article-opp.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/stock-volunteers-collected-nearly-3-tons-of-waste-19-september-2025",
+      "destination": "/article-cleanup.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/stock-volunteers-collected-nearly-3-tons-of-waste-19-september-2025/",
+      "destination": "/article-cleanup.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/day-out-for-residents-of-dps-care-home-16-june-2025",
+      "destination": "/article-dpsday.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/day-out-for-residents-of-dps-care-home-16-june-2025/",
+      "destination": "/article-dpsday.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/training-day-for-social-workers-28-may-2025",
+      "destination": "/article-training25.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/training-day-for-social-workers-28-may-2025/",
+      "destination": "/article-training25.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/a-day-of-cultural-encounters-with-the-stock-foundation-09-april-2025",
+      "destination": "/article-culturday.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/a-day-of-cultural-encounters-with-the-stock-foundation-09-april-2025/",
+      "destination": "/article-culturday.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/encounter-with-art-held-at-the-national-museum",
+      "destination": "/article-matejko.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/encounter-with-art-held-at-the-national-museum/",
+      "destination": "/article-matejko.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/community-initiative-in-croatia",
+      "destination": "/article-dpsart.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/community-initiative-in-croatia/",
+      "destination": "/article-dpsart.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/employee-volunteering-at-ex-lege-foundation-x-2024",
+      "destination": "/article-sisan.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/employee-volunteering-at-ex-lege-foundation-x-2024/",
+      "destination": "/article-sisan.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/encounters-with-art-between-luvre-and-versailles-x-2024",
+      "destination": "/article-louvre.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/encounters-with-art-between-luvre-and-versailles-x-2024/",
+      "destination": "/article-louvre.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/responsible-drinking-project-1st-training-ix-2024",
+      "destination": "/article-training24.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/responsible-drinking-project-1st-training-ix-2024/",
+      "destination": "/article-training24.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/musical-scholarship-program-in-partnership-with-homo-faber-viii-2024",
+      "destination": "/article-musicprog.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/musical-scholarship-program-in-partnership-with-homo-faber-viii-2024/",
+      "destination": "/article-musicprog.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/meetings-with-art-emotions-in-art-viii-2024",
+      "destination": "/article-emotions.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/meetings-with-art-emotions-in-art-viii-2024/",
+      "destination": "/article-emotions.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/flavors-of-change-grant-program-grant-for-osp-czerniecin-viii-2024",
+      "destination": "/article-czerniecin.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/flavors-of-change-grant-program-grant-for-osp-czerniecin-viii-2024/",
+      "destination": "/article-czerniecin.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/development-scholarship-program-in-cooperation-with-homo-faber-successes-of-victoria-pronczakova-vii-2024",
+      "destination": "/article-viktoria.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/development-scholarship-program-in-cooperation-with-homo-faber-successes-of-victoria-pronczakova-vii-2024/",
+      "destination": "/article-viktoria.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/development-fellowship-program-in-cooperation-with-homo-faber-educator-mirek-sokolowski-vii-2024",
+      "destination": "/article-mirek.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/development-fellowship-program-in-cooperation-with-homo-faber-educator-mirek-sokolowski-vii-2024/",
+      "destination": "/article-mirek.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/development-scholarship-program-in-cooperation-with-homo-faber-concert-of-scholarship-recipients-vi-2024",
+      "destination": "/article-concert24.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/development-scholarship-program-in-cooperation-with-homo-faber-concert-of-scholarship-recipients-vi-2024/",
+      "destination": "/article-concert24.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/flavors-of-change-grant-program-grant-for-osp-markuszow-vi-2024",
+      "destination": "/article-markuszow.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/flavors-of-change-grant-program-grant-for-osp-markuszow-vi-2024/",
+      "destination": "/article-markuszow.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/meetings-with-art-curator-jolanta-polanska-v-2024",
+      "destination": "/article-polanska.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/meetings-with-art-curator-jolanta-polanska-v-2024/",
+      "destination": "/article-polanska.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/flavors-of-change-grant-program-grant-for-osp-godow-v-2024",
+      "destination": "/article-godow.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/flavors-of-change-grant-program-grant-for-osp-godow-v-2024/",
+      "destination": "/article-godow.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/meetings-with-art-kossak-family-iv-2024",
+      "destination": "/article-kossak.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/meetings-with-art-kossak-family-iv-2024/",
+      "destination": "/article-kossak.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/psychological-support-program-iii-2024",
+      "destination": "/article-psych24.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/psychological-support-program-iii-2024/",
+      "destination": "/article-psych24.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/project-to-support-lublin-schools-summary-2023-iii-2024",
+      "destination": "/article-schools.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/project-to-support-lublin-schools-summary-2023-iii-2024/",
+      "destination": "/article-schools.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/musical-scholarship-program-summary-of-music-scholarships-2023-ii-2024",
+      "destination": "/article-musicsummary.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/musical-scholarship-program-summary-of-music-scholarships-2023-ii-2024/",
+      "destination": "/article-musicsummary.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/psychological-support-program-summary-2023-ii-2024",
+      "destination": "/article-psychsummary.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/psychological-support-program-summary-2023-ii-2024/",
+      "destination": "/article-psychsummary.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/polish-language-courses-summary-2023-ii-2024",
+      "destination": "/article-polishcourses.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/polish-language-courses-summary-2023-ii-2024/",
+      "destination": "/article-polishcourses.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/grant-program-flavors-of-change-i-2024",
+      "destination": "/article-floc2024.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/grant-program-flavors-of-change-i-2024/",
+      "destination": "/article-floc2024.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/musical-scholarship-program-concert-winter-painted-with-sound-i-2024",
+      "destination": "/article-winterconcert.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/musical-scholarship-program-concert-winter-painted-with-sound-i-2024/",
+      "destination": "/article-winterconcert.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/homepage",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/homepage/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us",
+      "destination": "/about-us.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us/",
+      "destination": "/about-us.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/news",
+      "destination": "/news.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/news/",
+      "destination": "/news.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog",
+      "destination": "/news.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/",
+      "destination": "/news.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact/",
+      "destination": "/contact.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/privacy-policy.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/privacy-policy/",
+      "destination": "/privacy-policy.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/statements",
+      "destination": "/statute.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/statements/",
+      "destination": "/statute.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/statuses",
+      "destination": "/statute.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/statuses/",
+      "destination": "/statute.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/board-council",
+      "destination": "/board-council.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/board-council/",
+      "destination": "/board-council.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/jean-christophe-coutures-2",
+      "destination": "/person.html#coutures",
+      "statusCode": 301
+    },
+    {
+      "source": "/jean-christophe-coutures-2/",
+      "destination": "/person.html#coutures",
+      "statusCode": 301
+    },
+    {
+      "source": "/marta-kowalska",
+      "destination": "/person.html#kowalska",
+      "statusCode": 301
+    },
+    {
+      "source": "/marta-kowalska/",
+      "destination": "/person.html#kowalska",
+      "statusCode": 301
+    },
+    {
+      "source": "/tomasz-blawat",
+      "destination": "/person.html#blawat",
+      "statusCode": 301
+    },
+    {
+      "source": "/tomasz-blawat/",
+      "destination": "/person.html#blawat",
+      "statusCode": 301
+    },
+    {
+      "source": "/tomasz-blawat-2",
+      "destination": "/person.html#stachowicz",
+      "statusCode": 301
+    },
+    {
+      "source": "/tomasz-blawat-2/",
+      "destination": "/person.html#stachowicz",
+      "statusCode": 301
+    },
+    {
+      "source": "/beata-gorniak",
+      "destination": "/person.html#gorniak",
+      "statusCode": 301
+    },
+    {
+      "source": "/beata-gorniak/",
+      "destination": "/person.html#gorniak",
+      "statusCode": 301
+    },
+    {
+      "source": "/bradley-holder",
+      "destination": "/person.html#holder",
+      "statusCode": 301
+    },
+    {
+      "source": "/bradley-holder/",
+      "destination": "/person.html#holder",
+      "statusCode": 301
+    },
+    {
+      "source": "/miroslava-korpa-ondo",
+      "destination": "/board-council.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/miroslava-korpa-ondo/",
+      "destination": "/board-council.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/:path*",
+      "destination": "/news.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/tag/:path*",
+      "destination": "/news.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/author/:path*",
+      "destination": "/about-us.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/page/:path*",
+      "destination": "/news.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "/news.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/:year(\\d{4})",
+      "destination": "/news.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/:year(\\d{4})/:path*",
+      "destination": "/news.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/feed",
+      "destination": "/news.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/feed/",
+      "destination": "/news.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/comments/feed",
+      "destination": "/news.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/comments/feed/",
+      "destination": "/news.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-sitemap.xml",
+      "destination": "/sitemap.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/sitemap_index.xml",
+      "destination": "/sitemap.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-admin",
+      "destination": "/admin/",
+      "statusCode": 302
+    },
+    {
+      "source": "/wp-admin/:path*",
+      "destination": "/admin/",
+      "statusCode": 302
+    },
+    {
+      "source": "/wp-login.php",
+      "destination": "/admin/",
+      "statusCode": 302
+    }
+  ]
 }

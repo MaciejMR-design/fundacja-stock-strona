@@ -4,15 +4,21 @@
 (po przeniesieniu strony na docelową domenę: `https://fundacjastock.pl/admin/`)
 
 ## Logowanie
+Panel działa na koncie GitHub — zakładamy je razem przy przekazaniu strony
+(potrzebny będzie tylko kod, który przyjdzie na Twoją skrzynkę). Konto ma dostęp
+wyłącznie do treści tej strony.
+
 1. Wejdź na adres panelu.
 2. Kliknij **„Sign In with GitHub"** — to jedyny przycisk na ekranie.
-3. W okienku zaloguj się **kontem fundacji**, którego dane przekazaliśmy osobno
-   (adres e-mail + hasło), i zatwierdź dostęp.
 
-Przeglądarka zapamięta sesję: przy kolejnych wejściach wystarczy sam adres panelu.
-Dane logowania warto zachować — będą potrzebne po zmianie komputera albo po
-wyczyszczeniu danych przeglądarki. Konto służy wyłącznie do tego panelu i ma
-dostęp tylko do treści tej strony.
+Przeglądarka zapamięta sesję: przy kolejnych wejściach wystarczy sam adres panelu
+i panel otworzy się od razu, bez logowania. Nie korzystaj z trybu incognito —
+w nim sesja nie zostaje zapamiętana.
+
+**Zmiana komputera lub wyczyszczenie danych przeglądarki** — wtedy trzeba się
+zalogować ponownie (adres e-mail i hasło konta warto mieć zapisane). GitHub uzna
+to za nowe urządzenie i wyśle na Twój adres e-mail kod weryfikacyjny — wpisz go
+i panel zadziała jak wcześniej. Jeśli coś tu nie zagra, napisz do nas.
 
 ## Co można zmieniać
 Panel ma cztery sekcje:
