@@ -89,8 +89,12 @@ header.site.scrolled .logo img { height: 42px; }
    time a new photo fades in. Each slide only cross-fades. */
 .hero-slides { position: absolute; inset: 0; z-index: 0; overflow: hidden; transform-origin: 60% top; animation: slowZoom 24s ease-in-out infinite alternate; }
 .hero-slides picture { display: contents; }
-.hero .hero-photo { opacity: 0; transform: none; animation: none; transition: opacity 1.1s ease-in-out; }
-.hero .hero-photo.is-active { opacity: 1; }
+/* Zmiana zdjęcia: stare rozpływa się i lekko rozjeżdża, nowe wchodzi w kadr
+   z delikatnym zbliżeniem i osiada na miejscu. Skala nigdy nie schodzi poniżej
+   1 — przy mniejszej wartości spod zdjęcia wyjrzałoby tło kontenera. */
+.hero .hero-photo { opacity: 0; transform: scale(1.06); animation: none;
+  transition: opacity 1.4s ease-in-out, transform 2.2s cubic-bezier(.22, .61, .36, 1); }
+.hero .hero-photo.is-active { opacity: 1; transform: scale(1); }
 .hero::before { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(100deg, rgba(0,18,40,.96) 0%, rgba(0,26,58,.9) 30%, rgba(0,41,87,.65) 54%, rgba(0,41,87,.3) 80%, rgba(0,41,87,.18) 100%); }
 .hero::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(to top, rgba(0,16,38,.6) 0%, rgba(0,16,38,0) 34%); }
 .hero .hero-art { display: none; }
@@ -104,9 +108,9 @@ header.site.scrolled .logo img { height: 42px; }
 .hero-art path, .hero-art circle { stroke-dasharray: none; stroke-dashoffset: 0; }
 @keyframes slowZoom { from { transform: scale(1); } to { transform: scale(1.12); } }
 /* reduced motion: no zoom, no cross-fade. main.js additionally stops the slideshow
-   on the first photo — an image swapping itself every 3 s is exactly the kind of
-   movement this setting asks us not to make. */
-@media (prefers-reduced-motion: reduce) { .hero-art, .page-hero .hero-art { animation: none; } .hero-art path, .hero-art circle { animation: none; stroke-dashoffset: 0; } .hero-slides { animation: none; } .hero .hero-photo { transition: none; } }
+   on the first photo — an image swapping itself every few seconds is exactly the
+   kind of movement this setting asks us not to make. */
+@media (prefers-reduced-motion: reduce) { .hero-art, .page-hero .hero-art { animation: none; } .hero-art path, .hero-art circle { animation: none; stroke-dashoffset: 0; } .hero-slides { animation: none; } .hero .hero-photo { transition: none; transform: none; } .hero .hero-photo.is-active { transform: none; } }
 .hero-inner { position: relative; z-index: 3; padding-top: clamp(90px, 12vw, 160px); padding-bottom: clamp(100px, 13vw, 170px); }
 .scroll-hint { z-index: 3; }
 .hero-content { max-width: 760px; display: flex; flex-direction: column; gap: 26px; }
