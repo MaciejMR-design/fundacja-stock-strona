@@ -569,6 +569,9 @@ html.fs-locked body > *:not(.fs-gate) { visibility: hidden; }
   font-weight: 600; color: var(--navy-dark); background: var(--gold); border: 0;
   border-radius: 8px; cursor: pointer; }
 .fs-gate-card button:hover { background: var(--gold-light); }
+.fs-gate-sub { margin: -10px 0 18px !important; font-size: 13.5px !important; font-style: italic;
+  color: rgba(22, 59, 101, .6) !important; }
 .fs-gate-err { margin: 14px 0 0 !important; color: #b3261e; font-size: 14px; }
+.fs-gate-note a { color: var(--navy); text-decoration: underline; }
 .fs-gate-note { margin: 18px 0 0 !important; padding-top: 16px; font-size: 13px;
   border-top: 1px solid rgba(22, 59, 101, .12); color: rgba(22, 59, 101, .6); }

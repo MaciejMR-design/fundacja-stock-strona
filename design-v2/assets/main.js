@@ -115,19 +115,41 @@ if (!LANGS.some(l => l.code === currentLang)) currentLang = 'en';
    .createHash('sha256').update('nowe-haslo').digest('hex'))"). */
 const REVIEW_DIGEST = '266c14d700b8efa0d0528b3279de2ac80ae1f08e2b0483d49fe25e08f4531fbc';
 
+/* TRYB KONSERWACJI — na prośbę klienta (05.08.2026) cała strona jest chwilowo
+   za hasłem, nie tylko wersje przed publikacją. `false` przywraca normalny stan,
+   w którym publiczne są EN i PL, a za hasłem zostają cz/it/sk/de/fr.
+
+   UWAGA: domena została przepięta 05.08.2026 i trwa przejmowanie pozycji przez
+   nową stronę. Utrzymywanie tej ściany dłużej niż kilka dni szkodzi temu, co
+   zrobiliśmy przekierowaniami — wtedy właściwym narzędziem jest odpowiedź
+   serwera 503 z nagłówkiem Retry-After (Routing Middleware), którą Google
+   rozumie jako chwilową niedostępność i nie usuwa stron z indeksu. */
+const MAINTENANCE = true;
+
 const sha256hex = async text => {
   const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
   return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, '0')).join('');
 };
 
 function reviewGate() {
-  if (isPublic(currentLang)) return;
+  if (!MAINTENANCE && isPublic(currentLang)) return;
   try { if (localStorage.getItem('fs-review') === REVIEW_DIGEST) return; } catch (e) { /* brak localStorage */ }
 
   document.documentElement.classList.add('fs-locked');
   const box = document.createElement('div');
   box.className = 'fs-gate';
-  box.innerHTML = `
+  box.innerHTML = MAINTENANCE ? `
+    <form class="fs-gate-card" novalidate>
+      <p class="fs-gate-kicker">Fundacja Stock</p>
+      <h1>Strona w trakcie prac</h1>
+      <p>Przygotowujemy nową wersję serwisu. Prosimy o cierpliwość — wrócimy niebawem.</p>
+      <p class="fs-gate-sub">We are working on the new version of the website. Please check back shortly.</p>
+      <label for="fsGatePass">Hasło / Password</label>
+      <input id="fsGatePass" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" required>
+      <button type="submit">Zobacz stronę</button>
+      <p class="fs-gate-err" hidden>Nieprawidłowe hasło — spróbuj ponownie.</p>
+      <p class="fs-gate-note">Kontakt: <a href="mailto:biuro@fundacjastock.pl">biuro@fundacjastock.pl</a></p>
+    </form>` : `
     <form class="fs-gate-card" novalidate>
       <p class="fs-gate-kicker">${currentLang.toUpperCase()} — pre-release</p>
       <h1>Language version under review</h1>
