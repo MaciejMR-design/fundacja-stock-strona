@@ -101,6 +101,61 @@ function dict(lang) {
 let currentLang = window.FS_LANG || localStorage.getItem('fs-lang') || 'en';
 if (!LANGS.some(l => l.code === currentLang)) currentLang = 'en';
 
+/* ---------- bramka na wersje językowe przed publikacją ----------
+   Języki poza PUBLIC_LANGS są budowane i wdrażane, ale mają je oglądać tylko
+   native speakerzy, którzy oceniają tłumaczenie — jedno wspólne hasło.
+
+   To ZASŁONKA, nie zabezpieczenie: HTML wychodzi z serwera normalnie, więc kto
+   zajrzy w źródło strony, treść zobaczy. Do oceny tłumaczeń marketingowych to
+   wystarcza i nic nie kosztuje. Gdyby kiedyś trzeba było zamknąć coś na serio,
+   właściwym narzędziem jest Routing Middleware z Basic Auth po stronie serwera.
+
+   Hasło trzymamy jako odcisk SHA-256, żeby nie leżało w kodzie otwartym
+   tekstem. Zmiana hasła = podmiana odcisku (node -e "console.log(require('crypto')
+   .createHash('sha256').update('nowe-haslo').digest('hex'))"). */
+const REVIEW_DIGEST = '266c14d700b8efa0d0528b3279de2ac80ae1f08e2b0483d49fe25e08f4531fbc';
+
+const sha256hex = async text => {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
+  return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, '0')).join('');
+};
+
+function reviewGate() {
+  if (isPublic(currentLang)) return;
+  try { if (localStorage.getItem('fs-review') === REVIEW_DIGEST) return; } catch (e) { /* brak localStorage */ }
+
+  document.documentElement.classList.add('fs-locked');
+  const box = document.createElement('div');
+  box.className = 'fs-gate';
+  box.innerHTML = `
+    <form class="fs-gate-card" novalidate>
+      <p class="fs-gate-kicker">${currentLang.toUpperCase()} — pre-release</p>
+      <h1>Language version under review</h1>
+      <p>This translation is being checked before publication. Enter the password to view it.</p>
+      <label for="fsGatePass">Password</label>
+      <input id="fsGatePass" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" required>
+      <button type="submit">View this version</button>
+      <p class="fs-gate-err" hidden>Wrong password — please try again.</p>
+      <p class="fs-gate-note">Published versions: English and Polish — available without a password.</p>
+    </form>`;
+  document.body.appendChild(box);
+
+  const form = box.querySelector('form');
+  const input = box.querySelector('input');
+  const err = box.querySelector('.fs-gate-err');
+  input.focus();
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    if ((await sha256hex(input.value)) !== REVIEW_DIGEST) {
+      err.hidden = false; input.value = ''; input.focus(); return;
+    }
+    try { localStorage.setItem('fs-review', REVIEW_DIGEST); } catch (e2) { /* tryb prywatny */ }
+    document.documentElement.classList.remove('fs-locked');
+    box.remove();
+  });
+}
+reviewGate();
+
 /* ---------- responsive images ----------
    build-langs.mjs ships an 800 px variant next to every photo used as a cover
    or hero (`<name>-800.jpg`). Phones display these at ~375 px, so serving the
@@ -125,9 +180,12 @@ function buildHeader() {
   if (!h) return;
   const links = NAV.map(([href, k]) => `<a href="${href}" data-i18n="${k}"></a>`).join('');
   const soonLabel = dict(currentLang).langSoon;
+  /* Wersje przed publikacją są klikalne — recenzent (native speaker) wchodzi
+     w nie z przełącznika i podaje hasło. Etykieta „wkrótce” zostaje, bo dla
+     zwykłego odwiedzającego to nadal prawda. */
   const langItems = LANGS.map(l => isPublic(l.code)
     ? `<li><button data-lang="${l.code}"><span class="code">${l.code.toUpperCase()}</span>${l.name}</button></li>`
-    : `<li><button data-lang="${l.code}" class="soon" disabled aria-disabled="true"><span class="code">${l.code.toUpperCase()}</span>${l.name}<span class="soon-tag">${soonLabel}</span></button></li>`
+    : `<li><button data-lang="${l.code}" class="soon"><span class="code">${l.code.toUpperCase()}</span>${l.name}<span class="soon-tag">${soonLabel}</span></button></li>`
   ).join('');
   h.innerHTML = `
     <div class="container header-inner">
@@ -238,7 +296,6 @@ if (langDD && langBtn) {
   });
   langDD.querySelectorAll('.lang-list button').forEach(btn => {
     btn.addEventListener('click', () => {
-      if (!isPublic(btn.dataset.lang)) return;   // unreleased — picker entry is inert
       langDD.classList.remove('open');
       langBtn.setAttribute('aria-expanded', 'false');
       if (btn.dataset.lang === currentLang) return;
