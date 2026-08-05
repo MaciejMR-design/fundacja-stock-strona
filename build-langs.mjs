@@ -108,9 +108,9 @@ for (const f of readdirSync(join(CONTENT, 'pages')).filter(f => f.endsWith('.jso
 }
 
 const SITE = 'https://fundacjastock.pl';
-/* og:image must resolve TODAY (social-share preview), so it points at the live
-   deployment. When the site moves to fundacjastock.pl, set OG_SITE = SITE. */
-const OG_SITE = 'https://fundacja-stock-design.vercel.app';
+/* Domena przepięta 05.08.2026 — og:image i logo w danych strukturalnych
+   wskazują już na docelowy adres. */
+const OG_SITE = SITE;
 const SRC = join(import.meta.dirname, 'design-v2');
 const PAGES = ['index.html', 'about-us.html', 'news.html', 'article.html', 'statute.html', 'board-council.html', 'person.html', 'contact.html', 'privacy-policy.html'];
 const LANGS = ['en', 'pl', 'cz', 'it', 'sk', 'de', 'fr'];   // en = root

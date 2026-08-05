@@ -6,7 +6,7 @@ backend:
   name: github
   repo: MaciejMR-design/fundacja-stock-strona
   branch: main
-  base_url: https://fundacja-stock-design.vercel.app
+  base_url: https://fundacjastock.pl
   auth_endpoint: api/auth
   # Na ekranie logowania ma być jeden przycisk: „Sign In with GitHub".
   # Domyślnie panel pokazuje też „Sign In Using Access Token" — logowanie
@@ -21,8 +21,7 @@ backend:
     uploadMedia: 'Panel: dodano plik {{path}}'
     deleteMedia: 'Panel: usunięto plik {{path}}'
 
-# TODO po przełączeniu na fundacjastock.pl: podmienić site_url i base_url.
-site_url: https://fundacja-stock-design.vercel.app
+site_url: https://fundacjastock.pl
 logo_url: /uploads/logo-footer.svg
 
 media_folder: design-v2/uploads

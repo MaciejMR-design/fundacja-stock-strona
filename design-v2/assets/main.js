@@ -323,7 +323,7 @@ if (statsBand) {
   statsObserver.observe(statsBand);
 }
 
-/* hero slideshow (home) — four photos, one at a time, 3 s each. The cross-fade
+/* hero slideshow (home) — four photos, one at a time, 4.5 s each. The cross-fade
    itself is CSS (.hero-photo → .is-active); this only moves the class along.
 
    Two guards that matter outside a fast connection: a slide is skipped until its
@@ -336,7 +336,7 @@ const heroSlides = document.getElementById('heroSlides');
 if (heroSlides && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   const slides = Array.from(heroSlides.querySelectorAll('.hero-photo'));
   if (slides.length > 1) {
-    const HERO_MS = 3000;
+    const HERO_MS = 4500;
     let idx = 0;
     let timer = null;
 

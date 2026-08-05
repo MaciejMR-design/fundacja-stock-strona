@@ -1,7 +1,6 @@
 # Panel treści — instrukcja dla redaktora
 
-**Adres panelu:** `https://fundacja-stock-design.vercel.app/admin/`
-(po przeniesieniu strony na docelową domenę: `https://fundacjastock.pl/admin/`)
+**Adres panelu:** `https://fundacjastock.pl/admin/`
 
 ## Logowanie
 Panel działa na koncie GitHub — zakładamy je razem przy przekazaniu strony
