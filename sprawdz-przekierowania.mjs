@@ -47,13 +47,24 @@ const problemy = [];
 for (const r of redirects) {
   const sciezka = PRZYKLADY[r.source] || r.source;
   if (sciezka.includes(':')) { problemy.push(`${r.source}: nie wiem, jak to sprawdzić — dopisz przykład do PRZYKLADY`); continue; }
-  const { code, location, error } = await status(BASE + sciezka);
-  if (error) { problemy.push(`${sciezka}: blad sieci — ${error}`); continue; }
-  const oczekiwany = r.statusCode || 308;
-  if (code !== oczekiwany) { problemy.push(`${sciezka}: odpowiada ${code}, a ma ${oczekiwany} (cel: ${r.destination})`); continue; }
-  const trafia = (location || '').replace(BASE, '') || '';
+  /* Idziemy całym łańcuchem, a nie tylko pierwszym skokiem. Adres z ukośnikiem
+     na końcu Vercel najpierw normalizuje (308 na wersję bez ukośnika), a dopiero
+     potem uruchamia naszą regułę — sprawdzanie samego pierwszego skoku
+     zgłaszałoby to jako błąd, choć trafia dokładnie tam, gdzie trzeba. */
+  let biezacy = BASE + sciezka, trafia = null, skokow = 0, blad = null;
+  while (skokow < 5) {
+    const { code, location, error } = await status(biezacy);
+    if (error) { blad = `blad sieci — ${error}`; break; }
+    if (code < 300 || code >= 400) { trafia = biezacy.replace(BASE, '') || '/'; break; }
+    if (!location) { blad = `odpowiada ${code}, ale bez adresu docelowego`; break; }
+    biezacy = location.startsWith('http') ? location : BASE + location;
+    skokow++;
+  }
+  if (blad) { problemy.push(`${sciezka}: ${blad}`); continue; }
+  if (trafia === null) { problemy.push(`${sciezka}: przekierowania się zapętlają`); continue; }
+  if (skokow === 0) { problemy.push(`${sciezka}: nie przekierowuje (cel: ${r.destination})`); continue; }
   if (trafia.split('#')[0] !== r.destination.split('#')[0]) {
-    problemy.push(`${sciezka}: przekierowuje na ${trafia}, a ma na ${r.destination}`); continue;
+    problemy.push(`${sciezka}: trafia na ${trafia}, a ma na ${r.destination}`); continue;
   }
   const kodCelu = await celDziala(r.destination);
   if (kodCelu !== 200) { problemy.push(`${sciezka} -> ${r.destination}: cel odpowiada ${kodCelu}, nie 200`); continue; }

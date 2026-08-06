@@ -11,9 +11,13 @@ Potem dwa zaglądnięcia do Search Console przez trzy tygodnie.
 
 ## Stan przygotowań (gotowe)
 
-- **125 przekierowań 301** w `vercel.json` — 37 wpisów, 15 podstron, 6 profili
+- **66 przekierowań 301** w `vercel.json` — 37 wpisów, 15 podstron, 6 profili
   osób i rodziny adresów WordPressa (`/category/`, `/tag/`, `/author/`, `/page/`,
-  `/blog/`, archiwa `/2024/05/`, `/feed/`, stare sitemapy, `/wp-admin` → `/admin/`).
+  `/blog/`, archiwa `/2024/05/`, `/feed/`, stare sitemapy, `/wp-admin` → `/admin`).
+  Pierwotnie było ich 125: 06.08.2026, przy przejściu na adresy bez rozszerzenia
+  (`cleanUrls`), wypadły warianty źródeł z ukośnikiem na końcu — `trailingSlash:
+  false` normalizuje je wcześniej, więc nigdy się nie uruchamiały — oraz reguły,
+  które po zmianie wskazywały same na siebie (`/news` → `/news`).
   Każdy adres w wersji z ukośnikiem i bez. Sprawdzone na działającym serwerze.
 - `SITE` w `build-langs.mjs` już wskazuje na `https://fundacjastock.pl`, więc
   adresy kanoniczne, hreflang, `sitemap.xml` i `robots.txt` są poprawne od razu.
@@ -178,7 +182,7 @@ i `/sitemap.xml` odpowiadają 200.
 # Część IV — Dokończenie (25 min)
 
 1. `node sprawdz-przekierowania.mjs https://fundacjastock.pl` — musi wyjść
-   125 z 125.
+   66 z 66.
 2. `OG_SITE = SITE` w `build-langs.mjs` (linia ~113) oraz `site_url` i `base_url`
    w `design-v2/admin/config.yml` → `https://fundacjastock.pl`. Commit, push,
    Vercel przebuduje sam. Dopóki tego nie zrobisz, każdy build przypomina o tym
