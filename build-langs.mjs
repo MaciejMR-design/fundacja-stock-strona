@@ -446,12 +446,16 @@ function transform(src, page, lang, art) {
       `/* CONTENT:PAGE_I18N */${json}/* /CONTENT */`);
   }
 
-  /* Kafel „1,5% podatku” w pierwszym ekranie — tylko wersja polska. Odliczenie
-     dotyczy wyłącznie osób rozliczających PIT w Polsce; w pozostałych językach
-     kafel zajmowałby miejsce obok głównego przycisku, nic nie wnosząc. Status
-     OPP i numer KRS zostają za to w stopce, we wszystkich językach. */
+  /* Kafel „1,5% podatku” w pierwszym ekranie — wersja polska i angielska.
+     Odliczenie dotyczy wyłącznie rozliczających PIT w Polsce, więc w wersjach
+     cz/it/sk/de/fr kafel byłby szumem obok głównego przycisku. Angielska
+     zostaje, bo pod głównym adresem (fundacjastock.pl, bez /pl/) serwowana
+     jest właśnie ona i nie ma przekierowania po języku przeglądarki — to tam
+     ląduje większość odwiedzających, w tym polskich. Status OPP i numer KRS
+     są niezależnie od tego w stopce, we wszystkich językach. */
+  const OPP_LANGS = ['pl', 'en'];
   if (tplPage === 'index.html') {
-    h = fillBlock(h, 'HERO_OPP', lang === 'pl' ? heroOppHtml() : '');
+    h = fillBlock(h, 'HERO_OPP', OPP_LANGS.includes(lang) ? heroOppHtml() : '');
   }
 
   // inject the document list from content/documents.json (statute page only)
