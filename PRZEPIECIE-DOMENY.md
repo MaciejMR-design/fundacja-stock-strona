@@ -107,9 +107,17 @@ Maintenance** — dopóki to żywa strona, oddawałaby Google'owi błąd 503.
 
 1. WP → **Narzędzia → Eksport → Cała treść → Pobierz**. Plik XML, 2 minuty.
    To nie pełna kopia, ale najszybsze zabezpieczenie treści.
-2. Panel nazwa.pl → hosting → **Kopie zapasowe**: zrób i **pobierz na dysk**
-   pełną kopię (pliki + baza). Jeśli plan tego nie ma: FTP-em pobierz katalog
-   strony, bazę wyeksportuj z phpMyAdmin (Eksport → Szybki → SQL).
+2. **Kopia z hostingu — UWAGA, nie ma jej w panelu.** Hosting to LH.pl
+   (nazwa.pl jest tylko rejestratorem domeny, kopii tam nie znajdziesz).
+   LH.pl trzyma kopie na osobnym serwerze FTP:
+   - serwer: `backup.lh.pl` (185.135.88.45), port 21
+   - użytkownik: login serwera (`serwer318337`)
+   - hasło: FTP, z panelu LH.pl → Serwery → serwer → FTP / Dane dostępowe
+   - w środku: `www` (pliki) i `mysql` (zrzuty bazy), w folderach z datami
+
+   Kopie utrzymywane są **30 dni** — po przepięciu 05.08.2026 termin mija
+   około 04.09.2026. Gdyby logowanie nie przechodziło: czat wsparcia LH.pl
+   i prośba o udostępnienie kopii serwera z konkretną datą.
 3. Zapisz dostępy w jednym miejscu: WP admin, FTP, panel nazwa.pl.
    Uwaga: konto WP to `user@mccpr.eu` — agencji. Upewnij się, że hasła zostają
    u Ciebie albo masz własne konto administratora.
