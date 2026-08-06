@@ -27,6 +27,7 @@
   let pdfjs = null;      // wczytany moduł (jeden raz na sesję)
   let overlay = null;    // element okna
   let zadanie = 0;       // numer otwarcia — chroni przed wyścigiem przy szybkim przełączaniu
+  let adresyBlob = [];   // adresy wyrysowanych stron, do zwolnienia przy zamknięciu
 
   const t = key => {
     /* PAGE_I18N jest w szablonach zadeklarowane jako `const` w zwykłym
@@ -67,10 +68,14 @@
     zadanie++;                                   // unieważnia rysowanie w toku
     overlay.classList.remove('open');
     document.documentElement.classList.remove('doc-open');
-    /* Płótna potrafią zająć kilkadziesiąt MB — zwalniamy je po animacji. */
+    /* Wyrysowane strony zwalniamy po animacji — same obrazki znikają z DOM,
+       a ich adresy blob trzeba oddać przeglądarce ręcznie, inaczej trzymają
+       pamięć do końca wizyty. */
     setTimeout(() => {
       if (overlay && !overlay.classList.contains('open')) {
         overlay.querySelector('.doc-modal-pages').innerHTML = '';
+        adresyBlob.forEach(URL.revokeObjectURL);
+        adresyBlob = [];
       }
     }, 300);
   }
@@ -82,6 +87,8 @@
     const stan = box.querySelector('.doc-modal-state');
     box.querySelector('.doc-modal-title').textContent = tytul || '';
     strony.innerHTML = '';
+    adresyBlob.forEach(URL.revokeObjectURL);
+    adresyBlob = [];
     stan.textContent = t('docLoading') || 'Wczytywanie…';
     stan.hidden = false;
     box.classList.add('open');
@@ -96,10 +103,13 @@
       if (moje !== zadanie) return;              // w międzyczasie zamknięto albo otwarto inny
       stan.hidden = true;
 
-      const gestosc = Math.min(window.devicePixelRatio || 1, 2);
+      /* Rysowanie kosztuje proporcjonalnie do liczby pikseli. Na ekranach
+         Retina i telefonach (gęstość 2–3) ograniczenie do 1,5 ścina tę pracę
+         niemal o połowę, a przy czytaniu tekstu różnicy nie widać. */
+      const gestosc = Math.min(window.devicePixelRatio || 1, 1.5);
       const szerokosc = Math.min(MAX_WIDTH, strony.clientWidth || MAX_WIDTH);
 
-      /* Najpierw odkładamy miejsce na wszystkie strony — puste płótna
+      /* Najpierw odkładamy miejsce na wszystkie strony — puste obrazki
          o właściwych proporcjach. Dzięki temu pasek przewijania od razu ma
          prawdziwą długość i nie skacze w trakcie rysowania. */
       const kolejka = [];
@@ -109,29 +119,67 @@
         const bazowy = strona.getViewport({ scale: 1 });
         const widok = strona.getViewport({ scale: (szerokosc / bazowy.width) * gestosc });
 
-        const canvas = document.createElement('canvas');
-        canvas.className = 'doc-page';
-        canvas.style.width = '100%';
-        canvas.style.aspectRatio = widok.width + ' / ' + widok.height;
+        const img = document.createElement('img');
+        img.className = 'doc-page';
+        img.alt = '';
+        img.decoding = 'async';
+        img.loading = 'lazy';   // dekodowanie dopiero przy dojściu do strony
+        img.style.aspectRatio = widok.width + ' / ' + widok.height;
         /* menu pod prawym przyciskiem oferowałoby „Zapisz obraz jako” */
-        canvas.addEventListener('contextmenu', e => e.preventDefault());
-        strony.appendChild(canvas);
-        kolejka.push({ strona, canvas, widok });
+        img.addEventListener('contextmenu', e => e.preventDefault());
+        strony.appendChild(img);
+        kolejka.push({ strona, img, widok });
       }
 
-      /* Rysujemy po kolei, oddając sterowanie między stronami, żeby okno dało
-         się przewijać już przy pierwszej. Świadomie bez IntersectionObserver:
-         rysowanie „dopiero gdy strona wjeżdża na ekran” oszczędza pamięć, ale
-         gdyby obserwator nie zadziałał, dalsze strony nigdy by się nie pojawiły.
-         Przy dokumentach tej wielkości (statut = 12 stron) prostota jest warta
-         więcej niż te kilkadziesiąt megabajtów. */
-      for (const { strona, canvas, widok } of kolejka) {
-        if (moje !== zadanie) return;
+      /* Dwie rzeczy, które decydują o płynności przewijania.
+
+         Po pierwsze: strona ląduje na ekranie jako zwykły obrazek, nie jako
+         płótno. Kilkanaście płócien naraz to dziesiątki megabajtów surowych
+         pikseli, którymi przeglądarka żongluje przy każdym przewinięciu.
+         Zakodowany obrazek waży kilkanaście kB i jest dla niej tym samym co
+         zdjęcie w artykule. Płótno jest jedno, używane w kółko.
+
+         Po drugie: kolejność rysowania idzie za wzrokiem czytelnika, a nie za
+         numeracją stron. Przewinięcie do strony 8 oznaczałoby inaczej czekanie,
+         aż przemielą się strony 2–7. Przed każdą stroną wybieramy tę najbliższą
+         temu, co widać na ekranie; reszta dorabia się w tle. */
+      const ciało = box.querySelector('.doc-modal-body');
+      const pozostale = new Set(kolejka);
+      const najblizsza = () => {
+        const srodekEkranu = ciało.scrollTop + ciało.clientHeight / 2;
+        let naj = null, najDystans = Infinity;
+        for (const poz of pozostale) {
+          const srodekStrony = poz.img.offsetTop + poz.img.offsetHeight / 2;
+          const dystans = Math.abs(srodekStrony - srodekEkranu);
+          if (dystans < najDystans) { najDystans = dystans; naj = poz; }
+        }
+        return naj;
+      };
+
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      while (pozostale.size) {
+        if (moje !== zadanie) break;
+        const pozycja = najblizsza();
+        pozostale.delete(pozycja);
+        const { strona, img, widok } = pozycja;
         canvas.width = Math.floor(widok.width);
         canvas.height = Math.floor(widok.height);
-        await strona.render({ canvas, canvasContext: canvas.getContext('2d'), viewport: widok }).promise;
-        await new Promise(r => setTimeout(r, 0));
+        await strona.render({ canvas, canvasContext: ctx, viewport: widok }).promise;
+        if (moje !== zadanie) break;
+
+        const blob = await new Promise(r => canvas.toBlob(r, 'image/jpeg', 0.85));
+        if (moje !== zadanie) break;
+        if (blob) {
+          const adres = URL.createObjectURL(blob);
+          adresyBlob.push(adres);
+          img.src = adres;
+        }
+        strona.cleanup();
+        await new Promise(r => setTimeout(r, 0));   // oddajemy sterowanie przeglądarce
       }
+      /* zwolnienie ostatniego płótna — inaczej zostaje w pamięci do zamknięcia */
+      canvas.width = canvas.height = 0;
     } catch (err) {
       if (moje !== zadanie) return;
       stan.hidden = false;

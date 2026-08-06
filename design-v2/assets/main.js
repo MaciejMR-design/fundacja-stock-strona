@@ -240,6 +240,7 @@ function buildFooter() {
           <span class="head" data-i18n="footerContact"></span>
           <span class="info">Spółdzielcza 6<br>20-402 <span data-i18n="cityLublin"></span>, <span data-i18n="footerCountry"></span></span>
           <a href="tel:+48538183916" style="font-weight:600;color:#fff;">+48 538 183 916</a>
+          <a href="mailto:wolontariat@fundacjastock.pl" style="font-weight:600;color:#fff;overflow-wrap:anywhere;">wolontariat@fundacjastock.pl</a>
           <div class="socials">
             <a href="https://www.facebook.com/fundacjastock/" aria-label="Facebook" class="li-badge" target="_blank" rel="noopener">${FB_SVG}</a>
             <a href="https://www.instagram.com/fundacja_stock" aria-label="Instagram" class="li-badge" target="_blank" rel="noopener">${IG_SVG}</a>
