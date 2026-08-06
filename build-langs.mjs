@@ -33,7 +33,7 @@ const DOCUMENTS = readJson('documents.json');
 
 /* Allowed values — keep in step with the select options in
    design-v2/admin/config.yml, which is what the editor actually picks from. */
-const CATEGORIES = ['art', 'community', 'scholar'];
+const CATEGORIES = ['art', 'training', 'scholar', 'grant', 'volunteer', 'therapy'];
 const PERSON_GROUPS = ['council', 'board'];
 
 /* Content coming from the /admin panel is checked before anything is written.
@@ -53,7 +53,10 @@ function validateContent(srcDir) {
     else seen.set(a.id, where);
     if (!/^\d{4}-\d{2}-\d{2}$/.test(a.ts || '') || Number.isNaN(new Date(`${a.ts}T00:00:00Z`).getTime()))
       problems.push(`${where}: data wydarzenia „${a.ts}” nie jest poprawną datą (oczekiwane RRRR-MM-DD)`);
-    if (!CATEGORIES.includes(a.cat)) problems.push(`${where}: kategoria „${a.cat}” — dozwolone: ${CATEGORIES.join(', ')}`);
+    /* Kategoria jest opcjonalna — wpisy w rodzaju sprawozdania rocznego czy
+       statusu OPP nie należą do żadnego programu i pokazują się bez etykiety
+       (łapie je tylko filtr „Wszystkie”). Podana kategoria musi być z listy. */
+    if (a.cat && !CATEGORIES.includes(a.cat)) problems.push(`${where}: kategoria „${a.cat}” — dozwolone: ${CATEGORIES.join(', ')} albo brak kategorii`);
     for (const key of ['title', 'lead', 'body']) {
       for (const l of ['pl', 'en']) {
         const v = a[key]?.[l];

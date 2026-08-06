@@ -73,8 +73,11 @@ collections:
       default: { field: ts, direction: descending }
     view_filters:
       - { label: 'Spotkania ze sztuką', field: cat, pattern: art }
-      - { label: 'Społeczność', field: cat, pattern: community }
+      - { label: 'Szkolenia', field: cat, pattern: training }
       - { label: 'Stypendia', field: cat, pattern: scholar }
+      - { label: 'Granty', field: cat, pattern: grant }
+      - { label: 'Wolontariat', field: cat, pattern: volunteer }
+      - { label: 'Terapie', field: cat, pattern: therapy }
     view_groups:
       - { label: Rok, field: ts, pattern: '\d{4}' }
       - { label: Kategoria, field: cat }
@@ -90,11 +93,16 @@ collections:
           - { label: 'Tylko miesiąc (czerwiec 2026)', value: month }
       - name: cat
         label: Kategoria
+        hint: 'Etykieta widoczna na kafelku wpisu i w filtrach na Aktualnościach. Można zostawić puste — wpisy w rodzaju sprawozdania rocznego czy statusu OPP pokazują się wtedy bez etykiety.'
         widget: select
+        required: false
         options:
           - { label: 'Spotkania ze sztuką', value: art }
-          - { label: 'Społeczność', value: community }
+          - { label: 'Szkolenia', value: training }
           - { label: 'Stypendia', value: scholar }
+          - { label: 'Granty', value: grant }
+          - { label: 'Wolontariat', value: volunteer }
+          - { label: 'Terapie', value: therapy }
       - { name: img, label: 'Zdjęcie główne (okładka)', widget: image }
       - name: images
         label: 'Galeria (opcjonalnie — zastępuje okładkę w artykule)'

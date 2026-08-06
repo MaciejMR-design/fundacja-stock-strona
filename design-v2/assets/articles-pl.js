@@ -3,7 +3,6 @@ window.ARTICLES = [
   {
     "id": "report2025",
     "ts": "2026-07-31",
-    "cat": "community",
     "img": "/uploads/about-workshop.jpg",
     "date": {
       "pl": "31 lipca 2026"
@@ -48,7 +47,7 @@ window.ARTICLES = [
   {
     "id": "mopr",
     "ts": "2026-05-26",
-    "cat": "community",
+    "cat": "training",
     "img": "/uploads/news-mopr.jpg",
     "date": {
       "pl": "26 maja 2026"
@@ -114,7 +113,6 @@ window.ARTICLES = [
   {
     "id": "cik",
     "ts": "2026-04-17",
-    "cat": "community",
     "img": "/uploads/news-cik.jpg",
     "date": {
       "pl": "17 kwietnia 2026"
@@ -246,7 +244,7 @@ window.ARTICLES = [
   {
     "id": "cleanup",
     "ts": "2025-09-19",
-    "cat": "community",
+    "cat": "volunteer",
     "img": "/uploads/news-cleanup.jpg",
     "date": {
       "pl": "19 września 2025"
@@ -269,7 +267,6 @@ window.ARTICLES = [
   {
     "id": "opp",
     "ts": "2025-09-12",
-    "cat": "community",
     "img": "/uploads/news-opp.png",
     "date": {
       "pl": "12 września 2025"
@@ -291,7 +288,7 @@ window.ARTICLES = [
   {
     "id": "dpsday",
     "ts": "2025-06-16",
-    "cat": "community",
+    "cat": "volunteer",
     "img": "/uploads/news-dpsday.jpg",
     "date": {
       "pl": "16 czerwca 2025"
@@ -313,7 +310,7 @@ window.ARTICLES = [
   {
     "id": "training25",
     "ts": "2025-05-28",
-    "cat": "community",
+    "cat": "training",
     "img": "/uploads/news-training25.jpg",
     "date": {
       "pl": "28 maja 2025"
@@ -402,7 +399,7 @@ window.ARTICLES = [
   {
     "id": "sisan",
     "ts": "2024-10-29",
-    "cat": "community",
+    "cat": "grant",
     "img": "/uploads/sisan-bridge.jpg",
     "images": [
       "/uploads/sisan-bridge.jpg",
@@ -450,7 +447,7 @@ window.ARTICLES = [
   {
     "id": "training24",
     "ts": "2024-09-02",
-    "cat": "community",
+    "cat": "training",
     "img": "/uploads/news-training24.jpg",
     "date": {
       "pl": "Wrzesień 2024"
@@ -517,7 +514,7 @@ window.ARTICLES = [
   {
     "id": "czerniecin",
     "ts": "2024-08-02",
-    "cat": "community",
+    "cat": "grant",
     "img": "/uploads/news-czerniecin.jpg",
     "date": {
       "pl": "Sierpień 2024"
@@ -606,7 +603,7 @@ window.ARTICLES = [
   {
     "id": "markuszow",
     "ts": "2024-06-02",
-    "cat": "community",
+    "cat": "grant",
     "img": "/uploads/news-markuszow.jpg",
     "date": {
       "pl": "Czerwiec 2024"
@@ -650,7 +647,7 @@ window.ARTICLES = [
   {
     "id": "godow",
     "ts": "2024-05-02",
-    "cat": "community",
+    "cat": "grant",
     "img": "/uploads/cover-community.svg",
     "date": {
       "pl": "Maj 2024"
@@ -694,7 +691,7 @@ window.ARTICLES = [
   {
     "id": "psych24",
     "ts": "2024-03-08",
-    "cat": "community",
+    "cat": "therapy",
     "img": "/uploads/cover-community.svg",
     "date": {
       "pl": "Marzec 2024"
@@ -716,7 +713,6 @@ window.ARTICLES = [
   {
     "id": "schools",
     "ts": "2024-03-02",
-    "cat": "community",
     "img": "/uploads/cover-community.svg",
     "date": {
       "pl": "Marzec 2024"
@@ -760,7 +756,7 @@ window.ARTICLES = [
   {
     "id": "psychsummary",
     "ts": "2024-02-05",
-    "cat": "community",
+    "cat": "therapy",
     "img": "/uploads/cover-community.svg",
     "date": {
       "pl": "Luty 2024"
@@ -782,7 +778,7 @@ window.ARTICLES = [
   {
     "id": "polishcourses",
     "ts": "2024-02-02",
-    "cat": "community",
+    "cat": "training",
     "img": "/uploads/cover-community.svg",
     "date": {
       "pl": "Luty 2024"
@@ -804,7 +800,7 @@ window.ARTICLES = [
   {
     "id": "floc2024",
     "ts": "2024-01-10",
-    "cat": "community",
+    "cat": "grant",
     "img": "/uploads/cover-community.svg",
     "date": {
       "pl": "Styczeń 2024"
