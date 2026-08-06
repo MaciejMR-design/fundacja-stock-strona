@@ -235,6 +235,14 @@ function buildFooter() {
         <div class="footer-col" style="gap:22px;">
           <div class="footer-logo"><img src="/uploads/logo-white.svg" alt="Stock Foundation"></div>
           <p class="footer-blurb" data-i18n="footerBlurb"></p>
+          <!-- Status OPP i numer KRS — w stopce, czyli tam, gdzie odruchowo
+               szuka się danych rejestrowych, i na każdej podstronie. Bez
+               wezwania „przekaż 1,5%”: tu chodzi o identyfikację fundacji,
+               a nie o zachętę (ta stoi w pierwszym ekranie, po polsku). -->
+          <div class="footer-opp">
+            <span class="opp-mark"><img src="/uploads/opp-1-5-procent.png" alt="Organizacja pożytku publicznego" width="729" height="308" loading="lazy" decoding="async"></span>
+            <span class="footer-krs">KRS <b>0000980058</b></span>
+          </div>
         </div>
         <div class="footer-col">
           <span class="head" data-i18n="footerContact"></span>

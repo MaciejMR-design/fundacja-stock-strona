@@ -446,6 +446,14 @@ function transform(src, page, lang, art) {
       `/* CONTENT:PAGE_I18N */${json}/* /CONTENT */`);
   }
 
+  /* Kafel „1,5% podatku” w pierwszym ekranie — tylko wersja polska. Odliczenie
+     dotyczy wyłącznie osób rozliczających PIT w Polsce; w pozostałych językach
+     kafel zajmowałby miejsce obok głównego przycisku, nic nie wnosząc. Status
+     OPP i numer KRS zostają za to w stopce, we wszystkich językach. */
+  if (tplPage === 'index.html') {
+    h = fillBlock(h, 'HERO_OPP', lang === 'pl' ? heroOppHtml() : '');
+  }
+
   // inject the document list from content/documents.json (statute page only)
   if (tplPage === 'statute.html') {
     h = fillBlock(h, 'STATUTE_DOC', statuteDocHtml(lang));
@@ -475,6 +483,22 @@ function docTitle(lang, key, year) {
   const d = PAGE_DICTS['statute.html'] || {};
   const label = (d[lang] || {})[key] || (d.en || {})[key] || key;
   return year ? `${label} ${year}` : label;
+}
+
+/* Kafel OPP obok głównego przycisku na stronie głównej (tylko PL).
+   Znak zostaje w oryginalnych barwach na białym kaflu — to oficjalne
+   oznaczenie i nie przemalowujemy go pod paletę strony. KRS bez spacji,
+   żeby kopiował się prosto do zeznania; czytelność daje rozstrzelenie w CSS. */
+function heroOppHtml() {
+  return [
+    '          <div class="hero-opp">',
+    '            <span class="opp-mark"><img src="/uploads/opp-1-5-procent.png" alt="Organizacja pożytku publicznego" width="729" height="308" loading="lazy" decoding="async"></span>',
+    '            <span class="opp-txt">',
+    '              <span class="opp-label" data-i18n="oppLabel"></span>',
+    '              <span class="opp-krs">KRS <b>0000980058</b></span>',
+    '            </span>',
+    '          </div>'
+  ].join('\n');
 }
 
 function statuteDocHtml(lang) {

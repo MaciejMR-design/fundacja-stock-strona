@@ -73,20 +73,17 @@
         <div class="overline fade-up d1"><span class="line"></span><span>Stock Foundation</span></div>
         <h1 class="fade-up d2"><span data-i18n="heroTitle1"></span><br><span data-i18n="heroTitle2"></span> <em data-i18n="heroEst"></em></h1>
         <p class="fade-up d3" data-i18n="heroTagline"></p>
-        <!-- Przycisk i status OPP w jednym rzędzie: na laptopach 1366×768
-             osobny wiersz zepchnąłby kafel OPP poniżej krawędzi ekranu, a ma
-             być widoczny bez przewijania. Znak zostaje w oryginalnych barwach
-             na białym kaflu — to oficjalne oznaczenie i nie przemalowujemy go
-             pod paletę strony. -->
+        <!-- Przycisk i status OPP w jednym rzędzie: osobny wiersz zepchnąłby
+             kafel OPP poniżej krawędzi ekranu na laptopach 1366×768, a ma być
+             widoczny bez przewijania. Sam kafel wstawia build i tylko w wersji
+             polskiej (build-langs.mjs, heroOppHtml) — 1,5% podatku dotyczy
+             wyłącznie rozliczających PIT w Polsce, w pozostałych językach
+             byłby szumem obok głównego przycisku. -->
         <div class="hero-actions fade-up d4">
           <a href="about-us.html" class="btn btn-gold" data-i18n="heroCta"></a>
-          <div class="hero-opp">
-            <span class="opp-mark"><img src="/uploads/opp-1-5-procent.png" alt="Organizacja pożytku publicznego" width="729" height="308" loading="lazy" decoding="async"></span>
-            <span class="opp-txt">
-              <span class="opp-label" data-i18n="oppLabel"></span>
-              <span class="opp-krs">KRS <b>0000980058</b></span>
-            </span>
-          </div>
+          <!-- CONTENT:HERO_OPP -->
+
+      <!-- /CONTENT -->
         </div>
       </div>
     </div>

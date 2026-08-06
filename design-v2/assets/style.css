@@ -146,6 +146,13 @@ header.site.scrolled .logo img { height: 42px; }
    oficjalne oznaczenie zostaje w swoich barwach, a biel oddziela pomarańcz
    od granatu tła. Numer KRS bez spacji (żeby skopiował się prosto do
    zeznania), za to rozstrzelony, więc czyta się równie łatwo. */
+/* Ten sam znak w stopce, mniejszy i bez wezwania — dane rejestrowe fundacji. */
+.footer-opp { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.footer-opp .opp-mark { flex: 0 0 auto; display: block; background: #fff; border-radius: 8px; padding: 5px 9px; }
+.footer-opp .opp-mark img { display: block; height: auto; width: 100px; }
+.footer-opp .footer-krs { font-size: 13px; font-weight: 600; color: rgba(255,255,255,.7); letter-spacing: .04em; white-space: nowrap; }
+.footer-opp .footer-krs b { font-weight: 700; color: var(--white); letter-spacing: .12em; }
+
 .hero-actions { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
 .hero-opp { display: flex; align-items: center; gap: 14px; padding: 8px 15px 8px 8px; background: rgba(255,255,255,.07); border: 1px solid rgba(205,158,12,.45); backdrop-filter: blur(10px); border-radius: 14px; box-shadow: 0 14px 34px rgba(0,0,0,.22); }
 .hero-opp .opp-mark { flex: 0 0 auto; display: block; background: #fff; border-radius: 9px; padding: 6px 10px; }
