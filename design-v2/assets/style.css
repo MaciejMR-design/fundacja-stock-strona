@@ -454,6 +454,9 @@ html.doc-open, html.doc-open body { overflow: hidden; }
 /* long e-mail addresses are one unbreakable token — let them wrap on narrow screens */
 .contact-card a.big { font-weight: 700; color: var(--navy); display: block; overflow-wrap: anywhere; }
 .contact-card a.big:hover { color: var(--gold); }
+/* Osobna sprawa w tym samym kafelku (wolontariat) — cienka kreska oddziela ją
+   od kontaktu ogólnego, żeby dwa adresy nie zlewały się w jedną listę. */
+.contact-card .contact-sep { margin-top: 6px; padding-top: 16px; border-top: 1px solid var(--gray); }
 /* ---------- Stock in Europe — interactive map ---------- */
 .eu-wrap { margin-top: clamp(40px, 6vw, 72px); }
 .eu-wrap .section-head { margin-bottom: clamp(24px, 3vw, 40px); }
