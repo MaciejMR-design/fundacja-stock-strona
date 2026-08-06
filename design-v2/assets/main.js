@@ -23,6 +23,7 @@ const isPublic = code => PUBLIC_LANGS.includes(code);
 
 const COMMON_I18N = {
   en: {
+    skipToContent: 'Skip to content',
     navMission: 'Mission', navAbout: 'About us', navStatute: 'Statute & Reports', navCouncil: 'Council & Board', navNews: 'News', navContact: 'Contact',
     readMore: 'Read more', findOutMore: 'Find out more', home: 'Home',
     footerBlurb: 'A charitable foundation from Lublin helping refugees and local communities, and promoting art as therapy.',
@@ -32,6 +33,7 @@ const COMMON_I18N = {
     cookieText: 'We use necessary cookies to make the site work and — only with your consent — analytics cookies (Google Analytics) to understand how it is used.', cookieAccept: 'Accept all', cookieDecline: 'Necessary only', cookieMore: 'Learn more'
   },
   pl: {
+    skipToContent: 'Przejdź do treści',
     navMission: 'Misja', navAbout: 'O nas', navStatute: 'Statut i sprawozdania', navCouncil: 'Rada i Zarząd', navNews: 'Aktualności', navContact: 'Kontakt',
     readMore: 'Czytaj więcej', findOutMore: 'Dowiedz się więcej', home: 'Strona główna',
     footerBlurb: 'Fundacja charytatywna z Lublina pomagająca uchodźcom i lokalnym społecznościom oraz promująca sztukę jako terapię.',
@@ -41,6 +43,7 @@ const COMMON_I18N = {
     cookieText: 'Używamy niezbędnych plików cookie, aby strona działała, oraz — wyłącznie za Twoją zgodą — analitycznych (Google Analytics), aby rozumieć, jak jest używana.', cookieAccept: 'Akceptuję wszystkie', cookieDecline: 'Tylko niezbędne', cookieMore: 'Dowiedz się więcej'
   },
   cz: {
+    skipToContent: 'Přejít na obsah',
     navMission: 'Mise', navAbout: 'O nás', navStatute: 'Statut a zprávy', navCouncil: 'Rada a představenstvo', navNews: 'Novinky', navContact: 'Kontakt',
     readMore: 'Číst dále', findOutMore: 'Zjistit více', home: 'Úvod',
     footerBlurb: 'Charitativní nadace z Lublinu pomáhající uprchlíkům a místním komunitám a podporující umění jako terapii.',
@@ -50,6 +53,7 @@ const COMMON_I18N = {
     cookieText: 'Používáme nezbytné soubory cookie, aby web fungoval, a — pouze s vaším souhlasem — analytické (Google Analytics), abychom rozuměli, jak se používá.', cookieAccept: 'Přijmout vše', cookieDecline: 'Pouze nezbytné', cookieMore: 'Zjistit více'
   },
   it: {
+    skipToContent: 'Vai al contenuto',
     navMission: 'Missione', navAbout: 'Chi siamo', navStatute: 'Statuto e rapporti', navCouncil: 'Consiglio e direzione', navNews: 'Notizie', navContact: 'Contatti',
     readMore: 'Leggi di più', findOutMore: 'Scopri di più', home: 'Home',
     footerBlurb: 'Una fondazione benefica di Lublino che aiuta rifugiati e comunità locali e promuove l’arte come terapia.',
@@ -59,6 +63,7 @@ const COMMON_I18N = {
     cookieText: 'Utilizziamo cookie necessari per far funzionare il sito e — solo con il tuo consenso — cookie analitici (Google Analytics) per capire come viene utilizzato.', cookieAccept: 'Accetta tutti', cookieDecline: 'Solo necessari', cookieMore: 'Scopri di più'
   },
   sk: {
+    skipToContent: 'Prejsť na obsah',
     navMission: 'Misia', navAbout: 'O nás', navStatute: 'Štatút a správy', navCouncil: 'Rada a predstavenstvo', navNews: 'Aktuality', navContact: 'Kontakt',
     readMore: 'Čítať ďalej', findOutMore: 'Zistiť viac', home: 'Domov',
     footerBlurb: 'Charitatívna nadácia z Lublina, ktorá pomáha utečencom a miestnym komunitám a podporuje umenie ako terapiu.',
@@ -68,6 +73,7 @@ const COMMON_I18N = {
     cookieText: 'Používame nevyhnutné súbory cookie, aby stránka fungovala, a — iba s vaším súhlasom — analytické (Google Analytics), aby sme rozumeli, ako sa používa.', cookieAccept: 'Prijať všetky', cookieDecline: 'Iba nevyhnutné', cookieMore: 'Zistiť viac'
   },
   de: {
+    skipToContent: 'Zum Inhalt springen',
     navMission: 'Mission', navAbout: 'Über uns', navStatute: 'Satzung & Berichte', navCouncil: 'Stiftungsrat & Vorstand', navNews: 'Aktuelles', navContact: 'Kontakt',
     readMore: 'Weiterlesen', findOutMore: 'Mehr erfahren', home: 'Startseite',
     footerBlurb: 'Eine gemeinnützige Stiftung aus Lublin, die Geflüchteten und lokalen Gemeinschaften hilft und Kunst als Therapie fördert.',
@@ -77,6 +83,7 @@ const COMMON_I18N = {
     cookieText: 'Wir verwenden notwendige Cookies, damit die Website funktioniert, und — nur mit Ihrer Einwilligung — Analyse-Cookies (Google Analytics), um zu verstehen, wie sie genutzt wird.', cookieAccept: 'Alle akzeptieren', cookieDecline: 'Nur notwendige', cookieMore: 'Mehr erfahren'
   },
   fr: {
+    skipToContent: 'Aller au contenu',
     navMission: 'Mission', navAbout: 'À propos', navStatute: 'Statuts et rapports', navCouncil: 'Conseil et direction', navNews: 'Actualités', navContact: 'Contact',
     readMore: 'Lire la suite', findOutMore: 'En savoir plus', home: 'Accueil',
     footerBlurb: 'Une fondation caritative de Lublin qui aide les réfugiés et les communautés locales et promeut l’art comme thérapie.',
@@ -220,6 +227,27 @@ const NAV = [
 const FB_SVG = '<svg width="16" height="16" viewBox="0 0 16 16" fill="#D0A41B"><path d="M9.6 16 v-5.9 h2 l0.3 -2.3 H9.6 V6.3 c0 -0.7 0.2 -1.1 1.2 -1.1 h1.2 V3.1 C11.8 3 11 3 10.2 3 C8.4 3 7.1 4.1 7.1 6.1 v1.7 H5.1 v2.3 h2 V16 Z"></path></svg>';
 const IG_SVG = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#D0A41B" stroke-width="1.4"><rect x="1.7" y="1.7" width="12.6" height="12.6" rx="4"></rect><circle cx="8" cy="8" r="3.1"></circle><circle cx="11.9" cy="4.1" r="0.95" fill="#D0A41B" stroke="none"></circle></svg>';
 
+/* Odnośnik „przejdź do treści” dla osób poruszających się po stronie
+   klawiaturą: bez niego trzeba przeskakiwać całą nawigację na każdej
+   podstronie. Widoczny dopiero po otrzymaniu fokusu. Wstawiamy go tutaj,
+   a nie w dziesięciu szablonach, bo ma być pierwszym elementem na stronie
+   i identyczny wszędzie. */
+function buildSkipLink() {
+  if (document.querySelector('.skip-link')) return;
+  const cel = document.querySelector('main, section');
+  if (!cel) return;
+  if (!cel.id) cel.id = 'tresc';
+  const a = document.createElement('a');
+  a.className = 'skip-link';
+  a.href = '#' + cel.id;
+  a.setAttribute('data-i18n', 'skipToContent');
+  a.textContent = dict(currentLang).skipToContent || 'Przejdź do treści';
+  /* Fokus na sekcji, nie tylko przewinięcie — inaczej klawiatura wraca
+     na początek nawigacji przy następnym Tabie. */
+  a.addEventListener('click', () => { cel.setAttribute('tabindex', '-1'); cel.focus({ preventScroll: true }); });
+  document.body.insertBefore(a, document.body.firstChild);
+}
+
 function buildHeader() {
   const h = document.getElementById('site-header');
   if (!h) return;
@@ -301,6 +329,7 @@ function buildFooter() {
     </div>`;
 }
 
+buildSkipLink();
 buildHeader();
 buildFooter();
 

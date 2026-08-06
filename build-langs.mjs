@@ -403,7 +403,16 @@ function breadcrumbLd(lang, page, art) {
 function transform(src, page, lang, art) {
   const tplPage = page; // template name (content dict lookup) — `page` may become article-<id>.html
   let [title, desc] = META[page][lang];
-  if (art) { title = `${art.title} — Stock Foundation`; desc = art.desc; page = `article-${art.id}.html`; }
+  /* Tytuł artykułu z dopiskiem nazwy fundacji często przekraczał ~60 znaków,
+     po których Google ucina tytuł w wynikach — a ucina wtedy właśnie nazwę.
+     Dopisek dokładamy więc tylko wtedy, gdy się mieści; przy dłuższych
+     tytułach sam tytuł niesie więcej niż jego obcięty ogon. */
+  if (art) {
+    const zDopiskiem = `${art.title} — Stock Foundation`;
+    title = zDopiskiem.length <= 60 ? zDopiskiem : art.title;
+    desc = art.desc;
+    page = `article-${art.id}.html`;
+  }
   if (desc.length > 300) desc = desc.slice(0, 297).replace(/\s+\S*$/, '') + '…';
   let h = src;
 
@@ -422,8 +431,14 @@ function transform(src, page, lang, art) {
   // canonical + hreflang alternates (unreleased languages stay out of both)
   h = h.replace(/<!-- lang-alternates -->[\s\S]*?<!-- \/lang-alternates -->\n?/, '');
   const published = PUBLIC_LANGS.includes(lang);
+  /* Strony-szablony trzymamy poza wyszukiwarką. „article.html” bez wpisu to
+     zapasowy adres dla starych odnośników z kotwicą (#id) — każdy artykuł ma
+     własną stronę. „person.html” pokazuje profil dobierany kotwicą, więc dla
+     robota jest jedną stroną z przypadkową osobą, na dodatek pod tytułem
+     skopiowanym z listy Rady i Zarządu. Obie zostają dostępne dla ludzi. */
+  const szablonBezTresci = (tplPage === 'article.html' && !art) || tplPage === 'person.html';
   const alt = ['<!-- lang-alternates -->',
-    ...(published ? [] : ['<meta name="robots" content="noindex,follow">']),
+    ...(published && !szablonBezTresci ? [] : ['<meta name="robots" content="noindex,follow">']),
     `<link rel="canonical" href="${pageUrl(lang, page)}">`,
     ...PUBLIC_LANGS.map(l => `<link rel="alternate" hreflang="${HREFLANG[l]}" href="${pageUrl(l, page)}">`),
     `<link rel="alternate" hreflang="x-default" href="${pageUrl('en', page)}">`,
@@ -685,8 +700,11 @@ writeFileSync(notFound,
   'utf8');
 
 // sitemap + robots — released languages only
+/* article.html i person.html to szablony (patrz noindex w transform) — do mapy
+   strony trafiają tylko adresy, które mają własną, samodzielną treść. */
+const STRONY_W_MAPIE = PAGES.filter(p => p !== 'article.html' && p !== 'person.html');
 const urls = PUBLIC_LANGS.flatMap(l => [
-  ...PAGES.map(p => pageUrl(l, p)),
+  ...STRONY_W_MAPIE.map(p => pageUrl(l, p)),
   ...ARTICLES.map(a => pageUrl(l, `article-${a.id}.html`))
 ]);
 const sm = ['<?xml version="1.0" encoding="UTF-8"?>',

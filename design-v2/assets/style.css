@@ -140,6 +140,12 @@ header.site.scrolled .logo img { height: 42px; }
 .page-hero p.lead { margin: 0; max-width: 640px; font-size: 16px; line-height: 1.7; color: rgba(255,255,255,.82); }
 
 /* ---------- latest post as a glass card inside the hero ---------- */
+/* „Przejdź do treści” — schowany, dopóki nie dostanie fokusu z klawiatury.
+   Nie display:none ani visibility:hidden, bo takiego elementu klawiatura
+   w ogóle by nie znalazła. */
+.skip-link { position: absolute; left: 12px; top: -60px; z-index: 400; background: var(--navy-dark); color: var(--white); padding: 12px 18px; border-radius: 0 0 10px 10px; font-size: 14px; font-weight: 600; transition: top .2s ease; }
+.skip-link:focus { top: 0; color: var(--white); outline: 2px solid var(--gold); outline-offset: 2px; }
+
 /* Status OPP + KRS w pierwszym ekranie.
    Ten sam „szklany” kafel co pasek najnowszej aktualności obok, żeby nie
    wyglądał jak doklejona plakietka. Znak OPP siedzi na białym kaflu —
@@ -478,7 +484,7 @@ html.doc-open, html.doc-open body { overflow: hidden; }
 .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 28px; }
 .contact-card { border: 1px solid var(--gray); border-radius: 10px; padding: 32px; display: flex; flex-direction: column; gap: 14px; transition: box-shadow .3s, transform .3s; }
 .contact-card:hover { box-shadow: 0 16px 40px rgba(0,41,87,.12); transform: translateY(-4px); }
-.contact-card h3 { margin: 0; font-family: 'Literata', serif; font-weight: 400; font-size: 22px; }
+.contact-card h2 { margin: 0; font-family: 'Literata', serif; font-weight: 400; font-size: 22px; }
 .contact-card p, .contact-card a.big { margin: 0; font-size: 15px; line-height: 1.75; }
 /* long e-mail addresses are one unbreakable token — let them wrap on narrow screens */
 .contact-card a.big { font-weight: 700; color: var(--navy); display: block; overflow-wrap: anywhere; }
