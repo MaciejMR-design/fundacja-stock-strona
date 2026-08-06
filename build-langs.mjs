@@ -254,9 +254,9 @@ const META = {
   },
   'board-council.html': {
     en: ['Council & Board — Stock Foundation',
-      'Meet the Council and the Board of Directors of the Stock Foundation.'],
+      'Meet the people behind the Stock Foundation — the Council and the Board, their roles and what each of them brings to the foundation.'],
     pl: ['Rada i Zarząd — Fundacja Stock',
-      'Poznaj Radę i Zarząd Fundacji Stock.'],
+      'Poznaj ludzi, którzy tworzą Fundację Stock — skład Rady i Zarządu, pełnione funkcje i doświadczenie każdej z tych osób.'],
     cz: ['Rada a představenstvo — Nadace Stock',
       'Poznejte radu a představenstvo Nadace Stock.'],
     it: ['Consiglio e direzione — Fondazione Stock',
@@ -279,9 +279,9 @@ const META = {
   },
   'contact.html': {
     en: ['Contact — Stock Foundation',
-      'Contact the Stock Foundation in Lublin — address, phone and e-mail.'],
+      'Contact the Stock Foundation in Lublin — address, phone and e-mail for partnerships, media and volunteering, plus Stock offices across Europe.'],
     pl: ['Kontakt — Fundacja Stock',
-      'Skontaktuj się z Fundacją Stock w Lublinie — adres, telefon i e-mail.'],
+      'Skontaktuj się z Fundacją Stock w Lublinie — adres, telefon i e-mail w sprawach współpracy, mediów i wolontariatu. Także mapa oddziałów Stock w Europie.'],
     cz: ['Kontakt — Nadace Stock',
       'Kontaktujte Nadaci Stock v Lublinu — adresa, telefon a e-mail.'],
     it: ['Contatti — Fondazione Stock',
@@ -294,8 +294,8 @@ const META = {
       'Contactez la Fondation Stock à Lublin — adresse, téléphone et e-mail.']
   },
   'privacy-policy.html': {
-    en: ['Privacy and Cookies — Stock Foundation', 'Privacy and cookie policy of the Stock Foundation website.'],
-    pl: ['Prywatność i cookies — Fundacja Stock', 'Polityka prywatności i cookies strony Fundacji Stock.'],
+    en: ['Privacy and Cookies — Stock Foundation', 'How the Stock Foundation website handles personal data and cookies — what we collect, why, and how you can change your consent at any time.'],
+    pl: ['Prywatność i cookies — Fundacja Stock', 'Jak strona Fundacji Stock postępuje z danymi osobowymi i plikami cookie — co zbieramy, po co i jak w każdej chwili zmienić swoją zgodę.'],
     cz: ['Soukromí a cookies — Nadace Stock', 'Zásady ochrany soukromí a cookies webu Nadace Stock.'],
     it: ['Privacy e cookie — Fondazione Stock', 'Informativa privacy e cookie del sito della Fondazione Stock.'],
     sk: ['Súkromie a cookies — Nadácia Stock', 'Zásady ochrany súkromia a cookies webu Nadácie Stock.'],
@@ -713,9 +713,11 @@ const sm = ['<?xml version="1.0" encoding="UTF-8"?>',
   '</urlset>', ''].join('\n');
 writeFileSync(join(SRC, 'sitemap.xml'), sm, 'utf8');
 /* /admin is the editing panel, not a page of the site — it also carries a
-   noindex tag, but keeping crawlers out of it entirely is tidier. */
+   noindex tag, but keeping crawlers out of it entirely is tidier.
+   Bez ukośnika na końcu: „Disallow: /admin/” nie obejmuje samego „/admin”,
+   a od przejścia na adresy bez rozszerzenia panel odpowiada właśnie tam. */
 writeFileSync(join(SRC, 'robots.txt'),
-  `User-agent: *\nAllow: /\nDisallow: /admin/\nSitemap: ${SITE}/sitemap.xml\n`, 'utf8');
+  `User-agent: *\nAllow: /\nDisallow: /admin\nSitemap: ${SITE}/sitemap.xml\n`, 'utf8');
 
 console.log(`pages written: ${written} (${LANGS.length} langs x [${PAGES.length} pages + ${ARTICLES.length} articles]) + sitemap.xml + robots.txt`);
 if (removed.length) console.log(`pages removed (entry no longer exists): ${removed.join(', ')}`);
