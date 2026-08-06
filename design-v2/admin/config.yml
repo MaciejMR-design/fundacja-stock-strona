@@ -52,6 +52,15 @@ media_libraries:
 output:
   omit_empty_optional_fields: true
 
+# Adres wpisu powstaje z tytułu, więc musi znieść polskie znaki i spacje.
+# clean_accents zamienia ą→a, ł→l, ż→z (panel ma wbudowaną mapę), ascii
+# usuwa resztę spoza alfabetu łacińskiego, maxlength ucina długie tytuły,
+# żeby adres nie miał 150 znaków.
+slug:
+  encoding: ascii
+  clean_accents: true
+  maxlength: 60
+
 collections:
   - name: aktualnosci
     label: Aktualności
@@ -63,13 +72,16 @@ collections:
     extension: json
     create: true
     delete: true
-    identifier_field: id
-    slug: '{{fields.id}}'
+    # Adres artykułu powstaje z polskiego tytułu — redaktor nie wpisuje go
+    # ręcznie. Build czyta go z nazwy pliku (build-langs.mjs, readJsonDir),
+    # więc starsze wpisy z polem „id" w treści zachowują swoje adresy.
+    identifier_field: title.pl
+    slug: '{{title.pl}}'
     summary: '{{fields.title.pl}} ({{fields.ts}})'
     thumbnail: img
-    preview_path: 'article-{{fields.id}}.html'
+    preview_path: 'article-{{slug}}.html'
     sortable_fields:
-      fields: [ts, cat, id]
+      fields: [ts, cat]
       default: { field: ts, direction: descending }
     view_filters:
       - { label: 'Spotkania ze sztuką', field: cat, pattern: art }
@@ -148,7 +160,6 @@ collections:
           - { label: 'Granty', value: grant }
           - { label: 'Wolontariat', value: volunteer }
           - { label: 'Terapie', value: therapy }
-      - { name: id, label: 'Adres artykułu', hint: 'Krótko, po angielsku, bez spacji — np. koncert2027. Nie pokazuje się nigdzie w treści; tworzy adres strony (fundacjastock.pl/pl/article-koncert2027.html), więc po opublikowaniu lepiej go nie zmieniać.', widget: string, pattern: ['^[a-z0-9-]+$', 'Tylko małe litery, cyfry i myślniki'] }
       - name: date
         label: 'Data słownie — nadpisanie (zwykle niepotrzebne)'
         hint: 'Zostaw puste: data powstaje sama z „Daty wydarzenia”. Wpisz tylko wtedy, gdy ma brzmieć inaczej niż standardowo.'

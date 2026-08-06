@@ -42,7 +42,8 @@ Każdy zapis pojawia się na stronie po 1–2 minutach, we wszystkich językach.
    - **Data wydarzenia** — z kalendarza. Ustawia kolejność na liście **i datę widoczną na stronie** — data słownie powstaje sama, w każdym języku („5 czerwca 2026", „5 June 2026"). Nie trzeba jej nigdzie wpisywać.
    - **Dokładność daty** — „Pełna data" albo „Tylko miesiąc", gdy dokładny dzień nie ma znaczenia („czerwiec 2026"),
    - **Kategoria** — Spotkania ze sztuką / Szkolenia / Stypendia / Granty / Wolontariat / Terapie. Można zostawić puste — wpis w rodzaju sprawozdania rocznego czy statusu OPP pokaże się wtedy bez etykiety,
-   - **Adres artykułu** — krótka nazwa bez spacji, np. `koncert2027`. Nigdzie się nie wyświetla, tworzy tylko adres strony (`fundacjastock.pl/pl/article-koncert2027.html`), więc po opublikowaniu lepiej go nie zmieniać.
+
+   Adresu strony nie trzeba nigdzie wpisywać — powstaje sam z polskiego tytułu (z „Dzień wolontariatu w Bielsku-Białej" robi się `article-dzien-wolontariatu-w-bielsku-bialej.html`). Polskie znaki i spacje panel zamienia automatycznie. **Adres ustala się w chwili pierwszego zapisu i późniejsza zmiana tytułu już go nie rusza** — dzięki temu linki wysłane wcześniej dalej działają.
 3. Kliknij **Save**.
 
 Pole **„Data słownie — nadpisanie"** (zwinięte na dole) zostaw puste. Przydaje się tylko wtedy, gdy data ma brzmieć inaczej niż standardowo, np. „przełom wiosny i lata 2026".

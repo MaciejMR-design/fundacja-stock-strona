@@ -18,6 +18,12 @@ const readJsonDir = dir => readdirSync(join(CONTENT, dir))
   .filter(f => f.endsWith('.json'))
   .map(f => {
     const data = readJson(dir, f);
+    /* Adres wpisu bierze się z nazwy pliku, którą panel tworzy z tytułu —
+       redaktor nie wpisuje go ręcznie. Starsze wpisy mają jeszcze pole „id"
+       w treści i ono ma pierwszeństwo, żeby opublikowane adresy się nie
+       zmieniły; gdy panel przy kolejnym zapisie to pole usunie, nazwa pliku
+       daje dokładnie tę samą wartość. */
+    if (!data.id) data.id = f.replace(/\.json$/, '');
     // nazwa pliku tylko do komunikatów walidacji — niewidoczna dla JSON.stringify
     Object.defineProperty(data, '_file', { value: `content/${dir}/${f}`, enumerable: false });
     return data;
