@@ -79,7 +79,7 @@ collections:
     slug: '{{title.pl}}'
     summary: '{{fields.title.pl}} ({{fields.ts}})'
     thumbnail: img
-    preview_path: 'article-{{slug}}.html'
+    preview_path: 'article-{{slug}}'
     sortable_fields:
       fields: [ts, cat]
       default: { field: ts, direction: descending }

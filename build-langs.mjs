@@ -307,7 +307,25 @@ const META = {
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
 /* for text nodes built from CMS input — a stray < must not open a tag */
 const escText = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-const pageUrl = (lang, page) => SITE + '/' + DIR[lang] + (page === 'index.html' ? '' : page);
+/* Adresy bez rozszerzenia .html — Vercel ma włączone cleanUrls (vercel.json),
+   więc /statute serwuje statute.html, a /statute.html przekierowuje na /statute.
+   Stąd jedno miejsce, w którym rozszerzenie jest ucinane: pilnuje adresów
+   kanonicznych, powiązań językowych, danych strukturalnych i mapy strony.
+   Strona główna języka to „/” albo „/pl” — bez ukośnika na końcu, zgodnie
+   z trailingSlash: false. */
+const bezRozszerzenia = page => String(page).replace(/\.html$/, '');
+const pageUrl = (lang, page) =>
+  page === 'index.html' || page === 'index'
+    ? SITE + '/' + DIR[lang].replace(/\/$/, '')
+    : SITE + '/' + DIR[lang] + bezRozszerzenia(page);
+
+/* To samo, ale jako ścieżka od korzenia — do odnośników wewnątrz stron.
+   Bezwzględnie od korzenia, a nie względnie, bo strona główna języka ma adres
+   „/pl” (bez ukośnika) i odnośnik względny szukałby wtedy sąsiada w korzeniu. */
+const pageHref = (lang, page) =>
+  page === 'index.html' || page === 'index'
+    ? (lang === 'en' ? '/' : '/' + DIR[lang].replace(/\/$/, ''))
+    : '/' + DIR[lang] + bezRozszerzenia(page);
 
 /* ---- structured data (schema.org) ----
    Localised names for the JSON-LD blocks. The breadcrumb labels mirror
@@ -463,7 +481,36 @@ function transform(src, page, lang, art) {
     h = fillBlock(h, 'STATUTE_DOC', statuteDocHtml(lang));
     h = fillBlock(h, 'DOCS', docsGridHtml(lang));
   }
+  h = przepiszOdnosniki(h, lang);
   return h;
+}
+
+/* Adresy, które są stronami tego serwisu — tylko takie odnośniki przepisujemy.
+   Wszystko inne (mailto:, tel:, /uploads/…, adresy zewnętrzne) zostaje. */
+const STRONY = new Set([...PAGES.map(bezRozszerzenia), ...ARTICLES.map(a => `article-${a.id}`)]);
+const KATALOGI_JEZYKOW = LANGS.filter(l => l !== 'en').join('|');
+
+/* Odnośniki wewnętrzne zapisujemy jako ścieżki od korzenia (/pl/news), osobno
+   dla każdej wersji językowej. Względne nie wchodzą w grę: strona główna języka
+   ma adres „/pl” bez ukośnika na końcu, więc „news” szukałoby sąsiada
+   w korzeniu, nie w katalogu języka.
+
+   Przepisywanie musi znieść wielokrotne uruchomienie: build nadpisuje szablony
+   wersją angielską i przy kolejnym przebiegu czyta własny wynik. Dlatego wzorce
+   rozpoznają zarówno pierwotne „about-us.html”, jak i gotowe „/pl/about-us”. */
+function przepiszOdnosniki(html, lang) {
+  const domowy = pageHref(lang, 'index');
+  return html
+    // strona główna: „index.html”, „/”, „/pl” — wszystko sprowadzamy do jednego
+    .replace(new RegExp(`href="(?:index\\.html|\\/(?:${KATALOGI_JEZYKOW})?)"`, 'g'), `href="${domowy}"`)
+    /* Pozostałe podstrony. Przedrostek jest opcjonalny i ma trzy postaci:
+       brak („news.html” w pierwotnym szablonie), katalog języka („/pl/news”)
+       oraz sam ukośnik („/news”, czyli wersja angielska zapisana w szablonie
+       przez poprzedni przebieg). Wszystkie trzeba rozpoznać, bo inaczej strony
+       artykułów odziedziczyłyby angielskie odnośniki po przebiegu dla EN. */
+    .replace(new RegExp(`href="(?:\\/(?:${KATALOGI_JEZYKOW})\\/|\\/)?([a-z0-9][a-z0-9-]*)(?:\\.html)?((?:#[^"]*)?)"`, 'g'),
+      (dopasowanie, nazwa, kotwica) =>
+        STRONY.has(nazwa) ? `href="${pageHref(lang, nazwa)}${kotwica}"` : dopasowanie);
 }
 
 /* Marker-based HTML injection: <!-- CONTENT:NAME -->…<!-- /CONTENT --> is

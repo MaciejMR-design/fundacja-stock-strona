@@ -27,7 +27,7 @@
   <section class="page-hero">
     <img class="hero-photo" src="/uploads/bg-page.svg" alt="" aria-hidden="true" fetchpriority="high" decoding="async">
     <div class="container page-hero-inner i18n-fade">
-      <span class="crumb"><a href="/" data-i18n="home"></a> / 404</span>
+      <span class="crumb"><a href="/" data-page="index" data-i18n="home"></a> / 404</span>
       <h1 class="display" data-i18n="notFoundTitle"></h1>
       <p class="lead" data-i18n="notFoundText"></p>
     </div>
@@ -35,9 +35,9 @@
 
   <section>
     <div class="container i18n-fade" style="display:flex;gap:16px;flex-wrap:wrap;padding-top:clamp(40px,6vw,72px);padding-bottom:clamp(56px,8vw,96px);">
-      <a href="/" class="btn btn-gold" data-i18n="notFoundHome"></a>
-      <a href="/news.html" class="btn btn-navy" data-i18n="navNews"></a>
-      <a href="/contact.html" class="btn btn-white" data-i18n="navContact"></a>
+      <a href="/" data-page="index" class="btn btn-gold" data-i18n="notFoundHome"></a>
+      <a href="/news" data-page="news" class="btn btn-navy" data-i18n="navNews"></a>
+      <a href="/contact" data-page="contact" class="btn btn-white" data-i18n="navContact"></a>
     </div>
   </section>
 
@@ -55,5 +55,7 @@ const PAGE_I18N = {
 };
 </script>
 <script src="/assets/main.js"></script>
+<!-- 404 jest serwowana pod dowolnym adresem, wiec jezyk zna dopiero w przegladarce (FS_LANG wyzej) — stad odnosniki ustawiane tutaj, a nie w HTML. -->
+<script>document.querySelectorAll("[data-page]").forEach(function (a) { a.href = window.fsUrl(a.dataset.page); });</script>
 </body>
 </html>

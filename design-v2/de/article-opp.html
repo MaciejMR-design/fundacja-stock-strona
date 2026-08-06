@@ -10,15 +10,15 @@
 <meta property="og:title" content="Stiftung Stock erhält offiziell den Status einer gemeinnützigen Organisation (OPP) — Stock Foundation">
 <meta property="og:description" content="Mit Stolz geben wir bekannt, dass die Stiftung Stock offiziell den Status einer gemeinnützigen Organisation erhalten hat.">
 <meta property="og:image" content="https://fundacjastock.pl/uploads/news-opp.png">
-<meta property="og:url" content="https://fundacjastock.pl/de/article-opp.html">
+<meta property="og:url" content="https://fundacjastock.pl/de/article-opp">
 <meta property="og:locale" content="de_DE">
 <meta name="twitter:card" content="summary_large_image">
 <!-- lang-alternates -->
 <meta name="robots" content="noindex,follow">
-<link rel="canonical" href="https://fundacjastock.pl/de/article-opp.html">
-<link rel="alternate" hreflang="en" href="https://fundacjastock.pl/article-opp.html">
-<link rel="alternate" hreflang="pl" href="https://fundacjastock.pl/pl/article-opp.html">
-<link rel="alternate" hreflang="x-default" href="https://fundacjastock.pl/article-opp.html">
+<link rel="canonical" href="https://fundacjastock.pl/de/article-opp">
+<link rel="alternate" hreflang="en" href="https://fundacjastock.pl/article-opp">
+<link rel="alternate" hreflang="pl" href="https://fundacjastock.pl/pl/article-opp">
+<link rel="alternate" hreflang="x-default" href="https://fundacjastock.pl/article-opp">
 <!-- /lang-alternates -->
 <script data-fs-lang>window.FS_LANG='de';window.FS_PUBLIC_LANGS=["en","pl"];try{localStorage.setItem('fs-lang','de')}catch(e){}</script>
 <script data-fs-article>window.FS_ARTICLE='opp';</script>
@@ -26,8 +26,8 @@
 <link rel="stylesheet" href="/assets/fonts.css">
 <link rel="stylesheet" href="/assets/style.css">
 <!-- ld-json -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://fundacjastock.pl/de/"},{"@type":"ListItem","position":2,"name":"Aktuelles","item":"https://fundacjastock.pl/de/news.html"},{"@type":"ListItem","position":3,"name":"Stiftung Stock erhält offiziell den Status einer gemeinnützigen Organisation (OPP)"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"Stiftung Stock erhält offiziell den Status einer gemeinnützigen Organisation (OPP)","description":"Mit Stolz geben wir bekannt, dass die Stiftung Stock offiziell den Status einer gemeinnützigen Organisation erhalten hat.","image":["https://fundacjastock.pl/uploads/news-opp.png"],"datePublished":"2025-09-12","inLanguage":"de","mainEntityOfPage":{"@type":"WebPage","@id":"https://fundacjastock.pl/de/article-opp.html"},"author":{"@id":"https://fundacjastock.pl/#organization"},"publisher":{"@id":"https://fundacjastock.pl/#organization"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://fundacjastock.pl/de"},{"@type":"ListItem","position":2,"name":"Aktuelles","item":"https://fundacjastock.pl/de/news"},{"@type":"ListItem","position":3,"name":"Stiftung Stock erhält offiziell den Status einer gemeinnützigen Organisation (OPP)"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"Stiftung Stock erhält offiziell den Status einer gemeinnützigen Organisation (OPP)","description":"Mit Stolz geben wir bekannt, dass die Stiftung Stock offiziell den Status einer gemeinnützigen Organisation erhalten hat.","image":["https://fundacjastock.pl/uploads/news-opp.png"],"datePublished":"2025-09-12","inLanguage":"de","mainEntityOfPage":{"@type":"WebPage","@id":"https://fundacjastock.pl/de/article-opp"},"author":{"@id":"https://fundacjastock.pl/#organization"},"publisher":{"@id":"https://fundacjastock.pl/#organization"}}</script>
 <!-- /ld-json -->
 </head>
 <body>
@@ -42,7 +42,7 @@
       </g>
     </svg>
     <div class="container page-hero-inner">
-      <span class="crumb"><a href="index.html" data-i18n="home"></a> / <a href="news.html" data-i18n="navNews"></a> / <span id="crumbTitle"></span></span>
+      <span class="crumb"><a href="/de" data-i18n="home"></a> / <a href="/de/news" data-i18n="navNews"></a> / <span id="crumbTitle"></span></span>
       <h1 class="display" id="artTitle"></h1>
     </div>
   </section>
@@ -58,7 +58,7 @@
         <div class="article-gallery" id="artGallery" style="display:none;"></div>
         <div class="article-body" id="artBody"></div>
         <div class="article-share">
-          <a href="news.html" class="back-link"><span class="arr">←</span> <span data-i18n="backToNews"></span></a>
+          <a href="/de/news" class="back-link"><span class="arr">←</span> <span data-i18n="backToNews"></span></a>
           <div style="display:flex;align-items:center;gap:12px;">
             <span style="font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(22,59,101,.55);" data-i18n="shareLabel"></span>
             <a id="shareLinkedin" href="#" target="_blank" rel="noopener" class="li-badge" style="border-color:rgba(205,158,12,.5);" aria-label="LinkedIn">
@@ -144,7 +144,7 @@ function renderArticle() {
     const el = document.createElement('article');
     el.className = 'card reveal';
     el.innerHTML =
-      '<a href="article-' + o.id + '.html" style="display:flex;flex-direction:column;flex:1;color:inherit;">' +
+      '<a href="' + window.fsUrl('article-' + o.id) + '" style="display:flex;flex-direction:column;flex:1;color:inherit;">' +
         '<div class="card-media"><img src="' + o.img + '" srcset="' + window.fsSrcset(o.img) + '" sizes="(max-width: 620px) 100vw, (max-width: 1020px) 50vw, 33vw" alt="" loading="lazy" decoding="async">' + (o.cat ? '<span class="cat">' + t['cat' + o.cat] + '</span>' : '') + '</div>' +
         '<div class="card-body">' +
           '<time>' + o.date[l] + '</time>' +
@@ -168,7 +168,7 @@ window.addEventListener('hashchange', renderArticle);
   if (!window.FS_ARTICLE) {
     var h = location.hash.slice(1);
     if (h && (window.ARTICLES || []).some(function (a) { return a.id === h; })) {
-      location.replace('article-' + h + '.html');
+      location.replace(window.fsUrl('article-' + h));
       return;
     }
   }

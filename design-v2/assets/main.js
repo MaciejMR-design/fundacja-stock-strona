@@ -189,10 +189,33 @@ window.fsSrcset = function (src) {
   return src.replace(/\.jpg$/, '-800.jpg') + ' 800w, ' + src + ' 1600w';
 };
 
+/* ---------- adresy ----------
+   Strona serwuje adresy bez rozszerzenia (/statute zamiast /statute.html) —
+   ustawienie cleanUrls w vercel.json. Odnośniki budujemy bezwzględnie od
+   korzenia, bo strona główna języka ma adres „/pl” bez ukośnika na końcu
+   i odnośnik względny szukałby sąsiada w korzeniu zamiast w katalogu języka.
+
+   Język bierzemy z FS_LANG (wpisuje go build w nagłówku strony), a nie
+   z zapamiętanego wyboru — liczy się to, w której wersji jesteśmy teraz. */
+const JEZYKI_KATALOGI = ['pl', 'cz', 'it', 'sk', 'de', 'fr'];
+function fsUrl(page, lang) {
+  const kod = lang || window.FS_LANG || 'en';
+  const baza = kod === 'en' ? '/' : '/' + kod + '/';
+  return (!page || page === 'index') ? (kod === 'en' ? '/' : '/' + kod) : baza + page;
+}
+/* Nazwa bieżącej podstrony bez katalogu języka i bez rozszerzenia:
+   „/pl/article-guitar” → „article-guitar”, „/pl” i „/” → „”. */
+function fsAktualnaPodstrona() {
+  const czesci = location.pathname.split('/').filter(Boolean);
+  if (JEZYKI_KATALOGI.includes(czesci[0])) czesci.shift();
+  return (czesci.join('/') || '').replace(/\.html$/, '');
+}
+window.fsUrl = fsUrl;
+
 /* ---------- inject header + footer ---------- */
 const NAV = [
-  ['index.html', 'navMission'], ['about-us.html', 'navAbout'], ['statute.html', 'navStatute'],
-  ['board-council.html', 'navCouncil'], ['news.html', 'navNews'], ['contact.html', 'navContact']
+  ['index', 'navMission'], ['about-us', 'navAbout'], ['statute', 'navStatute'],
+  ['board-council', 'navCouncil'], ['news', 'navNews'], ['contact', 'navContact']
 ];
 const FB_SVG = '<svg width="16" height="16" viewBox="0 0 16 16" fill="#D0A41B"><path d="M9.6 16 v-5.9 h2 l0.3 -2.3 H9.6 V6.3 c0 -0.7 0.2 -1.1 1.2 -1.1 h1.2 V3.1 C11.8 3 11 3 10.2 3 C8.4 3 7.1 4.1 7.1 6.1 v1.7 H5.1 v2.3 h2 V16 Z"></path></svg>';
 const IG_SVG = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#D0A41B" stroke-width="1.4"><rect x="1.7" y="1.7" width="12.6" height="12.6" rx="4"></rect><circle cx="8" cy="8" r="3.1"></circle><circle cx="11.9" cy="4.1" r="0.95" fill="#D0A41B" stroke="none"></circle></svg>';
@@ -200,7 +223,7 @@ const IG_SVG = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stro
 function buildHeader() {
   const h = document.getElementById('site-header');
   if (!h) return;
-  const links = NAV.map(([href, k]) => `<a href="${href}" data-i18n="${k}"></a>`).join('');
+  const links = NAV.map(([strona, k]) => `<a href="${fsUrl(strona)}" data-i18n="${k}"></a>`).join('');
   const soonLabel = dict(currentLang).langSoon;
   /* Wersje przed publikacją są klikalne — recenzent (native speaker) wchodzi
      w nie z przełącznika i podaje hasło. Etykieta „wkrótce” zostaje, bo dla
@@ -211,7 +234,7 @@ function buildHeader() {
   ).join('');
   h.innerHTML = `
     <div class="container header-inner">
-      <a href="index.html" class="logo"><img src="/uploads/logo-footer.svg" alt="Stock Foundation"></a>
+      <a href="${fsUrl('index')}" class="logo"><img src="/uploads/logo-footer.svg" alt="Stock Foundation"></a>
       <nav class="main-nav i18n-fade">${links}</nav>
       <div class="lang" id="langDD">
         <button class="lang-btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false">
@@ -256,16 +279,16 @@ function buildFooter() {
         </div>
         <div class="footer-col">
           <span class="head" data-i18n="footerNav"></span>
-          <a href="index.html" data-i18n="navMission"></a>
-          <a href="news.html" data-i18n="navNews"></a>
-          <a href="about-us.html" data-i18n="navAbout"></a>
-          <a href="statute.html" data-i18n="navStatute"></a>
-          <a href="board-council.html" data-i18n="navCouncil"></a>
+          <a href="${fsUrl('index')}" data-i18n="navMission"></a>
+          <a href="${fsUrl('news')}" data-i18n="navNews"></a>
+          <a href="${fsUrl('about-us')}" data-i18n="navAbout"></a>
+          <a href="${fsUrl('statute')}" data-i18n="navStatute"></a>
+          <a href="${fsUrl('board-council')}" data-i18n="navCouncil"></a>
         </div>
       </div>
       <div class="footer-bottom i18n-fade">
         <nav>
-          <a href="privacy-policy.html" data-i18n="footerPrivacy"></a>
+          <a href="${fsUrl('privacy-policy')}" data-i18n="footerPrivacy"></a>
           <button type="button" class="cookie-settings" data-i18n="cookieSettings"></button>
         </nav>
         <div class="footer-meta">
@@ -286,9 +309,8 @@ if (przyciskCookies) przyciskCookies.addEventListener('click', () => window.fsOp
 
 /* URL of the current page in another language version (en = root) */
 function langHref(code) {
-  const page = location.pathname.split('/').pop() || 'index.html';
-  const up = (window.FS_LANG && window.FS_LANG !== 'en') ? '../' : '';
-  return (code === 'en' ? up : up + code + '/') + page + location.hash;
+  const page = fsAktualnaPodstrona();
+  return (page ? fsUrl(page, code) : fsUrl('index', code)) + location.hash;
 }
 
 function applyLang(lang, instant) {
@@ -343,12 +365,12 @@ applyLang(currentLang, true);
 /* active nav link — the filename is normalised without its .html suffix so this
    works whether or not the host serves extensionless URLs, and every static
    article-<id> page highlights News (same for person-* → Council & Board). */
-const file = (location.pathname.split('/').pop() || '').replace(/\.html$/, '');
-const activeFor = { '': 'index.html', 'article': 'news.html', 'person': 'board-council.html' };
-const activePath = activeFor[file] ||
-  (file.startsWith('article-') ? 'news.html' : file.startsWith('person-') ? 'board-council.html' : file + '.html');
+const strona = fsAktualnaPodstrona();
+const podswietla = { '': 'index', 'article': 'news', 'person': 'board-council' }[strona] ??
+  (strona.startsWith('article-') ? 'news' : strona.startsWith('person-') ? 'board-council' : strona);
+const aktywnyAdres = fsUrl(podswietla);
 document.querySelectorAll('.main-nav a, .mobile-nav a').forEach(a => {
-  if (a.getAttribute('href') === activePath) a.classList.add('active');
+  if (a.getAttribute('href') === aktywnyAdres) a.classList.add('active');
 });
 
 /* header shadow + back-to-top */
@@ -553,7 +575,7 @@ function showCookieBar() {
   bar.className = 'cookie';
   bar.setAttribute('role', 'dialog');
   bar.setAttribute('aria-label', t.cookieSettings || 'Cookies');
-  bar.innerHTML = '<p>' + t.cookieText + ' <a href="privacy-policy.html">' + t.cookieMore + '</a></p>' +
+  bar.innerHTML = '<p>' + t.cookieText + ' <a href="' + fsUrl('privacy-policy') + '">' + t.cookieMore + '</a></p>' +
     '<div class="cookie-actions"><button id="cookieDecline" class="secondary">' + t.cookieDecline + '</button>' +
     '<button id="cookieAccept">' + t.cookieAccept + '</button></div>';
   document.body.appendChild(bar);
