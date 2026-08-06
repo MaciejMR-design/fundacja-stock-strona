@@ -3,7 +3,7 @@ window.ARTICLES = [
   {
     "id": "report2025",
     "ts": "2026-07-31",
-    "img": "/uploads/about-workshop.jpg",
+    "img": "/uploads/cover-report.svg",
     "date": {
       "sk": "31. júla 2026"
     },
