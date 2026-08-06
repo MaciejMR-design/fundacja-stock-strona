@@ -24,6 +24,29 @@ window.ARTICLES = [
     }
   },
   {
+    "id": "wolontariatbb",
+    "ts": "2026-06-19",
+    "cat": "community",
+    "img": "/uploads/img_20260619_132950.webp",
+    "images": [
+      "/uploads/img_20260619_132950.webp"
+    ],
+    "date": {
+      "pl": "19 czerwca 2026"
+    },
+    "title": {
+      "pl": "Fundacja STOCK - Dzień Wolontariatu w Bielsko Białej"
+    },
+    "lead": {
+      "pl": "XXXYYYZZZ"
+    },
+    "body": {
+      "pl": [
+        "W piątek, 19 czerwca, dzielna grupa 26 naszych współpracowników z Bielska-Białej wzięła udział w akcji sprzątania brzegów rzeki Białej oraz jej dopływu – Straconki. Wydarzenie zostało zorganizowane przez Fundację Stock wspólnie z akcją Czysta Rzeka, ogromną pomoc okazała nam Magda Krysta Piecuch i Ania Siuda a od początku wspierał nas dyrektor Robert Tracz . Było to już nasze trzecie takie działanie po wcześniejszych akcjach w Warszawie i Lublinie.\n\nPogoda dopisała wyjątkowo. O godzinie 11:00 byliśmy w komplecie przy namiocie sztabowym (w tym ratownik medyczny z w pełni wyposażoną karetką), każdy dostał rękawice, worki, zapas wody do picia i  od razu wszystkim zachciało się działać, podzieliliśmy się na grupy i ruszyliśmy w teren.\n\n\nNasi wolontariusze ostro zabrali się do pracy i w sumie zapełnili 56 worków śmieci. Do tego wyciągnęliśmy parę opon, kawał ciężkiego żelastwa i szybę z hartowanego szkła.\n\nEfekty pracy robią wrażenie a najlepszy moment był na koniec, kiedy przyszło do mierzenia i liczenia tego wszystkiego. Po zsumowaniu wyszedł konkretny wynik: 900 kg odpadów! Prawie tona śmieci zniknęła z natury. Fajnie świadomość, że chociaż trochę podratowaliśmy wygląd naszych bielskich rzek.\n\nZmęczeni pracą i upałem, ale zadowoleni z efektów, wróciliśmy do sztabu, gdzie czekała na nas dobra pizza. Dało się nawet usłyszeć głosy, że takie akcje mogłyby odbywać się w każdy piątek."
+      ]
+    }
+  },
+  {
     "id": "gerson",
     "ts": "2026-06-05",
     "cat": "art",
@@ -142,7 +165,7 @@ window.ARTICLES = [
       "pl": "16 marca 2026"
     },
     "title": {
-      "pl": "Poznajcie naszego wolontariusza — lutnika Łukasza Murawskiego"
+      "pl": "Poznajcie naszego wolontariusza — lutnik Łukasz Murawski"
     },
     "lead": {
       "pl": "Fundacja Stock z dumą informuje, że pozyskaliśmy niezwykłego wolontariusza — mistrza lutnictwa i twórcę gitar elektrycznych."

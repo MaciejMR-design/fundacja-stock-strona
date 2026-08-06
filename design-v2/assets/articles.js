@@ -78,6 +78,66 @@ window.ARTICLES = [
     }
   },
   {
+    "id": "wolontariatbb",
+    "ts": "2026-06-19",
+    "dateSpan": "day",
+    "cat": "community",
+    "img": "/uploads/img_20260619_132950.webp",
+    "images": [
+      "/uploads/img_20260619_132950.webp"
+    ],
+    "title": {
+      "pl": "Fundacja STOCK - Dzień Wolontariatu w Bielsko Białej",
+      "en": "Volunteerind Day in BB",
+      "cz": "Volunteerind Day in BB",
+      "it": "Volunteerind Day in BB",
+      "sk": "Volunteerind Day in BB",
+      "de": "Volunteerind Day in BB",
+      "fr": "Volunteerind Day in BB"
+    },
+    "lead": {
+      "pl": "XXXYYYZZZ",
+      "en": "aabbcc",
+      "cz": "aabbcc",
+      "it": "aabbcc",
+      "sk": "aabbcc",
+      "de": "aabbcc",
+      "fr": "aabbcc"
+    },
+    "body": {
+      "pl": [
+        "W piątek, 19 czerwca, dzielna grupa 26 naszych współpracowników z Bielska-Białej wzięła udział w akcji sprzątania brzegów rzeki Białej oraz jej dopływu – Straconki. Wydarzenie zostało zorganizowane przez Fundację Stock wspólnie z akcją Czysta Rzeka, ogromną pomoc okazała nam Magda Krysta Piecuch i Ania Siuda a od początku wspierał nas dyrektor Robert Tracz . Było to już nasze trzecie takie działanie po wcześniejszych akcjach w Warszawie i Lublinie.\n\nPogoda dopisała wyjątkowo. O godzinie 11:00 byliśmy w komplecie przy namiocie sztabowym (w tym ratownik medyczny z w pełni wyposażoną karetką), każdy dostał rękawice, worki, zapas wody do picia i  od razu wszystkim zachciało się działać, podzieliliśmy się na grupy i ruszyliśmy w teren.\n\n\nNasi wolontariusze ostro zabrali się do pracy i w sumie zapełnili 56 worków śmieci. Do tego wyciągnęliśmy parę opon, kawał ciężkiego żelastwa i szybę z hartowanego szkła.\n\nEfekty pracy robią wrażenie a najlepszy moment był na koniec, kiedy przyszło do mierzenia i liczenia tego wszystkiego. Po zsumowaniu wyszedł konkretny wynik: 900 kg odpadów! Prawie tona śmieci zniknęła z natury. Fajnie świadomość, że chociaż trochę podratowaliśmy wygląd naszych bielskich rzek.\n\nZmęczeni pracą i upałem, ale zadowoleni z efektów, wróciliśmy do sztabu, gdzie czekała na nas dobra pizza. Dało się nawet usłyszeć głosy, że takie akcje mogłyby odbywać się w każdy piątek."
+      ],
+      "en": [
+        "QQWWEERRTTYY"
+      ],
+      "cz": [
+        "QQWWEERRTTYY"
+      ],
+      "it": [
+        "QQWWEERRTTYY"
+      ],
+      "sk": [
+        "QQWWEERRTTYY"
+      ],
+      "de": [
+        "QQWWEERRTTYY"
+      ],
+      "fr": [
+        "QQWWEERRTTYY"
+      ]
+    },
+    "date": {
+      "en": "19 June 2026",
+      "pl": "19 czerwca 2026",
+      "cz": "19. června 2026",
+      "it": "19 giugno 2026",
+      "sk": "19. júna 2026",
+      "de": "19. Juni 2026",
+      "fr": "19 juin 2026"
+    }
+  },
+  {
     "id": "gerson",
     "ts": "2026-06-05",
     "cat": "art",
@@ -432,18 +492,9 @@ window.ARTICLES = [
     "ts": "2026-03-16",
     "cat": "scholar",
     "img": "/uploads/news-guitar.jpg",
-    "date": {
-      "en": "16 March 2026",
-      "pl": "16 marca 2026",
-      "cz": "16. března 2026",
-      "it": "16 marzo 2026",
-      "sk": "16. marca 2026",
-      "de": "16. März 2026",
-      "fr": "16 mars 2026"
-    },
     "title": {
+      "pl": "Poznajcie naszego wolontariusza — lutnik Łukasz Murawski",
       "en": "Meet our new volunteer — renowned luthier Łukasz Murawski",
-      "pl": "Poznajcie naszego wolontariusza — lutnika Łukasza Murawskiego",
       "cz": "Poznejte našeho dobrovolníka — houslaře Łukasze Murawského",
       "it": "Il nostro nuovo volontario — il liutaio Łukasz Murawski",
       "sk": "Spoznajte nášho dobrovoľníka — nástrojára Łukasza Murawského",
@@ -451,8 +502,8 @@ window.ARTICLES = [
       "fr": "Découvrez notre bénévole — le luthier Łukasz Murawski"
     },
     "lead": {
-      "en": "The Stock Foundation is proud to share that we have gained an extraordinary volunteer — a master luthier and creator of electric guitars.",
       "pl": "Fundacja Stock z dumą informuje, że pozyskaliśmy niezwykłego wolontariusza — mistrza lutnictwa i twórcę gitar elektrycznych.",
+      "en": "The Stock Foundation is proud to share that we have gained an extraordinary volunteer — a master luthier and creator of electric guitars.",
       "cz": "Nadace Stock s hrdostí oznamuje, že jsme získali výjimečného dobrovolníka — mistra houslaře a tvůrce elektrických kytar.",
       "it": "La Fondazione Stock è orgogliosa di annunciare di aver acquisito un volontario straordinario — un maestro liutaio e creatore di chitarre elettriche.",
       "sk": "Nadácia Stock s hrdosťou oznamuje, že sme získali výnimočného dobrovoľníka — majstra nástrojára a tvorcu elektrických gitár.",
@@ -460,15 +511,15 @@ window.ARTICLES = [
       "fr": "La Fondation Stock est fière d’annoncer qu’elle a accueilli un bénévole extraordinaire — un maître luthier et créateur de guitares électriques."
     },
     "body": {
-      "en": [
-        "Łukasz Murawski, creator of electric guitars, after learning about our music scholarship program for talented young people forced to abandon their musical education due to the outbreak of war, decided to take action. He generously donated his handcrafted electric guitar for the participants of our program.",
-        "The instrument was received by our teachers, Olga and Mirek from Homo Faber, who will help ensure it is put to great use. The instrument is truly exceptional — beautifully made, lightweight, easy to play, and with a fantastic sound, making it perfect for learning and developing musical skills.",
-        "We are deeply grateful for this remarkable gesture and support."
-      ],
       "pl": [
         "Łukasz Murawski, twórca gitar elektrycznych, po tym jak dowiedział się o naszym programie stypendiów muzycznych dla utalentowanych młodych ludzi zmuszonych do porzucenia edukacji muzycznej z powodu wybuchu wojny, postanowił działać. Hojnie przekazał swoją ręcznie wykonaną gitarę elektryczną dla uczestników naszego programu.",
         "Instrument odebrali nasi nauczyciele, Olga i Mirek z Homo Faber, którzy zadbają o to, by został dobrze wykorzystany. Instrument jest naprawdę wyjątkowy — pięknie wykonany, lekki, łatwy w grze i o fantastycznym brzmieniu, co czyni go idealnym do nauki i rozwijania umiejętności muzycznych.",
         "Jesteśmy głęboko wdzięczni za ten niezwykły gest i wsparcie."
+      ],
+      "en": [
+        "Łukasz Murawski, creator of electric guitars, after learning about our music scholarship program for talented young people forced to abandon their musical education due to the outbreak of war, decided to take action. He generously donated his handcrafted electric guitar for the participants of our program.",
+        "The instrument was received by our teachers, Olga and Mirek from Homo Faber, who will help ensure it is put to great use. The instrument is truly exceptional — beautifully made, lightweight, easy to play, and with a fantastic sound, making it perfect for learning and developing musical skills.",
+        "We are deeply grateful for this remarkable gesture and support."
       ],
       "cz": [
         "Łukasz Murawski, tvůrce elektrických kytar, se poté, co se dozvěděl o našem programu hudebních stipendií pro talentované mladé lidi, kteří museli kvůli vypuknutí války opustit hudební vzdělávání, rozhodl jednat. Velkoryse věnoval svou ručně vyrobenou elektrickou kytaru účastníkům našeho programu.",
@@ -495,6 +546,15 @@ window.ARTICLES = [
         "L’instrument a été remis à nos enseignants, Olga et Mirek de Homo Faber, qui veilleront à ce qu’il soit bien utilisé. C’est un instrument vraiment exceptionnel — magnifiquement réalisé, léger, facile à jouer et doté d’une sonorité fantastique, ce qui le rend idéal pour apprendre et développer ses compétences musicales.",
         "Nous sommes profondément reconnaissants pour ce geste remarquable et ce soutien."
       ]
+    },
+    "date": {
+      "pl": "16 marca 2026",
+      "en": "16 March 2026",
+      "cz": "16. března 2026",
+      "it": "16 marzo 2026",
+      "sk": "16. marca 2026",
+      "de": "16. März 2026",
+      "fr": "16 mars 2026"
     }
   },
   {
