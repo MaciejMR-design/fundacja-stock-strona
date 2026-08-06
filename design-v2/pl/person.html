@@ -103,7 +103,7 @@ function renderPerson() {
   people.filter(x => x.id !== p.id).forEach(o => {
     const el = document.createElement('a');
     el.className = 'person reveal';
-    el.href = 'person.html#' + o.id;
+    el.href = window.fsUrl('person') + '#' + o.id;
     el.innerHTML = '<div class="photo"><img src="' + o.photo + '" alt="' + o.name + '" loading="lazy" decoding="async"></div>' +
       '<div class="meta"><h3>' + o.name + '</h3><span>' + o.role[l] + '</span><span class="view">' + t.viewProfile + ' →</span></div>';
     grid.appendChild(el);

@@ -474,6 +474,7 @@ function transform(src, page, lang, art) {
   const OPP_LANGS = ['pl', 'en'];
   if (tplPage === 'index.html') {
     h = fillBlock(h, 'HERO_OPP', OPP_LANGS.includes(lang) ? heroOppHtml() : '');
+    h = fillBlock(h, 'HOME_STATUTE', statuteDocHtml(lang, 'statuteLink1'));
   }
 
   // inject the document list from content/documents.json (statute page only)
@@ -552,11 +553,14 @@ function heroOppHtml() {
   ].join('\n');
 }
 
-function statuteDocHtml(lang) {
+/* Przycisk otwierający statut w oknie podglądu. Ten sam element stoi na
+   podstronie „Statut i sprawozdania” i na stronie głównej — różni je tylko
+   klucz etykiety, bo teksty tych sekcji są osobne. */
+function statuteDocHtml(lang, kluczEtykiety = 'statutePdf') {
   return [
     `        <button type="button" class="doc-link" data-doc="${esc(DOCUMENTS.statuteFile)}" data-doc-title="${escText(docTitle(lang, 'statuteTitle'))}">`,
     `          ${EYE_SVG}`,
-    '          <span data-i18n="statutePdf"></span>',
+    `          <span data-i18n="${kluczEtykiety}"></span>`,
     '        </button>'
   ].join('\n');
 }
