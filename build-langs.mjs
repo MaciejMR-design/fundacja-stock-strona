@@ -448,7 +448,7 @@ function transform(src, page, lang, art) {
 
   // inject the document list from content/documents.json (statute page only)
   if (tplPage === 'statute.html') {
-    h = fillBlock(h, 'STATUTE_DOC', statuteDocHtml());
+    h = fillBlock(h, 'STATUTE_DOC', statuteDocHtml(lang));
     h = fillBlock(h, 'DOCS', docsGridHtml(lang));
   }
   return h;
@@ -463,44 +463,63 @@ function fillBlock(html, name, inner) {
     `<!-- CONTENT:${name} -->\n${inner}\n      <!-- /CONTENT -->`);
 }
 
-function statuteDocHtml() {
+/* Dokumenty otwierają się w oknie podglądu (assets/docviewer.js), a nie jako
+   plik do pobrania — stąd <button data-doc> zamiast <a href>. W kodzie strony
+   nie ma wtedy adresu pliku, więc menu pod prawym przyciskiem nie ma czego
+   zapisać. Prośba klienta: dokumenty mają być do obejrzenia, nie do pobrania. */
+const EYE_SVG = '<svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg>';
+
+/* Podpis na belce okna podglądu — składany w buildzie, bo musi być w języku
+   strony, a przycisk nosi tylko klucz tłumaczenia. */
+function docTitle(lang, key, year) {
+  const d = PAGE_DICTS['statute.html'] || {};
+  const label = (d[lang] || {})[key] || (d.en || {})[key] || key;
+  return year ? `${label} ${year}` : label;
+}
+
+function statuteDocHtml(lang) {
   return [
-    `        <a href="${esc(DOCUMENTS.statuteFile)}" class="doc-link" target="_blank" rel="noopener">`,
-    '          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 2 h7 l3 3 v11 h-10 Z M11 2 v3 h3 M6.5 9 h5 M6.5 12 h5" stroke="#CD9E0C" stroke-width="1.5" stroke-linejoin="round"></path></svg>',
+    `        <button type="button" class="doc-link" data-doc="${esc(DOCUMENTS.statuteFile)}" data-doc-title="${escText(docTitle(lang, 'statuteTitle'))}">`,
+    `          ${EYE_SVG}`,
     '          <span data-i18n="statutePdf"></span>',
-    '        </a>'
+    '        </button>'
   ].join('\n');
 }
 
-/* Activity reports first, then financial statements — each group by year,
-   oldest first. A year shows up in a group only if it has the files for it. */
+/* Jeden rok = jeden kafelek, ze wszystkim, co za ten rok mamy: sprawozdanie
+   z działalności, bilans, rachunek zysków i strat. Wcześniej rok z kompletem
+   dokumentów rozpadał się na dwa kafelki, przez co przy czterech latach
+   podstrona pokazywała ich sześć. Najnowszy rok pierwszy. */
 function docsGridHtml(lang) {
-  const byYear = [...DOCUMENTS.reports].sort((a, b) => String(a.year).localeCompare(String(b.year)));
+  const byYear = [...DOCUMENTS.reports].sort((a, b) => String(b.year).localeCompare(String(a.year)));
   const text = (o, l) => o?.[l] || o?.en || o?.pl || '';
-  const card = (year, headingKey, descHtml, links) => [
-    '        <div class="doc-card reveal">',
-    `          <span class="year">${escText(year)}</span>`,
-    `          <h3 data-i18n="${headingKey}"></h3>`,
-    ...(descHtml ? [`          <p>${descHtml}</p>`] : []),
-    ...links,
-    '        </div>'
-  ].join('\n');
+  const button = (file, key, year) =>
+    `            <button type="button" class="dl" data-doc="${esc(file)}" data-doc-title="${escText(docTitle(lang, key, year))}">` +
+    `${EYE_SVG} <span data-i18n="${key}"></span></button>`;
 
-  const cards = [];
-  for (const r of byYear.filter(r => r.activityFile)) {
-    cards.push(card(r.year, 'activityReport', escText(text(r.activityDesc, lang)), [
-      `          <a href="${esc(r.activityFile)}" class="dl" target="_blank" rel="noopener">↓ <span data-i18n="download"></span> (PDF)</a>`
-    ]));
-  }
-  for (const r of byYear.filter(r => r.balanceFile || r.pnlFile)) {
-    const links = [
-      ...(r.balanceFile ? [`            <a href="${esc(r.balanceFile)}" class="dl" target="_blank" rel="noopener">↓ <span data-i18n="balance"></span></a>`] : []),
-      ...(r.pnlFile ? [`            <a href="${esc(r.pnlFile)}" class="dl" target="_blank" rel="noopener">↓ <span data-i18n="pnl"></span></a>`] : [])
-    ];
-    cards.push(card(r.year, 'financials', escText(text(r.finDesc, lang)),
-      ['          <div style="display:flex;gap:18px;flex-wrap:wrap;">', ...links, '          </div>']));
-  }
-  return cards.join('\n');
+  return byYear.map(r => {
+    const maDzialalnosc = !!r.activityFile;
+    const maFinanse = !!(r.balanceFile || r.pnlFile);
+    if (!maDzialalnosc && !maFinanse) return '';
+    const naglowek = maDzialalnosc && maFinanse ? 'docsBoth' : (maDzialalnosc ? 'activityReport' : 'financials');
+    const opisy = [
+      ...(maDzialalnosc ? [escText(text(r.activityDesc, lang))] : []),
+      ...(maFinanse ? [escText(text(r.finDesc, lang))] : [])
+    ].filter(Boolean);
+
+    return [
+      '        <div class="doc-card reveal">',
+      `          <span class="year">${escText(r.year)}</span>`,
+      `          <h3 data-i18n="${naglowek}"></h3>`,
+      ...opisy.map(o => `          <p>${o}</p>`),
+      '          <div class="dl-list">',
+      ...(r.activityFile ? [button(r.activityFile, 'activityReport', r.year)] : []),
+      ...(r.balanceFile ? [button(r.balanceFile, 'balance', r.year)] : []),
+      ...(r.pnlFile ? [button(r.pnlFile, 'pnl', r.year)] : []),
+      '          </div>',
+      '        </div>'
+    ].join('\n');
+  }).filter(Boolean).join('\n');
 }
 
 /* generate assets/articles.js from content/articles/*.json

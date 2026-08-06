@@ -1,6 +1,17 @@
 {
   "buildCommand": "node build-langs.mjs",
   "outputDirectory": "design-v2",
+  "headers": [
+    {
+      "source": "/uploads/docs/(.*)",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "inline"
+        }
+      ]
+    }
+  ],
   "redirects": [
     {
       "source": "/paintings-of-wojciech-gerson-presented-at-dps-ametystowa-05-june2026",
