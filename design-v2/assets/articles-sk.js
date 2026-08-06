@@ -24,29 +24,6 @@ window.ARTICLES = [
     }
   },
   {
-    "id": "wolontariatbb",
-    "ts": "2026-06-19",
-    "cat": "community",
-    "img": "/uploads/img_20260619_132950.webp",
-    "images": [
-      "/uploads/img_20260619_132950.webp"
-    ],
-    "date": {
-      "sk": "19. júna 2026"
-    },
-    "title": {
-      "sk": "Volunteerind Day in BB"
-    },
-    "lead": {
-      "sk": "aabbcc"
-    },
-    "body": {
-      "sk": [
-        "QQWWEERRTTYY"
-      ]
-    }
-  },
-  {
     "id": "gerson",
     "ts": "2026-06-05",
     "cat": "art",
