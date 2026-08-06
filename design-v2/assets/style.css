@@ -140,6 +140,28 @@ header.site.scrolled .logo img { height: 42px; }
 .page-hero p.lead { margin: 0; max-width: 640px; font-size: 16px; line-height: 1.7; color: rgba(255,255,255,.82); }
 
 /* ---------- latest post as a glass card inside the hero ---------- */
+/* Status OPP + KRS w pierwszym ekranie.
+   Ten sam „szklany” kafel co pasek najnowszej aktualności obok, żeby nie
+   wyglądał jak doklejona plakietka. Znak OPP siedzi na białym kaflu —
+   oficjalne oznaczenie zostaje w swoich barwach, a biel oddziela pomarańcz
+   od granatu tła. Numer KRS bez spacji (żeby skopiował się prosto do
+   zeznania), za to rozstrzelony, więc czyta się równie łatwo. */
+.hero-actions { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.hero-opp { display: flex; align-items: center; gap: 14px; padding: 8px 15px 8px 8px; background: rgba(255,255,255,.07); border: 1px solid rgba(205,158,12,.45); backdrop-filter: blur(10px); border-radius: 14px; box-shadow: 0 14px 34px rgba(0,0,0,.22); }
+.hero-opp .opp-mark { flex: 0 0 auto; display: block; background: #fff; border-radius: 9px; padding: 6px 10px; }
+/* Znak ma w sobie drobny wiersz „organizacja pożytku publicznego” — poniżej
+   ~130 px szerokości robi się z niego nieczytelna kreska, stąd ta wielkość. */
+.hero-opp .opp-mark img { display: block; height: auto; width: 112px; }
+.hero-opp .opp-txt { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.hero-opp .opp-label { font-size: 10.5px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--gold-light); }
+.hero-opp .opp-krs { font-size: 15px; font-weight: 600; color: rgba(255,255,255,.8); letter-spacing: .06em; white-space: nowrap; }
+.hero-opp .opp-krs b { font-weight: 700; color: var(--white); letter-spacing: .12em; }
+@media (max-width: 520px) {
+  .hero-opp { gap: 12px; padding: 10px 14px 10px 10px; }
+  .hero-opp .opp-mark { padding: 6px 9px; }
+  .hero-opp .opp-mark img { width: 104px; }
+  .hero-opp .opp-krs { font-size: 14px; }
+}
 .hero-latest { position: absolute; right: clamp(20px, 4vw, 52px); bottom: clamp(26px, 4vw, 56px); z-index: 4; width: min(400px, calc(100% - 48px)); background: rgba(255,255,255,.07); border: 1px solid rgba(205,158,12,.45); backdrop-filter: blur(10px); border-radius: 14px; padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; color: var(--white); box-shadow: 0 18px 44px rgba(0,0,0,.28); transition: background .3s, transform .3s, border-color .3s; }
 .hero-latest:hover { background: rgba(255,255,255,.12); border-color: var(--gold-light); transform: translateY(-4px); color: var(--white); }
 .hero-latest .hl-tag { display: flex; align-items: center; gap: 10px; font-size: 10.5px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--gold-light); }
