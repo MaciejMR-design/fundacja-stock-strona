@@ -33,14 +33,16 @@ Każdy zapis pojawia się na stronie po 1–2 minutach, we wszystkich językach.
 
 ## Dodanie nowej aktualności
 1. Sekcja **Aktualności** → przycisk **New**.
-2. Wypełnij pola:
-   - **Identyfikator** — krótka nazwa robocza bez spacji, np. `koncert2027` (tworzy adres artykułu; po opublikowaniu lepiej go nie zmieniać),
+2. Wypełnij pola — formularz idzie od treści do ustawień technicznych:
+   - **Tytuł, Zajawka, Treść** — wypełnij **po polsku i po angielsku**. Pola czeskie, włoskie, słowackie, niemieckie i francuskie można zostawić puste — w tych wersjach pokaże się wtedy tekst angielski.
+   - Treść wpisuje się **akapitami** — każdy akapit to osobne pole (przycisk „+" dodaje kolejny).
+   - **Zajawka** to 1–2 zdania widoczne na kafelku wpisu na liście Aktualności i w wynikach wyszukiwania Google. W samym artykule się nie pokazuje — tam od razu zaczyna się Treść.
+   - **Zdjęcie główne** — wgraj z dysku. Zdjęcia z telefonu są przy wgrywaniu automatycznie zmniejszane i przerabiane na lekki format WebP — nie trzeba ich wcześniej przygotowywać.
+   - **Galeria** (opcjonalnie) — można zaznaczyć **kilka zdjęć naraz**. Jeśli coś tu wgrasz, w artykule pokaże się galeria zamiast pojedynczej okładki; zdjęcie główne zostaje wtedy na kafelku listy. Kliknięcie zdjęcia powiększa je na pełny ekran.
    - **Data wydarzenia** — z kalendarza. Ustawia kolejność na liście **i datę widoczną na stronie** — data słownie powstaje sama, w każdym języku („5 czerwca 2026", „5 June 2026"). Nie trzeba jej nigdzie wpisywać.
    - **Dokładność daty** — „Pełna data" albo „Tylko miesiąc", gdy dokładny dzień nie ma znaczenia („czerwiec 2026"),
    - **Kategoria** — Spotkania ze sztuką / Szkolenia / Stypendia / Granty / Wolontariat / Terapie. Można zostawić puste — wpis w rodzaju sprawozdania rocznego czy statusu OPP pokaże się wtedy bez etykiety,
-   - **Zdjęcie główne** — wgraj z dysku. Zdjęcia z telefonu są przy wgrywaniu automatycznie zmniejszane i przerabiane na lekki format WebP — nie trzeba ich wcześniej przygotowywać.
-   - **Tytuł, Lead, Treść** — wypełnij **po polsku i po angielsku**. Pola czeskie, włoskie, słowackie, niemieckie i francuskie można zostawić puste — w tych wersjach pokaże się wtedy tekst angielski.
-   - Treść wpisuje się **akapitami** — każdy akapit to osobne pole (przycisk „+" dodaje kolejny).
+   - **Adres artykułu** — krótka nazwa bez spacji, np. `koncert2027`. Nigdzie się nie wyświetla, tworzy tylko adres strony (`fundacjastock.pl/pl/article-koncert2027.html`), więc po opublikowaniu lepiej go nie zmieniać.
 3. Kliknij **Save**.
 
 Pole **„Data słownie — nadpisanie"** (zwinięte na dole) zostaw puste. Przydaje się tylko wtedy, gdy data ma brzmieć inaczej niż standardowo, np. „przełom wiosny i lata 2026".

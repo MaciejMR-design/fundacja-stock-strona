@@ -82,33 +82,8 @@ collections:
       - { label: Rok, field: ts, pattern: '\d{4}' }
       - { label: Kategoria, field: cat }
     fields:
-      - { name: id, label: 'Identyfikator', hint: 'Krótko, po angielsku, bez spacji — np. koncert2027. Tworzy adres artykułu, więc po opublikowaniu lepiej go nie zmieniać.', widget: string, pattern: ['^[a-z0-9-]+$', 'Tylko małe litery, cyfry i myślniki'] }
-      - { name: ts, label: 'Data wydarzenia', hint: 'Ustawia kolejność wpisów i datę widoczną na stronie — we wszystkich językach automatycznie.', widget: datetime, format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false }
-      - name: dateSpan
-        label: 'Dokładność daty na stronie'
-        widget: select
-        default: day
-        options:
-          - { label: 'Pełna data (5 czerwca 2026)', value: day }
-          - { label: 'Tylko miesiąc (czerwiec 2026)', value: month }
-      - name: cat
-        label: Kategoria
-        hint: 'Etykieta widoczna na kafelku wpisu i w filtrach na Aktualnościach. Można zostawić puste — wpisy w rodzaju sprawozdania rocznego czy statusu OPP pokazują się wtedy bez etykiety.'
-        widget: select
-        required: false
-        options:
-          - { label: 'Spotkania ze sztuką', value: art }
-          - { label: 'Szkolenia', value: training }
-          - { label: 'Stypendia', value: scholar }
-          - { label: 'Granty', value: grant }
-          - { label: 'Wolontariat', value: volunteer }
-          - { label: 'Terapie', value: therapy }
-      - { name: img, label: 'Zdjęcie główne (okładka)', widget: image }
-      - name: images
-        label: 'Galeria (opcjonalnie — zastępuje okładkę w artykule)'
-        widget: list
-        required: false
-        field: { name: image, label: Zdjęcie, widget: image }
+      # Kolejność pól = kolejność myślenia o wpisie: najpierw treść, potem
+      # zdjęcia, na końcu ustawienia techniczne (data, kategoria, adres).
       - name: title
         label: Tytuł
         widget: object
@@ -121,7 +96,8 @@ collections:
           - { name: de, label: 'Niemiecki (opcjonalnie)', widget: string, required: false }
           - { name: fr, label: 'Francuski (opcjonalnie)', widget: string, required: false }
       - name: lead
-        label: 'Lead (1–2 zdania zajawki)'
+        label: 'Zajawka (1–2 zdania)'
+        hint: 'Widoczna na kafelku wpisu na liście Aktualności i w wynikach wyszukiwania Google. W samym artykule się nie pokazuje — tam od razu zaczyna się Treść.'
         widget: object
         fields: &langText
           - { name: pl, label: Polski, widget: text }
@@ -142,6 +118,37 @@ collections:
           - { name: sk, label: 'Słowacki (opcjonalnie)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
           - { name: de, label: 'Niemiecki (opcjonalnie)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
           - { name: fr, label: 'Francuski (opcjonalnie)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+      - { name: img, label: 'Zdjęcie główne (okładka)', widget: image }
+      - name: images
+        label: 'Galeria (opcjonalnie — zastępuje okładkę w artykule)'
+        hint: 'Można zaznaczyć kilka zdjęć naraz. Puste = w artykule pokaże się samo zdjęcie główne.'
+        # widget: image + multiple zamiast listy: redaktor zaznacza wiele plików
+        # w jednym okienku, zamiast klikać „+” i dodawać je pojedynczo.
+        # Zapis w JSON jest ten sam — tablica ścieżek.
+        widget: image
+        multiple: true
+        required: false
+      - { name: ts, label: 'Data wydarzenia', hint: 'Ustawia kolejność wpisów i datę widoczną na stronie — we wszystkich językach automatycznie.', widget: datetime, format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false }
+      - name: dateSpan
+        label: 'Dokładność daty na stronie'
+        widget: select
+        default: day
+        options:
+          - { label: 'Pełna data (5 czerwca 2026)', value: day }
+          - { label: 'Tylko miesiąc (czerwiec 2026)', value: month }
+      - name: cat
+        label: Kategoria
+        hint: 'Etykieta widoczna na kafelku wpisu i w filtrach na Aktualnościach. Można zostawić puste — wpisy w rodzaju sprawozdania rocznego czy statusu OPP pokazują się wtedy bez etykiety.'
+        widget: select
+        required: false
+        options:
+          - { label: 'Spotkania ze sztuką', value: art }
+          - { label: 'Szkolenia', value: training }
+          - { label: 'Stypendia', value: scholar }
+          - { label: 'Granty', value: grant }
+          - { label: 'Wolontariat', value: volunteer }
+          - { label: 'Terapie', value: therapy }
+      - { name: id, label: 'Adres artykułu', hint: 'Krótko, po angielsku, bez spacji — np. koncert2027. Nie pokazuje się nigdzie w treści; tworzy adres strony (fundacjastock.pl/pl/article-koncert2027.html), więc po opublikowaniu lepiej go nie zmieniać.', widget: string, pattern: ['^[a-z0-9-]+$', 'Tylko małe litery, cyfry i myślniki'] }
       - name: date
         label: 'Data słownie — nadpisanie (zwykle niepotrzebne)'
         hint: 'Zostaw puste: data powstaje sama z „Daty wydarzenia”. Wpisz tylko wtedy, gdy ma brzmieć inaczej niż standardowo.'

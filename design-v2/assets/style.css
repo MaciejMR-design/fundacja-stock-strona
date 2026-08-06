@@ -294,10 +294,22 @@ section .container { padding-top: clamp(60px, 8vw, 110px); padding-bottom: clamp
 .article-body p { font-size: 16.5px; line-height: 1.85; color: var(--navy); margin: 0 0 22px; }
 .article-body p:first-of-type { font-size: 19px; line-height: 1.7; color: rgba(22,59,101,.9); font-weight: 500; }
 /* portrait gallery for photo-led articles (not cropped) */
+/* Galeria wpisu: zdjęcia przychodzą z telefonów, więc mieszają orientacje
+   i proporcje. Kadrowanie do wspólnych proporcji trzyma wiersze równo —
+   pełne ujęcie i tak jest o kliknięcie stąd, w powiększeniu. */
 .article-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: clamp(28px, 4vw, 44px); }
-.article-gallery img { width: 100%; height: auto; display: block; border-radius: 12px; box-shadow: 0 16px 40px rgba(0,41,87,.16); cursor: zoom-in; transition: transform .35s; }
+.article-gallery img { width: 100%; height: auto; display: block; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; box-shadow: 0 16px 40px rgba(0,41,87,.16); cursor: zoom-in; transition: transform .35s; }
 .article-gallery img:hover { transform: translateY(-4px); }
-@media (max-width: 560px) { .article-gallery { grid-template-columns: 1fr; gap: 14px; } }
+/* Jedno zdjęcie — bez siatki i bez kadrowania, dokładnie jak okładka.
+   Nieparzysta liczba — pierwsze idzie na pełną szerokość, dzięki czemu
+   reszta układa się w równe pary zamiast zostawiać pustą kratkę. */
+.article-gallery img:only-child { grid-column: 1 / -1; aspect-ratio: auto; }
+.article-gallery img:first-child:nth-last-child(2n+1):not(:only-child) { grid-column: 1 / -1; aspect-ratio: 16 / 9; }
+@media (max-width: 560px) {
+  .article-gallery { grid-template-columns: 1fr; gap: 14px; }
+  .article-gallery img { aspect-ratio: auto; }
+  .article-gallery img:first-child:nth-last-child(2n+1):not(:only-child) { aspect-ratio: auto; }
+}
 .article-meta { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 20px; }
 .article-meta .tag { background: var(--gold); color: var(--navy-dark); font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 6px 13px; border-radius: 8px; }
 .article-meta time { font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: rgba(22,59,101,.6); }
