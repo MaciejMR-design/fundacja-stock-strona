@@ -1,6 +1,45 @@
 /* GENERATED from content/articles/*.json by build-langs.mjs — do not edit by hand. */
 window.ARTICLES = [
   {
+    "id": "stock-move-challenge",
+    "ts": "2026-08-10",
+    "img": "/uploads/stockmove-2.webp",
+    "images": [
+      "/uploads/stockmove-2.webp",
+      "/uploads/stockmove-1.webp",
+      "/uploads/stockmove-4.webp",
+      "/uploads/stockmove-5.webp",
+      "/uploads/stockmove-3.webp",
+      "/uploads/stockmove-6.webp",
+      "/uploads/stockmove-7.webp"
+    ],
+    "date": {
+      "fr": "10 août 2026"
+    },
+    "title": {
+      "fr": "Stock Move Challenge — la première édition est lancée"
+    },
+    "lead": {
+      "fr": "La première édition du Stock Move Challenge est déjà lancée — et nous pouvons déjà révéler que la prochaine sera soutenue par la Fondation Stock !"
+    },
+    "body": {
+      "fr": [
+        "Le Stock Move Challenge est une initiative qui allie activité physique, bonne énergie et action collective. Elle encourage les collaborateurs, dont nos bénévoles, à bouger, à adopter un mode de vie actif et à créer du lien. Les participants gagnent des points pour différentes formes d’activité tout en faisant vivre les valeurs qui nous sont chères : la coopération, l’engagement et le souci de l’environnement.",
+        "Bien que le défi n’ait commencé que depuis quelques semaines, ses participants ont déjà obtenu des résultats impressionnants :",
+        "✅ 253 participants actifs",
+        "✅ plus de 6 000 activités enregistrées",
+        "✅ près de 30 millions de pas",
+        "✅ 27 572 km parcourus à pied et à vélo",
+        "✅ 1 471 heures d’activité physique",
+        "✅ 1,7 million de calories brûlées",
+        "✅ 995 trajets actifs domicile-travail",
+        "✅ 810 kg d’émissions de CO₂ en moins",
+        "Nous nous réjouissons que l’initiative ait suscité un tel intérêt. Et nous sommes d’autant plus heureux que la Fondation Stock soutiendra la prochaine édition du Stock Move Challenge, en aidant à développer un projet qui réunit mode de vie sain, esprit d’équipe et respect de l’environnement.",
+        "Félicitations à tous les participants pour les résultats obtenus jusqu’ici — et bonne route pour les kilomètres à venir !"
+      ]
+    }
+  },
+  {
     "id": "report2025",
     "ts": "2026-07-31",
     "img": "/uploads/cover-report.svg",
@@ -19,6 +58,36 @@ window.ARTICLES = [
         "Le soutien psychologique reste le fondement de notre travail. En 2025, trois psychothérapeutes ukrainiens, qui collaborent avec nous sans interruption depuis quatre ans, ont accompagné 120 personnes vivant avec les séquelles d’un traumatisme de guerre. Ils leur ont consacré 1 013 heures d’entretiens individuels. En parallèle, avec l’Association Homo Faber, nous avons mené le programme de bourses musicales destiné aux jeunes dont la formation artistique avait été interrompue par la guerre — il a réuni 65 participants et 5 instructeurs.",
         "Nous avons également accordé beaucoup d’attention à celles et ceux qui aident au quotidien. Nous avons organisé 9 formations sur l’accompagnement des personnes en situation d’addiction pour plus de 140 travailleurs sociaux du centre municipal d’aide à la famille, de l’Ensemble des centres de soutien et des foyers d’aide sociale. Selon les directions de ces établissements, chaque professionnel formé rencontrera au cours d’une année au moins vingt cas difficiles — le soutien peut donc toucher indirectement environ 2 800 personnes.",
         "Les Rencontres avec l’art animées par les conservateurs du Musée national de Lublin ont eu lieu 23 fois et ont rassemblé plus de 700 participants. Le bénévolat d’entreprise s’est lui aussi développé : 141 bénévoles ont consacré 1 140 heures au nettoyage des rivières en Pologne et en Tchéquie, au soutien du foyer d’aide sociale de la rue Kosmonautów et à des projets subventionnés. Au total, en 2025, nous avons collaboré avec douze organisations et institutions."
+      ]
+    }
+  },
+  {
+    "id": "spotkanie-ze-sztuka-tamara-lempicka",
+    "ts": "2026-07-09",
+    "cat": "art",
+    "img": "/uploads/tamara-1.webp",
+    "images": [
+      "/uploads/tamara-1.webp",
+      "/uploads/tamara-2.webp",
+      "/uploads/tamara-3.webp",
+      "/uploads/tamara-4.webp",
+      "/uploads/tamara-5.webp",
+      "/uploads/tamara-6.webp"
+    ],
+    "date": {
+      "fr": "9 juillet 2026"
+    },
+    "title": {
+      "fr": "Rencontre avec l’art — Tamara Łempicka"
+    },
+    "lead": {
+      "fr": "Une nouvelle « Rencontre avec l’art » vient de s’achever — organisée par la Fondation Stock avec le Département des initiatives et programmes sociaux de la mairie de Lublin."
+    },
+    "body": {
+      "fr": [
+        "Cette fois, près de 40 participants ont eu l’occasion de découvrir la vie et l’œuvre de Tamara Łempicka – l’une des artistes les plus reconnaissables du XXe siècle, dont les œuvres suscitent encore aujourd’hui un immense intérêt dans le monde entier. Son art et sa vie extraordinaire ont été présentés par Łukasz Wiącek – historien et critique d’art, commissaire d’expositions et coordinateur de la Section d’art contemporain du Musée national de Lublin, qui étudie l’œuvre de Łempicka depuis de nombreuses années.",
+        "Au cours de la rencontre, les participants ont approfondi la première période, la plus fascinante, de sa carrière ainsi que les histoires liées à la création de ses tableaux les plus célèbres. Łempicka, considérée comme l’une des plus importantes représentantes de l’Art déco, a créé un style caractéristique où l’élégance, les formes géométriques et les couleurs intenses composent un langage artistique unique, reconnu dans le monde entier.",
+        "Merci à toutes et à tous pour votre présence et ce moment partagé. Et dès le 13 août, nous vous invitons à la prochaine « Rencontre avec l’art ». À bientôt !"
       ]
     }
   },

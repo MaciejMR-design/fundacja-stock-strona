@@ -1,6 +1,45 @@
 /* GENERATED from content/articles/*.json by build-langs.mjs — do not edit by hand. */
 window.ARTICLES = [
   {
+    "id": "stock-move-challenge",
+    "ts": "2026-08-10",
+    "img": "/uploads/stockmove-2.webp",
+    "images": [
+      "/uploads/stockmove-2.webp",
+      "/uploads/stockmove-1.webp",
+      "/uploads/stockmove-4.webp",
+      "/uploads/stockmove-5.webp",
+      "/uploads/stockmove-3.webp",
+      "/uploads/stockmove-6.webp",
+      "/uploads/stockmove-7.webp"
+    ],
+    "date": {
+      "pl": "10 sierpnia 2026"
+    },
+    "title": {
+      "pl": "Stock Move Challenge — ruszyła pierwsza edycja"
+    },
+    "lead": {
+      "pl": "Pierwsza edycja Stock Move Challenge już ruszyła, a już dziś możemy zdradzić, że kolejna będzie wspierana przez Fundację STOCK!"
+    },
+    "body": {
+      "pl": [
+        "Stock Move Challenge to inicjatywa, która łączy aktywność fizyczną, dobrą energię i wspólne działanie. Zachęca pracowników, w tym naszych wolontariuszy, do ruchu, aktywnego stylu życia i integracji. Uczestnicy zdobywają punkty za różne formy aktywności, a przy okazji realizują wartości, które są nam bliskie – współpracę, zaangażowanie i troskę o środowisko.",
+        "Choć wyzwanie trwa dopiero od kilku tygodni, jego uczestnicy już osiągnęli imponujące wyniki:",
+        "✅ 253 aktywnych uczestników",
+        "✅ ponad 6 000 zarejestrowanych aktywności",
+        "✅ blisko 30 mln wykonanych kroków",
+        "✅ 27 572 km pokonanych pieszo i na rowerze",
+        "✅ 1 471 godzin aktywności fizycznej",
+        "✅ 1,7 mln spalonych kalorii",
+        "✅ 995 aktywnych dojazdów do pracy",
+        "✅ 810 kg mniej emisji CO₂",
+        "Cieszymy się, że inicjatywa spotkała się z tak dużym zainteresowaniem. Tym bardziej cieszy nas, że Fundacja STOCK będzie wspierać kolejną edycję Stock Move Challenge, pomagając rozwijać projekt, który łączy zdrowy styl życia, integrację i troskę o środowisko.",
+        "Gratulujemy wszystkim uczestnikom dotychczasowych wyników i trzymamy kciuki za kolejne kilometry!"
+      ]
+    }
+  },
+  {
     "id": "report2025",
     "ts": "2026-07-31",
     "img": "/uploads/cover-report.svg",
@@ -19,6 +58,36 @@ window.ARTICLES = [
         "Wsparcie psychologiczne pozostaje fundamentem naszej pracy. W 2025 roku troje ukraińskich psychoterapeutów, współpracujących z nami nieprzerwanie od czterech lat, objęło opieką 120 osób doświadczających skutków traumy wojennej. Na indywidualne spotkania z nimi przeznaczyli 1013 godzin. Równolegle, wspólnie ze Stowarzyszeniem Homo Faber, prowadziliśmy program stypendiów muzycznych dla młodzieży, której edukacja artystyczna została przerwana przez wojnę — objął on 65 uczestników i 5 instruktorów.",
         "Wiele uwagi poświęciliśmy również tym, którzy pomagają na co dzień. Zorganizowaliśmy 9 szkoleń z pracy z osobami w kryzysie uzależnienia dla ponad 140 pracowników socjalnych z Miejskiego Ośrodka Pomocy Rodzinie, Zespołu Ośrodków Wsparcia i domów pomocy społecznej. Jak szacują dyrektorzy tych placówek, każdy przeszkolony pracownik zetknie się w ciągu roku z co najmniej dwudziestoma trudnymi przypadkami — wsparcie może więc pośrednio objąć około 2800 osób.",
         "Spotkania ze Sztuką prowadzone przez kuratorów Muzeum Narodowego w Lublinie odbyły się 23 razy i wzięło w nich udział ponad 700 osób. Rozwijał się też wolontariat pracowniczy: 141 wolontariuszy przepracowało 1140 godzin przy sprzątaniu rzek w Polsce i Czechach, wsparciu Domu Pomocy Społecznej przy ul. Kosmonautów oraz w projektach grantowych. Łącznie w 2025 roku współpracowaliśmy z dwunastoma organizacjami i instytucjami."
+      ]
+    }
+  },
+  {
+    "id": "spotkanie-ze-sztuka-tamara-lempicka",
+    "ts": "2026-07-09",
+    "cat": "art",
+    "img": "/uploads/tamara-1.webp",
+    "images": [
+      "/uploads/tamara-1.webp",
+      "/uploads/tamara-2.webp",
+      "/uploads/tamara-3.webp",
+      "/uploads/tamara-4.webp",
+      "/uploads/tamara-5.webp",
+      "/uploads/tamara-6.webp"
+    ],
+    "date": {
+      "pl": "9 lipca 2026"
+    },
+    "title": {
+      "pl": "Spotkanie ze sztuką — Tamara Łempicka"
+    },
+    "lead": {
+      "pl": "Za nami kolejne „Spotkanie ze sztuką”, które Fundacja STOCK organizuje wspólnie z Wydziałem Inicjatyw i Programów Społecznych Urzędu Miasta Lublin."
+    },
+    "body": {
+      "pl": [
+        "Tym razem blisko 40 uczestników miało okazję poznać historię życia i twórczości Tamary Łempickiej – jednej z najbardziej rozpoznawalnych artystek XX wieku, której dzieła do dziś cieszą się ogromnym zainteresowaniem na całym świecie. O jej twórczości i niezwykłym życiu opowiadał Łukasz Wiącek – historyk i krytyk sztuki, kurator wystaw oraz koordynator Sekcji Sztuki Współczesnej Muzeum Narodowego w Lublinie, od lat zajmujący się twórczością Łempickiej.",
+        "Podczas spotkania uczestnicy poznali bliżej pierwszy, najbardziej interesujący okres jej kariery oraz historie związane z powstawaniem najbardziej znanych obrazów. Łempicka, uznawana za jedną z najważniejszych przedstawicielek art déco, stworzyła charakterystyczny styl, w którym elegancja, geometryczne kształty i mocne kolory tworzą wyjątkowy, rozpoznawalny na całym świecie język artystyczny.",
+        "Dziękujemy wszystkim za obecność i wspólnie spędzony czas. A już 13 sierpnia zapraszamy na kolejne „Spotkanie ze sztuką”. Do zobaczenia!"
       ]
     }
   },

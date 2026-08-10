@@ -1,0 +1,68 @@
+{
+  "ts": "2026-07-09",
+  "cat": "art",
+  "img": "/uploads/tamara-1.webp",
+  "images": [
+    "/uploads/tamara-1.webp",
+    "/uploads/tamara-2.webp",
+    "/uploads/tamara-3.webp",
+    "/uploads/tamara-4.webp",
+    "/uploads/tamara-5.webp",
+    "/uploads/tamara-6.webp"
+  ],
+  "title": {
+    "pl": "Spotkanie ze sztuką — Tamara Łempicka",
+    "en": "Art Encounter — Tamara Łempicka",
+    "cz": "Setkání s uměním — Tamara Łempicka",
+    "it": "Incontro con l’arte — Tamara Łempicka",
+    "sk": "Stretnutie s umením — Tamara Łempicka",
+    "de": "Kunstbegegnung — Tamara Łempicka",
+    "fr": "Rencontre avec l’art — Tamara Łempicka"
+  },
+  "lead": {
+    "pl": "Za nami kolejne „Spotkanie ze sztuką”, które Fundacja STOCK organizuje wspólnie z Wydziałem Inicjatyw i Programów Społecznych Urzędu Miasta Lublin.",
+    "en": "Another “Art Encounter” is behind us — organised by the Stock Foundation together with the Department of Social Initiatives and Programmes of the Lublin City Hall.",
+    "cz": "Máme za sebou další „Setkání s uměním“, které Nadace Stock pořádá společně s Odborem sociálních iniciativ a programů Magistrátu města Lublin.",
+    "it": "Si è svolto un altro “Incontro con l’arte”, organizzato dalla Fondazione Stock insieme al Dipartimento per le Iniziative e i Programmi Sociali del Comune di Lublino.",
+    "sk": "Máme za sebou ďalšie „Stretnutie s umením“, ktoré Nadácia Stock organizuje spoločne s Odborom sociálnych iniciatív a programov Mestského úradu v Lubline.",
+    "de": "Eine weitere „Kunstbegegnung“ liegt hinter uns — organisiert von der Stiftung Stock gemeinsam mit der Abteilung für soziale Initiativen und Programme der Stadtverwaltung Lublin.",
+    "fr": "Une nouvelle « Rencontre avec l’art » vient de s’achever — organisée par la Fondation Stock avec le Département des initiatives et programmes sociaux de la mairie de Lublin."
+  },
+  "body": {
+    "pl": [
+      "Tym razem blisko 40 uczestników miało okazję poznać historię życia i twórczości Tamary Łempickiej – jednej z najbardziej rozpoznawalnych artystek XX wieku, której dzieła do dziś cieszą się ogromnym zainteresowaniem na całym świecie. O jej twórczości i niezwykłym życiu opowiadał Łukasz Wiącek – historyk i krytyk sztuki, kurator wystaw oraz koordynator Sekcji Sztuki Współczesnej Muzeum Narodowego w Lublinie, od lat zajmujący się twórczością Łempickiej.",
+      "Podczas spotkania uczestnicy poznali bliżej pierwszy, najbardziej interesujący okres jej kariery oraz historie związane z powstawaniem najbardziej znanych obrazów. Łempicka, uznawana za jedną z najważniejszych przedstawicielek art déco, stworzyła charakterystyczny styl, w którym elegancja, geometryczne kształty i mocne kolory tworzą wyjątkowy, rozpoznawalny na całym świecie język artystyczny.",
+      "Dziękujemy wszystkim za obecność i wspólnie spędzony czas. A już 13 sierpnia zapraszamy na kolejne „Spotkanie ze sztuką”. Do zobaczenia!"
+    ],
+    "en": [
+      "This time, nearly 40 participants had the opportunity to discover the life and work of Tamara Łempicka — one of the most recognisable artists of the 20th century, whose works still attract enormous interest around the world. Her art and extraordinary life were presented by Łukasz Wiącek — art historian and critic, exhibition curator and coordinator of the Contemporary Art Section of the National Museum in Lublin, who has studied Łempicka’s work for many years.",
+      "During the meeting, participants took a closer look at the first and most fascinating period of her career, along with the stories behind her best-known paintings. Łempicka, regarded as one of the most important representatives of Art Deco, created a distinctive style in which elegance, geometric shapes and bold colours form a unique artistic language recognised all over the world.",
+      "Thank you all for coming and for the time spent together. And on 13 August we invite you to the next “Art Encounter”. See you there!"
+    ],
+    "cz": [
+      "Tentokrát mělo téměř 40 účastníků příležitost poznat život a tvorbu Tamary Łempické – jedné z nejznámějších umělkyň 20. století, jejíž díla dodnes vzbuzují obrovský zájem po celém světě. O její tvorbě a neobyčejném životě vyprávěl Łukasz Wiącek – historik a kritik umění, kurátor výstav a koordinátor Sekce současného umění Národního muzea v Lublinu, který se tvorbou Łempické zabývá dlouhá léta.",
+      "Během setkání se účastníci blíže seznámili s prvním, nejzajímavějším obdobím její kariéry a s příběhy vzniku jejích nejslavnějších obrazů. Łempicka, považovaná za jednu z nejvýznamnějších představitelek stylu art deco, vytvořila osobitý styl, v němž elegance, geometrické tvary a výrazné barvy tvoří jedinečný umělecký jazyk rozpoznatelný po celém světě.",
+      "Děkujeme všem za účast a společně strávený čas. A už 13. srpna vás zveme na další „Setkání s uměním“. Na viděnou!"
+    ],
+    "it": [
+      "Questa volta quasi 40 partecipanti hanno avuto l’occasione di conoscere la vita e l’opera di Tamara Łempicka – una delle artiste più riconoscibili del XX secolo, le cui opere suscitano ancora oggi un enorme interesse in tutto il mondo. A raccontare la sua arte e la sua vita straordinaria è stato Łukasz Wiącek – storico e critico d’arte, curatore di mostre e coordinatore della Sezione d’Arte Contemporanea del Museo Nazionale di Lublino, che da anni si occupa dell’opera di Łempicka.",
+      "Durante l’incontro i partecipanti hanno approfondito il primo e più affascinante periodo della sua carriera e le storie legate alla nascita dei suoi quadri più celebri. Łempicka, considerata una delle più importanti esponenti dell’art déco, ha creato uno stile inconfondibile in cui eleganza, forme geometriche e colori decisi compongono un linguaggio artistico unico, riconosciuto in tutto il mondo.",
+      "Grazie a tutti per la presenza e per il tempo trascorso insieme. E già il 13 agosto vi invitiamo al prossimo “Incontro con l’arte”. A presto!"
+    ],
+    "sk": [
+      "Tentoraz malo takmer 40 účastníkov príležitosť spoznať život a tvorbu Tamary Łempickej – jednej z najznámejších umelkýň 20. storočia, ktorej diela dodnes vzbudzujú obrovský záujem na celom svete. O jej tvorbe a neobyčajnom živote rozprával Łukasz Wiącek – historik a kritik umenia, kurátor výstav a koordinátor Sekcie súčasného umenia Národného múzea v Lubline, ktorý sa tvorbe Łempickej venuje dlhé roky.",
+      "Počas stretnutia sa účastníci bližšie zoznámili s prvým, najzaujímavejším obdobím jej kariéry a s príbehmi vzniku jej najznámejších obrazov. Łempicka, považovaná za jednu z najvýznamnejších predstaviteliek art deco, vytvorila osobitý štýl, v ktorom elegancia, geometrické tvary a výrazné farby tvoria jedinečný umelecký jazyk rozpoznateľný na celom svete.",
+      "Ďakujeme všetkým za účasť a spoločne strávený čas. A už 13. augusta vás pozývame na ďalšie „Stretnutie s umením“. Dovidenia!"
+    ],
+    "de": [
+      "Diesmal hatten knapp 40 Teilnehmende die Gelegenheit, das Leben und Werk von Tamara Łempicka kennenzulernen — einer der bekanntesten Künstlerinnen des 20. Jahrhunderts, deren Werke bis heute weltweit auf enormes Interesse stoßen. Über ihr Schaffen und ihr außergewöhnliches Leben sprach Łukasz Wiącek — Kunsthistoriker und -kritiker, Ausstellungskurator und Koordinator der Sektion für zeitgenössische Kunst des Nationalmuseums in Lublin, der sich seit Jahren mit Łempickas Werk beschäftigt.",
+      "Bei dem Treffen lernten die Teilnehmenden die erste und spannendste Phase ihrer Karriere näher kennen sowie die Geschichten hinter ihren berühmtesten Gemälden. Łempicka, die als eine der wichtigsten Vertreterinnen des Art déco gilt, schuf einen unverwechselbaren Stil, in dem Eleganz, geometrische Formen und kräftige Farben eine einzigartige, weltweit erkennbare künstlerische Sprache bilden.",
+      "Wir danken allen für ihr Kommen und die gemeinsam verbrachte Zeit. Und schon am 13. August laden wir zur nächsten „Kunstbegegnung“ ein. Bis dahin!"
+    ],
+    "fr": [
+      "Cette fois, près de 40 participants ont eu l’occasion de découvrir la vie et l’œuvre de Tamara Łempicka – l’une des artistes les plus reconnaissables du XXe siècle, dont les œuvres suscitent encore aujourd’hui un immense intérêt dans le monde entier. Son art et sa vie extraordinaire ont été présentés par Łukasz Wiącek – historien et critique d’art, commissaire d’expositions et coordinateur de la Section d’art contemporain du Musée national de Lublin, qui étudie l’œuvre de Łempicka depuis de nombreuses années.",
+      "Au cours de la rencontre, les participants ont approfondi la première période, la plus fascinante, de sa carrière ainsi que les histoires liées à la création de ses tableaux les plus célèbres. Łempicka, considérée comme l’une des plus importantes représentantes de l’Art déco, a créé un style caractéristique où l’élégance, les formes géométriques et les couleurs intenses composent un langage artistique unique, reconnu dans le monde entier.",
+      "Merci à toutes et à tous pour votre présence et ce moment partagé. Et dès le 13 août, nous vous invitons à la prochaine « Rencontre avec l’art ». À bientôt !"
+    ]
+  }
+}

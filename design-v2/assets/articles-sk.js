@@ -1,6 +1,45 @@
 /* GENERATED from content/articles/*.json by build-langs.mjs — do not edit by hand. */
 window.ARTICLES = [
   {
+    "id": "stock-move-challenge",
+    "ts": "2026-08-10",
+    "img": "/uploads/stockmove-2.webp",
+    "images": [
+      "/uploads/stockmove-2.webp",
+      "/uploads/stockmove-1.webp",
+      "/uploads/stockmove-4.webp",
+      "/uploads/stockmove-5.webp",
+      "/uploads/stockmove-3.webp",
+      "/uploads/stockmove-6.webp",
+      "/uploads/stockmove-7.webp"
+    ],
+    "date": {
+      "sk": "10. augusta 2026"
+    },
+    "title": {
+      "sk": "Stock Move Challenge — prvý ročník odštartoval"
+    },
+    "lead": {
+      "sk": "Prvý ročník Stock Move Challenge už odštartoval — a už dnes môžeme prezradiť, že ten ďalší podporí Nadácia Stock!"
+    },
+    "body": {
+      "sk": [
+        "Stock Move Challenge je iniciatíva, ktorá spája pohyb, dobrú energiu a spoločné úsilie. Povzbudzuje zamestnancov vrátane našich dobrovoľníkov k pohybu, aktívnemu životnému štýlu a vzájomnému spoznávaniu. Účastníci získavajú body za rôzne formy aktivity a zároveň napĺňajú hodnoty, ktoré sú nám blízke – spoluprácu, angažovanosť a starostlivosť o životné prostredie.",
+        "Hoci výzva beží iba niekoľko týždňov, jej účastníci už dosiahli pôsobivé výsledky:",
+        "✅ 253 aktívnych účastníkov",
+        "✅ vyše 6 000 zaznamenaných aktivít",
+        "✅ takmer 30 miliónov krokov",
+        "✅ 27 572 km pešo a na bicykli",
+        "✅ 1 471 hodín pohybu",
+        "✅ 1,7 milióna spálených kalórií",
+        "✅ 995 aktívnych ciest do práce",
+        "✅ o 810 kg nižšie emisie CO₂",
+        "Tešíme sa, že sa iniciatíva stretla s takým veľkým záujmom. A o to viac nás teší, že ďalší ročník Stock Move Challenge podporí Nadácia Stock a pomôže rozvíjať projekt, ktorý spája zdravý životný štýl, súdržnosť a starostlivosť o životné prostredie.",
+        "Gratulujeme všetkým účastníkom k doterajším výsledkom a držíme palce pri ďalších kilometroch!"
+      ]
+    }
+  },
+  {
     "id": "report2025",
     "ts": "2026-07-31",
     "img": "/uploads/cover-report.svg",
@@ -19,6 +58,36 @@ window.ARTICLES = [
         "Psychologická podpora zostáva základom našej práce. V roku 2025 sa traja ukrajinskí psychoterapeuti, ktorí s nami nepretržite spolupracujú už štyri roky, postarali o 120 ľudí zasiahnutých následkami vojnovej traumy. Individuálnym stretnutiam s nimi venovali 1013 hodín. Súbežne sme spolu so Združením Homo Faber viedli program hudobných štipendií pre mladých ľudí, ktorých umelecké vzdelávanie prerušila vojna — zahrnul 65 účastníkov a 5 lektorov.",
         "Veľa pozornosti sme venovali aj tým, ktorí pomáhajú každý deň. Zorganizovali sme 9 školení o práci s ľuďmi v kríze závislosti pre viac než 140 sociálnych pracovníkov z Mestského strediska pomoci rodine, Združenia centier podpory a domovov sociálnych služieb. Podľa riaditeľov týchto zariadení sa každý vyškolený pracovník počas roka stretne najmenej s dvadsiatimi náročnými prípadmi — podpora tak môže nepriamo zasiahnuť približne 2800 ľudí.",
         "Stretnutia s umením vedené kurátormi Národného múzea v Lubline sa konali 23-krát a zúčastnilo sa ich viac než 700 ľudí. Rozvíjalo sa aj firemné dobrovoľníctvo: 141 dobrovoľníkov odpracovalo 1140 hodín pri čistení riek v Poľsku a Česku, podpore domova sociálnych služieb na ulici Kosmonautów a v grantových projektoch. Celkovo sme v roku 2025 spolupracovali s dvanástimi organizáciami a inštitúciami."
+      ]
+    }
+  },
+  {
+    "id": "spotkanie-ze-sztuka-tamara-lempicka",
+    "ts": "2026-07-09",
+    "cat": "art",
+    "img": "/uploads/tamara-1.webp",
+    "images": [
+      "/uploads/tamara-1.webp",
+      "/uploads/tamara-2.webp",
+      "/uploads/tamara-3.webp",
+      "/uploads/tamara-4.webp",
+      "/uploads/tamara-5.webp",
+      "/uploads/tamara-6.webp"
+    ],
+    "date": {
+      "sk": "9. júla 2026"
+    },
+    "title": {
+      "sk": "Stretnutie s umením — Tamara Łempicka"
+    },
+    "lead": {
+      "sk": "Máme za sebou ďalšie „Stretnutie s umením“, ktoré Nadácia Stock organizuje spoločne s Odborom sociálnych iniciatív a programov Mestského úradu v Lubline."
+    },
+    "body": {
+      "sk": [
+        "Tentoraz malo takmer 40 účastníkov príležitosť spoznať život a tvorbu Tamary Łempickej – jednej z najznámejších umelkýň 20. storočia, ktorej diela dodnes vzbudzujú obrovský záujem na celom svete. O jej tvorbe a neobyčajnom živote rozprával Łukasz Wiącek – historik a kritik umenia, kurátor výstav a koordinátor Sekcie súčasného umenia Národného múzea v Lubline, ktorý sa tvorbe Łempickej venuje dlhé roky.",
+        "Počas stretnutia sa účastníci bližšie zoznámili s prvým, najzaujímavejším obdobím jej kariéry a s príbehmi vzniku jej najznámejších obrazov. Łempicka, považovaná za jednu z najvýznamnejších predstaviteliek art deco, vytvorila osobitý štýl, v ktorom elegancia, geometrické tvary a výrazné farby tvoria jedinečný umelecký jazyk rozpoznateľný na celom svete.",
+        "Ďakujeme všetkým za účasť a spoločne strávený čas. A už 13. augusta vás pozývame na ďalšie „Stretnutie s umením“. Dovidenia!"
       ]
     }
   },

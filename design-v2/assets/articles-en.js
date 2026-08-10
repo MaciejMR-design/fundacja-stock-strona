@@ -1,6 +1,45 @@
 /* GENERATED from content/articles/*.json by build-langs.mjs — do not edit by hand. */
 window.ARTICLES = [
   {
+    "id": "stock-move-challenge",
+    "ts": "2026-08-10",
+    "img": "/uploads/stockmove-2.webp",
+    "images": [
+      "/uploads/stockmove-2.webp",
+      "/uploads/stockmove-1.webp",
+      "/uploads/stockmove-4.webp",
+      "/uploads/stockmove-5.webp",
+      "/uploads/stockmove-3.webp",
+      "/uploads/stockmove-6.webp",
+      "/uploads/stockmove-7.webp"
+    ],
+    "date": {
+      "en": "10 August 2026"
+    },
+    "title": {
+      "en": "Stock Move Challenge — the first edition is under way"
+    },
+    "lead": {
+      "en": "The first edition of the Stock Move Challenge is already under way — and we can reveal today that the next one will be supported by the Stock Foundation!"
+    },
+    "body": {
+      "en": [
+        "The Stock Move Challenge is an initiative that combines physical activity, good energy and doing things together. It encourages employees, including our volunteers, to keep moving, lead an active lifestyle and connect with each other. Participants earn points for different forms of activity while living out the values close to our hearts — cooperation, commitment and care for the environment.",
+        "Although the challenge has only been running for a few weeks, its participants have already achieved impressive results:",
+        "✅ 253 active participants",
+        "✅ over 6,000 activities recorded",
+        "✅ nearly 30 million steps taken",
+        "✅ 27,572 km covered on foot and by bike",
+        "✅ 1,471 hours of physical activity",
+        "✅ 1.7 million calories burned",
+        "✅ 995 active commutes to work",
+        "✅ 810 kg less CO₂ emitted",
+        "We are delighted that the initiative has attracted so much interest. And we are all the more pleased that the Stock Foundation will support the next edition of the Stock Move Challenge, helping to grow a project that brings together a healthy lifestyle, team spirit and care for the environment.",
+        "Congratulations to all participants on the results so far — and fingers crossed for the kilometres ahead!"
+      ]
+    }
+  },
+  {
     "id": "report2025",
     "ts": "2026-07-31",
     "img": "/uploads/cover-report.svg",
@@ -19,6 +58,36 @@ window.ARTICLES = [
         "Psychological support remains the foundation of our work. In 2025 three Ukrainian psychotherapists, who have been working with us continuously for four years, cared for 120 people living with the effects of war trauma. They devoted 1,013 hours to individual sessions with them. In parallel, together with the Homo Faber Association, we ran the music scholarship programme for young people whose artistic education had been interrupted by the war — it covered 65 participants and 5 instructors.",
         "We also gave a lot of attention to those who help others every day. We organised 9 training sessions on working with people in addiction crisis for more than 140 social workers from the Municipal Family Support Centre, the Complex of Support Centres and social welfare homes. According to the directors of those institutions, every trained worker will encounter at least twenty difficult cases within a year — which means the support may indirectly reach around 2,800 people.",
         "Art Encounters led by curators of the National Museum in Lublin took place 23 times and gathered more than 700 participants. Employee volunteering kept growing as well: 141 volunteers worked 1,140 hours cleaning rivers in Poland and Czechia, helping the Social Welfare Home on Kosmonautów Street and running grant projects. In total, in 2025 we worked with twelve organisations and institutions."
+      ]
+    }
+  },
+  {
+    "id": "spotkanie-ze-sztuka-tamara-lempicka",
+    "ts": "2026-07-09",
+    "cat": "art",
+    "img": "/uploads/tamara-1.webp",
+    "images": [
+      "/uploads/tamara-1.webp",
+      "/uploads/tamara-2.webp",
+      "/uploads/tamara-3.webp",
+      "/uploads/tamara-4.webp",
+      "/uploads/tamara-5.webp",
+      "/uploads/tamara-6.webp"
+    ],
+    "date": {
+      "en": "9 July 2026"
+    },
+    "title": {
+      "en": "Art Encounter — Tamara Łempicka"
+    },
+    "lead": {
+      "en": "Another “Art Encounter” is behind us — organised by the Stock Foundation together with the Department of Social Initiatives and Programmes of the Lublin City Hall."
+    },
+    "body": {
+      "en": [
+        "This time, nearly 40 participants had the opportunity to discover the life and work of Tamara Łempicka — one of the most recognisable artists of the 20th century, whose works still attract enormous interest around the world. Her art and extraordinary life were presented by Łukasz Wiącek — art historian and critic, exhibition curator and coordinator of the Contemporary Art Section of the National Museum in Lublin, who has studied Łempicka’s work for many years.",
+        "During the meeting, participants took a closer look at the first and most fascinating period of her career, along with the stories behind her best-known paintings. Łempicka, regarded as one of the most important representatives of Art Deco, created a distinctive style in which elegance, geometric shapes and bold colours form a unique artistic language recognised all over the world.",
+        "Thank you all for coming and for the time spent together. And on 13 August we invite you to the next “Art Encounter”. See you there!"
       ]
     }
   },

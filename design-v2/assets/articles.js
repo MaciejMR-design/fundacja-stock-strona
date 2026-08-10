@@ -1,6 +1,147 @@
 /* GENERATED from content/articles/*.json by build-langs.mjs — do not edit by hand. */
 window.ARTICLES = [
   {
+    "ts": "2026-08-10",
+    "img": "/uploads/stockmove-2.webp",
+    "images": [
+      "/uploads/stockmove-2.webp",
+      "/uploads/stockmove-1.webp",
+      "/uploads/stockmove-4.webp",
+      "/uploads/stockmove-5.webp",
+      "/uploads/stockmove-3.webp",
+      "/uploads/stockmove-6.webp",
+      "/uploads/stockmove-7.webp"
+    ],
+    "title": {
+      "pl": "Stock Move Challenge — ruszyła pierwsza edycja",
+      "en": "Stock Move Challenge — the first edition is under way",
+      "cz": "Stock Move Challenge — první ročník odstartoval",
+      "it": "Stock Move Challenge — è partita la prima edizione",
+      "sk": "Stock Move Challenge — prvý ročník odštartoval",
+      "de": "Stock Move Challenge — die erste Ausgabe läuft",
+      "fr": "Stock Move Challenge — la première édition est lancée"
+    },
+    "lead": {
+      "pl": "Pierwsza edycja Stock Move Challenge już ruszyła, a już dziś możemy zdradzić, że kolejna będzie wspierana przez Fundację STOCK!",
+      "en": "The first edition of the Stock Move Challenge is already under way — and we can reveal today that the next one will be supported by the Stock Foundation!",
+      "cz": "První ročník Stock Move Challenge už odstartoval — a už dnes můžeme prozradit, že ten další podpoří Nadace Stock!",
+      "it": "La prima edizione della Stock Move Challenge è già partita — e già oggi possiamo svelare che la prossima sarà sostenuta dalla Fondazione Stock!",
+      "sk": "Prvý ročník Stock Move Challenge už odštartoval — a už dnes môžeme prezradiť, že ten ďalší podporí Nadácia Stock!",
+      "de": "Die erste Ausgabe der Stock Move Challenge läuft bereits — und schon heute können wir verraten, dass die nächste von der Stiftung Stock unterstützt wird!",
+      "fr": "La première édition du Stock Move Challenge est déjà lancée — et nous pouvons déjà révéler que la prochaine sera soutenue par la Fondation Stock !"
+    },
+    "body": {
+      "pl": [
+        "Stock Move Challenge to inicjatywa, która łączy aktywność fizyczną, dobrą energię i wspólne działanie. Zachęca pracowników, w tym naszych wolontariuszy, do ruchu, aktywnego stylu życia i integracji. Uczestnicy zdobywają punkty za różne formy aktywności, a przy okazji realizują wartości, które są nam bliskie – współpracę, zaangażowanie i troskę o środowisko.",
+        "Choć wyzwanie trwa dopiero od kilku tygodni, jego uczestnicy już osiągnęli imponujące wyniki:",
+        "✅ 253 aktywnych uczestników",
+        "✅ ponad 6 000 zarejestrowanych aktywności",
+        "✅ blisko 30 mln wykonanych kroków",
+        "✅ 27 572 km pokonanych pieszo i na rowerze",
+        "✅ 1 471 godzin aktywności fizycznej",
+        "✅ 1,7 mln spalonych kalorii",
+        "✅ 995 aktywnych dojazdów do pracy",
+        "✅ 810 kg mniej emisji CO₂",
+        "Cieszymy się, że inicjatywa spotkała się z tak dużym zainteresowaniem. Tym bardziej cieszy nas, że Fundacja STOCK będzie wspierać kolejną edycję Stock Move Challenge, pomagając rozwijać projekt, który łączy zdrowy styl życia, integrację i troskę o środowisko.",
+        "Gratulujemy wszystkim uczestnikom dotychczasowych wyników i trzymamy kciuki za kolejne kilometry!"
+      ],
+      "en": [
+        "The Stock Move Challenge is an initiative that combines physical activity, good energy and doing things together. It encourages employees, including our volunteers, to keep moving, lead an active lifestyle and connect with each other. Participants earn points for different forms of activity while living out the values close to our hearts — cooperation, commitment and care for the environment.",
+        "Although the challenge has only been running for a few weeks, its participants have already achieved impressive results:",
+        "✅ 253 active participants",
+        "✅ over 6,000 activities recorded",
+        "✅ nearly 30 million steps taken",
+        "✅ 27,572 km covered on foot and by bike",
+        "✅ 1,471 hours of physical activity",
+        "✅ 1.7 million calories burned",
+        "✅ 995 active commutes to work",
+        "✅ 810 kg less CO₂ emitted",
+        "We are delighted that the initiative has attracted so much interest. And we are all the more pleased that the Stock Foundation will support the next edition of the Stock Move Challenge, helping to grow a project that brings together a healthy lifestyle, team spirit and care for the environment.",
+        "Congratulations to all participants on the results so far — and fingers crossed for the kilometres ahead!"
+      ],
+      "cz": [
+        "Stock Move Challenge je iniciativa, která spojuje pohyb, dobrou energii a společné úsilí. Povzbuzuje zaměstnance, včetně našich dobrovolníků, k pohybu, aktivnímu životnímu stylu a vzájemnému poznávání. Účastníci získávají body za různé formy aktivity a zároveň naplňují hodnoty, které jsou nám blízké – spolupráci, angažovanost a péči o životní prostředí.",
+        "Přestože výzva běží teprve několik týdnů, její účastníci už dosáhli působivých výsledků:",
+        "✅ 253 aktivních účastníků",
+        "✅ přes 6 000 zaznamenaných aktivit",
+        "✅ téměř 30 milionů kroků",
+        "✅ 27 572 km pěšky a na kole",
+        "✅ 1 471 hodin pohybu",
+        "✅ 1,7 milionu spálených kalorií",
+        "✅ 995 aktivních cest do práce",
+        "✅ o 810 kg nižší emise CO₂",
+        "Máme radost, že se iniciativa setkala s tak velkým zájmem. A o to víc nás těší, že další ročník Stock Move Challenge podpoří Nadace Stock a pomůže rozvíjet projekt, který spojuje zdravý životní styl, soudržnost a péči o životní prostředí.",
+        "Gratulujeme všem účastníkům k dosavadním výsledkům a držíme palce na dalších kilometrech!"
+      ],
+      "it": [
+        "La Stock Move Challenge è un’iniziativa che unisce attività fisica, buona energia e spirito di squadra. Incoraggia i dipendenti, compresi i nostri volontari, a muoversi, condurre uno stile di vita attivo e stare insieme. I partecipanti guadagnano punti per diverse forme di attività, mettendo in pratica i valori che ci stanno a cuore: collaborazione, impegno e cura dell’ambiente.",
+        "Sebbene la sfida sia in corso solo da poche settimane, i partecipanti hanno già raggiunto risultati impressionanti:",
+        "✅ 253 partecipanti attivi",
+        "✅ oltre 6.000 attività registrate",
+        "✅ quasi 30 milioni di passi",
+        "✅ 27.572 km percorsi a piedi e in bicicletta",
+        "✅ 1.471 ore di attività fisica",
+        "✅ 1,7 milioni di calorie bruciate",
+        "✅ 995 tragitti attivi casa-lavoro",
+        "✅ 810 kg di emissioni di CO₂ in meno",
+        "Siamo felici che l’iniziativa abbia suscitato tanto interesse. E ci rallegra ancora di più che la Fondazione Stock sosterrà la prossima edizione della Stock Move Challenge, aiutando a far crescere un progetto che unisce stile di vita sano, integrazione e cura dell’ambiente.",
+        "Congratulazioni a tutti i partecipanti per i risultati raggiunti finora — e in bocca al lupo per i prossimi chilometri!"
+      ],
+      "sk": [
+        "Stock Move Challenge je iniciatíva, ktorá spája pohyb, dobrú energiu a spoločné úsilie. Povzbudzuje zamestnancov vrátane našich dobrovoľníkov k pohybu, aktívnemu životnému štýlu a vzájomnému spoznávaniu. Účastníci získavajú body za rôzne formy aktivity a zároveň napĺňajú hodnoty, ktoré sú nám blízke – spoluprácu, angažovanosť a starostlivosť o životné prostredie.",
+        "Hoci výzva beží iba niekoľko týždňov, jej účastníci už dosiahli pôsobivé výsledky:",
+        "✅ 253 aktívnych účastníkov",
+        "✅ vyše 6 000 zaznamenaných aktivít",
+        "✅ takmer 30 miliónov krokov",
+        "✅ 27 572 km pešo a na bicykli",
+        "✅ 1 471 hodín pohybu",
+        "✅ 1,7 milióna spálených kalórií",
+        "✅ 995 aktívnych ciest do práce",
+        "✅ o 810 kg nižšie emisie CO₂",
+        "Tešíme sa, že sa iniciatíva stretla s takým veľkým záujmom. A o to viac nás teší, že ďalší ročník Stock Move Challenge podporí Nadácia Stock a pomôže rozvíjať projekt, ktorý spája zdravý životný štýl, súdržnosť a starostlivosť o životné prostredie.",
+        "Gratulujeme všetkým účastníkom k doterajším výsledkom a držíme palce pri ďalších kilometroch!"
+      ],
+      "de": [
+        "Die Stock Move Challenge ist eine Initiative, die Bewegung, gute Energie und gemeinsames Engagement verbindet. Sie ermutigt die Mitarbeitenden, darunter unsere Freiwilligen, zu Bewegung, einem aktiven Lebensstil und zum Miteinander. Die Teilnehmenden sammeln Punkte für verschiedene Aktivitäten und leben dabei die Werte, die uns am Herzen liegen — Zusammenarbeit, Engagement und Sorge um die Umwelt.",
+        "Obwohl die Challenge erst seit wenigen Wochen läuft, haben die Teilnehmenden bereits beeindruckende Ergebnisse erzielt:",
+        "✅ 253 aktive Teilnehmende",
+        "✅ über 6.000 erfasste Aktivitäten",
+        "✅ fast 30 Millionen Schritte",
+        "✅ 27.572 km zu Fuß und mit dem Rad",
+        "✅ 1.471 Stunden Bewegung",
+        "✅ 1,7 Millionen verbrannte Kalorien",
+        "✅ 995 aktive Arbeitswege",
+        "✅ 810 kg weniger CO₂-Ausstoß",
+        "Wir freuen uns, dass die Initiative auf so großes Interesse gestoßen ist. Und umso mehr freut es uns, dass die Stiftung Stock die nächste Ausgabe der Stock Move Challenge unterstützen wird — und damit hilft, ein Projekt weiterzuentwickeln, das einen gesunden Lebensstil, Gemeinschaft und Umweltbewusstsein verbindet.",
+        "Wir gratulieren allen Teilnehmenden zu den bisherigen Ergebnissen und drücken die Daumen für die nächsten Kilometer!"
+      ],
+      "fr": [
+        "Le Stock Move Challenge est une initiative qui allie activité physique, bonne énergie et action collective. Elle encourage les collaborateurs, dont nos bénévoles, à bouger, à adopter un mode de vie actif et à créer du lien. Les participants gagnent des points pour différentes formes d’activité tout en faisant vivre les valeurs qui nous sont chères : la coopération, l’engagement et le souci de l’environnement.",
+        "Bien que le défi n’ait commencé que depuis quelques semaines, ses participants ont déjà obtenu des résultats impressionnants :",
+        "✅ 253 participants actifs",
+        "✅ plus de 6 000 activités enregistrées",
+        "✅ près de 30 millions de pas",
+        "✅ 27 572 km parcourus à pied et à vélo",
+        "✅ 1 471 heures d’activité physique",
+        "✅ 1,7 million de calories brûlées",
+        "✅ 995 trajets actifs domicile-travail",
+        "✅ 810 kg d’émissions de CO₂ en moins",
+        "Nous nous réjouissons que l’initiative ait suscité un tel intérêt. Et nous sommes d’autant plus heureux que la Fondation Stock soutiendra la prochaine édition du Stock Move Challenge, en aidant à développer un projet qui réunit mode de vie sain, esprit d’équipe et respect de l’environnement.",
+        "Félicitations à tous les participants pour les résultats obtenus jusqu’ici — et bonne route pour les kilomètres à venir !"
+      ]
+    },
+    "id": "stock-move-challenge",
+    "date": {
+      "en": "10 August 2026",
+      "pl": "10 sierpnia 2026",
+      "cz": "10. srpna 2026",
+      "it": "10 agosto 2026",
+      "sk": "10. augusta 2026",
+      "de": "10. August 2026",
+      "fr": "10 août 2026"
+    }
+  },
+  {
     "id": "report2025",
     "ts": "2026-07-31",
     "img": "/uploads/cover-report.svg",
@@ -74,6 +215,84 @@ window.ARTICLES = [
         "Nous avons également accordé beaucoup d’attention à celles et ceux qui aident au quotidien. Nous avons organisé 9 formations sur l’accompagnement des personnes en situation d’addiction pour plus de 140 travailleurs sociaux du centre municipal d’aide à la famille, de l’Ensemble des centres de soutien et des foyers d’aide sociale. Selon les directions de ces établissements, chaque professionnel formé rencontrera au cours d’une année au moins vingt cas difficiles — le soutien peut donc toucher indirectement environ 2 800 personnes.",
         "Les Rencontres avec l’art animées par les conservateurs du Musée national de Lublin ont eu lieu 23 fois et ont rassemblé plus de 700 participants. Le bénévolat d’entreprise s’est lui aussi développé : 141 bénévoles ont consacré 1 140 heures au nettoyage des rivières en Pologne et en Tchéquie, au soutien du foyer d’aide sociale de la rue Kosmonautów et à des projets subventionnés. Au total, en 2025, nous avons collaboré avec douze organisations et institutions."
       ]
+    }
+  },
+  {
+    "ts": "2026-07-09",
+    "cat": "art",
+    "img": "/uploads/tamara-1.webp",
+    "images": [
+      "/uploads/tamara-1.webp",
+      "/uploads/tamara-2.webp",
+      "/uploads/tamara-3.webp",
+      "/uploads/tamara-4.webp",
+      "/uploads/tamara-5.webp",
+      "/uploads/tamara-6.webp"
+    ],
+    "title": {
+      "pl": "Spotkanie ze sztuką — Tamara Łempicka",
+      "en": "Art Encounter — Tamara Łempicka",
+      "cz": "Setkání s uměním — Tamara Łempicka",
+      "it": "Incontro con l’arte — Tamara Łempicka",
+      "sk": "Stretnutie s umením — Tamara Łempicka",
+      "de": "Kunstbegegnung — Tamara Łempicka",
+      "fr": "Rencontre avec l’art — Tamara Łempicka"
+    },
+    "lead": {
+      "pl": "Za nami kolejne „Spotkanie ze sztuką”, które Fundacja STOCK organizuje wspólnie z Wydziałem Inicjatyw i Programów Społecznych Urzędu Miasta Lublin.",
+      "en": "Another “Art Encounter” is behind us — organised by the Stock Foundation together with the Department of Social Initiatives and Programmes of the Lublin City Hall.",
+      "cz": "Máme za sebou další „Setkání s uměním“, které Nadace Stock pořádá společně s Odborem sociálních iniciativ a programů Magistrátu města Lublin.",
+      "it": "Si è svolto un altro “Incontro con l’arte”, organizzato dalla Fondazione Stock insieme al Dipartimento per le Iniziative e i Programmi Sociali del Comune di Lublino.",
+      "sk": "Máme za sebou ďalšie „Stretnutie s umením“, ktoré Nadácia Stock organizuje spoločne s Odborom sociálnych iniciatív a programov Mestského úradu v Lubline.",
+      "de": "Eine weitere „Kunstbegegnung“ liegt hinter uns — organisiert von der Stiftung Stock gemeinsam mit der Abteilung für soziale Initiativen und Programme der Stadtverwaltung Lublin.",
+      "fr": "Une nouvelle « Rencontre avec l’art » vient de s’achever — organisée par la Fondation Stock avec le Département des initiatives et programmes sociaux de la mairie de Lublin."
+    },
+    "body": {
+      "pl": [
+        "Tym razem blisko 40 uczestników miało okazję poznać historię życia i twórczości Tamary Łempickiej – jednej z najbardziej rozpoznawalnych artystek XX wieku, której dzieła do dziś cieszą się ogromnym zainteresowaniem na całym świecie. O jej twórczości i niezwykłym życiu opowiadał Łukasz Wiącek – historyk i krytyk sztuki, kurator wystaw oraz koordynator Sekcji Sztuki Współczesnej Muzeum Narodowego w Lublinie, od lat zajmujący się twórczością Łempickiej.",
+        "Podczas spotkania uczestnicy poznali bliżej pierwszy, najbardziej interesujący okres jej kariery oraz historie związane z powstawaniem najbardziej znanych obrazów. Łempicka, uznawana za jedną z najważniejszych przedstawicielek art déco, stworzyła charakterystyczny styl, w którym elegancja, geometryczne kształty i mocne kolory tworzą wyjątkowy, rozpoznawalny na całym świecie język artystyczny.",
+        "Dziękujemy wszystkim za obecność i wspólnie spędzony czas. A już 13 sierpnia zapraszamy na kolejne „Spotkanie ze sztuką”. Do zobaczenia!"
+      ],
+      "en": [
+        "This time, nearly 40 participants had the opportunity to discover the life and work of Tamara Łempicka — one of the most recognisable artists of the 20th century, whose works still attract enormous interest around the world. Her art and extraordinary life were presented by Łukasz Wiącek — art historian and critic, exhibition curator and coordinator of the Contemporary Art Section of the National Museum in Lublin, who has studied Łempicka’s work for many years.",
+        "During the meeting, participants took a closer look at the first and most fascinating period of her career, along with the stories behind her best-known paintings. Łempicka, regarded as one of the most important representatives of Art Deco, created a distinctive style in which elegance, geometric shapes and bold colours form a unique artistic language recognised all over the world.",
+        "Thank you all for coming and for the time spent together. And on 13 August we invite you to the next “Art Encounter”. See you there!"
+      ],
+      "cz": [
+        "Tentokrát mělo téměř 40 účastníků příležitost poznat život a tvorbu Tamary Łempické – jedné z nejznámějších umělkyň 20. století, jejíž díla dodnes vzbuzují obrovský zájem po celém světě. O její tvorbě a neobyčejném životě vyprávěl Łukasz Wiącek – historik a kritik umění, kurátor výstav a koordinátor Sekce současného umění Národního muzea v Lublinu, který se tvorbou Łempické zabývá dlouhá léta.",
+        "Během setkání se účastníci blíže seznámili s prvním, nejzajímavějším obdobím její kariéry a s příběhy vzniku jejích nejslavnějších obrazů. Łempicka, považovaná za jednu z nejvýznamnějších představitelek stylu art deco, vytvořila osobitý styl, v němž elegance, geometrické tvary a výrazné barvy tvoří jedinečný umělecký jazyk rozpoznatelný po celém světě.",
+        "Děkujeme všem za účast a společně strávený čas. A už 13. srpna vás zveme na další „Setkání s uměním“. Na viděnou!"
+      ],
+      "it": [
+        "Questa volta quasi 40 partecipanti hanno avuto l’occasione di conoscere la vita e l’opera di Tamara Łempicka – una delle artiste più riconoscibili del XX secolo, le cui opere suscitano ancora oggi un enorme interesse in tutto il mondo. A raccontare la sua arte e la sua vita straordinaria è stato Łukasz Wiącek – storico e critico d’arte, curatore di mostre e coordinatore della Sezione d’Arte Contemporanea del Museo Nazionale di Lublino, che da anni si occupa dell’opera di Łempicka.",
+        "Durante l’incontro i partecipanti hanno approfondito il primo e più affascinante periodo della sua carriera e le storie legate alla nascita dei suoi quadri più celebri. Łempicka, considerata una delle più importanti esponenti dell’art déco, ha creato uno stile inconfondibile in cui eleganza, forme geometriche e colori decisi compongono un linguaggio artistico unico, riconosciuto in tutto il mondo.",
+        "Grazie a tutti per la presenza e per il tempo trascorso insieme. E già il 13 agosto vi invitiamo al prossimo “Incontro con l’arte”. A presto!"
+      ],
+      "sk": [
+        "Tentoraz malo takmer 40 účastníkov príležitosť spoznať život a tvorbu Tamary Łempickej – jednej z najznámejších umelkýň 20. storočia, ktorej diela dodnes vzbudzujú obrovský záujem na celom svete. O jej tvorbe a neobyčajnom živote rozprával Łukasz Wiącek – historik a kritik umenia, kurátor výstav a koordinátor Sekcie súčasného umenia Národného múzea v Lubline, ktorý sa tvorbe Łempickej venuje dlhé roky.",
+        "Počas stretnutia sa účastníci bližšie zoznámili s prvým, najzaujímavejším obdobím jej kariéry a s príbehmi vzniku jej najznámejších obrazov. Łempicka, považovaná za jednu z najvýznamnejších predstaviteliek art deco, vytvorila osobitý štýl, v ktorom elegancia, geometrické tvary a výrazné farby tvoria jedinečný umelecký jazyk rozpoznateľný na celom svete.",
+        "Ďakujeme všetkým za účasť a spoločne strávený čas. A už 13. augusta vás pozývame na ďalšie „Stretnutie s umením“. Dovidenia!"
+      ],
+      "de": [
+        "Diesmal hatten knapp 40 Teilnehmende die Gelegenheit, das Leben und Werk von Tamara Łempicka kennenzulernen — einer der bekanntesten Künstlerinnen des 20. Jahrhunderts, deren Werke bis heute weltweit auf enormes Interesse stoßen. Über ihr Schaffen und ihr außergewöhnliches Leben sprach Łukasz Wiącek — Kunsthistoriker und -kritiker, Ausstellungskurator und Koordinator der Sektion für zeitgenössische Kunst des Nationalmuseums in Lublin, der sich seit Jahren mit Łempickas Werk beschäftigt.",
+        "Bei dem Treffen lernten die Teilnehmenden die erste und spannendste Phase ihrer Karriere näher kennen sowie die Geschichten hinter ihren berühmtesten Gemälden. Łempicka, die als eine der wichtigsten Vertreterinnen des Art déco gilt, schuf einen unverwechselbaren Stil, in dem Eleganz, geometrische Formen und kräftige Farben eine einzigartige, weltweit erkennbare künstlerische Sprache bilden.",
+        "Wir danken allen für ihr Kommen und die gemeinsam verbrachte Zeit. Und schon am 13. August laden wir zur nächsten „Kunstbegegnung“ ein. Bis dahin!"
+      ],
+      "fr": [
+        "Cette fois, près de 40 participants ont eu l’occasion de découvrir la vie et l’œuvre de Tamara Łempicka – l’une des artistes les plus reconnaissables du XXe siècle, dont les œuvres suscitent encore aujourd’hui un immense intérêt dans le monde entier. Son art et sa vie extraordinaire ont été présentés par Łukasz Wiącek – historien et critique d’art, commissaire d’expositions et coordinateur de la Section d’art contemporain du Musée national de Lublin, qui étudie l’œuvre de Łempicka depuis de nombreuses années.",
+        "Au cours de la rencontre, les participants ont approfondi la première période, la plus fascinante, de sa carrière ainsi que les histoires liées à la création de ses tableaux les plus célèbres. Łempicka, considérée comme l’une des plus importantes représentantes de l’Art déco, a créé un style caractéristique où l’élégance, les formes géométriques et les couleurs intenses composent un langage artistique unique, reconnu dans le monde entier.",
+        "Merci à toutes et à tous pour votre présence et ce moment partagé. Et dès le 13 août, nous vous invitons à la prochaine « Rencontre avec l’art ». À bientôt !"
+      ]
+    },
+    "id": "spotkanie-ze-sztuka-tamara-lempicka",
+    "date": {
+      "en": "9 July 2026",
+      "pl": "9 lipca 2026",
+      "cz": "9. července 2026",
+      "it": "9 luglio 2026",
+      "sk": "9. júla 2026",
+      "de": "9. Juli 2026",
+      "fr": "9 juillet 2026"
     }
   },
   {
