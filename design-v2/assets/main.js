@@ -502,28 +502,75 @@ if (heroSlides && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
   }
 }
 
-/* lightbox — click any content image to enlarge */
+/* lightbox — click any content image to enlarge.
+   Zdjęcie otwarte z galerii artykułu dostaje strzałki (oraz ← → i przesunięcie
+   palcem), żeby dało się przeglądać całą galerię bez zamykania powiększenia.
+   Pojedyncze zdjęcia (okładka, portret osoby) otwierają się bez strzałek. */
 const lb = document.createElement('div');
 lb.className = 'lightbox';
-lb.innerHTML = '<button class="lb-close" aria-label="Close">✕</button><img src="" alt=""><span class="lb-caption"></span>';
+lb.innerHTML = '<button class="lb-close" aria-label="Close">✕</button>' +
+  '<button class="lb-nav lb-prev" aria-label="‹">‹</button>' +
+  '<button class="lb-nav lb-next" aria-label="›">›</button>' +
+  '<img src="" alt=""><span class="lb-count"></span><span class="lb-caption"></span>';
 document.body.appendChild(lb);
 const lbImg = lb.querySelector('img');
 const lbCap = lb.querySelector('.lb-caption');
-function lbOpen(img) {
+const lbCount = lb.querySelector('.lb-count');
+const lbPrev = lb.querySelector('.lb-prev');
+const lbNext = lb.querySelector('.lb-next');
+let lbLista = [];    // zdjęcia z tej samej galerii co kliknięte
+let lbIndeks = 0;
+
+function lbPokaz() {
+  const img = lbLista[lbIndeks];
+  if (!img) return;
   lbImg.src = img.currentSrc || img.src;
   lbImg.alt = img.alt || '';
   lbCap.textContent = img.alt || '';
   lbCap.style.display = img.alt ? '' : 'none';
+  const galeria = lbLista.length > 1;
+  lbPrev.style.display = galeria ? '' : 'none';
+  lbNext.style.display = galeria ? '' : 'none';
+  lbCount.style.display = galeria ? '' : 'none';
+  lbCount.textContent = galeria ? (lbIndeks + 1) + ' / ' + lbLista.length : '';
+}
+function lbKrok(delta) {
+  if (lbLista.length < 2) return;
+  lbIndeks = (lbIndeks + delta + lbLista.length) % lbLista.length;   // zapętlone
+  lbPokaz();
+}
+function lbOpen(img) {
+  /* galeria = wspólny kontener; poza nim zdjęcie jest solo */
+  const kontener = img.closest('.article-gallery, .award-photos');
+  lbLista = kontener ? [...kontener.querySelectorAll('img')] : [img];
+  lbIndeks = Math.max(0, lbLista.indexOf(img));
+  lbPokaz();
   lb.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
 function lbClose() {
   lb.classList.remove('open');
   document.body.style.overflow = '';
-  setTimeout(() => { if (!lb.classList.contains('open')) lbImg.src = ''; }, 300);
+  setTimeout(() => { if (!lb.classList.contains('open')) { lbImg.src = ''; lbLista = []; } }, 300);
 }
 lb.addEventListener('click', lbClose);
-document.addEventListener('keydown', e => { if (e.key === 'Escape') lbClose(); });
+lbPrev.addEventListener('click', e => { e.stopPropagation(); lbKrok(-1); });
+lbNext.addEventListener('click', e => { e.stopPropagation(); lbKrok(1); });
+document.addEventListener('keydown', e => {
+  if (!lb.classList.contains('open')) { if (e.key === 'Escape') lbClose(); return; }
+  if (e.key === 'Escape') lbClose();
+  else if (e.key === 'ArrowLeft') lbKrok(-1);
+  else if (e.key === 'ArrowRight') lbKrok(1);
+});
+/* przesunięcie palcem na telefonie */
+let lbDotykX = null;
+lb.addEventListener('touchstart', e => { lbDotykX = e.touches[0].clientX; }, { passive: true });
+lb.addEventListener('touchend', e => {
+  if (lbDotykX === null) return;
+  const dx = e.changedTouches[0].clientX - lbDotykX;
+  lbDotykX = null;
+  if (Math.abs(dx) > 45) lbKrok(dx < 0 ? 1 : -1);
+}, { passive: true });
 document.addEventListener('click', e => {
   const img = e.target.closest('img');
   if (!img) return;

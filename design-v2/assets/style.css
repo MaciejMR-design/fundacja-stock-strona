@@ -602,6 +602,19 @@ footer.site { background: var(--navy-dark); }
 .lightbox .lb-caption { color: rgba(255,255,255,.75); font-size: 13px; letter-spacing: .04em; text-align: center; max-width: 700px; }
 .lightbox .lb-close { position: absolute; top: 22px; right: 26px; width: 46px; height: 46px; border: 1px solid rgba(205,158,12,.55); border-radius: 10px; background: rgba(255,255,255,.06); color: #D0A41B; font-size: 22px; line-height: 1; cursor: pointer; transition: background .25s, transform .25s; }
 .lightbox .lb-close:hover { background: rgba(205,158,12,.2); transform: rotate(90deg); }
+/* strzałki galerii — pokazują się tylko, gdy powiększenie ma więcej niż jedno
+   zdjęcie (main.js chowa je przy pojedynczym). Na telefonie niżej i mniejsze,
+   żeby nie zasłaniały zdjęcia — tam głównym gestem jest przesunięcie palcem. */
+.lightbox .lb-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 52px; height: 64px; border: 1px solid rgba(205,158,12,.55); border-radius: 12px; background: rgba(255,255,255,.06); color: #D0A41B; font-size: 34px; line-height: 1; cursor: pointer; transition: background .25s; z-index: 2; }
+.lightbox .lb-prev { left: 22px; }
+.lightbox .lb-next { right: 22px; }
+.lightbox .lb-nav:hover { background: rgba(205,158,12,.25); }
+.lightbox .lb-count { color: rgba(255,255,255,.75); font-size: 13px; letter-spacing: .12em; font-weight: 600; }
+@media (max-width: 620px) {
+  .lightbox .lb-nav { width: 42px; height: 52px; font-size: 26px; top: auto; bottom: 18px; transform: none; }
+  .lightbox .lb-prev { left: 16px; }
+  .lightbox .lb-next { right: 16px; }
+}
 
 /* language fade */
 .i18n-fade { transition: opacity .22s ease; }
