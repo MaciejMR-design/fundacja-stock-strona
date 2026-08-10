@@ -120,7 +120,12 @@ header.site.scrolled .logo img { height: 42px; }
 .hero h1 em { font-style: italic; color: var(--gold-light); }
 .hero p { margin: 0; max-width: 540px; font-size: 17px; line-height: 1.65; color: rgba(255,255,255,.82); }
 .hero .overline span:last-child { color: var(--gold-light); font-size: 13px; }
-.fade-up { opacity: 0; transform: translateY(26px); animation: fadeUp .9s cubic-bezier(.22,.75,.35,1) forwards; }
+/* Wejście od 30% widoczności, nie od zera: treść w pełni przezroczysta nie
+   liczy się jako pierwszy render — przeglądarka rejestrowała FCP dopiero po
+   ZAKOŃCZENIU animacji (~1,3 s po gotowości sieci; zmierzone Lighthousem
+   11.08.2026, po zmianie 296 ms). Od 0.3 tekst liczy się od pierwszej klatki,
+   a wejście nadal wygląda jak delikatne pojawienie. */
+.fade-up { opacity: .3; transform: translateY(26px); animation: fadeUp .9s cubic-bezier(.22,.75,.35,1) forwards; }
 .fade-up.d1 { animation-delay: .15s; } .fade-up.d2 { animation-delay: .35s; } .fade-up.d3 { animation-delay: .55s; } .fade-up.d4 { animation-delay: .75s; }
 @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
 .scroll-hint { position: absolute; left: 50%; bottom: 26px; transform: translateX(-50%); width: 26px; height: 42px; border: 1.5px solid rgba(255,255,255,.45); border-radius: 14px; }

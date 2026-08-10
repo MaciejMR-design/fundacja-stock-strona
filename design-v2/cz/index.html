@@ -46,16 +46,16 @@
         <img class="hero-photo is-active" src="/uploads/hero-museum-1280.jpg" srcset="/uploads/hero-museum-800.jpg 800w, /uploads/hero-museum-1280.jpg 1280w, /uploads/hero-museum-1600.jpg 1600w" sizes="(min-width: 981px) 64vw, 100vw" style="object-position: 50% 38%" alt="" aria-hidden="true" fetchpriority="high" decoding="async">
       </picture>
       <picture>
-        <source type="image/webp" srcset="/uploads/hero-music-800.webp 800w, /uploads/hero-music-1280.webp 1280w, /uploads/hero-music-1600.webp 1600w" sizes="(min-width: 981px) 64vw, 100vw">
-        <img class="hero-photo" src="/uploads/hero-music-1280.jpg" srcset="/uploads/hero-music-800.jpg 800w, /uploads/hero-music-1280.jpg 1280w, /uploads/hero-music-1600.jpg 1600w" sizes="(min-width: 981px) 64vw, 100vw" style="object-position: 48% 42%" alt="" aria-hidden="true" fetchpriority="low" decoding="async">
+        <source type="image/webp" data-srcset="/uploads/hero-music-800.webp 800w, /uploads/hero-music-1280.webp 1280w, /uploads/hero-music-1600.webp 1600w" sizes="(min-width: 981px) 64vw, 100vw">
+        <img class="hero-photo" data-src="/uploads/hero-music-1280.jpg" data-srcset="/uploads/hero-music-800.jpg 800w, /uploads/hero-music-1280.jpg 1280w, /uploads/hero-music-1600.jpg 1600w" sizes="(min-width: 981px) 64vw, 100vw" style="object-position: 48% 42%" alt="" aria-hidden="true" fetchpriority="low" data-hero-late="1" decoding="async">
       </picture>
       <picture>
-        <source type="image/webp" srcset="/uploads/hero-training-800.webp 800w, /uploads/hero-training-1280.webp 1280w, /uploads/hero-training-1600.webp 1600w" sizes="(min-width: 981px) 64vw, 100vw">
-        <img class="hero-photo" src="/uploads/hero-training-1280.jpg" srcset="/uploads/hero-training-800.jpg 800w, /uploads/hero-training-1280.jpg 1280w, /uploads/hero-training-1600.jpg 1600w" sizes="(min-width: 981px) 64vw, 100vw" style="object-position: 50% 46%" alt="" aria-hidden="true" fetchpriority="low" decoding="async">
+        <source type="image/webp" data-srcset="/uploads/hero-training-800.webp 800w, /uploads/hero-training-1280.webp 1280w, /uploads/hero-training-1600.webp 1600w" sizes="(min-width: 981px) 64vw, 100vw">
+        <img class="hero-photo" data-src="/uploads/hero-training-1280.jpg" data-srcset="/uploads/hero-training-800.jpg 800w, /uploads/hero-training-1280.jpg 1280w, /uploads/hero-training-1600.jpg 1600w" sizes="(min-width: 981px) 64vw, 100vw" style="object-position: 50% 46%" alt="" aria-hidden="true" fetchpriority="low" data-hero-late="1" decoding="async">
       </picture>
       <picture>
-        <source type="image/webp" srcset="/uploads/hero-volunteers-800.webp 800w, /uploads/hero-volunteers-1280.webp 1280w, /uploads/hero-volunteers-1600.webp 1600w" sizes="(min-width: 981px) 64vw, 100vw">
-        <img class="hero-photo" src="/uploads/hero-volunteers-1280.jpg" srcset="/uploads/hero-volunteers-800.jpg 800w, /uploads/hero-volunteers-1280.jpg 1280w, /uploads/hero-volunteers-1600.jpg 1600w" sizes="(min-width: 981px) 64vw, 100vw" style="object-position: 50% 46%" alt="" aria-hidden="true" fetchpriority="low" decoding="async">
+        <source type="image/webp" data-srcset="/uploads/hero-volunteers-800.webp 800w, /uploads/hero-volunteers-1280.webp 1280w, /uploads/hero-volunteers-1600.webp 1600w" sizes="(min-width: 981px) 64vw, 100vw">
+        <img class="hero-photo" data-src="/uploads/hero-volunteers-1280.jpg" data-srcset="/uploads/hero-volunteers-800.jpg 800w, /uploads/hero-volunteers-1280.jpg 1280w, /uploads/hero-volunteers-1600.jpg 1600w" sizes="(min-width: 981px) 64vw, 100vw" style="object-position: 50% 46%" alt="" aria-hidden="true" fetchpriority="low" data-hero-late="1" decoding="async">
       </picture>
     </div>
     <svg class="hero-art" viewBox="0 0 1200 600" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
@@ -320,10 +320,10 @@ function renderLatest(){
 }
 window.onLangChange=renderLatest;
 </script>
-<script src="/assets/articles-cz.js"></script>
-<script src="/assets/main.js"></script>
+<script src="/assets/articles-cz.js" defer></script>
+<script src="/assets/main.js" defer></script>
 <!-- Podglad statutu w oknie — pdf.js dociaga sie dopiero przy kliknieciu. -->
-<script src="/assets/docviewer.js"></script>
-<script>renderLatest();</script>
+<script src="/assets/docviewer.js" defer></script>
+<script>document.addEventListener('DOMContentLoaded', function () { renderLatest(); });</script>
 </body>
 </html>

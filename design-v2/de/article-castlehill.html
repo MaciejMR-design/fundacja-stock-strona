@@ -161,10 +161,10 @@ function renderArticle() {
 window.onLangChange = renderArticle;
 window.addEventListener('hashchange', renderArticle);
 </script>
-<script src="/assets/articles-de.js"></script>
-<script src="/assets/main.js"></script>
+<script src="/assets/articles-de.js" defer></script>
+<script src="/assets/main.js" defer></script>
 <script>
-(function () { // legacy deep links: article.html#gerson -> article-gerson.html
+document.addEventListener('DOMContentLoaded', function () { // legacy deep links: article.html#gerson -> article-gerson.html
   if (!window.FS_ARTICLE) {
     var h = location.hash.slice(1);
     if (h && (window.ARTICLES || []).some(function (a) { return a.id === h; })) {
@@ -173,7 +173,7 @@ window.addEventListener('hashchange', renderArticle);
     }
   }
   renderArticle();
-})();
+});
 </script>
 </body>
 </html>

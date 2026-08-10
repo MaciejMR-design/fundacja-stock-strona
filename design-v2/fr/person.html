@@ -114,8 +114,8 @@ function renderPerson() {
 window.onLangChange = renderPerson;
 window.addEventListener('hashchange', renderPerson);
 </script>
-<script src="/assets/people.js"></script>
-<script src="/assets/main.js"></script>
-<script>renderPerson();</script>
+<script src="/assets/people.js" defer></script>
+<script src="/assets/main.js" defer></script>
+<script>document.addEventListener('DOMContentLoaded', function () { renderPerson(); });</script>
 </body>
 </html>

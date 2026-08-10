@@ -179,8 +179,8 @@ if (nlForm) nlForm.addEventListener('submit', e => {
 // re-render on language change (called by main.js applyLang)
 window.onLangChange = renderNews;
 </script>
-<script src="/assets/articles-fr.js"></script>
-<script src="/assets/main.js"></script>
-<script>renderNews();</script>
+<script src="/assets/articles-fr.js" defer></script>
+<script src="/assets/main.js" defer></script>
+<script>document.addEventListener('DOMContentLoaded', function () { renderNews(); });</script>
 </body>
 </html>

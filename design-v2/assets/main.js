@@ -472,6 +472,18 @@ if (statsBand) {
    while the tab sits in the background, so coming back does not replay a queue
    of transitions. Visitors who asked for reduced motion keep the first photo. */
 const heroSlides = document.getElementById('heroSlides');
+/* Slajdy 2–4 mają adresy w data-src/data-srcset (szablon index), żeby na
+   wolnym łączu nie konkurowały o pasmo z pierwszym zdjęciem — ono jest
+   elementem LCP. Przywracamy je po zdarzeniu load; pokaz i tak pomija
+   slajd, którego plik jeszcze nie dojechał. */
+if (heroSlides) {
+  const przywroc = () => heroSlides.querySelectorAll('[data-src], [data-srcset]').forEach(el => {
+    if (el.dataset.srcset) { el.setAttribute('srcset', el.dataset.srcset); el.removeAttribute('data-srcset'); }
+    if (el.dataset.src) { el.setAttribute('src', el.dataset.src); el.removeAttribute('data-src'); }
+  });
+  if (document.readyState === 'complete') przywroc();
+  else window.addEventListener('load', przywroc, { once: true });
+}
 if (heroSlides && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   const slides = Array.from(heroSlides.querySelectorAll('.hero-photo'));
   if (slides.length > 1) {
