@@ -22,8 +22,8 @@
 <!-- /lang-alternates -->
 <script data-fs-lang>window.FS_LANG='sk';window.FS_PUBLIC_LANGS=["en","pl"];try{localStorage.setItem('fs-lang','sk')}catch(e){}</script>
 <link rel="icon" href="/uploads/logo-footer.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/fonts.css">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/fonts.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/assets/fonts.css"></noscript>
+<link rel="stylesheet" href="/assets/style.min.css">
 <!-- ld-json -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domov","item":"https://fundacjastock.pl/sk"},{"@type":"ListItem","position":2,"name":"Rada a predstavenstvo"}]}</script>
 <!-- /ld-json -->
@@ -42,9 +42,9 @@
       </g>
     </svg>
     <div class="container page-hero-inner i18n-fade">
-      <span class="crumb"><a href="/sk" data-i18n="home"></a> / <span data-i18n="navCouncil"></span></span>
-      <h1 class="display" data-i18n="pageTitle"></h1>
-      <p class="lead" data-i18n="pageLead"></p>
+      <span class="crumb"><a href="/sk" data-i18n="home">Domov</a> / <span data-i18n="navCouncil">Rada a predstavenstvo</span></span>
+      <h1 class="display" data-i18n="pageTitle">Rada a predstavenstvo</h1>
+      <p class="lead" data-i18n="pageLead">Ľudia, ktorí vedú Nadáciu Stock — jej rada a predstavenstvo.</p>
     </div>
   </section>
 
@@ -52,8 +52,8 @@
   <section>
     <div class="container">
       <div class="section-head i18n-fade reveal">
-        <div class="overline"><span class="line"></span><span data-i18n="councilOverline"></span></div>
-        <h2 class="display" data-i18n="councilTitle"></h2>
+        <div class="overline"><span class="line"></span><span data-i18n="councilOverline">Dohľad</span></div>
+        <h2 class="display" data-i18n="councilTitle">Rada Nadácie Stock</h2>
       </div>
       <div class="team-grid" id="councilGrid"></div>
     </div>
@@ -63,8 +63,8 @@
   <section class="initiatives">
     <div class="container">
       <div class="section-head i18n-fade reveal">
-        <div class="overline"><span class="line"></span><span data-i18n="boardOverline"></span></div>
-        <h2 class="display" data-i18n="boardTitle"></h2>
+        <div class="overline"><span class="line"></span><span data-i18n="boardOverline">Riadenie</span></div>
+        <h2 class="display" data-i18n="boardTitle">Predstavenstvo nadácie</h2>
       </div>
       <div class="team-grid" id="boardGrid" style="max-width:620px;"></div>
     </div>

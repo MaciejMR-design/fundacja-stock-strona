@@ -22,8 +22,8 @@
 <!-- /lang-alternates -->
 <script data-fs-lang>window.FS_LANG='de';window.FS_PUBLIC_LANGS=["en","pl"];try{localStorage.setItem('fs-lang','de')}catch(e){}</script>
 <link rel="icon" href="/uploads/logo-footer.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/fonts.css">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/fonts.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/assets/fonts.css"></noscript>
+<link rel="stylesheet" href="/assets/style.min.css">
 <!-- ld-json -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://fundacjastock.pl/de"},{"@type":"ListItem","position":2,"name":"Über uns"}]}</script>
 <!-- /ld-json -->
@@ -40,9 +40,9 @@
       </g>
     </svg>
     <div class="container page-hero-inner i18n-fade">
-      <span class="crumb"><a href="/de" data-i18n="home"></a> / <span data-i18n="navAbout"></span></span>
-      <h1 class="display" data-i18n="pageTitle"></h1>
-      <p class="lead" data-i18n="pageLead"></p>
+      <span class="crumb"><a href="/de" data-i18n="home">Startseite</a> / <span data-i18n="navAbout">Über uns</span></span>
+      <h1 class="display" data-i18n="pageTitle">Über uns</h1>
+      <p class="lead" data-i18n="pageLead">Von der Nothilfe für Geflüchtete zu einer dauerhaften Plattform für soziale und kulturelle Projekte — die Geschichte der Stiftung Stock.</p>
     </div>
   </section>
 
@@ -51,17 +51,17 @@
     <div class="container">
       <div class="about-grid i18n-fade">
         <div class="reveal">
-          <div class="overline" style="margin-bottom:20px;"><span class="line"></span><span data-i18n="startedOverline"></span></div>
-          <h2 class="display" style="font-size:clamp(38px,5vw,64px);margin-bottom:24px;" data-i18n="startedTitle"></h2>
-          <p data-i18n="startedP1"></p>
-          <p data-i18n="startedP2"></p>
-          <p data-i18n="startedP3"></p>
+          <div class="overline" style="margin-bottom:20px;"><span class="line"></span><span data-i18n="startedOverline">Der Anfang</span></div>
+          <h2 class="display" style="font-size:clamp(38px,5vw,64px);margin-bottom:24px;" data-i18n="startedTitle">Wie alles begann</h2>
+          <p data-i18n="startedP1">Der Anstoß zur Gründung einer wohltätigen Stiftung war der plötzliche Zustrom einer enormen Zahl von Geflüchteten aus der Ukraine nach dem russischen Angriff am 24. Februar 2022. Im Bewusstsein des absehbar langwierigen Konflikts beschlossen wir, eine Stiftung zur Unterstützung der Geflüchteten zu gründen — insbesondere in Lublin, wegen der Nähe zur ukrainischen Grenze.</p>
+          <p data-i18n="startedP2">Seit Kriegsbeginn war Lublin eine der wichtigsten Anlaufstellen für Geflüchtete aus der Ukraine und wurde zu einem der größten Zufluchtsorte in Polen. Die Stadt nahm über eine Million Menschen auf, und etwa 60.000 blieben dauerhaft in Lublin.</p>
+          <p data-i18n="startedP3">Von Anfang an konzentrierte sich die Stiftung Stock auf die Linderung der Krise — sie half Schulen, die geflüchtete Kinder aufnahmen, bot vom Konflikt traumatisierten Menschen psychologische Unterstützung und erleichterte die Arbeitssuche.</p>
         </div>
         <div class="photo-collage reveal">
           <div class="frame-line" aria-hidden="true"></div>
-          <div class="main"><img src="/uploads/about-festyn.jpg" srcset="/uploads/about-festyn-800.jpg 800w, /uploads/about-festyn.jpg 1600w" sizes="(max-width: 900px) 100vw, 560px" alt="" data-i18n-alt="photoFestynAlt" loading="lazy" decoding="async"></div>
-          <div class="sub"><img src="/uploads/news-urbanlab.jpg" srcset="/uploads/news-urbanlab-800.jpg 800w, /uploads/news-urbanlab.jpg 1600w" sizes="(max-width: 900px) 100vw, 560px" alt="" data-i18n-alt="photoArtAlt" loading="lazy" decoding="async"></div>
-          <div class="badge"><span class="big">2022</span><span class="small" data-i18n="badgeLabel"></span></div>
+          <div class="main"><img src="/uploads/about-festyn.jpg" srcset="/uploads/about-festyn-800.jpg 800w, /uploads/about-festyn.jpg 1600w" sizes="(max-width: 900px) 100vw, 560px" alt="Gemeinschaftsfest für ukrainische Familien, organisiert von der Stiftung Stock" data-i18n-alt="photoFestynAlt" loading="lazy" decoding="async"></div>
+          <div class="sub"><img src="/uploads/news-urbanlab.jpg" srcset="/uploads/news-urbanlab-800.jpg 800w, /uploads/news-urbanlab.jpg 1600w" sizes="(max-width: 900px) 100vw, 560px" alt="Eine von der Stiftung organisierte Kunstbegegnung" data-i18n-alt="photoArtAlt" loading="lazy" decoding="async"></div>
+          <div class="badge"><span class="big">2022</span><span class="small" data-i18n="badgeLabel">Gegr. in Lublin</span></div>
         </div>
       </div>
     </div>
@@ -71,20 +71,20 @@
   <section class="initiatives">
     <div class="container">
       <div class="section-head i18n-fade reveal">
-        <div class="overline"><span class="line"></span><span data-i18n="souOverline"></span></div>
-        <h2 class="display" data-i18n="souTitle"></h2>
-        <p style="margin:0;font-size:15.5px;line-height:1.75;" data-i18n="souLead"></p>
+        <div class="overline"><span class="line"></span><span data-i18n="souOverline">Spirit of Ukraine</span></div>
+        <h2 class="display" data-i18n="souTitle">Zentrale Initiativen für Geflüchtete</h2>
+        <p style="margin:0;font-size:15.5px;line-height:1.75;" data-i18n="souLead">Zur Verwirklichung ihrer Ziele startete die Stiftung in Lublin das Programm „Spirit of Ukraine“ — eine vielseitige Unterstützung, die Geflüchteten hilft, Sicherheit, Arbeit und Gemeinschaft zu finden.</p>
       </div>
       <div class="sou-grid i18n-fade">
-        <div class="sou-card reveal"><span class="ghost">01</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M24 42 C14 34 6 27 6 18.5 C6 12.5 10.5 8 16 8 C19.5 8 22.5 10 24 13 C25.5 10 28.5 8 32 8 C37.5 8 42 12.5 42 18.5 C42 27 34 34 24 42 Z"></path></svg><h3 data-i18n="sou1T"></h3><p data-i18n="sou1X"></p></div>
-        <div class="sou-card reveal"><span class="ghost">02</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="16" r="6"></circle><circle cx="33" cy="18" r="5"></circle><path d="M6 40c0-7 5-12 11-12 4 0 7 2 9 5M28 40c1-6 5-10 10-10 4 0 7 2 8 6"></path></svg><h3 data-i18n="sou2T"></h3><p data-i18n="sou2X"></p></div>
-        <div class="sou-card reveal"><span class="ghost">03</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M18 34V12l20-4v22"></path><circle cx="14" cy="34" r="5"></circle><circle cx="34" cy="30" r="5"></circle></svg><h3 data-i18n="sou3T"></h3><p data-i18n="sou3X"></p></div>
-        <div class="sou-card reveal"><span class="ghost">04</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M8 16h32v22H8z"></path><path d="M18 16v-4h12v4M8 26h32"></path></svg><h3 data-i18n="sou4T"></h3><p data-i18n="sou4X"></p></div>
-        <div class="sou-card reveal"><span class="ghost">05</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20L24 10l18 10-18 10L6 20z"></path><path d="M14 24v10c0 3 5 6 10 6s10-3 10-6V24"></path></svg><h3 data-i18n="sou5T"></h3><p data-i18n="sou5X"></p></div>
-        <div class="sou-card reveal"><span class="ghost">06</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M10 38V14a4 4 0 014-4h24v24H14a4 4 0 000 8h24"></path><path d="M20 18h12M20 24h8"></path></svg><h3 data-i18n="sou6T"></h3><p data-i18n="sou6X"></p></div>
-        <div class="sou-card reveal"><span class="ghost">07</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M10 27v-4a14 14 0 0128 0v4"></path><rect x="6" y="26" width="8" height="11" rx="3"></rect><rect x="34" y="26" width="8" height="11" rx="3"></rect></svg><h3 data-i18n="sou7T"></h3><p data-i18n="sou7X"></p></div>
-        <div class="sou-card reveal"><span class="ghost">08</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="11" width="34" height="30" rx="4"></rect><path d="M7 21h34M16 7v8M32 7v8"></path><path d="M18 30l4 4 8-8"></path></svg><h3 data-i18n="sou8T"></h3><p data-i18n="sou8X"></p></div>
-        <div class="sou-card reveal"><span class="ghost">09</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="20" width="34" height="20" rx="3"></rect><path d="M7 27h34M24 20v20"></path><path d="M24 20s-2-8-7-8a4 4 0 000 8h7zM24 20s2-8 7-8a4 4 0 010 8h-7z"></path></svg><h3 data-i18n="sou9T"></h3><p data-i18n="sou9X"></p></div>
+        <div class="sou-card reveal"><span class="ghost">01</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M24 42 C14 34 6 27 6 18.5 C6 12.5 10.5 8 16 8 C19.5 8 22.5 10 24 13 C25.5 10 28.5 8 32 8 C37.5 8 42 12.5 42 18.5 C42 27 34 34 24 42 Z"></path></svg><h3 data-i18n="sou1T">Psychologische Unterstützung</h3><p data-i18n="sou1X">Therapien unter Leitung qualifizierter Psychologinnen und Psychologen — emotionale Unterstützung und Werkzeuge zur Bewältigung des Kriegstraumas, in einem sicheren Raum für offene Gespräche.</p></div>
+        <div class="sou-card reveal"><span class="ghost">02</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="16" r="6"></circle><circle cx="33" cy="18" r="5"></circle><path d="M6 40c0-7 5-12 11-12 4 0 7 2 9 5M28 40c1-6 5-10 10-10 4 0 7 2 8 6"></path></svg><h3 data-i18n="sou2T">Integrative Jobmessen</h3><p data-i18n="sou2X">Regelmäßige Treffen für Geflüchtete — Kontakt zu Arbeitgebern und Hilfe bei Einwanderungsfragen, eine Plattform zum Erfahrungsaustausch.</p></div>
+        <div class="sou-card reveal"><span class="ghost">03</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M18 34V12l20-4v22"></path><circle cx="14" cy="34" r="5"></circle><circle cx="34" cy="30" r="5"></circle></svg><h3 data-i18n="sou3T">Musikstipendien</h3><p data-i18n="sou3X">Finanzierung der musikalischen Ausbildung talentierter ukrainischer Kinder sowie Unterstützung von Musiklehrkräften beim Erhalt ihrer Fähigkeiten und in ihrer beruflichen Tätigkeit.</p></div>
+        <div class="sou-card reveal"><span class="ghost">04</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M8 16h32v22H8z"></path><path d="M18 16v-4h12v4M8 26h32"></path></svg><h3 data-i18n="sou4T">Berufliche Schulungen</h3><p data-i18n="sou4X">Büro- und Computerkurse sowie Barista- und Bäckerkurse — in Berufen, die in Lublin gefragt sind. Sie erhöhen die Chancen Geflüchteter auf Arbeit und Eigenständigkeit.</p></div>
+        <div class="sou-card reveal"><span class="ghost">05</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20L24 10l18 10-18 10L6 20z"></path><path d="M14 24v10c0 3 5 6 10 6s10-3 10-6V24"></path></svg><h3 data-i18n="sou5T">Unterstützung für Schulen</h3><p data-i18n="sou5X">Spenden von Ausstattung und Materialien an Schulen zur Förderung der Integration geflüchteter Kinder in die Schulgemeinschaft.</p></div>
+        <div class="sou-card reveal"><span class="ghost">06</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M10 38V14a4 4 0 014-4h24v24H14a4 4 0 000 8h24"></path><path d="M20 18h12M20 24h8"></path></svg><h3 data-i18n="sou6T">Polnisch-Sprachkurse</h3><p data-i18n="sou6X">Sprachkurse für Geflüchtete, die bei der Integration helfen und die Kommunikationsfähigkeiten stärken.</p></div>
+        <div class="sou-card reveal"><span class="ghost">07</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M10 27v-4a14 14 0 0128 0v4"></path><rect x="6" y="26" width="8" height="11" rx="3"></rect><rect x="34" y="26" width="8" height="11" rx="3"></rect></svg><h3 data-i18n="sou7T">Lubliner Hotline</h3><p data-i18n="sou7X">Wir haben zusätzliche ukrainischsprachige Kräfte für die städtische Hotline finanziert, damit Neuankömmlinge alles in ihrer eigenen Sprache fragen konnten — von Behördengängen bis zum Arzttermin.</p></div>
+        <div class="sou-card reveal"><span class="ghost">08</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="11" width="34" height="30" rx="4"></rect><path d="M7 21h34M16 7v8M32 7v8"></path><path d="M18 30l4 4 8-8"></path></svg><h3 data-i18n="sou8T">„Donnerstage“</h3><p data-i18n="sou8X">Wöchentliche Integrationstreffen verbunden mit praktischer Hilfe: bei der Arbeitssuche, bei Behördengängen und beim Zugang zur Gesundheitsversorgung. Rund 800 Menschen nahmen daran teil.</p></div>
+        <div class="sou-card reveal"><span class="ghost">09</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="20" width="34" height="20" rx="3"></rect><path d="M7 27h34M24 20v20"></path><path d="M24 20s-2-8-7-8a4 4 0 000 8h7zM24 20s2-8 7-8a4 4 0 010 8h-7z"></path></svg><h3 data-i18n="sou9T">Einmalige Aktionen</h3><p data-i18n="sou9X">Eine Weihnachtsfeier, ein Sommerpicknick und Seminare für Lehrkräfte unter Leitung unserer Therapeutinnen und Therapeuten — Momente, die mehreren Hundert Menschen Luft und ein Gefühl der Zugehörigkeit gaben.</p></div>
       </div>
     </div>
   </section>
@@ -95,15 +95,15 @@
     <div class="container">
       <div class="award-grid i18n-fade">
         <div class="reveal">
-          <div class="overline" style="margin-bottom:20px;"><span class="line"></span><span data-i18n="awardOverline"></span></div>
-          <h2 class="display" style="font-size:clamp(34px,4.5vw,58px);margin-bottom:22px;" data-i18n="awardTitle"></h2>
-          <p style="margin:0 0 8px;font-size:15.5px;line-height:1.8;" data-i18n="awardText"></p>
-          <p class="award-quote" data-i18n="awardQuote"></p>
-          <p class="award-src" data-i18n="awardSrc"></p>
+          <div class="overline" style="margin-bottom:20px;"><span class="line"></span><span data-i18n="awardOverline">Auszeichnung</span></div>
+          <h2 class="display" style="font-size:clamp(34px,4.5vw,58px);margin-bottom:22px;" data-i18n="awardTitle">Medaille „Lublin Bohaterom“</h2>
+          <p style="margin:0 0 8px;font-size:15.5px;line-height:1.8;" data-i18n="awardText">Im Jahr 2023 ehrte der Stadtpräsident von Lublin, Dr. Krzysztof Żuk, die Stiftung Stock mit der Medaille „Lublin Bohaterom“ (Lublin seinen Helden) für ihr Engagement während der humanitären Krise.</p>
+          <p class="award-quote" data-i18n="awardQuote">„Zu Ehren großer Taten und Verdienste im Dienst an den Opfern der humanitären Krise, mit besonderer Anerkennung für die strategische Unterstützung der Stadt Lublin bei der Hilfe für das ukrainische Volk und für den Beitrag zur Förderung edler Werte.“</p>
+          <p class="award-src" data-i18n="awardSrc">— Stadtpräsident von Lublin Dr. Krzysztof Żuk · Lublin, 2023</p>
         </div>
         <div class="award-photos reveal">
-          <figure><img src="/uploads/award-medal.jpg" alt="" data-i18n-alt="awardMedalAlt" loading="lazy" decoding="async"></figure>
-          <figure><img src="/uploads/award-diploma.jpg" alt="" data-i18n-alt="awardDiplomaAlt" loading="lazy" decoding="async"></figure>
+          <figure><img src="/uploads/award-medal.jpg" alt="Die der Stiftung verliehene Medaille „Lublin Bohaterom“" data-i18n-alt="awardMedalAlt" loading="lazy" decoding="async"></figure>
+          <figure><img src="/uploads/award-diploma.jpg" alt="Urkunde zur Medaille „Lublin Bohaterom“ für die Stiftung Stock" data-i18n-alt="awardDiplomaAlt" loading="lazy" decoding="async"></figure>
         </div>
       </div>
     </div>
@@ -113,19 +113,19 @@
   <section class="initiatives">
     <div class="container">
       <div class="section-head i18n-fade reveal">
-        <div class="overline"><span class="line"></span><span data-i18n="volOverline"></span></div>
-        <h2 class="display" data-i18n="volTitle"></h2>
-        <p style="margin:0;font-size:15.5px;line-height:1.75;" data-i18n="volLead"></p>
+        <div class="overline"><span class="line"></span><span data-i18n="volOverline">Mitarbeiter-Freiwilligenarbeit</span></div>
+        <h2 class="display" data-i18n="volTitle">Menschen, die ihre Zeit schenken</h2>
+        <p style="margin:0;font-size:15.5px;line-height:1.75;" data-i18n="volLead">Seit 2024 laden wir die Mitarbeitenden unseres Stifters ein, eigene Projekte vorzuschlagen und umzusetzen. Wir finanzieren die Ideen, sie bringen die Energie — von der Freiwilligen Feuerwehr über Flussreinigungen bis zur Förderung junger Kunstschaffender im Ausland.</p>
       </div>
       <div class="i18n-fade reveal" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:0 40px;margin-bottom:clamp(34px,4.5vw,52px);">
-        <div class="mini-stat"><span class="n">227</span><span class="l" data-i18n="volStat1"></span></div>
-        <div class="mini-stat"><span class="n">2010</span><span class="l" data-i18n="volStat2"></span></div>
-        <div class="mini-stat"><span class="n">12</span><span class="l" data-i18n="volStat3"></span></div>
+        <div class="mini-stat"><span class="n">227</span><span class="l" data-i18n="volStat1">Freiwillige seit 2024</span></div>
+        <div class="mini-stat"><span class="n">2010</span><span class="l" data-i18n="volStat2">Stunden für Gemeinschaften</span></div>
+        <div class="mini-stat"><span class="n">12</span><span class="l" data-i18n="volStat3">Partnerorganisationen im Jahr 2025</span></div>
       </div>
       <div class="sou-grid i18n-fade">
-        <div class="sou-card reveal"><span class="ghost">01</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l5 11 12 1.5-9 8 2.5 12L24 32l-10.5 6.5L16 26.5l-9-8L19 17z"></path></svg><h3 data-i18n="vol1T"></h3><p data-i18n="vol1X"></p></div>
-        <div class="sou-card reveal"><span class="ghost">02</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M6 30c6-4 12-4 18 0s12 4 18 0M6 38c6-4 12-4 18 0s12 4 18 0"></path><path d="M24 22V8M24 8c4 0 7 3 7 7M24 8c-4 0-7 3-7 7"></path></svg><h3 data-i18n="vol2T"></h3><p data-i18n="vol2X"></p></div>
-        <div class="sou-card reveal"><span class="ghost">03</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"></circle><path d="M6 24h36M24 6c5 5 5 31 0 36M24 6c-5 5-5 31 0 36"></path></svg><h3 data-i18n="vol3T"></h3><p data-i18n="vol3X"></p></div>
+        <div class="sou-card reveal"><span class="ghost">01</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l5 11 12 1.5-9 8 2.5 12L24 32l-10.5 6.5L16 26.5l-9-8L19 17z"></path></svg><h3 data-i18n="vol1T">Zuschüsse für lokale Ideen</h3><p data-i18n="vol1X">Mitarbeitende bewerben sich um kleine Zuschüsse für Projekte in ihrer Nachbarschaft. So haben wir die Freiwillige Feuerwehr in Kików und zwei Kindergärten unterstützt — „Pod Stumilowym Lasem“ und „Za Żywopłotem“.</p></div>
+        <div class="sou-card reveal"><span class="ghost">02</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M6 30c6-4 12-4 18 0s12 4 18 0M6 38c6-4 12-4 18 0s12 4 18 0"></path><path d="M24 22V8M24 8c4 0 7 3 7 7M24 8c-4 0-7 3-7 7"></path></svg><h3 data-i18n="vol2T">Flüsse, Tierheime, Pflegeheime</h3><p data-i18n="vol2X">Einmalaktionen ziehen die meisten Menschen an: Flussreinigungen in Polen und Tschechien mit Operacja Czysta Rzeka sowie ein Hilfstag im Sozialhilfeheim in der Kosmonautów-Straße in Lublin.</p></div>
+        <div class="sou-card reveal"><span class="ghost">03</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"></circle><path d="M6 24h36M24 6c5 5 5 31 0 36M24 6c-5 5-5 31 0 36"></path></svg><h3 data-i18n="vol3T">Über Polen hinaus</h3><p data-i18n="vol3X">Das Programm reist dorthin, wo unsere Freiwilligen leben: Förderung junger Kunstschaffender beim Verein La Source Garouste in Frankreich und eine Spendenaktion für Menschen mit Behinderung in Tschechien.</p></div>
       </div>
     </div>
   </section>
@@ -135,25 +135,25 @@
     <div class="container">
       <div class="about-grid i18n-fade" style="align-items:start;">
         <div class="reveal">
-          <div class="overline" style="margin-bottom:20px;"><span class="line"></span><span data-i18n="evoOverline"></span></div>
-          <h2 class="display" style="font-size:clamp(38px,5vw,64px);margin-bottom:24px;" data-i18n="evoTitle"></h2>
-          <p style="font-size:15.5px;line-height:1.8;margin:0 0 16px;" data-i18n="evoLead"></p>
+          <div class="overline" style="margin-bottom:20px;"><span class="line"></span><span data-i18n="evoOverline">Unsere Entwicklung</span></div>
+          <h2 class="display" style="font-size:clamp(38px,5vw,64px);margin-bottom:24px;" data-i18n="evoTitle">Wie wir uns entwickeln</h2>
+          <p style="font-size:15.5px;line-height:1.8;margin:0 0 16px;" data-i18n="evoLead">Von Anfang an war vorgesehen, dass die Stiftung Stock mit dem Abklingen der Flüchtlingskrise zu einer Plattform für wichtige soziale Projekte wird — die Mitarbeitende einbindet und Freiwillige gewinnt. Heute konzentriert sich unsere Arbeit auf den Zugang zu Kultur und Kunst, den Kampf gegen soziale Isolation und die Stärkung lokaler Gemeinschaften.</p>
         </div>
         <div class="timeline reveal">
           <div class="tl-item">
-            <span class="when" data-i18n="tl1When"></span>
-            <h3 data-i18n="tl1T"></h3>
-            <p data-i18n="tl1X"></p>
+            <span class="when" data-i18n="tl1When">2022 — Gründung</span>
+            <h3 data-i18n="tl1T">Nothilfe für Geflüchtete</h3>
+            <p data-i18n="tl1X">Die Stiftung entsteht in Lublin in den ersten Kriegswochen und startet das Programm „Spirit of Ukraine“.</p>
           </div>
           <div class="tl-item">
-            <span class="when" data-i18n="tl2When"></span>
-            <h3 data-i18n="tl2T"></h3>
-            <p data-i18n="tl2X"></p>
+            <span class="when" data-i18n="tl2When">2023–2024 — Wachstum</span>
+            <h3 data-i18n="tl2T">Förderung von Kunst und Kultur</h3>
+            <p data-i18n="tl2X">Engagement für Kunst und Kultur: Aufklärungskampagnen, Bildungsprogramme, Unterstützung von Kunstschaffenden und Kulturinstitutionen.</p>
           </div>
           <div class="tl-item">
-            <span class="when" data-i18n="tl3When"></span>
-            <h3 data-i18n="tl3T"></h3>
-            <p data-i18n="tl3X"></p>
+            <span class="when" data-i18n="tl3When">Heute</span>
+            <h3 data-i18n="tl3T">Kunst, psychische Gesundheit und Gemeinschaft</h3>
+            <p data-i18n="tl3X">Kunstbegegnungen, Stipendien und gemeinsame kreative Aktivitäten, die die psychische Gesundheit stärken und Menschen verbinden — über Generationen hinweg.</p>
           </div>
         </div>
       </div>
@@ -162,18 +162,18 @@
         <a class="sou-card reveal" href="/de/article-sisan" style="color:inherit;">
           <span class="ghost">01</span>
           <svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l5.5 11 12.5 1.8-9 8.8 2.1 12.4L24 34l-11.1 6 2.1-12.4-9-8.8L18.5 17z"></path></svg>
-          <h3 data-i18n="ev1T"></h3><p data-i18n="ev1X"></p>
-          <span class="read-more" style="margin-top:6px;"><span data-i18n="readMore"></span> <span class="arr">→</span></span>
+          <h3 data-i18n="ev1T">Förderung von Kunst und Kultur</h3><p data-i18n="ev1X">Ein Engagement für Kunst und Kultur — durch Aufklärungskampagnen, Bildungsprogramme und die Unterstützung von Kunstschaffenden und Kulturinstitutionen. Sehen Sie, wie eine Flavours-of-Change-Förderung einen Kindergarten im kroatischen Šišan verwandelt hat.</p>
+          <span class="read-more" style="margin-top:6px;"><span data-i18n="readMore">Weiterlesen</span> <span class="arr">→</span></span>
         </a>
         <div class="sou-card reveal">
           <span class="ghost">02</span>
           <svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M24 42 C14 34 6 27 6 18.5 C6 12.5 10.5 8 16 8 C19.5 8 22.5 10 24 13 C25.5 10 28.5 8 32 8 C37.5 8 42 12.5 42 18.5 C42 27 34 34 24 42 Z"></path><path d="M14 22 h8 l3 -5 4 9 3 -4 h2"></path></svg>
-          <h3 data-i18n="ev2T"></h3><p data-i18n="ev2X"></p>
+          <h3 data-i18n="ev2T">Kunst und psychische Gesundheit</h3><p data-i18n="ev2X">Die Anerkennung des positiven Einflusses der Kunst auf die psychische Gesundheit — in Kontinuität mit den ersten Initiativen der Stiftung, mit Sorge um das emotionale Wohlbefinden durch kulturell bereichernde Aktivitäten und Erlebnisse.</p>
         </div>
         <div class="sou-card reveal">
           <span class="ghost">03</span>
           <svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="6"></circle><circle cx="32" cy="16" r="6"></circle><path d="M5 40 C5 32 10 28 16 28 C19 28 21.5 29 23.5 31 M43 40 C43 32 38 28 32 28 C29 28 26.5 29 24.5 31 M20 38 h8"></path></svg>
-          <h3 data-i18n="ev3T"></h3><p data-i18n="ev3X"></p>
+          <h3 data-i18n="ev3T">Kreative und gemeinschaftliche Aktivitäten</h3><p data-i18n="ev3X">Menschen ermutigen, Zeit miteinander zu verbringen und neue Formen der Aktivität zu entdecken — Veranstaltungen, Workshops und Initiativen, die Kreativität und Beziehungen fördern und dazu motivieren, die Komfortzone zu verlassen.</p>
         </div>
       </div>
     </div>
@@ -183,10 +183,10 @@
   <section class="started">
     <div class="container">
       <div class="started-content i18n-fade reveal" style="margin-left:0;max-width:760px;">
-        <h2 class="display" style="font-size:clamp(32px,4vw,52px);" data-i18n="ctaTitle"></h2>
+        <h2 class="display" style="font-size:clamp(32px,4vw,52px);" data-i18n="ctaTitle">Sehen Sie, was wir gerade jetzt tun</h2>
         <div style="display:flex;gap:16px;flex-wrap:wrap;">
-          <a href="/de/news" class="btn btn-gold" data-i18n="ctaNews"></a>
-          <a href="/de/contact" class="btn btn-white" data-i18n="navContact"></a>
+          <a href="/de/news" class="btn btn-gold" data-i18n="ctaNews">Unsere neuesten Aktionen</a>
+          <a href="/de/contact" class="btn btn-white" data-i18n="navContact">Kontakt</a>
         </div>
       </div>
     </div>

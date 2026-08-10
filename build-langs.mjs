@@ -116,6 +116,18 @@ for (const f of readdirSync(join(CONTENT, 'pages')).filter(f => f.endsWith('.jso
   PAGE_DICTS[f.replace('.json', '.html')] = JSON.parse(stripBom(readFileSync(join(CONTENT, 'pages', f), 'utf8')));
 }
 
+/* Wspólne teksty (nawigacja, stopka itd.) mieszkają w main.js jako
+   COMMON_I18N — build czyta je stamtąd, żeby nie utrzymywać drugiej kopii.
+   Potrzebne, bo teksty stron wpisujemy do HTML już przy budowaniu (niżej,
+   wypelnijTeksty) — bez tego strona na wolnej sieci była niema, dopóki nie
+   dojechał JavaScript: PageSpeed pokazywał pierwszy tekst po 4 sekundach. */
+const COMMON_I18N = (() => {
+  const src = readFileSync(join(import.meta.dirname, 'design-v2', 'assets', 'main.js'), 'utf8');
+  const m = src.match(/const COMMON_I18N = (\{[\s\S]*?\n\});/);
+  if (!m) throw new Error('Nie znalazłem COMMON_I18N w main.js — zmieniła się jego postać?');
+  return new Function('return ' + m[1])();
+})();
+
 const SITE = 'https://fundacjastock.pl';
 /* Domena przepięta 05.08.2026 — og:image i logo w danych strukturalnych
    wskazują już na docelowy adres. */
@@ -498,6 +510,33 @@ function transform(src, page, lang, art) {
     h = fillBlock(h, 'DOCS', docsGridHtml(lang));
   }
   h = przepiszOdnosniki(h, lang);
+  h = wypelnijTeksty(h, lang, PAGE_DICTS[tplPage]);
+  return h;
+}
+
+/* Teksty w języku strony trafiają do HTML już przy budowaniu. Wcześniej
+   elementy z data-i18n były puste, a wypełniał je dopiero main.js — ostatni
+   skrypt na stronie. Na wolnym łączu (pomiar PageSpeed, telefon + 4G) tekst
+   pojawiał się więc po ~4 s, bo czekał na JavaScript konkurujący o pasmo ze
+   zdjęciami. Teraz strona czyta się od razu po dojściu arkusza stylów,
+   działa też bez JavaScriptu, a applyLang() w main.js nadpisuje te same
+   wartości — bez migotania (chyba że zwiedzający ma zapamiętany inny język).
+
+   Najpierw czyścimy poprzednią zawartość (build nadpisuje szablony wersją
+   angielską i przy kolejnym przebiegu czyta własny wynik), potem wpisujemy
+   świeżą. Elementy data-i18n zawierają wyłącznie tekst (JS ustawia
+   textContent), więc regex na czystym tekście jest bezpieczny. */
+function wypelnijTeksty(h, lang, dict) {
+  const t = Object.assign({}, COMMON_I18N.en, dict?.en || {}, COMMON_I18N[lang] || {}, dict?.[lang] || {});
+  h = h.replace(/(<([a-z0-9]+)\b[^>]*\bdata-i18n="([^"]+)"[^>]*>)[^<]*(<\/\2>)/g,
+    (calosc, otwarcie, tag, klucz, zamkniecie) =>
+      t[klucz] !== undefined ? otwarcie + escText(String(t[klucz])) + zamkniecie : otwarcie + zamkniecie);
+  /* opisy zdjęć: data-i18n-alt steruje atrybutem alt */
+  h = h.replace(/<img\b[^>]*\bdata-i18n-alt="([^"]+)"[^>]*>/g, znacznik => {
+    const klucz = znacznik.match(/data-i18n-alt="([^"]+)"/)[1];
+    if (t[klucz] === undefined) return znacznik;
+    return znacznik.replace(/\balt="[^"]*"/, `alt="${escText(String(t[klucz]))}"`);
+  });
   return h;
 }
 
@@ -657,6 +696,22 @@ function writePeopleJs() {
     '/* GENERATED from content/people/*.json by build-langs.mjs — do not edit by hand. */\n' +
     'window.PEOPLE = ' + JSON.stringify(people, null, 2).replace(/<\//g, '<\\/') + ';\n', 'utf8');
 }
+
+/* Zminifikowana kopia arkusza stylów. Źródłem pozostaje czytelny style.css —
+   strony wskazują style.min.css, który powstaje tutaj przy każdym buildzie.
+   Minifikacja zachowawcza (komentarze + białe znaki), bez dotykania spacji
+   wewnątrz wartości — calc() wymaga spacji wokół +/- i ma je zachować. */
+function writeMinCss() {
+  const src = readFileSync(join(SRC, 'assets', 'style.css'), 'utf8');
+  const min = src
+    .replace(/\/\*[\s\S]*?\*\//g, '')      // komentarze
+    .replace(/\s*\n\s*/g, '')              // nowe linie z wcięciami
+    .replace(/\s*([{};,>])\s*/g, '$1')     // spacje wokół znaków składni
+    .replace(/;}/g, '}');
+  writeFileSync(join(SRC, 'assets', 'style.min.css'), min, 'utf8');
+  return [src.length, min.length];
+}
+const [cssPrzed, cssPo] = writeMinCss();
 
 let written = 0;
 const removed = [];

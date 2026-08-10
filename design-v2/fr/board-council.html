@@ -22,8 +22,8 @@
 <!-- /lang-alternates -->
 <script data-fs-lang>window.FS_LANG='fr';window.FS_PUBLIC_LANGS=["en","pl"];try{localStorage.setItem('fs-lang','fr')}catch(e){}</script>
 <link rel="icon" href="/uploads/logo-footer.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/fonts.css">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/fonts.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/assets/fonts.css"></noscript>
+<link rel="stylesheet" href="/assets/style.min.css">
 <!-- ld-json -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://fundacjastock.pl/fr"},{"@type":"ListItem","position":2,"name":"Conseil et direction"}]}</script>
 <!-- /ld-json -->
@@ -42,9 +42,9 @@
       </g>
     </svg>
     <div class="container page-hero-inner i18n-fade">
-      <span class="crumb"><a href="/fr" data-i18n="home"></a> / <span data-i18n="navCouncil"></span></span>
-      <h1 class="display" data-i18n="pageTitle"></h1>
-      <p class="lead" data-i18n="pageLead"></p>
+      <span class="crumb"><a href="/fr" data-i18n="home">Accueil</a> / <span data-i18n="navCouncil">Conseil et direction</span></span>
+      <h1 class="display" data-i18n="pageTitle">Conseil et direction</h1>
+      <p class="lead" data-i18n="pageLead">Les personnes qui dirigent la Fondation Stock — son Conseil et sa direction.</p>
     </div>
   </section>
 
@@ -52,8 +52,8 @@
   <section>
     <div class="container">
       <div class="section-head i18n-fade reveal">
-        <div class="overline"><span class="line"></span><span data-i18n="councilOverline"></span></div>
-        <h2 class="display" data-i18n="councilTitle"></h2>
+        <div class="overline"><span class="line"></span><span data-i18n="councilOverline">Gouvernance</span></div>
+        <h2 class="display" data-i18n="councilTitle">Conseil de la Fondation Stock</h2>
       </div>
       <div class="team-grid" id="councilGrid"></div>
     </div>
@@ -63,8 +63,8 @@
   <section class="initiatives">
     <div class="container">
       <div class="section-head i18n-fade reveal">
-        <div class="overline"><span class="line"></span><span data-i18n="boardOverline"></span></div>
-        <h2 class="display" data-i18n="boardTitle"></h2>
+        <div class="overline"><span class="line"></span><span data-i18n="boardOverline">Gestion</span></div>
+        <h2 class="display" data-i18n="boardTitle">Direction de la Fondation</h2>
       </div>
       <div class="team-grid" id="boardGrid" style="max-width:620px;"></div>
     </div>

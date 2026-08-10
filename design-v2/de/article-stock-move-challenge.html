@@ -23,8 +23,8 @@
 <script data-fs-lang>window.FS_LANG='de';window.FS_PUBLIC_LANGS=["en","pl"];try{localStorage.setItem('fs-lang','de')}catch(e){}</script>
 <script data-fs-article>window.FS_ARTICLE='stock-move-challenge';</script>
 <link rel="icon" href="/uploads/logo-footer.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/fonts.css">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/fonts.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/assets/fonts.css"></noscript>
+<link rel="stylesheet" href="/assets/style.min.css">
 <!-- ld-json -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://fundacjastock.pl/de"},{"@type":"ListItem","position":2,"name":"Aktuelles","item":"https://fundacjastock.pl/de/news"},{"@type":"ListItem","position":3,"name":"Stock Move Challenge — die erste Ausgabe läuft"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"Stock Move Challenge — die erste Ausgabe läuft","description":"Die erste Ausgabe der Stock Move Challenge läuft bereits — und schon heute können wir verraten, dass die nächste von der Stiftung Stock unterstützt wird!","image":["https://fundacjastock.pl/uploads/stockmove-2.webp"],"datePublished":"2026-08-10","inLanguage":"de","mainEntityOfPage":{"@type":"WebPage","@id":"https://fundacjastock.pl/de/article-stock-move-challenge"},"author":{"@id":"https://fundacjastock.pl/#organization"},"publisher":{"@id":"https://fundacjastock.pl/#organization"}}</script>
@@ -42,7 +42,7 @@
       </g>
     </svg>
     <div class="container page-hero-inner">
-      <span class="crumb"><a href="/de" data-i18n="home"></a> / <a href="/de/news" data-i18n="navNews"></a> / <span id="crumbTitle"></span></span>
+      <span class="crumb"><a href="/de" data-i18n="home">Startseite</a> / <a href="/de/news" data-i18n="navNews">Aktuelles</a> / <span id="crumbTitle"></span></span>
       <h1 class="display" id="artTitle"></h1>
     </div>
   </section>
@@ -58,9 +58,9 @@
         <div class="article-gallery" id="artGallery" style="display:none;"></div>
         <div class="article-body" id="artBody"></div>
         <div class="article-share">
-          <a href="/de/news" class="back-link"><span class="arr">←</span> <span data-i18n="backToNews"></span></a>
+          <a href="/de/news" class="back-link"><span class="arr">←</span> <span data-i18n="backToNews">Zurück zu allen Neuigkeiten</span></a>
           <div style="display:flex;align-items:center;gap:12px;">
-            <span style="font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(22,59,101,.55);" data-i18n="shareLabel"></span>
+            <span style="font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(22,59,101,.55);" data-i18n="shareLabel">Teilen</span>
             <a id="shareLinkedin" href="#" target="_blank" rel="noopener" class="li-badge" style="border-color:rgba(205,158,12,.5);" aria-label="LinkedIn">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="#CD9E0C"><path d="M3.4 2.4 a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0 -2.8 Z M2.2 6 h2.4 v7.6 H2.2 Z M6.2 6 h2.3 v1 c0.4 -0.6 1.2 -1.2 2.4 -1.2 c2 0 2.9 1.2 2.9 3.3 v4.5 h-2.4 v-4.1 c0 -1 -0.4 -1.7 -1.3 -1.7 c-1 0 -1.5 0.7 -1.5 1.7 v4.1 H6.2 Z"></path></svg>
             </a>
@@ -74,8 +74,8 @@
   <section class="more-news">
     <div class="container">
       <div class="section-head reveal">
-        <div class="overline"><span class="line"></span><span data-i18n="moreOverline"></span></div>
-        <h2 class="display" style="font-size:clamp(30px,4vw,48px);" data-i18n="moreTitle"></h2>
+        <div class="overline"><span class="line"></span><span data-i18n="moreOverline">Lesen Sie weiter</span></div>
+        <h2 class="display" style="font-size:clamp(30px,4vw,48px);" data-i18n="moreTitle">Weitere Neuigkeiten</h2>
       </div>
       <div class="news-grid" id="moreGrid"></div>
     </div>

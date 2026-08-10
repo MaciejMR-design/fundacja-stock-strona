@@ -22,8 +22,8 @@
 <!-- /lang-alternates -->
 <script data-fs-lang>window.FS_LANG='de';window.FS_PUBLIC_LANGS=["en","pl"];try{localStorage.setItem('fs-lang','de')}catch(e){}</script>
 <link rel="icon" href="/uploads/logo-footer.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/fonts.css">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/fonts.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/assets/fonts.css"></noscript>
+<link rel="stylesheet" href="/assets/style.min.css">
 <!-- ld-json -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"NGO","@id":"https://fundacjastock.pl/#organization","name":"Stiftung Stock","legalName":"Fundacja Stock","alternateName":"Stock Foundation","url":"https://fundacjastock.pl/de","logo":"https://fundacjastock.pl/uploads/logo-footer.svg","foundingDate":"2022","taxID":"9462718618","description":"Die Stiftung Stock (gegr. 2022, Lublin) hilft Geflüchteten und lokalen Gemeinschaften und fördert Kunst als Therapie. Entdecken Sie unsere neuesten Aktionen und Nachrichten.","address":{"@type":"PostalAddress","streetAddress":"Spółdzielcza 6","postalCode":"20-402","addressLocality":"Lublin","addressCountry":"PL"},"contactPoint":{"@type":"ContactPoint","telephone":"+48538183916","contactType":"customer service","email":"pawel.jablonski@stockspirits.com","availableLanguage":["en","pl"]},"sameAs":["https://www.facebook.com/fundacjastock/","https://www.instagram.com/fundacja_stock"]}</script>
 <!-- /ld-json -->
@@ -71,8 +71,8 @@
     <div class="container hero-inner">
       <div class="hero-content i18n-fade">
         <div class="overline fade-up d1"><span class="line"></span><span>Stock Foundation</span></div>
-        <h1 class="fade-up d2"><span data-i18n="heroTitle1"></span><br><span data-i18n="heroTitle2"></span> <em data-i18n="heroEst"></em></h1>
-        <p class="fade-up d3" data-i18n="heroTagline"></p>
+        <h1 class="fade-up d2"><span data-i18n="heroTitle1">Hoffnung, Kunst</span><br><span data-i18n="heroTitle2">und Gemeinschaft</span> <em data-i18n="heroEst">gegr. 2022</em></h1>
+        <p class="fade-up d3" data-i18n="heroTagline">Wir unterstützen Geflüchtete und vom Krieg betroffene Gemeinschaften. Wir glauben an die stille Kraft der Kunst, die Einsamkeit, Depression und fehlende Inspiration heilt.</p>
         <!-- Przycisk i status OPP w jednym rzędzie: osobny wiersz zepchnąłby
              kafel OPP poniżej krawędzi ekranu na laptopach 1366×768, a ma być
              widoczny bez przewijania. Sam kafel wstawia build i tylko w wersji
@@ -80,7 +80,7 @@
              wyłącznie rozliczających PIT w Polsce, w pozostałych językach
              byłby szumem obok głównego przycisku. -->
         <div class="hero-actions fade-up d4">
-          <a href="/de/about-us" class="btn btn-gold" data-i18n="heroCta"></a>
+          <a href="/de/about-us" class="btn btn-gold" data-i18n="heroCta">Die Stiftung kennenlernen</a>
           <!-- CONTENT:HERO_OPP -->
 
       <!-- /CONTENT -->
@@ -88,9 +88,9 @@
       </div>
     </div>
     <a class="hero-latest fade-up d4" id="latestStrip" href="#">
-      <span class="hl-tag"><span class="pulse"></span> <span data-i18n="latestLabel"></span><span class="date" id="lsDate"></span></span>
+      <span class="hl-tag"><span class="pulse"></span> <span data-i18n="latestLabel">Neueste</span><span class="date" id="lsDate"></span></span>
       <span class="hl-title" id="lsTitle"></span>
-      <span class="hl-go"><span data-i18n="readMore"></span> <span class="arr">→</span></span>
+      <span class="hl-go"><span data-i18n="readMore">Weiterlesen</span> <span class="arr">→</span></span>
     </a>
     <div class="scroll-hint" aria-hidden="true"></div>
   </section>
@@ -98,10 +98,10 @@
   <!-- STATS -->
   <div class="stats">
     <div class="container stats-grid i18n-fade" id="statsBand">
-      <div class="stat"><span class="num" data-count="2022" data-plain="1">0</span><span class="lbl" data-i18n="stat1"></span></div>
-      <div class="stat"><span class="num"><span data-count="12">0</span></span><span class="lbl" data-i18n="stat2"></span></div>
-      <div class="stat"><span class="num"><span data-count="21000">0</span>+</span><span class="lbl" data-i18n="stat3"></span></div>
-      <div class="stat"><span class="num"><span data-count="227">0</span></span><span class="lbl" data-i18n="stat4"></span></div>
+      <div class="stat"><span class="num" data-count="2022" data-plain="1">0</span><span class="lbl" data-i18n="stat1">gegründet in Lublin</span></div>
+      <div class="stat"><span class="num"><span data-count="12">0</span></span><span class="lbl" data-i18n="stat2">Hilfsprogramme seit 2022</span></div>
+      <div class="stat"><span class="num"><span data-count="21000">0</span>+</span><span class="lbl" data-i18n="stat3">direkt und indirekt Erreichte</span></div>
+      <div class="stat"><span class="num"><span data-count="227">0</span></span><span class="lbl" data-i18n="stat4">Freiwillige in unseren Aktionen</span></div>
     </div>
   </div>
 
@@ -110,15 +110,15 @@
     <div class="container">
       <div class="mission-grid i18n-fade">
         <div class="reveal" style="display:flex;flex-direction:column;gap:22px;">
-          <div class="overline"><span class="line"></span><span data-i18n="missionOverline"></span></div>
-          <h2 class="display" data-i18n="missionTitle"></h2>
-          <p data-i18n="missionP1"></p>
+          <div class="overline"><span class="line"></span><span data-i18n="missionOverline">Unsere Mission</span></div>
+          <h2 class="display" data-i18n="missionTitle">Mission</h2>
+          <p data-i18n="missionP1">Die Stiftung Stock unterstützt Geflüchtete und lokale Gemeinschaften, die die Krise des Krieges durchleben. Seit 2022 organisieren wir direkte Hilfe in Lublin — einem der größten Aufnahmeorte für Geflüchtete in Polen — mit psychologischer Unterstützung, Jobmessen, Stipendien und Hilfe für Schulen.</p>
         </div>
         <div class="mission-col2 reveal">
-          <p data-i18n="missionP2"></p>
+          <p data-i18n="missionP2">Wir glauben auch, dass Kunst eine Form der Fürsorge ist. Mit Kunstbegegnungen, Workshops und gemeinsamem kreativem Schaffen erreichen wir Menschen, die mit Einsamkeit, Depression oder fehlender Inspiration kämpfen — denn emotionales Wohlbefinden verdient dieselbe Aufmerksamkeit wie materielle Bedürfnisse.</p>
           <div>
-            <div class="mini-stat"><span class="n">2022</span><span class="l" data-i18n="missionStat1"></span></div>
-            <div class="mini-stat"><span class="n">60k</span><span class="l" data-i18n="missionStat2"></span></div>
+            <div class="mini-stat"><span class="n">2022</span><span class="l" data-i18n="missionStat1">gegründet in Lublin, Polen</span></div>
+            <div class="mini-stat"><span class="n">60k</span><span class="l" data-i18n="missionStat2">Geflüchtete blieben dauerhaft in Lublin</span></div>
           </div>
         </div>
       </div>
@@ -130,43 +130,43 @@
     <div class="container">
       <div class="news-head i18n-fade reveal">
         <div style="display:flex;flex-direction:column;gap:14px;">
-          <div class="overline"><span class="line"></span><span data-i18n="newsOverline"></span></div>
-          <h2 class="display" data-i18n="newsTitle"></h2>
-          <span class="cadence-note"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="9"></circle></svg><span data-i18n="cadenceNote"></span></span>
+          <div class="overline"><span class="line"></span><span data-i18n="newsOverline">Was wir gerade tun</span></div>
+          <h2 class="display" data-i18n="newsTitle">Aktuelles</h2>
+          <span class="cadence-note"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="9"></circle></svg><span data-i18n="cadenceNote">Neue Aktionen und Beiträge kommen laufend hinzu</span></span>
         </div>
-        <a href="/de/news" class="btn btn-navy" data-i18n="newsSeeAll" style="margin-bottom:6px;"></a>
+        <a href="/de/news" class="btn btn-navy" data-i18n="newsSeeAll" style="margin-bottom:6px;">Alle Neuigkeiten</a>
       </div>
       <div class="news-grid i18n-fade">
         <article class="card reveal">
           <a href="/de/article-gerson" style="display:flex;flex-direction:column;flex:1;color:inherit;">
-            <div class="card-media"><img src="/uploads/news-gerson.jpg" srcset="/uploads/news-gerson-800.jpg 800w, /uploads/news-gerson.jpg 1600w" sizes="(max-width: 620px) 100vw, (max-width: 1020px) 50vw, 33vw" alt="" data-i18n-alt="news1Alt" loading="lazy" decoding="async"><span class="cat" data-i18n="catArt"></span><span class="newest-badge"><span class="dot"></span><span data-i18n="newestLabel"></span></span></div>
+            <div class="card-media"><img src="/uploads/news-gerson.jpg" srcset="/uploads/news-gerson-800.jpg 800w, /uploads/news-gerson.jpg 1600w" sizes="(max-width: 620px) 100vw, (max-width: 1020px) 50vw, 33vw" alt="Kunstbegegnung für Seniorinnen und Senioren in Lublin — ein Vortrag im Sozialhilfeheim in der Ametystowa-Straße" data-i18n-alt="news1Alt" loading="lazy" decoding="async"><span class="cat" data-i18n="catArt">Kunstbegegnungen</span><span class="newest-badge"><span class="dot"></span><span data-i18n="newestLabel">Neueste</span></span></div>
             <div class="card-body">
-              <time data-i18n="news1Date"></time>
-              <h3 data-i18n="news1Title"></h3>
-              <p data-i18n="news1Excerpt"></p>
-              <span class="read-more" style="margin-top:4px;"><span data-i18n="readMore"></span> <span class="arr">→</span></span>
+              <time data-i18n="news1Date">5. Juni 2026</time>
+              <h3 data-i18n="news1Title">Gemälde von Wojciech Gerson im Sozialhilfeheim in der Ametystowa-Straße</h3>
+              <p data-i18n="news1Excerpt">Kuratorin Jolanta Polańska vom Nationalmuseum in Lublin leitete eine weitere inspirierende Kunstbegegnung für die Bewohner des Sozialhilfeheims in der Ametystowa-Straße.</p>
+              <span class="read-more" style="margin-top:4px;"><span data-i18n="readMore">Weiterlesen</span> <span class="arr">→</span></span>
             </div>
           </a>
         </article>
         <article class="card reveal">
           <a href="/de/article-mopr" style="display:flex;flex-direction:column;flex:1;color:inherit;">
-            <div class="card-media"><img src="/uploads/news-mopr.jpg" srcset="/uploads/news-mopr-800.jpg 800w, /uploads/news-mopr.jpg 1600w" sizes="(max-width: 620px) 100vw, (max-width: 1020px) 50vw, 33vw" alt="" data-i18n-alt="news2Alt" loading="lazy" decoding="async"><span class="cat" data-i18n="catTraining"></span></div>
+            <div class="card-media"><img src="/uploads/news-mopr.jpg" srcset="/uploads/news-mopr-800.jpg 800w, /uploads/news-mopr.jpg 1600w" sizes="(max-width: 620px) 100vw, (max-width: 1020px) 50vw, 33vw" alt="Schulung für Sozialarbeitende des Familienhilfezentrums in Lublin" data-i18n-alt="news2Alt" loading="lazy" decoding="async"><span class="cat" data-i18n="catTraining">Schulungen</span></div>
             <div class="card-body">
-              <time data-i18n="news2Date"></time>
-              <h3 data-i18n="news2Title"></h3>
-              <p data-i18n="news2Excerpt"></p>
-              <span class="read-more" style="margin-top:4px;"><span data-i18n="readMore"></span> <span class="arr">→</span></span>
+              <time data-i18n="news2Date">26. Mai 2026</time>
+              <h3 data-i18n="news2Title">Wir unterstützen die, die andere unterstützen</h3>
+              <p data-i18n="news2Excerpt">Dreißig Mitarbeiter der städtischen Familienhilfezentren (MOPR) in Lublin absolvierten von unseren Therapeuten geleitete Schulungen zur Arbeit mit suchtbetroffenen Menschen.</p>
+              <span class="read-more" style="margin-top:4px;"><span data-i18n="readMore">Weiterlesen</span> <span class="arr">→</span></span>
             </div>
           </a>
         </article>
         <article class="card reveal">
           <a href="/de/article-taekwondo" style="display:flex;flex-direction:column;flex:1;color:inherit;">
-            <div class="card-media"><img src="/uploads/news-taekwondo.jpg" srcset="/uploads/news-taekwondo-800.jpg 800w, /uploads/news-taekwondo.jpg 1600w" sizes="(max-width: 620px) 100vw, (max-width: 1020px) 50vw, 33vw" alt="" data-i18n-alt="news3Alt" loading="lazy" decoding="async"><span class="cat" data-i18n="catScholar"></span></div>
+            <div class="card-media"><img src="/uploads/news-taekwondo.jpg" srcset="/uploads/news-taekwondo-800.jpg 800w, /uploads/news-taekwondo.jpg 1600w" sizes="(max-width: 620px) 100vw, (max-width: 1020px) 50vw, 33vw" alt="Ein Stipendiat der Stiftung bei der Taekwon-Do-Europameisterschaft" data-i18n-alt="news3Alt" loading="lazy" decoding="async"><span class="cat" data-i18n="catScholar">Stipendien</span></div>
             <div class="card-body">
-              <time data-i18n="news3Date"></time>
-              <h3 data-i18n="news3Title"></h3>
-              <p data-i18n="news3Excerpt"></p>
-              <span class="read-more" style="margin-top:4px;"><span data-i18n="readMore"></span> <span class="arr">→</span></span>
+              <time data-i18n="news3Date">7. Mai 2026</time>
+              <h3 data-i18n="news3Title">Musik- und Sportstipendium — ein weiterer Sieg</h3>
+              <p data-i18n="news3Excerpt">Piotr Pawlik aus unserem Stipendienprogramm belegte den 3. Platz in den Junioren-Teamformen bei der Taekwon-Do-Europameisterschaft in Maribor.</p>
+              <span class="read-more" style="margin-top:4px;"><span data-i18n="readMore">Weiterlesen</span> <span class="arr">→</span></span>
             </div>
           </a>
         </article>
@@ -178,8 +178,8 @@
   <section id="about" class="initiatives">
     <div class="container">
       <div class="section-head i18n-fade reveal">
-        <div class="overline"><span class="line"></span><span data-i18n="initOverline"></span></div>
-        <h2 class="display" data-i18n="initTitle"></h2>
+        <div class="overline"><span class="line"></span><span data-i18n="initOverline">Was wir tun</span></div>
+        <h2 class="display" data-i18n="initTitle">Zentrale Initiativen</h2>
       </div>
       <div class="init-grid i18n-fade">
         <div class="init-card reveal">
@@ -187,8 +187,8 @@
             <path d="M24 42 C14 34 6 27 6 18.5 C6 12.5 10.5 8 16 8 C19.5 8 22.5 10 24 13 C25.5 10 28.5 8 32 8 C37.5 8 42 12.5 42 18.5 C42 27 34 34 24 42 Z" stroke="#CD9E0C" stroke-width="2" stroke-linejoin="round"></path>
             <path d="M14 22 h8 l3 -5 4 9 3 -4 h2" stroke="#163B65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
-          <h3 data-i18n="init1Title"></h3>
-          <p data-i18n="init1Text"></p>
+          <h3 data-i18n="init1Title">Hilfe für Geflüchtete</h3>
+          <p data-i18n="init1Text">Das Programm „Spirit of Ukraine“: psychologische Unterstützung, Treffen mit Arbeitgebern, Berufsschulungen, Polnischkurse und Spenden für Schulen, die geflüchtete Kinder aufnehmen.</p>
         </div>
         <div class="init-card reveal">
           <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
@@ -198,8 +198,8 @@
             <circle cx="34" cy="20" r="2.2" fill="#163B65"></circle>
             <circle cx="14" cy="28" r="2.2" fill="#163B65"></circle>
           </svg>
-          <h3 data-i18n="init2Title"></h3>
-          <p data-i18n="init2Text"></p>
+          <h3 data-i18n="init2Title">Kunst als Therapie</h3>
+          <p data-i18n="init2Text">Wir organisieren Kunstbegegnungen für Senioren in Lublin — mit Museumskuratoren — sowie Musikstipendien und Kreativworkshops für Menschen, die mit Einsamkeit, Depression oder fehlender Inspiration kämpfen.</p>
         </div>
         <div class="init-card reveal">
           <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
@@ -208,8 +208,8 @@
             <path d="M5 40 C5 32 10 28 16 28 C19 28 21.5 29 23.5 31 M43 40 C43 32 38 28 32 28 C29 28 26.5 29 24.5 31" stroke="#CD9E0C" stroke-width="2" stroke-linecap="round"></path>
             <path d="M20 38 h8" stroke="#CD9E0C" stroke-width="2" stroke-linecap="round"></path>
           </svg>
-          <h3 data-i18n="init3Title"></h3>
-          <p data-i18n="init3Text"></p>
+          <h3 data-i18n="init3Title">Integration der Gemeinschaft</h3>
+          <p data-i18n="init3Text">Wir bringen Neuankömmlinge und Einheimische in gemeinsamen Projekten zusammen — Kultur, Bildung und Ehrenamt — damit aus Hilfe Freundschaft wird.</p>
         </div>
       </div>
     </div>
@@ -263,10 +263,10 @@
     </svg>
     <div class="container">
       <div class="started-content i18n-fade reveal">
-        <div class="overline"><span class="line"></span><span data-i18n="startedOverline"></span></div>
-        <h2 class="display" data-i18n="startedTitle"></h2>
-        <p data-i18n="startedText"></p>
-        <div><a href="/de/about-us" class="btn btn-white" data-i18n="findOutMore" style="margin-top:8px;"></a></div>
+        <div class="overline"><span class="line"></span><span data-i18n="startedOverline">Der Anfang</span></div>
+        <h2 class="display" data-i18n="startedTitle">Wie alles begann</h2>
+        <p data-i18n="startedText">Die Stiftung entstand 2022, in den ersten Wochen des Krieges in der Ukraine, als Lublin — nahe der Grenze gelegen — eine Welle von über einer Million Geflüchteten aufnahm. Was als Nothilfe begann, wurde zu einer dauerhaften Verpflichtung: Heute führt die Stiftung soziale und kulturelle Projekte durch und bindet Mitarbeiter und Freiwillige ein.</p>
+        <div><a href="/de/about-us" class="btn btn-white" data-i18n="findOutMore" style="margin-top:8px;">Mehr erfahren</a></div>
       </div>
     </div>
   </section>
@@ -276,9 +276,9 @@
     <div class="container">
       <div class="statute-box i18n-fade reveal">
         <div class="txt">
-          <span style="font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);" data-i18n="statuteOverline"></span>
-          <h2 data-i18n="statuteTitle"></h2>
-          <p data-i18n="statuteText"></p>
+          <span style="font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);" data-i18n="statuteOverline">Transparenz</span>
+          <h2 data-i18n="statuteTitle">Satzung &amp; Jahresberichte</h2>
+          <p data-i18n="statuteText">Wir glauben, dass Vertrauen durch Offenheit entsteht. Unsere Satzung, Jahresabschlüsse und jährlichen Tätigkeitsberichte sind öffentlich — sehen Sie nach, wie wir jede Spende verwenden.</p>
         </div>
         <div class="doc-links">
           <!-- Statut otwiera się w oknie podglądu, tak samo jak na podstronie
@@ -288,12 +288,12 @@
           <!-- CONTENT:HOME_STATUTE -->
         <button type="button" class="doc-link" data-doc="/uploads/docs/Statut-FS-2025.pdf" data-doc-title="Satzung der Stiftung Stock">
           <svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg>
-          <span data-i18n="statuteLink1"></span>
+          <span data-i18n="statuteLink1">Satzung der Stiftung (PDF)</span>
         </button>
       <!-- /CONTENT -->
           <a href="/de/statute" class="doc-link">
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 15 V9 M7.5 15 V5 M12 15 V11 M16 15 V3" stroke="#CD9E0C" stroke-width="1.5" stroke-linecap="round"></path></svg>
-            <span data-i18n="statuteLink2"></span>
+            <span data-i18n="statuteLink2">Alle Berichte</span>
           </a>
         </div>
       </div>

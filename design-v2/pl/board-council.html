@@ -21,8 +21,8 @@
 <!-- /lang-alternates -->
 <script data-fs-lang>window.FS_LANG='pl';window.FS_PUBLIC_LANGS=["en","pl"];try{localStorage.setItem('fs-lang','pl')}catch(e){}</script>
 <link rel="icon" href="/uploads/logo-footer.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/fonts.css">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/fonts.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/assets/fonts.css"></noscript>
+<link rel="stylesheet" href="/assets/style.min.css">
 <!-- ld-json -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://fundacjastock.pl/pl"},{"@type":"ListItem","position":2,"name":"Rada i Zarząd"}]}</script>
 <!-- /ld-json -->
@@ -41,9 +41,9 @@
       </g>
     </svg>
     <div class="container page-hero-inner i18n-fade">
-      <span class="crumb"><a href="/pl" data-i18n="home"></a> / <span data-i18n="navCouncil"></span></span>
-      <h1 class="display" data-i18n="pageTitle"></h1>
-      <p class="lead" data-i18n="pageLead"></p>
+      <span class="crumb"><a href="/pl" data-i18n="home">Strona główna</a> / <span data-i18n="navCouncil">Rada i Zarząd</span></span>
+      <h1 class="display" data-i18n="pageTitle">Rada i Zarząd</h1>
+      <p class="lead" data-i18n="pageLead">Ludzie, którzy kierują Fundacją Stock — jej Rada oraz Zarząd.</p>
     </div>
   </section>
 
@@ -51,8 +51,8 @@
   <section>
     <div class="container">
       <div class="section-head i18n-fade reveal">
-        <div class="overline"><span class="line"></span><span data-i18n="councilOverline"></span></div>
-        <h2 class="display" data-i18n="councilTitle"></h2>
+        <div class="overline"><span class="line"></span><span data-i18n="councilOverline">Nadzór</span></div>
+        <h2 class="display" data-i18n="councilTitle">Rada Fundacji Stock</h2>
       </div>
       <div class="team-grid" id="councilGrid"></div>
     </div>
@@ -62,8 +62,8 @@
   <section class="initiatives">
     <div class="container">
       <div class="section-head i18n-fade reveal">
-        <div class="overline"><span class="line"></span><span data-i18n="boardOverline"></span></div>
-        <h2 class="display" data-i18n="boardTitle"></h2>
+        <div class="overline"><span class="line"></span><span data-i18n="boardOverline">Zarządzanie</span></div>
+        <h2 class="display" data-i18n="boardTitle">Zarząd Fundacji</h2>
       </div>
       <div class="team-grid" id="boardGrid" style="max-width:620px;"></div>
     </div>

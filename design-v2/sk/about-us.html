@@ -22,8 +22,8 @@
 <!-- /lang-alternates -->
 <script data-fs-lang>window.FS_LANG='sk';window.FS_PUBLIC_LANGS=["en","pl"];try{localStorage.setItem('fs-lang','sk')}catch(e){}</script>
 <link rel="icon" href="/uploads/logo-footer.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/fonts.css">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/fonts.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/assets/fonts.css"></noscript>
+<link rel="stylesheet" href="/assets/style.min.css">
 <!-- ld-json -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domov","item":"https://fundacjastock.pl/sk"},{"@type":"ListItem","position":2,"name":"O nás"}]}</script>
 <!-- /ld-json -->
@@ -40,9 +40,9 @@
       </g>
     </svg>
     <div class="container page-hero-inner i18n-fade">
-      <span class="crumb"><a href="/sk" data-i18n="home"></a> / <span data-i18n="navAbout"></span></span>
-      <h1 class="display" data-i18n="pageTitle"></h1>
-      <p class="lead" data-i18n="pageLead"></p>
+      <span class="crumb"><a href="/sk" data-i18n="home">Domov</a> / <span data-i18n="navAbout">O nás</span></span>
+      <h1 class="display" data-i18n="pageTitle">O nás</h1>
+      <p class="lead" data-i18n="pageLead">Od okamžitej pomoci utečencom k trvalej platforme sociálnych a kultúrnych projektov — príbeh Nadácie Stock.</p>
     </div>
   </section>
 
@@ -51,17 +51,17 @@
     <div class="container">
       <div class="about-grid i18n-fade">
         <div class="reveal">
-          <div class="overline" style="margin-bottom:20px;"><span class="line"></span><span data-i18n="startedOverline"></span></div>
-          <h2 class="display" style="font-size:clamp(38px,5vw,64px);margin-bottom:24px;" data-i18n="startedTitle"></h2>
-          <p data-i18n="startedP1"></p>
-          <p data-i18n="startedP2"></p>
-          <p data-i18n="startedP3"></p>
+          <div class="overline" style="margin-bottom:20px;"><span class="line"></span><span data-i18n="startedOverline">Začiatky</span></div>
+          <h2 class="display" style="font-size:clamp(38px,5vw,64px);margin-bottom:24px;" data-i18n="startedTitle">Ako sa to začalo</h2>
+          <p data-i18n="startedP1">Impulzom na založenie charitatívnej nadácie bol náhly prílev obrovského počtu utečencov z Ukrajiny po ruskom útoku 24. februára 2022. S vedomím očakávaného dlhotrvajúceho konfliktu sme sa rozhodli založiť nadáciu na podporu ukrajinských utečencov, najmä v Lubline — pre jeho blízkosť k ukrajinskej hranici.</p>
+          <p data-i18n="startedP2">Od začiatku vojny bol Lublin jedným z hlavných prijímacích miest pre utečencov z Ukrajiny a stal sa jedným z najväčších utečeneckých centier v Poľsku. Prijal vyše milióna ľudí a približne 60-tisíc z nich zostalo v Lubline natrvalo.</p>
+          <p data-i18n="startedP3">Od svojho vzniku sa Nadácia Stock sústredila na zmierňovanie krízy — pomáhala školám prijímajúcim utečenecké deti, ponúkala psychologickú podporu ľuďom traumatizovaným konfliktom a uľahčovala hľadanie zamestnania.</p>
         </div>
         <div class="photo-collage reveal">
           <div class="frame-line" aria-hidden="true"></div>
-          <div class="main"><img src="/uploads/about-festyn.jpg" srcset="/uploads/about-festyn-800.jpg 800w, /uploads/about-festyn.jpg 1600w" sizes="(max-width: 900px) 100vw, 560px" alt="" data-i18n-alt="photoFestynAlt" loading="lazy" decoding="async"></div>
-          <div class="sub"><img src="/uploads/news-urbanlab.jpg" srcset="/uploads/news-urbanlab-800.jpg 800w, /uploads/news-urbanlab.jpg 1600w" sizes="(max-width: 900px) 100vw, 560px" alt="" data-i18n-alt="photoArtAlt" loading="lazy" decoding="async"></div>
-          <div class="badge"><span class="big">2022</span><span class="small" data-i18n="badgeLabel"></span></div>
+          <div class="main"><img src="/uploads/about-festyn.jpg" srcset="/uploads/about-festyn-800.jpg 800w, /uploads/about-festyn.jpg 1600w" sizes="(max-width: 900px) 100vw, 560px" alt="Komunitná slávnosť pre ukrajinské rodiny organizovaná Nadáciou Stock" data-i18n-alt="photoFestynAlt" loading="lazy" decoding="async"></div>
+          <div class="sub"><img src="/uploads/news-urbanlab.jpg" srcset="/uploads/news-urbanlab-800.jpg 800w, /uploads/news-urbanlab.jpg 1600w" sizes="(max-width: 900px) 100vw, 560px" alt="Stretnutie s umením organizované nadáciou" data-i18n-alt="photoArtAlt" loading="lazy" decoding="async"></div>
+          <div class="badge"><span class="big">2022</span><span class="small" data-i18n="badgeLabel">Zal. v Lubline</span></div>
         </div>
       </div>
     </div>
@@ -71,20 +71,20 @@
   <section class="initiatives">
     <div class="container">
       <div class="section-head i18n-fade reveal">
-        <div class="overline"><span class="line"></span><span data-i18n="souOverline"></span></div>
-        <h2 class="display" data-i18n="souTitle"></h2>
-        <p style="margin:0;font-size:15.5px;line-height:1.75;" data-i18n="souLead"></p>
+        <div class="overline"><span class="line"></span><span data-i18n="souOverline">Spirit of Ukraine</span></div>
+        <h2 class="display" data-i18n="souTitle">Kľúčové iniciatívy pre utečencov</h2>
+        <p style="margin:0;font-size:15.5px;line-height:1.75;" data-i18n="souLead">Na naplnenie svojich cieľov nadácia spustila v Lubline program „Spirit of Ukraine“ — mnohostrannú podporu, ktorá pomáha utečencom nájsť bezpečie, prácu a spoločenstvo.</p>
       </div>
       <div class="sou-grid i18n-fade">
-        <div class="sou-card reveal"><span class="ghost">01</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M24 42 C14 34 6 27 6 18.5 C6 12.5 10.5 8 16 8 C19.5 8 22.5 10 24 13 C25.5 10 28.5 8 32 8 C37.5 8 42 12.5 42 18.5 C42 27 34 34 24 42 Z"></path></svg><h3 data-i18n="sou1T"></h3><p data-i18n="sou1X"></p></div>
-        <div class="sou-card reveal"><span class="ghost">02</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="16" r="6"></circle><circle cx="33" cy="18" r="5"></circle><path d="M6 40c0-7 5-12 11-12 4 0 7 2 9 5M28 40c1-6 5-10 10-10 4 0 7 2 8 6"></path></svg><h3 data-i18n="sou2T"></h3><p data-i18n="sou2X"></p></div>
-        <div class="sou-card reveal"><span class="ghost">03</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M18 34V12l20-4v22"></path><circle cx="14" cy="34" r="5"></circle><circle cx="34" cy="30" r="5"></circle></svg><h3 data-i18n="sou3T"></h3><p data-i18n="sou3X"></p></div>
-        <div class="sou-card reveal"><span class="ghost">04</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M8 16h32v22H8z"></path><path d="M18 16v-4h12v4M8 26h32"></path></svg><h3 data-i18n="sou4T"></h3><p data-i18n="sou4X"></p></div>
-        <div class="sou-card reveal"><span class="ghost">05</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20L24 10l18 10-18 10L6 20z"></path><path d="M14 24v10c0 3 5 6 10 6s10-3 10-6V24"></path></svg><h3 data-i18n="sou5T"></h3><p data-i18n="sou5X"></p></div>
-        <div class="sou-card reveal"><span class="ghost">06</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M10 38V14a4 4 0 014-4h24v24H14a4 4 0 000 8h24"></path><path d="M20 18h12M20 24h8"></path></svg><h3 data-i18n="sou6T"></h3><p data-i18n="sou6X"></p></div>
-        <div class="sou-card reveal"><span class="ghost">07</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M10 27v-4a14 14 0 0128 0v4"></path><rect x="6" y="26" width="8" height="11" rx="3"></rect><rect x="34" y="26" width="8" height="11" rx="3"></rect></svg><h3 data-i18n="sou7T"></h3><p data-i18n="sou7X"></p></div>
-        <div class="sou-card reveal"><span class="ghost">08</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="11" width="34" height="30" rx="4"></rect><path d="M7 21h34M16 7v8M32 7v8"></path><path d="M18 30l4 4 8-8"></path></svg><h3 data-i18n="sou8T"></h3><p data-i18n="sou8X"></p></div>
-        <div class="sou-card reveal"><span class="ghost">09</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="20" width="34" height="20" rx="3"></rect><path d="M7 27h34M24 20v20"></path><path d="M24 20s-2-8-7-8a4 4 0 000 8h7zM24 20s2-8 7-8a4 4 0 010 8h-7z"></path></svg><h3 data-i18n="sou9T"></h3><p data-i18n="sou9X"></p></div>
+        <div class="sou-card reveal"><span class="ghost">01</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M24 42 C14 34 6 27 6 18.5 C6 12.5 10.5 8 16 8 C19.5 8 22.5 10 24 13 C25.5 10 28.5 8 32 8 C37.5 8 42 12.5 42 18.5 C42 27 34 34 24 42 Z"></path></svg><h3 data-i18n="sou1T">Psychologická podpora</h3><p data-i18n="sou1X">Terapie vedené kvalifikovanými psychológmi — emocionálna podpora a nástroje na zvládanie vojnovej traumy v bezpečnom priestore otvorenej komunikácie.</p></div>
+        <div class="sou-card reveal"><span class="ghost">02</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="16" r="6"></circle><circle cx="33" cy="18" r="5"></circle><path d="M6 40c0-7 5-12 11-12 4 0 7 2 9 5M28 40c1-6 5-10 10-10 4 0 7 2 8 6"></path></svg><h3 data-i18n="sou2T">Integračné veľtrhy práce</h3><p data-i18n="sou2X">Pravidelné stretnutia pre utečencov — kontakt so zamestnávateľmi a pomoc s imigračnými záležitosťami, platforma na výmenu skúseností.</p></div>
+        <div class="sou-card reveal"><span class="ghost">03</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M18 34V12l20-4v22"></path><circle cx="14" cy="34" r="5"></circle><circle cx="34" cy="30" r="5"></circle></svg><h3 data-i18n="sou3T">Hudobné štipendiá</h3><p data-i18n="sou3X">Financovanie hudobného vzdelávania talentovaných ukrajinských detí a podpora učiteľov hudby pri udržiavaní zručností a profesijnom uplatnení.</p></div>
+        <div class="sou-card reveal"><span class="ghost">04</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M8 16h32v22H8z"></path><path d="M18 16v-4h12v4M8 26h32"></path></svg><h3 data-i18n="sou4T">Odborné školenia</h3><p data-i18n="sou4X">Kancelárske a počítačové kurzy aj kurzy baristu a pekára — v profesiách, o ktoré je v Lubline záujem. Zvyšujú šance utečencov na zamestnanie a samostatnosť.</p></div>
+        <div class="sou-card reveal"><span class="ghost">05</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20L24 10l18 10-18 10L6 20z"></path><path d="M14 24v10c0 3 5 6 10 6s10-3 10-6V24"></path></svg><h3 data-i18n="sou5T">Podpora škôl</h3><p data-i18n="sou5X">Dary vybavenia a materiálov školám na podporu integrácie utečeneckých detí do školskej komunity.</p></div>
+        <div class="sou-card reveal"><span class="ghost">06</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M10 38V14a4 4 0 014-4h24v24H14a4 4 0 000 8h24"></path><path d="M20 18h12M20 24h8"></path></svg><h3 data-i18n="sou6T">Kurzy poľštiny</h3><p data-i18n="sou6X">Jazykové kurzy pre utečencov, ktoré pomáhajú pri integrácii a rozvoji komunikačných zručností.</p></div>
+        <div class="sou-card reveal"><span class="ghost">07</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M10 27v-4a14 14 0 0128 0v4"></path><rect x="6" y="26" width="8" height="11" rx="3"></rect><rect x="34" y="26" width="8" height="11" rx="3"></rect></svg><h3 data-i18n="sou7T">Lublinská infolinka</h3><p data-i18n="sou7X">Financovali sme ďalších ukrajinsky hovoriacich pracovníkov na mestskej infolinke, aby sa novoprichádzajúci mohli na čokoľvek opýtať vo svojom jazyku — od úradných formalít po návštevu lekára.</p></div>
+        <div class="sou-card reveal"><span class="ghost">08</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="11" width="34" height="30" rx="4"></rect><path d="M7 21h34M16 7v8M32 7v8"></path><path d="M18 30l4 4 8-8"></path></svg><h3 data-i18n="sou8T">„Štvrtky”</h3><p data-i18n="sou8X">Týždenné integračné stretnutia spojené s praktickou pomocou: pri hľadaní práce, vybavovaní úradných záležitostí a prístupe k zdravotnej starostlivosti. Prešlo nimi približne 800 ľudí.</p></div>
+        <div class="sou-card reveal"><span class="ghost">09</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="20" width="34" height="20" rx="3"></rect><path d="M7 27h34M24 20v20"></path><path d="M24 20s-2-8-7-8a4 4 0 000 8h7zM24 20s2-8 7-8a4 4 0 010 8h-7z"></path></svg><h3 data-i18n="sou9T">Jednorazové akcie</h3><p data-i18n="sou9X">Vianočné stretnutie, letný piknik a semináre pre učiteľov vedené našimi terapeutmi — chvíle, ktoré niekoľkým stovkám ľudí priniesli oddych a pocit spolupatričnosti.</p></div>
       </div>
     </div>
   </section>
@@ -95,15 +95,15 @@
     <div class="container">
       <div class="award-grid i18n-fade">
         <div class="reveal">
-          <div class="overline" style="margin-bottom:20px;"><span class="line"></span><span data-i18n="awardOverline"></span></div>
-          <h2 class="display" style="font-size:clamp(34px,4.5vw,58px);margin-bottom:22px;" data-i18n="awardTitle"></h2>
-          <p style="margin:0 0 8px;font-size:15.5px;line-height:1.8;" data-i18n="awardText"></p>
-          <p class="award-quote" data-i18n="awardQuote"></p>
-          <p class="award-src" data-i18n="awardSrc"></p>
+          <div class="overline" style="margin-bottom:20px;"><span class="line"></span><span data-i18n="awardOverline">Ocenenie</span></div>
+          <h2 class="display" style="font-size:clamp(34px,4.5vw,58px);margin-bottom:22px;" data-i18n="awardTitle">Medaila „Lublin Bohaterom“</h2>
+          <p style="margin:0 0 8px;font-size:15.5px;line-height:1.8;" data-i18n="awardText">V roku 2023 udelil primátor Lublina dr. Krzysztof Żuk Nadácii Stock medailu „Lublin Bohaterom“ (Lublin svojim hrdinom) za činnosť počas humanitárnej krízy.</p>
+          <p class="award-quote" data-i18n="awardQuote">„Na počesť veľkých činov a zásluh v službe obetiam humanitárnej krízy, s výrazom osobitného uznania za strategickú podporu mesta Lublin pri pomoci ukrajinskému národu a za prínos k šíreniu ušľachtilých hodnôt.“</p>
+          <p class="award-src" data-i18n="awardSrc">— primátor Lublina dr. Krzysztof Żuk · Lublin, 2023</p>
         </div>
         <div class="award-photos reveal">
-          <figure><img src="/uploads/award-medal.jpg" alt="" data-i18n-alt="awardMedalAlt" loading="lazy" decoding="async"></figure>
-          <figure><img src="/uploads/award-diploma.jpg" alt="" data-i18n-alt="awardDiplomaAlt" loading="lazy" decoding="async"></figure>
+          <figure><img src="/uploads/award-medal.jpg" alt="Medaila „Lublin Bohaterom“ udelená nadácii" data-i18n-alt="awardMedalAlt" loading="lazy" decoding="async"></figure>
+          <figure><img src="/uploads/award-diploma.jpg" alt="Diplom sprevádzajúci medailu „Lublin Bohaterom“ pre Nadáciu Stock" data-i18n-alt="awardDiplomaAlt" loading="lazy" decoding="async"></figure>
         </div>
       </div>
     </div>
@@ -113,19 +113,19 @@
   <section class="initiatives">
     <div class="container">
       <div class="section-head i18n-fade reveal">
-        <div class="overline"><span class="line"></span><span data-i18n="volOverline"></span></div>
-        <h2 class="display" data-i18n="volTitle"></h2>
-        <p style="margin:0;font-size:15.5px;line-height:1.75;" data-i18n="volLead"></p>
+        <div class="overline"><span class="line"></span><span data-i18n="volOverline">Firemné dobrovoľníctvo</span></div>
+        <h2 class="display" data-i18n="volTitle">Ľudia, ktorí venujú svoj čas</h2>
+        <p style="margin:0;font-size:15.5px;line-height:1.75;" data-i18n="volLead">Od roku 2024 pozývame zamestnancov zakladateľa, aby navrhovali a viedli vlastné projekty. My financujeme nápady, oni prinášajú energiu — od dobrovoľných hasičov cez čistenie riek až po podporu mladých tvorcov v zahraničí.</p>
       </div>
       <div class="i18n-fade reveal" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:0 40px;margin-bottom:clamp(34px,4.5vw,52px);">
-        <div class="mini-stat"><span class="n">227</span><span class="l" data-i18n="volStat1"></span></div>
-        <div class="mini-stat"><span class="n">2010</span><span class="l" data-i18n="volStat2"></span></div>
-        <div class="mini-stat"><span class="n">12</span><span class="l" data-i18n="volStat3"></span></div>
+        <div class="mini-stat"><span class="n">227</span><span class="l" data-i18n="volStat1">dobrovoľníkov od roku 2024</span></div>
+        <div class="mini-stat"><span class="n">2010</span><span class="l" data-i18n="volStat2">hodín práce pre komunity</span></div>
+        <div class="mini-stat"><span class="n">12</span><span class="l" data-i18n="volStat3">partnerských organizácií v roku 2025</span></div>
       </div>
       <div class="sou-grid i18n-fade">
-        <div class="sou-card reveal"><span class="ghost">01</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l5 11 12 1.5-9 8 2.5 12L24 32l-10.5 6.5L16 26.5l-9-8L19 17z"></path></svg><h3 data-i18n="vol1T"></h3><p data-i18n="vol1X"></p></div>
-        <div class="sou-card reveal"><span class="ghost">02</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M6 30c6-4 12-4 18 0s12 4 18 0M6 38c6-4 12-4 18 0s12 4 18 0"></path><path d="M24 22V8M24 8c4 0 7 3 7 7M24 8c-4 0-7 3-7 7"></path></svg><h3 data-i18n="vol2T"></h3><p data-i18n="vol2X"></p></div>
-        <div class="sou-card reveal"><span class="ghost">03</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"></circle><path d="M6 24h36M24 6c5 5 5 31 0 36M24 6c-5 5-5 31 0 36"></path></svg><h3 data-i18n="vol3T"></h3><p data-i18n="vol3X"></p></div>
+        <div class="sou-card reveal"><span class="ghost">01</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l5 11 12 1.5-9 8 2.5 12L24 32l-10.5 6.5L16 26.5l-9-8L19 17z"></path></svg><h3 data-i18n="vol1T">Granty na miestne nápady</h3><p data-i18n="vol1X">Zamestnanci žiadajú o menšie granty na projekty vo svojom okolí. Takto sme podporili dobrovoľný hasičský zbor v Kikowe a dve materské školy — „Pod Stumilowym Lasem“ a „Za Żywopłotem“.</p></div>
+        <div class="sou-card reveal"><span class="ghost">02</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M6 30c6-4 12-4 18 0s12 4 18 0M6 38c6-4 12-4 18 0s12 4 18 0"></path><path d="M24 22V8M24 8c4 0 7 3 7 7M24 8c-4 0-7 3-7 7"></path></svg><h3 data-i18n="vol2T">Rieky, útulky, domovy starostlivosti</h3><p data-i18n="vol2X">Jednorazové akcie priťahujú najviac ľudí: čistenie riek v Poľsku a Česku s Operáciou Čistá rieka a deň pomoci v domove sociálnych služieb na ulici Kosmonautów v Lubline.</p></div>
+        <div class="sou-card reveal"><span class="ghost">03</span><svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"></circle><path d="M6 24h36M24 6c5 5 5 31 0 36M24 6c-5 5-5 31 0 36"></path></svg><h3 data-i18n="vol3T">Za hranicami Poľska</h3><p data-i18n="vol3X">Program putuje tam, kde žijú naši dobrovoľníci: podpora mladých tvorcov v združení La Source Garouste vo Francúzsku a fundraisingová akcia pre osoby so zdravotným postihnutím v Česku.</p></div>
       </div>
     </div>
   </section>
@@ -135,25 +135,25 @@
     <div class="container">
       <div class="about-grid i18n-fade" style="align-items:start;">
         <div class="reveal">
-          <div class="overline" style="margin-bottom:20px;"><span class="line"></span><span data-i18n="evoOverline"></span></div>
-          <h2 class="display" style="font-size:clamp(38px,5vw,64px);margin-bottom:24px;" data-i18n="evoTitle"></h2>
-          <p style="font-size:15.5px;line-height:1.8;margin:0 0 16px;" data-i18n="evoLead"></p>
+          <div class="overline" style="margin-bottom:20px;"><span class="line"></span><span data-i18n="evoOverline">Náš rozvoj</span></div>
+          <h2 class="display" style="font-size:clamp(38px,5vw,64px);margin-bottom:24px;" data-i18n="evoTitle">Ako sa rozvíjame</h2>
+          <p style="font-size:15.5px;line-height:1.8;margin:0 0 16px;" data-i18n="evoLead">Od začiatku sa počítalo s tým, že keď utečenecká kríza opadne, Nadácia Stock sa stane platformou dôležitých sociálnych projektov — zapájajúcou zamestnancov a dobrovoľníkov. Dnes sa naša práca sústreďuje na dostupnosť kultúry a umenia, boj proti sociálnej izolácii a posilňovanie miestnych komunít.</p>
         </div>
         <div class="timeline reveal">
           <div class="tl-item">
-            <span class="when" data-i18n="tl1When"></span>
-            <h3 data-i18n="tl1T"></h3>
-            <p data-i18n="tl1X"></p>
+            <span class="when" data-i18n="tl1When">2022 — Založenie</span>
+            <h3 data-i18n="tl1T">Okamžitá pomoc utečencom</h3>
+            <p data-i18n="tl1X">Nadácia vzniká v Lubline v prvých týždňoch vojny a spúšťa program „Spirit of Ukraine“.</p>
           </div>
           <div class="tl-item">
-            <span class="when" data-i18n="tl2When"></span>
-            <h3 data-i18n="tl2T"></h3>
-            <p data-i18n="tl2X"></p>
+            <span class="when" data-i18n="tl2When">2023–2024 — Rast</span>
+            <h3 data-i18n="tl2T">Podpora umenia a kultúry</h3>
+            <p data-i18n="tl2X">Aktivity v prospech umenia a kultúry: osvetové kampane, vzdelávacie programy, podpora umelcov a kultúrnych inštitúcií.</p>
           </div>
           <div class="tl-item">
-            <span class="when" data-i18n="tl3When"></span>
-            <h3 data-i18n="tl3T"></h3>
-            <p data-i18n="tl3X"></p>
+            <span class="when" data-i18n="tl3When">Dnes</span>
+            <h3 data-i18n="tl3T">Umenie, duševné zdravie a spoločenstvo</h3>
+            <p data-i18n="tl3X">Stretnutia s umením, štipendiá a spoločné tvorivé aktivity, ktoré podporujú duševné zdravie a spájajú ľudí — naprieč generáciami.</p>
           </div>
         </div>
       </div>
@@ -162,18 +162,18 @@
         <a class="sou-card reveal" href="/sk/article-sisan" style="color:inherit;">
           <span class="ghost">01</span>
           <svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l5.5 11 12.5 1.8-9 8.8 2.1 12.4L24 34l-11.1 6 2.1-12.4-9-8.8L18.5 17z"></path></svg>
-          <h3 data-i18n="ev1T"></h3><p data-i18n="ev1X"></p>
-          <span class="read-more" style="margin-top:6px;"><span data-i18n="readMore"></span> <span class="arr">→</span></span>
+          <h3 data-i18n="ev1T">Podpora umenia a kultúry</h3><p data-i18n="ev1X">Záväzok konať v prospech umenia a kultúry — prostredníctvom osvetových kampaní, vzdelávacích programov a podpory umelcov a kultúrnych inštitúcií. Pozrite sa, ako grant Flavours of Change premenil škôlku v chorvátskom Šišane.</p>
+          <span class="read-more" style="margin-top:6px;"><span data-i18n="readMore">Čítať ďalej</span> <span class="arr">→</span></span>
         </a>
         <div class="sou-card reveal">
           <span class="ghost">02</span>
           <svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><path d="M24 42 C14 34 6 27 6 18.5 C6 12.5 10.5 8 16 8 C19.5 8 22.5 10 24 13 C25.5 10 28.5 8 32 8 C37.5 8 42 12.5 42 18.5 C42 27 34 34 24 42 Z"></path><path d="M14 22 h8 l3 -5 4 9 3 -4 h2"></path></svg>
-          <h3 data-i18n="ev2T"></h3><p data-i18n="ev2X"></p>
+          <h3 data-i18n="ev2T">Umenie a duševné zdravie</h3><p data-i18n="ev2X">Uznanie pozitívneho vplyvu umenia na duševné zdravie — pokračovanie prvých iniciatív nadácie, starostlivosť o emocionálnu pohodu prostredníctvom kultúrne obohacujúcich aktivít a zážitkov.</p>
         </div>
         <div class="sou-card reveal">
           <span class="ghost">03</span>
           <svg class="sicon" viewBox="0 0 48 48" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="6"></circle><circle cx="32" cy="16" r="6"></circle><path d="M5 40 C5 32 10 28 16 28 C19 28 21.5 29 23.5 31 M43 40 C43 32 38 28 32 28 C29 28 26.5 29 24.5 31 M20 38 h8"></path></svg>
-          <h3 data-i18n="ev3T"></h3><p data-i18n="ev3X"></p>
+          <h3 data-i18n="ev3T">Tvorivé a spoločné aktivity</h3><p data-i18n="ev3X">Povzbudzovanie ľudí k spoločne strávenému času a objavovaniu nových foriem aktivít — podujatia, workshopy a iniciatívy rozvíjajúce kreativitu a vzťahy, motivujúce vykročiť z komfortnej zóny.</p>
         </div>
       </div>
     </div>
@@ -183,10 +183,10 @@
   <section class="started">
     <div class="container">
       <div class="started-content i18n-fade reveal" style="margin-left:0;max-width:760px;">
-        <h2 class="display" style="font-size:clamp(32px,4vw,52px);" data-i18n="ctaTitle"></h2>
+        <h2 class="display" style="font-size:clamp(32px,4vw,52px);" data-i18n="ctaTitle">Pozrite sa, čo robíme práve teraz</h2>
         <div style="display:flex;gap:16px;flex-wrap:wrap;">
-          <a href="/sk/news" class="btn btn-gold" data-i18n="ctaNews"></a>
-          <a href="/sk/contact" class="btn btn-white" data-i18n="navContact"></a>
+          <a href="/sk/news" class="btn btn-gold" data-i18n="ctaNews">Naše najnovšie akcie</a>
+          <a href="/sk/contact" class="btn btn-white" data-i18n="navContact">Kontakt</a>
         </div>
       </div>
     </div>

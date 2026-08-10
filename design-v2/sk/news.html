@@ -22,8 +22,8 @@
 <!-- /lang-alternates -->
 <script data-fs-lang>window.FS_LANG='sk';window.FS_PUBLIC_LANGS=["en","pl"];try{localStorage.setItem('fs-lang','sk')}catch(e){}</script>
 <link rel="icon" href="/uploads/logo-footer.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/fonts.css">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/fonts.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/assets/fonts.css"></noscript>
+<link rel="stylesheet" href="/assets/style.min.css">
 <!-- ld-json -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domov","item":"https://fundacjastock.pl/sk"},{"@type":"ListItem","position":2,"name":"Aktuality"}]}</script>
 <!-- /ld-json -->
@@ -40,9 +40,9 @@
       </g>
     </svg>
     <div class="container page-hero-inner i18n-fade">
-      <span class="crumb"><a href="/sk" data-i18n="home"></a> / <span data-i18n="navNews"></span></span>
-      <h1 class="display" data-i18n="pageTitle"></h1>
-      <p class="lead" data-i18n="pageLead"></p>
+      <span class="crumb"><a href="/sk" data-i18n="home">Domov</a> / <span data-i18n="navNews">Aktuality</span></span>
+      <h1 class="display" data-i18n="pageTitle">Aktuality</h1>
+      <p class="lead" data-i18n="pageLead">Čo práve robíme — stretnutia s umením pre seniorov v Lubline, štipendiá, školenia a komunitné akcie.</p>
     </div>
   </section>
 
@@ -53,24 +53,24 @@
       <a class="featured reveal" id="featured" href="#">
         <div class="media"><img id="featImg" src="" alt=""><span class="cat" id="featCat"></span></div>
         <div class="body">
-          <span class="kicker"><span id="featDate"></span><span class="dot"></span><span data-i18n="featuredTag"></span></span>
+          <span class="kicker"><span id="featDate"></span><span class="dot"></span><span data-i18n="featuredTag">Vybrané</span></span>
           <h2 id="featTitle"></h2>
           <p id="featLead"></p>
-          <span class="read-more"><span data-i18n="readMore"></span> <span class="arr">→</span></span>
+          <span class="read-more"><span data-i18n="readMore">Čítať ďalej</span> <span class="arr">→</span></span>
         </div>
       </a>
 
       <div class="news-toolbar i18n-fade reveal">
         <div class="filters" style="margin-bottom:0;">
-          <button class="active" data-filter="all" data-i18n="fAll"></button>
-          <button data-filter="art" data-i18n="fArt"></button>
-          <button data-filter="training" data-i18n="fTraining"></button>
-          <button data-filter="scholar" data-i18n="fScholar"></button>
-          <button data-filter="grant" data-i18n="fGrant"></button>
-          <button data-filter="volunteer" data-i18n="fVolunteer"></button>
-          <button data-filter="therapy" data-i18n="fTherapy"></button>
+          <button class="active" data-filter="all" data-i18n="fAll">Všetky</button>
+          <button data-filter="art" data-i18n="fArt">Stretnutia s umením</button>
+          <button data-filter="training" data-i18n="fTraining">Školenia</button>
+          <button data-filter="scholar" data-i18n="fScholar">Štipendiá</button>
+          <button data-filter="grant" data-i18n="fGrant">Granty</button>
+          <button data-filter="volunteer" data-i18n="fVolunteer">Dobrovoľníctvo</button>
+          <button data-filter="therapy" data-i18n="fTherapy">Terapie</button>
         </div>
-        <span class="news-count"><b id="newsCount">0</b> <span data-i18n="countLabel"></span></span>
+        <span class="news-count"><b id="newsCount">0</b> <span data-i18n="countLabel">článkov</span></span>
       </div>
 
       <!-- GRID — rendered by JS -->
@@ -79,12 +79,12 @@
       <!-- NEWSLETTER — wyłączony na razie (być może wróci); odkomentuj, aby przywrócić
       <div class="newsletter i18n-fade reveal">
         <div class="nl-txt">
-          <h2 data-i18n="nlTitle"></h2>
-          <p data-i18n="nlText"></p>
+          <h2 data-i18n="nlTitle">Buďte v obraze</h2>
+          <p data-i18n="nlText">Dostávajte naše najnovšie akcie a Stretnutia s umením priamo na e-mail — pár správ ročne, žiadny spam.</p>
         </div>
         <form class="nl-form" id="nlForm">
           <input type="email" required id="nlEmail" placeholder="e-mail" aria-label="e-mail">
-          <button type="submit" class="btn btn-gold" data-i18n="nlBtn"></button>
+          <button type="submit" class="btn btn-gold" data-i18n="nlBtn">Prihlásiť sa</button>
         </form>
       </div>
       -->

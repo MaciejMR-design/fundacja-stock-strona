@@ -22,8 +22,8 @@
 <!-- /lang-alternates -->
 <script data-fs-lang>window.FS_LANG='fr';window.FS_PUBLIC_LANGS=["en","pl"];try{localStorage.setItem('fs-lang','fr')}catch(e){}</script>
 <link rel="icon" href="/uploads/logo-footer.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/fonts.css">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/fonts.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/assets/fonts.css"></noscript>
+<link rel="stylesheet" href="/assets/style.min.css">
 <!-- ld-json -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://fundacjastock.pl/fr"},{"@type":"ListItem","position":2,"name":"Statuts et rapports"}]}</script>
 <!-- /ld-json -->
@@ -40,9 +40,9 @@
       </g>
     </svg>
     <div class="container page-hero-inner i18n-fade">
-      <span class="crumb"><a href="/fr" data-i18n="home"></a> / <span data-i18n="navStatute"></span></span>
-      <h1 class="display" data-i18n="pageTitle"></h1>
-      <p class="lead" data-i18n="pageLead"></p>
+      <span class="crumb"><a href="/fr" data-i18n="home">Accueil</a> / <span data-i18n="navStatute">Statuts et rapports</span></span>
+      <h1 class="display" data-i18n="pageTitle">Statuts et rapports</h1>
+      <p class="lead" data-i18n="pageLead">Nous croyons que la confiance se construit par la transparence. Nos statuts, nos états financiers et nos rapports d’activité sont publics.</p>
     </div>
   </section>
 
@@ -51,63 +51,63 @@
     <div class="container">
       <div class="statute-box i18n-fade reveal" style="margin-bottom:clamp(40px,5vw,64px);">
         <div class="txt">
-          <span style="font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);" data-i18n="statuteOverline"></span>
-          <h2 data-i18n="statuteTitle"></h2>
-          <p data-i18n="statuteText"></p>
+          <span style="font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);" data-i18n="statuteOverline">Document fondateur</span>
+          <h2 data-i18n="statuteTitle">Statuts de la Fondation Stock</h2>
+          <p data-i18n="statuteText">Les statuts définissent les objectifs, les principes et les organes de la fondation. La version actuelle a été adoptée en 2025.</p>
         </div>
         <!-- statute file: content/documents.json -> statuteFile (build-langs.mjs) -->
         <div class="doc-links"><!-- CONTENT:STATUTE_DOC -->
         <button type="button" class="doc-link" data-doc="/uploads/docs/Statut-FS-2025.pdf" data-doc-title="Statuts de la Fondation Stock">
           <svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg>
-          <span data-i18n="statutePdf"></span>
+          <span data-i18n="statutePdf">Voir les statuts</span>
         </button>
       <!-- /CONTENT --></div>
       </div>
 
       <div class="section-head i18n-fade reveal">
-        <div class="overline"><span class="line"></span><span data-i18n="reportsOverline"></span></div>
-        <h2 class="display" style="font-size:clamp(34px,4.5vw,56px);" data-i18n="reportsTitle"></h2>
+        <div class="overline"><span class="line"></span><span data-i18n="reportsOverline">Transparence</span></div>
+        <h2 class="display" style="font-size:clamp(34px,4.5vw,56px);" data-i18n="reportsTitle">Rapports annuels et états financiers</h2>
       </div>
 
       <!-- report cards: content/documents.json -> reports (build-langs.mjs) -->
       <div class="docs-grid i18n-fade"><!-- CONTENT:DOCS -->
         <div class="doc-card reveal">
           <span class="year">2025</span>
-          <h3 data-i18n="docsBoth"></h3>
+          <h3 data-i18n="docsBoth">Rapport d’activité et états financiers</h3>
           <p>Rapport d’activité pour 2025 — soutien psychologique, bourses musicales, formations pour les travailleurs sociaux, Rencontres avec l’art et bénévolat d’entreprise.</p>
           <p>Bilan et compte de résultat pour l’exercice 2025.</p>
           <div class="dl-list">
-            <button type="button" class="dl" data-doc="/uploads/docs/Sprawozdanie-z-dzialalnosci-2025.pdf" data-doc-title="Rapport d’activité 2025"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg> <span data-i18n="activityReport"></span></button>
-            <button type="button" class="dl" data-doc="/uploads/docs/Bilans-Fundacja-Stock-2025.pdf" data-doc-title="Bilan 2025"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg> <span data-i18n="balance"></span></button>
-            <button type="button" class="dl" data-doc="/uploads/docs/RZiS-Fundacja-Stock-2025.pdf" data-doc-title="Compte de résultat 2025"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg> <span data-i18n="pnl"></span></button>
+            <button type="button" class="dl" data-doc="/uploads/docs/Sprawozdanie-z-dzialalnosci-2025.pdf" data-doc-title="Rapport d’activité 2025"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg> <span data-i18n="activityReport">Rapport d’activité</span></button>
+            <button type="button" class="dl" data-doc="/uploads/docs/Bilans-Fundacja-Stock-2025.pdf" data-doc-title="Bilan 2025"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg> <span data-i18n="balance">Bilan</span></button>
+            <button type="button" class="dl" data-doc="/uploads/docs/RZiS-Fundacja-Stock-2025.pdf" data-doc-title="Compte de résultat 2025"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg> <span data-i18n="pnl">Compte de résultat</span></button>
           </div>
         </div>
         <div class="doc-card reveal">
           <span class="year">2024</span>
-          <h3 data-i18n="financials"></h3>
+          <h3 data-i18n="financials">États financiers</h3>
           <p>Bilan et compte de résultat pour l’exercice 2024.</p>
           <div class="dl-list">
-            <button type="button" class="dl" data-doc="/uploads/docs/Bilans-Fundacja-Stock-2024.pdf" data-doc-title="Bilan 2024"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg> <span data-i18n="balance"></span></button>
-            <button type="button" class="dl" data-doc="/uploads/docs/RZiS-Fundacja-Stock-2024.pdf" data-doc-title="Compte de résultat 2024"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg> <span data-i18n="pnl"></span></button>
+            <button type="button" class="dl" data-doc="/uploads/docs/Bilans-Fundacja-Stock-2024.pdf" data-doc-title="Bilan 2024"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg> <span data-i18n="balance">Bilan</span></button>
+            <button type="button" class="dl" data-doc="/uploads/docs/RZiS-Fundacja-Stock-2024.pdf" data-doc-title="Compte de résultat 2024"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg> <span data-i18n="pnl">Compte de résultat</span></button>
           </div>
         </div>
         <div class="doc-card reveal">
           <span class="year">2023</span>
-          <h3 data-i18n="docsBoth"></h3>
+          <h3 data-i18n="docsBoth">Rapport d’activité et états financiers</h3>
           <p>Rapport d’activité de la fondation pour l’année 2023 — la poursuite du soutien aux réfugiés et le tournant vers des projets culturels et solidaires.</p>
           <p>Bilan et compte de résultat pour l’exercice 2023.</p>
           <div class="dl-list">
-            <button type="button" class="dl" data-doc="/uploads/docs/Sprawozdanie_z_dzialalnosci_fundacji_2023-PJ2024.pdf" data-doc-title="Rapport d’activité 2023"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg> <span data-i18n="activityReport"></span></button>
-            <button type="button" class="dl" data-doc="/uploads/docs/BILANS-STOCK-2023.pdf" data-doc-title="Bilan 2023"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg> <span data-i18n="balance"></span></button>
-            <button type="button" class="dl" data-doc="/uploads/docs/RZiS-STOCK-2023.pdf" data-doc-title="Compte de résultat 2023"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg> <span data-i18n="pnl"></span></button>
+            <button type="button" class="dl" data-doc="/uploads/docs/Sprawozdanie_z_dzialalnosci_fundacji_2023-PJ2024.pdf" data-doc-title="Rapport d’activité 2023"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg> <span data-i18n="activityReport">Rapport d’activité</span></button>
+            <button type="button" class="dl" data-doc="/uploads/docs/BILANS-STOCK-2023.pdf" data-doc-title="Bilan 2023"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg> <span data-i18n="balance">Bilan</span></button>
+            <button type="button" class="dl" data-doc="/uploads/docs/RZiS-STOCK-2023.pdf" data-doc-title="Compte de résultat 2023"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg> <span data-i18n="pnl">Compte de résultat</span></button>
           </div>
         </div>
         <div class="doc-card reveal">
           <span class="year">2022</span>
-          <h3 data-i18n="activityReport"></h3>
+          <h3 data-i18n="activityReport">Rapport d’activité</h3>
           <p>Rapport d’activité de la fondation pour l’année 2022 — l’année de sa création et du lancement du programme « Spirit of Ukraine ».</p>
           <div class="dl-list">
-            <button type="button" class="dl" data-doc="/uploads/docs/Fundacja-Stock-sprawozdanie_z_dzialalnosci_2022-wersja-2.4.pdf" data-doc-title="Rapport d’activité 2022"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg> <span data-i18n="activityReport"></span></button>
+            <button type="button" class="dl" data-doc="/uploads/docs/Fundacja-Stock-sprawozdanie_z_dzialalnosci_2022-wersja-2.4.pdf" data-doc-title="Rapport d’activité 2022"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1.5 9s2.8-4.6 7.5-4.6S16.5 9 16.5 9s-2.8 4.6-7.5 4.6S1.5 9 1.5 9Z M9 11.1a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z" stroke="#CD9E0C" stroke-width="1.4" stroke-linejoin="round"></path></svg> <span data-i18n="activityReport">Rapport d’activité</span></button>
           </div>
         </div>
       <!-- /CONTENT --></div>
@@ -118,16 +118,16 @@
   <section class="initiatives">
     <div class="container">
       <div class="section-head i18n-fade reveal">
-        <div class="overline"><span class="line"></span><span data-i18n="finSumOverline"></span></div>
-        <h2 class="display" style="font-size:clamp(34px,4.5vw,56px);" data-i18n="finSumTitle"></h2>
-        <p style="margin:0;font-size:15.5px;line-height:1.75;" data-i18n="finSumLead"></p>
+        <div class="overline"><span class="line"></span><span data-i18n="finSumOverline">Les finances en bref</span></div>
+        <h2 class="display" style="font-size:clamp(34px,4.5vw,56px);" data-i18n="finSumTitle">L’année 2025 en chiffres</h2>
+        <p style="margin:0;font-size:15.5px;line-height:1.75;" data-i18n="finSumLead">Les données complètes figurent dans les rapports ci-dessus. Voici les trois chiffres qui montrent le mieux où est allé l’argent.</p>
       </div>
       <div class="i18n-fade reveal" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:0 40px;">
-        <div class="mini-stat"><span class="n" data-i18n="finSum1N"></span><span class="l" data-i18n="finSum1"></span></div>
-        <div class="mini-stat"><span class="n" data-i18n="finSum2N"></span><span class="l" data-i18n="finSum2"></span></div>
-        <div class="mini-stat"><span class="n" data-i18n="finSum3N"></span><span class="l" data-i18n="finSum3"></span></div>
+        <div class="mini-stat"><span class="n" data-i18n="finSum1N">500 000</span><span class="l" data-i18n="finSum1">PLN de recettes de l’activité statutaire</span></div>
+        <div class="mini-stat"><span class="n" data-i18n="finSum2N">537 958</span><span class="l" data-i18n="finSum2">PLN consacrés aux programmes d’aide</span></div>
+        <div class="mini-stat"><span class="n" data-i18n="finSum3N">84,5 %</span><span class="l" data-i18n="finSum3">des coûts sont allés aux objectifs statutaires (57,7 % en 2024)</span></div>
       </div>
-      <p class="i18n-fade reveal" data-i18n="finSumNote" style="margin:clamp(26px,3.5vw,38px) 0 0;max-width:760px;font-size:14.5px;line-height:1.8;color:rgba(22,59,101,.75);"></p>
+      <p class="i18n-fade reveal" data-i18n="finSumNote" style="margin:clamp(26px,3.5vw,38px) 0 0;max-width:760px;font-size:14.5px;line-height:1.8;color:rgba(22,59,101,.75);">En 2025, nous avons dépensé pour les programmes plus que nos recettes — la différence a été couverte par les réserves constituées les années précédentes. Dans le même temps, nous avons réduit les frais administratifs de 320 274 PLN à 98 659 PLN.</p>
     </div>
   </section>
 
