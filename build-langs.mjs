@@ -460,7 +460,7 @@ function transform(src, page, lang, art) {
   // per-URL language marker (read by main.js and page scripts before render)
   h = h.replace(/<script data-fs-lang>[\s\S]*?<\/script>\n?/, '');
   h = h.replace(/(<link rel="icon")/,
-    `<script data-fs-lang>window.FS_LANG='${lang}';window.FS_PUBLIC_LANGS=${JSON.stringify(PUBLIC_LANGS)};try{localStorage.setItem('fs-lang','${lang}')}catch(e){}</script>\n$1`);
+    `<script data-fs-lang>window.FS_LANG='${lang}';window.FS_PUBLIC_LANGS=${JSON.stringify(PUBLIC_LANGS)};try{localStorage.setItem('fs-lang','${lang}')}catch(e){}${wczesnaSciana()}</script>\n$1`);
   // per-URL article marker (static article pages)
   h = h.replace(/<script data-fs-article>[\s\S]*?<\/script>\n?/, '');
   if (art) h = h.replace(/(<link rel="icon")/, `<script data-fs-article>window.FS_ARTICLE='${art.id}';</script>\n$1`);
@@ -589,6 +589,26 @@ function docTitle(lang, key, year) {
   const d = PAGE_DICTS['statute.html'] || {};
   const label = (d[lang] || {})[key] || (d.en || {})[key] || key;
   return year ? `${label} ${year}` : label;
+}
+
+/* Tryb konserwacji: zasłona musi wejść PRZED pierwszym malowaniem strony.
+   Ścianę rysuje main.js, który idzie z „defer", więc przeglądarka zdążała
+   pokazać stronę, zanim skrypt ją zasłonił — odwiedzający (a teraz: Zarząd)
+   widział błysk treści przed prośbą o hasło. Pomiar Lighthouse 11.08.2026
+   pokazywał to wprost: elementem LCP było zdjęcie hero, mimo włączonej ściany.
+
+   Ten fragment idzie do skryptu w <head>, czyli przed CSS i przed treścią.
+   Dokłada klasę „fs-locked” od razu, o ile odwiedzający nie ma zapisanego
+   hasła. Znacznik i odcisk czytamy z main.js, żeby nie utrzymywać drugiej
+   kopii — po przestawieniu MAINTENANCE na false build przestaje cokolwiek
+   wstawiać. Bez JavaScriptu strona zostaje widoczna, tak jak dotąd: to
+   zasłona przed przypadkowym gościem, nie zamek. */
+function wczesnaSciana() {
+  const src = readFileSync(join(SRC, 'assets', 'main.js'), 'utf8');
+  if (!/const MAINTENANCE = true;/.test(src)) return '';
+  const odcisk = (src.match(/const REVIEW_DIGEST = '([a-f0-9]+)'/) || [])[1];
+  if (!odcisk) throw new Error('Tryb konserwacji włączony, ale nie znalazłem REVIEW_DIGEST w main.js');
+  return `try{if(localStorage.getItem('fs-review')!=='${odcisk}')document.documentElement.classList.add('fs-locked')}catch(e){}`;
 }
 
 /* Kafel OPP obok głównego przycisku na stronie głównej (tylko PL).

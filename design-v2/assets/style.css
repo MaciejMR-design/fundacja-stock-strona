@@ -34,7 +34,13 @@ p, h1, h2, h3, h4, li, td, a, figcaption { overflow-wrap: break-word; }
 .btn-white:hover { background: var(--cream); color: var(--navy-dark); box-shadow: 0 10px 26px rgba(0,0,0,.25); }
 
 /* ---------- header ---------- */
-header.site { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.96); backdrop-filter: blur(10px); border-bottom: 1px solid var(--gray); transition: box-shadow .3s; }
+/* min-height rezerwuje miejsce na nagłówek, zanim main.js go zbuduje. Bez tego
+   pusty <header> miał zerową wysokość i cała strona przeskakiwała w dół
+   w chwili wstrzyknięcia menu — Lighthouse liczył to jako CLS 0,149
+   (zmierzone 11.08.2026 przy zdjętej ścianie hasła; przy włączonej ścianie
+   przeskok był niewidoczny, bo treść jest zasłonięta). 75 px to zmierzona
+   wysokość gotowego nagłówka — identyczna na telefonie i na desktopie. */
+header.site { position: sticky; top: 0; z-index: 100; min-height: 75px; background: rgba(255,255,255,.96); backdrop-filter: blur(10px); border-bottom: 1px solid var(--gray); transition: box-shadow .3s; }
 header.site.scrolled { box-shadow: 0 6px 24px rgba(0,41,87,.1); }
 .header-inner { display: flex; align-items: center; gap: 24px; padding-top: 12px; padding-bottom: 12px; }
 .header-inner .logo img { height: 50px; display: block; transition: height .3s; }
@@ -184,14 +190,21 @@ header.site.scrolled .logo img { height: 42px; }
 .hero-latest:hover { background: rgba(255,255,255,.12); border-color: var(--gold-light); transform: translateY(-4px); color: var(--white); }
 .hero-latest .hl-tag { display: flex; align-items: center; gap: 10px; font-size: 10.5px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--gold-light); }
 .hero-latest .hl-tag .date { color: rgba(255,255,255,.65); letter-spacing: .06em; margin-left: auto; }
-.hero-latest .hl-title { font-family: 'Literata', serif; font-weight: 400; font-size: 18px; line-height: 1.35; color: var(--white); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+/* min-height = dwa wiersze (tyle, ile dopuszcza obcięcie niżej): tytuł wpisuje
+   JavaScript, a pusty element miał zerową wysokość i po wypełnieniu spychał
+   wiersz „Czytaj więcej” w dół. Rezerwacja miejsca zdejmuje resztkę CLS. */
+.hero-latest .hl-title { min-height: 2.7em; font-family: 'Literata', serif; font-weight: 400; font-size: 18px; line-height: 1.35; color: var(--white); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .hero-latest .hl-go { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--gold-light); }
 .hero-latest .hl-go .arr { transition: transform .25s; }
 .hero-latest:hover .hl-go .arr { transform: translateX(5px); }
 .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); position: relative; flex-shrink: 0; }
 .pulse::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 2px solid var(--gold); animation: pulse 2s ease-out infinite; }
 @keyframes pulse { 0% { transform: scale(.6); opacity: .9; } 100% { transform: scale(1.8); opacity: 0; } }
-@media (max-width: 1060px) { .hero-latest { position: relative; right: auto; bottom: auto; margin: 34px 24px 0; z-index: 3; } .hero .scroll-hint { display: none; } }
+/* Poniżej 1060 px pasek wchodzi w normalny układ strony, a jego treść (tytuł
+   i data najnowszego wpisu) dopisuje JavaScript — pusty miał niższą wysokość
+   i po wypełnieniu spychał stronę w dół (CLS 0,060). 138 px to zmierzona
+   wysokość gotowego paska. Na desktopie leży absolutnie, więc nie przesuwa nic. */
+@media (max-width: 1060px) { .hero-latest { position: relative; right: auto; bottom: auto; margin: 34px 24px 0; z-index: 3; min-height: 138px; } .hero .scroll-hint { display: none; } }
 
 /* ---------- award / recognition (About us) ---------- */
 .award { background: var(--cream); }
