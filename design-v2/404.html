@@ -54,7 +54,7 @@ const PAGE_I18N = {
   "fr": { "notFoundTitle": "Page introuvable", "notFoundText": "L’adresse que vous avez suivie n’existe pas — elle a pu changer ou le lien contient une faute de frappe.", "notFoundHome": "Retour à l’accueil" }
 };
 </script>
-<script src="/assets/main.js" defer></script>
+<script src="/assets/main.min.js" defer></script>
 <!-- 404 jest serwowana pod dowolnym adresem, wiec jezyk zna dopiero w przegladarce (FS_LANG wyzej) — stad odnosniki ustawiane tutaj, a nie w HTML. -->
 <script>document.addEventListener('DOMContentLoaded', function () { document.querySelectorAll("[data-page]").forEach(function (a) { a.href = window.fsUrl(a.dataset.page); }); });</script>
 </body>

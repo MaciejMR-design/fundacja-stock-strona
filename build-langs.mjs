@@ -753,6 +753,68 @@ function writeMinCss() {
 }
 const [cssPrzed, cssPo] = writeMinCss();
 
+/* Zminifikowane kopie skryptów. Źródłem pozostają czytelne, mocno
+   skomentowane pliki — strony wskazują wersje .min.js budowane tutaj.
+
+   Świadomie NIE sklejamy linii i nie skracamy nazw: usuwamy tylko komentarze
+   oraz wcięcia. Skracanie nazw wymagałoby prawdziwego narzędzia (a build ma
+   zero zależności, co jest jego zaletą), a sklejanie linii grozi zmianą
+   znaczenia kodu tam, gdzie średnik jest dopisywany automatycznie. Same
+   komentarze to w tych plikach ponad połowa objętości.
+
+   Przechodzimy tekst znak po znaku, pilnując, czy jesteśmy w tekście
+   („…", '…', `…`) albo w wyrażeniu regularnym — inaczej „//" w adresie
+   https:// zostałoby wzięte za początek komentarza i ucięło resztę linii. */
+function minifyJs(src) {
+  let out = '';
+  let i = 0;
+  const n = src.length;
+  let ostatniZnaczacy = '';           // ostatni niebiały znak — rozstrzyga / jako regex czy dzielenie
+  while (i < n) {
+    const c = src[i], d = src[i + 1];
+    if (c === '/' && d === '/') { while (i < n && src[i] !== '\n') i++; continue; }
+    if (c === '/' && d === '*') { i += 2; while (i < n && !(src[i] === '*' && src[i + 1] === '/')) i++; i += 2; continue; }
+    if (c === '"' || c === "'" || c === '`') {
+      const cudzyslow = c; out += c; i++;
+      while (i < n) {
+        out += src[i];
+        if (src[i] === '\\') { out += src[i + 1] ?? ''; i += 2; continue; }
+        if (src[i] === cudzyslow) { i++; break; }
+        i++;
+      }
+      ostatniZnaczacy = cudzyslow;
+      continue;
+    }
+    if (c === '/' && /[(,=:[!&|?{};+\-*%~^<>]/.test(ostatniZnaczacy || '(')) {
+      out += c; i++;                  // wyrażenie regularne — przepisujemy dosłownie
+      let wKlasie = false;
+      while (i < n) {
+        out += src[i];
+        if (src[i] === '\\') { out += src[i + 1] ?? ''; i += 2; continue; }
+        if (src[i] === '[') wKlasie = true;
+        else if (src[i] === ']') wKlasie = false;
+        else if (src[i] === '/' && !wKlasie) { i++; break; }
+        i++;
+      }
+      while (i < n && /[gimsuy]/.test(src[i])) { out += src[i]; i++; }
+      ostatniZnaczacy = '/';
+      continue;
+    }
+    out += c;
+    if (!/\s/.test(c)) ostatniZnaczacy = c;
+    i++;
+  }
+  return out.split('\n').map(l => l.trim()).filter(Boolean).join('\n');
+}
+
+function writeMinJs(nazwa) {
+  const src = readFileSync(join(SRC, 'assets', nazwa + '.js'), 'utf8');
+  const min = minifyJs(src);
+  writeFileSync(join(SRC, 'assets', nazwa + '.min.js'), min, 'utf8');
+  return [nazwa, src.length, min.length];
+}
+const JS_MIN = ['main', 'docviewer'].map(writeMinJs);
+
 let written = 0;
 const removed = [];
 writeArticlesJs();
