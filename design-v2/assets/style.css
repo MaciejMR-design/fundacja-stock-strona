@@ -658,7 +658,19 @@ body.lang-switching .i18n-fade { opacity: 0; }
    Zasłania stronę, dopóki recenzent nie poda hasła. Szczegóły i uzasadnienie
    (dlaczego zasłonka, a nie zabezpieczenie) — w main.js przy reviewGate(). */
 html.fs-locked { overflow: hidden; }
-html.fs-locked body > *:not(.fs-gate) { visibility: hidden; }
+/* Zasłonięta treść nie tylko znika z oczu — przestaje też być rysowana.
+   „visibility: hidden" zatrzymuje samo malowanie, ale przeglądarka nadal
+   liczyła style i układ dla animacji pod spodem: powiększającego się zdjęcia
+   hero, wsuwających się bloków, pulsującej kropki. Na emulowanym telefonie
+   dawało to 760 ms pracy procesora, zanim pokazała się karta z hasłem
+   (PageSpeed 11.08 — wtedy jedyne, co odwiedzający widzi). Zatrzymanie
+   animacji i wyłączenie renderowania ukrytych gałęzi zdejmuje ten koszt.
+   Reguła żyje tylko na czas trybu konserwacji. */
+html.fs-locked body > *:not(.fs-gate) { visibility: hidden; content-visibility: hidden; }
+html.fs-locked body > *:not(.fs-gate),
+html.fs-locked body > *:not(.fs-gate) *,
+html.fs-locked body > *:not(.fs-gate) *::before,
+html.fs-locked body > *:not(.fs-gate) *::after { animation: none !important; transition: none !important; }
 .fs-gate [hidden] { display: none; }   /* atrybut hidden musi wygrać z regułami na <p> */
 /* Karta jest w kodzie każdej strony, ale pokazuje się wyłącznie razem z klasą
    „fs-locked" — czyli komuś, kto nie ma jeszcze zapisanego hasła. Kto je zna,
