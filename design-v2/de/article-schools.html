@@ -31,8 +31,20 @@
 <!-- /ld-json -->
 </head>
 <body>
+<div class="fs-gate">
+    <form class="fs-gate-card" novalidate>
+      <p class="fs-gate-kicker">Fundacja Stock</p>
+      <p class="fs-gate-h">Strona w trakcie prac</p>
+      <p>Przygotowujemy nową wersję serwisu. Prosimy o cierpliwość — wrócimy niebawem.</p>
+      <p class="fs-gate-sub">We are working on the new version of the website. Please check back shortly.</p>
+      <label for="fsGatePass">Hasło / Password</label>
+      <input id="fsGatePass" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" required>
+      <button type="submit">Zobacz stronę</button>
+      <p class="fs-gate-err" hidden>Nieprawidłowe hasło — spróbuj ponownie.</p>
+      <p class="fs-gate-note">Kontakt: <a href="mailto:biuro@fundacjastock.pl">biuro@fundacjastock.pl</a></p>
+    </form></div>
 
-  <header class="site" id="site-header"></header>
+<header class="site" id="site-header"></header>
 
   <section class="page-hero">
     <img class="hero-photo" id="heroPhoto" src="/uploads/bg-news.svg" alt="" aria-hidden="true" fetchpriority="high" decoding="async">

@@ -511,6 +511,11 @@ function transform(src, page, lang, art) {
   }
   h = przepiszOdnosniki(h, lang);
   h = wypelnijTeksty(h, lang, PAGE_DICTS[tplPage]);
+  /* Najpierw usuwamy kartę z poprzedniego przebiegu (build czyta własny wynik),
+     potem wstawiamy świeżą — albo żadnej, gdy tryb konserwacji jest wyłączony. */
+  h = h.replace(/(<body>)\s*<div class="fs-gate">[\s\S]*?<\/div>\s*/i, '$1\n');
+  const karta = kartaSciany();
+  if (karta) h = h.replace(/<body>/i, '<body>\n' + karta + '\n');
   return h;
 }
 
@@ -603,12 +608,27 @@ function docTitle(lang, key, year) {
    kopii — po przestawieniu MAINTENANCE na false build przestaje cokolwiek
    wstawiać. Bez JavaScriptu strona zostaje widoczna, tak jak dotąd: to
    zasłona przed przypadkowym gościem, nie zamek. */
+const MAIN_JS = readFileSync(join(SRC, 'assets', 'main.js'), 'utf8');
+const TRYB_KONSERWACJI = /const MAINTENANCE = true;/.test(MAIN_JS);
+
 function wczesnaSciana() {
-  const src = readFileSync(join(SRC, 'assets', 'main.js'), 'utf8');
-  if (!/const MAINTENANCE = true;/.test(src)) return '';
-  const odcisk = (src.match(/const REVIEW_DIGEST = '([a-f0-9]+)'/) || [])[1];
+  if (!TRYB_KONSERWACJI) return '';
+  const odcisk = (MAIN_JS.match(/const REVIEW_DIGEST = '([a-f0-9]+)'/) || [])[1];
   if (!odcisk) throw new Error('Tryb konserwacji włączony, ale nie znalazłem REVIEW_DIGEST w main.js');
   return `try{if(localStorage.getItem('fs-review')!=='${odcisk}')document.documentElement.classList.add('fs-locked')}catch(e){}`;
+}
+
+/* Karta z prośbą o hasło wprost w kodzie strony — treść bierzemy z main.js
+   (FS_GATE_MAINTENANCE), żeby nie utrzymywać drugiej kopii. Dzięki temu karta
+   maluje się zaraz po arkuszu stylów, zamiast czekać na pobranie i wykonanie
+   main.js: pomiar PageSpeed z 11.08 pokazywał z tego powodu pierwszy render
+   dopiero po 4 s. Karta jest ukryta przez CSS, dopóki nie ma klasy
+   „fs-locked" — kto zna hasło, w ogóle jej nie zobaczy. */
+function kartaSciany() {
+  if (!TRYB_KONSERWACJI) return '';
+  const m = MAIN_JS.match(/const FS_GATE_MAINTENANCE = `([\s\S]*?)`;/);
+  if (!m) throw new Error('Nie znalazłem FS_GATE_MAINTENANCE w main.js');
+  return `<div class="fs-gate">${m[1]}</div>`;
 }
 
 /* Kafel OPP obok głównego przycisku na stronie głównej (tylko PL).

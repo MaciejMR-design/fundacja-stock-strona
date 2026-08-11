@@ -660,13 +660,20 @@ body.lang-switching .i18n-fade { opacity: 0; }
 html.fs-locked { overflow: hidden; }
 html.fs-locked body > *:not(.fs-gate) { visibility: hidden; }
 .fs-gate [hidden] { display: none; }   /* atrybut hidden musi wygrać z regułami na <p> */
-.fs-gate { position: fixed; inset: 0; z-index: 9999; display: grid; place-items: center;
+/* Karta jest w kodzie każdej strony, ale pokazuje się wyłącznie razem z klasą
+   „fs-locked" — czyli komuś, kto nie ma jeszcze zapisanego hasła. Kto je zna,
+   nie zobaczy jej ani przez ułamek sekundy. Bez JavaScriptu klasa nie powstaje,
+   więc strona zostaje widoczna: to zasłona przed przypadkowym gościem. */
+.fs-gate { display: none; }
+html.fs-locked .fs-gate { position: fixed; inset: 0; z-index: 9999; display: grid; place-items: center;
   padding: 24px; background: var(--navy-dark); }
 .fs-gate-card { width: 100%; max-width: 430px; background: #fff; border-radius: 14px;
   padding: clamp(26px, 5vw, 38px); box-shadow: 0 24px 60px rgba(0, 12, 30, .4); }
 .fs-gate-kicker { margin: 0 0 10px; font-size: 11.5px; font-weight: 700; letter-spacing: .2em;
   text-transform: uppercase; color: var(--gold); }
-.fs-gate-card h1 { margin: 0 0 10px; font-size: 24px; line-height: 1.25; color: var(--navy); }
+/* nie <h1>: karta jest w kodzie kazdej strony, a drugi nagłówek pierwszego
+   poziomu psulby strukture dokumentu (i tak raportowal to sprawdz-strone.mjs) */
+.fs-gate-card .fs-gate-h { display: block; font-family: 'Literata', serif; font-weight: 400; margin: 0 0 10px; font-size: 24px; line-height: 1.25; color: var(--navy); }
 .fs-gate-card p { margin: 0 0 18px; font-size: 15px; line-height: 1.6; color: rgba(22, 59, 101, .8); }
 .fs-gate-card label { display: block; margin-bottom: 6px; font-size: 12px; font-weight: 600;
   letter-spacing: .1em; text-transform: uppercase; color: rgba(22, 59, 101, .65); }

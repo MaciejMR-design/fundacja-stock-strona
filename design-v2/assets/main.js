@@ -138,17 +138,15 @@ const sha256hex = async text => {
   return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, '0')).join('');
 };
 
-function reviewGate() {
-  if (!MAINTENANCE && isPublic(currentLang)) return;
-  try { if (localStorage.getItem('fs-review') === REVIEW_DIGEST) return; } catch (e) { /* brak localStorage */ }
-
-  document.documentElement.classList.add('fs-locked');
-  const box = document.createElement('div');
-  box.className = 'fs-gate';
-  box.innerHTML = MAINTENANCE ? `
+/* Karta trybu konserwacji. Trzymana osobno, bo build wstawia dokładnie ten
+   sam kod wprost do stron (build-langs.mjs, kartaSciany) — dzięki temu karta
+   maluje się razem z arkuszem stylów, a nie dopiero po pobraniu i wykonaniu
+   tego pliku. Wcześniej na wolnym łączu przeglądarka nie miała czego pokazać
+   przez ~4 s: treść była zasłonięta, a karty jeszcze nie było. */
+const FS_GATE_MAINTENANCE = `
     <form class="fs-gate-card" novalidate>
       <p class="fs-gate-kicker">Fundacja Stock</p>
-      <h1>Strona w trakcie prac</h1>
+      <p class="fs-gate-h">Strona w trakcie prac</p>
       <p>Przygotowujemy nową wersję serwisu. Prosimy o cierpliwość — wrócimy niebawem.</p>
       <p class="fs-gate-sub">We are working on the new version of the website. Please check back shortly.</p>
       <label for="fsGatePass">Hasło / Password</label>
@@ -156,10 +154,23 @@ function reviewGate() {
       <button type="submit">Zobacz stronę</button>
       <p class="fs-gate-err" hidden>Nieprawidłowe hasło — spróbuj ponownie.</p>
       <p class="fs-gate-note">Kontakt: <a href="mailto:biuro@fundacjastock.pl">biuro@fundacjastock.pl</a></p>
-    </form>` : `
+    </form>`;
+
+function reviewGate() {
+  if (!MAINTENANCE && isPublic(currentLang)) return;
+  try { if (localStorage.getItem('fs-review') === REVIEW_DIGEST) return; } catch (e) { /* brak localStorage */ }
+
+  document.documentElement.classList.add('fs-locked');
+  /* Karta zwykle jest już w kodzie strony (wstawia ją build). Tworzymy ją
+     tylko wtedy, gdy jej nie ma — np. w surowych szablonach bez builda. */
+  let box = document.querySelector('.fs-gate');
+  if (!box) {
+    box = document.createElement('div');
+    box.className = 'fs-gate';
+    box.innerHTML = MAINTENANCE ? FS_GATE_MAINTENANCE : `
     <form class="fs-gate-card" novalidate>
       <p class="fs-gate-kicker">${currentLang.toUpperCase()} — pre-release</p>
-      <h1>Language version under review</h1>
+      <p class="fs-gate-h">Language version under review</p>
       <p>This translation is being checked before publication. Enter the password to view it.</p>
       <label for="fsGatePass">Password</label>
       <input id="fsGatePass" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" required>
@@ -167,12 +178,16 @@ function reviewGate() {
       <p class="fs-gate-err" hidden>Wrong password — please try again.</p>
       <p class="fs-gate-note">Published versions: English and Polish — available without a password.</p>
     </form>`;
-  document.body.appendChild(box);
+    document.body.appendChild(box);
+  }
 
   const form = box.querySelector('form');
   const input = box.querySelector('input');
   const err = box.querySelector('.fs-gate-err');
-  input.focus();
+  /* Ustawienie kursora w polu wymusza przeliczenie układu (PageSpeed 11.08:
+     60 ms „wymuszonego przeformatowania"). Po pierwszym malowaniu kosztuje
+     tyle samo, ale nie opóźnia już tego, co widzi odwiedzający. */
+  requestAnimationFrame(() => input.focus());
   form.addEventListener('submit', async e => {
     e.preventDefault();
     if ((await sha256hex(input.value)) !== REVIEW_DIGEST) {
@@ -262,7 +277,7 @@ function buildHeader() {
   ).join('');
   h.innerHTML = `
     <div class="container header-inner">
-      <a href="${fsUrl('index')}" class="logo"><img src="/uploads/logo-footer.svg" alt="Stock Foundation"></a>
+      <a href="${fsUrl('index')}" class="logo"><img src="/uploads/logo-footer.svg" alt="Stock Foundation" width="226" height="85"></a>
       <nav class="main-nav i18n-fade">${links}</nav>
       <div class="lang" id="langDD">
         <button class="lang-btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false">
@@ -284,7 +299,7 @@ function buildFooter() {
     <div class="container">
       <div class="footer-grid i18n-fade">
         <div class="footer-col" style="gap:22px;">
-          <div class="footer-logo"><img src="/uploads/logo-white.svg" alt="Stock Foundation"></div>
+          <div class="footer-logo"><img src="/uploads/logo-white.svg" alt="Stock Foundation" width="226" height="85"></div>
           <p class="footer-blurb" data-i18n="footerBlurb"></p>
           <!-- Status OPP i numer KRS — w stopce, czyli tam, gdzie odruchowo
                szuka się danych rejestrowych, i na każdej podstronie. Bez
