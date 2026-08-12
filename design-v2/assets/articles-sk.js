@@ -98,7 +98,7 @@ window.ARTICLES = [
     "img": "/uploads/wolontariat-bb-1.webp",
     "images": [
       "/uploads/wolontariat-bb-1.webp",
-      "/uploads/wolontariat-bb-2.webp",
+      "/uploads/wolontariat-bb-2b.webp",
       "/uploads/wolontariat-bb-3.webp",
       "/uploads/wolontariat-bb-4.webp",
       "/uploads/wolontariat-bb-5.webp",
