@@ -379,7 +379,10 @@ function orgLd(lang) {
     },
     contactPoint: {
       '@type': 'ContactPoint', telephone: '+48538183916',
-      contactType: 'customer service', email: 'pawel.jablonski@stockspirits.com',
+      /* Jedyny publiczny adres fundacji — decyzja klienta z 12.08.2026
+         (prywatny numer i adres stockspirits.com zdjęte ze strony Kontakt,
+         więc znikają też z danych strukturalnych dla Google). */
+      contactType: 'customer service', email: 'wolontariat@fundacjastock.pl',
       availableLanguage: PUBLIC_LANGS.map(l => HTML_LANG[l])
     },
     sameAs: ['https://www.facebook.com/fundacjastock/', 'https://www.instagram.com/fundacja_stock']
