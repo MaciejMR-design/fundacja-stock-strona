@@ -92,6 +92,39 @@ window.ARTICLES = [
     }
   },
   {
+    "id": "wolontariat-bielsko",
+    "ts": "2026-06-19",
+    "cat": "volunteer",
+    "img": "/uploads/wolontariat-bb-1.webp",
+    "images": [
+      "/uploads/wolontariat-bb-1.webp",
+      "/uploads/wolontariat-bb-2.webp",
+      "/uploads/wolontariat-bb-3.webp",
+      "/uploads/wolontariat-bb-4.webp",
+      "/uploads/wolontariat-bb-5.webp",
+      "/uploads/wolontariat-bb-6.webp",
+      "/uploads/wolontariat-bb-7.webp"
+    ],
+    "date": {
+      "pl": "19 czerwca 2026"
+    },
+    "title": {
+      "pl": "Dzień Wolontariatu w Bielsku-Białej"
+    },
+    "lead": {
+      "pl": "W piątek 19 czerwca 26 naszych współpracowników z Bielska-Białej sprzątało brzegi rzeki Białej i jej dopływu — Straconki. Wynik akcji: 56 worków i 900 kg odpadów."
+    },
+    "body": {
+      "pl": [
+        "W piątek 19 czerwca dzielna grupa 26 naszych współpracowników z Bielska-Białej wzięła udział w akcji sprzątania brzegów rzeki Białej oraz jej dopływu — Straconki. Wydarzenie zostało zorganizowane przez Fundację Stock wspólnie z akcją Czysta Rzeka; ogromną pomoc okazały nam Magda Krysta Piecuch i Ania Siuda, a od początku wspierał nas dyrektor Robert Tracz. Było to już nasze trzecie takie działanie — po wcześniejszych akcjach w Warszawie i Lublinie.",
+        "Pogoda dopisała wyjątkowo. O godzinie 11:00 byliśmy w komplecie przy namiocie sztabowym (w tym ratownik medyczny z w pełni wyposażoną karetką). Każdy dostał rękawice, worki i zapas wody do picia — i od razu wszystkim zachciało się działać. Podzieliliśmy się na grupy i ruszyliśmy w teren.",
+        "Nasi wolontariusze ostro zabrali się do pracy i w sumie zapełnili 56 worków śmieci. Do tego wyciągnęliśmy parę opon, kawał ciężkiego żelastwa i szybę z hartowanego szkła.",
+        "Efekty pracy robią wrażenie, a najlepszy moment przyszedł na końcu, kiedy wszystko zmierzyliśmy i policzyliśmy. Po zsumowaniu wyszedł konkretny wynik: 900 kg odpadów! Prawie tona śmieci zniknęła z natury. Dobrze mieć świadomość, że choć trochę podratowaliśmy wygląd naszych bielskich rzek.",
+        "Zmęczeni pracą i upałem, ale zadowoleni z efektów, wróciliśmy do sztabu, gdzie czekała na nas dobra pizza 🍕🙂 Dało się nawet usłyszeć głosy, że takie akcje mogłyby odbywać się w każdy piątek."
+      ]
+    }
+  },
+  {
     "id": "gerson",
     "ts": "2026-06-05",
     "cat": "art",
@@ -132,6 +165,39 @@ window.ARTICLES = [
         "Warsztaty poprowadzili nasi terapeuci, Anna Kalbus i Jerzy Brożyna, a przeznaczone były dla specjalistów pracujących na co dzień z osobami dotkniętymi różnymi formami uzależnień.",
         "Program jest bardzo praktyczny. Uczestnicy uczą się, jak prowadzić rozmowy zachęcające do pozytywnej zmiany, skutecznie reagować w sytuacjach kryzysowych, zarządzać emocjami i budować relacje oparte na zaufaniu i jasno określonych granicach. Szkolenie obejmuje też studia przypadków i praktyczne przykłady.",
         "Ważnym elementem programu jest wyjście poza proste, czarno-białe rozwiązania w stronę podejścia redukcji szkód oraz wspierania stopniowych zmian w nawykach i decyzjach życiowych. Fundacja Stock pomaga wzmacniać kompetencje tych, którzy poświęcają swoją pracę pomaganiu innym."
+      ]
+    }
+  },
+  {
+    "id": "wolontariat-lublin",
+    "ts": "2026-05-15",
+    "cat": "volunteer",
+    "img": "/uploads/wolontariat-lublin-1.webp",
+    "images": [
+      "/uploads/wolontariat-lublin-1.webp",
+      "/uploads/wolontariat-lublin-2.webp",
+      "/uploads/wolontariat-lublin-3.webp",
+      "/uploads/wolontariat-lublin-4.webp",
+      "/uploads/wolontariat-lublin-5.webp",
+      "/uploads/wolontariat-lublin-6.webp",
+      "/uploads/wolontariat-lublin-7.webp"
+    ],
+    "date": {
+      "pl": "15 maja 2026"
+    },
+    "title": {
+      "pl": "Dzień Wolontariatu w Lublinie"
+    },
+    "lead": {
+      "pl": "W piątek 15 maja 17 wolontariuszy Stock sprzątało las nad brzegiem Zalewu Zemborzyckiego. Efekt: 36 worków, opona i ponad 500 kg zebranych odpadów."
+    },
+    "body": {
+      "pl": [
+        "W piątek 15 maja grupa wspaniałych wolontariuszy Stock przeprowadziła akcję sprzątania lasu przy brzegu Zalewu Zemborzyckiego. W wydarzeniu wzięło udział aż 17 naszych wolontariuszy, którzy wspólnie pokazali, że troska o środowisko może iść w parze z dobrą energią i świetną współpracą. 🌿💪",
+        "Spotkaliśmy się o godzinie 12:00 przy namiocie sztabowym, gdzie rozdano worki i omówiono plan działania. Następnie ruszyliśmy w teren. Trzy godziny później — zmęczeni, ale bardzo zadowoleni — policzyliśmy efekty naszej pracy: 36 worków śmieci, jedna opona i ponad 500 kg zebranych odpadów!",
+        "Oprócz oczywistego ekologicznego wymiaru takich działań, zalegające odpady stanowią również dodatkowe zagrożenie pożarowe. Pozostawione szkło może doprowadzić do wzniecenia ognia, a spalające się odpady plastikowe znacząco utrudniają akcje gaśnicze.",
+        "Na zakończenie przyszedł czas na chwilę odpoczynku i wspólną pizzę 🍕🙂",
+        "Podziękowania dla organizacji Czysta Rzeka za pomoc w organizacji wydarzenia. Już teraz zapraszamy także na kolejny dzień wolontariatu, który wspólnie organizujemy 19 czerwca w Bielsku-Białej."
       ]
     }
   },

@@ -92,6 +92,39 @@ window.ARTICLES = [
     }
   },
   {
+    "id": "wolontariat-bielsko",
+    "ts": "2026-06-19",
+    "cat": "volunteer",
+    "img": "/uploads/wolontariat-bb-1.webp",
+    "images": [
+      "/uploads/wolontariat-bb-1.webp",
+      "/uploads/wolontariat-bb-2.webp",
+      "/uploads/wolontariat-bb-3.webp",
+      "/uploads/wolontariat-bb-4.webp",
+      "/uploads/wolontariat-bb-5.webp",
+      "/uploads/wolontariat-bb-6.webp",
+      "/uploads/wolontariat-bb-7.webp"
+    ],
+    "date": {
+      "sk": "19. júna 2026"
+    },
+    "title": {
+      "sk": "Deň dobrovoľníctva v Bielsku-Białej"
+    },
+    "lead": {
+      "sk": "V piatok 19. júna upratovalo 26 našich kolegov z Bielska-Białej brehy rieky Białej a jej prítoku Straconky. Výsledok akcie: 56 vriec a 900 kg odpadu."
+    },
+    "body": {
+      "sk": [
+        "V piatok 19. júna sa statočná skupina 26 našich kolegov z Bielska-Białej zúčastnila upratovania brehov rieky Białej a jej prítoku Straconky. Podujatie zorganizovala Nadácia Stock spolu s iniciatívou Czysta Rzeka (Čistá rieka); obrovskú pomoc nám poskytli Magda Krysta Piecuch a Ania Siuda a od začiatku nás podporoval riaditeľ Robert Tracz. Bola to už naša tretia takáto akcia — po skorších upratovaniach vo Varšave a Lubline.",
+        "Počasie prialo výnimočne. O 11:00 sme boli v plnom počte pri štábnom stane (vrátane zdravotníckeho záchranára s plne vybavenou sanitkou). Každý dostal rukavice, vrecia a zásobu pitnej vody — a všetkým sa hneď chcelo pustiť do práce. Rozdelili sme sa do skupín a vyrazili do terénu.",
+        "Naši dobrovoľníci sa pustili do práce naplno a spolu naplnili 56 vriec odpadkov. K tomu sme vytiahli niekoľko pneumatík, kus ťažkého železa a tabuľu z tvrdeného skla.",
+        "Výsledky práce sú pôsobivé a najlepší moment prišiel na konci, keď sme všetko odmerali a spočítali. Po sčítaní vyšiel konkrétny výsledok: 900 kg odpadu! Z prírody zmizla takmer tona odpadkov. Je dobré vedieť, že sme vzhľadu našich bielskych riek aspoň trochu pomohli.",
+        "Unavení prácou a horúčavou, ale spokojní s výsledkami sme sa vrátili do štábu, kde na nás čakala dobrá pizza 🍕🙂 Ozývali sa dokonca hlasy, že takéto akcie by sa mohli konať každý piatok."
+      ]
+    }
+  },
+  {
     "id": "gerson",
     "ts": "2026-06-05",
     "cat": "art",
@@ -132,6 +165,39 @@ window.ARTICLES = [
         "Workshopy viedli naši terapeuti Anna Kalbus a Jerzy Brożyna a boli určené odborníkom, ktorí denne pracujú s ľuďmi zasiahnutými rôznymi formami závislostí.",
         "Program je veľmi praktický. Účastníci sa učia, ako viesť rozhovory povzbudzujúce k pozitívnej zmene, účinne reagovať v krízových situáciách, zvládať emócie a budovať vzťahy založené na dôvere a jasne vymedzených hraniciach. Školenie zahŕňa aj prípadové štúdie a praktické príklady.",
         "Dôležitým prvkom programu je posun od jednoduchých čiernobielych riešení k prístupu znižovania škôd a k podpore postupných zmien v návykoch a životných rozhodnutiach. Nadácia Stock pomáha posilňovať kompetencie tých, ktorí svoju prácu venujú pomoci iným."
+      ]
+    }
+  },
+  {
+    "id": "wolontariat-lublin",
+    "ts": "2026-05-15",
+    "cat": "volunteer",
+    "img": "/uploads/wolontariat-lublin-1.webp",
+    "images": [
+      "/uploads/wolontariat-lublin-1.webp",
+      "/uploads/wolontariat-lublin-2.webp",
+      "/uploads/wolontariat-lublin-3.webp",
+      "/uploads/wolontariat-lublin-4.webp",
+      "/uploads/wolontariat-lublin-5.webp",
+      "/uploads/wolontariat-lublin-6.webp",
+      "/uploads/wolontariat-lublin-7.webp"
+    ],
+    "date": {
+      "sk": "15. mája 2026"
+    },
+    "title": {
+      "sk": "Deň dobrovoľníctva v Lubline"
+    },
+    "lead": {
+      "sk": "V piatok 15. mája upratovalo 17 dobrovoľníkov Stock les na brehu Zemborzyckej nádrže. Výsledok: 36 vriec, pneumatika a vyše 500 kg vyzbieraného odpadu."
+    },
+    "body": {
+      "sk": [
+        "V piatok 15. mája uskutočnila skvelá skupina dobrovoľníkov Stock upratovanie lesa na brehu Zemborzyckej nádrže. Zúčastnilo sa ho až 17 našich dobrovoľníkov, ktorí spoločne ukázali, že starostlivosť o životné prostredie môže ísť ruka v ruke s dobrou energiou a výbornou spoluprácou. 🌿💪",
+        "Stretli sme sa o 12:00 pri štábnom stane, kde sa rozdali vrecia a prebral plán akcie. Potom sme vyrazili do terénu. O tri hodiny neskôr — unavení, ale veľmi spokojní — sme spočítali výsledky našej práce: 36 vriec odpadkov, jedna pneumatika a vyše 500 kg vyzbieraného odpadu!",
+        "Okrem zjavného ekologického rozmeru takýchto akcií predstavuje odpad ležiaci v prírode aj zvýšené riziko požiaru. Pohodené sklo môže oheň zapáliť a horiaci plastový odpad výrazne sťažuje hasičské zásahy.",
+        "Na záver prišiel čas na chvíľu oddychu a spoločnú pizzu 🍕🙂",
+        "Ďakujeme organizácii Czysta Rzeka (Čistá rieka) za pomoc pri organizácii podujatia. A už teraz pozývame na ďalší deň dobrovoľníctva, ktorý spoločne organizujeme 19. júna v Bielsku-Białej."
       ]
     }
   },

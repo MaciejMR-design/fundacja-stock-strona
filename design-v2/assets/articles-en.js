@@ -92,6 +92,39 @@ window.ARTICLES = [
     }
   },
   {
+    "id": "wolontariat-bielsko",
+    "ts": "2026-06-19",
+    "cat": "volunteer",
+    "img": "/uploads/wolontariat-bb-1.webp",
+    "images": [
+      "/uploads/wolontariat-bb-1.webp",
+      "/uploads/wolontariat-bb-2.webp",
+      "/uploads/wolontariat-bb-3.webp",
+      "/uploads/wolontariat-bb-4.webp",
+      "/uploads/wolontariat-bb-5.webp",
+      "/uploads/wolontariat-bb-6.webp",
+      "/uploads/wolontariat-bb-7.webp"
+    ],
+    "date": {
+      "en": "19 June 2026"
+    },
+    "title": {
+      "en": "Volunteer Day in Bielsko-Biała"
+    },
+    "lead": {
+      "en": "On Friday 19 June, 26 of our colleagues from Bielsko-Biała cleaned up the banks of the Biała River and its tributary, the Straconka. The result: 56 bags and 900 kg of waste."
+    },
+    "body": {
+      "en": [
+        "On Friday 19 June, a brave group of 26 of our colleagues from Bielsko-Biała took part in a clean-up of the banks of the Biała River and its tributary, the Straconka. The event was organised by the Stock Foundation together with the Czysta Rzeka (Clean River) initiative; Magda Krysta Piecuch and Ania Siuda gave us tremendous help, and director Robert Tracz supported us from the very beginning. It was already our third such action — after earlier clean-ups in Warsaw and Lublin.",
+        "The weather was exceptionally kind. At 11:00 we were all assembled at the operations tent (including a paramedic with a fully equipped ambulance). Everyone received gloves, bags and a supply of drinking water — and straight away everyone was eager to get going. We split into groups and headed into the field.",
+        "Our volunteers got down to work in earnest and filled a total of 56 bags of rubbish. On top of that, we pulled out a few tyres, a chunk of heavy scrap metal and a pane of tempered glass.",
+        "The results are impressive, and the best moment came at the end, when everything was measured and counted. The total added up to a solid figure: 900 kg of waste! Almost a tonne of rubbish disappeared from nature. It feels good to know that we helped our Bielsko rivers look at least a little better.",
+        "Tired from the work and the heat, but happy with the results, we returned to the base, where good pizza was waiting for us 🍕🙂 Some even said that actions like this could take place every Friday."
+      ]
+    }
+  },
+  {
     "id": "gerson",
     "ts": "2026-06-05",
     "cat": "art",
@@ -132,6 +165,39 @@ window.ARTICLES = [
         "The workshops were led by our therapists, Anna Kalbus and Jerzy Brożyna, and were designed for professionals who work daily with individuals affected by various forms of addiction.",
         "The program is highly practical. Participants learn how to conduct conversations that encourage positive change, respond effectively in crisis situations, manage emotions, and build relationships based on trust and clearly defined boundaries. The training also incorporates real-life case studies and practical examples.",
         "An important aspect of the program is moving beyond simple, black-and-white solutions toward a harm-reduction approach and supporting gradual, step-by-step changes in habits and life decisions. The Stock Foundation helps strengthen the skills and expertise of those who dedicate their work to helping others."
+      ]
+    }
+  },
+  {
+    "id": "wolontariat-lublin",
+    "ts": "2026-05-15",
+    "cat": "volunteer",
+    "img": "/uploads/wolontariat-lublin-1.webp",
+    "images": [
+      "/uploads/wolontariat-lublin-1.webp",
+      "/uploads/wolontariat-lublin-2.webp",
+      "/uploads/wolontariat-lublin-3.webp",
+      "/uploads/wolontariat-lublin-4.webp",
+      "/uploads/wolontariat-lublin-5.webp",
+      "/uploads/wolontariat-lublin-6.webp",
+      "/uploads/wolontariat-lublin-7.webp"
+    ],
+    "date": {
+      "en": "15 May 2026"
+    },
+    "title": {
+      "en": "Volunteer Day in Lublin"
+    },
+    "lead": {
+      "en": "On Friday 15 May, 17 Stock volunteers cleaned up the forest on the shore of the Zemborzyce Reservoir. The result: 36 bags, a tyre and over 500 kg of collected waste."
+    },
+    "body": {
+      "en": [
+        "On Friday 15 May, a wonderful group of Stock volunteers carried out a forest clean-up on the shore of the Zemborzyce Reservoir. As many as 17 of our volunteers took part, showing together that caring for the environment can go hand in hand with good energy and great teamwork. 🌿💪",
+        "We met at 12:00 at the operations tent, where bags were handed out and the plan of action was discussed. Then we headed into the field. Three hours later — tired but very pleased — we counted the results of our work: 36 bags of rubbish, one tyre and over 500 kg of collected waste!",
+        "Beyond the obvious ecological dimension of such actions, litter left in nature also poses an additional fire hazard. Abandoned glass can spark a fire, and burning plastic waste makes firefighting operations considerably harder.",
+        "At the end, it was time for a moment of rest and a shared pizza 🍕🙂",
+        "Our thanks go to the Czysta Rzeka (Clean River) organisation for helping to organise the event. And we are already inviting you to the next volunteer day, which we are co-organising on 19 June in Bielsko-Biała."
       ]
     }
   },

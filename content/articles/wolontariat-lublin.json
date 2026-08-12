@@ -1,0 +1,83 @@
+{
+  "ts": "2026-05-15",
+  "cat": "volunteer",
+  "img": "/uploads/wolontariat-lublin-1.webp",
+  "images": [
+    "/uploads/wolontariat-lublin-1.webp",
+    "/uploads/wolontariat-lublin-2.webp",
+    "/uploads/wolontariat-lublin-3.webp",
+    "/uploads/wolontariat-lublin-4.webp",
+    "/uploads/wolontariat-lublin-5.webp",
+    "/uploads/wolontariat-lublin-6.webp",
+    "/uploads/wolontariat-lublin-7.webp"
+  ],
+  "title": {
+    "pl": "Dzień Wolontariatu w Lublinie",
+    "en": "Volunteer Day in Lublin",
+    "cz": "Den dobrovolnictví v Lublinu",
+    "it": "Giornata del volontariato a Lublino",
+    "sk": "Deň dobrovoľníctva v Lubline",
+    "de": "Freiwilligentag in Lublin",
+    "fr": "Journée du bénévolat à Lublin"
+  },
+  "lead": {
+    "pl": "W piątek 15 maja 17 wolontariuszy Stock sprzątało las nad brzegiem Zalewu Zemborzyckiego. Efekt: 36 worków, opona i ponad 500 kg zebranych odpadów.",
+    "en": "On Friday 15 May, 17 Stock volunteers cleaned up the forest on the shore of the Zemborzyce Reservoir. The result: 36 bags, a tyre and over 500 kg of collected waste.",
+    "cz": "V pátek 15. května uklízelo 17 dobrovolníků Stock les na břehu Zemborzycké nádrže. Výsledek: 36 pytlů, pneumatika a přes 500 kg sesbíraného odpadu.",
+    "it": "Venerdì 15 maggio, 17 volontari Stock hanno ripulito il bosco sulla riva del bacino di Zemborzyce. Il risultato: 36 sacchi, uno pneumatico e oltre 500 kg di rifiuti raccolti.",
+    "sk": "V piatok 15. mája upratovalo 17 dobrovoľníkov Stock les na brehu Zemborzyckej nádrže. Výsledok: 36 vriec, pneumatika a vyše 500 kg vyzbieraného odpadu.",
+    "de": "Am Freitag, dem 15. Mai, räumten 17 Stock-Freiwillige den Wald am Ufer des Zemborzyce-Stausees auf. Das Ergebnis: 36 Säcke, ein Reifen und über 500 kg gesammelter Abfall.",
+    "fr": "Le vendredi 15 mai, 17 bénévoles de Stock ont nettoyé la forêt au bord du lac de Zemborzyce. Le résultat : 36 sacs, un pneu et plus de 500 kg de déchets ramassés."
+  },
+  "body": {
+    "pl": [
+      "W piątek 15 maja grupa wspaniałych wolontariuszy Stock przeprowadziła akcję sprzątania lasu przy brzegu Zalewu Zemborzyckiego. W wydarzeniu wzięło udział aż 17 naszych wolontariuszy, którzy wspólnie pokazali, że troska o środowisko może iść w parze z dobrą energią i świetną współpracą. 🌿💪",
+      "Spotkaliśmy się o godzinie 12:00 przy namiocie sztabowym, gdzie rozdano worki i omówiono plan działania. Następnie ruszyliśmy w teren. Trzy godziny później — zmęczeni, ale bardzo zadowoleni — policzyliśmy efekty naszej pracy: 36 worków śmieci, jedna opona i ponad 500 kg zebranych odpadów!",
+      "Oprócz oczywistego ekologicznego wymiaru takich działań, zalegające odpady stanowią również dodatkowe zagrożenie pożarowe. Pozostawione szkło może doprowadzić do wzniecenia ognia, a spalające się odpady plastikowe znacząco utrudniają akcje gaśnicze.",
+      "Na zakończenie przyszedł czas na chwilę odpoczynku i wspólną pizzę 🍕🙂",
+      "Podziękowania dla organizacji Czysta Rzeka za pomoc w organizacji wydarzenia. Już teraz zapraszamy także na kolejny dzień wolontariatu, który wspólnie organizujemy 19 czerwca w Bielsku-Białej."
+    ],
+    "en": [
+      "On Friday 15 May, a wonderful group of Stock volunteers carried out a forest clean-up on the shore of the Zemborzyce Reservoir. As many as 17 of our volunteers took part, showing together that caring for the environment can go hand in hand with good energy and great teamwork. 🌿💪",
+      "We met at 12:00 at the operations tent, where bags were handed out and the plan of action was discussed. Then we headed into the field. Three hours later — tired but very pleased — we counted the results of our work: 36 bags of rubbish, one tyre and over 500 kg of collected waste!",
+      "Beyond the obvious ecological dimension of such actions, litter left in nature also poses an additional fire hazard. Abandoned glass can spark a fire, and burning plastic waste makes firefighting operations considerably harder.",
+      "At the end, it was time for a moment of rest and a shared pizza 🍕🙂",
+      "Our thanks go to the Czysta Rzeka (Clean River) organisation for helping to organise the event. And we are already inviting you to the next volunteer day, which we are co-organising on 19 June in Bielsko-Biała."
+    ],
+    "cz": [
+      "V pátek 15. května uspořádala skvělá skupina dobrovolníků Stock úklid lesa na břehu Zemborzycké nádrže. Zúčastnilo se ho celých 17 našich dobrovolníků, kteří společně ukázali, že péče o životní prostředí může jít ruku v ruce s dobrou energií a výbornou spoluprací. 🌿💪",
+      "Sešli jsme se ve 12:00 u štábního stanu, kde se rozdaly pytle a probral plán akce. Pak jsme vyrazili do terénu. O tři hodiny později — unavení, ale velmi spokojení — jsme spočítali výsledky naší práce: 36 pytlů odpadků, jedna pneumatika a přes 500 kg sesbíraného odpadu!",
+      "Kromě zjevného ekologického rozměru takových akcí představují odpadky ležící v přírodě také zvýšené riziko požáru. Pohozené sklo může oheň zažehnout a hořící plastový odpad výrazně ztěžuje hasičské zásahy.",
+      "Na závěr přišel čas na chvíli odpočinku a společnou pizzu 🍕🙂",
+      "Děkujeme organizaci Czysta Rzeka (Čistá řeka) za pomoc s pořádáním akce. A už teď zveme na další den dobrovolnictví, který společně pořádáme 19. června v Bielsku-Białé."
+    ],
+    "it": [
+      "Venerdì 15 maggio un magnifico gruppo di volontari Stock ha realizzato un'azione di pulizia del bosco sulla riva del bacino di Zemborzyce. Hanno partecipato ben 17 dei nostri volontari, dimostrando insieme che la cura dell'ambiente può andare di pari passo con la buona energia e un'ottima collaborazione. 🌿💪",
+      "Ci siamo ritrovati alle 12:00 presso la tenda operativa, dove sono stati distribuiti i sacchi e discusso il piano d'azione. Poi siamo partiti sul campo. Tre ore dopo — stanchi ma molto soddisfatti — abbiamo contato i risultati del nostro lavoro: 36 sacchi di rifiuti, uno pneumatico e oltre 500 kg di rifiuti raccolti!",
+      "Oltre all'evidente dimensione ecologica di queste azioni, i rifiuti abbandonati rappresentano anche un ulteriore rischio di incendio. Il vetro lasciato in natura può innescare un fuoco, mentre i rifiuti di plastica in fiamme rendono molto più difficili le operazioni di spegnimento.",
+      "Alla fine è arrivato il momento di riposarsi un po' e di condividere una pizza 🍕🙂",
+      "Un ringraziamento all'organizzazione Czysta Rzeka (Fiume Pulito) per l'aiuto nell'organizzazione dell'evento. E fin da ora vi invitiamo alla prossima giornata del volontariato, che organizziamo insieme il 19 giugno a Bielsko-Biała."
+    ],
+    "sk": [
+      "V piatok 15. mája uskutočnila skvelá skupina dobrovoľníkov Stock upratovanie lesa na brehu Zemborzyckej nádrže. Zúčastnilo sa ho až 17 našich dobrovoľníkov, ktorí spoločne ukázali, že starostlivosť o životné prostredie môže ísť ruka v ruke s dobrou energiou a výbornou spoluprácou. 🌿💪",
+      "Stretli sme sa o 12:00 pri štábnom stane, kde sa rozdali vrecia a prebral plán akcie. Potom sme vyrazili do terénu. O tri hodiny neskôr — unavení, ale veľmi spokojní — sme spočítali výsledky našej práce: 36 vriec odpadkov, jedna pneumatika a vyše 500 kg vyzbieraného odpadu!",
+      "Okrem zjavného ekologického rozmeru takýchto akcií predstavuje odpad ležiaci v prírode aj zvýšené riziko požiaru. Pohodené sklo môže oheň zapáliť a horiaci plastový odpad výrazne sťažuje hasičské zásahy.",
+      "Na záver prišiel čas na chvíľu oddychu a spoločnú pizzu 🍕🙂",
+      "Ďakujeme organizácii Czysta Rzeka (Čistá rieka) za pomoc pri organizácii podujatia. A už teraz pozývame na ďalší deň dobrovoľníctva, ktorý spoločne organizujeme 19. júna v Bielsku-Białej."
+    ],
+    "de": [
+      "Am Freitag, dem 15. Mai, führte eine großartige Gruppe von Stock-Freiwilligen eine Waldaufräumaktion am Ufer des Zemborzyce-Stausees durch. Ganze 17 unserer Freiwilligen nahmen teil und zeigten gemeinsam, dass Umweltschutz mit guter Energie und großartiger Zusammenarbeit Hand in Hand gehen kann. 🌿💪",
+      "Wir trafen uns um 12:00 Uhr am Stabszelt, wo Säcke verteilt wurden und der Aktionsplan besprochen wurde. Dann ging es ins Gelände. Drei Stunden später — müde, aber sehr zufrieden — zählten wir die Ergebnisse unserer Arbeit: 36 Müllsäcke, ein Reifen und über 500 kg gesammelter Abfall!",
+      "Neben der offensichtlichen ökologischen Dimension solcher Aktionen stellt herumliegender Abfall auch eine zusätzliche Brandgefahr dar. Zurückgelassenes Glas kann ein Feuer entfachen, und brennender Plastikmüll erschwert Löscheinsätze erheblich.",
+      "Zum Abschluss war es Zeit für einen Moment der Erholung und eine gemeinsame Pizza 🍕🙂",
+      "Unser Dank gilt der Organisation Czysta Rzeka (Sauberer Fluss) für die Hilfe bei der Organisation der Veranstaltung. Und schon jetzt laden wir zum nächsten Freiwilligentag ein, den wir gemeinsam am 19. Juni in Bielsko-Biała veranstalten."
+    ],
+    "fr": [
+      "Le vendredi 15 mai, un formidable groupe de bénévoles de Stock a mené une action de nettoyage de la forêt au bord du lac de Zemborzyce. Pas moins de 17 de nos bénévoles y ont participé, montrant ensemble que le soin de l'environnement peut aller de pair avec une bonne énergie et une excellente coopération. 🌿💪",
+      "Nous nous sommes retrouvés à 12 h près de la tente de coordination, où les sacs ont été distribués et le plan d'action présenté. Puis nous sommes partis sur le terrain. Trois heures plus tard — fatigués mais très satisfaits — nous avons compté les fruits de notre travail : 36 sacs de déchets, un pneu et plus de 500 kg de déchets ramassés !",
+      "Au-delà de la dimension écologique évidente de telles actions, les déchets abandonnés représentent aussi un risque d'incendie supplémentaire. Le verre laissé dans la nature peut déclencher un feu, et les déchets plastiques en flammes compliquent considérablement les opérations d'extinction.",
+      "Pour finir, place à un moment de repos et à une pizza partagée 🍕🙂",
+      "Merci à l'organisation Czysta Rzeka (Rivière Propre) pour son aide dans l'organisation de l'événement. Et nous vous invitons dès maintenant à la prochaine journée du bénévolat, que nous co-organisons le 19 juin à Bielsko-Biała."
+    ]
+  }
+}

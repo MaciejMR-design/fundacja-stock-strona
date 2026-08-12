@@ -296,6 +296,99 @@ window.ARTICLES = [
     }
   },
   {
+    "ts": "2026-06-19",
+    "cat": "volunteer",
+    "img": "/uploads/wolontariat-bb-1.webp",
+    "images": [
+      "/uploads/wolontariat-bb-1.webp",
+      "/uploads/wolontariat-bb-2.webp",
+      "/uploads/wolontariat-bb-3.webp",
+      "/uploads/wolontariat-bb-4.webp",
+      "/uploads/wolontariat-bb-5.webp",
+      "/uploads/wolontariat-bb-6.webp",
+      "/uploads/wolontariat-bb-7.webp"
+    ],
+    "title": {
+      "pl": "Dzień Wolontariatu w Bielsku-Białej",
+      "en": "Volunteer Day in Bielsko-Biała",
+      "cz": "Den dobrovolnictví v Bielsku-Białé",
+      "it": "Giornata del volontariato a Bielsko-Biała",
+      "sk": "Deň dobrovoľníctva v Bielsku-Białej",
+      "de": "Freiwilligentag in Bielsko-Biała",
+      "fr": "Journée du bénévolat à Bielsko-Biała"
+    },
+    "lead": {
+      "pl": "W piątek 19 czerwca 26 naszych współpracowników z Bielska-Białej sprzątało brzegi rzeki Białej i jej dopływu — Straconki. Wynik akcji: 56 worków i 900 kg odpadów.",
+      "en": "On Friday 19 June, 26 of our colleagues from Bielsko-Biała cleaned up the banks of the Biała River and its tributary, the Straconka. The result: 56 bags and 900 kg of waste.",
+      "cz": "V pátek 19. června uklízelo 26 našich kolegů z Bielska-Białé břehy řeky Białé a jejího přítoku Straconky. Výsledek akce: 56 pytlů a 900 kg odpadu.",
+      "it": "Venerdì 19 giugno, 26 nostri colleghi di Bielsko-Biała hanno ripulito le rive del fiume Biała e del suo affluente Straconka. Il risultato: 56 sacchi e 900 kg di rifiuti.",
+      "sk": "V piatok 19. júna upratovalo 26 našich kolegov z Bielska-Białej brehy rieky Białej a jej prítoku Straconky. Výsledok akcie: 56 vriec a 900 kg odpadu.",
+      "de": "Am Freitag, dem 19. Juni, säuberten 26 unserer Kolleginnen und Kollegen aus Bielsko-Biała die Ufer des Flusses Biała und seines Zuflusses Straconka. Das Ergebnis: 56 Säcke und 900 kg Abfall.",
+      "fr": "Le vendredi 19 juin, 26 de nos collègues de Bielsko-Biała ont nettoyé les berges de la rivière Biała et de son affluent, la Straconka. Le résultat : 56 sacs et 900 kg de déchets."
+    },
+    "body": {
+      "pl": [
+        "W piątek 19 czerwca dzielna grupa 26 naszych współpracowników z Bielska-Białej wzięła udział w akcji sprzątania brzegów rzeki Białej oraz jej dopływu — Straconki. Wydarzenie zostało zorganizowane przez Fundację Stock wspólnie z akcją Czysta Rzeka; ogromną pomoc okazały nam Magda Krysta Piecuch i Ania Siuda, a od początku wspierał nas dyrektor Robert Tracz. Było to już nasze trzecie takie działanie — po wcześniejszych akcjach w Warszawie i Lublinie.",
+        "Pogoda dopisała wyjątkowo. O godzinie 11:00 byliśmy w komplecie przy namiocie sztabowym (w tym ratownik medyczny z w pełni wyposażoną karetką). Każdy dostał rękawice, worki i zapas wody do picia — i od razu wszystkim zachciało się działać. Podzieliliśmy się na grupy i ruszyliśmy w teren.",
+        "Nasi wolontariusze ostro zabrali się do pracy i w sumie zapełnili 56 worków śmieci. Do tego wyciągnęliśmy parę opon, kawał ciężkiego żelastwa i szybę z hartowanego szkła.",
+        "Efekty pracy robią wrażenie, a najlepszy moment przyszedł na końcu, kiedy wszystko zmierzyliśmy i policzyliśmy. Po zsumowaniu wyszedł konkretny wynik: 900 kg odpadów! Prawie tona śmieci zniknęła z natury. Dobrze mieć świadomość, że choć trochę podratowaliśmy wygląd naszych bielskich rzek.",
+        "Zmęczeni pracą i upałem, ale zadowoleni z efektów, wróciliśmy do sztabu, gdzie czekała na nas dobra pizza 🍕🙂 Dało się nawet usłyszeć głosy, że takie akcje mogłyby odbywać się w każdy piątek."
+      ],
+      "en": [
+        "On Friday 19 June, a brave group of 26 of our colleagues from Bielsko-Biała took part in a clean-up of the banks of the Biała River and its tributary, the Straconka. The event was organised by the Stock Foundation together with the Czysta Rzeka (Clean River) initiative; Magda Krysta Piecuch and Ania Siuda gave us tremendous help, and director Robert Tracz supported us from the very beginning. It was already our third such action — after earlier clean-ups in Warsaw and Lublin.",
+        "The weather was exceptionally kind. At 11:00 we were all assembled at the operations tent (including a paramedic with a fully equipped ambulance). Everyone received gloves, bags and a supply of drinking water — and straight away everyone was eager to get going. We split into groups and headed into the field.",
+        "Our volunteers got down to work in earnest and filled a total of 56 bags of rubbish. On top of that, we pulled out a few tyres, a chunk of heavy scrap metal and a pane of tempered glass.",
+        "The results are impressive, and the best moment came at the end, when everything was measured and counted. The total added up to a solid figure: 900 kg of waste! Almost a tonne of rubbish disappeared from nature. It feels good to know that we helped our Bielsko rivers look at least a little better.",
+        "Tired from the work and the heat, but happy with the results, we returned to the base, where good pizza was waiting for us 🍕🙂 Some even said that actions like this could take place every Friday."
+      ],
+      "cz": [
+        "V pátek 19. června se statečná skupina 26 našich kolegů z Bielska-Białé zúčastnila úklidu břehů řeky Białé a jejího přítoku Straconky. Akci uspořádala Nadace Stock společně s iniciativou Czysta Rzeka (Čistá řeka); obrovskou pomoc nám poskytly Magda Krysta Piecuch a Ania Siuda a od začátku nás podporoval ředitel Robert Tracz. Byla to už naše třetí taková akce — po dřívějších úklidech ve Varšavě a Lublinu.",
+        "Počasí přálo výjimečně. V 11:00 jsme byli v plném počtu u štábního stanu (včetně zdravotnického záchranáře s plně vybavenou sanitkou). Každý dostal rukavice, pytle a zásobu pitné vody — a všem se hned chtělo do práce. Rozdělili jsme se do skupin a vyrazili do terénu.",
+        "Naši dobrovolníci se pustili do práce naplno a celkem naplnili 56 pytlů odpadků. K tomu jsme vytáhli několik pneumatik, kus těžkého železa a tabuli z tvrzeného skla.",
+        "Výsledky práce jsou působivé a nejlepší okamžik přišel na konci, když jsme všechno zvážili a spočítali. Po sečtení vyšel konkrétní výsledek: 900 kg odpadu! Z přírody zmizela téměř tuna odpadků. Je dobré vědět, že jsme vzhledu našich bielských řek alespoň trochu pomohli.",
+        "Unavení prací a vedrem, ale spokojení s výsledky jsme se vrátili do štábu, kde na nás čekala dobrá pizza 🍕🙂 Ozývaly se dokonce hlasy, že takové akce by se mohly konat každý pátek."
+      ],
+      "it": [
+        "Venerdì 19 giugno un coraggioso gruppo di 26 nostri colleghi di Bielsko-Biała ha partecipato a un'azione di pulizia delle rive del fiume Biała e del suo affluente Straconka. L'evento è stato organizzato dalla Fondazione Stock insieme all'iniziativa Czysta Rzeka (Fiume Pulito); Magda Krysta Piecuch e Ania Siuda ci hanno dato un aiuto enorme, e il direttore Robert Tracz ci ha sostenuto fin dall'inizio. Era già la nostra terza azione di questo tipo — dopo quelle precedenti a Varsavia e Lublino.",
+        "Il tempo è stato eccezionalmente favorevole. Alle 11:00 eravamo al completo presso la tenda operativa (compreso un soccorritore con un'ambulanza completamente attrezzata). Ognuno ha ricevuto guanti, sacchi e una scorta d'acqua da bere — e subito a tutti è venuta voglia di darsi da fare. Ci siamo divisi in gruppi e siamo partiti sul campo.",
+        "I nostri volontari si sono messi al lavoro con determinazione e hanno riempito in totale 56 sacchi di rifiuti. In più abbiamo tirato fuori alcuni pneumatici, un pezzo di ferraglia pesante e una lastra di vetro temperato.",
+        "I risultati del lavoro sono impressionanti, e il momento migliore è arrivato alla fine, quando abbiamo misurato e contato tutto. Sommando il totale è uscito un risultato concreto: 900 kg di rifiuti! Quasi una tonnellata di spazzatura è sparita dalla natura. È bello sapere di aver aiutato, almeno un po', l'aspetto dei nostri fiumi di Bielsko.",
+        "Stanchi per il lavoro e il caldo, ma soddisfatti dei risultati, siamo tornati alla base, dove ci aspettava una buona pizza 🍕🙂 Si sono sentite persino voci secondo cui azioni come questa potrebbero svolgersi ogni venerdì."
+      ],
+      "sk": [
+        "V piatok 19. júna sa statočná skupina 26 našich kolegov z Bielska-Białej zúčastnila upratovania brehov rieky Białej a jej prítoku Straconky. Podujatie zorganizovala Nadácia Stock spolu s iniciatívou Czysta Rzeka (Čistá rieka); obrovskú pomoc nám poskytli Magda Krysta Piecuch a Ania Siuda a od začiatku nás podporoval riaditeľ Robert Tracz. Bola to už naša tretia takáto akcia — po skorších upratovaniach vo Varšave a Lubline.",
+        "Počasie prialo výnimočne. O 11:00 sme boli v plnom počte pri štábnom stane (vrátane zdravotníckeho záchranára s plne vybavenou sanitkou). Každý dostal rukavice, vrecia a zásobu pitnej vody — a všetkým sa hneď chcelo pustiť do práce. Rozdelili sme sa do skupín a vyrazili do terénu.",
+        "Naši dobrovoľníci sa pustili do práce naplno a spolu naplnili 56 vriec odpadkov. K tomu sme vytiahli niekoľko pneumatík, kus ťažkého železa a tabuľu z tvrdeného skla.",
+        "Výsledky práce sú pôsobivé a najlepší moment prišiel na konci, keď sme všetko odmerali a spočítali. Po sčítaní vyšiel konkrétny výsledok: 900 kg odpadu! Z prírody zmizla takmer tona odpadkov. Je dobré vedieť, že sme vzhľadu našich bielskych riek aspoň trochu pomohli.",
+        "Unavení prácou a horúčavou, ale spokojní s výsledkami sme sa vrátili do štábu, kde na nás čakala dobrá pizza 🍕🙂 Ozývali sa dokonca hlasy, že takéto akcie by sa mohli konať každý piatok."
+      ],
+      "de": [
+        "Am Freitag, dem 19. Juni, nahm eine tapfere Gruppe von 26 unserer Kolleginnen und Kollegen aus Bielsko-Biała an einer Aufräumaktion an den Ufern des Flusses Biała und seines Zuflusses Straconka teil. Die Veranstaltung wurde von der Stiftung Stock gemeinsam mit der Initiative Czysta Rzeka (Sauberer Fluss) organisiert; Magda Krysta Piecuch und Ania Siuda leisteten uns enorme Hilfe, und Direktor Robert Tracz unterstützte uns von Anfang an. Es war bereits unsere dritte Aktion dieser Art — nach den früheren Einsätzen in Warschau und Lublin.",
+        "Das Wetter spielte außergewöhnlich gut mit. Um 11:00 Uhr waren wir vollzählig am Stabszelt versammelt (einschließlich eines Rettungssanitäters mit voll ausgestattetem Rettungswagen). Alle erhielten Handschuhe, Säcke und einen Vorrat an Trinkwasser — und sofort wollten alle loslegen. Wir teilten uns in Gruppen auf und zogen ins Gelände.",
+        "Unsere Freiwilligen machten sich energisch an die Arbeit und füllten insgesamt 56 Müllsäcke. Dazu zogen wir einige Reifen, ein Stück schweren Schrott und eine Scheibe aus gehärtetem Glas heraus.",
+        "Die Ergebnisse der Arbeit sind beeindruckend, und der beste Moment kam am Ende, als alles gewogen und gezählt wurde. Zusammengerechnet ergab sich ein handfestes Ergebnis: 900 kg Abfall! Fast eine Tonne Müll verschwand aus der Natur. Es ist ein gutes Gefühl zu wissen, dass wir dem Erscheinungsbild unserer Bielskoer Flüsse zumindest ein wenig geholfen haben.",
+        "Müde von der Arbeit und der Hitze, aber zufrieden mit den Ergebnissen kehrten wir zum Stützpunkt zurück, wo eine gute Pizza auf uns wartete 🍕🙂 Es waren sogar Stimmen zu hören, dass solche Aktionen jeden Freitag stattfinden könnten."
+      ],
+      "fr": [
+        "Le vendredi 19 juin, un vaillant groupe de 26 de nos collègues de Bielsko-Biała a participé à une action de nettoyage des berges de la rivière Biała et de son affluent, la Straconka. L'événement a été organisé par la Fondation Stock avec l'initiative Czysta Rzeka (Rivière Propre) ; Magda Krysta Piecuch et Ania Siuda nous ont apporté une aide précieuse, et le directeur Robert Tracz nous a soutenus dès le début. C'était déjà notre troisième action de ce type — après celles de Varsovie et de Lublin.",
+        "La météo a été exceptionnellement clémente. À 11 h, nous étions au complet près de la tente de coordination (avec un secouriste et une ambulance entièrement équipée). Chacun a reçu des gants, des sacs et une réserve d'eau potable — et tout le monde a aussitôt eu envie de s'y mettre. Nous nous sommes répartis en groupes et sommes partis sur le terrain.",
+        "Nos bénévoles se sont mis au travail avec ardeur et ont rempli au total 56 sacs de déchets. Nous avons aussi extrait quelques pneus, un morceau de ferraille lourde et une vitre en verre trempé.",
+        "Les résultats sont impressionnants, et le meilleur moment est arrivé à la fin, quand tout a été pesé et compté. Le total donne un chiffre parlant : 900 kg de déchets ! Près d'une tonne de détritus a disparu de la nature. C'est une belle satisfaction de savoir que nous avons, au moins un peu, redonné meilleure allure à nos rivières de Bielsko.",
+        "Fatigués par le travail et la chaleur, mais satisfaits des résultats, nous sommes revenus au camp de base, où une bonne pizza nous attendait 🍕🙂 Certains ont même suggéré que de telles actions pourraient avoir lieu chaque vendredi."
+      ]
+    },
+    "id": "wolontariat-bielsko",
+    "date": {
+      "en": "19 June 2026",
+      "pl": "19 czerwca 2026",
+      "cz": "19. června 2026",
+      "it": "19 giugno 2026",
+      "sk": "19. júna 2026",
+      "de": "19. Juni 2026",
+      "fr": "19 juin 2026"
+    }
+  },
+  {
     "id": "gerson",
     "ts": "2026-06-05",
     "cat": "art",
@@ -433,6 +526,99 @@ window.ARTICLES = [
         "Le programme est très pratique. Les participants apprennent à mener des conversations qui encouragent un changement positif, à réagir efficacement dans les situations de crise, à gérer les émotions et à construire des relations fondées sur la confiance et des limites clairement définies. La formation comprend également des études de cas et des exemples pratiques.",
         "Un élément important du programme consiste à dépasser les solutions simples et binaires au profit d’une approche de réduction des risques et du soutien à des changements progressifs dans les habitudes et les décisions de vie. La Fondation Stock aide à renforcer les compétences de ceux qui consacrent leur travail à aider les autres."
       ]
+    }
+  },
+  {
+    "ts": "2026-05-15",
+    "cat": "volunteer",
+    "img": "/uploads/wolontariat-lublin-1.webp",
+    "images": [
+      "/uploads/wolontariat-lublin-1.webp",
+      "/uploads/wolontariat-lublin-2.webp",
+      "/uploads/wolontariat-lublin-3.webp",
+      "/uploads/wolontariat-lublin-4.webp",
+      "/uploads/wolontariat-lublin-5.webp",
+      "/uploads/wolontariat-lublin-6.webp",
+      "/uploads/wolontariat-lublin-7.webp"
+    ],
+    "title": {
+      "pl": "Dzień Wolontariatu w Lublinie",
+      "en": "Volunteer Day in Lublin",
+      "cz": "Den dobrovolnictví v Lublinu",
+      "it": "Giornata del volontariato a Lublino",
+      "sk": "Deň dobrovoľníctva v Lubline",
+      "de": "Freiwilligentag in Lublin",
+      "fr": "Journée du bénévolat à Lublin"
+    },
+    "lead": {
+      "pl": "W piątek 15 maja 17 wolontariuszy Stock sprzątało las nad brzegiem Zalewu Zemborzyckiego. Efekt: 36 worków, opona i ponad 500 kg zebranych odpadów.",
+      "en": "On Friday 15 May, 17 Stock volunteers cleaned up the forest on the shore of the Zemborzyce Reservoir. The result: 36 bags, a tyre and over 500 kg of collected waste.",
+      "cz": "V pátek 15. května uklízelo 17 dobrovolníků Stock les na břehu Zemborzycké nádrže. Výsledek: 36 pytlů, pneumatika a přes 500 kg sesbíraného odpadu.",
+      "it": "Venerdì 15 maggio, 17 volontari Stock hanno ripulito il bosco sulla riva del bacino di Zemborzyce. Il risultato: 36 sacchi, uno pneumatico e oltre 500 kg di rifiuti raccolti.",
+      "sk": "V piatok 15. mája upratovalo 17 dobrovoľníkov Stock les na brehu Zemborzyckej nádrže. Výsledok: 36 vriec, pneumatika a vyše 500 kg vyzbieraného odpadu.",
+      "de": "Am Freitag, dem 15. Mai, räumten 17 Stock-Freiwillige den Wald am Ufer des Zemborzyce-Stausees auf. Das Ergebnis: 36 Säcke, ein Reifen und über 500 kg gesammelter Abfall.",
+      "fr": "Le vendredi 15 mai, 17 bénévoles de Stock ont nettoyé la forêt au bord du lac de Zemborzyce. Le résultat : 36 sacs, un pneu et plus de 500 kg de déchets ramassés."
+    },
+    "body": {
+      "pl": [
+        "W piątek 15 maja grupa wspaniałych wolontariuszy Stock przeprowadziła akcję sprzątania lasu przy brzegu Zalewu Zemborzyckiego. W wydarzeniu wzięło udział aż 17 naszych wolontariuszy, którzy wspólnie pokazali, że troska o środowisko może iść w parze z dobrą energią i świetną współpracą. 🌿💪",
+        "Spotkaliśmy się o godzinie 12:00 przy namiocie sztabowym, gdzie rozdano worki i omówiono plan działania. Następnie ruszyliśmy w teren. Trzy godziny później — zmęczeni, ale bardzo zadowoleni — policzyliśmy efekty naszej pracy: 36 worków śmieci, jedna opona i ponad 500 kg zebranych odpadów!",
+        "Oprócz oczywistego ekologicznego wymiaru takich działań, zalegające odpady stanowią również dodatkowe zagrożenie pożarowe. Pozostawione szkło może doprowadzić do wzniecenia ognia, a spalające się odpady plastikowe znacząco utrudniają akcje gaśnicze.",
+        "Na zakończenie przyszedł czas na chwilę odpoczynku i wspólną pizzę 🍕🙂",
+        "Podziękowania dla organizacji Czysta Rzeka za pomoc w organizacji wydarzenia. Już teraz zapraszamy także na kolejny dzień wolontariatu, który wspólnie organizujemy 19 czerwca w Bielsku-Białej."
+      ],
+      "en": [
+        "On Friday 15 May, a wonderful group of Stock volunteers carried out a forest clean-up on the shore of the Zemborzyce Reservoir. As many as 17 of our volunteers took part, showing together that caring for the environment can go hand in hand with good energy and great teamwork. 🌿💪",
+        "We met at 12:00 at the operations tent, where bags were handed out and the plan of action was discussed. Then we headed into the field. Three hours later — tired but very pleased — we counted the results of our work: 36 bags of rubbish, one tyre and over 500 kg of collected waste!",
+        "Beyond the obvious ecological dimension of such actions, litter left in nature also poses an additional fire hazard. Abandoned glass can spark a fire, and burning plastic waste makes firefighting operations considerably harder.",
+        "At the end, it was time for a moment of rest and a shared pizza 🍕🙂",
+        "Our thanks go to the Czysta Rzeka (Clean River) organisation for helping to organise the event. And we are already inviting you to the next volunteer day, which we are co-organising on 19 June in Bielsko-Biała."
+      ],
+      "cz": [
+        "V pátek 15. května uspořádala skvělá skupina dobrovolníků Stock úklid lesa na břehu Zemborzycké nádrže. Zúčastnilo se ho celých 17 našich dobrovolníků, kteří společně ukázali, že péče o životní prostředí může jít ruku v ruce s dobrou energií a výbornou spoluprací. 🌿💪",
+        "Sešli jsme se ve 12:00 u štábního stanu, kde se rozdaly pytle a probral plán akce. Pak jsme vyrazili do terénu. O tři hodiny později — unavení, ale velmi spokojení — jsme spočítali výsledky naší práce: 36 pytlů odpadků, jedna pneumatika a přes 500 kg sesbíraného odpadu!",
+        "Kromě zjevného ekologického rozměru takových akcí představují odpadky ležící v přírodě také zvýšené riziko požáru. Pohozené sklo může oheň zažehnout a hořící plastový odpad výrazně ztěžuje hasičské zásahy.",
+        "Na závěr přišel čas na chvíli odpočinku a společnou pizzu 🍕🙂",
+        "Děkujeme organizaci Czysta Rzeka (Čistá řeka) za pomoc s pořádáním akce. A už teď zveme na další den dobrovolnictví, který společně pořádáme 19. června v Bielsku-Białé."
+      ],
+      "it": [
+        "Venerdì 15 maggio un magnifico gruppo di volontari Stock ha realizzato un'azione di pulizia del bosco sulla riva del bacino di Zemborzyce. Hanno partecipato ben 17 dei nostri volontari, dimostrando insieme che la cura dell'ambiente può andare di pari passo con la buona energia e un'ottima collaborazione. 🌿💪",
+        "Ci siamo ritrovati alle 12:00 presso la tenda operativa, dove sono stati distribuiti i sacchi e discusso il piano d'azione. Poi siamo partiti sul campo. Tre ore dopo — stanchi ma molto soddisfatti — abbiamo contato i risultati del nostro lavoro: 36 sacchi di rifiuti, uno pneumatico e oltre 500 kg di rifiuti raccolti!",
+        "Oltre all'evidente dimensione ecologica di queste azioni, i rifiuti abbandonati rappresentano anche un ulteriore rischio di incendio. Il vetro lasciato in natura può innescare un fuoco, mentre i rifiuti di plastica in fiamme rendono molto più difficili le operazioni di spegnimento.",
+        "Alla fine è arrivato il momento di riposarsi un po' e di condividere una pizza 🍕🙂",
+        "Un ringraziamento all'organizzazione Czysta Rzeka (Fiume Pulito) per l'aiuto nell'organizzazione dell'evento. E fin da ora vi invitiamo alla prossima giornata del volontariato, che organizziamo insieme il 19 giugno a Bielsko-Biała."
+      ],
+      "sk": [
+        "V piatok 15. mája uskutočnila skvelá skupina dobrovoľníkov Stock upratovanie lesa na brehu Zemborzyckej nádrže. Zúčastnilo sa ho až 17 našich dobrovoľníkov, ktorí spoločne ukázali, že starostlivosť o životné prostredie môže ísť ruka v ruke s dobrou energiou a výbornou spoluprácou. 🌿💪",
+        "Stretli sme sa o 12:00 pri štábnom stane, kde sa rozdali vrecia a prebral plán akcie. Potom sme vyrazili do terénu. O tri hodiny neskôr — unavení, ale veľmi spokojní — sme spočítali výsledky našej práce: 36 vriec odpadkov, jedna pneumatika a vyše 500 kg vyzbieraného odpadu!",
+        "Okrem zjavného ekologického rozmeru takýchto akcií predstavuje odpad ležiaci v prírode aj zvýšené riziko požiaru. Pohodené sklo môže oheň zapáliť a horiaci plastový odpad výrazne sťažuje hasičské zásahy.",
+        "Na záver prišiel čas na chvíľu oddychu a spoločnú pizzu 🍕🙂",
+        "Ďakujeme organizácii Czysta Rzeka (Čistá rieka) za pomoc pri organizácii podujatia. A už teraz pozývame na ďalší deň dobrovoľníctva, ktorý spoločne organizujeme 19. júna v Bielsku-Białej."
+      ],
+      "de": [
+        "Am Freitag, dem 15. Mai, führte eine großartige Gruppe von Stock-Freiwilligen eine Waldaufräumaktion am Ufer des Zemborzyce-Stausees durch. Ganze 17 unserer Freiwilligen nahmen teil und zeigten gemeinsam, dass Umweltschutz mit guter Energie und großartiger Zusammenarbeit Hand in Hand gehen kann. 🌿💪",
+        "Wir trafen uns um 12:00 Uhr am Stabszelt, wo Säcke verteilt wurden und der Aktionsplan besprochen wurde. Dann ging es ins Gelände. Drei Stunden später — müde, aber sehr zufrieden — zählten wir die Ergebnisse unserer Arbeit: 36 Müllsäcke, ein Reifen und über 500 kg gesammelter Abfall!",
+        "Neben der offensichtlichen ökologischen Dimension solcher Aktionen stellt herumliegender Abfall auch eine zusätzliche Brandgefahr dar. Zurückgelassenes Glas kann ein Feuer entfachen, und brennender Plastikmüll erschwert Löscheinsätze erheblich.",
+        "Zum Abschluss war es Zeit für einen Moment der Erholung und eine gemeinsame Pizza 🍕🙂",
+        "Unser Dank gilt der Organisation Czysta Rzeka (Sauberer Fluss) für die Hilfe bei der Organisation der Veranstaltung. Und schon jetzt laden wir zum nächsten Freiwilligentag ein, den wir gemeinsam am 19. Juni in Bielsko-Biała veranstalten."
+      ],
+      "fr": [
+        "Le vendredi 15 mai, un formidable groupe de bénévoles de Stock a mené une action de nettoyage de la forêt au bord du lac de Zemborzyce. Pas moins de 17 de nos bénévoles y ont participé, montrant ensemble que le soin de l'environnement peut aller de pair avec une bonne énergie et une excellente coopération. 🌿💪",
+        "Nous nous sommes retrouvés à 12 h près de la tente de coordination, où les sacs ont été distribués et le plan d'action présenté. Puis nous sommes partis sur le terrain. Trois heures plus tard — fatigués mais très satisfaits — nous avons compté les fruits de notre travail : 36 sacs de déchets, un pneu et plus de 500 kg de déchets ramassés !",
+        "Au-delà de la dimension écologique évidente de telles actions, les déchets abandonnés représentent aussi un risque d'incendie supplémentaire. Le verre laissé dans la nature peut déclencher un feu, et les déchets plastiques en flammes compliquent considérablement les opérations d'extinction.",
+        "Pour finir, place à un moment de repos et à une pizza partagée 🍕🙂",
+        "Merci à l'organisation Czysta Rzeka (Rivière Propre) pour son aide dans l'organisation de l'événement. Et nous vous invitons dès maintenant à la prochaine journée du bénévolat, que nous co-organisons le 19 juin à Bielsko-Biała."
+      ]
+    },
+    "id": "wolontariat-lublin",
+    "date": {
+      "en": "15 May 2026",
+      "pl": "15 maja 2026",
+      "cz": "15. května 2026",
+      "it": "15 maggio 2026",
+      "sk": "15. mája 2026",
+      "de": "15. Mai 2026",
+      "fr": "15 mai 2026"
     }
   },
   {

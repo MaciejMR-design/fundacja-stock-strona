@@ -92,6 +92,39 @@ window.ARTICLES = [
     }
   },
   {
+    "id": "wolontariat-bielsko",
+    "ts": "2026-06-19",
+    "cat": "volunteer",
+    "img": "/uploads/wolontariat-bb-1.webp",
+    "images": [
+      "/uploads/wolontariat-bb-1.webp",
+      "/uploads/wolontariat-bb-2.webp",
+      "/uploads/wolontariat-bb-3.webp",
+      "/uploads/wolontariat-bb-4.webp",
+      "/uploads/wolontariat-bb-5.webp",
+      "/uploads/wolontariat-bb-6.webp",
+      "/uploads/wolontariat-bb-7.webp"
+    ],
+    "date": {
+      "it": "19 giugno 2026"
+    },
+    "title": {
+      "it": "Giornata del volontariato a Bielsko-Biała"
+    },
+    "lead": {
+      "it": "Venerdì 19 giugno, 26 nostri colleghi di Bielsko-Biała hanno ripulito le rive del fiume Biała e del suo affluente Straconka. Il risultato: 56 sacchi e 900 kg di rifiuti."
+    },
+    "body": {
+      "it": [
+        "Venerdì 19 giugno un coraggioso gruppo di 26 nostri colleghi di Bielsko-Biała ha partecipato a un'azione di pulizia delle rive del fiume Biała e del suo affluente Straconka. L'evento è stato organizzato dalla Fondazione Stock insieme all'iniziativa Czysta Rzeka (Fiume Pulito); Magda Krysta Piecuch e Ania Siuda ci hanno dato un aiuto enorme, e il direttore Robert Tracz ci ha sostenuto fin dall'inizio. Era già la nostra terza azione di questo tipo — dopo quelle precedenti a Varsavia e Lublino.",
+        "Il tempo è stato eccezionalmente favorevole. Alle 11:00 eravamo al completo presso la tenda operativa (compreso un soccorritore con un'ambulanza completamente attrezzata). Ognuno ha ricevuto guanti, sacchi e una scorta d'acqua da bere — e subito a tutti è venuta voglia di darsi da fare. Ci siamo divisi in gruppi e siamo partiti sul campo.",
+        "I nostri volontari si sono messi al lavoro con determinazione e hanno riempito in totale 56 sacchi di rifiuti. In più abbiamo tirato fuori alcuni pneumatici, un pezzo di ferraglia pesante e una lastra di vetro temperato.",
+        "I risultati del lavoro sono impressionanti, e il momento migliore è arrivato alla fine, quando abbiamo misurato e contato tutto. Sommando il totale è uscito un risultato concreto: 900 kg di rifiuti! Quasi una tonnellata di spazzatura è sparita dalla natura. È bello sapere di aver aiutato, almeno un po', l'aspetto dei nostri fiumi di Bielsko.",
+        "Stanchi per il lavoro e il caldo, ma soddisfatti dei risultati, siamo tornati alla base, dove ci aspettava una buona pizza 🍕🙂 Si sono sentite persino voci secondo cui azioni come questa potrebbero svolgersi ogni venerdì."
+      ]
+    }
+  },
+  {
     "id": "gerson",
     "ts": "2026-06-05",
     "cat": "art",
@@ -132,6 +165,39 @@ window.ARTICLES = [
         "I laboratori sono stati condotti dai nostri terapeuti, Anna Kalbus e Jerzy Brożyna, ed erano rivolti a professionisti che lavorano quotidianamente con persone colpite da varie forme di dipendenza.",
         "Il programma è molto pratico. I partecipanti imparano a condurre conversazioni che incoraggiano il cambiamento positivo, a rispondere efficacemente nelle situazioni di crisi, a gestire le emozioni e a costruire relazioni basate sulla fiducia e su confini chiaramente definiti. La formazione include anche casi di studio reali ed esempi pratici.",
         "Un aspetto importante del programma è andare oltre le soluzioni semplici e nette verso un approccio di riduzione del danno e il sostegno a cambiamenti graduali nelle abitudini e nelle decisioni di vita. La Fondazione Stock aiuta a rafforzare le competenze di chi dedica il proprio lavoro ad aiutare gli altri."
+      ]
+    }
+  },
+  {
+    "id": "wolontariat-lublin",
+    "ts": "2026-05-15",
+    "cat": "volunteer",
+    "img": "/uploads/wolontariat-lublin-1.webp",
+    "images": [
+      "/uploads/wolontariat-lublin-1.webp",
+      "/uploads/wolontariat-lublin-2.webp",
+      "/uploads/wolontariat-lublin-3.webp",
+      "/uploads/wolontariat-lublin-4.webp",
+      "/uploads/wolontariat-lublin-5.webp",
+      "/uploads/wolontariat-lublin-6.webp",
+      "/uploads/wolontariat-lublin-7.webp"
+    ],
+    "date": {
+      "it": "15 maggio 2026"
+    },
+    "title": {
+      "it": "Giornata del volontariato a Lublino"
+    },
+    "lead": {
+      "it": "Venerdì 15 maggio, 17 volontari Stock hanno ripulito il bosco sulla riva del bacino di Zemborzyce. Il risultato: 36 sacchi, uno pneumatico e oltre 500 kg di rifiuti raccolti."
+    },
+    "body": {
+      "it": [
+        "Venerdì 15 maggio un magnifico gruppo di volontari Stock ha realizzato un'azione di pulizia del bosco sulla riva del bacino di Zemborzyce. Hanno partecipato ben 17 dei nostri volontari, dimostrando insieme che la cura dell'ambiente può andare di pari passo con la buona energia e un'ottima collaborazione. 🌿💪",
+        "Ci siamo ritrovati alle 12:00 presso la tenda operativa, dove sono stati distribuiti i sacchi e discusso il piano d'azione. Poi siamo partiti sul campo. Tre ore dopo — stanchi ma molto soddisfatti — abbiamo contato i risultati del nostro lavoro: 36 sacchi di rifiuti, uno pneumatico e oltre 500 kg di rifiuti raccolti!",
+        "Oltre all'evidente dimensione ecologica di queste azioni, i rifiuti abbandonati rappresentano anche un ulteriore rischio di incendio. Il vetro lasciato in natura può innescare un fuoco, mentre i rifiuti di plastica in fiamme rendono molto più difficili le operazioni di spegnimento.",
+        "Alla fine è arrivato il momento di riposarsi un po' e di condividere una pizza 🍕🙂",
+        "Un ringraziamento all'organizzazione Czysta Rzeka (Fiume Pulito) per l'aiuto nell'organizzazione dell'evento. E fin da ora vi invitiamo alla prossima giornata del volontariato, che organizziamo insieme il 19 giugno a Bielsko-Biała."
       ]
     }
   },

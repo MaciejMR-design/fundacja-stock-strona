@@ -92,6 +92,39 @@ window.ARTICLES = [
     }
   },
   {
+    "id": "wolontariat-bielsko",
+    "ts": "2026-06-19",
+    "cat": "volunteer",
+    "img": "/uploads/wolontariat-bb-1.webp",
+    "images": [
+      "/uploads/wolontariat-bb-1.webp",
+      "/uploads/wolontariat-bb-2.webp",
+      "/uploads/wolontariat-bb-3.webp",
+      "/uploads/wolontariat-bb-4.webp",
+      "/uploads/wolontariat-bb-5.webp",
+      "/uploads/wolontariat-bb-6.webp",
+      "/uploads/wolontariat-bb-7.webp"
+    ],
+    "date": {
+      "fr": "19 juin 2026"
+    },
+    "title": {
+      "fr": "Journée du bénévolat à Bielsko-Biała"
+    },
+    "lead": {
+      "fr": "Le vendredi 19 juin, 26 de nos collègues de Bielsko-Biała ont nettoyé les berges de la rivière Biała et de son affluent, la Straconka. Le résultat : 56 sacs et 900 kg de déchets."
+    },
+    "body": {
+      "fr": [
+        "Le vendredi 19 juin, un vaillant groupe de 26 de nos collègues de Bielsko-Biała a participé à une action de nettoyage des berges de la rivière Biała et de son affluent, la Straconka. L'événement a été organisé par la Fondation Stock avec l'initiative Czysta Rzeka (Rivière Propre) ; Magda Krysta Piecuch et Ania Siuda nous ont apporté une aide précieuse, et le directeur Robert Tracz nous a soutenus dès le début. C'était déjà notre troisième action de ce type — après celles de Varsovie et de Lublin.",
+        "La météo a été exceptionnellement clémente. À 11 h, nous étions au complet près de la tente de coordination (avec un secouriste et une ambulance entièrement équipée). Chacun a reçu des gants, des sacs et une réserve d'eau potable — et tout le monde a aussitôt eu envie de s'y mettre. Nous nous sommes répartis en groupes et sommes partis sur le terrain.",
+        "Nos bénévoles se sont mis au travail avec ardeur et ont rempli au total 56 sacs de déchets. Nous avons aussi extrait quelques pneus, un morceau de ferraille lourde et une vitre en verre trempé.",
+        "Les résultats sont impressionnants, et le meilleur moment est arrivé à la fin, quand tout a été pesé et compté. Le total donne un chiffre parlant : 900 kg de déchets ! Près d'une tonne de détritus a disparu de la nature. C'est une belle satisfaction de savoir que nous avons, au moins un peu, redonné meilleure allure à nos rivières de Bielsko.",
+        "Fatigués par le travail et la chaleur, mais satisfaits des résultats, nous sommes revenus au camp de base, où une bonne pizza nous attendait 🍕🙂 Certains ont même suggéré que de telles actions pourraient avoir lieu chaque vendredi."
+      ]
+    }
+  },
+  {
     "id": "gerson",
     "ts": "2026-06-05",
     "cat": "art",
@@ -132,6 +165,39 @@ window.ARTICLES = [
         "Les ateliers ont été animés par nos thérapeutes, Anna Kalbus et Jerzy Brożyna, et s’adressaient aux spécialistes travaillant au quotidien avec des personnes touchées par diverses formes d’addiction.",
         "Le programme est très pratique. Les participants apprennent à mener des conversations qui encouragent un changement positif, à réagir efficacement dans les situations de crise, à gérer les émotions et à construire des relations fondées sur la confiance et des limites clairement définies. La formation comprend également des études de cas et des exemples pratiques.",
         "Un élément important du programme consiste à dépasser les solutions simples et binaires au profit d’une approche de réduction des risques et du soutien à des changements progressifs dans les habitudes et les décisions de vie. La Fondation Stock aide à renforcer les compétences de ceux qui consacrent leur travail à aider les autres."
+      ]
+    }
+  },
+  {
+    "id": "wolontariat-lublin",
+    "ts": "2026-05-15",
+    "cat": "volunteer",
+    "img": "/uploads/wolontariat-lublin-1.webp",
+    "images": [
+      "/uploads/wolontariat-lublin-1.webp",
+      "/uploads/wolontariat-lublin-2.webp",
+      "/uploads/wolontariat-lublin-3.webp",
+      "/uploads/wolontariat-lublin-4.webp",
+      "/uploads/wolontariat-lublin-5.webp",
+      "/uploads/wolontariat-lublin-6.webp",
+      "/uploads/wolontariat-lublin-7.webp"
+    ],
+    "date": {
+      "fr": "15 mai 2026"
+    },
+    "title": {
+      "fr": "Journée du bénévolat à Lublin"
+    },
+    "lead": {
+      "fr": "Le vendredi 15 mai, 17 bénévoles de Stock ont nettoyé la forêt au bord du lac de Zemborzyce. Le résultat : 36 sacs, un pneu et plus de 500 kg de déchets ramassés."
+    },
+    "body": {
+      "fr": [
+        "Le vendredi 15 mai, un formidable groupe de bénévoles de Stock a mené une action de nettoyage de la forêt au bord du lac de Zemborzyce. Pas moins de 17 de nos bénévoles y ont participé, montrant ensemble que le soin de l'environnement peut aller de pair avec une bonne énergie et une excellente coopération. 🌿💪",
+        "Nous nous sommes retrouvés à 12 h près de la tente de coordination, où les sacs ont été distribués et le plan d'action présenté. Puis nous sommes partis sur le terrain. Trois heures plus tard — fatigués mais très satisfaits — nous avons compté les fruits de notre travail : 36 sacs de déchets, un pneu et plus de 500 kg de déchets ramassés !",
+        "Au-delà de la dimension écologique évidente de telles actions, les déchets abandonnés représentent aussi un risque d'incendie supplémentaire. Le verre laissé dans la nature peut déclencher un feu, et les déchets plastiques en flammes compliquent considérablement les opérations d'extinction.",
+        "Pour finir, place à un moment de repos et à une pizza partagée 🍕🙂",
+        "Merci à l'organisation Czysta Rzeka (Rivière Propre) pour son aide dans l'organisation de l'événement. Et nous vous invitons dès maintenant à la prochaine journée du bénévolat, que nous co-organisons le 19 juin à Bielsko-Biała."
       ]
     }
   },
