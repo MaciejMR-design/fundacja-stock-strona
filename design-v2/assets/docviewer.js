@@ -19,6 +19,10 @@
 (function () {
   const PDFJS_URL = '/assets/pdfjs/pdf.min.mjs';
   const WORKER_URL = '/assets/pdfjs/pdf.worker.min.mjs';
+  /* Dekodery obrazów w WASM (katalog wasm/ z pdfjs-dist, ta sama wersja co
+     pdf.min.mjs). Bez nich skany skompresowane JBIG2 — np. statut — renderują
+     się jako puste kartki: pdf.js pomija obrazy, których nie umie rozpakować. */
+  const WASM_URL = '/assets/pdfjs/wasm/';
   /* Szerokość rysowania: tyle piksli CSS ma najszersza strona dokumentu.
      Mnożymy przez gęstość ekranu, żeby na telefonach i ekranach Retina tekst
      był ostry, ale nie powyżej 2 — przy 3x rośnie tylko zużycie pamięci. */
@@ -99,7 +103,7 @@
         pdfjs = await import(PDFJS_URL);
         pdfjs.GlobalWorkerOptions.workerSrc = WORKER_URL;
       }
-      const dokument = await pdfjs.getDocument({ url }).promise;
+      const dokument = await pdfjs.getDocument({ url, wasmUrl: WASM_URL, iccUrl: WASM_URL }).promise;
       if (moje !== zadanie) return;              // w międzyczasie zamknięto albo otwarto inny
       stan.hidden = true;
 
