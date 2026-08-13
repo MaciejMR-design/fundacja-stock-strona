@@ -1,7 +1,7 @@
 {
   "en": {
-    "pageTitle": "Council & Board",
-    "pageLead": "The people who guide the Stock Foundation — its Council and its Board of Directors.",
+    "pageTitle": "Foundation Board",
+    "pageLead": "The people who guide the Stock Foundation — its Board of Directors.",
     "councilOverline": "Governance",
     "councilTitle": "Stock Foundation Council",
     "boardOverline": "Management",
@@ -9,8 +9,8 @@
     "viewProfile": "View profile"
   },
   "pl": {
-    "pageTitle": "Rada i Zarząd",
-    "pageLead": "Ludzie, którzy kierują Fundacją Stock — jej Rada oraz Zarząd.",
+    "pageTitle": "Zarząd Fundacji",
+    "pageLead": "Ludzie, którzy kierują Fundacją Stock — jej Zarząd.",
     "councilOverline": "Nadzór",
     "councilTitle": "Rada Fundacji Stock",
     "boardOverline": "Zarządzanie",
@@ -18,8 +18,8 @@
     "viewProfile": "Zobacz profil"
   },
   "cz": {
-    "pageTitle": "Rada a představenstvo",
-    "pageLead": "Lidé, kteří vedou Nadaci Stock — její rada a představenstvo.",
+    "pageTitle": "Představenstvo nadace",
+    "pageLead": "Lidé, kteří vedou Nadaci Stock — její představenstvo.",
     "councilOverline": "Správa",
     "councilTitle": "Rada Nadace Stock",
     "boardOverline": "Vedení",
@@ -27,8 +27,8 @@
     "viewProfile": "Zobrazit profil"
   },
   "it": {
-    "pageTitle": "Consiglio e direzione",
-    "pageLead": "Le persone che guidano la Fondazione Stock — il suo Consiglio e il Consiglio di Amministrazione.",
+    "pageTitle": "Consiglio di Amministrazione",
+    "pageLead": "Le persone che guidano la Fondazione Stock — il suo Consiglio di Amministrazione.",
     "councilOverline": "Governance",
     "councilTitle": "Consiglio della Fondazione Stock",
     "boardOverline": "Direzione",
@@ -36,8 +36,8 @@
     "viewProfile": "Vedi profilo"
   },
   "sk": {
-    "pageTitle": "Rada a predstavenstvo",
-    "pageLead": "Ľudia, ktorí vedú Nadáciu Stock — jej rada a predstavenstvo.",
+    "pageTitle": "Predstavenstvo nadácie",
+    "pageLead": "Ľudia, ktorí vedú Nadáciu Stock — jej predstavenstvo.",
     "councilOverline": "Dohľad",
     "councilTitle": "Rada Nadácie Stock",
     "boardOverline": "Riadenie",
@@ -45,8 +45,8 @@
     "viewProfile": "Zobraziť profil"
   },
   "de": {
-    "pageTitle": "Stiftungsrat und Vorstand",
-    "pageLead": "Die Menschen, die die Stiftung Stock leiten — ihr Stiftungsrat und ihr Vorstand.",
+    "pageTitle": "Vorstand der Stiftung",
+    "pageLead": "Die Menschen, die die Stiftung Stock leiten — ihr Vorstand.",
     "councilOverline": "Aufsicht",
     "councilTitle": "Stiftungsrat der Stiftung Stock",
     "boardOverline": "Leitung",
@@ -54,8 +54,8 @@
     "viewProfile": "Profil ansehen"
   },
   "fr": {
-    "pageTitle": "Conseil et direction",
-    "pageLead": "Les personnes qui dirigent la Fondation Stock — son Conseil et sa direction.",
+    "pageTitle": "Direction de la Fondation",
+    "pageLead": "Les personnes qui dirigent la Fondation Stock — sa direction.",
     "councilOverline": "Gouvernance",
     "councilTitle": "Conseil de la Fondation Stock",
     "boardOverline": "Gestion",

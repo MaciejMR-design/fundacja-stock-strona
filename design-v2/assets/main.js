@@ -24,7 +24,7 @@ const isPublic = code => PUBLIC_LANGS.includes(code);
 const COMMON_I18N = {
   en: {
     skipToContent: 'Skip to content',
-    navMission: 'Mission', navAbout: 'About us', navStatute: 'Statute & Reports', navCouncil: 'Council & Board', navNews: 'News', navContact: 'Contact',
+    navMission: 'Mission', navAbout: 'About us', navStatute: 'Statute & Reports', navCouncil: 'Board', navNews: 'News', navContact: 'Contact',
     readMore: 'Read more', findOutMore: 'Find out more', home: 'Home',
     footerBlurb: 'A charitable foundation from Lublin helping refugees and local communities, and promoting art as therapy.',
     footerContact: 'Contact', footerCountry: 'Poland', footerNav: 'Explore',
@@ -34,7 +34,7 @@ const COMMON_I18N = {
   },
   pl: {
     skipToContent: 'Przejdź do treści',
-    navMission: 'Misja', navAbout: 'O nas', navStatute: 'Statut i sprawozdania', navCouncil: 'Rada i Zarząd', navNews: 'Aktualności', navContact: 'Kontakt',
+    navMission: 'Misja', navAbout: 'O nas', navStatute: 'Statut i sprawozdania', navCouncil: 'Zarząd', navNews: 'Aktualności', navContact: 'Kontakt',
     readMore: 'Czytaj więcej', findOutMore: 'Dowiedz się więcej', home: 'Strona główna',
     footerBlurb: 'Fundacja charytatywna z Lublina pomagająca uchodźcom i lokalnym społecznościom oraz promująca sztukę jako terapię.',
     footerContact: 'Kontakt', footerCountry: 'Polska', footerNav: 'Nawigacja',
@@ -44,7 +44,7 @@ const COMMON_I18N = {
   },
   cz: {
     skipToContent: 'Přejít na obsah',
-    navMission: 'Mise', navAbout: 'O nás', navStatute: 'Statut a zprávy', navCouncil: 'Rada a představenstvo', navNews: 'Novinky', navContact: 'Kontakt',
+    navMission: 'Mise', navAbout: 'O nás', navStatute: 'Statut a zprávy', navCouncil: 'Představenstvo', navNews: 'Novinky', navContact: 'Kontakt',
     readMore: 'Číst dále', findOutMore: 'Zjistit více', home: 'Úvod',
     footerBlurb: 'Charitativní nadace z Lublinu pomáhající uprchlíkům a místním komunitám a podporující umění jako terapii.',
     footerContact: 'Kontakt', footerCountry: 'Polsko', footerNav: 'Prozkoumat',
@@ -54,7 +54,7 @@ const COMMON_I18N = {
   },
   it: {
     skipToContent: 'Vai al contenuto',
-    navMission: 'Missione', navAbout: 'Chi siamo', navStatute: 'Statuto e rapporti', navCouncil: 'Consiglio e direzione', navNews: 'Notizie', navContact: 'Contatti',
+    navMission: 'Missione', navAbout: 'Chi siamo', navStatute: 'Statuto e rapporti', navCouncil: 'Direzione', navNews: 'Notizie', navContact: 'Contatti',
     readMore: 'Leggi di più', findOutMore: 'Scopri di più', home: 'Home',
     footerBlurb: 'Una fondazione benefica di Lublino che aiuta rifugiati e comunità locali e promuove l’arte come terapia.',
     footerContact: 'Contatti', footerCountry: 'Polonia', footerNav: 'Esplora',
@@ -64,7 +64,7 @@ const COMMON_I18N = {
   },
   sk: {
     skipToContent: 'Prejsť na obsah',
-    navMission: 'Misia', navAbout: 'O nás', navStatute: 'Štatút a správy', navCouncil: 'Rada a predstavenstvo', navNews: 'Aktuality', navContact: 'Kontakt',
+    navMission: 'Misia', navAbout: 'O nás', navStatute: 'Štatút a správy', navCouncil: 'Predstavenstvo', navNews: 'Aktuality', navContact: 'Kontakt',
     readMore: 'Čítať ďalej', findOutMore: 'Zistiť viac', home: 'Domov',
     footerBlurb: 'Charitatívna nadácia z Lublina, ktorá pomáha utečencom a miestnym komunitám a podporuje umenie ako terapiu.',
     footerContact: 'Kontakt', footerCountry: 'Poľsko', footerNav: 'Preskúmať',
@@ -74,7 +74,7 @@ const COMMON_I18N = {
   },
   de: {
     skipToContent: 'Zum Inhalt springen',
-    navMission: 'Mission', navAbout: 'Über uns', navStatute: 'Satzung & Berichte', navCouncil: 'Stiftungsrat & Vorstand', navNews: 'Aktuelles', navContact: 'Kontakt',
+    navMission: 'Mission', navAbout: 'Über uns', navStatute: 'Satzung & Berichte', navCouncil: 'Vorstand', navNews: 'Aktuelles', navContact: 'Kontakt',
     readMore: 'Weiterlesen', findOutMore: 'Mehr erfahren', home: 'Startseite',
     footerBlurb: 'Eine gemeinnützige Stiftung aus Lublin, die Geflüchteten und lokalen Gemeinschaften hilft und Kunst als Therapie fördert.',
     footerContact: 'Kontakt', footerCountry: 'Polen', footerNav: 'Entdecken',
@@ -84,7 +84,7 @@ const COMMON_I18N = {
   },
   fr: {
     skipToContent: 'Aller au contenu',
-    navMission: 'Mission', navAbout: 'À propos', navStatute: 'Statuts et rapports', navCouncil: 'Conseil et direction', navNews: 'Actualités', navContact: 'Contact',
+    navMission: 'Mission', navAbout: 'À propos', navStatute: 'Statuts et rapports', navCouncil: 'Direction', navNews: 'Actualités', navContact: 'Contact',
     readMore: 'Lire la suite', findOutMore: 'En savoir plus', home: 'Accueil',
     footerBlurb: 'Une fondation caritative de Lublin qui aide les réfugiés et les communautés locales et promeut l’art comme thérapie.',
     footerContact: 'Contact', footerCountry: 'Pologne', footerNav: 'Explorer',
