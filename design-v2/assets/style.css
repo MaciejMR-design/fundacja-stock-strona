@@ -447,7 +447,10 @@ html.doc-open, html.doc-open body { overflow: hidden; }
 }
 
 /* team */
-.team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr)); gap: 28px; }
+/* auto-fill (nie auto-fit): przy 1–2 kartach puste kolumny zostają i karta
+   nie rozciąga się na cały kontener — zdjęcia osób mają ~640 px szerokości
+   i przy pełnej szerokości strony widać piksele. */
+.team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(230px, 100%), 1fr)); gap: 28px; }
 .person { display: flex; flex-direction: column; border-radius: 10px; overflow: hidden; background: var(--white); border: 1px solid var(--gray); transition: box-shadow .3s, transform .3s; color: inherit; }
 .person:hover { color: inherit; }
 .person:hover { box-shadow: 0 18px 46px rgba(0,41,87,.14); transform: translateY(-6px); }
