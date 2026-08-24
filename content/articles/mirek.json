@@ -1,70 +1,76 @@
 {
-  "id": "mirek",
-  "ts": "2024-07-15",
-  "cat": "scholar",
-  "img": "/uploads/news-mirek.jpg",
-  "date": {
-    "en": "July 2024",
-    "pl": "Lipiec 2024",
-    "cz": "Červenec 2024",
-    "it": "Luglio 2024",
-    "sk": "Júl 2024",
-    "de": "Juli 2024",
-    "fr": "juillet 2024"
-  },
-  "title": {
-    "en": "Meet the educator behind our guitar ensemble — Mirek Sokołowski",
-    "pl": "Poznajcie opiekuna naszego zespołu gitarowego — Mirka Sokołowskiego",
-    "cz": "Poznejte pedagoga našeho kytarového souboru — Mirka Sokołowského",
-    "it": "Vi presentiamo l’educatore del nostro ensemble di chitarre — Mirek Sokołowski",
-    "sk": "Spoznajte pedagóga nášho gitarového súboru — Mirka Sokołowského",
-    "de": "Lernen Sie den Leiter unseres Gitarrenensembles kennen — Mirek Sokołowski",
-    "fr": "Découvrez le responsable de notre ensemble de guitares — Mirek Sokołowski"
-  },
-  "lead": {
-    "en": "The guitar ensemble founded in May 2022 flourishes under a teacher with 25 years of experience on stages in Poland and France.",
-    "pl": "Zespół gitarowy założony w maju 2022 roku rozkwita pod okiem nauczyciela z 25-letnim doświadczeniem na scenach Polski i Francji.",
-    "cz": "Kytarový soubor založený v květnu 2022 vzkvétá pod vedením učitele s 25 lety zkušeností na pódiích v Polsku a ve Francii.",
-    "it": "L’ensemble di chitarre fondato nel maggio 2022 fiorisce sotto la guida di un insegnante con 25 anni di esperienza sui palchi di Polonia e Francia.",
-    "sk": "Gitarový súbor založený v máji 2022 prekvitá pod vedením učiteľa s 25-ročnými skúsenosťami z pódií v Poľsku a vo Francúzsku.",
-    "de": "Das im Mai 2022 gegründete Gitarrenensemble blüht unter der Leitung eines Lehrers mit 25 Jahren Bühnenerfahrung in Polen und Frankreich auf.",
-    "fr": "L’ensemble de guitares fondé en mai 2022 s’épanouit sous la direction d’un enseignant fort de 25 ans d’expérience sur les scènes de Pologne et de France."
-  },
-  "body": {
-    "en": [
-      "The Stock Foundation continues its programme to support talented Ukrainian youth. One of the most active groups is the guitar ensemble founded in May 2022. Since then, dozens of people with different levels of musical education have participated in the classes — some studied at music schools, others practised as a hobby. The line-up is now quite stable: about 10 young people, from primary school to junior high school age, most of whom have lived in Poland for a long time and attend school here. Their level can be described as “advanced debutants”, and classes are held twice a week.",
-      "The ensemble is led by an outstanding educator, Mirek Sokołowski — author of lyrics and music animator. Mirek has been a guitar teacher in Poland and France for almost 25 years and has given several hundred concerts in France, Switzerland and Poland. Together with the Lyon-based band Malossol, he won the 14th edition of the Musicales de Bastia festival in Corsica, and in 2010, with the Lublin-based Couleur Café, he received the W. Bellon Award at the Student Song Festival in Kraków.",
-      "Currently, he runs guitar workshops under the auspices of Homo Faber and the Stock Foundation, works as a music instructor in community centres, and infects young adepts of the art with his passion for music. The ensemble under his care performs at concerts given by our scholarship holders — for example at Baobab, or at the recent concert summarising the school year at the Culture Workshops."
-    ],
-    "pl": [
+  "pl": {
+    "title": "Poznajcie opiekuna naszego zespołu gitarowego — Mirka Sokołowskiego",
+    "lead": "Zespół gitarowy założony w maju 2022 roku rozkwita pod okiem nauczyciela z 25-letnim doświadczeniem na scenach Polski i Francji.",
+    "body": [
       "Fundacja Stock kontynuuje program wspierania utalentowanej młodzieży z Ukrainy. Jedną z najaktywniejszych grup jest zespół gitarowy założony w maju 2022 roku. Od tego czasu w zajęciach uczestniczyły dziesiątki osób o różnym poziomie muzycznego wykształcenia — jedni uczyli się w szkołach muzycznych, inni grali hobbystycznie. Skład jest już dość stabilny: około 10 młodych osób, od czwartej klasy podstawówki po gimnazjum, w większości od dawna mieszkających w Polsce i uczących się tutaj. Ich poziom można określić jako „zaawansowani debiutanci”, a zajęcia odbywają się dwa razy w tygodniu.",
       "Zespół prowadzi wybitny pedagog Mirek Sokołowski — autor tekstów i animator muzyczny. Mirek od blisko 25 lat uczy gry na gitarze w Polsce i we Francji, ma za sobą kilkaset koncertów we Francji, Szwajcarii i Polsce. Z lyońskim zespołem Malossol wygrał 14. edycję festiwalu Musicales de Bastia na Korsyce, a w 2010 roku z lubelskim Couleur Café zdobył nagrodę im. W. Bellona na Studenckim Festiwalu Piosenki w Krakowie.",
       "Obecnie prowadzi warsztaty gitarowe pod auspicjami Homo Faber i Fundacji Stock, pracuje jako instruktor muzyczny w domach kultury i zaraża młodych adeptów sztuki swoją pasją do muzyki. Zespół pod jego opieką występuje na koncertach naszych stypendystów — m.in. w Baobabie czy na niedawnym koncercie podsumowującym rok szkolny w Warsztatach Kultury."
     ],
-    "cz": [
+    "date": "Lipiec 2024",
+    "img": "/uploads/news-mirek.jpg",
+    "ts": "2024-07-15",
+    "cat": "scholar",
+    "id": "mirek"
+  },
+  "en": {
+    "title": "Meet the educator behind our guitar ensemble — Mirek Sokołowski",
+    "lead": "The guitar ensemble founded in May 2022 flourishes under a teacher with 25 years of experience on stages in Poland and France.",
+    "body": [
+      "The Stock Foundation continues its programme to support talented Ukrainian youth. One of the most active groups is the guitar ensemble founded in May 2022. Since then, dozens of people with different levels of musical education have participated in the classes — some studied at music schools, others practised as a hobby. The line-up is now quite stable: about 10 young people, from primary school to junior high school age, most of whom have lived in Poland for a long time and attend school here. Their level can be described as “advanced debutants”, and classes are held twice a week.",
+      "The ensemble is led by an outstanding educator, Mirek Sokołowski — author of lyrics and music animator. Mirek has been a guitar teacher in Poland and France for almost 25 years and has given several hundred concerts in France, Switzerland and Poland. Together with the Lyon-based band Malossol, he won the 14th edition of the Musicales de Bastia festival in Corsica, and in 2010, with the Lublin-based Couleur Café, he received the W. Bellon Award at the Student Song Festival in Kraków.",
+      "Currently, he runs guitar workshops under the auspices of Homo Faber and the Stock Foundation, works as a music instructor in community centres, and infects young adepts of the art with his passion for music. The ensemble under his care performs at concerts given by our scholarship holders — for example at Baobab, or at the recent concert summarising the school year at the Culture Workshops."
+    ],
+    "date": "July 2024"
+  },
+  "cz": {
+    "title": "Poznejte pedagoga našeho kytarového souboru — Mirka Sokołowského",
+    "lead": "Kytarový soubor založený v květnu 2022 vzkvétá pod vedením učitele s 25 lety zkušeností na pódiích v Polsku a ve Francii.",
+    "body": [
       "Nadace Stock pokračuje v programu podpory talentované ukrajinské mládeže. Jednou z nejaktivnějších skupin je kytarový soubor založený v květnu 2022. Od té doby se lekcí zúčastnily desítky lidí s různou úrovní hudebního vzdělání — někteří studovali na hudebních školách, jiní hráli jako koníček. Sestava je nyní poměrně stabilní: asi 10 mladých lidí od základní školy po nižší střední, z nichž většina žije v Polsku už dlouho a chodí zde do školy. Jejich úroveň lze popsat jako „pokročilí debutanti“ a lekce se konají dvakrát týdně.",
       "Soubor vede vynikající pedagog Mirek Sokołowski — autor textů a hudební animátor. Mirek učí hru na kytaru v Polsku a ve Francii téměř 25 let a má za sebou několik set koncertů ve Francii, Švýcarsku a Polsku. S lyonskou kapelou Malossol vyhrál 14. ročník festivalu Musicales de Bastia na Korsice a v roce 2010 s lublinskou Couleur Café získal cenu W. Bellona na Studentském festivalu písně v Krakově.",
       "V současnosti vede kytarové dílny pod záštitou Homo Faber a Nadace Stock, pracuje jako hudební instruktor v kulturních centrech a nakažuje mladé adepty umění svou vášní pro hudbu. Soubor pod jeho vedením vystupuje na koncertech našich stipendistů — například v Baobabu nebo na nedávném koncertě shrnujícím školní rok v Dílně kultury."
     ],
-    "it": [
+    "date": "Červenec 2024"
+  },
+  "it": {
+    "title": "Vi presentiamo l’educatore del nostro ensemble di chitarre — Mirek Sokołowski",
+    "lead": "L’ensemble di chitarre fondato nel maggio 2022 fiorisce sotto la guida di un insegnante con 25 anni di esperienza sui palchi di Polonia e Francia.",
+    "body": [
       "La Fondazione Stock continua il suo programma di sostegno ai giovani talenti ucraini. Uno dei gruppi più attivi è l’ensemble di chitarre fondato nel maggio 2022. Da allora alle lezioni hanno partecipato decine di persone con diversi livelli di educazione musicale — alcuni hanno studiato nelle scuole di musica, altri suonavano per hobby. La formazione è ormai piuttosto stabile: circa 10 giovani, dalla scuola primaria alle medie, la maggior parte dei quali vive in Polonia da tempo e frequenta qui la scuola. Il loro livello si può definire “debuttanti avanzati”, e le lezioni si tengono due volte a settimana.",
       "L’ensemble è guidato da un eccellente educatore, Mirek Sokołowski — autore di testi e animatore musicale. Mirek insegna chitarra in Polonia e in Francia da quasi 25 anni e ha tenuto diverse centinaia di concerti in Francia, Svizzera e Polonia. Con la band lionese Malossol ha vinto la 14ª edizione del festival Musicales de Bastia in Corsica e nel 2010, con i Couleur Café di Lublino, ha ricevuto il Premio W. Bellon al Festival della Canzone Studentesca di Cracovia.",
       "Attualmente conduce laboratori di chitarra sotto l’egida di Homo Faber e della Fondazione Stock, lavora come istruttore musicale nei centri culturali e contagia i giovani adepti dell’arte con la sua passione per la musica. L’ensemble sotto la sua guida si esibisce ai concerti dei nostri borsisti — ad esempio al Baobab o al recente concerto di fine anno scolastico al Laboratorio di Cultura."
     ],
-    "sk": [
+    "date": "Luglio 2024"
+  },
+  "sk": {
+    "title": "Spoznajte pedagóga nášho gitarového súboru — Mirka Sokołowského",
+    "lead": "Gitarový súbor založený v máji 2022 prekvitá pod vedením učiteľa s 25-ročnými skúsenosťami z pódií v Poľsku a vo Francúzsku.",
+    "body": [
       "Nadácia Stock pokračuje v programe podpory talentovanej mládeže z Ukrajiny. Jednou z najaktívnejších skupín je gitarový súbor založený v máji 2022. Odvtedy sa na hodinách zúčastnili desiatky ľudí s rôznou úrovňou hudobného vzdelania — niektorí študovali na hudobných školách, iní hrali ako hobby. Zostava je už pomerne stabilná: približne 10 mladých ľudí od základnej školy po nižšiu strednú, z ktorých väčšina žije v Poľsku už dlho a chodí tu do školy. Ich úroveň možno opísať ako „pokročilí debutanti“ a hodiny sa konajú dvakrát týždenne.",
       "Súbor vedie vynikajúci pedagóg Mirek Sokołowski — autor textov a hudobný animátor. Mirek už takmer 25 rokov učí hru na gitare v Poľsku a vo Francúzsku a má za sebou niekoľko stoviek koncertov vo Francúzsku, Švajčiarsku a Poľsku. S lyonskou kapelou Malossol vyhral 14. ročník festivalu Musicales de Bastia na Korzike a v roku 2010 s lublinskou skupinou Couleur Café získal cenu W. Bellona na Študentskom festivale piesne v Krakove.",
       "V súčasnosti vedie gitarové dielne pod záštitou Homo Faber a Nadácie Stock, pracuje ako hudobný inštruktor v kultúrnych domoch a svojou vášňou pre hudbu nadchýna mladých adeptov umenia. Súbor pod jeho vedením vystupuje na koncertoch našich štipendistov — napríklad v Baobabe či na nedávnom koncerte na záver školského roka v Dielňach kultúry."
     ],
-    "de": [
+    "date": "Júl 2024"
+  },
+  "de": {
+    "title": "Lernen Sie den Leiter unseres Gitarrenensembles kennen — Mirek Sokołowski",
+    "lead": "Das im Mai 2022 gegründete Gitarrenensemble blüht unter der Leitung eines Lehrers mit 25 Jahren Bühnenerfahrung in Polen und Frankreich auf.",
+    "body": [
       "Die Stiftung Stock setzt ihr Programm zur Unterstützung talentierter Jugendlicher aus der Ukraine fort. Eine der aktivsten Gruppen ist das im Mai 2022 gegründete Gitarrenensemble. Seitdem haben Dutzende von Personen mit unterschiedlichem musikalischem Ausbildungsstand am Unterricht teilgenommen — manche lernten an Musikschulen, andere spielten als Hobby. Die Besetzung ist inzwischen recht stabil: etwa 10 junge Leute von der Grundschule bis zur Mittelstufe, von denen die meisten schon lange in Polen leben und hier zur Schule gehen. Ihr Niveau lässt sich als „fortgeschrittene Debütanten“ beschreiben, und der Unterricht findet zweimal pro Woche statt.",
       "Das Ensemble leitet ein herausragender Pädagoge, Mirek Sokołowski — Textautor und Musikanimateur. Mirek unterrichtet seit fast 25 Jahren Gitarre in Polen und Frankreich und hat mehrere Hundert Konzerte in Frankreich, der Schweiz und Polen gegeben. Mit der Lyoner Band Malossol gewann er die 14. Ausgabe des Festivals Musicales de Bastia auf Korsika, und 2010 erhielt er mit der Lubliner Gruppe Couleur Café den W.-Bellon-Preis beim Studentenliedfestival in Krakau.",
       "Derzeit leitet er Gitarrenworkshops unter der Schirmherrschaft von Homo Faber und der Stiftung Stock, arbeitet als Musiklehrer in Kulturhäusern und steckt junge Kunstschaffende mit seiner Leidenschaft für die Musik an. Das Ensemble unter seiner Obhut tritt bei Konzerten unserer Stipendiatinnen und Stipendiaten auf — zum Beispiel im Baobab oder beim jüngsten Konzert zum Abschluss des Schuljahres in den Kulturwerkstätten."
     ],
-    "fr": [
+    "date": "Juli 2024"
+  },
+  "fr": {
+    "title": "Découvrez le responsable de notre ensemble de guitares — Mirek Sokołowski",
+    "lead": "L’ensemble de guitares fondé en mai 2022 s’épanouit sous la direction d’un enseignant fort de 25 ans d’expérience sur les scènes de Pologne et de France.",
+    "body": [
       "La Fondation Stock poursuit son programme de soutien aux jeunes talents d’Ukraine. L’un des groupes les plus actifs est l’ensemble de guitares fondé en mai 2022. Depuis, des dizaines de personnes aux niveaux d’éducation musicale variés ont participé aux cours — certains ont étudié dans des écoles de musique, d’autres jouaient en amateurs. La formation est désormais assez stable : une dizaine de jeunes, de la quatrième année du primaire au collège, dont la plupart vivent en Pologne depuis longtemps et y sont scolarisés. Leur niveau peut être qualifié de « débutants avancés », et les cours ont lieu deux fois par semaine.",
       "L’ensemble est dirigé par un pédagogue remarquable, Mirek Sokołowski — auteur de textes et animateur musical. Mirek enseigne la guitare en Pologne et en France depuis près de 25 ans et a donné plusieurs centaines de concerts en France, en Suisse et en Pologne. Avec le groupe lyonnais Malossol, il a remporté la 14e édition du festival Musicales de Bastia en Corse et, en 2010, avec Couleur Café, de Lublin, il a reçu le prix W. Bellon au Festival de la chanson étudiante de Cracovie.",
       "Il anime actuellement des ateliers de guitare sous l’égide de Homo Faber et de la Fondation Stock, travaille comme animateur musical dans des centres culturels et transmet aux jeunes adeptes de l’art sa passion pour la musique. L’ensemble qu’il encadre se produit aux concerts de nos boursiers — par exemple au Baobab ou lors du récent concert de fin d’année scolaire aux Ateliers de la Culture."
-    ]
+    ],
+    "date": "juillet 2024"
   }
 }

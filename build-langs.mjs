@@ -14,10 +14,36 @@ import { join } from 'path';
 const CONTENT = join(import.meta.dirname, 'content');
 const stripBom = s => s.replace(/^﻿/, '');
 const readJson = (...p) => JSON.parse(stripBom(readFileSync(join(CONTENT, ...p), 'utf8')));
+/* Panel zapisuje wpisy w formacie wielojęzycznym Sveltii (single_file):
+   { pl: {title, lead, body, img, ts…}, en: {title…}, … }. Build — i wszystko
+   poniżej — myśli polami { title: {pl, en…} }, więc ta funkcja przekłada nowy
+   format na stary zaraz po wczytaniu. Pliki w starym formacie (osoby oraz
+   ewentualne niezmigrowane wpisy) przechodzą bez zmian. Pola techniczne
+   (zdjęcie, data, kategoria) są szukane także w innych sekcjach językowych
+   i w korzeniu pliku, na wypadek gdyby panel zapisał je gdzie indziej. */
+const I18N_KEYS = ['pl', 'en', 'cz', 'it', 'sk', 'de', 'fr'];
+function fromI18nFile(data) {
+  if (data.title || !data.pl || typeof data.pl !== 'object') return data;
+  const out = {};
+  const scalar = k => data[k] !== undefined ? data[k] : I18N_KEYS.map(l => data[l]?.[k]).find(v => v !== undefined);
+  for (const k of ['id', 'ts', 'cat', 'dateSpan', 'img', 'images']) {
+    const v = scalar(k);
+    if (v !== undefined) out[k] = v;
+  }
+  for (const k of ['title', 'lead', 'body', 'date']) {
+    for (const l of I18N_KEYS) {
+      const v = data[l]?.[k];
+      if (v === undefined || v === null || v === '' || (Array.isArray(v) && !v.length)) continue;
+      (out[k] ??= {})[l] = v;
+    }
+  }
+  return out;
+}
+
 const readJsonDir = dir => readdirSync(join(CONTENT, dir))
   .filter(f => f.endsWith('.json'))
   .map(f => {
-    const data = readJson(dir, f);
+    const data = fromI18nFile(readJson(dir, f));
     /* Adres wpisu bierze się z nazwy pliku, którą panel tworzy z tytułu —
        redaktor nie wpisuje go ręcznie. Starsze wpisy mają jeszcze pole „id"
        w treści i ono ma pierwszeństwo, żeby opublikowane adresy się nie

@@ -1,70 +1,76 @@
 {
-  "id": "godow",
-  "ts": "2024-05-02",
-  "cat": "grant",
-  "img": "/uploads/cover-community.svg",
-  "date": {
-    "en": "May 2024",
-    "pl": "Maj 2024",
-    "cz": "Květen 2024",
-    "it": "Maggio 2024",
-    "sk": "Máj 2024",
-    "de": "Mai 2024",
-    "fr": "mai 2024"
-  },
-  "title": {
-    "en": "Flavours of Change — a defibrillator for the Godów fire brigade",
-    "pl": "Flavours of Change — defibrylator dla OSP Godów",
-    "cz": "Flavours of Change — defibrilátor pro hasiče z Godówa",
-    "it": "Flavours of Change — un defibrillatore per i vigili del fuoco di Godów",
-    "sk": "Flavours of Change — defibrilátor pre dobrovoľných hasičov z Godówa",
-    "de": "Flavours of Change — ein Defibrillator für die Freiwillige Feuerwehr Godów",
-    "fr": "Flavours of Change — un défibrillateur pour les pompiers volontaires de Godów"
-  },
-  "lead": {
-    "en": "One of the first employee-volunteering projects equips firefighters with an AED defibrillator, a training unit and a medical manikin.",
-    "pl": "Jeden z pierwszych projektów wolontariatu pracowniczego wyposaża strażaków w defibrylator AED, egzemplarz szkoleniowy i fantom medyczny.",
-    "cz": "Jeden z prvních projektů zaměstnaneckého dobrovolnictví vybavuje hasiče defibrilátorem AED, cvičným přístrojem a zdravotnickou figurínou.",
-    "it": "Uno dei primi progetti di volontariato aziendale fornisce ai vigili del fuoco un defibrillatore AED, un’unità di addestramento e un manichino medico.",
-    "sk": "Jeden z prvých projektov zamestnaneckého dobrovoľníctva vybavuje hasičov defibrilátorom AED, cvičným prístrojom a zdravotníckou figurínou.",
-    "de": "Eines der ersten Projekte des Mitarbeiter-Freiwilligenprogramms stattet die Feuerwehrleute mit einem AED-Defibrillator, einem Übungsgerät und einer medizinischen Übungspuppe aus.",
-    "fr": "L’un des premiers projets de bénévolat des salariés équipe les pompiers d’un défibrillateur AED, d’un appareil d’entraînement et d’un mannequin médical."
-  },
-  "body": {
-    "en": [
-      "We are pleased to present one of the first projects implemented as part of the Stock Foundation’s Employee Volunteering Programme. The Godów Volunteer Fire Brigade will be equipped with an AED defibrillator along with an AED training defibrillator and a medical manikin. The aim of the project is both to enhance the medical skills of firefighters and to provide first aid training in the local community — benefiting the community as well as those injured in road accidents.",
-      "The project will involve the fire brigade, the local community and Stock Polska employees. Experienced firefighters will share their knowledge of first aid and of how to act during road accidents and fires.",
-      "Such initiatives raise awareness of the importance of emergency preparedness and safety in the community, and the time dedicated by volunteer employees is an exemplary act of commitment to community safety and well-being — fitting perfectly with the objectives of our programme."
-    ],
-    "pl": [
+  "pl": {
+    "title": "Flavours of Change — defibrylator dla OSP Godów",
+    "lead": "Jeden z pierwszych projektów wolontariatu pracowniczego wyposaża strażaków w defibrylator AED, egzemplarz szkoleniowy i fantom medyczny.",
+    "body": [
       "Z przyjemnością przedstawiamy jeden z pierwszych projektów realizowanych w ramach Programu Wolontariatu Pracowniczego Fundacji Stock. Ochotnicza Straż Pożarna w Godowie zostanie wyposażona w defibrylator AED wraz z egzemplarzem szkoleniowym i fantomem medycznym. Celem projektu jest zarówno podniesienie umiejętności medycznych strażaków, jak i szkolenia z pierwszej pomocy dla lokalnej społeczności — skorzystają na tym mieszkańcy oraz poszkodowani w wypadkach drogowych.",
       "W projekt zaangażują się strażacy, lokalna społeczność i pracownicy Stock Polska. Doświadczeni strażacy podzielą się wiedzą o pierwszej pomocy oraz o tym, jak zachować się podczas wypadków drogowych i pożarów.",
       "Takie inicjatywy budują świadomość znaczenia gotowości ratunkowej i bezpieczeństwa w społeczności, a czas poświęcony przez pracowników-wolontariuszy to wzorowy przykład zaangażowania na rzecz bezpieczeństwa i dobrostanu wspólnoty — doskonale wpisujący się w cele naszego programu."
     ],
-    "cz": [
+    "date": "Maj 2024",
+    "img": "/uploads/cover-community.svg",
+    "ts": "2024-05-02",
+    "cat": "grant",
+    "id": "godow"
+  },
+  "en": {
+    "title": "Flavours of Change — a defibrillator for the Godów fire brigade",
+    "lead": "One of the first employee-volunteering projects equips firefighters with an AED defibrillator, a training unit and a medical manikin.",
+    "body": [
+      "We are pleased to present one of the first projects implemented as part of the Stock Foundation’s Employee Volunteering Programme. The Godów Volunteer Fire Brigade will be equipped with an AED defibrillator along with an AED training defibrillator and a medical manikin. The aim of the project is both to enhance the medical skills of firefighters and to provide first aid training in the local community — benefiting the community as well as those injured in road accidents.",
+      "The project will involve the fire brigade, the local community and Stock Polska employees. Experienced firefighters will share their knowledge of first aid and of how to act during road accidents and fires.",
+      "Such initiatives raise awareness of the importance of emergency preparedness and safety in the community, and the time dedicated by volunteer employees is an exemplary act of commitment to community safety and well-being — fitting perfectly with the objectives of our programme."
+    ],
+    "date": "May 2024"
+  },
+  "cz": {
+    "title": "Flavours of Change — defibrilátor pro hasiče z Godówa",
+    "lead": "Jeden z prvních projektů zaměstnaneckého dobrovolnictví vybavuje hasiče defibrilátorem AED, cvičným přístrojem a zdravotnickou figurínou.",
+    "body": [
       "S potěšením představujeme jeden z prvních projektů realizovaných v rámci Programu zaměstnaneckého dobrovolnictví Nadace Stock. Dobrovolní hasiči v Godówě budou vybaveni defibrilátorem AED spolu s cvičným defibrilátorem a zdravotnickou figurínou. Cílem projektu je jednak zvýšit zdravotnické dovednosti hasičů, jednak poskytovat školení první pomoci v místní komunitě — ku prospěchu obyvatel i zraněných při dopravních nehodách.",
       "Do projektu se zapojí hasiči, místní komunita a zaměstnanci Stock Polska. Zkušení hasiči se podělí o znalosti první pomoci a o to, jak jednat při dopravních nehodách a požárech.",
       "Takové iniciativy zvyšují povědomí o významu připravenosti na mimořádné situace a bezpečnosti v komunitě a čas věnovaný zaměstnanci-dobrovolníky je příkladným projevem angažovanosti pro bezpečnost a blaho společenství — dokonale odpovídajícím cílům našeho programu."
     ],
-    "it": [
+    "date": "Květen 2024"
+  },
+  "it": {
+    "title": "Flavours of Change — un defibrillatore per i vigili del fuoco di Godów",
+    "lead": "Uno dei primi progetti di volontariato aziendale fornisce ai vigili del fuoco un defibrillatore AED, un’unità di addestramento e un manichino medico.",
+    "body": [
       "Siamo lieti di presentare uno dei primi progetti realizzati nell’ambito del Programma di Volontariato Aziendale della Fondazione Stock. I Vigili del Fuoco Volontari di Godów saranno dotati di un defibrillatore AED insieme a un defibrillatore AED da addestramento e a un manichino medico. L’obiettivo del progetto è sia migliorare le competenze mediche dei vigili del fuoco sia offrire formazione di primo soccorso alla comunità locale — a beneficio dei residenti e dei feriti negli incidenti stradali.",
       "Il progetto coinvolgerà i vigili del fuoco, la comunità locale e i dipendenti di Stock Polska. Vigili del fuoco esperti condivideranno le loro conoscenze di primo soccorso e su come comportarsi durante incidenti stradali e incendi.",
       "Iniziative come questa accrescono la consapevolezza dell’importanza della preparazione alle emergenze e della sicurezza nella comunità, e il tempo dedicato dai dipendenti volontari è un esempio di impegno per la sicurezza e il benessere della collettività — perfettamente in linea con gli obiettivi del nostro programma."
     ],
-    "sk": [
+    "date": "Maggio 2024"
+  },
+  "sk": {
+    "title": "Flavours of Change — defibrilátor pre dobrovoľných hasičov z Godówa",
+    "lead": "Jeden z prvých projektov zamestnaneckého dobrovoľníctva vybavuje hasičov defibrilátorom AED, cvičným prístrojom a zdravotníckou figurínou.",
+    "body": [
       "S potešením predstavujeme jeden z prvých projektov realizovaných v rámci Programu zamestnaneckého dobrovoľníctva Nadácie Stock. Dobrovoľný hasičský zbor v Godówe bude vybavený defibrilátorom AED spolu s cvičným defibrilátorom a zdravotníckou figurínou. Cieľom projektu je jednak zvýšiť zdravotnícke zručnosti hasičov, jednak poskytovať školenia prvej pomoci pre miestnu komunitu — v prospech obyvateľov aj zranených pri dopravných nehodách.",
       "Do projektu sa zapoja hasiči, miestna komunita a zamestnanci spoločnosti Stock Polska. Skúsení hasiči sa podelia o poznatky o prvej pomoci aj o tom, ako sa správať pri dopravných nehodách a požiaroch.",
       "Takéto iniciatívy zvyšujú povedomie o význame pripravenosti na núdzové situácie a bezpečnosti v komunite a čas, ktorý venovali zamestnanci-dobrovoľníci, je príkladným prejavom angažovanosti za bezpečnosť a blaho spoločenstva — dokonale zodpovedajúcim cieľom nášho programu."
     ],
-    "de": [
+    "date": "Máj 2024"
+  },
+  "de": {
+    "title": "Flavours of Change — ein Defibrillator für die Freiwillige Feuerwehr Godów",
+    "lead": "Eines der ersten Projekte des Mitarbeiter-Freiwilligenprogramms stattet die Feuerwehrleute mit einem AED-Defibrillator, einem Übungsgerät und einer medizinischen Übungspuppe aus.",
+    "body": [
       "Mit Freude stellen wir eines der ersten Projekte vor, die im Rahmen des Mitarbeiter-Freiwilligenprogramms der Stiftung Stock umgesetzt werden. Die Freiwillige Feuerwehr in Godów wird mit einem AED-Defibrillator sowie einem Übungsgerät und einer medizinischen Übungspuppe ausgestattet. Ziel des Projekts ist es, sowohl die medizinischen Fähigkeiten der Feuerwehrleute zu stärken als auch Erste-Hilfe-Schulungen für die örtliche Gemeinschaft anzubieten — davon profitieren die Einwohner ebenso wie Verletzte bei Verkehrsunfällen.",
       "An dem Projekt beteiligen sich die Feuerwehrleute, die örtliche Gemeinschaft und die Mitarbeiterinnen und Mitarbeiter von Stock Polska. Erfahrene Feuerwehrleute geben ihr Wissen über Erste Hilfe weiter und zeigen, wie man sich bei Verkehrsunfällen und Bränden verhält.",
       "Solche Initiativen schärfen das Bewusstsein für die Bedeutung von Notfallvorsorge und Sicherheit in der Gemeinschaft, und die Zeit, die die freiwilligen Mitarbeiterinnen und Mitarbeiter einbringen, ist ein vorbildliches Zeichen des Engagements für die Sicherheit und das Wohl der Gemeinschaft — ganz im Sinne der Ziele unseres Programms."
     ],
-    "fr": [
+    "date": "Mai 2024"
+  },
+  "fr": {
+    "title": "Flavours of Change — un défibrillateur pour les pompiers volontaires de Godów",
+    "lead": "L’un des premiers projets de bénévolat des salariés équipe les pompiers d’un défibrillateur AED, d’un appareil d’entraînement et d’un mannequin médical.",
+    "body": [
       "Nous avons le plaisir de présenter l’un des premiers projets réalisés dans le cadre du Programme de bénévolat des salariés de la Fondation Stock. Le corps des pompiers volontaires de Godów sera équipé d’un défibrillateur AED, accompagné d’un appareil d’entraînement et d’un mannequin médical. Le projet vise à la fois à renforcer les compétences médicales des pompiers et à proposer des formations aux premiers secours à la communauté locale — au bénéfice des habitants comme des blessés lors d’accidents de la route.",
       "Le projet mobilisera les pompiers, la communauté locale et les salariés de Stock Polska. Des pompiers expérimentés partageront leurs connaissances des premiers secours et expliqueront comment réagir lors d’accidents de la route et d’incendies.",
       "De telles initiatives renforcent la prise de conscience de l’importance de la préparation aux urgences et de la sécurité au sein de la communauté, et le temps consacré par les salariés bénévoles est un exemple remarquable d’engagement pour la sécurité et le bien-être de la collectivité — en parfaite adéquation avec les objectifs de notre programme."
-    ]
+    ],
+    "date": "mai 2024"
   }
 }

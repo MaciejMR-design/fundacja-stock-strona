@@ -34,7 +34,7 @@ Każdy zapis pojawia się na stronie po 1–2 minutach. Aktualności wystarczy n
 ## Dodanie nowej aktualności
 1. Sekcja **Aktualności** → przycisk **New**.
 2. Wypełnij pola — formularz idzie od treści do ustawień technicznych:
-   - **Tytuł, Zajawka, Treść** — wypełnij **tylko po polsku**. Angielski i pozostałe języki **tłumaczą się automatycznie** kilka minut po zapisaniu (przez chwilę, do czasu przetłumaczenia, obce wersje pokazują tekst polski). Jeśli w którymś polu językowym wpiszesz własne tłumaczenie, automat go **nie ruszy** — Twoja wersja ma pierwszeństwo.
+   - **Tytuł, Zajawka, Treść** — piszesz **tylko po polsku**, formularz jest jednojęzyczny. Angielski i pozostałe języki **tłumaczą się automatycznie** kilka minut po zapisaniu (przez chwilę, do czasu przetłumaczenia, obce wersje pokazują tekst polski). Dorobione tłumaczenia można podejrzeć i poprawić **przełącznikiem języka w prawym górnym rogu edytora** — poprawiona ręcznie wersja ma pierwszeństwo i automat jej **nie ruszy**.
    - Treść wpisuje się **akapitami** — każdy akapit to osobne pole (przycisk „+" dodaje kolejny).
    - **Zajawka** to 1–2 zdania widoczne na kafelku wpisu na liście Aktualności i w wynikach wyszukiwania Google. W samym artykule się nie pokazuje — tam od razu zaczyna się Treść.
    - **Zdjęcie główne** — wgraj z dysku. Zdjęcia z telefonu są przy wgrywaniu automatycznie zmniejszane i przerabiane na lekki format WebP — nie trzeba ich wcześniej przygotowywać.

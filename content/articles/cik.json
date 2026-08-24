@@ -1,69 +1,75 @@
 {
-  "id": "cik",
-  "ts": "2026-04-17",
-  "img": "/uploads/news-cik.jpg",
-  "date": {
-    "en": "17 April 2026",
-    "pl": "17 kwietnia 2026",
-    "cz": "17. dubna 2026",
-    "it": "17 aprile 2026",
-    "sk": "17. apríla 2026",
-    "de": "17. April 2026",
-    "fr": "17 avril 2026"
-  },
-  "title": {
-    "en": "Stock Foundation awarded at the Crisis Intervention Center",
-    "pl": "Fundacja Stock wyróżniona przez Centrum Interwencji Kryzysowej",
-    "cz": "Nadace Stock oceněna Centrem krizové intervence",
-    "it": "La Fondazione Stock premiata al Centro di Intervento di Crisi",
-    "sk": "Nadácia Stock ocenená Centrom krízovej intervencie",
-    "de": "Stiftung Stock vom Kriseninterventionszentrum ausgezeichnet",
-    "fr": "La Fondation Stock distinguée par le Centre d’intervention de crise"
-  },
-  "lead": {
-    "en": "In Lublin, celebrations were held for the 20th anniversary of the Crisis Intervention Centre — a municipal unit supporting people in difficult life situations.",
-    "pl": "W Lublinie odbyły się obchody 20-lecia Centrum Interwencji Kryzysowej — miejskiej jednostki wspierającej osoby w trudnych sytuacjach życiowych.",
-    "cz": "V Lublinu se konaly oslavy 20. výročí Centra krizové intervence — městské jednotky podporující lidi v obtížných životních situacích.",
-    "it": "A Lublino si sono svolte le celebrazioni per il 20° anniversario del Centro di Intervento di Crisi — un’unità municipale che sostiene le persone in situazioni di vita difficili.",
-    "sk": "V Lubline sa konali oslavy 20. výročia Centra krízovej intervencie — mestskej inštitúcie podporujúcej ľudí v ťažkých životných situáciách.",
-    "de": "In Lublin wurde das 20-jährige Bestehen des Kriseninterventionszentrums gefeiert — einer städtischen Einrichtung, die Menschen in schwierigen Lebenslagen unterstützt.",
-    "fr": "Lublin a célébré le 20e anniversaire du Centre d’intervention de crise — une structure municipale qui soutient les personnes en situation de vie difficile."
-  },
-  "body": {
-    "en": [
-      "For years, the CIK has been providing free, specialist psychological, therapeutic, legal and crisis intervention support, available without a referral to city residents. Assistance is directed, among others, to individuals experiencing violence, addiction, personal crises or sudden life events such as the loss of a loved one or job loss.",
-      "During the anniversary event, partners supporting the Centre’s activities were recognized. Among them was the Stock Foundation, which received a certificate of appreciation for its social engagement. On behalf of the Foundation, the award was received by Paweł Jabłoński, who was also individually recognized for his personal contribution to the support activities.",
-      "The event was attended by representatives of city authorities, support institutions and non-governmental organizations cooperating with the CIK, highlighting the importance of collaboration in assisting people in crisis."
-    ],
-    "pl": [
+  "pl": {
+    "title": "Fundacja Stock wyróżniona przez Centrum Interwencji Kryzysowej",
+    "lead": "W Lublinie odbyły się obchody 20-lecia Centrum Interwencji Kryzysowej — miejskiej jednostki wspierającej osoby w trudnych sytuacjach życiowych.",
+    "body": [
       "Od lat CIK zapewnia bezpłatne, specjalistyczne wsparcie psychologiczne, terapeutyczne, prawne i interwencji kryzysowej, dostępne dla mieszkańców bez skierowania. Pomoc kierowana jest m.in. do osób doświadczających przemocy, uzależnień, kryzysów osobistych lub nagłych zdarzeń życiowych, takich jak utrata bliskiej osoby czy pracy.",
       "Podczas jubileuszu wyróżniono partnerów wspierających działalność Centrum. Wśród nich znalazła się Fundacja Stock, która otrzymała dyplom uznania za zaangażowanie społeczne. W imieniu Fundacji nagrodę odebrał Paweł Jabłoński, wyróżniony również indywidualnie za osobisty wkład w działania pomocowe.",
       "W wydarzeniu wzięli udział przedstawiciele władz miasta, instytucji pomocowych i organizacji pozarządowych współpracujących z CIK, co podkreśliło znaczenie współpracy w niesieniu pomocy osobom w kryzysie."
     ],
-    "cz": [
+    "date": "17 kwietnia 2026",
+    "img": "/uploads/news-cik.jpg",
+    "ts": "2026-04-17",
+    "id": "cik"
+  },
+  "en": {
+    "title": "Stock Foundation awarded at the Crisis Intervention Center",
+    "lead": "In Lublin, celebrations were held for the 20th anniversary of the Crisis Intervention Centre — a municipal unit supporting people in difficult life situations.",
+    "body": [
+      "For years, the CIK has been providing free, specialist psychological, therapeutic, legal and crisis intervention support, available without a referral to city residents. Assistance is directed, among others, to individuals experiencing violence, addiction, personal crises or sudden life events such as the loss of a loved one or job loss.",
+      "During the anniversary event, partners supporting the Centre’s activities were recognized. Among them was the Stock Foundation, which received a certificate of appreciation for its social engagement. On behalf of the Foundation, the award was received by Paweł Jabłoński, who was also individually recognized for his personal contribution to the support activities.",
+      "The event was attended by representatives of city authorities, support institutions and non-governmental organizations cooperating with the CIK, highlighting the importance of collaboration in assisting people in crisis."
+    ],
+    "date": "17 April 2026"
+  },
+  "cz": {
+    "title": "Nadace Stock oceněna Centrem krizové intervence",
+    "lead": "V Lublinu se konaly oslavy 20. výročí Centra krizové intervence — městské jednotky podporující lidi v obtížných životních situacích.",
+    "body": [
       "CIK po léta poskytuje bezplatnou odbornou psychologickou, terapeutickou, právní a krizovou intervenční podporu dostupnou obyvatelům bez doporučení. Pomoc je směřována mimo jiné lidem, kteří zažívají násilí, závislost, osobní krize nebo náhlé životní události, jako je ztráta blízké osoby či práce.",
       "Během výročí byli oceněni partneři podporující činnost Centra. Mezi nimi byla i Nadace Stock, která obdržela čestné uznání za společenskou angažovanost. Jménem nadace cenu převzal Paweł Jabłoński, který byl také individuálně oceněn za svůj osobní přínos podpůrným aktivitám.",
       "Akce se zúčastnili zástupci městských úřadů, podpůrných institucí a nevládních organizací spolupracujících s CIK, což zdůraznilo význam spolupráce při pomoci lidem v krizi."
     ],
-    "it": [
+    "date": "17. dubna 2026"
+  },
+  "it": {
+    "title": "La Fondazione Stock premiata al Centro di Intervento di Crisi",
+    "lead": "A Lublino si sono svolte le celebrazioni per il 20° anniversario del Centro di Intervento di Crisi — un’unità municipale che sostiene le persone in situazioni di vita difficili.",
+    "body": [
       "Da anni il CIK fornisce sostegno psicologico, terapeutico, legale e di intervento di crisi gratuito e specialistico, disponibile senza prescrizione per i residenti. L’assistenza è rivolta, tra gli altri, a persone che subiscono violenza, dipendenze, crisi personali o eventi improvvisi come la perdita di una persona cara o del lavoro.",
       "Durante l’evento anniversario sono stati riconosciuti i partner che sostengono le attività del Centro. Tra questi la Fondazione Stock, che ha ricevuto un attestato di apprezzamento per il suo impegno sociale. A nome della Fondazione, il premio è stato ritirato da Paweł Jabłoński, riconosciuto anche individualmente per il suo contributo personale alle attività di sostegno.",
       "All’evento hanno partecipato rappresentanti delle autorità cittadine, delle istituzioni di sostegno e delle organizzazioni non governative che collaborano con il CIK, sottolineando l’importanza della collaborazione nell’assistere le persone in crisi."
     ],
-    "sk": [
+    "date": "17 aprile 2026"
+  },
+  "sk": {
+    "title": "Nadácia Stock ocenená Centrom krízovej intervencie",
+    "lead": "V Lubline sa konali oslavy 20. výročia Centra krízovej intervencie — mestskej inštitúcie podporujúcej ľudí v ťažkých životných situáciách.",
+    "body": [
       "CIK už roky poskytuje bezplatnú odbornú psychologickú, terapeutickú, právnu a krízovú intervenčnú podporu, dostupnú obyvateľom mesta bez odporúčania. Pomoc smeruje okrem iného k ľuďom, ktorí zažívajú násilie, závislosti, osobné krízy alebo náhle životné udalosti, ako je strata blízkej osoby či zamestnania.",
       "Počas jubilea boli ocenení partneri podporujúci činnosť Centra. Medzi nimi bola aj Nadácia Stock, ktorá získala čestné uznanie za spoločenskú angažovanosť. V mene nadácie ocenenie prevzal Paweł Jabłoński, ktorý bol ocenený aj individuálne za osobný prínos k podporným aktivitám.",
       "Na podujatí sa zúčastnili zástupcovia mestských orgánov, pomocných inštitúcií a mimovládnych organizácií spolupracujúcich s CIK, čo zdôraznilo význam spolupráce pri pomoci ľuďom v kríze."
     ],
-    "de": [
+    "date": "17. apríla 2026"
+  },
+  "de": {
+    "title": "Stiftung Stock vom Kriseninterventionszentrum ausgezeichnet",
+    "lead": "In Lublin wurde das 20-jährige Bestehen des Kriseninterventionszentrums gefeiert — einer städtischen Einrichtung, die Menschen in schwierigen Lebenslagen unterstützt.",
+    "body": [
       "Seit Jahren bietet das CIK kostenlose, fachkundige psychologische, therapeutische und rechtliche Unterstützung sowie Kriseninterventionen an, die den Einwohnern der Stadt ohne Überweisung zur Verfügung stehen. Die Hilfe richtet sich unter anderem an Menschen, die von Gewalt, Sucht, persönlichen Krisen oder plötzlichen Lebensereignissen wie dem Verlust eines geliebten Menschen oder des Arbeitsplatzes betroffen sind.",
       "Im Rahmen der Jubiläumsfeier wurden Partner ausgezeichnet, die die Arbeit des Zentrums unterstützen. Zu ihnen gehörte die Stiftung Stock, die eine Anerkennungsurkunde für ihr soziales Engagement erhielt. Im Namen der Stiftung nahm Paweł Jabłoński die Auszeichnung entgegen; er wurde zudem individuell für seinen persönlichen Beitrag zu den Hilfsaktivitäten geehrt.",
       "An der Veranstaltung nahmen Vertreter der Stadtverwaltung, von Hilfseinrichtungen und Nichtregierungsorganisationen teil, die mit dem CIK zusammenarbeiten — ein Zeichen dafür, wie wichtig die Zusammenarbeit bei der Hilfe für Menschen in Krisen ist."
     ],
-    "fr": [
+    "date": "17. April 2026"
+  },
+  "fr": {
+    "title": "La Fondation Stock distinguée par le Centre d’intervention de crise",
+    "lead": "Lublin a célébré le 20e anniversaire du Centre d’intervention de crise — une structure municipale qui soutient les personnes en situation de vie difficile.",
+    "body": [
       "Depuis des années, le CIK offre un soutien spécialisé gratuit — psychologique, thérapeutique, juridique et d’intervention de crise — accessible aux habitants sans prescription. L’aide s’adresse notamment aux personnes confrontées à la violence, aux addictions, aux crises personnelles ou à des événements soudains, comme la perte d’un proche ou d’un emploi.",
       "Lors du jubilé, les partenaires soutenant l’activité du Centre ont été mis à l’honneur. Parmi eux figurait la Fondation Stock, qui a reçu un diplôme de reconnaissance pour son engagement social. Au nom de la Fondation, le prix a été reçu par Paweł Jabłoński, également distingué à titre individuel pour sa contribution personnelle aux actions d’aide.",
       "L’événement a réuni des représentants des autorités municipales, des institutions d’aide et des organisations non gouvernementales coopérant avec le CIK, soulignant l’importance de la collaboration pour venir en aide aux personnes en crise."
-    ]
+    ],
+    "date": "17 avril 2026"
   }
 }

@@ -1,70 +1,76 @@
 {
-  "id": "kossak",
-  "ts": "2024-04-02",
-  "cat": "art",
-  "img": "/uploads/cover-art.svg",
-  "date": {
-    "en": "April 2024",
-    "pl": "Kwiecień 2024",
-    "cz": "Duben 2024",
-    "it": "Aprile 2024",
-    "sk": "Apríl 2024",
-    "de": "April 2024",
-    "fr": "avril 2024"
-  },
-  "title": {
-    "en": "Meetings with Art — the Kossak family",
-    "pl": "Spotkania ze Sztuką — rodzina Kossaków",
-    "cz": "Setkání s uměním — rodina Kossaků",
-    "it": "Incontri con l’Arte — la famiglia Kossak",
-    "sk": "Stretnutia s umením — rodina Kossakovcov",
-    "de": "Kunstbegegnungen — die Familie Kossak",
-    "fr": "Rencontres avec l’art — la famille Kossak"
-  },
-  "lead": {
-    "en": "The very first pilot meeting of our new initiative introduced over 55 participants to the fascinating world of Poland’s most artistic family.",
-    "pl": "Pierwsze, pilotażowe spotkanie naszej nowej inicjatywy wprowadziło ponad 55 uczestników w fascynujący świat najbardziej artystycznej polskiej rodziny.",
-    "cz": "Úplně první pilotní setkání naší nové iniciativy uvedlo více než 55 účastníků do fascinujícího světa nejumělečtější polské rodiny.",
-    "it": "Il primissimo incontro pilota della nostra nuova iniziativa ha introdotto oltre 55 partecipanti nell’affascinante mondo della famiglia più artistica della Polonia.",
-    "sk": "Úplne prvé pilotné stretnutie našej novej iniciatívy uviedlo viac ako 55 účastníkov do fascinujúceho sveta najumeleckejšej poľskej rodiny.",
-    "de": "Das allererste Pilottreffen unserer neuen Initiative führte über 55 Teilnehmerinnen und Teilnehmer in die faszinierende Welt der künstlerischsten Familie Polens ein.",
-    "fr": "La toute première rencontre pilote de notre nouvelle initiative a fait découvrir à plus de 55 participants le monde fascinant de la famille la plus artistique de Pologne."
-  },
-  "body": {
-    "en": [
-      "We are pleased to introduce a new initiative of the Stock Foundation — Encounters with Art. The project aims to facilitate contact with art for people in need of support, seeking balance in their lives for various personal reasons. In partnership with the Complex of Support Centres, we organised the first pilot meeting with art in Lublin, led by Ms Jolanta Polańska, Senior Curator at the National Museum in Lublin.",
-      "The participants — over 55 people — had the opportunity to get to know the fascinating world of the Kossak family: the talented painters Juliusz, his sons Wojciech and Tadeusz, and his grandsons Jerzy and Karol, as well as the extraordinary women of the family — literary personalities Magdalena Samozwaniec, Maria Pawlikowska-Jasnorzewska, Zofia Kossak-Szczucka and Simona Kossak, professor of forestry sciences and a well-known environmental activist.",
-      "Our initiative was very warmly received, and it was clear that it had a real, positive impact on the lives of older people."
-    ],
-    "pl": [
+  "pl": {
+    "title": "Spotkania ze Sztuką — rodzina Kossaków",
+    "lead": "Pierwsze, pilotażowe spotkanie naszej nowej inicjatywy wprowadziło ponad 55 uczestników w fascynujący świat najbardziej artystycznej polskiej rodziny.",
+    "body": [
       "Z przyjemnością przedstawiamy nową inicjatywę Fundacji Stock — Spotkania ze Sztuką. Projekt ma ułatwiać kontakt ze sztuką osobom potrzebującym wsparcia, szukającym równowagi w życiu z różnych osobistych powodów. W partnerstwie z Zespołem Ośrodków Wsparcia zorganizowaliśmy w Lublinie pierwsze, pilotażowe spotkanie ze sztuką, które poprowadziła pani Jolanta Polańska, starsza kustosz Muzeum Narodowego w Lublinie.",
       "Uczestnicy — ponad 55 osób — mieli okazję poznać fascynujący świat rodziny Kossaków: utalentowanych malarzy Juliusza, jego synów Wojciecha i Tadeusza oraz wnuków Jerzego i Karola, a także niezwykłe kobiety tej rodziny — osobowości literackie Magdalenę Samozwaniec, Marię Pawlikowską-Jasnorzewską, Zofię Kossak-Szczucką oraz Simonę Kossak, profesor nauk leśnych i znaną działaczkę ekologiczną.",
       "Nasza inicjatywa została przyjęta bardzo ciepło i było widać, że ma realny, pozytywny wpływ na życie osób starszych."
     ],
-    "cz": [
+    "date": "Kwiecień 2024",
+    "img": "/uploads/cover-art.svg",
+    "ts": "2024-04-02",
+    "cat": "art",
+    "id": "kossak"
+  },
+  "en": {
+    "title": "Meetings with Art — the Kossak family",
+    "lead": "The very first pilot meeting of our new initiative introduced over 55 participants to the fascinating world of Poland’s most artistic family.",
+    "body": [
+      "We are pleased to introduce a new initiative of the Stock Foundation — Encounters with Art. The project aims to facilitate contact with art for people in need of support, seeking balance in their lives for various personal reasons. In partnership with the Complex of Support Centres, we organised the first pilot meeting with art in Lublin, led by Ms Jolanta Polańska, Senior Curator at the National Museum in Lublin.",
+      "The participants — over 55 people — had the opportunity to get to know the fascinating world of the Kossak family: the talented painters Juliusz, his sons Wojciech and Tadeusz, and his grandsons Jerzy and Karol, as well as the extraordinary women of the family — literary personalities Magdalena Samozwaniec, Maria Pawlikowska-Jasnorzewska, Zofia Kossak-Szczucka and Simona Kossak, professor of forestry sciences and a well-known environmental activist.",
+      "Our initiative was very warmly received, and it was clear that it had a real, positive impact on the lives of older people."
+    ],
+    "date": "April 2024"
+  },
+  "cz": {
+    "title": "Setkání s uměním — rodina Kossaků",
+    "lead": "Úplně první pilotní setkání naší nové iniciativy uvedlo více než 55 účastníků do fascinujícího světa nejumělečtější polské rodiny.",
+    "body": [
       "S potěšením představujeme novou iniciativu Nadace Stock — Setkání s uměním. Projekt má usnadňovat kontakt s uměním lidem, kteří potřebují podporu a z různých osobních důvodů hledají v životě rovnováhu. V partnerství se Sdružením podpůrných center jsme v Lublinu uspořádali první pilotní setkání s uměním, které vedla paní Jolanta Polańska, starší kurátorka Národního muzea v Lublinu.",
       "Účastníci — více než 55 osob — měli příležitost poznat fascinující svět rodiny Kossaků: talentované malíře Juliusze, jeho syny Wojciecha a Tadeusze a vnuky Jerzyho a Karola, a také mimořádné ženy této rodiny — literární osobnosti Magdalenu Samozwaniec, Marii Pawlikowskou-Jasnorzewskou, Zofii Kossak-Szczuckou a Simonu Kossakovou, profesorku lesnických věd a známou ekologickou aktivistku.",
       "Naše iniciativa byla přijata velmi vřele a bylo zřejmé, že má skutečný, pozitivní dopad na životy starších lidí."
     ],
-    "it": [
+    "date": "Duben 2024"
+  },
+  "it": {
+    "title": "Incontri con l’Arte — la famiglia Kossak",
+    "lead": "Il primissimo incontro pilota della nostra nuova iniziativa ha introdotto oltre 55 partecipanti nell’affascinante mondo della famiglia più artistica della Polonia.",
+    "body": [
       "Siamo lieti di presentare una nuova iniziativa della Fondazione Stock — Incontri con l’Arte. Il progetto mira a facilitare il contatto con l’arte alle persone che hanno bisogno di sostegno e che, per varie ragioni personali, cercano equilibrio nella propria vita. In partenariato con il Complesso dei Centri di Sostegno abbiamo organizzato a Lublino il primo incontro pilota con l’arte, guidato dalla signora Jolanta Polańska, curatrice senior del Museo Nazionale di Lublino.",
       "I partecipanti — oltre 55 persone — hanno avuto l’opportunità di conoscere l’affascinante mondo della famiglia Kossak: i talentuosi pittori Juliusz, i suoi figli Wojciech e Tadeusz e i nipoti Jerzy e Karol, oltre alle straordinarie donne della famiglia — le personalità letterarie Magdalena Samozwaniec, Maria Pawlikowska-Jasnorzewska, Zofia Kossak-Szczucka e Simona Kossak, professoressa di scienze forestali e nota attivista ambientale.",
       "La nostra iniziativa è stata accolta con grande calore ed era evidente il suo impatto reale e positivo sulla vita delle persone anziane."
     ],
-    "sk": [
+    "date": "Aprile 2024"
+  },
+  "sk": {
+    "title": "Stretnutia s umením — rodina Kossakovcov",
+    "lead": "Úplne prvé pilotné stretnutie našej novej iniciatívy uviedlo viac ako 55 účastníkov do fascinujúceho sveta najumeleckejšej poľskej rodiny.",
+    "body": [
       "S potešením predstavujeme novú iniciatívu Nadácie Stock — Stretnutia s umením. Projekt má uľahčovať kontakt s umením ľuďom, ktorí potrebujú podporu a z rôznych osobných dôvodov hľadajú v živote rovnováhu. V partnerstve so Združením centier podpory sme v Lubline zorganizovali prvé pilotné stretnutie s umením, ktoré viedla pani Jolanta Polańska, staršia kurátorka Národného múzea v Lubline.",
       "Účastníci — viac ako 55 osôb — mali príležitosť spoznať fascinujúci svet rodiny Kossakovcov: talentovaných maliarov Juliusza, jeho synov Wojciecha a Tadeusza a vnukov Jerzyho a Karola, ako aj mimoriadne ženy tejto rodiny — literárne osobnosti Magdalenu Samozwaniec, Mariu Pawlikowskú-Jasnorzewskú, Zofiu Kossak-Szczuckú a Simonu Kossakovú, profesorku lesníckych vied a známu ekologickú aktivistku.",
       "Naša iniciatíva bola prijatá veľmi vrelo a bolo vidieť, že má skutočný, pozitívny vplyv na životy starších ľudí."
     ],
-    "de": [
+    "date": "Apríl 2024"
+  },
+  "de": {
+    "title": "Kunstbegegnungen — die Familie Kossak",
+    "lead": "Das allererste Pilottreffen unserer neuen Initiative führte über 55 Teilnehmerinnen und Teilnehmer in die faszinierende Welt der künstlerischsten Familie Polens ein.",
+    "body": [
       "Wir freuen uns, eine neue Initiative der Stiftung Stock vorzustellen — die Kunstbegegnungen. Das Projekt soll Menschen, die Unterstützung brauchen und aus verschiedenen persönlichen Gründen nach Gleichgewicht in ihrem Leben suchen, den Zugang zur Kunst erleichtern. In Partnerschaft mit dem Verbund der Unterstützungszentren haben wir in Lublin das erste Pilottreffen mit der Kunst organisiert, geleitet von Frau Jolanta Polańska, leitender Kuratorin des Nationalmuseums in Lublin.",
       "Die Teilnehmerinnen und Teilnehmer — über 55 Personen — hatten Gelegenheit, die faszinierende Welt der Familie Kossak kennenzulernen: die talentierten Maler Juliusz, seine Söhne Wojciech und Tadeusz sowie die Enkel Jerzy und Karol, aber auch die außergewöhnlichen Frauen dieser Familie — die literarischen Persönlichkeiten Magdalena Samozwaniec, Maria Pawlikowska-Jasnorzewska und Zofia Kossak-Szczucka sowie Simona Kossak, Professorin der Forstwissenschaften und bekannte Umweltaktivistin.",
       "Unsere Initiative wurde sehr herzlich aufgenommen, und es war deutlich zu sehen, dass sie einen realen, positiven Einfluss auf das Leben älterer Menschen hat."
     ],
-    "fr": [
+    "date": "April 2024"
+  },
+  "fr": {
+    "title": "Rencontres avec l’art — la famille Kossak",
+    "lead": "La toute première rencontre pilote de notre nouvelle initiative a fait découvrir à plus de 55 participants le monde fascinant de la famille la plus artistique de Pologne.",
+    "body": [
       "Nous avons le plaisir de présenter une nouvelle initiative de la Fondation Stock — les Rencontres avec l’art. Le projet vise à faciliter le contact avec l’art aux personnes ayant besoin de soutien et qui, pour diverses raisons personnelles, cherchent un équilibre dans leur vie. En partenariat avec l’Ensemble des centres de soutien, nous avons organisé à Lublin la première rencontre pilote avec l’art, animée par Mme Jolanta Polańska, conservatrice principale du Musée national de Lublin.",
       "Les participants — plus de 55 personnes — ont eu l’occasion de découvrir le monde fascinant de la famille Kossak : les peintres talentueux Juliusz, ses fils Wojciech et Tadeusz et ses petits-fils Jerzy et Karol, ainsi que les femmes extraordinaires de cette famille — les personnalités littéraires Magdalena Samozwaniec, Maria Pawlikowska-Jasnorzewska et Zofia Kossak-Szczucka, et Simona Kossak, professeure de sciences forestières et militante écologiste reconnue.",
       "Notre initiative a été accueillie très chaleureusement, et il était évident qu’elle avait un impact réel et positif sur la vie des personnes âgées."
-    ]
+    ],
+    "date": "avril 2024"
   }
 }

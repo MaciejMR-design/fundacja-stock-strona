@@ -1,77 +1,83 @@
 {
-  "id": "cleanup",
-  "ts": "2025-09-19",
-  "cat": "volunteer",
-  "img": "/uploads/news-cleanup.jpg",
-  "date": {
-    "en": "19 September 2025",
-    "pl": "19 września 2025",
-    "cz": "19. září 2025",
-    "it": "19 settembre 2025",
-    "sk": "19. septembra 2025",
-    "de": "19. September 2025",
-    "fr": "19 septembre 2025"
-  },
-  "title": {
-    "en": "Stock volunteers collected nearly 3 tons of waste",
-    "pl": "Wolontariusze Stock zebrali blisko 3 tony odpadów",
-    "cz": "Dobrovolníci Stock sesbírali téměř 3 tuny odpadu",
-    "it": "I volontari Stock hanno raccolto quasi 3 tonnellate di rifiuti",
-    "sk": "Dobrovoľníci Stock vyzbierali takmer 3 tony odpadu",
-    "de": "Stock-Freiwillige sammelten fast 3 Tonnen Abfall",
-    "fr": "Les bénévoles de Stock ont ramassé près de 3 tonnes de déchets"
-  },
-  "lead": {
-    "en": "The Stock Foundation organized a major clean-up of the Vistula River together with volunteers from the Warsaw office.",
-    "pl": "Fundacja Stock zorganizowała wielkie sprzątanie Wisły wspólnie z wolontariuszami z warszawskiego biura.",
-    "cz": "Nadace Stock uspořádala velký úklid Visly společně s dobrovolníky z varšavské kanceláře.",
-    "it": "La Fondazione Stock ha organizzato una grande pulizia della Vistola insieme ai volontari dell’ufficio di Varsavia.",
-    "sk": "Nadácia Stock zorganizovala veľké upratovanie Visly spolu s dobrovoľníkmi z varšavskej kancelárie.",
-    "de": "Die Stiftung Stock organisierte gemeinsam mit Freiwilligen aus dem Warschauer Büro eine große Aufräumaktion an der Weichsel.",
-    "fr": "La Fondation Stock a organisé un grand nettoyage de la Vistule avec les bénévoles du bureau de Varsovie."
-  },
-  "body": {
-    "en": [
-      "On 19 September, the Stock Foundation organized a major clean-up of the Vistula River together with volunteers from our Warsaw office. A total of 60 volunteers joined forces to take care of the riverbanks — with great weather and even greater energy, our teams rolled up their sleeves and got to work, supported on-site by the dedicated team from “Czyste Rzeki”.",
-      "In a friendly spirit of competition, participants formed five-person teams to compete for the title of “Cleaning Champions”. The winning group — Kubusie from Łódź — collected an impressive 100 kg of waste. Together, all teams removed nearly 3 tons of trash.",
-      "The cleanup ran from 12:00 to 16:00, with volunteers equipped with gloves, bags, mosquito repellent and water, and four lifeguards ensuring everyone’s safety. After the work was done, we wrapped up the day with pizza and a moment to celebrate our shared success.",
-      "Thank you to every volunteer for your commitment, energy and heart. Together, we make a real difference — and we look forward to doing it again next year."
-    ],
-    "pl": [
+  "pl": {
+    "title": "Wolontariusze Stock zebrali blisko 3 tony odpadów",
+    "lead": "Fundacja Stock zorganizowała wielkie sprzątanie Wisły wspólnie z wolontariuszami z warszawskiego biura.",
+    "body": [
       "19 września Fundacja Stock zorganizowała wielkie sprzątanie Wisły wspólnie z wolontariuszami z naszego warszawskiego biura. Aż 60 wolontariuszy połączyło siły, by zadbać o brzegi rzeki — przy pięknej pogodzie i jeszcze większej energii nasze zespoły zakasały rękawy i wzięły się do pracy, wspierane na miejscu przez ekipę „Czystych Rzek”.",
       "W duchu przyjaznej rywalizacji uczestnicy utworzyli pięcioosobowe drużyny, walcząc o tytuł „Mistrzów Sprzątania”. Zwycięska grupa — Kubusie z Łodzi — zebrała imponujące 100 kg odpadów. Łącznie wszystkie zespoły usunęły blisko 3 tony śmieci.",
       "Sprzątanie trwało od 12:00 do 16:00, a wolontariusze zostali wyposażeni w rękawice, worki, środki na komary i wodę; nad bezpieczeństwem czuwało czterech ratowników. Po skończonej pracy zakończyliśmy dzień pizzą i chwilą świętowania wspólnego sukcesu.",
       "Dziękujemy każdemu wolontariuszowi za zaangażowanie, energię i serce. Razem robimy prawdziwą różnicę — i już nie możemy się doczekać kolejnej edycji za rok."
     ],
-    "cz": [
+    "date": "19 września 2025",
+    "img": "/uploads/news-cleanup.jpg",
+    "ts": "2025-09-19",
+    "cat": "volunteer",
+    "id": "cleanup"
+  },
+  "en": {
+    "title": "Stock volunteers collected nearly 3 tons of waste",
+    "lead": "The Stock Foundation organized a major clean-up of the Vistula River together with volunteers from the Warsaw office.",
+    "body": [
+      "On 19 September, the Stock Foundation organized a major clean-up of the Vistula River together with volunteers from our Warsaw office. A total of 60 volunteers joined forces to take care of the riverbanks — with great weather and even greater energy, our teams rolled up their sleeves and got to work, supported on-site by the dedicated team from “Czyste Rzeki”.",
+      "In a friendly spirit of competition, participants formed five-person teams to compete for the title of “Cleaning Champions”. The winning group — Kubusie from Łódź — collected an impressive 100 kg of waste. Together, all teams removed nearly 3 tons of trash.",
+      "The cleanup ran from 12:00 to 16:00, with volunteers equipped with gloves, bags, mosquito repellent and water, and four lifeguards ensuring everyone’s safety. After the work was done, we wrapped up the day with pizza and a moment to celebrate our shared success.",
+      "Thank you to every volunteer for your commitment, energy and heart. Together, we make a real difference — and we look forward to doing it again next year."
+    ],
+    "date": "19 September 2025"
+  },
+  "cz": {
+    "title": "Dobrovolníci Stock sesbírali téměř 3 tuny odpadu",
+    "lead": "Nadace Stock uspořádala velký úklid Visly společně s dobrovolníky z varšavské kanceláře.",
+    "body": [
       "19. září uspořádala Nadace Stock velký úklid Visly společně s dobrovolníky z naší varšavské kanceláře. Celkem 60 dobrovolníků spojilo síly, aby se postaralo o břehy řeky — za krásného počasí a s ještě větší energií si naše týmy vyhrnuly rukávy a pustily se do práce, na místě podporovány týmem „Czyste Rzeki“.",
       "V přátelském soutěžním duchu vytvořili účastníci pětičlenné týmy a bojovali o titul „Mistrů úklidu“. Vítězná skupina — Kubusie z Lodže — sesbírala úctyhodných 100 kg odpadu. Všechny týmy dohromady odstranily téměř 3 tuny odpadků.",
       "Úklid probíhal od 12:00 do 16:00; dobrovolníci dostali rukavice, pytle, repelent a vodu a na bezpečnost dohlíželi čtyři plavčíci. Po skončení práce jsme den zakončili pizzou a chvílí oslavy společného úspěchu.",
       "Děkujeme každému dobrovolníkovi za nasazení, energii a srdce. Společně děláme skutečný rozdíl — a už se těšíme na příští rok."
     ],
-    "it": [
+    "date": "19. září 2025"
+  },
+  "it": {
+    "title": "I volontari Stock hanno raccolto quasi 3 tonnellate di rifiuti",
+    "lead": "La Fondazione Stock ha organizzato una grande pulizia della Vistola insieme ai volontari dell’ufficio di Varsavia.",
+    "body": [
       "Il 19 settembre la Fondazione Stock ha organizzato una grande pulizia della Vistola insieme ai volontari del nostro ufficio di Varsavia. Ben 60 volontari hanno unito le forze per prendersi cura delle rive del fiume — con un tempo splendido e un’energia ancora più grande, i nostri team si sono rimboccati le maniche, supportati sul posto dal team di “Czyste Rzeki”.",
       "In uno spirito di amichevole competizione, i partecipanti hanno formato squadre di cinque persone per contendersi il titolo di “Campioni della Pulizia”. Il gruppo vincitore — i Kubusie di Łódź — ha raccolto ben 100 kg di rifiuti. Insieme, tutte le squadre hanno rimosso quasi 3 tonnellate di spazzatura.",
       "La pulizia si è svolta dalle 12:00 alle 16:00, con i volontari dotati di guanti, sacchi, repellente per zanzare e acqua, e quattro bagnini a garantire la sicurezza di tutti. A lavoro finito, abbiamo concluso la giornata con una pizza e un momento per celebrare il successo comune.",
       "Grazie a ogni volontario per l’impegno, l’energia e il cuore. Insieme facciamo davvero la differenza — e non vediamo l’ora di rifarlo l’anno prossimo."
     ],
-    "sk": [
+    "date": "19 settembre 2025"
+  },
+  "sk": {
+    "title": "Dobrovoľníci Stock vyzbierali takmer 3 tony odpadu",
+    "lead": "Nadácia Stock zorganizovala veľké upratovanie Visly spolu s dobrovoľníkmi z varšavskej kancelárie.",
+    "body": [
       "19. septembra zorganizovala Nadácia Stock veľké upratovanie Visly spolu s dobrovoľníkmi z našej varšavskej kancelárie. Až 60 dobrovoľníkov spojilo sily, aby sa postaralo o brehy rieky — za krásneho počasia a s ešte väčšou energiou si naše tímy vyhrnuli rukávy a pustili sa do práce, na mieste podporované tímom „Czyste Rzeki“.",
       "V duchu priateľského súperenia vytvorili účastníci päťčlenné družstvá a bojovali o titul „Majstrov upratovania“. Víťazná skupina — Kubusie z Lodže — vyzbierala úctyhodných 100 kg odpadu. Všetky tímy spolu odstránili takmer 3 tony odpadkov.",
       "Upratovanie trvalo od 12:00 do 16:00; dobrovoľníci dostali rukavice, vrecia, repelent a vodu a na bezpečnosť dohliadali štyria plavčíci. Po skončení práce sme deň zavŕšili pizzou a chvíľou oslavy spoločného úspechu.",
       "Ďakujeme každému dobrovoľníkovi za nasadenie, energiu a srdce. Spoločne robíme skutočný rozdiel — a už sa nevieme dočkať ďalšieho ročníka."
     ],
-    "de": [
+    "date": "19. septembra 2025"
+  },
+  "de": {
+    "title": "Stock-Freiwillige sammelten fast 3 Tonnen Abfall",
+    "lead": "Die Stiftung Stock organisierte gemeinsam mit Freiwilligen aus dem Warschauer Büro eine große Aufräumaktion an der Weichsel.",
+    "body": [
       "Am 19. September organisierte die Stiftung Stock gemeinsam mit Freiwilligen aus unserem Warschauer Büro eine große Aufräumaktion an der Weichsel. Ganze 60 Freiwillige bündelten ihre Kräfte, um sich um die Flussufer zu kümmern — bei schönstem Wetter und mit noch größerer Energie krempelten unsere Teams die Ärmel hoch und machten sich an die Arbeit, vor Ort unterstützt vom Team von „Czyste Rzeki“.",
       "Im Geiste eines freundschaftlichen Wettbewerbs bildeten die Teilnehmenden Fünferteams und kämpften um den Titel der „Aufräum-Meister“. Die Siegergruppe — die Kubusie aus Łódź — sammelte beeindruckende 100 kg Abfall. Insgesamt beseitigten alle Teams fast 3 Tonnen Müll.",
       "Die Aufräumaktion dauerte von 12:00 bis 16:00 Uhr; die Freiwilligen wurden mit Handschuhen, Säcken, Mückenschutz und Wasser ausgestattet, und vier Rettungsschwimmer sorgten für die Sicherheit aller. Nach getaner Arbeit ließen wir den Tag mit Pizza und einem Moment des Feierns unseres gemeinsamen Erfolgs ausklingen.",
       "Wir danken jeder Freiwilligen und jedem Freiwilligen für Engagement, Energie und Herz. Gemeinsam bewirken wir einen echten Unterschied — und wir freuen uns schon auf die nächste Ausgabe im kommenden Jahr."
     ],
-    "fr": [
+    "date": "19. September 2025"
+  },
+  "fr": {
+    "title": "Les bénévoles de Stock ont ramassé près de 3 tonnes de déchets",
+    "lead": "La Fondation Stock a organisé un grand nettoyage de la Vistule avec les bénévoles du bureau de Varsovie.",
+    "body": [
       "Le 19 septembre, la Fondation Stock a organisé un grand nettoyage de la Vistule avec les bénévoles de notre bureau de Varsovie. Pas moins de 60 bénévoles ont uni leurs forces pour prendre soin des berges du fleuve — sous un beau soleil et avec une énergie plus grande encore, nos équipes ont retroussé leurs manches et se sont mises au travail, soutenues sur place par l’équipe de « Czyste Rzeki ».",
       "Dans un esprit de compétition amicale, les participants ont formé des équipes de cinq personnes pour se disputer le titre de « Champions du nettoyage ». Le groupe vainqueur — les Kubusie de Łódź — a ramassé pas moins de 100 kg de déchets. Ensemble, toutes les équipes ont retiré près de 3 tonnes de détritus.",
       "Le nettoyage s’est déroulé de 12 h à 16 h ; les bénévoles étaient équipés de gants, de sacs, de répulsif anti-moustiques et d’eau, et quatre sauveteurs veillaient à la sécurité de tous. Le travail terminé, nous avons clôturé la journée autour d’une pizza et d’un moment pour célébrer notre succès commun.",
       "Merci à chaque bénévole pour son engagement, son énergie et son cœur. Ensemble, nous faisons une vraie différence — et nous avons déjà hâte de la prochaine édition, l’année prochaine."
-    ]
+    ],
+    "date": "19 septembre 2025"
   }
 }

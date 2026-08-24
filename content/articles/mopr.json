@@ -1,70 +1,76 @@
 {
-  "id": "mopr",
-  "ts": "2026-05-26",
-  "cat": "training",
-  "img": "/uploads/news-mopr.jpg",
-  "date": {
-    "en": "26 May 2026",
-    "pl": "26 maja 2026",
-    "cz": "26. května 2026",
-    "it": "26 maggio 2026",
-    "sk": "26. mája 2026",
-    "de": "26. Mai 2026",
-    "fr": "26 mai 2026"
-  },
-  "title": {
-    "en": "Supporting those who support others",
-    "pl": "Wspieramy tych, którzy wspierają innych",
-    "cz": "Podporujeme ty, kdo podporují druhé",
-    "it": "Sosteniamo chi sostiene gli altri",
-    "sk": "Podporujeme tých, ktorí podporujú iných",
-    "de": "Wir unterstützen die, die andere unterstützen",
-    "fr": "Nous soutenons ceux qui soutiennent les autres"
-  },
-  "lead": {
-    "en": "Stock Foundation has completed a series of training sessions for 30 employees of the Municipal Family Support Centers (MOPR) in Lublin.",
-    "pl": "Fundacja Stock zakończyła cykl szkoleń dla 30 pracowników Miejskich Ośrodków Pomocy Rodzinie (MOPR) w Lublinie.",
-    "cz": "Nadace Stock dokončila sérii školení pro 30 zaměstnanců městských center podpory rodiny (MOPR) v Lublinu.",
-    "it": "La Fondazione Stock ha completato una serie di sessioni di formazione per 30 dipendenti dei centri municipali di sostegno alla famiglia (MOPR) di Lublino.",
-    "sk": "Nadácia Stock ukončila cyklus školení pre 30 zamestnancov mestských centier pomoci rodine (MOPR) v Lubline.",
-    "de": "Die Stiftung Stock hat eine Schulungsreihe für 30 Mitarbeitende der städtischen Familienhilfezentren (MOPR) in Lublin abgeschlossen.",
-    "fr": "La Fondation Stock a achevé un cycle de formations pour 30 employés des centres municipaux d’aide à la famille (MOPR) de Lublin."
-  },
-  "body": {
-    "en": [
-      "The workshops were led by our therapists, Anna Kalbus and Jerzy Brożyna, and were designed for professionals who work daily with individuals affected by various forms of addiction.",
-      "The program is highly practical. Participants learn how to conduct conversations that encourage positive change, respond effectively in crisis situations, manage emotions, and build relationships based on trust and clearly defined boundaries. The training also incorporates real-life case studies and practical examples.",
-      "An important aspect of the program is moving beyond simple, black-and-white solutions toward a harm-reduction approach and supporting gradual, step-by-step changes in habits and life decisions. The Stock Foundation helps strengthen the skills and expertise of those who dedicate their work to helping others."
-    ],
-    "pl": [
+  "pl": {
+    "title": "Wspieramy tych, którzy wspierają innych",
+    "lead": "Fundacja Stock zakończyła cykl szkoleń dla 30 pracowników Miejskich Ośrodków Pomocy Rodzinie (MOPR) w Lublinie.",
+    "body": [
       "Warsztaty poprowadzili nasi terapeuci, Anna Kalbus i Jerzy Brożyna, a przeznaczone były dla specjalistów pracujących na co dzień z osobami dotkniętymi różnymi formami uzależnień.",
       "Program jest bardzo praktyczny. Uczestnicy uczą się, jak prowadzić rozmowy zachęcające do pozytywnej zmiany, skutecznie reagować w sytuacjach kryzysowych, zarządzać emocjami i budować relacje oparte na zaufaniu i jasno określonych granicach. Szkolenie obejmuje też studia przypadków i praktyczne przykłady.",
       "Ważnym elementem programu jest wyjście poza proste, czarno-białe rozwiązania w stronę podejścia redukcji szkód oraz wspierania stopniowych zmian w nawykach i decyzjach życiowych. Fundacja Stock pomaga wzmacniać kompetencje tych, którzy poświęcają swoją pracę pomaganiu innym."
     ],
-    "cz": [
+    "date": "26 maja 2026",
+    "img": "/uploads/news-mopr.jpg",
+    "ts": "2026-05-26",
+    "cat": "training",
+    "id": "mopr"
+  },
+  "en": {
+    "title": "Supporting those who support others",
+    "lead": "Stock Foundation has completed a series of training sessions for 30 employees of the Municipal Family Support Centers (MOPR) in Lublin.",
+    "body": [
+      "The workshops were led by our therapists, Anna Kalbus and Jerzy Brożyna, and were designed for professionals who work daily with individuals affected by various forms of addiction.",
+      "The program is highly practical. Participants learn how to conduct conversations that encourage positive change, respond effectively in crisis situations, manage emotions, and build relationships based on trust and clearly defined boundaries. The training also incorporates real-life case studies and practical examples.",
+      "An important aspect of the program is moving beyond simple, black-and-white solutions toward a harm-reduction approach and supporting gradual, step-by-step changes in habits and life decisions. The Stock Foundation helps strengthen the skills and expertise of those who dedicate their work to helping others."
+    ],
+    "date": "26 May 2026"
+  },
+  "cz": {
+    "title": "Podporujeme ty, kdo podporují druhé",
+    "lead": "Nadace Stock dokončila sérii školení pro 30 zaměstnanců městských center podpory rodiny (MOPR) v Lublinu.",
+    "body": [
       "Workshopy vedli naši terapeuti Anna Kalbus a Jerzy Brożyna a byly určeny profesionálům, kteří denně pracují s lidmi zasaženými různými formami závislosti.",
       "Program je vysoce praktický. Účastníci se učí, jak vést rozhovory podporující pozitivní změnu, účinně reagovat v krizových situacích, zvládat emoce a budovat vztahy založené na důvěře a jasně vymezených hranicích. Školení zahrnuje i případové studie a praktické příklady.",
       "Důležitým aspektem programu je posun od jednoduchých černobílých řešení k přístupu snižování rizik a podpoře postupných změn v návycích a životních rozhodnutích. Nadace Stock pomáhá posilovat dovednosti těch, kdo svou práci věnují pomoci druhým."
     ],
-    "it": [
+    "date": "26. května 2026"
+  },
+  "it": {
+    "title": "Sosteniamo chi sostiene gli altri",
+    "lead": "La Fondazione Stock ha completato una serie di sessioni di formazione per 30 dipendenti dei centri municipali di sostegno alla famiglia (MOPR) di Lublino.",
+    "body": [
       "I laboratori sono stati condotti dai nostri terapeuti, Anna Kalbus e Jerzy Brożyna, ed erano rivolti a professionisti che lavorano quotidianamente con persone colpite da varie forme di dipendenza.",
       "Il programma è molto pratico. I partecipanti imparano a condurre conversazioni che incoraggiano il cambiamento positivo, a rispondere efficacemente nelle situazioni di crisi, a gestire le emozioni e a costruire relazioni basate sulla fiducia e su confini chiaramente definiti. La formazione include anche casi di studio reali ed esempi pratici.",
       "Un aspetto importante del programma è andare oltre le soluzioni semplici e nette verso un approccio di riduzione del danno e il sostegno a cambiamenti graduali nelle abitudini e nelle decisioni di vita. La Fondazione Stock aiuta a rafforzare le competenze di chi dedica il proprio lavoro ad aiutare gli altri."
     ],
-    "sk": [
+    "date": "26 maggio 2026"
+  },
+  "sk": {
+    "title": "Podporujeme tých, ktorí podporujú iných",
+    "lead": "Nadácia Stock ukončila cyklus školení pre 30 zamestnancov mestských centier pomoci rodine (MOPR) v Lubline.",
+    "body": [
       "Workshopy viedli naši terapeuti Anna Kalbus a Jerzy Brożyna a boli určené odborníkom, ktorí denne pracujú s ľuďmi zasiahnutými rôznymi formami závislostí.",
       "Program je veľmi praktický. Účastníci sa učia, ako viesť rozhovory povzbudzujúce k pozitívnej zmene, účinne reagovať v krízových situáciách, zvládať emócie a budovať vzťahy založené na dôvere a jasne vymedzených hraniciach. Školenie zahŕňa aj prípadové štúdie a praktické príklady.",
       "Dôležitým prvkom programu je posun od jednoduchých čiernobielych riešení k prístupu znižovania škôd a k podpore postupných zmien v návykoch a životných rozhodnutiach. Nadácia Stock pomáha posilňovať kompetencie tých, ktorí svoju prácu venujú pomoci iným."
     ],
-    "de": [
+    "date": "26. mája 2026"
+  },
+  "de": {
+    "title": "Wir unterstützen die, die andere unterstützen",
+    "lead": "Die Stiftung Stock hat eine Schulungsreihe für 30 Mitarbeitende der städtischen Familienhilfezentren (MOPR) in Lublin abgeschlossen.",
+    "body": [
       "Die Workshops leiteten unsere Therapeuten Anna Kalbus und Jerzy Brożyna; sie richteten sich an Fachkräfte, die täglich mit Menschen arbeiten, die von verschiedenen Formen der Abhängigkeit betroffen sind.",
       "Das Programm ist sehr praxisorientiert. Die Teilnehmenden lernen, Gespräche zu führen, die zu positiver Veränderung ermutigen, in Krisensituationen wirksam zu reagieren, mit Emotionen umzugehen und Beziehungen aufzubauen, die auf Vertrauen und klar definierten Grenzen beruhen. Die Schulung umfasst auch Fallstudien und praktische Beispiele.",
       "Ein wichtiges Element des Programms ist der Schritt über einfache Schwarz-Weiß-Lösungen hinaus, hin zu einem Ansatz der Schadensminderung und zur Unterstützung schrittweiser Veränderungen von Gewohnheiten und Lebensentscheidungen. Die Stiftung Stock hilft, die Kompetenzen derjenigen zu stärken, die ihre Arbeit der Hilfe für andere widmen."
     ],
-    "fr": [
+    "date": "26. Mai 2026"
+  },
+  "fr": {
+    "title": "Nous soutenons ceux qui soutiennent les autres",
+    "lead": "La Fondation Stock a achevé un cycle de formations pour 30 employés des centres municipaux d’aide à la famille (MOPR) de Lublin.",
+    "body": [
       "Les ateliers ont été animés par nos thérapeutes, Anna Kalbus et Jerzy Brożyna, et s’adressaient aux spécialistes travaillant au quotidien avec des personnes touchées par diverses formes d’addiction.",
       "Le programme est très pratique. Les participants apprennent à mener des conversations qui encouragent un changement positif, à réagir efficacement dans les situations de crise, à gérer les émotions et à construire des relations fondées sur la confiance et des limites clairement définies. La formation comprend également des études de cas et des exemples pratiques.",
       "Un élément important du programme consiste à dépasser les solutions simples et binaires au profit d’une approche de réduction des risques et du soutien à des changements progressifs dans les habitudes et les décisions de vie. La Fondation Stock aide à renforcer les compétences de ceux qui consacrent leur travail à aider les autres."
-    ]
+    ],
+    "date": "26 mai 2026"
   }
 }

@@ -1,10 +1,12 @@
 /* Automatyczne tłumaczenie brakujących wersji językowych wpisów (DeepL API).
-   Zasada: polski jest źródłem prawdy. Dla każdego wpisu w content/articles/
-   uzupełnia PUSTE pola en/cz/it/sk/de/fr tłumaczeniem z pl. Pola już wypełnione
-   (ręcznie lub wcześniej przetłumaczone) nie są nadpisywane.
-   Wymaga zmiennej środowiskowej DEEPL_API_KEY (darmowy plan: 500k znaków/mies.).
-   Uruchamiane przez GitHub Action (.github/workflows/translate.yml) lub ręcznie:
-     DEEPL_API_KEY=... node translate-content.mjs */
+   Zasada: polski jest źródłem prawdy. Wpisy leżą w formacie wielojęzycznym
+   panelu (Sveltia, single_file): { pl: {title, lead, body…}, en: {…}, … }.
+   Dla każdego wpisu uzupełniane są PUSTE pola title/lead/body w sekcjach
+   en/cz/it/sk/de/fr tłumaczeniem z pl. Pola już wypełnione (ręcznie albo
+   wcześniej przetłumaczone) nie są nadpisywane.
+   Wymaga zmiennej środowiskowej DEEPL_API_KEY (plan Developer: 1 mln znaków
+   jednorazowo). Uruchamiane przez GitHub Action (.github/workflows/translate.yml)
+   albo ręcznie: DEEPL_API_KEY=... node translate-content.mjs */
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
 import { join } from 'path';
 
@@ -12,6 +14,8 @@ const KEY = process.env.DEEPL_API_KEY;
 if (!KEY) { console.log('Brak DEEPL_API_KEY — pomijam tłumaczenie.'); process.exit(0); }
 const API = KEY.endsWith(':fx') ? 'https://api-free.deepl.com/v2/translate' : 'https://api.deepl.com/v2/translate';
 const TARGETS = { en: 'EN-GB', cz: 'CS', it: 'IT', sk: 'SK', de: 'DE', fr: 'FR' };
+/* kolejność sekcji językowych w zapisywanym pliku — pl (źródło) zawsze pierwszy */
+const LANG_ORDER = ['pl', ...Object.keys(TARGETS)];
 /* nazwy własne, których DeepL ma nie ruszać */
 const GLOSSARY = ['Fundacja Stock', 'Stock Foundation', 'Spirit of Ukraine', 'Flavours of Change', 'Homo Faber', 'Stock Polska', 'Stock Spirits Group'];
 
@@ -32,14 +36,17 @@ let changed = 0;
 for (const f of readdirSync(dir).filter(x => x.endsWith('.json'))) {
   const path = join(dir, f);
   const a = JSON.parse(readFileSync(path, 'utf8').replace(/^﻿/, ''));
+  const src = a.pl;
+  if (!src || typeof src !== 'object') { if (a.title) console.log('stary format pliku — pomijam:', f); continue; }
   let dirty = false;
   for (const [lang, target] of Object.entries(TARGETS)) {
+    const sec = a[lang] || {};
     const jobs = [];
     for (const key of ['title', 'lead']) {
-      if (a[key]?.pl && !a[key][lang]) jobs.push({ set: v => { a[key][lang] = v; }, text: a[key].pl });
+      if (src[key] && !sec[key]) jobs.push({ set: v => { sec[key] = v; }, text: src[key] });
     }
-    if (Array.isArray(a.body?.pl) && a.body.pl.length && (!Array.isArray(a.body[lang]) || !a.body[lang].length)) {
-      jobs.push({ set: v => { a.body[lang] = v; }, text: a.body.pl, isList: true });
+    if (Array.isArray(src.body) && src.body.length && (!Array.isArray(sec.body) || !sec.body.length)) {
+      jobs.push({ set: v => { sec.body = v; }, text: src.body, isList: true });
     }
     if (!jobs.length) continue;
     for (const job of jobs) {
@@ -47,8 +54,15 @@ for (const f of readdirSync(dir).filter(x => x.endsWith('.json'))) {
       const out = await translate(texts, target);
       job.set(job.isList ? out : out[0]);
     }
+    a[lang] = sec;
     dirty = true;
   }
-  if (dirty) { writeFileSync(path, JSON.stringify(a, null, 2) + '\n', 'utf8'); changed++; console.log('przetłumaczono braki:', f); }
+  if (dirty) {
+    /* zapis z sekcjami w stałej kolejności: pl, en, cz, it, sk, de, fr */
+    const ordered = {};
+    for (const l of [...LANG_ORDER, ...Object.keys(a).filter(k => !LANG_ORDER.includes(k))]) if (a[l] !== undefined) ordered[l] = a[l];
+    writeFileSync(path, JSON.stringify(ordered, null, 2) + '\n', 'utf8');
+    changed++; console.log('przetłumaczono braki:', f);
+  }
 }
 console.log(changed ? `Zaktualizowano plików: ${changed}` : 'Wszystkie wpisy mają komplet tłumaczeń.');

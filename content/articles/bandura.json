@@ -1,70 +1,76 @@
 {
-  "id": "bandura",
-  "ts": "2025-12-18",
-  "cat": "scholar",
-  "img": "/uploads/news-bandura.jpg",
-  "date": {
-    "en": "18 December 2025",
-    "pl": "18 grudnia 2025",
-    "cz": "18. prosince 2025",
-    "it": "18 dicembre 2025",
-    "sk": "18. decembra 2025",
-    "de": "18. Dezember 2025",
-    "fr": "18 décembre 2025"
-  },
-  "title": {
-    "en": "Our young bandura players in concert at Homo Faber",
-    "pl": "Nasi młodzi bandurzyści w koncercie u Homo Faber",
-    "cz": "Naši mladí banduristé na koncertě u Homo Faber",
-    "it": "I nostri giovani suonatori di bandura in concerto da Homo Faber",
-    "sk": "Naši mladí banduristi na koncerte u Homo Faber",
-    "de": "Unsere jungen Bandura-Spieler beim Konzert bei Homo Faber",
-    "fr": "Nos jeunes joueurs de bandoura en concert chez Homo Faber"
-  },
-  "lead": {
-    "en": "A bandura ensemble from our music scholarship program gave a moving pre-Christmas concert at the Homo Faber premises.",
-    "pl": "Zespół bandurzystów z naszego programu stypendialnego dał wzruszający przedświąteczny koncert w siedzibie Homo Faber.",
-    "cz": "Bandurový soubor z našeho stipendijního programu uspořádal dojemný předvánoční koncert v sídle Homo Faber.",
-    "it": "Un ensemble di bandura del nostro programma di borse di studio ha tenuto un commovente concerto prenatalizio nella sede di Homo Faber.",
-    "sk": "Súbor banduristov z nášho štipendijného programu odohral dojímavý predvianočný koncert v sídle Homo Faber.",
-    "de": "Ein Bandura-Ensemble aus unserem Stipendienprogramm gab ein bewegendes vorweihnachtliches Konzert am Sitz von Homo Faber.",
-    "fr": "Un ensemble de joueurs de bandoura de notre programme de bourses a donné un émouvant concert d’avant Noël au siège de Homo Faber."
-  },
-  "body": {
-    "en": [
-      "The Stock Foundation, together with the Homo Faber Association, runs music scholarships for talented young people from Ukraine who were forced to interrupt their education because of the war.",
-      "On December 18th, a bandura ensemble gave a wonderful pre-Christmas concert that moved and inspired the audience.",
-      "This initiative is important because it gives young people real support and a chance to continue developing their skills despite the difficult situation."
-    ],
-    "pl": [
+  "pl": {
+    "title": "Nasi młodzi bandurzyści w koncercie u Homo Faber",
+    "lead": "Zespół bandurzystów z naszego programu stypendialnego dał wzruszający przedświąteczny koncert w siedzibie Homo Faber.",
+    "body": [
       "Fundacja Stock wraz ze stowarzyszeniem Homo Faber prowadzi stypendia muzyczne dla utalentowanej młodzieży z Ukrainy, która z powodu wojny musiała przerwać edukację.",
       "18 grudnia zespół bandurzystów dał wspaniały przedświąteczny koncert, który wzruszył i zainspirował publiczność.",
       "Ta inicjatywa jest ważna, bo daje młodym ludziom realne wsparcie i szansę dalszego rozwijania umiejętności mimo trudnej sytuacji."
     ],
-    "cz": [
+    "date": "18 grudnia 2025",
+    "img": "/uploads/news-bandura.jpg",
+    "ts": "2025-12-18",
+    "cat": "scholar",
+    "id": "bandura"
+  },
+  "en": {
+    "title": "Our young bandura players in concert at Homo Faber",
+    "lead": "A bandura ensemble from our music scholarship program gave a moving pre-Christmas concert at the Homo Faber premises.",
+    "body": [
+      "The Stock Foundation, together with the Homo Faber Association, runs music scholarships for talented young people from Ukraine who were forced to interrupt their education because of the war.",
+      "On December 18th, a bandura ensemble gave a wonderful pre-Christmas concert that moved and inspired the audience.",
+      "This initiative is important because it gives young people real support and a chance to continue developing their skills despite the difficult situation."
+    ],
+    "date": "18 December 2025"
+  },
+  "cz": {
+    "title": "Naši mladí banduristé na koncertě u Homo Faber",
+    "lead": "Bandurový soubor z našeho stipendijního programu uspořádal dojemný předvánoční koncert v sídle Homo Faber.",
+    "body": [
       "Nadace Stock spolu se sdružením Homo Faber vede hudební stipendia pro talentované mladé lidi z Ukrajiny, kteří museli kvůli válce přerušit vzdělávání.",
       "18. prosince uspořádal bandurový soubor nádherný předvánoční koncert, který publikum dojal a inspiroval.",
       "Tato iniciativa je důležitá, protože dává mladým lidem skutečnou podporu a šanci dále rozvíjet své dovednosti navzdory obtížné situaci."
     ],
-    "it": [
+    "date": "18. prosince 2025"
+  },
+  "it": {
+    "title": "I nostri giovani suonatori di bandura in concerto da Homo Faber",
+    "lead": "Un ensemble di bandura del nostro programma di borse di studio ha tenuto un commovente concerto prenatalizio nella sede di Homo Faber.",
+    "body": [
       "La Fondazione Stock, insieme all’associazione Homo Faber, gestisce borse di studio musicali per giovani talentuosi dall’Ucraina costretti a interrompere gli studi a causa della guerra.",
       "Il 18 dicembre un ensemble di bandura ha tenuto un meraviglioso concerto prenatalizio che ha commosso e ispirato il pubblico.",
       "Questa iniziativa è importante perché dà ai giovani un sostegno reale e la possibilità di continuare a sviluppare le proprie capacità nonostante la situazione difficile."
     ],
-    "sk": [
+    "date": "18 dicembre 2025"
+  },
+  "sk": {
+    "title": "Naši mladí banduristi na koncerte u Homo Faber",
+    "lead": "Súbor banduristov z nášho štipendijného programu odohral dojímavý predvianočný koncert v sídle Homo Faber.",
+    "body": [
       "Nadácia Stock spolu so združením Homo Faber vedie hudobné štipendiá pre talentovanú mládež z Ukrajiny, ktorá musela pre vojnu prerušiť vzdelávanie.",
       "18. decembra odohral súbor banduristov nádherný predvianočný koncert, ktorý publikum dojal a inšpiroval.",
       "Táto iniciatíva je dôležitá, pretože dáva mladým ľuďom skutočnú podporu a šancu ďalej rozvíjať svoje schopnosti napriek ťažkej situácii."
     ],
-    "de": [
+    "date": "18. decembra 2025"
+  },
+  "de": {
+    "title": "Unsere jungen Bandura-Spieler beim Konzert bei Homo Faber",
+    "lead": "Ein Bandura-Ensemble aus unserem Stipendienprogramm gab ein bewegendes vorweihnachtliches Konzert am Sitz von Homo Faber.",
+    "body": [
       "Die Stiftung Stock vergibt gemeinsam mit dem Verein Homo Faber Musikstipendien an talentierte Jugendliche aus der Ukraine, die ihre Ausbildung wegen des Krieges unterbrechen mussten.",
       "Am 18. Dezember gab ein Bandura-Ensemble ein wunderbares vorweihnachtliches Konzert, das das Publikum bewegte und inspirierte.",
       "Diese Initiative ist wichtig, weil sie jungen Menschen echte Unterstützung gibt und ihnen die Chance bietet, ihre Fähigkeiten trotz der schwierigen Lage weiterzuentwickeln."
     ],
-    "fr": [
+    "date": "18. Dezember 2025"
+  },
+  "fr": {
+    "title": "Nos jeunes joueurs de bandoura en concert chez Homo Faber",
+    "lead": "Un ensemble de joueurs de bandoura de notre programme de bourses a donné un émouvant concert d’avant Noël au siège de Homo Faber.",
+    "body": [
       "La Fondation Stock, avec l’association Homo Faber, gère des bourses musicales pour des jeunes talentueux d’Ukraine contraints d’interrompre leurs études à cause de la guerre.",
       "Le 18 décembre, un ensemble de joueurs de bandoura a donné un magnifique concert d’avant Noël qui a ému et inspiré le public.",
       "Cette initiative est importante, car elle offre aux jeunes un soutien réel et la possibilité de continuer à développer leurs talents malgré une situation difficile."
-    ]
+    ],
+    "date": "18 décembre 2025"
   }
 }

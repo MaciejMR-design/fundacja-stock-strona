@@ -24,6 +24,17 @@ backend:
 site_url: https://fundacjastock.pl
 logo_url: /uploads/logo-footer.svg
 
+# Tryb wielojęzyczny (używa go tylko kolekcja Aktualności — ma „i18n: true").
+# Redaktor widzi jeden formularz po polsku; pozostałe języki są pod
+# przełącznikiem języka w edytorze i dorabiają się automatem tłumaczeń
+# (.github/workflows/translate.yml, DeepL) kilka minut po zapisie.
+# initial_locales: przy nowym wpisie włączony jest tylko polski.
+i18n:
+  structure: single_file
+  locales: [pl, en, cz, it, sk, de, fr]
+  default_locale: pl
+  initial_locales: [pl]
+
 media_folder: design-v2/uploads
 public_folder: /uploads
 
@@ -66,18 +77,22 @@ collections:
     label: Aktualności
     label_singular: Aktualność
     icon: newspaper
-    description: 'Wpisy z sekcji Aktualności. Wypełnij tylko po polsku — tłumaczenia na pozostałe języki dorabiają się automatycznie kilka minut po zapisaniu. Wpisane ręcznie tłumaczenie ma pierwszeństwo i nie jest nadpisywane.'
+    description: 'Wpisy z sekcji Aktualności. Piszesz tylko po polsku — tłumaczenia na pozostałe języki dorabiają się automatycznie kilka minut po zapisaniu (podejrzysz je przełącznikiem języka w edytorze). Wpisane ręcznie tłumaczenie ma pierwszeństwo i nie jest nadpisywane.'
     folder: content/articles
     format: json
     extension: json
     create: true
     delete: true
+    # Tryb wielojęzyczny: jeden formularz + przełącznik języka zamiast
+    # siedmiu pól pod sobą. Plik wpisu ma sekcje per język ({ pl: {…}, … });
+    # build tłumaczy to na swój format w fromI18nFile (build-langs.mjs).
+    i18n: true
     # Adres artykułu powstaje z polskiego tytułu — redaktor nie wpisuje go
     # ręcznie. Build czyta go z nazwy pliku (build-langs.mjs, readJsonDir),
     # więc starsze wpisy z polem „id" w treści zachowują swoje adresy.
-    identifier_field: title.pl
-    slug: '{{title.pl}}'
-    summary: '{{fields.title.pl}} ({{fields.ts}})'
+    identifier_field: title
+    slug: '{{title}}'
+    summary: '{{fields.title}} ({{fields.ts}})'
     thumbnail: img
     preview_path: 'article-{{slug}}'
     sortable_fields:
@@ -96,46 +111,16 @@ collections:
     fields:
       # Kolejność pól = kolejność myślenia o wpisie: najpierw treść, potem
       # zdjęcia, na końcu ustawienia techniczne (data, kategoria, adres).
-      # We wpisach obowiązkowy jest tylko polski: brakujące języki uzupełnia
-      # automat tłumaczeń (.github/workflows/translate.yml, DeepL) kilka minut
-      # po zapisie. Pole wypełnione ręcznie nie jest nigdy nadpisywane.
-      # UWAGA: w „Rada i Zarząd" angielski pozostaje obowiązkowy — automat
-      # tłumaczy wyłącznie wpisy z Aktualności.
-      - name: title
-        label: Tytuł
-        widget: object
-        fields:
-          - { name: pl, label: Polski, widget: string }
-          - { name: en, label: 'Angielski (uzupełni się samo — można wpisać własne)', widget: string, required: false }
-          - { name: cz, label: 'Czeski (uzupełni się samo)', widget: string, required: false }
-          - { name: it, label: 'Włoski (uzupełni się samo)', widget: string, required: false }
-          - { name: sk, label: 'Słowacki (uzupełni się samo)', widget: string, required: false }
-          - { name: de, label: 'Niemiecki (uzupełni się samo)', widget: string, required: false }
-          - { name: fr, label: 'Francuski (uzupełni się samo)', widget: string, required: false }
-      - name: lead
-        label: 'Zajawka (1–2 zdania)'
-        hint: 'Widoczna na kafelku wpisu na liście Aktualności i w wynikach wyszukiwania Google. W samym artykule się nie pokazuje — tam od razu zaczyna się Treść.'
-        widget: object
-        fields:
-          - { name: pl, label: Polski, widget: text }
-          - { name: en, label: 'Angielski (uzupełni się samo — można wpisać własne)', widget: text, required: false }
-          - { name: cz, label: 'Czeski (uzupełni się samo)', widget: text, required: false }
-          - { name: it, label: 'Włoski (uzupełni się samo)', widget: text, required: false }
-          - { name: sk, label: 'Słowacki (uzupełni się samo)', widget: text, required: false }
-          - { name: de, label: 'Niemiecki (uzupełni się samo)', widget: text, required: false }
-          - { name: fr, label: 'Francuski (uzupełni się samo)', widget: text, required: false }
-      - name: body
-        label: 'Treść (każdy akapit osobno)'
-        widget: object
-        fields:
-          - { name: pl, label: 'Polski — akapity', widget: list, field: { name: p, label: Akapit, widget: text } }
-          - { name: en, label: 'Angielski (uzupełni się samo — można wpisać własne)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
-          - { name: cz, label: 'Czeski (uzupełni się samo)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
-          - { name: it, label: 'Włoski (uzupełni się samo)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
-          - { name: sk, label: 'Słowacki (uzupełni się samo)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
-          - { name: de, label: 'Niemiecki (uzupełni się samo)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
-          - { name: fr, label: 'Francuski (uzupełni się samo)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
-      - { name: img, label: 'Zdjęcie główne (okładka)', widget: image }
+      # Formularz jest jednojęzyczny — języki przełącza się w prawym górnym
+      # rogu edytora. Nowy wpis ma włączony tylko polski (initial_locales);
+      # resztę dorabia automat tłumaczeń, a wpisane ręcznie tłumaczenie ma
+      # pierwszeństwo. UWAGA: „Rada i Zarząd" nie używa trybu wielojęzycznego
+      # (automat tłumaczy wyłącznie Aktualności) — tam pola językowe są jak
+      # dotąd obok siebie, z obowiązkowym angielskim.
+      - { name: title, label: Tytuł, widget: string, i18n: true }
+      - { name: lead, label: 'Zajawka (1–2 zdania)', hint: 'Widoczna na kafelku wpisu na liście Aktualności i w wynikach wyszukiwania Google. W samym artykule się nie pokazuje — tam od razu zaczyna się Treść.', widget: text, i18n: true }
+      - { name: body, label: 'Treść (każdy akapit osobno)', hint: 'Jeden akapit = jedno pole; przycisk „+” dodaje kolejny. Dzięki temu strona zna odstępy między akapitami, a tłumaczenia idą akapit po akapicie.', widget: list, i18n: true, field: { name: p, label: Akapit, widget: text } }
+      - { name: img, label: 'Zdjęcie główne (okładka)', widget: image, i18n: duplicate }
       - name: images
         label: 'Galeria (opcjonalnie — zastępuje okładkę w artykule)'
         hint: 'Można zaznaczyć kilka zdjęć naraz. Puste = w artykule pokaże się samo zdjęcie główne.'
@@ -145,10 +130,12 @@ collections:
         widget: image
         multiple: true
         required: false
-      - { name: ts, label: 'Data wydarzenia', hint: 'Ustawia kolejność wpisów i datę widoczną na stronie — we wszystkich językach automatycznie.', widget: datetime, format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false }
+        i18n: duplicate
+      - { name: ts, label: 'Data wydarzenia', hint: 'Ustawia kolejność wpisów i datę widoczną na stronie — we wszystkich językach automatycznie.', widget: datetime, format: 'YYYY-MM-DD', date_format: 'YYYY-MM-DD', time_format: false, i18n: duplicate }
       - name: dateSpan
         label: 'Dokładność daty na stronie'
         widget: select
+        i18n: duplicate
         default: day
         options:
           - { label: 'Pełna data (5 czerwca 2026)', value: day }
@@ -158,6 +145,7 @@ collections:
         hint: 'Etykieta widoczna na kafelku wpisu i w filtrach na Aktualnościach. Można zostawić puste — wpisy w rodzaju sprawozdania rocznego czy statusu OPP pokazują się wtedy bez etykiety.'
         widget: select
         required: false
+        i18n: duplicate
         options:
           - { label: 'Spotkania ze sztuką', value: art }
           - { label: 'Szkolenia', value: training }
@@ -165,20 +153,7 @@ collections:
           - { label: 'Granty', value: grant }
           - { label: 'Wolontariat', value: volunteer }
           - { label: 'Terapie', value: therapy }
-      - name: date
-        label: 'Data słownie — nadpisanie (zwykle niepotrzebne)'
-        hint: 'Zostaw puste: data powstaje sama z „Daty wydarzenia”. Wpisz tylko wtedy, gdy ma brzmieć inaczej niż standardowo.'
-        widget: object
-        collapsed: true
-        required: false
-        fields:
-          - { name: pl, label: 'Polski (np. 5 czerwca 2026)', widget: string, required: false }
-          - { name: en, label: 'Angielski (np. 5 June 2026)', widget: string, required: false }
-          - { name: cz, label: Czeski, widget: string, required: false }
-          - { name: it, label: Włoski, widget: string, required: false }
-          - { name: sk, label: Słowacki, widget: string, required: false }
-          - { name: de, label: Niemiecki, widget: string, required: false }
-          - { name: fr, label: Francuski, widget: string, required: false }
+      - { name: date, label: 'Data słownie — nadpisanie (zwykle niepotrzebne)', hint: 'Zostaw puste: data powstaje sama z „Daty wydarzenia”. Wpisz (np. „Czerwiec 2024”) tylko wtedy, gdy ma brzmieć inaczej niż standardowo.', widget: string, required: false, i18n: true }
 
   - name: osoby
     label: 'Rada i Zarząd'

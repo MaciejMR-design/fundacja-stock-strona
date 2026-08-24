@@ -1,70 +1,76 @@
 {
-  "id": "polishcourses",
-  "ts": "2024-02-02",
-  "cat": "training",
-  "img": "/uploads/cover-community.svg",
-  "date": {
-    "en": "February 2024",
-    "pl": "Luty 2024",
-    "cz": "Únor 2024",
-    "it": "Febbraio 2024",
-    "sk": "Február 2024",
-    "de": "Februar 2024",
-    "fr": "février 2024"
-  },
-  "title": {
-    "en": "Polish language courses — summary",
-    "pl": "Kursy języka polskiego — podsumowanie",
-    "cz": "Kurzy polštiny — shrnutí",
-    "it": "Corsi di lingua polacca — bilancio",
-    "sk": "Kurzy poľštiny — zhrnutie",
-    "de": "Polnischkurse — Bilanz",
-    "fr": "Cours de langue polonaise — bilan"
-  },
-  "lead": {
-    "en": "Over 100 participants and 632 lessons — language skills that turned into jobs, diplomas and new beginnings.",
-    "pl": "Ponad 100 uczestników i 632 lekcje — kompetencje językowe, które zamieniły się w pracę, dyplomy i nowe początki.",
-    "cz": "Přes 100 účastníků a 632 lekcí — jazykové dovednosti, které se proměnily v práci, diplomy a nové začátky.",
-    "it": "Oltre 100 partecipanti e 632 lezioni — competenze linguistiche trasformate in lavoro, diplomi e nuovi inizi.",
-    "sk": "Vyše 100 účastníkov a 632 lekcií — jazykové zručnosti, ktoré sa premenili na prácu, diplomy a nové začiatky.",
-    "de": "Über 100 Teilnehmende und 632 Unterrichtsstunden — Sprachkenntnisse, die zu Arbeit, Diplomen und Neuanfängen wurden.",
-    "fr": "Plus de 100 participants et 632 leçons — des compétences linguistiques transformées en emplois, en diplômes et en nouveaux départs."
-  },
-  "body": {
-    "en": [
-      "The start of the new year is a great time to sum up one of the Stock Foundation’s earliest initiatives — the Spirit of Ukraine refugee programme and its Polish language courses. Funded by us, the programme was implemented from July 2022 to December 2023 in cooperation with IKO, the Institute for the Education of Foreigners.",
-      "More than 100 people took part — 60% at beginner level and 40% at intermediate level — completing 632 lessons in 7 groups. Participants acquired language competences allowing them to communicate in Polish, which facilitated their integration and enabled them to take up employment.",
-      "According to the participants, the assistance had a real impact on their lives: Ms Viktoria has started working at a school, Ms Tetiana from Hrubieszów passed the examination at the Medical Chamber and works as a doctor at a hospital, Ms Anna works as a dentist, Ms Maja has moved to Warsaw, Ms Yulia works at a company in Lublin and Ms Tetiana works as an office technician at the municipality office. We thank everyone for their involvement and congratulate them on their successes!"
-    ],
-    "pl": [
+  "pl": {
+    "title": "Kursy języka polskiego — podsumowanie",
+    "lead": "Ponad 100 uczestników i 632 lekcje — kompetencje językowe, które zamieniły się w pracę, dyplomy i nowe początki.",
+    "body": [
       "Początek nowego roku to świetny moment na podsumowanie jednej z najwcześniejszych inicjatyw Fundacji Stock — programu dla uchodźców Spirit of Ukraine i kursów języka polskiego. Finansowany przez nas program był realizowany od lipca 2022 do grudnia 2023 roku we współpracy z IKO — Instytutem Kształcenia Obcokrajowców.",
       "Wzięło w nim udział ponad 100 osób — 60% na poziomie początkującym i 40% średnio zaawansowanym — które ukończyły 632 lekcje w 7 grupach. Uczestnicy zdobyli kompetencje językowe pozwalające porozumiewać się po polsku, co ułatwiło im integrację i podjęcie pracy.",
       "Jak mówią sami uczestnicy, pomoc realnie wpłynęła na ich życie: pani Viktoria zaczęła pracować w szkole, pani Tetiana z Hrubieszowa zdała egzamin w Izbie Lekarskiej i pracuje jako lekarka w szpitalu, pani Anna pracuje jako dentystka, pani Maja przeprowadziła się do Warszawy, pani Yulia pracuje w lubelskiej firmie, a pani Tetiana jako technik biurowy w urzędzie gminy. Dziękujemy wszystkim za zaangażowanie i gratulujemy sukcesów!"
     ],
-    "cz": [
+    "date": "Luty 2024",
+    "img": "/uploads/cover-community.svg",
+    "ts": "2024-02-02",
+    "cat": "training",
+    "id": "polishcourses"
+  },
+  "en": {
+    "title": "Polish language courses — summary",
+    "lead": "Over 100 participants and 632 lessons — language skills that turned into jobs, diplomas and new beginnings.",
+    "body": [
+      "The start of the new year is a great time to sum up one of the Stock Foundation’s earliest initiatives — the Spirit of Ukraine refugee programme and its Polish language courses. Funded by us, the programme was implemented from July 2022 to December 2023 in cooperation with IKO, the Institute for the Education of Foreigners.",
+      "More than 100 people took part — 60% at beginner level and 40% at intermediate level — completing 632 lessons in 7 groups. Participants acquired language competences allowing them to communicate in Polish, which facilitated their integration and enabled them to take up employment.",
+      "According to the participants, the assistance had a real impact on their lives: Ms Viktoria has started working at a school, Ms Tetiana from Hrubieszów passed the examination at the Medical Chamber and works as a doctor at a hospital, Ms Anna works as a dentist, Ms Maja has moved to Warsaw, Ms Yulia works at a company in Lublin and Ms Tetiana works as an office technician at the municipality office. We thank everyone for their involvement and congratulate them on their successes!"
+    ],
+    "date": "February 2024"
+  },
+  "cz": {
+    "title": "Kurzy polštiny — shrnutí",
+    "lead": "Přes 100 účastníků a 632 lekcí — jazykové dovednosti, které se proměnily v práci, diplomy a nové začátky.",
+    "body": [
       "Začátek nového roku je skvělý čas ke shrnutí jedné z nejstarších iniciativ Nadace Stock — programu pro uprchlíky Spirit of Ukraine a kurzů polštiny. Námi financovaný program probíhal od července 2022 do prosince 2023 ve spolupráci s IKO — Institutem vzdělávání cizinců.",
       "Zúčastnilo se ho více než 100 osob — 60 % na začátečnické úrovni a 40 % na středně pokročilé — které absolvovaly 632 lekcí v 7 skupinách. Účastníci získali jazykové kompetence umožňující komunikovat v polštině, což jim usnadnilo integraci a nástup do zaměstnání.",
       "Podle samotných účastníků měla pomoc skutečný dopad na jejich životy: paní Viktoria začala pracovat ve škole, paní Tetiana z Hrubieszówa složila zkoušku u lékařské komory a pracuje jako lékařka v nemocnici, paní Anna pracuje jako zubařka, paní Maja se přestěhovala do Varšavy, paní Yulia pracuje ve firmě v Lublinu a paní Tetiana jako administrativní technička na obecním úřadě. Děkujeme všem za nasazení a gratulujeme k úspěchům!"
     ],
-    "it": [
+    "date": "Únor 2024"
+  },
+  "it": {
+    "title": "Corsi di lingua polacca — bilancio",
+    "lead": "Oltre 100 partecipanti e 632 lezioni — competenze linguistiche trasformate in lavoro, diplomi e nuovi inizi.",
+    "body": [
       "L’inizio del nuovo anno è un ottimo momento per fare il bilancio di una delle prime iniziative della Fondazione Stock — il programma per rifugiati Spirit of Ukraine e i corsi di lingua polacca. Finanziato da noi, il programma è stato realizzato da luglio 2022 a dicembre 2023 in collaborazione con IKO, l’Istituto per l’Educazione degli Stranieri.",
       "Vi hanno partecipato oltre 100 persone — il 60% a livello principiante e il 40% a livello intermedio — completando 632 lezioni in 7 gruppi. I partecipanti hanno acquisito competenze linguistiche che permettono loro di comunicare in polacco, facilitando l’integrazione e l’accesso al lavoro.",
       "Secondo i partecipanti stessi, l’aiuto ha avuto un impatto reale sulle loro vite: la signora Viktoria ha iniziato a lavorare a scuola, la signora Tetiana di Hrubieszów ha superato l’esame presso l’Ordine dei Medici e lavora come medico in ospedale, la signora Anna lavora come dentista, la signora Maja si è trasferita a Varsavia, la signora Yulia lavora in un’azienda di Lublino e la signora Tetiana come tecnico d’ufficio presso il comune. Ringraziamo tutti per l’impegno e ci congratuliamo per i successi!"
     ],
-    "sk": [
+    "date": "Febbraio 2024"
+  },
+  "sk": {
+    "title": "Kurzy poľštiny — zhrnutie",
+    "lead": "Vyše 100 účastníkov a 632 lekcií — jazykové zručnosti, ktoré sa premenili na prácu, diplomy a nové začiatky.",
+    "body": [
       "Začiatok nového roka je skvelý čas na zhrnutie jednej z najstarších iniciatív Nadácie Stock — programu pre utečencov Spirit of Ukraine a kurzov poľštiny. Nami financovaný program prebiehal od júla 2022 do decembra 2023 v spolupráci s IKO — Inštitútom vzdelávania cudzincov.",
       "Zúčastnilo sa ho vyše 100 osôb — 60 % na začiatočníckej úrovni a 40 % na stredne pokročilej — ktoré absolvovali 632 lekcií v 7 skupinách. Účastníci získali jazykové kompetencie umožňujúce dorozumieť sa po poľsky, čo im uľahčilo integráciu a nástup do zamestnania.",
       "Ako hovoria samotní účastníci, pomoc mala skutočný vplyv na ich životy: pani Viktoria začala pracovať v škole, pani Tetiana z Hrubieszówa zložila skúšku v lekárskej komore a pracuje ako lekárka v nemocnici, pani Anna pracuje ako zubárka, pani Maja sa presťahovala do Varšavy, pani Yulia pracuje vo firme v Lubline a pani Tetiana ako administratívna technička na obecnom úrade. Ďakujeme všetkým za nasadenie a gratulujeme k úspechom!"
     ],
-    "de": [
+    "date": "Február 2024"
+  },
+  "de": {
+    "title": "Polnischkurse — Bilanz",
+    "lead": "Über 100 Teilnehmende und 632 Unterrichtsstunden — Sprachkenntnisse, die zu Arbeit, Diplomen und Neuanfängen wurden.",
+    "body": [
       "Der Beginn des neuen Jahres ist ein guter Moment, um Bilanz über eine der frühesten Initiativen der Stiftung Stock zu ziehen — das Flüchtlingsprogramm Spirit of Ukraine und die Polnischkurse. Das von uns finanzierte Programm wurde von Juli 2022 bis Dezember 2023 in Zusammenarbeit mit IKO, dem Institut für die Bildung von Ausländern, durchgeführt.",
       "Mehr als 100 Personen nahmen teil — 60 % auf Anfängerniveau und 40 % auf mittlerem Niveau — und absolvierten 632 Unterrichtsstunden in 7 Gruppen. Die Teilnehmenden erwarben Sprachkompetenzen, die ihnen die Verständigung auf Polnisch ermöglichen, was ihre Integration und die Aufnahme einer Arbeit erleichterte.",
       "Wie die Teilnehmenden selbst sagen, hatte die Hilfe einen realen Einfluss auf ihr Leben: Frau Viktoria hat begonnen, an einer Schule zu arbeiten, Frau Tetiana aus Hrubieszów hat die Prüfung bei der Ärztekammer bestanden und arbeitet als Ärztin in einem Krankenhaus, Frau Anna arbeitet als Zahnärztin, Frau Maja ist nach Warschau gezogen, Frau Yulia arbeitet in einem Unternehmen in Lublin und Frau Tetiana als Bürotechnikerin in der Gemeindeverwaltung. Wir danken allen für ihr Engagement und gratulieren zu den Erfolgen!"
     ],
-    "fr": [
+    "date": "Februar 2024"
+  },
+  "fr": {
+    "title": "Cours de langue polonaise — bilan",
+    "lead": "Plus de 100 participants et 632 leçons — des compétences linguistiques transformées en emplois, en diplômes et en nouveaux départs.",
+    "body": [
       "Le début de la nouvelle année est un excellent moment pour dresser le bilan de l’une des toutes premières initiatives de la Fondation Stock — le programme pour réfugiés Spirit of Ukraine et les cours de langue polonaise. Financé par nos soins, le programme a été mis en œuvre de juillet 2022 à décembre 2023 en coopération avec IKO, l’Institut de formation des étrangers.",
       "Plus de 100 personnes y ont participé — 60 % au niveau débutant et 40 % au niveau intermédiaire — et ont suivi 632 leçons réparties en 7 groupes. Les participants ont acquis des compétences linguistiques leur permettant de communiquer en polonais, ce qui a facilité leur intégration et leur accès à l’emploi.",
       "Comme le disent les participants eux-mêmes, cette aide a eu un impact réel sur leur vie : Mme Viktoria a commencé à travailler dans une école, Mme Tetiana de Hrubieszów a réussi l’examen de l’Ordre des médecins et travaille comme médecin à l’hôpital, Mme Anna travaille comme dentiste, Mme Maja s’est installée à Varsovie, Mme Yulia travaille dans une entreprise de Lublin et Mme Tetiana comme technicienne de bureau à la mairie. Nous remercions tout le monde pour son engagement et félicitons chacune pour ses succès !"
-    ]
+    ],
+    "date": "février 2024"
   }
 }

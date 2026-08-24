@@ -1,70 +1,76 @@
 {
-  "id": "chmielowski",
-  "ts": "2026-01-22",
-  "cat": "art",
-  "img": "/uploads/news-chmielowski.jpg",
-  "date": {
-    "en": "22 January 2026",
-    "pl": "22 stycznia 2026",
-    "cz": "22. ledna 2026",
-    "it": "22 gennaio 2026",
-    "sk": "22. januára 2026",
-    "de": "22. Januar 2026",
-    "fr": "22 janvier 2026"
-  },
-  "title": {
-    "en": "Meeting for seniors dedicated to the art and life of Adam Chmielowski",
-    "pl": "Spotkanie dla seniorów o sztuce i życiu Adama Chmielowskiego",
-    "cz": "Setkání pro seniory o umění a životě Adama Chmielowského",
-    "it": "Incontro per anziani dedicato all’arte e alla vita di Adam Chmielowski",
-    "sk": "Stretnutie pre seniorov o umení a živote Adama Chmielowského",
-    "de": "Treffen für Senioren über Kunst und Leben von Adam Chmielowski",
-    "fr": "Rencontre pour les seniors sur l’art et la vie d’Adam Chmielowski"
-  },
-  "lead": {
-    "en": "At the City Hall in Lublin, on the anniversary of the January Uprising, curator Anna Czajczyk presented the works of Adam Chmielowski — Brother Albert.",
-    "pl": "W ratuszu w Lublinie, w rocznicę wybuchu powstania styczniowego, kustosz Anna Czajczyk przedstawiła twórczość Adama Chmielowskiego — Brata Alberta.",
-    "cz": "Na radnici v Lublinu, v den výročí lednového povstání, představila kurátorka Anna Czajczyk dílo Adama Chmielowského — bratra Alberta.",
-    "it": "Al municipio di Lublino, nell’anniversario dell’Insurrezione di Gennaio, la curatrice Anna Czajczyk ha presentato le opere di Adam Chmielowski — Fratel Alberto.",
-    "sk": "Na radnici v Lubline, v deň výročia vypuknutia januárového povstania, predstavila kurátorka Anna Czajczyk tvorbu Adama Chmielowského — brata Alberta.",
-    "de": "Im Rathaus von Lublin stellte die Kuratorin Anna Czajczyk am Jahrestag des Januaraufstands das Werk von Adam Chmielowski — Bruder Albert — vor.",
-    "fr": "À l’hôtel de ville de Lublin, à l’occasion de l’anniversaire de l’insurrection de Janvier, la conservatrice Anna Czajczyk a présenté l’œuvre d’Adam Chmielowski — frère Albert."
-  },
-  "body": {
-    "en": [
-      "At the City Hall building in Lublin, on the anniversary of the outbreak of the January Uprising, an excellent curator from the National Museum, Anna Czajczyk, delivered an illustrated presentation on the works of Adam Chmielowski, known later in life as Brother Albert. The event was aimed at seniors under the care of the city office.",
-      "Adam Chmielowski was a Polish painter and Franciscan friar who began his career in art before dedicating his life to serving the poor and homeless. He participated in the January Uprising of 1863 and later studied painting in major European art centres including Paris and Munich.",
-      "After experiencing a deep religious calling, he founded the Albertine Brothers and Sisters, devoted to helping those in need — a story that resonated deeply with the audience."
-    ],
-    "pl": [
+  "pl": {
+    "title": "Spotkanie dla seniorów o sztuce i życiu Adama Chmielowskiego",
+    "lead": "W ratuszu w Lublinie, w rocznicę wybuchu powstania styczniowego, kustosz Anna Czajczyk przedstawiła twórczość Adama Chmielowskiego — Brata Alberta.",
+    "body": [
       "W budynku ratusza w Lublinie, w rocznicę wybuchu powstania styczniowego, znakomita kustosz Muzeum Narodowego Anna Czajczyk wygłosiła ilustrowaną prelekcję o twórczości Adama Chmielowskiego, znanego później jako Brat Albert. Wydarzenie skierowane było do seniorów pod opieką urzędu miasta.",
       "Adam Chmielowski był polskim malarzem i franciszkaninem, który rozpoczął karierę artystyczną, zanim poświęcił życie służbie ubogim i bezdomnym. Brał udział w powstaniu styczniowym 1863 roku, a później studiował malarstwo w głównych europejskich ośrodkach sztuki, m.in. w Paryżu i Monachium.",
       "Po doświadczeniu głębokiego powołania religijnego założył zgromadzenia albertynów i albertynek, oddane pomocy potrzebującym — historia ta głęboko poruszyła słuchaczy."
     ],
-    "cz": [
+    "date": "22 stycznia 2026",
+    "img": "/uploads/news-chmielowski.jpg",
+    "ts": "2026-01-22",
+    "cat": "art",
+    "id": "chmielowski"
+  },
+  "en": {
+    "title": "Meeting for seniors dedicated to the art and life of Adam Chmielowski",
+    "lead": "At the City Hall in Lublin, on the anniversary of the January Uprising, curator Anna Czajczyk presented the works of Adam Chmielowski — Brother Albert.",
+    "body": [
+      "At the City Hall building in Lublin, on the anniversary of the outbreak of the January Uprising, an excellent curator from the National Museum, Anna Czajczyk, delivered an illustrated presentation on the works of Adam Chmielowski, known later in life as Brother Albert. The event was aimed at seniors under the care of the city office.",
+      "Adam Chmielowski was a Polish painter and Franciscan friar who began his career in art before dedicating his life to serving the poor and homeless. He participated in the January Uprising of 1863 and later studied painting in major European art centres including Paris and Munich.",
+      "After experiencing a deep religious calling, he founded the Albertine Brothers and Sisters, devoted to helping those in need — a story that resonated deeply with the audience."
+    ],
+    "date": "22 January 2026"
+  },
+  "cz": {
+    "title": "Setkání pro seniory o umění a životě Adama Chmielowského",
+    "lead": "Na radnici v Lublinu, v den výročí lednového povstání, představila kurátorka Anna Czajczyk dílo Adama Chmielowského — bratra Alberta.",
+    "body": [
       "V budově radnice v Lublinu, v den výročí vypuknutí lednového povstání, přednesla vynikající kurátorka Národního muzea Anna Czajczyk ilustrovanou přednášku o díle Adama Chmielowského, později známého jako bratr Albert. Akce byla určena seniorům v péči městského úřadu.",
       "Adam Chmielowski byl polský malíř a františkán, který zahájil uměleckou kariéru, než zasvětil život službě chudým a lidem bez domova. Účastnil se lednového povstání roku 1863 a později studoval malířství v předních evropských uměleckých centrech včetně Paříže a Mnichova.",
       "Po hlubokém náboženském povolání založil kongregace albertinů a albertinek, věnované pomoci potřebným — příběh, který posluchače hluboce oslovil."
     ],
-    "it": [
+    "date": "22. ledna 2026"
+  },
+  "it": {
+    "title": "Incontro per anziani dedicato all’arte e alla vita di Adam Chmielowski",
+    "lead": "Al municipio di Lublino, nell’anniversario dell’Insurrezione di Gennaio, la curatrice Anna Czajczyk ha presentato le opere di Adam Chmielowski — Fratel Alberto.",
+    "body": [
       "Nel palazzo del municipio di Lublino, nell’anniversario dello scoppio dell’Insurrezione di Gennaio, l’eccellente curatrice del Museo Nazionale Anna Czajczyk ha tenuto una presentazione illustrata sulle opere di Adam Chmielowski, conosciuto più tardi come Fratel Alberto. L’evento era rivolto agli anziani assistiti dall’ufficio comunale.",
       "Adam Chmielowski è stato un pittore polacco e frate francescano che iniziò la carriera artistica prima di dedicare la vita al servizio dei poveri e dei senzatetto. Partecipò all’Insurrezione di Gennaio del 1863 e in seguito studiò pittura nei principali centri artistici europei, tra cui Parigi e Monaco.",
       "Dopo una profonda vocazione religiosa fondò le congregazioni dei Fratelli e delle Suore Albertine, dedite ad aiutare i bisognosi — una storia che ha toccato profondamente il pubblico."
     ],
-    "sk": [
+    "date": "22 gennaio 2026"
+  },
+  "sk": {
+    "title": "Stretnutie pre seniorov o umení a živote Adama Chmielowského",
+    "lead": "Na radnici v Lubline, v deň výročia vypuknutia januárového povstania, predstavila kurátorka Anna Czajczyk tvorbu Adama Chmielowského — brata Alberta.",
+    "body": [
       "V budove radnice v Lubline, v deň výročia vypuknutia januárového povstania, predniesla vynikajúca kurátorka Národného múzea Anna Czajczyk ilustrovanú prednášku o tvorbe Adama Chmielowského, neskôr známeho ako brat Albert. Podujatie bolo určené seniorom v starostlivosti mestského úradu.",
       "Adam Chmielowski bol poľský maliar a františkán, ktorý začal umeleckú kariéru, než zasvätil život službe chudobným a ľuďom bez domova. Zúčastnil sa januárového povstania v roku 1863 a neskôr študoval maliarstvo v popredných európskych umeleckých centrách vrátane Paríža a Mníchova.",
       "Po hlbokom náboženskom povolaní založil kongregácie albertínov a albertínok, ktoré sa venujú pomoci núdznym — príbeh, ktorý poslucháčov hlboko oslovil."
     ],
-    "de": [
+    "date": "22. januára 2026"
+  },
+  "de": {
+    "title": "Treffen für Senioren über Kunst und Leben von Adam Chmielowski",
+    "lead": "Im Rathaus von Lublin stellte die Kuratorin Anna Czajczyk am Jahrestag des Januaraufstands das Werk von Adam Chmielowski — Bruder Albert — vor.",
+    "body": [
       "Im Rathausgebäude in Lublin hielt die hervorragende Kuratorin des Nationalmuseums, Anna Czajczyk, am Jahrestag des Ausbruchs des Januaraufstands einen bebilderten Vortrag über das Werk von Adam Chmielowski, der später als Bruder Albert bekannt wurde. Die Veranstaltung richtete sich an Senioren, die von der Stadtverwaltung betreut werden.",
       "Adam Chmielowski war ein polnischer Maler und Franziskaner, der seine künstlerische Laufbahn begann, bevor er sein Leben dem Dienst an Armen und Obdachlosen widmete. Er nahm am Januaraufstand von 1863 teil und studierte später Malerei in führenden europäischen Kunstzentren, unter anderem in Paris und München.",
       "Nach einer tiefen religiösen Berufung gründete er die Gemeinschaften der Albertiner-Brüder und -Schwestern, die sich der Hilfe für Bedürftige widmen — eine Geschichte, die die Zuhörer tief berührte."
     ],
-    "fr": [
+    "date": "22. Januar 2026"
+  },
+  "fr": {
+    "title": "Rencontre pour les seniors sur l’art et la vie d’Adam Chmielowski",
+    "lead": "À l’hôtel de ville de Lublin, à l’occasion de l’anniversaire de l’insurrection de Janvier, la conservatrice Anna Czajczyk a présenté l’œuvre d’Adam Chmielowski — frère Albert.",
+    "body": [
       "Dans le bâtiment de l’hôtel de ville de Lublin, à l’occasion de l’anniversaire du déclenchement de l’insurrection de Janvier, l’excellente conservatrice du Musée national Anna Czajczyk a donné une conférence illustrée sur l’œuvre d’Adam Chmielowski, connu plus tard sous le nom de frère Albert. L’événement s’adressait aux seniors pris en charge par la mairie.",
       "Adam Chmielowski était un peintre polonais et frère franciscain qui commença sa carrière artistique avant de consacrer sa vie au service des pauvres et des sans-abri. Il participa à l’insurrection de Janvier de 1863, puis étudia la peinture dans les grands centres artistiques européens, notamment à Paris et à Munich.",
       "Après une profonde vocation religieuse, il fonda les congrégations des frères et des sœurs albertins, vouées à l’aide aux personnes dans le besoin — une histoire qui a profondément touché le public."
-    ]
+    ],
+    "date": "22 janvier 2026"
   }
 }

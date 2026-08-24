@@ -1,70 +1,76 @@
 {
-  "id": "dpsday",
-  "ts": "2025-06-16",
-  "cat": "volunteer",
-  "img": "/uploads/news-dpsday.jpg",
-  "date": {
-    "en": "16 June 2025",
-    "pl": "16 czerwca 2025",
-    "cz": "16. června 2025",
-    "it": "16 giugno 2025",
-    "sk": "16. júna 2025",
-    "de": "16. Juni 2025",
-    "fr": "16 juin 2025"
-  },
-  "title": {
-    "en": "A special day out for residents of the Kosmonautów care home",
-    "pl": "Wyjątkowy spacer mieszkańców DPS przy ul. Kosmonautów",
-    "cz": "Výjimečný výlet obyvatel domova na ulici Kosmonautów",
-    "it": "Una giornata speciale per i residenti della casa di cura di via Kosmonautów",
-    "sk": "Výnimočná prechádzka obyvateľov domova sociálnych služieb na Kosmonautów",
-    "de": "Ein besonderer Ausflug für die Bewohner des Sozialhilfeheims in der Kosmonautów-Straße",
-    "fr": "Une promenade exceptionnelle pour les résidents du foyer d’aide sociale de la rue Kosmonautów"
-  },
-  "lead": {
-    "en": "For the first time, volunteers took wheelchair users from the Social Welfare Home on a long, joyful walk through the streets of Lublin.",
-    "pl": "Po raz pierwszy wolontariusze zabrali mieszkańców poruszających się na wózkach na długi, radosny spacer ulicami Lublina.",
-    "cz": "Dobrovolníci poprvé vzali obyvatele na vozíčcích na dlouhou, radostnou procházku ulicemi Lublinu.",
-    "it": "Per la prima volta i volontari hanno portato i residenti in sedia a rotelle a una lunga e gioiosa passeggiata per le vie di Lublino.",
-    "sk": "Dobrovoľníci prvýkrát vzali obyvateľov na vozíkoch na dlhú, radostnú prechádzku ulicami Lublina.",
-    "de": "Zum ersten Mal nahmen Freiwillige Bewohnerinnen und Bewohner im Rollstuhl mit auf einen langen, fröhlichen Spaziergang durch die Straßen von Lublin.",
-    "fr": "Pour la première fois, des bénévoles ont emmené les résidents en fauteuil roulant pour une longue et joyeuse promenade dans les rues de Lublin."
-  },
-  "body": {
-    "en": [
-      "The Stock Foundation had the honour of supporting a truly special initiative for people with disabilities living at the Social Welfare Home on Kosmonautów Street in Lublin.",
-      "For the first time, a group of volunteers — including one from our Foundation — took residents using wheelchairs on a long and joyful walk through the city. The route started at the Social Welfare Home and led through Lublin’s streets, across the main pedestrian area, past Litewski Square, and all the way to Ludowy Park. After the walk, Foundation-sponsored minibuses brought everyone back safely.",
-      "The atmosphere was cheerful and full of positive energy. It’s not every day that such an outing is possible, and it was clear how much it meant to the residents. Our volunteers came away with full hearts and the satisfaction of having brought a little sunshine into someone’s day. We’re grateful to have been part of this day — and we’re already looking forward to the next one."
-    ],
-    "pl": [
+  "pl": {
+    "title": "Wyjątkowy spacer mieszkańców DPS przy ul. Kosmonautów",
+    "lead": "Po raz pierwszy wolontariusze zabrali mieszkańców poruszających się na wózkach na długi, radosny spacer ulicami Lublina.",
+    "body": [
       "Fundacja Stock miała zaszczyt wesprzeć naprawdę wyjątkową inicjatywę dla osób z niepełnosprawnościami mieszkających w Domu Pomocy Społecznej przy ul. Kosmonautów w Lublinie.",
       "Po raz pierwszy grupa wolontariuszy — w tym jeden z naszej Fundacji — zabrała mieszkańców poruszających się na wózkach na długi, radosny spacer po mieście. Trasa zaczynała się przy DPS i prowadziła ulicami Lublina, przez deptak, obok placu Litewskiego, aż do Parku Ludowego. Po spacerze sponsorowane przez Fundację busy bezpiecznie odwiozły wszystkich z powrotem.",
       "Atmosfera była pogodna i pełna pozytywnej energii. Taka wyprawa nie zdarza się codziennie i było widać, jak wiele znaczyła dla mieszkańców. Nasi wolontariusze wrócili z pełnymi sercami i satysfakcją, że wnieśli trochę słońca w czyjś dzień. Jesteśmy wdzięczni, że mogliśmy być częścią tego dnia — i już czekamy na kolejny."
     ],
-    "cz": [
+    "date": "16 czerwca 2025",
+    "img": "/uploads/news-dpsday.jpg",
+    "ts": "2025-06-16",
+    "cat": "volunteer",
+    "id": "dpsday"
+  },
+  "en": {
+    "title": "A special day out for residents of the Kosmonautów care home",
+    "lead": "For the first time, volunteers took wheelchair users from the Social Welfare Home on a long, joyful walk through the streets of Lublin.",
+    "body": [
+      "The Stock Foundation had the honour of supporting a truly special initiative for people with disabilities living at the Social Welfare Home on Kosmonautów Street in Lublin.",
+      "For the first time, a group of volunteers — including one from our Foundation — took residents using wheelchairs on a long and joyful walk through the city. The route started at the Social Welfare Home and led through Lublin’s streets, across the main pedestrian area, past Litewski Square, and all the way to Ludowy Park. After the walk, Foundation-sponsored minibuses brought everyone back safely.",
+      "The atmosphere was cheerful and full of positive energy. It’s not every day that such an outing is possible, and it was clear how much it meant to the residents. Our volunteers came away with full hearts and the satisfaction of having brought a little sunshine into someone’s day. We’re grateful to have been part of this day — and we’re already looking forward to the next one."
+    ],
+    "date": "16 June 2025"
+  },
+  "cz": {
+    "title": "Výjimečný výlet obyvatel domova na ulici Kosmonautów",
+    "lead": "Dobrovolníci poprvé vzali obyvatele na vozíčcích na dlouhou, radostnou procházku ulicemi Lublinu.",
+    "body": [
       "Nadace Stock měla tu čest podpořit skutečně výjimečnou iniciativu pro osoby s postižením žijící v domově sociální péče na ulici Kosmonautów v Lublinu.",
       "Skupina dobrovolníků — včetně jednoho z naší nadace — poprvé vzala obyvatele na vozíčcích na dlouhou a radostnou procházku městem. Trasa začínala u domova a vedla ulicemi Lublinu, přes hlavní pěší zónu, kolem Litevského náměstí až do Lidového parku. Po procházce všechny bezpečně odvezly minibusy financované nadací.",
       "Atmosféra byla veselá a plná pozitivní energie. Takový výlet není možný každý den a bylo vidět, jak moc pro obyvatele znamenal. Naši dobrovolníci odcházeli s plným srdcem a s pocitem, že do něčího dne přinesli trochu slunce. Jsme vděční, že jsme mohli být součástí tohoto dne — a už se těšíme na další."
     ],
-    "it": [
+    "date": "16. června 2025"
+  },
+  "it": {
+    "title": "Una giornata speciale per i residenti della casa di cura di via Kosmonautów",
+    "lead": "Per la prima volta i volontari hanno portato i residenti in sedia a rotelle a una lunga e gioiosa passeggiata per le vie di Lublino.",
+    "body": [
       "La Fondazione Stock ha avuto l’onore di sostenere un’iniziativa davvero speciale per le persone con disabilità che vivono nella casa di cura di via Kosmonautów a Lublino.",
       "Per la prima volta un gruppo di volontari — tra cui uno della nostra Fondazione — ha portato i residenti in sedia a rotelle a una lunga e gioiosa passeggiata per la città. Il percorso è partito dalla casa di cura e ha attraversato le vie di Lublino, l’area pedonale principale, piazza Litewski, fino al Parco Ludowy. Dopo la passeggiata, i minibus sponsorizzati dalla Fondazione hanno riportato tutti a casa in sicurezza.",
       "L’atmosfera era allegra e piena di energia positiva. Non capita tutti i giorni una simile uscita, ed era evidente quanto significasse per i residenti. I nostri volontari sono tornati con il cuore pieno e la soddisfazione di aver portato un po’ di sole nella giornata di qualcuno. Siamo grati di aver fatto parte di questa giornata — e non vediamo l’ora della prossima."
     ],
-    "sk": [
+    "date": "16 giugno 2025"
+  },
+  "sk": {
+    "title": "Výnimočná prechádzka obyvateľov domova sociálnych služieb na Kosmonautów",
+    "lead": "Dobrovoľníci prvýkrát vzali obyvateľov na vozíkoch na dlhú, radostnú prechádzku ulicami Lublina.",
+    "body": [
       "Nadácia Stock mala tú česť podporiť naozaj výnimočnú iniciatívu pre ľudí so zdravotným postihnutím, ktorí žijú v domove sociálnych služieb na ulici Kosmonautów v Lubline.",
       "Skupina dobrovoľníkov — vrátane jedného z našej nadácie — prvýkrát vzala obyvateľov na vozíkoch na dlhú a radostnú prechádzku mestom. Trasa sa začínala pri domove a viedla ulicami Lublina, cez pešiu zónu, popri Litovskom námestí až do Ľudového parku. Po prechádzke všetkých bezpečne odviezli mikrobusy financované nadáciou.",
       "Atmosféra bola veselá a plná pozitívnej energie. Takýto výlet sa nestáva každý deň a bolo vidieť, koľko pre obyvateľov znamenal. Naši dobrovoľníci sa vracali s plným srdcom a s pocitom zadosťučinenia, že do niekoho dňa priniesli trochu slnka. Sme vďační, že sme mohli byť súčasťou tohto dňa — a už sa tešíme na ďalší."
     ],
-    "de": [
+    "date": "16. júna 2025"
+  },
+  "de": {
+    "title": "Ein besonderer Ausflug für die Bewohner des Sozialhilfeheims in der Kosmonautów-Straße",
+    "lead": "Zum ersten Mal nahmen Freiwillige Bewohnerinnen und Bewohner im Rollstuhl mit auf einen langen, fröhlichen Spaziergang durch die Straßen von Lublin.",
+    "body": [
       "Die Stiftung Stock hatte die Ehre, eine wirklich besondere Initiative für Menschen mit Behinderung zu unterstützen, die im Sozialhilfeheim in der Kosmonautów-Straße in Lublin leben.",
       "Zum ersten Mal nahm eine Gruppe von Freiwilligen — darunter eine Person aus unserer Stiftung — Bewohnerinnen und Bewohner im Rollstuhl mit auf einen langen und fröhlichen Spaziergang durch die Stadt. Die Route begann am Heim und führte durch die Straßen Lublins, über die Fußgängerzone, am Litauischen Platz vorbei bis zum Ludowy-Park. Nach dem Spaziergang brachten von der Stiftung finanzierte Kleinbusse alle sicher zurück.",
       "Die Stimmung war heiter und voller positiver Energie. Ein solcher Ausflug ist nicht alltäglich, und man konnte sehen, wie viel er den Bewohnerinnen und Bewohnern bedeutete. Unsere Freiwilligen kehrten mit vollem Herzen zurück und mit der Genugtuung, ein wenig Sonne in den Tag anderer gebracht zu haben. Wir sind dankbar, Teil dieses Tages gewesen zu sein — und freuen uns schon auf den nächsten."
     ],
-    "fr": [
+    "date": "16. Juni 2025"
+  },
+  "fr": {
+    "title": "Une promenade exceptionnelle pour les résidents du foyer d’aide sociale de la rue Kosmonautów",
+    "lead": "Pour la première fois, des bénévoles ont emmené les résidents en fauteuil roulant pour une longue et joyeuse promenade dans les rues de Lublin.",
+    "body": [
       "La Fondation Stock a eu l’honneur de soutenir une initiative vraiment exceptionnelle destinée aux personnes en situation de handicap qui vivent au foyer d’aide sociale de la rue Kosmonautów, à Lublin.",
       "Pour la première fois, un groupe de bénévoles — dont l’un de notre Fondation — a emmené les résidents en fauteuil roulant pour une longue et joyeuse promenade à travers la ville. Le parcours partait du foyer et traversait les rues de Lublin, la zone piétonne, longeait la place Litewski et menait jusqu’au parc Ludowy. Après la promenade, des minibus financés par la Fondation ont ramené tout le monde en toute sécurité.",
       "L’ambiance était sereine et pleine d’énergie positive. Une telle sortie n’arrive pas tous les jours, et l’on voyait bien tout ce qu’elle représentait pour les résidents. Nos bénévoles sont rentrés le cœur plein et heureux d’avoir apporté un peu de soleil dans la journée de quelqu’un. Nous sommes reconnaissants d’avoir fait partie de cette journée — et nous attendons déjà la prochaine avec impatience."
-    ]
+    ],
+    "date": "16 juin 2025"
   }
 }

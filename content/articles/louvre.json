@@ -1,70 +1,76 @@
 {
-  "id": "louvre",
-  "ts": "2024-10-02",
-  "cat": "art",
-  "img": "/uploads/news-louvre.jpg",
-  "date": {
-    "en": "October 2024",
-    "pl": "Październik 2024",
-    "cz": "Říjen 2024",
-    "it": "Ottobre 2024",
-    "sk": "Október 2024",
-    "de": "Oktober 2024",
-    "fr": "octobre 2024"
-  },
-  "title": {
-    "en": "Encounters with Art — between the Louvre and Versailles",
-    "pl": "Spotkania ze Sztuką — między Luwrem a Wersalem",
-    "cz": "Setkání s uměním — mezi Louvrem a Versailles",
-    "it": "Incontri con l’Arte — tra il Louvre e Versailles",
-    "sk": "Stretnutia s umením — medzi Louvrom a Versailles",
-    "de": "Kunstbegegnungen — zwischen Louvre und Versailles",
-    "fr": "Rencontres avec l’art — entre le Louvre et Versailles"
-  },
-  "lead": {
-    "en": "Curator Magdalena Norkowska took senior citizens on a journey to the residence of the Sun King, in one of the representative rooms of the City Hall.",
-    "pl": "Kustosz Magdalena Norkowska zabrała seniorów w podróż do rezydencji Króla Słońce, w jednej z reprezentacyjnych sal ratusza.",
-    "cz": "Kurátorka Magdalena Norkowska vzala seniory na cestu do rezidence Krále Slunce v jednom z reprezentativních sálů radnice.",
-    "it": "La curatrice Magdalena Norkowska ha portato gli anziani in viaggio verso la residenza del Re Sole, in una delle sale di rappresentanza del municipio.",
-    "sk": "Kurátorka Magdalena Norkowska vzala seniorov na cestu do rezidencie Kráľa Slnka, v jednej z reprezentačných sál radnice.",
-    "de": "Kuratorin Magdalena Norkowska nahm die Seniorinnen und Senioren in einem der Repräsentationssäle des Rathauses mit auf eine Reise zur Residenz des Sonnenkönigs.",
-    "fr": "La conservatrice Magdalena Norkowska a emmené les seniors en voyage vers la résidence du Roi-Soleil, dans l’une des salles d’apparat de l’hôtel de ville."
-  },
-  "body": {
-    "en": [
-      "The Encounters with Art project, carried out jointly with the City Hall and the National Museum in Lublin for senior citizens, is developing dynamically. We would like to thank Ms Anna Augustyniak, Deputy Mayor of Lublin for Social Affairs, and Mr Sławomir Skowronek from the Department of Social Initiatives and Programmes for opening the meeting. The project attracted another outstanding curator, Ms Magdalena Norkowska, who gave a lecture entitled “Between the Louvre and Versailles” in one of the representative rooms of the City Hall.",
-      "Participants learned about the history of Versailles — its origins and its role as the seat of the monarch, along with the historical background of the state under Louis XIV. They saw the monuments that can still be admired today in the residence, which became the king’s official home in the second half of the 17th century after a major reconstruction. Louis XIV moved to Versailles in 1682 and gradually transferred the royal court there; the palace became the largest in Europe and, as one of the finest works of Classical Baroque, took over from Paris as the capital of France.",
-      "The history of the palace generated great interest among the participants, and after the lecture there was time for questions, followed by a small refreshment."
-    ],
-    "pl": [
+  "pl": {
+    "title": "Spotkania ze Sztuką — między Luwrem a Wersalem",
+    "lead": "Kustosz Magdalena Norkowska zabrała seniorów w podróż do rezydencji Króla Słońce, w jednej z reprezentacyjnych sal ratusza.",
+    "body": [
       "Projekt Spotkań ze Sztuką, realizowany wspólnie z ratuszem i Muzeum Narodowym w Lublinie z myślą o seniorach, rozwija się dynamicznie. Dziękujemy pani Annie Augustyniak, zastępczyni prezydenta Lublina ds. społecznych, oraz panu Sławomirowi Skowronkowi z Wydziału Inicjatyw i Programów Społecznych za otwarcie spotkania. Projekt przyciągnął kolejną wybitną kustosz — panią Magdalenę Norkowską, która w jednej z reprezentacyjnych sal ratusza wygłosiła wykład „Między Luwrem a Wersalem”.",
       "Uczestnicy poznali historię Wersalu — jego początki i rolę jako siedziby monarchy, wraz z tłem historycznym państwa za panowania Ludwika XIV. Zobaczyli zabytki, które do dziś można podziwiać w rezydencji, będącej oficjalną siedzibą króla od drugiej połowy XVII wieku, po wielkiej przebudowie pałacu. Ludwik XIV przeniósł się do Wersalu w 1682 roku i stopniowo przeniósł tam dwór królewski; pałac stał się największym w Europie, a jako jedno z najświetniejszych dzieł klasycystycznego baroku przejął od Paryża rolę stolicy Francji.",
       "Historia pałacu wzbudziła ogromne zainteresowanie uczestników, a po wykładzie był czas na pytania i mały poczęstunek."
     ],
-    "cz": [
+    "date": "Październik 2024",
+    "img": "/uploads/news-louvre.jpg",
+    "ts": "2024-10-02",
+    "cat": "art",
+    "id": "louvre"
+  },
+  "en": {
+    "title": "Encounters with Art — between the Louvre and Versailles",
+    "lead": "Curator Magdalena Norkowska took senior citizens on a journey to the residence of the Sun King, in one of the representative rooms of the City Hall.",
+    "body": [
+      "The Encounters with Art project, carried out jointly with the City Hall and the National Museum in Lublin for senior citizens, is developing dynamically. We would like to thank Ms Anna Augustyniak, Deputy Mayor of Lublin for Social Affairs, and Mr Sławomir Skowronek from the Department of Social Initiatives and Programmes for opening the meeting. The project attracted another outstanding curator, Ms Magdalena Norkowska, who gave a lecture entitled “Between the Louvre and Versailles” in one of the representative rooms of the City Hall.",
+      "Participants learned about the history of Versailles — its origins and its role as the seat of the monarch, along with the historical background of the state under Louis XIV. They saw the monuments that can still be admired today in the residence, which became the king’s official home in the second half of the 17th century after a major reconstruction. Louis XIV moved to Versailles in 1682 and gradually transferred the royal court there; the palace became the largest in Europe and, as one of the finest works of Classical Baroque, took over from Paris as the capital of France.",
+      "The history of the palace generated great interest among the participants, and after the lecture there was time for questions, followed by a small refreshment."
+    ],
+    "date": "October 2024"
+  },
+  "cz": {
+    "title": "Setkání s uměním — mezi Louvrem a Versailles",
+    "lead": "Kurátorka Magdalena Norkowska vzala seniory na cestu do rezidence Krále Slunce v jednom z reprezentativních sálů radnice.",
+    "body": [
       "Projekt Setkání s uměním, realizovaný společně s radnicí a Národním muzeem v Lublinu pro seniory, se dynamicky rozvíjí. Děkujeme paní Anně Augustyniak, zástupkyni primátora Lublinu pro sociální věci, a panu Sławomiru Skowronkovi z odboru sociálních iniciativ a programů za zahájení setkání. Projekt přilákal další vynikající kurátorku — paní Magdalenu Norkowskou, která v jednom z reprezentativních sálů radnice přednesla přednášku „Mezi Louvrem a Versailles“.",
       "Účastníci se seznámili s historií Versailles — s jeho počátky a rolí sídla panovníka, spolu s historickým pozadím státu za vlády Ludvíka XIV. Viděli památky, které lze v rezidenci obdivovat dodnes; oficiálním sídlem krále se stala ve druhé polovině 17. století po velké přestavbě. Ludvík XIV. se do Versailles přestěhoval v roce 1682 a postupně tam přenesl královský dvůr; palác se stal největším v Evropě a jako jedno z nejskvělejších děl klasicistního baroka převzal od Paříže roli hlavního města Francie.",
       "Historie paláce vzbudila u účastníků velký zájem a po přednášce byl čas na dotazy a malé občerstvení."
     ],
-    "it": [
+    "date": "Říjen 2024"
+  },
+  "it": {
+    "title": "Incontri con l’Arte — tra il Louvre e Versailles",
+    "lead": "La curatrice Magdalena Norkowska ha portato gli anziani in viaggio verso la residenza del Re Sole, in una delle sale di rappresentanza del municipio.",
+    "body": [
       "Il progetto Incontri con l’Arte, realizzato insieme al municipio e al Museo Nazionale di Lublino per gli anziani, si sviluppa dinamicamente. Ringraziamo la signora Anna Augustyniak, vicesindaca di Lublino per gli affari sociali, e il signor Sławomir Skowronek del Dipartimento delle Iniziative e dei Programmi Sociali per aver aperto l’incontro. Il progetto ha attirato un’altra eccellente curatrice — la signora Magdalena Norkowska, che in una delle sale di rappresentanza del municipio ha tenuto la conferenza “Tra il Louvre e Versailles”.",
       "I partecipanti hanno conosciuto la storia di Versailles — le sue origini e il suo ruolo di sede del monarca, insieme al contesto storico dello Stato sotto Luigi XIV. Hanno visto i monumenti che ancora oggi si possono ammirare nella residenza, divenuta dimora ufficiale del re nella seconda metà del XVII secolo dopo una grande ricostruzione. Luigi XIV si trasferì a Versailles nel 1682 e vi spostò gradualmente la corte reale; il palazzo divenne il più grande d’Europa e, come una delle più belle opere del barocco classico, prese da Parigi il ruolo di capitale della Francia.",
       "La storia del palazzo ha suscitato grande interesse tra i partecipanti e, dopo la conferenza, c’è stato tempo per le domande, seguite da un piccolo rinfresco."
     ],
-    "sk": [
+    "date": "Ottobre 2024"
+  },
+  "sk": {
+    "title": "Stretnutia s umením — medzi Louvrom a Versailles",
+    "lead": "Kurátorka Magdalena Norkowska vzala seniorov na cestu do rezidencie Kráľa Slnka, v jednej z reprezentačných sál radnice.",
+    "body": [
       "Projekt Stretnutí s umením, realizovaný spoločne s radnicou a Národným múzeom v Lubline pre seniorov, sa dynamicky rozvíja. Ďakujeme pani Anne Augustyniak, zástupkyni primátora Lublinu pre sociálne veci, a pánovi Sławomirovi Skowronkovi z odboru sociálnych iniciatív a programov za otvorenie stretnutia. Projekt prilákal ďalšiu vynikajúcu kurátorku — pani Magdalenu Norkowskú, ktorá v jednej z reprezentačných sál radnice predniesla prednášku „Medzi Louvrom a Versailles“.",
       "Účastníci spoznali históriu Versailles — jeho počiatky a úlohu sídla panovníka, spolu s historickým pozadím štátu za vlády Ľudovíta XIV. Videli pamiatky, ktoré možno v rezidencii obdivovať dodnes; oficiálnym sídlom kráľa sa stala v druhej polovici 17. storočia po veľkej prestavbe paláca. Ľudovít XIV. sa do Versailles presťahoval v roku 1682 a postupne tam preniesol kráľovský dvor; palác sa stal najväčším v Európe a ako jedno z najskvelejších diel klasicistického baroka prevzal od Paríža úlohu hlavného mesta Francúzska.",
       "História paláca vzbudila u účastníkov obrovský záujem a po prednáške bol čas na otázky a malé občerstvenie."
     ],
-    "de": [
+    "date": "Október 2024"
+  },
+  "de": {
+    "title": "Kunstbegegnungen — zwischen Louvre und Versailles",
+    "lead": "Kuratorin Magdalena Norkowska nahm die Seniorinnen und Senioren in einem der Repräsentationssäle des Rathauses mit auf eine Reise zur Residenz des Sonnenkönigs.",
+    "body": [
       "Das Projekt Kunstbegegnungen, das gemeinsam mit dem Rathaus und dem Nationalmuseum in Lublin für Seniorinnen und Senioren durchgeführt wird, entwickelt sich dynamisch. Wir danken Frau Anna Augustyniak, stellvertretender Stadtpräsidentin von Lublin für soziale Angelegenheiten, und Herrn Sławomir Skowronek von der Abteilung für soziale Initiativen und Programme für die Eröffnung des Treffens. Das Projekt gewann eine weitere herausragende Kuratorin — Frau Magdalena Norkowska, die in einem der Repräsentationssäle des Rathauses den Vortrag „Zwischen Louvre und Versailles“ hielt.",
       "Die Teilnehmerinnen und Teilnehmer lernten die Geschichte von Versailles kennen — seine Anfänge und seine Rolle als Sitz des Monarchen, zusammen mit dem historischen Hintergrund des Staates unter Ludwig XIV. Sie sahen die Denkmäler, die man in der Residenz bis heute bewundern kann; zum offiziellen Sitz des Königs wurde sie in der zweiten Hälfte des 17. Jahrhunderts nach einem großen Umbau des Schlosses. Ludwig XIV. zog 1682 nach Versailles und verlegte nach und nach den königlichen Hof dorthin; das Schloss wurde zum größten Europas und übernahm als eines der glanzvollsten Werke des klassizistischen Barocks von Paris die Rolle der Hauptstadt Frankreichs.",
       "Die Geschichte des Schlosses stieß bei den Teilnehmenden auf großes Interesse, und nach dem Vortrag blieb Zeit für Fragen und eine kleine Erfrischung."
     ],
-    "fr": [
+    "date": "Oktober 2024"
+  },
+  "fr": {
+    "title": "Rencontres avec l’art — entre le Louvre et Versailles",
+    "lead": "La conservatrice Magdalena Norkowska a emmené les seniors en voyage vers la résidence du Roi-Soleil, dans l’une des salles d’apparat de l’hôtel de ville.",
+    "body": [
       "Le projet Rencontres avec l’art, mené conjointement avec l’hôtel de ville et le Musée national de Lublin à l’intention des seniors, se développe de manière dynamique. Nous remercions Mme Anna Augustyniak, adjointe au maire de Lublin chargée des affaires sociales, et M. Sławomir Skowronek du Département des initiatives et programmes sociaux d’avoir ouvert la rencontre. Le projet a attiré une autre remarquable conservatrice — Mme Magdalena Norkowska, qui a donné, dans l’une des salles d’apparat de l’hôtel de ville, la conférence « Entre le Louvre et Versailles ».",
       "Les participants ont découvert l’histoire de Versailles — ses origines et son rôle de siège du monarque, ainsi que le contexte historique de l’État sous Louis XIV. Ils ont vu les monuments que l’on peut encore admirer aujourd’hui dans la résidence, devenue demeure officielle du roi dans la seconde moitié du XVIIe siècle, après une grande reconstruction du palais. Louis XIV s’installa à Versailles en 1682 et y transféra progressivement la cour royale ; le palais devint le plus grand d’Europe et, comme l’une des plus belles œuvres du baroque classique, reprit à Paris le rôle de capitale de la France.",
       "L’histoire du palais a suscité un immense intérêt parmi les participants et, après la conférence, il y a eu un temps pour les questions, suivi d’une petite collation."
-    ]
+    ],
+    "date": "octobre 2024"
   }
 }

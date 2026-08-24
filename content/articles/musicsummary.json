@@ -1,70 +1,76 @@
 {
-  "id": "musicsummary",
-  "ts": "2024-02-10",
-  "cat": "scholar",
-  "img": "/uploads/cover-scholar.svg",
-  "date": {
-    "en": "February 2024",
-    "pl": "Luty 2024",
-    "cz": "Únor 2024",
-    "it": "Febbraio 2024",
-    "sk": "Február 2024",
-    "de": "Februar 2024",
-    "fr": "février 2024"
-  },
-  "title": {
-    "en": "Music scholarships — summary of 2023",
-    "pl": "Stypendia muzyczne — podsumowanie 2023",
-    "cz": "Hudební stipendia — shrnutí roku 2023",
-    "it": "Borse di studio musicali — bilancio del 2023",
-    "sk": "Hudobné štipendiá — zhrnutie roka 2023",
-    "de": "Musikstipendien — Bilanz des Jahres 2023",
-    "fr": "Bourses d’études musicales — bilan de l’année 2023"
-  },
-  "lead": {
-    "en": "Ninety beneficiaries, 1,620 hours of music lessons and five Ukrainian teachers — a year of music as therapy.",
-    "pl": "Dziewięćdziesięcioro beneficjentów, 1620 godzin lekcji muzyki i pięcioro ukraińskich nauczycieli — rok muzyki jako terapii.",
-    "cz": "Devadesát příjemců, 1 620 hodin hudebních lekcí a pět ukrajinských učitelů — rok hudby jako terapie.",
-    "it": "Novanta beneficiari, 1.620 ore di lezioni di musica e cinque insegnanti ucraini — un anno di musica come terapia.",
-    "sk": "Deväťdesiat prijímateľov, 1 620 hodín hudobných lekcií a päť ukrajinských učiteľov — rok hudby ako terapie.",
-    "de": "Neunzig Geförderte, 1.620 Stunden Musikunterricht und fünf ukrainische Lehrkräfte — ein Jahr der Musik als Therapie.",
-    "fr": "Quatre-vingt-dix bénéficiaires, 1 620 heures de cours de musique et cinq enseignants ukrainiens — une année de musique comme thérapie."
-  },
-  "body": {
-    "en": [
-      "The scholarship programme run in cooperation with the Homo Faber Association is another important project of the Stock Foundation. The initiative provides talented Ukrainian youth with the musical education interrupted by the war and helps them cope with difficult experiences through their involvement in music.",
-      "In 2023, the programme supported 90 beneficiaries with 1,620 hours of music lessons, in cooperation with 5 highly qualified Ukrainian teachers. It gives young people a chance to continue the musical education interrupted by the outbreak of war and treats engagement in music and artistic expression as a therapeutic tool for coping with trauma.",
-      "The programme supports young people in regaining their life balance — and at the same time creates an opportunity to employ and support Ukrainian teachers."
-    ],
-    "pl": [
+  "pl": {
+    "title": "Stypendia muzyczne — podsumowanie 2023",
+    "lead": "Dziewięćdziesięcioro beneficjentów, 1620 godzin lekcji muzyki i pięcioro ukraińskich nauczycieli — rok muzyki jako terapii.",
+    "body": [
       "Program stypendialny prowadzony we współpracy ze stowarzyszeniem Homo Faber to kolejny ważny projekt Fundacji Stock. Inicjatywa zapewnia utalentowanej młodzieży z Ukrainy edukację muzyczną przerwaną przez wojnę i pomaga radzić sobie z trudnymi doświadczeniami poprzez zaangażowanie w muzykę.",
       "W 2023 roku program objął 90 beneficjentów i 1620 godzin lekcji muzyki, we współpracy z pięciorgiem wysoko wykwalifikowanych ukraińskich nauczycieli. Daje młodym szansę kontynuowania edukacji muzycznej przerwanej wybuchem wojny, a zaangażowanie w muzykę i ekspresję artystyczną traktuje jako narzędzie terapeutyczne w radzeniu sobie z traumą.",
       "Program wspiera młodych ludzi w odzyskiwaniu życiowej równowagi — a jednocześnie tworzy możliwość zatrudnienia i wsparcia ukraińskich nauczycieli."
     ],
-    "cz": [
+    "date": "Luty 2024",
+    "img": "/uploads/cover-scholar.svg",
+    "ts": "2024-02-10",
+    "cat": "scholar",
+    "id": "musicsummary"
+  },
+  "en": {
+    "title": "Music scholarships — summary of 2023",
+    "lead": "Ninety beneficiaries, 1,620 hours of music lessons and five Ukrainian teachers — a year of music as therapy.",
+    "body": [
+      "The scholarship programme run in cooperation with the Homo Faber Association is another important project of the Stock Foundation. The initiative provides talented Ukrainian youth with the musical education interrupted by the war and helps them cope with difficult experiences through their involvement in music.",
+      "In 2023, the programme supported 90 beneficiaries with 1,620 hours of music lessons, in cooperation with 5 highly qualified Ukrainian teachers. It gives young people a chance to continue the musical education interrupted by the outbreak of war and treats engagement in music and artistic expression as a therapeutic tool for coping with trauma.",
+      "The programme supports young people in regaining their life balance — and at the same time creates an opportunity to employ and support Ukrainian teachers."
+    ],
+    "date": "February 2024"
+  },
+  "cz": {
+    "title": "Hudební stipendia — shrnutí roku 2023",
+    "lead": "Devadesát příjemců, 1 620 hodin hudebních lekcí a pět ukrajinských učitelů — rok hudby jako terapie.",
+    "body": [
       "Stipendijní program vedený ve spolupráci se sdružením Homo Faber je dalším důležitým projektem Nadace Stock. Iniciativa poskytuje talentované ukrajinské mládeži hudební vzdělání přerušené válkou a pomáhá jí vyrovnávat se s těžkými zážitky prostřednictvím zapojení do hudby.",
       "V roce 2023 program podpořil 90 příjemců a 1 620 hodin hudebních lekcí ve spolupráci s pěti vysoce kvalifikovanými ukrajinskými učiteli. Dává mladým šanci pokračovat v hudebním vzdělávání přerušeném vypuknutím války a zapojení do hudby a uměleckého projevu chápe jako terapeutický nástroj pro zvládání traumatu.",
       "Program podporuje mladé lidi v znovunalezení životní rovnováhy — a zároveň vytváří příležitost zaměstnat a podpořit ukrajinské učitele."
     ],
-    "it": [
+    "date": "Únor 2024"
+  },
+  "it": {
+    "title": "Borse di studio musicali — bilancio del 2023",
+    "lead": "Novanta beneficiari, 1.620 ore di lezioni di musica e cinque insegnanti ucraini — un anno di musica come terapia.",
+    "body": [
       "Il programma di borse di studio gestito in collaborazione con l’associazione Homo Faber è un altro importante progetto della Fondazione Stock. L’iniziativa offre ai giovani talenti ucraini l’educazione musicale interrotta dalla guerra e li aiuta ad affrontare esperienze difficili attraverso il coinvolgimento nella musica.",
       "Nel 2023 il programma ha sostenuto 90 beneficiari con 1.620 ore di lezioni di musica, in collaborazione con 5 insegnanti ucraini altamente qualificati. Dà ai giovani la possibilità di continuare l’educazione musicale interrotta dallo scoppio della guerra e considera l’impegno nella musica e nell’espressione artistica uno strumento terapeutico per affrontare i traumi.",
       "Il programma sostiene i giovani nel ritrovare il proprio equilibrio di vita — e allo stesso tempo crea l’opportunità di impiegare e sostenere insegnanti ucraini."
     ],
-    "sk": [
+    "date": "Febbraio 2024"
+  },
+  "sk": {
+    "title": "Hudobné štipendiá — zhrnutie roka 2023",
+    "lead": "Deväťdesiat prijímateľov, 1 620 hodín hudobných lekcií a päť ukrajinských učiteľov — rok hudby ako terapie.",
+    "body": [
       "Štipendijný program realizovaný v spolupráci so združením Homo Faber je ďalším dôležitým projektom Nadácie Stock. Iniciatíva poskytuje talentovanej mládeži z Ukrajiny hudobné vzdelávanie prerušené vojnou a pomáha jej vyrovnávať sa s ťažkými zážitkami prostredníctvom zapojenia do hudby.",
       "V roku 2023 program podporil 90 prijímateľov a 1 620 hodín hudobných lekcií v spolupráci s piatimi vysokokvalifikovanými ukrajinskými učiteľmi. Dáva mladým ľuďom šancu pokračovať v hudobnom vzdelávaní prerušenom vypuknutím vojny a zapojenie do hudby a umeleckého prejavu chápe ako terapeutický nástroj na zvládanie traumy.",
       "Program podporuje mladých ľudí v znovunachádzaní životnej rovnováhy — a zároveň vytvára príležitosť zamestnať a podporiť ukrajinských učiteľov."
     ],
-    "de": [
+    "date": "Február 2024"
+  },
+  "de": {
+    "title": "Musikstipendien — Bilanz des Jahres 2023",
+    "lead": "Neunzig Geförderte, 1.620 Stunden Musikunterricht und fünf ukrainische Lehrkräfte — ein Jahr der Musik als Therapie.",
+    "body": [
       "Das in Zusammenarbeit mit dem Verein Homo Faber durchgeführte Stipendienprogramm ist ein weiteres wichtiges Projekt der Stiftung Stock. Die Initiative ermöglicht talentierten Jugendlichen aus der Ukraine die durch den Krieg unterbrochene musikalische Ausbildung und hilft ihnen, schwierige Erfahrungen durch die Beschäftigung mit Musik zu bewältigen.",
       "Im Jahr 2023 unterstützte das Programm 90 Geförderte mit 1.620 Stunden Musikunterricht, in Zusammenarbeit mit fünf hochqualifizierten ukrainischen Lehrkräften. Es gibt jungen Menschen die Chance, die durch den Kriegsausbruch unterbrochene musikalische Ausbildung fortzusetzen, und versteht die Beschäftigung mit Musik und künstlerischem Ausdruck als therapeutisches Mittel zur Bewältigung von Traumata.",
       "Das Programm unterstützt junge Menschen dabei, ihr Lebensgleichgewicht wiederzufinden — und schafft zugleich die Möglichkeit, ukrainische Lehrkräfte zu beschäftigen und zu unterstützen."
     ],
-    "fr": [
+    "date": "Februar 2024"
+  },
+  "fr": {
+    "title": "Bourses d’études musicales — bilan de l’année 2023",
+    "lead": "Quatre-vingt-dix bénéficiaires, 1 620 heures de cours de musique et cinq enseignants ukrainiens — une année de musique comme thérapie.",
+    "body": [
       "Le programme de bourses d’études mené en coopération avec l’association Homo Faber est un autre projet important de la Fondation Stock. L’initiative offre aux jeunes talents ukrainiens l’éducation musicale interrompue par la guerre et les aide à surmonter des expériences difficiles grâce à leur engagement dans la musique.",
       "En 2023, le programme a soutenu 90 bénéficiaires avec 1 620 heures de cours de musique, en coopération avec cinq enseignants ukrainiens hautement qualifiés. Il donne aux jeunes la possibilité de poursuivre l’éducation musicale interrompue par le déclenchement de la guerre et considère l’engagement dans la musique et l’expression artistique comme un outil thérapeutique pour faire face aux traumatismes.",
       "Le programme aide les jeunes à retrouver leur équilibre de vie — et crée en même temps l’opportunité d’employer et de soutenir des enseignants ukrainiens."
-    ]
+    ],
+    "date": "février 2024"
   }
 }

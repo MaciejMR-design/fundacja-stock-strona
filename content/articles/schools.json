@@ -1,69 +1,75 @@
 {
-  "id": "schools",
-  "ts": "2024-03-02",
-  "img": "/uploads/cover-community.svg",
-  "date": {
-    "en": "March 2024",
-    "pl": "Marzec 2024",
-    "cz": "Březen 2024",
-    "it": "Marzo 2024",
-    "sk": "Marec 2024",
-    "de": "März 2024",
-    "fr": "mars 2024"
-  },
-  "title": {
-    "en": "Supporting Lublin schools — summary of 2023",
-    "pl": "Wsparcie lubelskich szkół — podsumowanie 2023",
-    "cz": "Podpora lublinských škol — shrnutí roku 2023",
-    "it": "Sostegno alle scuole di Lublino — bilancio del 2023",
-    "sk": "Podpora lublinských škôl — zhrnutie roka 2023",
-    "de": "Unterstützung der Lubliner Schulen — Bilanz des Jahres 2023",
-    "fr": "Soutien aux écoles de Lublin — bilan de l’année 2023"
-  },
-  "lead": {
-    "en": "Nine schools, 3,800 pupils — including 800 children from Ukraine — and equipment that serves everyone and helps refugees integrate.",
-    "pl": "Dziewięć szkół, 3800 uczniów — w tym 800 dzieci z Ukrainy — i wyposażenie, które służy wszystkim i pomaga uchodźcom w integracji.",
-    "cz": "Devět škol, 3 800 žáků — včetně 800 dětí z Ukrajiny — a vybavení, které slouží všem a pomáhá uprchlíkům s integrací.",
-    "it": "Nove scuole, 3.800 alunni — tra cui 800 bambini dall’Ucraina — e attrezzature che servono a tutti e aiutano i rifugiati a integrarsi.",
-    "sk": "Deväť škôl, 3 800 žiakov — vrátane 800 detí z Ukrajiny — a vybavenie, ktoré slúži všetkým a pomáha utečencom pri integrácii.",
-    "de": "Neun Schulen, 3.800 Schülerinnen und Schüler — darunter 800 Kinder aus der Ukraine — und eine Ausstattung, die allen dient und Geflüchteten bei der Integration hilft.",
-    "fr": "Neuf écoles, 3 800 élèves — dont 800 enfants d’Ukraine — et des équipements qui servent à tous et aident les réfugiés à s’intégrer."
-  },
-  "body": {
-    "en": [
-      "The Stock Foundation’s programme of supporting Lublin schools through direct donations is a high social impact initiative. The equipment purchased is available to all students and helps integrate refugees, and it will also serve other school purposes in the long term.",
-      "In 2023, the programme reached 9 schools in Lublin and 3,800 pupils — beneficiaries of school aid, including 800 children from Ukraine. We funded 600 school kits, equipped classrooms with the necessary equipment and common rooms with new furniture, purchased materials and stationery, and supported the organisation of integration events.",
-      "A key principle of the programme is the commitment to equality — the equipment purchased serves all pupils — and it plays an important role in integrating refugee pupils into the school community."
-    ],
-    "pl": [
+  "pl": {
+    "title": "Wsparcie lubelskich szkół — podsumowanie 2023",
+    "lead": "Dziewięć szkół, 3800 uczniów — w tym 800 dzieci z Ukrainy — i wyposażenie, które służy wszystkim i pomaga uchodźcom w integracji.",
+    "body": [
       "Program Fundacji Stock wspierania lubelskich szkół poprzez bezpośrednie darowizny to inicjatywa o dużym oddziaływaniu społecznym. Zakupione wyposażenie jest dostępne dla wszystkich uczniów i pomaga w integracji uchodźców, a w dłuższej perspektywie będzie służyć także innym szkolnym celom.",
       "W 2023 roku program objął 9 lubelskich szkół i 3800 uczniów — beneficjentów pomocy szkolnej, w tym 800 dzieci z Ukrainy. Sfinansowaliśmy 600 wyprawek szkolnych, wyposażyliśmy klasy w niezbędny sprzęt, a świetlice w nowe meble, zakupiliśmy materiały i artykuły papiernicze oraz wsparliśmy organizację wydarzeń integracyjnych.",
       "Kluczową zasadą programu jest równość — zakupione wyposażenie służy wszystkim uczniom — a sam program odgrywa ważną rolę w integracji dzieci uchodźczych ze szkolną społecznością."
     ],
-    "cz": [
+    "date": "Marzec 2024",
+    "img": "/uploads/cover-community.svg",
+    "ts": "2024-03-02",
+    "id": "schools"
+  },
+  "en": {
+    "title": "Supporting Lublin schools — summary of 2023",
+    "lead": "Nine schools, 3,800 pupils — including 800 children from Ukraine — and equipment that serves everyone and helps refugees integrate.",
+    "body": [
+      "The Stock Foundation’s programme of supporting Lublin schools through direct donations is a high social impact initiative. The equipment purchased is available to all students and helps integrate refugees, and it will also serve other school purposes in the long term.",
+      "In 2023, the programme reached 9 schools in Lublin and 3,800 pupils — beneficiaries of school aid, including 800 children from Ukraine. We funded 600 school kits, equipped classrooms with the necessary equipment and common rooms with new furniture, purchased materials and stationery, and supported the organisation of integration events.",
+      "A key principle of the programme is the commitment to equality — the equipment purchased serves all pupils — and it plays an important role in integrating refugee pupils into the school community."
+    ],
+    "date": "March 2024"
+  },
+  "cz": {
+    "title": "Podpora lublinských škol — shrnutí roku 2023",
+    "lead": "Devět škol, 3 800 žáků — včetně 800 dětí z Ukrajiny — a vybavení, které slouží všem a pomáhá uprchlíkům s integrací.",
+    "body": [
       "Program Nadace Stock na podporu lublinských škol prostřednictvím přímých darů je iniciativou s velkým společenským dopadem. Zakoupené vybavení je k dispozici všem žákům, pomáhá s integrací uprchlíků a v dlouhodobém horizontu poslouží i dalším školním účelům.",
       "V roce 2023 program zahrnul 9 lublinských škol a 3 800 žáků — příjemců školní pomoci, včetně 800 dětí z Ukrajiny. Financovali jsme 600 školních sad, vybavili třídy potřebným zařízením a družiny novým nábytkem, nakoupili materiály a papírenské potřeby a podpořili pořádání integračních akcí.",
       "Klíčovou zásadou programu je rovnost — zakoupené vybavení slouží všem žákům — a program hraje důležitou roli v začleňování uprchlických dětí do školní komunity."
     ],
-    "it": [
+    "date": "Březen 2024"
+  },
+  "it": {
+    "title": "Sostegno alle scuole di Lublino — bilancio del 2023",
+    "lead": "Nove scuole, 3.800 alunni — tra cui 800 bambini dall’Ucraina — e attrezzature che servono a tutti e aiutano i rifugiati a integrarsi.",
+    "body": [
       "Il programma della Fondazione Stock di sostegno alle scuole di Lublino attraverso donazioni dirette è un’iniziativa ad alto impatto sociale. Le attrezzature acquistate sono a disposizione di tutti gli studenti, aiutano a integrare i rifugiati e a lungo termine serviranno anche ad altri scopi scolastici.",
       "Nel 2023 il programma ha raggiunto 9 scuole di Lublino e 3.800 alunni — beneficiari degli aiuti scolastici, tra cui 800 bambini dall’Ucraina. Abbiamo finanziato 600 kit scolastici, dotato le aule delle attrezzature necessarie e le sale comuni di nuovi mobili, acquistato materiali e articoli di cancelleria e sostenuto l’organizzazione di eventi di integrazione.",
       "Un principio chiave del programma è l’impegno per l’uguaglianza — le attrezzature acquistate servono a tutti gli alunni — e il programma svolge un ruolo importante nell’integrazione degli alunni rifugiati nella comunità scolastica."
     ],
-    "sk": [
+    "date": "Marzo 2024"
+  },
+  "sk": {
+    "title": "Podpora lublinských škôl — zhrnutie roka 2023",
+    "lead": "Deväť škôl, 3 800 žiakov — vrátane 800 detí z Ukrajiny — a vybavenie, ktoré slúži všetkým a pomáha utečencom pri integrácii.",
+    "body": [
       "Program Nadácie Stock na podporu lublinských škôl prostredníctvom priamych darov je iniciatívou s veľkým spoločenským dosahom. Zakúpené vybavenie je k dispozícii všetkým žiakom, pomáha pri integrácii utečencov a v dlhodobom horizonte poslúži aj ďalším školským účelom.",
       "V roku 2023 program zahŕňal 9 lublinských škôl a 3 800 žiakov — prijímateľov školskej pomoci, vrátane 800 detí z Ukrajiny. Financovali sme 600 školských výbav, vybavili triedy potrebným zariadením a školské kluby novým nábytkom, nakúpili materiály a papiernické potreby a podporili organizáciu integračných podujatí.",
       "Kľúčovou zásadou programu je rovnosť — zakúpené vybavenie slúži všetkým žiakom — a samotný program zohráva dôležitú úlohu pri začleňovaní utečeneckých detí do školskej komunity."
     ],
-    "de": [
+    "date": "Marec 2024"
+  },
+  "de": {
+    "title": "Unterstützung der Lubliner Schulen — Bilanz des Jahres 2023",
+    "lead": "Neun Schulen, 3.800 Schülerinnen und Schüler — darunter 800 Kinder aus der Ukraine — und eine Ausstattung, die allen dient und Geflüchteten bei der Integration hilft.",
+    "body": [
       "Das Programm der Stiftung Stock zur Unterstützung der Lubliner Schulen durch direkte Spenden ist eine Initiative mit großer gesellschaftlicher Wirkung. Die angeschaffte Ausstattung steht allen Schülerinnen und Schülern zur Verfügung, hilft bei der Integration von Geflüchteten und wird langfristig auch anderen schulischen Zwecken dienen.",
       "Im Jahr 2023 umfasste das Programm 9 Lubliner Schulen und 3.800 Schülerinnen und Schüler — Empfänger der Schulhilfe, darunter 800 Kinder aus der Ukraine. Wir finanzierten 600 Schulstartpakete, statteten Klassenzimmer mit der notwendigen Ausrüstung und Aufenthaltsräume mit neuen Möbeln aus, kauften Materialien und Schreibwaren und unterstützten die Organisation von Integrationsveranstaltungen.",
       "Ein zentraler Grundsatz des Programms ist die Gleichheit — die angeschaffte Ausstattung dient allen Schülerinnen und Schülern — und das Programm selbst spielt eine wichtige Rolle bei der Integration geflüchteter Kinder in die Schulgemeinschaft."
     ],
-    "fr": [
+    "date": "März 2024"
+  },
+  "fr": {
+    "title": "Soutien aux écoles de Lublin — bilan de l’année 2023",
+    "lead": "Neuf écoles, 3 800 élèves — dont 800 enfants d’Ukraine — et des équipements qui servent à tous et aident les réfugiés à s’intégrer.",
+    "body": [
       "Le programme de la Fondation Stock de soutien aux écoles de Lublin par des dons directs est une initiative à fort impact social. Les équipements achetés sont à la disposition de tous les élèves, aident les réfugiés à s’intégrer et, à long terme, serviront aussi à d’autres besoins scolaires.",
       "En 2023, le programme a concerné 9 écoles de Lublin et 3 800 élèves — bénéficiaires de l’aide scolaire, dont 800 enfants d’Ukraine. Nous avons financé 600 kits de fournitures scolaires, équipé les salles de classe du matériel nécessaire et les salles communes de nouveaux meubles, acheté des matériaux et des articles de papeterie, et soutenu l’organisation d’événements d’intégration.",
       "Un principe clé du programme est l’égalité — les équipements achetés servent à tous les élèves — et le programme lui-même joue un rôle important dans l’intégration des enfants réfugiés au sein de la communauté scolaire."
-    ]
+    ],
+    "date": "mars 2024"
   }
 }
