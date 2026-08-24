@@ -1,33 +1,6 @@
 /* GENERATED from content/articles/*.json by build-langs.mjs — do not edit by hand. */
 window.ARTICLES = [
   {
-    "id": "testowy-wpis-warsztaty-plastyczne-dla-seniorow",
-    "ts": "2026-08-24",
-    "cat": "art",
-    "img": "/uploads/hero-volunteers-1600.jpg",
-    "images": [
-      "/uploads/news-bandura.jpg",
-      "/uploads/news-castlehill-800.jpg",
-      "/uploads/news-chmielowski.jpg",
-      "/uploads/news-cleanup.jpg"
-    ],
-    "date": {
-      "pl": "24 sierpnia 2026"
-    },
-    "title": {
-      "pl": "Testowy wpis — warsztaty plastyczne dla seniorów"
-    },
-    "lead": {
-      "pl": "W sierpniu zaprosiliśmy seniorów z Lublina na warsztaty plastyczne. To wpis testowy — sprawdzamy automatyczne tłumaczenia."
-    },
-    "body": {
-      "pl": [
-        "Pod koniec sierpnia Fundacja Stock zorganizowała warsztaty plastyczne dla dwudziestu seniorów z lubelskich domów pomocy społecznej. Przez trzy godziny uczestnicy malowali pejzaże inspirowane Starym Miastem, a gotowe prace zawisną jesienią na wystawie w siedzibie fundacji.",
-        "W przygotowaniu spotkania pomogli wolontariusze oraz zaprzyjaźnione Stowarzyszenie Homo Faber. Kolejne warsztaty planujemy na październik — informacje pojawią się w naszych aktualnościach."
-      ]
-    }
-  },
-  {
     "id": "stock-move-challenge",
     "ts": "2026-08-10",
     "img": "/uploads/stockmove-2.webp",

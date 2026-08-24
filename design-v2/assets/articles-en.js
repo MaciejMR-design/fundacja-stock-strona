@@ -1,33 +1,6 @@
 /* GENERATED from content/articles/*.json by build-langs.mjs — do not edit by hand. */
 window.ARTICLES = [
   {
-    "id": "testowy-wpis-warsztaty-plastyczne-dla-seniorow",
-    "ts": "2026-08-24",
-    "cat": "art",
-    "img": "/uploads/hero-volunteers-1600.jpg",
-    "images": [
-      "/uploads/news-bandura.jpg",
-      "/uploads/news-castlehill-800.jpg",
-      "/uploads/news-chmielowski.jpg",
-      "/uploads/news-cleanup.jpg"
-    ],
-    "date": {
-      "en": "24 August 2026"
-    },
-    "title": {
-      "en": "Test post — art workshops for older people"
-    },
-    "lead": {
-      "en": "In August, we invited senior citizens from Lublin to take part in art workshops. This is a test post — we’re checking the automatic translations."
-    },
-    "body": {
-      "en": [
-        "At the end of August, the ‘Fundacja Stock’ organised art workshops for twenty senior citizens from care homes in Lublin. For three hours, the participants painted landscapes inspired by the Old Town, and the finished works will be displayed in an exhibition at the foundation’s headquarters this autumn.",
-        "Volunteers and our partner organisation, the ‘Homo Faber’ Association, helped to organise the event. We are planning further workshops for October — details will be posted in our news section."
-      ]
-    }
-  },
-  {
     "id": "stock-move-challenge",
     "ts": "2026-08-10",
     "img": "/uploads/stockmove-2.webp",

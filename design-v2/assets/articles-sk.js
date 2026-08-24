@@ -1,33 +1,6 @@
 /* GENERATED from content/articles/*.json by build-langs.mjs — do not edit by hand. */
 window.ARTICLES = [
   {
-    "id": "testowy-wpis-warsztaty-plastyczne-dla-seniorow",
-    "ts": "2026-08-24",
-    "cat": "art",
-    "img": "/uploads/hero-volunteers-1600.jpg",
-    "images": [
-      "/uploads/news-bandura.jpg",
-      "/uploads/news-castlehill-800.jpg",
-      "/uploads/news-chmielowski.jpg",
-      "/uploads/news-cleanup.jpg"
-    ],
-    "date": {
-      "sk": "24. augusta 2026"
-    },
-    "title": {
-      "sk": "Ukážkový príspevok — výtvarné dielne pre seniorov"
-    },
-    "lead": {
-      "sk": "V auguste sme pozvali seniorov z Lublinu na výtvarné dielne. Toto je testovací príspevok – overujeme automatické preklady."
-    },
-    "body": {
-      "sk": [
-        "Na konci augusta zorganizovala nadácia „Fundacja Stock“ výtvarné dielne pre dvadsať seniorov z lubelských domovov sociálnej starostlivosti. Počas troch hodín účastníci maľovali krajinky inšpirované Starým mestom a hotové diela budú na jeseň vystavené v sídle nadácie.",
-        "Pri príprave stretnutia nám pomohli dobrovoľníci a partnerské združenie „Homo Faber“. Ďalšie workshopy plánujeme na október – informácie uverejníme v našich novinkách."
-      ]
-    }
-  },
-  {
     "id": "stock-move-challenge",
     "ts": "2026-08-10",
     "img": "/uploads/stockmove-2.webp",
