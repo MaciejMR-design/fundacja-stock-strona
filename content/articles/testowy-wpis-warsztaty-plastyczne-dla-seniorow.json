@@ -16,5 +16,53 @@
     "ts": "2026-08-24",
     "dateSpan": "day",
     "cat": "art"
+  },
+  "en": {
+    "title": "Test post — art workshops for older people",
+    "lead": "In August, we invited senior citizens from Lublin to take part in art workshops. This is a test post — we’re checking the automatic translations.",
+    "body": [
+      "At the end of August, the ‘Fundacja Stock’ organised art workshops for twenty senior citizens from care homes in Lublin. For three hours, the participants painted landscapes inspired by the Old Town, and the finished works will be displayed in an exhibition at the foundation’s headquarters this autumn.",
+      "Volunteers and our partner organisation, the ‘Homo Faber’ Association, helped to organise the event. We are planning further workshops for October — details will be posted in our news section."
+    ]
+  },
+  "cz": {
+    "title": "Zkušební příspěvek — výtvarné dílny pro seniory",
+    "lead": "V srpnu jsme pozvali seniory z Lublinu na výtvarné dílny. Toto je zkušební příspěvek – testujeme automatické překlady.",
+    "body": [
+      "Na konci srpna uspořádala nadace „Fundacja Stock“ výtvarné dílny pro dvacet seniorů z lubelských domovů sociální péče. Účastníci tři hodiny malovali krajiny inspirované Starým Městem a hotová díla budou na podzim vystavena v sídle nadace.",
+      "S přípravou setkání nám pomohli dobrovolníci a naše partnerské sdružení „Homo Faber“. Další workshopy plánujeme na říjen – informace o nich zveřejníme v našich novinkách."
+    ]
+  },
+  "it": {
+    "title": "Post di prova — laboratori artistici per anziani",
+    "lead": "Ad agosto abbiamo invitato gli anziani di Lublino a partecipare a dei laboratori artistici. Questo è un post di prova: stiamo verificando le traduzioni automatiche.",
+    "body": [
+      "Alla fine di agosto, la fondazione “Fundacja Stock” ha organizzato un laboratorio artistico per venti anziani provenienti dalle case di riposo di Lublino. Per tre ore i partecipanti hanno dipinto paesaggi ispirati al Centro Storico, e le opere realizzate saranno esposte in autunno in una mostra presso la sede della fondazione.",
+      "All’organizzazione dell’incontro hanno contribuito alcuni volontari e l’associazione nostra partner “Homo Faber”. Stiamo programmando i prossimi laboratori per ottobre: le informazioni saranno pubblicate nella nostra sezione “Notizie”."
+    ]
+  },
+  "sk": {
+    "title": "Ukážkový príspevok — výtvarné dielne pre seniorov",
+    "lead": "V auguste sme pozvali seniorov z Lublinu na výtvarné dielne. Toto je testovací príspevok – overujeme automatické preklady.",
+    "body": [
+      "Na konci augusta zorganizovala nadácia „Fundacja Stock“ výtvarné dielne pre dvadsať seniorov z lubelských domovov sociálnej starostlivosti. Počas troch hodín účastníci maľovali krajinky inšpirované Starým mestom a hotové diela budú na jeseň vystavené v sídle nadácie.",
+      "Pri príprave stretnutia nám pomohli dobrovoľníci a partnerské združenie „Homo Faber“. Ďalšie workshopy plánujeme na október – informácie uverejníme v našich novinkách."
+    ]
+  },
+  "de": {
+    "title": "Testbeitrag – Kunstworkshops für Senioren",
+    "lead": "Im August haben wir Senioren aus Lublin zu einem Kunstworkshop eingeladen. Dies ist ein Testbeitrag – wir prüfen die automatischen Übersetzungen.",
+    "body": [
+      "Ende August organisierte die Stiftung „Fundacja Stock“ einen Malworkshop für zwanzig Senioren aus Sozialheimen in Lublin. Drei Stunden lang malten die Teilnehmer Landschaften, die von der Altstadt inspiriert waren, und die fertigen Werke werden im Herbst in einer Ausstellung im Sitz der Stiftung zu sehen sein.",
+      "Bei der Vorbereitung des Treffens haben Freiwillige sowie der befreundete Verein „Homo Faber“ mitgeholfen. Die nächsten Workshops planen wir für Oktober – Informationen dazu werden in unseren Neuigkeiten veröffentlicht."
+    ]
+  },
+  "fr": {
+    "title": "Article test — ateliers artistiques pour les seniors",
+    "lead": "En août, nous avons invité des seniors de Lublin à participer à des ateliers artistiques. Il s'agit d'un article test — nous vérifions les traductions automatiques.",
+    "body": [
+      "Fin août, la fondation «Fundacja Stock» a organisé des ateliers d'art pour vingt personnes âgées issues de maisons de retraite de Lublin. Pendant trois heures, les participants ont peint des paysages inspirés de la Vieille Ville ; leurs œuvres seront exposées à l'automne au siège de la fondation.",
+      "Des bénévoles ainsi que l'association partenaire « Homo Faber » ont contribué à l'organisation de cette rencontre. Nous prévoyons d'autres ateliers en octobre — vous trouverez plus d'informations à ce sujet dans notre rubrique « Actualités »."
+    ]
   }
 }
