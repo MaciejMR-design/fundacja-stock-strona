@@ -29,12 +29,12 @@ Panel ma cztery sekcje:
 | **Statut i sprawozdania** | pliki PDF na podstronie „Statut i sprawozdania" |
 | **Teksty stron** | teksty i liczby w istniejących sekcjach podstron |
 
-Każdy zapis pojawia się na stronie po 1–2 minutach, we wszystkich językach.
+Każdy zapis pojawia się na stronie po 1–2 minutach. Aktualności wystarczy napisać po polsku — tłumaczenia na pozostałe języki dorabiają się same kilka minut później.
 
 ## Dodanie nowej aktualności
 1. Sekcja **Aktualności** → przycisk **New**.
 2. Wypełnij pola — formularz idzie od treści do ustawień technicznych:
-   - **Tytuł, Zajawka, Treść** — wypełnij **po polsku i po angielsku**. Pola czeskie, włoskie, słowackie, niemieckie i francuskie można zostawić puste — w tych wersjach pokaże się wtedy tekst angielski.
+   - **Tytuł, Zajawka, Treść** — wypełnij **tylko po polsku**. Angielski i pozostałe języki **tłumaczą się automatycznie** kilka minut po zapisaniu (przez chwilę, do czasu przetłumaczenia, obce wersje pokazują tekst polski). Jeśli w którymś polu językowym wpiszesz własne tłumaczenie, automat go **nie ruszy** — Twoja wersja ma pierwszeństwo.
    - Treść wpisuje się **akapitami** — każdy akapit to osobne pole (przycisk „+" dodaje kolejny).
    - **Zajawka** to 1–2 zdania widoczne na kafelku wpisu na liście Aktualności i w wynikach wyszukiwania Google. W samym artykule się nie pokazuje — tam od razu zaczyna się Treść.
    - **Zdjęcie główne** — wgraj z dysku. Zdjęcia z telefonu są przy wgrywaniu automatycznie zmniejszane i przerabiane na lekki format WebP — nie trzeba ich wcześniej przygotowywać.
@@ -81,7 +81,7 @@ Zdjęcia są optymalizowane automatycznie przy wgrywaniu; PDF-y trafiają na str
 ## Gdy zmiana nie pojawia się na stronie
 Strona jest przebudowywana po każdym zapisie i przy tej okazji sprawdzana.
 Jeśli w treści jest coś, co zepsułoby stronę (dwa wpisy o tym samym identyfikatorze,
-brak polskiego lub angielskiego tekstu, wskazanie pliku, którego nie ma), przebudowa
+brak polskiego tekstu, wskazanie pliku, którego nie ma), przebudowa
 zatrzymuje się i **na stronie zostaje poprzednia, działająca wersja**. Nic nie ginie —
 napisz do nas, powiemy, które pole poprawić.
 

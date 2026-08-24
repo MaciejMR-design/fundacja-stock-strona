@@ -66,7 +66,7 @@ collections:
     label: Aktualności
     label_singular: Aktualność
     icon: newspaper
-    description: 'Wpisy z sekcji Aktualności. Nowy wpis publikuje się na stronie 1–2 minuty po zapisaniu. Wypełnij po polsku i po angielsku — pozostałe języki można zostawić puste (pokaże się wtedy wersja angielska).'
+    description: 'Wpisy z sekcji Aktualności. Wypełnij tylko po polsku — tłumaczenia na pozostałe języki dorabiają się automatycznie kilka minut po zapisaniu. Wpisane ręcznie tłumaczenie ma pierwszeństwo i nie jest nadpisywane.'
     folder: content/articles
     format: json
     extension: json
@@ -96,40 +96,45 @@ collections:
     fields:
       # Kolejność pól = kolejność myślenia o wpisie: najpierw treść, potem
       # zdjęcia, na końcu ustawienia techniczne (data, kategoria, adres).
+      # We wpisach obowiązkowy jest tylko polski: brakujące języki uzupełnia
+      # automat tłumaczeń (.github/workflows/translate.yml, DeepL) kilka minut
+      # po zapisie. Pole wypełnione ręcznie nie jest nigdy nadpisywane.
+      # UWAGA: w „Rada i Zarząd" angielski pozostaje obowiązkowy — automat
+      # tłumaczy wyłącznie wpisy z Aktualności.
       - name: title
         label: Tytuł
         widget: object
-        fields: &langString
+        fields:
           - { name: pl, label: Polski, widget: string }
-          - { name: en, label: Angielski, widget: string }
-          - { name: cz, label: 'Czeski (opcjonalnie)', widget: string, required: false }
-          - { name: it, label: 'Włoski (opcjonalnie)', widget: string, required: false }
-          - { name: sk, label: 'Słowacki (opcjonalnie)', widget: string, required: false }
-          - { name: de, label: 'Niemiecki (opcjonalnie)', widget: string, required: false }
-          - { name: fr, label: 'Francuski (opcjonalnie)', widget: string, required: false }
+          - { name: en, label: 'Angielski (uzupełni się samo — można wpisać własne)', widget: string, required: false }
+          - { name: cz, label: 'Czeski (uzupełni się samo)', widget: string, required: false }
+          - { name: it, label: 'Włoski (uzupełni się samo)', widget: string, required: false }
+          - { name: sk, label: 'Słowacki (uzupełni się samo)', widget: string, required: false }
+          - { name: de, label: 'Niemiecki (uzupełni się samo)', widget: string, required: false }
+          - { name: fr, label: 'Francuski (uzupełni się samo)', widget: string, required: false }
       - name: lead
         label: 'Zajawka (1–2 zdania)'
         hint: 'Widoczna na kafelku wpisu na liście Aktualności i w wynikach wyszukiwania Google. W samym artykule się nie pokazuje — tam od razu zaczyna się Treść.'
         widget: object
-        fields: &langText
+        fields:
           - { name: pl, label: Polski, widget: text }
-          - { name: en, label: Angielski, widget: text }
-          - { name: cz, label: 'Czeski (opcjonalnie)', widget: text, required: false }
-          - { name: it, label: 'Włoski (opcjonalnie)', widget: text, required: false }
-          - { name: sk, label: 'Słowacki (opcjonalnie)', widget: text, required: false }
-          - { name: de, label: 'Niemiecki (opcjonalnie)', widget: text, required: false }
-          - { name: fr, label: 'Francuski (opcjonalnie)', widget: text, required: false }
+          - { name: en, label: 'Angielski (uzupełni się samo — można wpisać własne)', widget: text, required: false }
+          - { name: cz, label: 'Czeski (uzupełni się samo)', widget: text, required: false }
+          - { name: it, label: 'Włoski (uzupełni się samo)', widget: text, required: false }
+          - { name: sk, label: 'Słowacki (uzupełni się samo)', widget: text, required: false }
+          - { name: de, label: 'Niemiecki (uzupełni się samo)', widget: text, required: false }
+          - { name: fr, label: 'Francuski (uzupełni się samo)', widget: text, required: false }
       - name: body
         label: 'Treść (każdy akapit osobno)'
         widget: object
-        fields: &langParas
+        fields:
           - { name: pl, label: 'Polski — akapity', widget: list, field: { name: p, label: Akapit, widget: text } }
-          - { name: en, label: 'Angielski — akapity', widget: list, field: { name: p, label: Akapit, widget: text } }
-          - { name: cz, label: 'Czeski (opcjonalnie)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
-          - { name: it, label: 'Włoski (opcjonalnie)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
-          - { name: sk, label: 'Słowacki (opcjonalnie)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
-          - { name: de, label: 'Niemiecki (opcjonalnie)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
-          - { name: fr, label: 'Francuski (opcjonalnie)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+          - { name: en, label: 'Angielski (uzupełni się samo — można wpisać własne)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+          - { name: cz, label: 'Czeski (uzupełni się samo)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+          - { name: it, label: 'Włoski (uzupełni się samo)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+          - { name: sk, label: 'Słowacki (uzupełni się samo)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+          - { name: de, label: 'Niemiecki (uzupełni się samo)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+          - { name: fr, label: 'Francuski (uzupełni się samo)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
       - { name: img, label: 'Zdjęcie główne (okładka)', widget: image }
       - name: images
         label: 'Galeria (opcjonalnie — zastępuje okładkę w artykule)'
@@ -205,14 +210,30 @@ collections:
       - { name: order, label: 'Kolejność w obrębie organu', hint: 'Mniejsza liczba = wyżej. Przewodniczący zwykle 10, kolejne osoby 20, 30…', widget: number, value_type: int, default: 100, min: 1 }
       - { name: name, label: 'Imię i nazwisko', widget: string }
       - { name: photo, label: 'Zdjęcie', widget: image }
+      # Osób nie obejmuje automat tłumaczeń (tłumaczy tylko Aktualności),
+      # dlatego tutaj polski i angielski pozostają obowiązkowe.
       - name: role
         label: 'Funkcja'
         widget: object
-        fields: *langString
+        fields:
+          - { name: pl, label: Polski, widget: string }
+          - { name: en, label: Angielski, widget: string }
+          - { name: cz, label: 'Czeski (opcjonalnie)', widget: string, required: false }
+          - { name: it, label: 'Włoski (opcjonalnie)', widget: string, required: false }
+          - { name: sk, label: 'Słowacki (opcjonalnie)', widget: string, required: false }
+          - { name: de, label: 'Niemiecki (opcjonalnie)', widget: string, required: false }
+          - { name: fr, label: 'Francuski (opcjonalnie)', widget: string, required: false }
       - name: bio
         label: 'Biogram (każdy akapit osobno)'
         widget: object
-        fields: *langParas
+        fields:
+          - { name: pl, label: 'Polski — akapity', widget: list, field: { name: p, label: Akapit, widget: text } }
+          - { name: en, label: 'Angielski — akapity', widget: list, field: { name: p, label: Akapit, widget: text } }
+          - { name: cz, label: 'Czeski (opcjonalnie)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+          - { name: it, label: 'Włoski (opcjonalnie)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+          - { name: sk, label: 'Słowacki (opcjonalnie)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+          - { name: de, label: 'Niemiecki (opcjonalnie)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
+          - { name: fr, label: 'Francuski (opcjonalnie)', widget: list, required: false, field: { name: p, label: Akapit, widget: text } }
 
   - name: dokumenty
     label: 'Statut i sprawozdania'

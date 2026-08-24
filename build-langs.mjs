@@ -63,11 +63,12 @@ function validateContent(srcDir) {
        statusu OPP nie należą do żadnego programu i pokazują się bez etykiety
        (łapie je tylko filtr „Wszystkie”). Podana kategoria musi być z listy. */
     if (a.cat && !CATEGORIES.includes(a.cat)) problems.push(`${where}: kategoria „${a.cat}” — dozwolone: ${CATEGORIES.join(', ')} albo brak kategorii`);
+    /* Wpisy wymagają tylko polskiego — brakujące języki dorabia automat
+       tłumaczeń (translate-content.mjs przez GitHub Action), a do czasu jego
+       commita strona pokazuje tekst z siatki zapasowej niżej. */
     for (const key of ['title', 'lead', 'body']) {
-      for (const l of ['pl', 'en']) {
-        const v = a[key]?.[l];
-        if (!v || (Array.isArray(v) && v.length === 0)) problems.push(`${where}: brakuje pola „${key}” w języku ${l.toUpperCase()}`);
-      }
+      const v = a[key]?.pl;
+      if (!v || (Array.isArray(v) && v.length === 0)) problems.push(`${where}: brakuje pola „${key}” w języku PL`);
     }
     if (!a.img) problems.push(`${where}: brak zdjęcia głównego`);
     else if (missingFile(a.img)) problems.push(`${where}: plik zdjęcia ${a.img} nie istnieje w repozytorium`);
@@ -160,8 +161,8 @@ function displayDate(ts, lang, span) {
   }).format(d);
 }
 
-/* Must run before the fallbacks below, otherwise a missing Polish or English
-   text would be quietly filled in from the other language instead of reported. */
+/* Must run before the fallbacks below, otherwise a missing Polish text would
+   be quietly filled in from another language instead of reported. */
 validateContent(SRC);
 
 /* Normalise every entry so no page can render blank/undefined:
