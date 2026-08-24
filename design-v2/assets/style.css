@@ -477,7 +477,8 @@ html.doc-open, html.doc-open body { overflow: hidden; }
 .person-hero .role-tag { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
 .person-hero h1 { font-family: 'Literata', serif; font-weight: 300; font-size: clamp(34px, 4.5vw, 56px); line-height: 1.1; margin: 0 0 20px; }
 .person-hero .bio p { font-size: 16px; line-height: 1.8; color: var(--navy); margin: 0 0 18px; }
-.person-hero .bio p:first-of-type { font-size: 18px; color: rgba(22,59,101,.9); font-weight: 500; }
+/* Bez wyróżniania pierwszego akapitu biogramu (prośba klienta 24.08.2026 —
+   biogramy jednoakapitowe wychodziły w całości pogrubione). */
 /* Telefon: układ przechodzi w jedną kolumnę, a portret — zwężony do 260 px —
    staje na środku. Bez marginesów auto lepił się do lewej krawędzi nad tekstem
    pełnej szerokości i wyglądał na źle złożony (zgłoszenie z 11.08.2026). */

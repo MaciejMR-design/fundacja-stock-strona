@@ -513,6 +513,9 @@ function transform(src, page, lang, art) {
   h = h.replace('</head>',
     '<!-- ld-json -->\n' + bloki.map(ld).join('\n') + '\n<!-- /ld-json -->\n</head>');
 
+  // strona główna: kafelki z trzema najnowszymi wpisami w języku strony
+  if (tplPage === 'index.html') h = fillBlock(h, 'NEWS3', kartyAktualnosci(lang));
+
   // inject the editable PAGE_I18N dictionary from content/pages/<page>.json
   const dict = PAGE_DICTS[tplPage];
   if (dict) {
@@ -601,6 +604,38 @@ function przepiszOdnosniki(html, lang) {
     .replace(new RegExp(`href="(?:\\/(?:${KATALOGI_JEZYKOW})\\/|\\/)?([a-z0-9][a-z0-9-]*)(?:\\.html)?((?:#[^"]*)?)"`, 'g'),
       (dopasowanie, nazwa, kotwica) =>
         STRONY.has(nazwa) ? `href="${pageHref(lang, nazwa)}${kotwica}"` : dopasowanie);
+}
+
+/* Trzy najnowsze wpisy jako kafelki „Aktualności” na stronie głównej —
+   generowane przy każdej przebudowie w języku strony (marker CONTENT:NEWS3
+   w index.html). Wcześniej karty były wpisane na sztywno w słowniku strony
+   głównej (klucze news1–news3) i nie nadążały za nowymi wpisami z panelu.
+   Bez data-i18n: teksty są zapieczone, więc skrypty niczego tu nie podmieniają.
+   Odnośniki „/article-…” przepisuje na wersję językową przepiszOdnosniki(). */
+function kartyAktualnosci(lang) {
+  const t = PAGE_DICTS['article.html']?.[lang] || {};
+  const ti = PAGE_DICTS['index.html']?.[lang] || {};
+  return ARTICLES.slice(0, 3).map((a, i) => {
+    const img = String(a.img || '');
+    /* miniatura -800 tylko, gdy plik naprawdę istnieje (starsze zdjęcia mają
+       warianty, wgrywane z panelu są pojedyncze) */
+    const m = img.match(/^(.+)\.([a-z]{3,4})$/i);
+    const ma800 = m && existsSync(join(SRC, `${m[1]}-800.${m[2]}`.replace(/^\//, '')));
+    const srcset = ma800 ? ` srcset="${esc(`${m[1]}-800.${m[2]}`)} 800w, ${esc(img)} 1600w" sizes="(max-width: 620px) 100vw, (max-width: 1020px) 50vw, 33vw"` : '';
+    const kat = a.cat && t['cat' + a.cat] ? `<span class="cat">${escText(t['cat' + a.cat])}</span>` : '';
+    const badge = i === 0 ? `<span class="newest-badge"><span class="dot"></span><span>${escText(ti.newestLabel || '')}</span></span>` : '';
+    return `        <article class="card reveal">
+          <a href="/article-${a.id}" style="display:flex;flex-direction:column;flex:1;color:inherit;">
+            <div class="card-media"><img src="${esc(img)}"${srcset} alt="${esc(a.title[lang])}" loading="lazy" decoding="async">${kat}${badge}</div>
+            <div class="card-body">
+              <time>${escText(a.date[lang])}</time>
+              <h3>${escText(a.title[lang])}</h3>
+              <p>${escText(a.lead[lang])}</p>
+              <span class="read-more" style="margin-top:4px;"><span>${escText(t.readMore || '')}</span> <span class="arr">→</span></span>
+            </div>
+          </a>
+        </article>`;
+  }).join('\n');
 }
 
 /* Marker-based HTML injection: <!-- CONTENT:NAME -->…<!-- /CONTENT --> is
