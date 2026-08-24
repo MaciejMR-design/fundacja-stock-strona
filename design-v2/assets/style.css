@@ -140,9 +140,11 @@ header.site.scrolled .logo img { height: 42px; }
 
 /* ---------- page hero (subpages) ---------- */
 .page-hero { position: relative; background: linear-gradient(160deg, #163B65 0%, #002957 100%); overflow: hidden; }
-.page-hero .hero-art { opacity: .3; z-index: 2; transform-origin: 78% 50%; animation: slowZoom 18s ease-in-out infinite alternate; }
-/* subpages: no line-drawing sweep — static crest that gently enlarges */
-.page-hero .hero-art path, .page-hero .hero-art circle { stroke-dasharray: none; stroke-dashoffset: 0; animation: none; }
+/* Kontur herbu w tle hero podstron wyłączony (prośba 24.08.2026): w kadrze
+   było widać głównie jego proste boki — wyglądały jak przypadkowe pionowe
+   linie jeżdżące w bok razem z animacją powiększania. SVG zostaje w HTML,
+   gdyby ozdoba miała kiedyś wrócić. */
+.page-hero .hero-art { display: none; }
 .page-hero-inner { position: relative; z-index: 3; padding-top: clamp(60px, 8vw, 100px); padding-bottom: clamp(60px, 8vw, 100px); display: flex; flex-direction: column; gap: 18px; }
 .page-hero .crumb { font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--gold-light); }
 .page-hero .crumb a { color: rgba(255,255,255,.7); }

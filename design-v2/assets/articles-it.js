@@ -1,6 +1,33 @@
 /* GENERATED from content/articles/*.json by build-langs.mjs — do not edit by hand. */
 window.ARTICLES = [
   {
+    "id": "testowy-wpis-warsztaty-plastyczne-dla-seniorow",
+    "ts": "2026-08-24",
+    "cat": "art",
+    "img": "/uploads/hero-volunteers-1600.jpg",
+    "images": [
+      "/uploads/news-bandura.jpg",
+      "/uploads/news-castlehill-800.jpg",
+      "/uploads/news-chmielowski.jpg",
+      "/uploads/news-cleanup.jpg"
+    ],
+    "date": {
+      "it": "24 agosto 2026"
+    },
+    "title": {
+      "it": "Post di prova — laboratori artistici per anziani"
+    },
+    "lead": {
+      "it": "Ad agosto abbiamo invitato gli anziani di Lublino a partecipare a dei laboratori artistici. Questo è un post di prova: stiamo verificando le traduzioni automatiche."
+    },
+    "body": {
+      "it": [
+        "Alla fine di agosto, la fondazione “Fundacja Stock” ha organizzato un laboratorio artistico per venti anziani provenienti dalle case di riposo di Lublino. Per tre ore i partecipanti hanno dipinto paesaggi ispirati al Centro Storico, e le opere realizzate saranno esposte in autunno in una mostra presso la sede della fondazione.",
+        "All’organizzazione dell’incontro hanno contribuito alcuni volontari e l’associazione nostra partner “Homo Faber”. Stiamo programmando i prossimi laboratori per ottobre: le informazioni saranno pubblicate nella nostra sezione “Notizie”."
+      ]
+    }
+  },
+  {
     "id": "stock-move-challenge",
     "ts": "2026-08-10",
     "img": "/uploads/stockmove-2.webp",
