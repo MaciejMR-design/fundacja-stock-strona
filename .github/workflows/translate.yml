@@ -1,4 +1,4 @@
-# Automatyczne uzupełnianie tłumaczeń wpisów (EN/CZ/IT z polskiego przez DeepL).
+# Automatyczne uzupełnianie tłumaczeń wpisów (EN/CZ/IT/SK/DE/FR z polskiego przez DeepL).
 # Działa dopiero, gdy w ustawieniach repo (Settings -> Secrets -> Actions)
 # istnieje sekret DEEPL_API_KEY. Bez klucza job kończy się neutralnie.
 name: Tłumaczenia DeepL
@@ -6,6 +6,8 @@ on:
   push:
     branches: [main]
     paths: ['content/articles/**']
+  # ręczne uruchomienie (Actions -> Tłumaczenia DeepL -> Run workflow) — np. dotłumaczenie zaległych wpisów
+  workflow_dispatch:
 jobs:
   translate:
     runs-on: ubuntu-latest
@@ -26,5 +28,5 @@ jobs:
           git config user.name "Tłumacz DeepL"
           git config user.email "actions@github.com"
           git add content/articles
-          git diff --cached --quiet || git commit -m "Tłumaczenia DeepL — uzupełnienie EN/CZ/IT [deepl]"
+          git diff --cached --quiet || git commit -m "Tłumaczenia DeepL — uzupełnienie brakujących języków [deepl]"
           git push
