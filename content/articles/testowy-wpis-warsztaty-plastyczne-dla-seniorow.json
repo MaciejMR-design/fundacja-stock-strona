@@ -1,0 +1,20 @@
+{
+  "pl": {
+    "title": "Testowy wpis — warsztaty plastyczne dla seniorów",
+    "lead": "W sierpniu zaprosiliśmy seniorów z Lublina na warsztaty plastyczne. To wpis testowy — sprawdzamy automatyczne tłumaczenia.",
+    "body": [
+      "Pod koniec sierpnia Fundacja Stock zorganizowała warsztaty plastyczne dla dwudziestu seniorów z lubelskich domów pomocy społecznej. Przez trzy godziny uczestnicy malowali pejzaże inspirowane Starym Miastem, a gotowe prace zawisną jesienią na wystawie w siedzibie fundacji.",
+      "W przygotowaniu spotkania pomogli wolontariusze oraz zaprzyjaźnione Stowarzyszenie Homo Faber. Kolejne warsztaty planujemy na październik — informacje pojawią się w naszych aktualnościach."
+    ],
+    "img": "/uploads/hero-volunteers-1600.jpg",
+    "images": [
+      "/uploads/news-bandura.jpg",
+      "/uploads/news-castlehill-800.jpg",
+      "/uploads/news-chmielowski.jpg",
+      "/uploads/news-cleanup.jpg"
+    ],
+    "ts": "2026-08-24",
+    "dateSpan": "day",
+    "cat": "art"
+  }
+}
